@@ -1,0 +1,193 @@
+{
+  "$id": "urn:bionicbutterfly:g0a1:external-run-report-r11-candidate",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "evidence_complete": {
+            "const": true
+          }
+        },
+        "required": [
+          "evidence_complete"
+        ]
+      },
+      "then": {
+        "properties": {
+          "control_trace_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "partial_trace_sha256": {
+            "type": "null"
+          },
+          "run_status": {
+            "enum": [
+              "COMPLETED",
+              "FAILED"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "run_status": {
+            "const": "FAILED_INCOMPLETE_EVIDENCE"
+          }
+        },
+        "required": [
+          "run_status"
+        ]
+      },
+      "then": {
+        "properties": {
+          "control_trace_sha256": {
+            "type": "null"
+          },
+          "evidence_complete": {
+            "const": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "run_status": {
+            "const": "VALIDATION_REJECTED"
+          }
+        },
+        "required": [
+          "run_status"
+        ]
+      },
+      "then": {
+        "properties": {
+          "control_trace_sha256": {
+            "type": "null"
+          },
+          "evidence_complete": {
+            "const": false
+          },
+          "partial_trace_sha256": {
+            "type": "null"
+          }
+        }
+      }
+    }
+  ],
+  "properties": {
+    "assertion_result": {
+      "enum": [
+        "NOT_RUN",
+        "PASS",
+        "FAIL",
+        "INCONCLUSIVE"
+      ]
+    },
+    "control_trace_sha256": {
+      "anyOf": [
+        {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "engine_revision": {
+      "maxLength": 64,
+      "minLength": 1,
+      "pattern": "^[A-Za-z0-9_.-]+$",
+      "type": "string"
+    },
+    "evidence_complete": {
+      "type": "boolean"
+    },
+    "partial_trace_sha256": {
+      "anyOf": [
+        {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "policy_digest": {
+      "anyOf": [
+        {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "replay_identity": {
+      "anyOf": [
+        {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "report_format_version": {
+      "const": 1
+    },
+    "run_status": {
+      "enum": [
+        "VALIDATION_REJECTED",
+        "COMPLETED",
+        "FAILED",
+        "FAILED_INCOMPLETE_EVIDENCE"
+      ]
+    },
+    "scenario_digest": {
+      "anyOf": [
+        {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "scheduler_revision": {
+      "maxLength": 64,
+      "minLength": 1,
+      "pattern": "^[A-Za-z0-9_.-]+$",
+      "type": "string"
+    },
+    "trace_format_version": {
+      "const": 1
+    }
+  },
+  "required": [
+    "report_format_version",
+    "run_status",
+    "assertion_result",
+    "scenario_digest",
+    "policy_digest",
+    "replay_identity",
+    "engine_revision",
+    "scheduler_revision",
+    "trace_format_version",
+    "evidence_complete",
+    "control_trace_sha256",
+    "partial_trace_sha256"
+  ],
+  "title": "External run report; NOT in normative hashed JSONL stream",
+  "type": "object"
+}

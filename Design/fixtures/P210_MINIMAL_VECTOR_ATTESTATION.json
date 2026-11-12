@@ -1,0 +1,11 @@
+{
+  "control_trace_sha256": "1cdaa68e016d4227d8623adf285a6d28ace9092bf1c45ef7a21b65638a4a10a3",
+  "evaluated_tick_count": 2,
+  "jcs_scope": "ASCII-only property names/string values; JCS-compatible on this vector; independent RFC8785 implementation required at G1",
+  "purpose": "DESIGN_FIXTURE_ONLY",
+  "replay_identity": "09a6d1290fbe150216652946078bfb20361d2bc2cc020872077ff3a5850b1b98",
+  "runtime_executed": false,
+  "scenario_digest": "b4cdadd91f838eef7c41866c8e16744dc4741353e9d7508239cbfae4bac874bf",
+  "trace_bytes": 1433,
+  "trace_record_count": 4
+}

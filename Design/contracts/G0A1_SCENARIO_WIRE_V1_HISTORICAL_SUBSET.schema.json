@@ -1,0 +1,209 @@
+{
+  "$id": "urn:bionicbutterfly:g0a1:scenario-wire-v1-subset-audit-only",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "clock": {
+      "additionalProperties": false,
+      "properties": {
+        "start_us": {
+          "const": 0
+        },
+        "step_us": {
+          "const": 5000
+        }
+      },
+      "required": [
+        "start_us",
+        "step_us"
+      ],
+      "type": "object"
+    },
+    "config_id": {
+      "const": "sim-only-c0-v1"
+    },
+    "context": {
+      "const": "PC_SIM"
+    },
+    "events": {
+      "items": {
+        "oneOf": [
+          {
+            "additionalProperties": false,
+            "properties": {
+              "event_at_us": {
+                "maximum": 60000000,
+                "minimum": 0,
+                "type": "integer"
+              },
+              "event_id": {
+                "maxLength": 64,
+                "minLength": 1,
+                "type": "string"
+              },
+              "payload": {
+                "additionalProperties": false,
+                "properties": {},
+                "required": [],
+                "type": "object"
+              },
+              "type": {
+                "const": "BOOT"
+              }
+            },
+            "required": [
+              "event_id",
+              "event_at_us",
+              "type",
+              "payload"
+            ],
+            "type": "object"
+          },
+          {
+            "additionalProperties": false,
+            "properties": {
+              "event_at_us": {
+                "maximum": 60000000,
+                "minimum": 0,
+                "type": "integer"
+              },
+              "event_id": {
+                "maxLength": 64,
+                "minLength": 1,
+                "type": "string"
+              },
+              "payload": {
+                "additionalProperties": false,
+                "properties": {
+                  "rf_health": {
+                    "enum": [
+                      "HEALTHY",
+                      "LOST",
+                      "UNKNOWN"
+                    ]
+                  },
+                  "rf_provenance": {
+                    "const": "INJECTED_SIM"
+                  }
+                },
+                "required": [
+                  "rf_health",
+                  "rf_provenance"
+                ],
+                "type": "object"
+              },
+              "type": {
+                "const": "SIM_RF_STATUS"
+              }
+            },
+            "required": [
+              "event_id",
+              "event_at_us",
+              "type",
+              "payload"
+            ],
+            "type": "object"
+          },
+          {
+            "additionalProperties": false,
+            "properties": {
+              "event_at_us": {
+                "maximum": 60000000,
+                "minimum": 0,
+                "type": "integer"
+              },
+              "event_id": {
+                "maxLength": 64,
+                "minLength": 1,
+                "type": "string"
+              },
+              "payload": {
+                "oneOf": [
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "arm_switch": {
+                        "type": "boolean"
+                      },
+                      "flap_demand": {
+                        "maximum": 1,
+                        "minimum": 0,
+                        "type": "number"
+                      },
+                      "map_revision": {
+                        "const": "sim-map-v1"
+                      },
+                      "steering_demand": {
+                        "maximum": 1,
+                        "minimum": -1,
+                        "type": "number"
+                      },
+                      "uart_frame_status": {
+                        "const": "VALID"
+                      }
+                    },
+                    "required": [
+                      "uart_frame_status",
+                      "flap_demand",
+                      "steering_demand",
+                      "arm_switch",
+                      "map_revision"
+                    ],
+                    "type": "object"
+                  },
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "uart_frame_status": {
+                        "const": "INVALID"
+                      }
+                    },
+                    "required": [
+                      "uart_frame_status"
+                    ],
+                    "type": "object"
+                  }
+                ]
+              },
+              "type": {
+                "const": "SIM_CONTROL_FRAME"
+              }
+            },
+            "required": [
+              "event_id",
+              "event_at_us",
+              "type",
+              "payload"
+            ],
+            "type": "object"
+          }
+        ]
+      },
+      "maxItems": 20000,
+      "minItems": 1,
+      "type": "array"
+    },
+    "provenance": {
+      "const": "SIM_ONLY"
+    },
+    "scenario_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "scenario_id",
+    "context",
+    "provenance",
+    "config_id",
+    "clock",
+    "events"
+  ],
+  "title": "Legacy v1 illustration subset only; not full R1-compatible closure",
+  "type": "object"
+}

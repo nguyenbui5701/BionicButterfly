@@ -1,0 +1,38 @@
+{
+  "base_commit": "21e6fa6debdc63868693cdbba900f83b1869f0e2",
+  "files": {
+    "123_PHASE29_GITHUB_BASELINE_AND_BYTE_INTEGRITY_REVIEW.md": {
+      "byte_len": 3975,
+      "source_git_blob_sha1": "0721598b50c503bfc6b60954638e6aac2b317ab7"
+    },
+    "124_G0A1_R1_CONTROLLED_BASELINE_FREEZE_SCOPE_AND_INVARIANTS.md": {
+      "byte_len": 3629,
+      "source_git_blob_sha1": "7a1a078b05eae5562289500d81cd773db5ee7588"
+    },
+    "125_G0A1_INTERFACE_COMPLETENESS_AND_RELEASE_BLOCKERS.md": {
+      "byte_len": 3642,
+      "source_git_blob_sha1": "838878a14857b32207cee1f6a0d8b32bcdc52d0d"
+    },
+    "126_G0A1_R1_INTERFACE_COMPLETION_CHANGE_REQUEST.md": {
+      "byte_len": 4849,
+      "source_git_blob_sha1": "1ff46dc60abda7ea592dce6654635054abf58f2a"
+    },
+    "127_PHASE29_REGRESSION_AND_DESIGN_ORACLE_PLAN.md": {
+      "byte_len": 3167,
+      "source_git_blob_sha1": "f61d30ae5e1d35476f6c24804f4c4a5ca6e4f183"
+    },
+    "128_G0A1_CONFIGURATION_FREEZE_AND_CHANGE_CONTROL.md": {
+      "byte_len": 3218,
+      "source_git_blob_sha1": "c6e995db26ab94f677f215a0cf50253591a7f7e3"
+    },
+    "129_PHASE29_SA_FINAL_GATE_REVIEW_AND_DECISION.md": {
+      "byte_len": 3169,
+      "source_git_blob_sha1": "7d6f6620d20940b69d03c346042421dc3fbd5f58"
+    },
+    "130_PHASE29_DEVELOPER_HANDOFF_READINESS_REVIEW_NOT_TASK.md": {
+      "byte_len": 2600,
+      "source_git_blob_sha1": "77896a548caf0f2c4ea15123c57323746df05cca"
+    }
+  },
+  "note": "Verified against GitHub read result at creation; read-only sources not included or overwritten"
+}

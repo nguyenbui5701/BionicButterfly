@@ -1,0 +1,14 @@
+{
+  "assertion_result": "NOT_RUN",
+  "control_trace_sha256": "1cdaa68e016d4227d8623adf285a6d28ace9092bf1c45ef7a21b65638a4a10a3",
+  "engine_revision": "G0A1_DESIGN_REFERENCE_1",
+  "evidence_complete": true,
+  "partial_trace_sha256": null,
+  "policy_digest": "d7567197dd43480d7e96dac121fbb707d3097b6c443b1b7ab55e822dbac66e10",
+  "replay_identity": "09a6d1290fbe150216652946078bfb20361d2bc2cc020872077ff3a5850b1b98",
+  "report_format_version": 1,
+  "run_status": "COMPLETED",
+  "scenario_digest": "b4cdadd91f838eef7c41866c8e16744dc4741353e9d7508239cbfae4bac874bf",
+  "scheduler_revision": "FIXED_5MS_DESIGN_1",
+  "trace_format_version": 1
+}

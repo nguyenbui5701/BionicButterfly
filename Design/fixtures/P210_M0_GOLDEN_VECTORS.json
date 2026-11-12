@@ -1,0 +1,126 @@
+{
+  "mixer_revision": "G0A1_M0_R11",
+  "status": "DESIGN_GOLDEN_NOT_EXECUTABLE_TEST_PASS",
+  "vectors": [
+    {
+      "flap_demand": 0.0,
+      "id": "M0-01",
+      "left_micro_effort": 0,
+      "mixer_clip_tags": [],
+      "note": "algebra only; actual virtual output additionally requires approved ACTIVE safety gate",
+      "right_micro_effort": 0,
+      "steering_demand": 0.0
+    },
+    {
+      "flap_demand": 0.5,
+      "id": "M0-02",
+      "left_micro_effort": 250000,
+      "mixer_clip_tags": [],
+      "note": "algebra only; actual virtual output additionally requires approved ACTIVE safety gate",
+      "right_micro_effort": 750000,
+      "steering_demand": 0.25
+    },
+    {
+      "flap_demand": 0.5,
+      "id": "M0-03",
+      "left_micro_effort": 750000,
+      "mixer_clip_tags": [],
+      "note": "algebra only; actual virtual output additionally requires approved ACTIVE safety gate",
+      "right_micro_effort": 250000,
+      "steering_demand": -0.25
+    },
+    {
+      "flap_demand": 0.05,
+      "id": "M0-04",
+      "left_micro_effort": 0,
+      "mixer_clip_tags": [
+        "LEFT_LOW"
+      ],
+      "note": "algebra only; actual virtual output additionally requires approved ACTIVE safety gate",
+      "right_micro_effort": 150000,
+      "steering_demand": 0.1
+    },
+    {
+      "flap_demand": 1.0,
+      "id": "M0-05",
+      "left_micro_effort": 0,
+      "mixer_clip_tags": [
+        "RIGHT_HIGH"
+      ],
+      "note": "algebra only; actual virtual output additionally requires approved ACTIVE safety gate",
+      "right_micro_effort": 1000000,
+      "steering_demand": 1.0
+    },
+    {
+      "flap_demand": 1.0,
+      "id": "M0-06",
+      "left_micro_effort": 1000000,
+      "mixer_clip_tags": [
+        "LEFT_HIGH"
+      ],
+      "note": "algebra only; actual virtual output additionally requires approved ACTIVE safety gate",
+      "right_micro_effort": 0,
+      "steering_demand": -1.0
+    },
+    {
+      "flap_demand": 1e-06,
+      "id": "M0-07",
+      "left_micro_effort": 2,
+      "mixer_clip_tags": [],
+      "note": "algebra only; actual virtual output additionally requires approved ACTIVE safety gate",
+      "right_micro_effort": 0,
+      "steering_demand": -1e-06
+    },
+    {
+      "flap_demand": 0.333333,
+      "id": "M0-08",
+      "left_micro_effort": 0,
+      "mixer_clip_tags": [],
+      "note": "algebra only; actual virtual output additionally requires approved ACTIVE safety gate",
+      "right_micro_effort": 666666,
+      "steering_demand": 0.333333
+    },
+    {
+      "flap_demand": 0.5,
+      "id": "M0-09",
+      "left_micro_effort": 0,
+      "mixer_clip_tags": [],
+      "note": "algebra only; actual virtual output additionally requires approved ACTIVE safety gate",
+      "right_micro_effort": 1000000,
+      "steering_demand": 0.5
+    },
+    {
+      "flap_demand": 0.999999,
+      "id": "M0-10",
+      "left_micro_effort": 999997,
+      "mixer_clip_tags": [
+        "RIGHT_HIGH"
+      ],
+      "note": "algebra only; actual virtual output additionally requires approved ACTIVE safety gate",
+      "right_micro_effort": 1000000,
+      "steering_demand": 2e-06
+    },
+    {
+      "flap_demand": 0.0,
+      "id": "M0-11",
+      "left_micro_effort": 1000000,
+      "mixer_clip_tags": [
+        "RIGHT_LOW"
+      ],
+      "note": "algebra only; actual virtual output additionally requires approved ACTIVE safety gate",
+      "right_micro_effort": 0,
+      "steering_demand": -1.0
+    },
+    {
+      "flap_demand": 0.0,
+      "id": "M0-12",
+      "left_micro_effort": 0,
+      "mixer_clip_tags": [
+        "LEFT_LOW"
+      ],
+      "note": "algebra only; actual virtual output additionally requires approved ACTIVE safety gate",
+      "right_micro_effort": 1000000,
+      "steering_demand": 1.0
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+flowchart TD
+ S[Scenario v2 strict preflight] --> P[Trusted host policy digest R1]
+ P --> Q[Fixed 5 ms event queue]
+ Q --> B[Batch normalization & safety FSM R1]
+ B --> X{Post-state ACTIVE and guards?}
+ X -- No --> N[Null output pair]
+ X -- Yes --> M[M0 integer virtual mixer R1.1 candidate]
+ M --> L[Trace schema: header tick terminal]
+ N --> L
+ L --> C{Append accepted?}
+ C -- No --> F[Incomplete evidence / no new visible output]
+ C -- Yes --> V[Publish virtual decision]
+ V --> E[External report and SHA-256 of full JSONL]

@@ -1,0 +1,180 @@
+{
+  "R11_owner_approved": false,
+  "R11_status": "CANDIDATE_FOR_REVIEW",
+  "R1_owner_approved": true,
+  "artifacts": [
+    {
+      "byte_size": 2708,
+      "git_blob_sha1": "63e82ecc7a4f88b4d6b1648c5815504e55a458f4",
+      "path": "Design/131_PHASE210_VERIFIED_GITHUB_BASELINE_AND_R11_SCOPE.md",
+      "sha256": "87c416076e1684eb98a0e3378d6f4d9aee55acfc897b9f3221fcaa517385877b"
+    },
+    {
+      "byte_size": 6402,
+      "git_blob_sha1": "2e154c314fbfdcfed8bc6daa00b72cdf349a6ccb",
+      "path": "Design/132_R11_SCENARIO_WIRE_V2_CLOSED_EVENT_SCHEMA_CANDIDATE.md",
+      "sha256": "8ad452e994f6e6f718ed89d15ec205c2ed3645ee49194d6e5692f570c163945f"
+    },
+    {
+      "byte_size": 3819,
+      "git_blob_sha1": "8ea4f2f556d83d6132df86751c9ffd29b931575d",
+      "path": "Design/133_R11_VIRTUAL_MIXER_M0_EXACT_ARITHMETIC_CANDIDATE.md",
+      "sha256": "f801398baf30f8caf4c1440c8aef8d143ea2e392dd0b02af9406af4f740e18d0"
+    },
+    {
+      "byte_size": 5649,
+      "git_blob_sha1": "c085995e4fc82095ab0f693426a9d3632db9b14b",
+      "path": "Design/134_R11_TRACE_RECORDS_AND_REPLAY_BYTES_CANDIDATE.md",
+      "sha256": "842f40c6711cf11a2946e48ae603a57f3f9ff7bd14f59aad56431443680915c6"
+    },
+    {
+      "byte_size": 3264,
+      "git_blob_sha1": "268f41cbe0afe18aaec93443ec14209366f631ee",
+      "path": "Design/135_R11_GOLDEN_FIXTURE_MIGRATION_AND_INTEGRITY.md",
+      "sha256": "b1433936d29c629d48805a03f40e59716174b10e2c0dec96d36a231ebfddad50"
+    },
+    {
+      "byte_size": 4277,
+      "git_blob_sha1": "4e9ea3c60a6d4db59e5fc475db99f58f143ea5ba",
+      "path": "Design/136_R11_INTERFACE_TEST_ORACLES_AND_STATIC_CHECKS.md",
+      "sha256": "7c81d4fd3cabfcac8a6ea377255ce0649ff4e81b87d4cfb388086ea4b4df83ff"
+    },
+    {
+      "byte_size": 3547,
+      "git_blob_sha1": "5960ab8e581bcd5a215d835d54dc3d190d561403",
+      "path": "Design/137_R11_CHANGE_IMPACT_SAFETY_AND_ALTERNATIVE_REVIEW.md",
+      "sha256": "4043a338eea15aae27299b602c421d4db7767eb1f28b1825e1d0d13cdc19694f"
+    },
+    {
+      "byte_size": 2532,
+      "git_blob_sha1": "271f10b672c0bb47f19c530c1bf8e401fb2e681b",
+      "path": "Design/138_PHASE210_OWNER_R11_INTERFACE_DECISION_PACKET.md",
+      "sha256": "db38606bb0d5ad5c7d1238977f32c92f2ac318bb89820f84536e0a628e976bb8"
+    },
+    {
+      "byte_size": 3157,
+      "git_blob_sha1": "a4adacf3424bd023f875326719ad117ec1f7f712",
+      "path": "Design/139_PHASE210_SA_GATE_REVIEW_AND_HANDOFF_HOLD.md",
+      "sha256": "2c9658b7c5dd836fc5d85e3ec9c8abfc483b547a8e6fb0c575905f22173f0939"
+    },
+    {
+      "byte_size": 527,
+      "git_blob_sha1": "322fa5c3ab632f68a9270db2e8b6f6533401924e",
+      "path": "Design/assets/133_R11_CONTRACT_PIPELINE.mmd",
+      "sha256": "6f9da9d8aa0bc704eaa850d5e870bb6d7a50d245a1e35090ca30f4107d2fe0e7"
+    },
+    {
+      "byte_size": 3793,
+      "git_blob_sha1": "c7da5879ef976d7e11186d484ea1e66453229c9a",
+      "path": "Design/contracts/G0A1_EXTERNAL_REPORT_R11_CANDIDATE.schema.json",
+      "sha256": "73f18aac734bcbff22e822dd3e2c51ab2a602ffada683b99d2379936d4e9ac6e"
+    },
+    {
+      "byte_size": 802,
+      "git_blob_sha1": "dfde74e76b1bd7eb44088e6d49d06dd1a46cc759",
+      "path": "Design/contracts/G0A1_MIXER_M0_R11_CANDIDATE.json",
+      "sha256": "979112229b956e710f801f1f3a72ae303e97f85a3d1e2b802b1c3c2d4efc0106"
+    },
+    {
+      "byte_size": 5528,
+      "git_blob_sha1": "ee9b02dd4f587b683a91d38f5b36d3abdd5b3872",
+      "path": "Design/contracts/G0A1_SCENARIO_WIRE_V1_HISTORICAL_SUBSET.schema.json",
+      "sha256": "fff902ff7f44f42186f9e77ef64203c5893323ce3c078d35c43fd5c3d0c20845"
+    },
+    {
+      "byte_size": 8219,
+      "git_blob_sha1": "1d10c76e34be70880a65252d89a6bca89839fea9",
+      "path": "Design/contracts/G0A1_SCENARIO_WIRE_V2_CANDIDATE.schema.json",
+      "sha256": "621dddeba4e5e54cc833430b3019833cb7d06a341c0b1e3d0d31dae83e1839f4"
+    },
+    {
+      "byte_size": 10152,
+      "git_blob_sha1": "ef0c1c8d7754042f72449e54e37c650c8fee4be8",
+      "path": "Design/contracts/G0A1_TRACE_RECORDS_R11_CANDIDATE.schema.json",
+      "sha256": "85b26885b703c74f83fef9f3a9f8ada38033a5ce9b11e21fba15fa1f395fa3ca"
+    },
+    {
+      "byte_size": 1529,
+      "git_blob_sha1": "de1569423e51b1ab5435eb5c5eb716796baef583",
+      "path": "Design/contracts/P210_PHASE29_SOURCE_BLOB_GUARDS.json",
+      "sha256": "bd88544d8b098942569f83c9aeb2c3afe89dbf1ead026f217895b21d115ca713"
+    },
+    {
+      "byte_size": 2078,
+      "git_blob_sha1": "bdf130c5f7e27e3d51cd99274e4338bbf528fcad",
+      "path": "Design/contracts/P210_STATIC_QA_ATTESTATION.json",
+      "sha256": "19afa69d165fad41c6a46926a3a203d52c653f4698ab6317d3c8e036f156c84c"
+    },
+    {
+      "byte_size": 469,
+      "git_blob_sha1": "7db5ab21d8ae26537eb21cf594c14942ec7cde1f",
+      "path": "Design/fixtures/P210_ACK_SHAPE_ONLY_V2.json",
+      "sha256": "ae665411db1f3a99a0b153ebf7aa8e484658144358f035bab8f6fa64097eae2e"
+    },
+    {
+      "byte_size": 58,
+      "git_blob_sha1": "43f7b34fc91657433ad89e03b8072c55280a7d3a",
+      "path": "Design/fixtures/P210_DUPLICATE_KEYS_INVALID.json",
+      "sha256": "88a70b76ca391463fe1e21cfe3ba2d495bf83a86d660283af779e5f14c2a616c"
+    },
+    {
+      "byte_size": 1293,
+      "git_blob_sha1": "93059f759ac681c5280942d5782ff35bbab9b6b3",
+      "path": "Design/fixtures/P210_INVALID_UART_WIRE_V2.json",
+      "sha256": "f4bf810a000198016ec45dad8eb74dcf0943b3763bc56fba24993ea62c4e30bf"
+    },
+    {
+      "byte_size": 3756,
+      "git_blob_sha1": "165aee1347a619c6f2514e522bf0e4fc4b518a6c",
+      "path": "Design/fixtures/P210_M0_GOLDEN_VECTORS.json",
+      "sha256": "2be61c8594aea7d06a9772fa8bbb9bd75da69534aafff9fc34602df61cbfb937"
+    },
+    {
+      "byte_size": 638,
+      "git_blob_sha1": "87af6934233261badf670eb3eb0aea35a4c65575",
+      "path": "Design/fixtures/P210_MINIMAL_DESIGN_EXTERNAL_REPORT.json",
+      "sha256": "1c954d16e6bdb0a00351bbf9be1da74e9fc6485c1380b71a6383108247caa9cf"
+    },
+    {
+      "byte_size": 1433,
+      "git_blob_sha1": "4b7677fa4cdd6d15da61751349c872997fa6f2bc",
+      "path": "Design/fixtures/P210_MINIMAL_DESIGN_TRACE.jsonl",
+      "sha256": "1cdaa68e016d4227d8623adf285a6d28ace9092bf1c45ef7a21b65638a4a10a3"
+    },
+    {
+      "byte_size": 559,
+      "git_blob_sha1": "358337af2a2b9ffb7e0aa0f1fcfd2cdbb6ed8991",
+      "path": "Design/fixtures/P210_MINIMAL_VECTOR_ATTESTATION.json",
+      "sha256": "16c14bd989a2aed1e92700c2532d0c5e5f8c3843f75c51eaffe849f7a2c7bc97"
+    },
+    {
+      "byte_size": 346,
+      "git_blob_sha1": "7990a0e2c4a95425a61c27c9024a8a0783520663",
+      "path": "Design/fixtures/P210_MINIMAL_WIRE_V2.json",
+      "sha256": "d4b6098748a918d6073deafe016d04f0e229de557ba64786c9989be9d8c8e208"
+    },
+    {
+      "byte_size": 2198,
+      "git_blob_sha1": "4e772fe51f0cfb5e085e7da81030dca02814d0b3",
+      "path": "Design/fixtures/P210_NOMINAL_M0_WIRE_V2.json",
+      "sha256": "022a36b4537e7644484b9a74998f831005ec375e97e3feb3f1d905df96f4a8e4"
+    },
+    {
+      "byte_size": 1083,
+      "git_blob_sha1": "b0502ff2548ec95541cff70337874a6d4461601a",
+      "path": "Design/fixtures/P210_RESET_CATA_WIRE_V2.json",
+      "sha256": "eabccfba11a39f1fca39f970ea9b41bb04ad40a71958aac5b4e17164c8ec9c11"
+    }
+  ],
+  "base_commit": "21e6fa6debdc63868693cdbba900f83b1869f0e2",
+  "date": "2026-11-13",
+  "golden": {
+    "replay_identity": "09a6d1290fbe150216652946078bfb20361d2bc2cc020872077ff3a5850b1b98",
+    "scenario_digest": "b4cdadd91f838eef7c41866c8e16744dc4741353e9d7508239cbfae4bac874bf",
+    "trace_sha256": "1cdaa68e016d4227d8623adf285a6d28ace9092bf1c45ef7a21b65638a4a10a3"
+  },
+  "package": "BionicButterfly_Phase210_R11_Interface_Completion",
+  "repository": "nguyenbui5701/BionicButterfly",
+  "runtime_tests_executed": false,
+  "scope": "PC_SIM_ONLY"
+}

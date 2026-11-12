@@ -1,0 +1,90 @@
+{
+  "g1_simulator_tests_run": 0,
+  "reason": "No runnable simulator was implemented or tested",
+  "results": [
+    {
+      "case": "nominal cross-field semantics",
+      "status": "STATIC_PASS"
+    },
+    {
+      "case": "minimal cross-field semantics",
+      "status": "STATIC_PASS"
+    },
+    {
+      "case": "wrong context denied",
+      "status": "STATIC_PASS"
+    },
+    {
+      "case": "self-approval property denied",
+      "status": "STATIC_PASS"
+    },
+    {
+      "case": "unknown event payload denied",
+      "status": "STATIC_PASS"
+    },
+    {
+      "case": "unrecognized wire type denied",
+      "status": "STATIC_PASS"
+    },
+    {
+      "case": "INVALID with valid-body field denied",
+      "status": "STATIC_PASS"
+    },
+    {
+      "case": "duplicate event ID cross-field denied",
+      "status": "STATIC_PASS"
+    },
+    {
+      "case": "unexpected additional time-zero event denied",
+      "status": "STATIC_PASS"
+    },
+    {
+      "case": "event outside duration denied",
+      "status": "STATIC_PASS"
+    },
+    {
+      "case": "more-than-six-place pilot numeric denied",
+      "status": "STATIC_PASS"
+    },
+    {
+      "case": "duration must align 5ms",
+      "status": "STATIC_PASS"
+    },
+    {
+      "case": "v1 not automatically v2",
+      "status": "STATIC_PASS"
+    },
+    {
+      "case": "terminal self-hash denied",
+      "status": "STATIC_PASS"
+    },
+    {
+      "case": "inhibited partial effort denied",
+      "status": "STATIC_PASS"
+    },
+    {
+      "case": "full digest with preflight reject denied",
+      "status": "STATIC_PASS"
+    },
+    {
+      "case": "duplicate key rejected at parser layer",
+      "status": "STATIC_PASS"
+    },
+    {
+      "case": "authored trace exact SHA",
+      "status": "STATIC_PASS"
+    },
+    {
+      "case": "trailing LF is part of the hash",
+      "status": "STATIC_PASS"
+    },
+    {
+      "case": "nominal M0 algebra equals expected",
+      "status": "STATIC_PASS"
+    }
+  ],
+  "scenario_positive_samples": 5,
+  "schemas_checked": 4,
+  "status": "STATIC_DESIGN_VALIDATION_ONLY",
+  "test_count": 20
+}

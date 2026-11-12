@@ -1,0 +1,40 @@
+{
+  "clip_tags": [
+    "LEFT_HIGH",
+    "LEFT_LOW",
+    "RIGHT_HIGH",
+    "RIGHT_LOW"
+  ],
+  "input_domain": {
+    "flap_demand": [
+      0,
+      1
+    ],
+    "max_fractional_decimal_places": 6,
+    "scale": 1000000,
+    "steering_demand": [
+      -1,
+      1
+    ]
+  },
+  "integer_formula": {
+    "left_micro_effort": "min(1000000,max(0,left_unbounded))",
+    "left_unbounded": "flap_micro - steer_micro",
+    "right_micro_effort": "min(1000000,max(0,right_unbounded))",
+    "right_unbounded": "flap_micro + steer_micro"
+  },
+  "output_domain": {
+    "left_micro_effort": [
+      0,
+      1000000
+    ],
+    "right_micro_effort": [
+      0,
+      1000000
+    ]
+  },
+  "physical_claim": "NONE",
+  "revision": "G0A1_M0_R11",
+  "scope": "PC_SIM_ONLY",
+  "status": "OWNER_REVIEW_REQUIRED_NOT_APPROVED"
+}

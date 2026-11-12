@@ -1,0 +1,20 @@
+{
+  "clock": {
+    "start_us": 0,
+    "step_us": 5000
+  },
+  "config_id": "sim-only-c0-v1",
+  "context": "PC_SIM",
+  "duration_us": 5000,
+  "events": [
+    {
+      "event_at_us": 0,
+      "event_id": "boot",
+      "payload": {},
+      "type": "BOOT"
+    }
+  ],
+  "provenance": "SIM_ONLY",
+  "scenario_id": "p210_minimal",
+  "schema_version": 2
+}

@@ -1,0 +1,26 @@
+{
+  "clock": {
+    "start_us": 0,
+    "step_us": 5000
+  },
+  "config_id": "sim-only-c0-v1",
+  "context": "PC_SIM",
+  "duration_us": 5000,
+  "events": [
+    {
+      "event_at_us": 0,
+      "event_id": "boot",
+      "payload": {},
+      "type": "BOOT"
+    },
+    {
+      "event_at_us": 5000,
+      "event_id": "ack",
+      "payload": {},
+      "type": "SIM_ACK_FAULT"
+    }
+  ],
+  "provenance": "SIM_ONLY",
+  "scenario_id": "p210_ack_shape_only",
+  "schema_version": 2
+}

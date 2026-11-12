@@ -1,0 +1,408 @@
+{
+  "$id": "urn:bionicbutterfly:g0a1:trace-records-r11-candidate",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "oneOf": [
+    {
+      "additionalProperties": false,
+      "properties": {
+        "engine_revision": {
+          "maxLength": 64,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_.-]+$",
+          "type": "string"
+        },
+        "mixer_revision": {
+          "const": "G0A1_M0_R11"
+        },
+        "policy_digest": {
+          "const": "d7567197dd43480d7e96dac121fbb707d3097b6c443b1b7ab55e822dbac66e10"
+        },
+        "record_type": {
+          "const": "header"
+        },
+        "replay_identity": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "result_contract_version": {
+          "const": 2
+        },
+        "scenario_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "scenario_wire_schema_version": {
+          "const": 2
+        },
+        "scheduler_revision": {
+          "maxLength": 64,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_.-]+$",
+          "type": "string"
+        },
+        "scheduler_step_us": {
+          "const": 5000
+        },
+        "scope": {
+          "const": "PC_SIM_ONLY"
+        },
+        "trace_format_version": {
+          "const": 1
+        }
+      },
+      "required": [
+        "record_type",
+        "trace_format_version",
+        "result_contract_version",
+        "scenario_wire_schema_version",
+        "replay_identity",
+        "scenario_digest",
+        "policy_digest",
+        "engine_revision",
+        "scheduler_revision",
+        "scheduler_step_us",
+        "scope",
+        "mixer_revision"
+      ],
+      "type": "object"
+    },
+    {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "output_allowed": {
+                "const": false
+              }
+            },
+            "required": [
+              "output_allowed"
+            ]
+          },
+          "then": {
+            "properties": {
+              "input_mode": {
+                "const": "NONE"
+              },
+              "left_micro_effort": {
+                "type": "null"
+              },
+              "mixer_clip_tags": {
+                "maxItems": 0
+              },
+              "requested_flap_micro": {
+                "type": "null"
+              },
+              "requested_steer_micro": {
+                "type": "null"
+              },
+              "right_micro_effort": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "output_allowed": {
+                "const": true
+              }
+            },
+            "required": [
+              "output_allowed"
+            ]
+          },
+          "then": {
+            "properties": {
+              "input_mode": {
+                "enum": [
+                  "FRESH",
+                  "S1_HELD"
+                ]
+              },
+              "left_micro_effort": {
+                "type": "integer"
+              },
+              "requested_flap_micro": {
+                "type": "integer"
+              },
+              "requested_steer_micro": {
+                "type": "integer"
+              },
+              "right_micro_effort": {
+                "type": "integer"
+              },
+              "state_after": {
+                "const": "ACTUATION_ACTIVE"
+              }
+            }
+          }
+        }
+      ],
+      "properties": {
+        "accepted_frame_age_us": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "maximum": 60000000,
+              "minimum": 0,
+              "type": "integer"
+            }
+          ]
+        },
+        "causal_event_ids": {
+          "items": {
+            "maxLength": 64,
+            "minLength": 1,
+            "type": "string"
+          },
+          "maxItems": 20000,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "eval_at_us": {
+          "maximum": 60000000,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "input_mode": {
+          "enum": [
+            "NONE",
+            "FRESH",
+            "S1_HELD"
+          ]
+        },
+        "left_micro_effort": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "maximum": 1000000,
+              "minimum": 0,
+              "type": "integer"
+            }
+          ]
+        },
+        "mixer_clip_tags": {
+          "items": {
+            "enum": [
+              "LEFT_HIGH",
+              "LEFT_LOW",
+              "RIGHT_HIGH",
+              "RIGHT_LOW"
+            ]
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "output_allowed": {
+          "type": "boolean"
+        },
+        "reason_codes": {
+          "items": {
+            "enum": [
+              "E_ARM_EDGE_ABSENT",
+              "E_ARM_PRECONDITION",
+              "E_CONFIG_LOCKED",
+              "E_CONTEXT_DENIED",
+              "E_CONTROL_BATCH_CONFLICT",
+              "E_FRAME_INVALID",
+              "E_FRAME_STALE",
+              "E_INPUT_OVERFLOW",
+              "E_NUMERIC_INVALID",
+              "E_OWNER_DENIED",
+              "E_PROFILE_INVALID",
+              "E_RF_NOT_HEALTHY",
+              "E_SIM_FAULT",
+              "R_ACK_ACCEPTED",
+              "R_ACK_DENIED",
+              "R_ACTIVE_DEMAND_ACCEPTED",
+              "R_ACTIVE_HELD_S1",
+              "R_ARM_CONFIRMED",
+              "R_ARM_EDGE_ACCEPTED",
+              "R_BOOT_OBSERVED",
+              "R_CATASTROPHIC_LATCH",
+              "R_DUPLICATE_SEMANTIC_OBSERVATION",
+              "R_HEALTH_RESTORED",
+              "R_LOW_OBSERVED",
+              "R_LOW_QUALIFIED",
+              "R_NO_NEW_FRAME",
+              "R_RESET_APPLIED",
+              "R_RF_CONFLICT",
+              "R_SELF_TEST_COMPLETE"
+            ]
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "record_type": {
+          "const": "tick"
+        },
+        "requested_flap_micro": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "maximum": 1000000,
+              "minimum": 0,
+              "type": "integer"
+            }
+          ]
+        },
+        "requested_steer_micro": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "maximum": 1000000,
+              "minimum": -1000000,
+              "type": "integer"
+            }
+          ]
+        },
+        "rf_effective": {
+          "enum": [
+            "HEALTHY",
+            "LOST",
+            "UNKNOWN"
+          ]
+        },
+        "right_micro_effort": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "maximum": 1000000,
+              "minimum": 0,
+              "type": "integer"
+            }
+          ]
+        },
+        "state_after": {
+          "enum": [
+            "BOOT",
+            "SELF_TEST",
+            "DISARMED",
+            "ARM_CHECK",
+            "ARMED_IDLE",
+            "ACTUATION_ACTIVE",
+            "CONTINGENCY",
+            "FAULT_LATCHED"
+          ]
+        },
+        "state_before": {
+          "enum": [
+            "BOOT",
+            "SELF_TEST",
+            "DISARMED",
+            "ARM_CHECK",
+            "ARMED_IDLE",
+            "ACTUATION_ACTIVE",
+            "CONTINGENCY",
+            "FAULT_LATCHED"
+          ]
+        },
+        "tick_index": {
+          "maximum": 12000,
+          "minimum": 0,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "record_type",
+        "tick_index",
+        "eval_at_us",
+        "state_before",
+        "state_after",
+        "rf_effective",
+        "accepted_frame_age_us",
+        "causal_event_ids",
+        "reason_codes",
+        "output_allowed",
+        "requested_flap_micro",
+        "requested_steer_micro",
+        "input_mode",
+        "mixer_clip_tags",
+        "left_micro_effort",
+        "right_micro_effort"
+      ],
+      "type": "object"
+    },
+    {
+      "additionalProperties": false,
+      "properties": {
+        "evaluated_tick_count": {
+          "maximum": 12001,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "evidence_complete": {
+          "const": true
+        },
+        "fault_codes": {
+          "items": {
+            "enum": [
+              "E_ARM_EDGE_ABSENT",
+              "E_ARM_PRECONDITION",
+              "E_CONFIG_LOCKED",
+              "E_CONTEXT_DENIED",
+              "E_CONTROL_BATCH_CONFLICT",
+              "E_FRAME_INVALID",
+              "E_FRAME_STALE",
+              "E_INPUT_OVERFLOW",
+              "E_NUMERIC_INVALID",
+              "E_OWNER_DENIED",
+              "E_PROFILE_INVALID",
+              "E_RF_NOT_HEALTHY",
+              "E_SIM_FAULT",
+              "R_ACK_ACCEPTED",
+              "R_ACK_DENIED",
+              "R_ACTIVE_DEMAND_ACCEPTED",
+              "R_ACTIVE_HELD_S1",
+              "R_ARM_CONFIRMED",
+              "R_ARM_EDGE_ACCEPTED",
+              "R_BOOT_OBSERVED",
+              "R_CATASTROPHIC_LATCH",
+              "R_DUPLICATE_SEMANTIC_OBSERVATION",
+              "R_HEALTH_RESTORED",
+              "R_LOW_OBSERVED",
+              "R_LOW_QUALIFIED",
+              "R_NO_NEW_FRAME",
+              "R_RESET_APPLIED",
+              "R_RF_CONFLICT",
+              "R_SELF_TEST_COMPLETE"
+            ]
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "record_type": {
+          "const": "terminal"
+        },
+        "run_status": {
+          "enum": [
+            "COMPLETED",
+            "FAILED"
+          ]
+        }
+      },
+      "required": [
+        "record_type",
+        "run_status",
+        "evaluated_tick_count",
+        "fault_codes",
+        "evidence_complete"
+      ],
+      "type": "object"
+    }
+  ],
+  "title": "G0A1 R1.1 candidate JSONL per-line record schema; complete stream ordering is specified in Design/134"
+}
