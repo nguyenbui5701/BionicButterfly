@@ -1,0 +1,13 @@
+flowchart TD
+ A[Raw scenario bytes] --> B{Bytes <= 2 MiB?}
+ B -- No --> X[Reject: one P_* issue sidecar]
+ B -- Yes --> C{Strict UTF-8 and JSON?}
+ C -- No --> X
+ C -- Yes --> D{Frozen wire v2 schema?}
+ D -- No --> X
+ D -- Yes --> E{Cross-field semantics?}
+ E -- No --> X
+ E -- Yes --> F[Immutable validated scenario]
+ F --> G[Separate host trust gate]
+ G --> H[Later runner: not implemented in this phase]
+ X --> J[Zero core ticks; no canonical complete trace]

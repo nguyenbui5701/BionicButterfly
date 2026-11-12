@@ -1,0 +1,292 @@
+{
+  "schema_version": 1,
+  "status": "DESIGN_ORACLES_NOT_RUN_ON_RUNTIME",
+  "test_cases": [
+    {
+      "expected_base_error_code": null,
+      "expected_core_ticks": 0,
+      "expected_issue": "P_INPUT_TOO_LARGE",
+      "expected_pointer": "",
+      "expected_run_status": "VALIDATION_REJECTED",
+      "expected_stage": "RAW",
+      "input_method": "raw: 2097153 bytes",
+      "notes": "Size rejected before UTF-8 decode",
+      "test_id": "P212-T01"
+    },
+    {
+      "expected_base_error_code": null,
+      "expected_core_ticks": 0,
+      "expected_issue": "P_UTF8_INVALID",
+      "expected_pointer": "",
+      "expected_run_status": "VALIDATION_REJECTED",
+      "expected_stage": "RAW",
+      "input_method": "raw: FF hex",
+      "notes": "Strict decoder rejects invalid continuation/lead byte",
+      "test_id": "P212-T02"
+    },
+    {
+      "expected_base_error_code": null,
+      "expected_core_ticks": 0,
+      "expected_issue": "P_UTF8_BOM",
+      "expected_pointer": "",
+      "expected_run_status": "VALIDATION_REJECTED",
+      "expected_stage": "RAW",
+      "input_method": "raw: EFBBBF + valid minimal scenario bytes",
+      "notes": "BOM rejected, no implicit strip",
+      "test_id": "P212-T03"
+    },
+    {
+      "expected_base_error_code": null,
+      "expected_core_ticks": 0,
+      "expected_issue": "P_JSON_SYNTAX",
+      "expected_pointer": "",
+      "expected_run_status": "VALIDATION_REJECTED",
+      "expected_stage": "LEX",
+      "input_method": "raw: {\"a\":}",
+      "notes": "Syntax invalid; no JSON object available",
+      "test_id": "P212-T04"
+    },
+    {
+      "expected_base_error_code": null,
+      "expected_core_ticks": 0,
+      "expected_issue": "P_JSON_DUPLICATE_KEY",
+      "expected_pointer": "/schema_version",
+      "expected_run_status": "VALIDATION_REJECTED",
+      "expected_stage": "LEX",
+      "input_method": "raw: {\"schema_version\":2,\"schema_version\":2}",
+      "notes": "Second token location, no last-wins",
+      "test_id": "P212-T05"
+    },
+    {
+      "expected_base_error_code": null,
+      "expected_core_ticks": 0,
+      "expected_issue": "P_JSON_DEPTH",
+      "expected_pointer": "",
+      "expected_run_status": "VALIDATION_REJECTED",
+      "expected_stage": "LEX",
+      "input_method": "raw: valid JSON with nesting 17",
+      "notes": "Depth > 16",
+      "test_id": "P212-T06"
+    },
+    {
+      "expected_base_error_code": null,
+      "expected_core_ticks": 0,
+      "expected_issue": "P_JSON_SURROGATE",
+      "expected_pointer": "",
+      "expected_run_status": "VALIDATION_REJECTED",
+      "expected_stage": "LEX",
+      "input_method": "raw: {\"scenario_id\":\"\\uD800\"} plus rest of minimal fields",
+      "notes": "Unpaired Unicode surrogate escape",
+      "test_id": "P212-T07"
+    },
+    {
+      "expected_base_error_code": null,
+      "expected_core_ticks": 0,
+      "expected_issue": "P_JSON_NONFINITE",
+      "expected_pointer": "",
+      "expected_run_status": "VALIDATION_REJECTED",
+      "expected_stage": "LEX",
+      "input_method": "raw: NaN token in flap_demand",
+      "notes": "NaN rejected even in permissive parsers",
+      "test_id": "P212-T08"
+    },
+    {
+      "expected_base_error_code": null,
+      "expected_core_ticks": 0,
+      "expected_issue": "P_SCHEMA_REQUIRED",
+      "expected_pointer": "/duration_us",
+      "expected_run_status": "VALIDATION_REJECTED",
+      "expected_stage": "SCHEMA",
+      "input_method": "mutation: remove duration_us from minimal",
+      "notes": "Missing required property",
+      "test_id": "P212-T09"
+    },
+    {
+      "expected_base_error_code": null,
+      "expected_core_ticks": 0,
+      "expected_issue": "P_SCHEMA_UNKNOWN_FIELD",
+      "expected_pointer": "/approved",
+      "expected_run_status": "VALIDATION_REJECTED",
+      "expected_stage": "SCHEMA",
+      "input_method": "mutation: add approved=true root",
+      "notes": "Scenario cannot self approve",
+      "test_id": "P212-T10"
+    },
+    {
+      "expected_base_error_code": null,
+      "expected_core_ticks": 0,
+      "expected_issue": "P_WIRE_VERSION",
+      "expected_pointer": "/schema_version",
+      "expected_run_status": "VALIDATION_REJECTED",
+      "expected_stage": "SCHEMA",
+      "input_method": "mutation: schema_version=1",
+      "notes": "No v1 silent conversion",
+      "test_id": "P212-T11"
+    },
+    {
+      "expected_base_error_code": "E_CONTEXT_DENIED",
+      "expected_core_ticks": 0,
+      "expected_issue": "P_CONTEXT_DENIED",
+      "expected_pointer": "/context",
+      "expected_run_status": "VALIDATION_REJECTED",
+      "expected_stage": "SCHEMA",
+      "input_method": "mutation: context=FLIGHT_TEST_APPROVED",
+      "notes": "No physical context",
+      "test_id": "P212-T12"
+    },
+    {
+      "expected_base_error_code": "E_CONTEXT_DENIED",
+      "expected_core_ticks": 0,
+      "expected_issue": "P_PROVENANCE_DENIED",
+      "expected_pointer": "/provenance",
+      "expected_run_status": "VALIDATION_REJECTED",
+      "expected_stage": "SCHEMA",
+      "input_method": "mutation: provenance=REAL_RF",
+      "notes": "No physical provenance",
+      "test_id": "P212-T13"
+    },
+    {
+      "expected_base_error_code": null,
+      "expected_core_ticks": 0,
+      "expected_issue": "P_CONFIG_ID",
+      "expected_pointer": "/config_id",
+      "expected_run_status": "VALIDATION_REJECTED",
+      "expected_stage": "SCHEMA",
+      "input_method": "mutation: config_id=unapproved",
+      "notes": "Pinned candidate config id",
+      "test_id": "P212-T14"
+    },
+    {
+      "expected_base_error_code": null,
+      "expected_core_ticks": 0,
+      "expected_issue": "P_EVENT_TYPE",
+      "expected_pointer": "/events/0/type",
+      "expected_run_status": "VALIDATION_REJECTED",
+      "expected_stage": "SCHEMA",
+      "input_method": "mutation: events[0].type=SIM_MOTOR",
+      "notes": "Unknown event type, not generic union error",
+      "test_id": "P212-T15"
+    },
+    {
+      "expected_base_error_code": null,
+      "expected_core_ticks": 0,
+      "expected_issue": "P_DURATION_GRID",
+      "expected_pointer": "/duration_us",
+      "expected_run_status": "VALIDATION_REJECTED",
+      "expected_stage": "SCHEMA",
+      "input_method": "mutation: duration_us=5001",
+      "notes": "Step alignment required",
+      "test_id": "P212-T16"
+    },
+    {
+      "expected_base_error_code": "E_DUPLICATE_EVENT_ID",
+      "expected_core_ticks": 0,
+      "expected_issue": "P_EVENT_ID_DUPLICATE",
+      "expected_pointer": "/events/2/event_id",
+      "expected_run_status": "VALIDATION_REJECTED",
+      "expected_stage": "SEMANTIC",
+      "input_method": "mutation: duplicate event_id in valid nominal scenario",
+      "notes": "Second identical event ID; input schema still valid",
+      "test_id": "P212-T17"
+    },
+    {
+      "expected_base_error_code": null,
+      "expected_core_ticks": 0,
+      "expected_issue": "P_BOOT_SEQUENCE",
+      "expected_pointer": "/events/1",
+      "expected_run_status": "VALIDATION_REJECTED",
+      "expected_stage": "SEMANTIC",
+      "input_method": "mutation: add a second BOOT to valid nominal scenario at t5000",
+      "notes": "Illegal second BOOT; schema valid",
+      "test_id": "P212-T18"
+    },
+    {
+      "expected_base_error_code": null,
+      "expected_core_ticks": 0,
+      "expected_issue": "P_EVENT_TIMESTAMP_ORDER",
+      "expected_pointer": "/events/2/event_at_us",
+      "expected_run_status": "VALIDATION_REJECTED",
+      "expected_stage": "SEMANTIC",
+      "input_method": "mutation: swap rf0 and low1 events in nominal scenario",
+      "notes": "Timestamp decreases",
+      "test_id": "P212-T19"
+    },
+    {
+      "expected_base_error_code": null,
+      "expected_core_ticks": 0,
+      "expected_issue": "P_EVENT_TIMESTAMP_RANGE",
+      "expected_pointer": "/events/7/event_at_us",
+      "expected_run_status": "VALIDATION_REJECTED",
+      "expected_stage": "SEMANTIC",
+      "input_method": "mutation: event_at_us=160000 in 155000 duration nominal (last event index 7)",
+      "notes": "Time beyond duration after schema success",
+      "test_id": "P212-T20"
+    },
+    {
+      "expected_base_error_code": null,
+      "expected_core_ticks": 0,
+      "expected_issue": "P_IDENTIFIER_BYTES",
+      "expected_pointer": "/scenario_id",
+      "expected_run_status": "VALIDATION_REJECTED",
+      "expected_stage": "SEMANTIC",
+      "input_method": "mutation: scenario_id contains 129 U+00E9 codepoints (258 UTF-8 bytes)",
+      "notes": "Byte check independent of JSON Schema codepoint length",
+      "test_id": "P212-T21"
+    },
+    {
+      "expected_base_error_code": null,
+      "expected_core_ticks": 0,
+      "expected_issue": "P_IDENTIFIER_CONTROL",
+      "expected_pointer": "/scenario_id",
+      "expected_run_status": "VALIDATION_REJECTED",
+      "expected_stage": "SEMANTIC",
+      "input_method": "mutation: scenario_id contains literal U+0085",
+      "notes": "Reject C1 identifier char",
+      "test_id": "P212-T22"
+    },
+    {
+      "expected_base_error_code": null,
+      "expected_core_ticks": 0,
+      "expected_issue": "P_DECIMAL_PRECISION",
+      "expected_pointer": "/events/2/payload/flap_demand",
+      "expected_run_status": "VALIDATION_REJECTED",
+      "expected_stage": "SEMANTIC",
+      "input_method": "mutation: valid control flap_demand=0.0000005",
+      "notes": "Exact decimal micro requires integer",
+      "test_id": "P212-T23"
+    },
+    {
+      "expected_base_error_code": null,
+      "expected_core_ticks": 0,
+      "expected_issue": "P_EVENT_COUNT",
+      "expected_pointer": "/events",
+      "expected_run_status": "VALIDATION_REJECTED",
+      "expected_stage": "SCHEMA",
+      "input_method": "mutation: 20001 events with unique IDs and legal times",
+      "notes": "Event count above policy limit",
+      "test_id": "P212-T24"
+    },
+    {
+      "expected_base_error_code": null,
+      "expected_core_ticks": 0,
+      "expected_issue": "P_SCHEMA_TYPE",
+      "expected_pointer": "/events/0/event_at_us",
+      "expected_run_status": "VALIDATION_REJECTED",
+      "expected_stage": "SCHEMA",
+      "input_method": "mutation: event_at_us=true",
+      "notes": "JSON boolean never integer",
+      "test_id": "P212-T25"
+    },
+    {
+      "expected_base_error_code": null,
+      "expected_core_ticks": null,
+      "expected_issue": null,
+      "expected_pointer": null,
+      "expected_run_status": "ACCEPTED_PREFLIGHT",
+      "expected_stage": "ACCEPT",
+      "input_method": "mutation: invalid_uart event as in P210 fixture",
+      "notes": "In-band UART INVALID accepted wire, runtime E_FRAME_INVALID; no parser rejection",
+      "test_id": "P212-T26"
+    }
+  ]
+}

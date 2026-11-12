@@ -1,0 +1,167 @@
+{
+  "$id": "urn:bionicbutterfly:g0a1:preflight-diagnostic-v1-candidate",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "primary_issue": {
+            "properties": {
+              "code": {
+                "const": "P_EVENT_ID_DUPLICATE"
+              }
+            },
+            "required": [
+              "code"
+            ]
+          }
+        },
+        "required": [
+          "primary_issue"
+        ]
+      },
+      "then": {
+        "properties": {
+          "primary_issue": {
+            "properties": {
+              "frozen_base_error_code": {
+                "const": "E_DUPLICATE_EVENT_ID"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "primary_issue": {
+            "properties": {
+              "code": {
+                "enum": [
+                  "P_CONTEXT_DENIED",
+                  "P_PROVENANCE_DENIED"
+                ]
+              }
+            },
+            "required": [
+              "code"
+            ]
+          }
+        },
+        "required": [
+          "primary_issue"
+        ]
+      },
+      "then": {
+        "properties": {
+          "primary_issue": {
+            "properties": {
+              "frozen_base_error_code": {
+                "const": "E_CONTEXT_DENIED"
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "properties": {
+    "diagnostic_format_version": {
+      "const": 1
+    },
+    "evaluated_tick_count": {
+      "const": 0
+    },
+    "evidence_complete": {
+      "const": false
+    },
+    "primary_issue": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "enum": [
+            "P_INPUT_TOO_LARGE",
+            "P_UTF8_INVALID",
+            "P_UTF8_BOM",
+            "P_JSON_SYNTAX",
+            "P_JSON_DUPLICATE_KEY",
+            "P_JSON_DEPTH",
+            "P_JSON_SURROGATE",
+            "P_JSON_NONFINITE",
+            "P_SCHEMA_REQUIRED",
+            "P_SCHEMA_UNKNOWN_FIELD",
+            "P_SCHEMA_TYPE",
+            "P_SCHEMA_ENUM",
+            "P_SCHEMA_RANGE",
+            "P_WIRE_VERSION",
+            "P_CONTEXT_DENIED",
+            "P_PROVENANCE_DENIED",
+            "P_CONFIG_ID",
+            "P_EVENT_TYPE",
+            "P_DURATION_GRID",
+            "P_EVENT_ID_DUPLICATE",
+            "P_BOOT_SEQUENCE",
+            "P_EVENT_TIMESTAMP_ORDER",
+            "P_EVENT_TIMESTAMP_RANGE",
+            "P_IDENTIFIER_BYTES",
+            "P_IDENTIFIER_CONTROL",
+            "P_DECIMAL_PRECISION",
+            "P_EVENT_COUNT"
+          ]
+        },
+        "frozen_base_error_code": {
+          "enum": [
+            null,
+            "E_CONTEXT_DENIED",
+            "E_DUPLICATE_EVENT_ID"
+          ]
+        },
+        "json_pointer": {
+          "pattern": "^(?:|/.*)$",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "stage": {
+          "enum": [
+            "RAW",
+            "LEX",
+            "SCHEMA",
+            "SEMANTIC"
+          ]
+        }
+      },
+      "required": [
+        "code",
+        "stage",
+        "json_pointer",
+        "frozen_base_error_code"
+      ],
+      "type": "object"
+    },
+    "raw_input_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "run_status": {
+      "const": "VALIDATION_REJECTED"
+    },
+    "scope": {
+      "const": "PC_SIM_ONLY"
+    }
+  },
+  "required": [
+    "diagnostic_format_version",
+    "scope",
+    "run_status",
+    "evaluated_tick_count",
+    "evidence_complete",
+    "raw_input_sha256",
+    "primary_issue"
+  ],
+  "title": "External preflight diagnostic sidecar; never injected into R1.1 trace or report",
+  "type": "object"
+}

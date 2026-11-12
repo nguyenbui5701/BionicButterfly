@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "changed_preexisting_design_files": 0,
+    "diagnostic_expected_samples_validated": 2,
+    "draft2020_12_schema_syntax_checked": 3,
+    "frozen_positive_fixture_schema_valid": 2,
+    "issue_registry_count": 27,
+    "planned_oracles_not_run": 26,
+    "source_blobs_matched_GitHub_metadata": 17,
+    "v2_schema_valid_duplicate_event_id_fixture": true
+  },
+  "execution_scope": "STATIC_CONTRACT_QA_ONLY_NOT_SIMULATOR_G1",
+  "generated_date_local": "2026-11-13",
+  "limitations": [
+    "not a parser implementation",
+    "not actual E2E simulator test",
+    "no device I/O or flight test",
+    "new sidecar awaits separate owner approval"
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "$id": "urn:bionicbutterfly:g0a1:preflight-issue-registry-v1-candidate",
+  "diagnostic_format_version": 1,
+  "frozen_contracts_unchanged": [
+    "R1.1 scenario wire v2",
+    "R1.1 external report v2",
+    "R1.1 trace record schema",
+    "M0",
+    "R1 safety FSM and numeric policy"
+  ],
+  "issue_namespace": "P_* separate from frozen E_*/R_*; never emitted as trace reason_codes",
+  "issues": [
+    {
+      "code": "P_INPUT_TOO_LARGE",
+      "frozen_base_error_code": null,
+      "pointer_class": "root",
+      "stage": "RAW",
+      "trigger": "input exceeds 2097152 bytes before decoding"
+    },
+    {
+      "code": "P_UTF8_INVALID",
+      "frozen_base_error_code": null,
+      "pointer_class": "root",
+      "stage": "RAW",
+      "trigger": "raw bytes cannot decode as strict UTF-8"
+    },
+    {
+      "code": "P_UTF8_BOM",
+      "frozen_base_error_code": null,
+      "pointer_class": "root",
+      "stage": "RAW",
+      "trigger": "leading U+FEFF BOM in otherwise UTF-8 input"
+    },
+    {
+      "code": "P_JSON_SYNTAX",
+      "frozen_base_error_code": null,
+      "pointer_class": "root",
+      "stage": "LEX",
+      "trigger": "invalid JSON token/syntax including comments or trailing commas"
+    },
+    {
+      "code": "P_JSON_DUPLICATE_KEY",
+      "frozen_base_error_code": null,
+      "pointer_class": "duplicate-member",
+      "stage": "LEX",
+      "trigger": "duplicate object member at any depth"
+    },
+    {
+      "code": "P_JSON_DEPTH",
+      "frozen_base_error_code": null,
+      "pointer_class": "root",
+      "stage": "LEX",
+      "trigger": "nesting depth exceeds 16"
+    },
+    {
+      "code": "P_JSON_SURROGATE",
+      "frozen_base_error_code": null,
+      "pointer_class": "root",
+      "stage": "LEX",
+      "trigger": "unpaired UTF-16 surrogate escape or scalar"
+    },
+    {
+      "code": "P_JSON_NONFINITE",
+      "frozen_base_error_code": null,
+      "pointer_class": "root",
+      "stage": "LEX",
+      "trigger": "NaN/Infinity lexical extension"
+    },
+    {
+      "code": "P_SCHEMA_REQUIRED",
+      "frozen_base_error_code": null,
+      "pointer_class": "absent-member",
+      "stage": "SCHEMA",
+      "trigger": "required property missing"
+    },
+    {
+      "code": "P_SCHEMA_UNKNOWN_FIELD",
+      "frozen_base_error_code": null,
+      "pointer_class": "unknown-member",
+      "stage": "SCHEMA",
+      "trigger": "additional property not in closed schema"
+    },
+    {
+      "code": "P_SCHEMA_TYPE",
+      "frozen_base_error_code": null,
+      "pointer_class": "member",
+      "stage": "SCHEMA",
+      "trigger": "value has wrong JSON type including boolean for integer"
+    },
+    {
+      "code": "P_SCHEMA_ENUM",
+      "frozen_base_error_code": null,
+      "pointer_class": "member",
+      "stage": "SCHEMA",
+      "trigger": "schema enum/const/pattern violation not otherwise specialized"
+    },
+    {
+      "code": "P_SCHEMA_RANGE",
+      "frozen_base_error_code": null,
+      "pointer_class": "member",
+      "stage": "SCHEMA",
+      "trigger": "schema minimum/maximum/array/string constraint violation"
+    },
+    {
+      "code": "P_WIRE_VERSION",
+      "frozen_base_error_code": null,
+      "pointer_class": "/schema_version",
+      "stage": "SCHEMA",
+      "trigger": "schema_version other than 2"
+    },
+    {
+      "code": "P_CONTEXT_DENIED",
+      "frozen_base_error_code": "E_CONTEXT_DENIED",
+      "pointer_class": "/context",
+      "stage": "SCHEMA",
+      "trigger": "context is not PC_SIM"
+    },
+    {
+      "code": "P_PROVENANCE_DENIED",
+      "frozen_base_error_code": "E_CONTEXT_DENIED",
+      "pointer_class": "/provenance",
+      "stage": "SCHEMA",
+      "trigger": "provenance not SIM_ONLY"
+    },
+    {
+      "code": "P_CONFIG_ID",
+      "frozen_base_error_code": null,
+      "pointer_class": "/config_id",
+      "stage": "SCHEMA",
+      "trigger": "config_id not sim-only-c0-v1"
+    },
+    {
+      "code": "P_EVENT_TYPE",
+      "frozen_base_error_code": null,
+      "pointer_class": "event-type",
+      "stage": "SCHEMA",
+      "trigger": "unknown tagged event type"
+    },
+    {
+      "code": "P_DURATION_GRID",
+      "frozen_base_error_code": null,
+      "pointer_class": "/duration_us",
+      "stage": "SCHEMA",
+      "trigger": "duration_us not positive step-aligned integer in range"
+    },
+    {
+      "code": "P_EVENT_ID_DUPLICATE",
+      "frozen_base_error_code": "E_DUPLICATE_EVENT_ID",
+      "pointer_class": "event-id",
+      "stage": "SEMANTIC",
+      "trigger": "duplicate event_id after schema succeeds"
+    },
+    {
+      "code": "P_BOOT_SEQUENCE",
+      "frozen_base_error_code": null,
+      "pointer_class": "event",
+      "stage": "SEMANTIC",
+      "trigger": "BOOT missing/extra/not first/not T0 or other event at T0"
+    },
+    {
+      "code": "P_EVENT_TIMESTAMP_ORDER",
+      "frozen_base_error_code": null,
+      "pointer_class": "event-time",
+      "stage": "SEMANTIC",
+      "trigger": "event_at_us decreases in source array"
+    },
+    {
+      "code": "P_EVENT_TIMESTAMP_RANGE",
+      "frozen_base_error_code": null,
+      "pointer_class": "event-time",
+      "stage": "SEMANTIC",
+      "trigger": "event_at_us exceeds scenario duration_us"
+    },
+    {
+      "code": "P_IDENTIFIER_BYTES",
+      "frozen_base_error_code": null,
+      "pointer_class": "identifier",
+      "stage": "SEMANTIC",
+      "trigger": "scenario_id >256 or event_id >64 UTF-8 bytes"
+    },
+    {
+      "code": "P_IDENTIFIER_CONTROL",
+      "frozen_base_error_code": null,
+      "pointer_class": "identifier",
+      "stage": "SEMANTIC",
+      "trigger": "identifier contains prohibited C0/C1 controls"
+    },
+    {
+      "code": "P_DECIMAL_PRECISION",
+      "frozen_base_error_code": null,
+      "pointer_class": "pilot-value",
+      "stage": "SEMANTIC",
+      "trigger": "pilot decimal cannot be exactly mapped to micro units"
+    },
+    {
+      "code": "P_EVENT_COUNT",
+      "frozen_base_error_code": null,
+      "pointer_class": "/events",
+      "stage": "SCHEMA",
+      "trigger": "events array has more than approved 20000 (frozen schema maxItems)"
+    }
+  ],
+  "scope": "PC_SIM_ONLY",
+  "selection_rule": {
+    "lexical_rule": "first offending token by raw UTF-8 byte offset; tie: JSON syntax, duplicate key, depth, surrogate, nonfinite",
+    "limit": "exactly one primary issue per rejected input; secondary issues not part of v1",
+    "raw_order": [
+      "P_INPUT_TOO_LARGE",
+      "P_UTF8_INVALID",
+      "P_UTF8_BOM"
+    ],
+    "schema_rule": "first path from canonical schema traversal; special-case tag/version/context and event maxItems before generic enum/range; deterministic type precedence",
+    "semantic_order": [
+      "P_EVENT_ID_DUPLICATE",
+      "P_BOOT_SEQUENCE",
+      "P_EVENT_TIMESTAMP_ORDER",
+      "P_EVENT_TIMESTAMP_RANGE",
+      "P_IDENTIFIER_BYTES",
+      "P_IDENTIFIER_CONTROL",
+      "P_DECIMAL_PRECISION"
+    ],
+    "stages": [
+      "RAW",
+      "LEX",
+      "SCHEMA",
+      "SEMANTIC"
+    ]
+  },
+  "status": "DESIGN_CANDIDATE_OWNER_REVIEW_REQUIRED"
+}

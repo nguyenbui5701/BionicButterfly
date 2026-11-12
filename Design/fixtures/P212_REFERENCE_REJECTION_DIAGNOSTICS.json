@@ -1,0 +1,40 @@
+{
+  "cases": [
+    {
+      "expected_diagnostic": {
+        "diagnostic_format_version": 1,
+        "evaluated_tick_count": 0,
+        "evidence_complete": false,
+        "primary_issue": {
+          "code": "P_JSON_DUPLICATE_KEY",
+          "frozen_base_error_code": null,
+          "json_pointer": "/schema_version",
+          "stage": "LEX"
+        },
+        "raw_input_sha256": "fca71db66a4e3f6490d85ff823018cfc250f6509798a78ed6ecde879b9350129",
+        "run_status": "VALIDATION_REJECTED",
+        "scope": "PC_SIM_ONLY"
+      },
+      "fixture": "Design/fixtures/P212_INVALID_DUPLICATE_KEY_RAW.json"
+    },
+    {
+      "expected_diagnostic": {
+        "diagnostic_format_version": 1,
+        "evaluated_tick_count": 0,
+        "evidence_complete": false,
+        "primary_issue": {
+          "code": "P_EVENT_ID_DUPLICATE",
+          "frozen_base_error_code": "E_DUPLICATE_EVENT_ID",
+          "json_pointer": "/events/2/event_id",
+          "stage": "SEMANTIC"
+        },
+        "raw_input_sha256": "5986dc2103154db4dfb3e5696565d4121c05a0f0eb293c61967c2b68021d905e",
+        "run_status": "VALIDATION_REJECTED",
+        "scope": "PC_SIM_ONLY"
+      },
+      "fixture": "Design/fixtures/P212_INVALID_DUPLICATE_EVENT_ID_WIRE_V2.json"
+    }
+  ],
+  "schema_version": 1,
+  "status": "AUTHOR_EXPECTED_OUTPUT_NOT_RUNTIME_RESULTS"
+}

@@ -1,0 +1,110 @@
+{
+  "add_only": true,
+  "artifacts": [
+    {
+      "bytes": 2572,
+      "git_blob_sha1": "858368f3f17fe73c6b23f5084451a31353df196e",
+      "path": "Design/149_PHASE212_GITHUB_BASELINE_AND_DESIGN_BOUNDARY.md",
+      "sha256": "4a71fc92caeff352008b8952452f338d3f81062c9a8eca673c6b596e8a5dc57d"
+    },
+    {
+      "bytes": 3484,
+      "git_blob_sha1": "b96beba505a4db94c16e1c0f2b0f8ec65fd740f9",
+      "path": "Design/150_G0A1_PARSER_DIAGNOSTIC_SIDECAR_CONTRACT.md",
+      "sha256": "e4000bd72d0e0f64f3b0317c64b2c9f562023693007d86885ba2f19970246c36"
+    },
+    {
+      "bytes": 4168,
+      "git_blob_sha1": "d1ba14b4d8cf31926353fb72fb20c29c148a9a40",
+      "path": "Design/151_G0A1_PREFLIGHT_PRECEDENCE_POINTER_AND_ERROR_REGISTRY.md",
+      "sha256": "46fc9e46384f0cebca3deed4c02c21b0268bc384d4f00c96c18ed1459fd15738"
+    },
+    {
+      "bytes": 3161,
+      "git_blob_sha1": "c55abd8dfa5a30155b6dfcbdd79685882c730607",
+      "path": "Design/152_G0A1_DIAGNOSTIC_COMPATIBILITY_AND_CHANGE_IMPACT.md",
+      "sha256": "eac0e81ea90f74ea3341cdc30d975290f106fb3350b89577ccd5c6886be5e5f6"
+    },
+    {
+      "bytes": 4121,
+      "git_blob_sha1": "a299b4a9d2948eeefdd7a1027fb003a8c86aad2e",
+      "path": "Design/153_G0A1_FIRST_DEVELOPER_HANDOFF_READINESS_NOT_TASK.md",
+      "sha256": "b02a9589bf91340c4f4ab2307044b2ee704a5606bf8f6918fd7f73ece129afc1"
+    },
+    {
+      "bytes": 3072,
+      "git_blob_sha1": "3a143185c59879faa09d2a75f339a8112190d70c",
+      "path": "Design/154_PHASE212_PARSER_DIAGNOSTIC_ORACLE_MATRIX.md",
+      "sha256": "78f767cb8ec050f48809c776e5e91c6c846d09f369b638a2a0142475409c7dc8"
+    },
+    {
+      "bytes": 2762,
+      "git_blob_sha1": "1c5ad878210ad8cd2661da74efc2e615f35dd9dc",
+      "path": "Design/155_PHASE212_SA_REVIEW_VERDICT_AND_NEXT_HANDOFF.md",
+      "sha256": "fec0e9e7e5fbee0a8db28447856986c6c2f81969f3a79340164de721ba97fab1"
+    },
+    {
+      "bytes": 460,
+      "git_blob_sha1": "b48f782f39b49b8cbfd22d0f6210716fc9358712",
+      "path": "Design/assets/151_PREFLIGHT_DECISION_FLOW.mmd",
+      "sha256": "6163228f254df346f0a3ebe497939729c89fb7297fa01cad7dc192d1e532a3fa"
+    },
+    {
+      "bytes": 3785,
+      "git_blob_sha1": "d41091455e112cbcede1c7c0ce391c91827bfb41",
+      "path": "Design/contracts/G0A1_PREFLIGHT_DIAGNOSTIC_V1_CANDIDATE.schema.json",
+      "sha256": "c1aaea5340b07994249273e0b272197d64edd8f92af17a00fcc0be8477914974"
+    },
+    {
+      "bytes": 6947,
+      "git_blob_sha1": "ed7cb5305bf40996a006ac853d7b1990de4eaa70",
+      "path": "Design/contracts/G0A1_PREFLIGHT_ISSUE_REGISTRY_V1_CANDIDATE.json",
+      "sha256": "ddba76efc89aa1f677de78a5ab0b6f3e4c4d2fcb02bcb154deb2c3ca7abfcd4a"
+    },
+    {
+      "bytes": 4699,
+      "git_blob_sha1": "4d779dcfea40af293d8427ad3732eeea7a02106f",
+      "path": "Design/contracts/P212_SOURCE_PIN_AND_NO_OVERWRITE.json",
+      "sha256": "842fc4b1f50927e3985cdbae1261ae70411e2cfce6e2f6f31a00f672cac2e299"
+    },
+    {
+      "bytes": 661,
+      "git_blob_sha1": "62f47104c61a1649a0ee92facfdc21ec4f1c2008",
+      "path": "Design/contracts/P212_STATIC_CONTRACT_QA_ATTESTATION.json",
+      "sha256": "f313b74656865451835c264cf49d158e2820ac315d69b9975fb3d73e1dd8d9f5"
+    },
+    {
+      "bytes": 2197,
+      "git_blob_sha1": "4d819db66f4bfab28df23672e24d50dd1697a2b0",
+      "path": "Design/fixtures/P212_INVALID_DUPLICATE_EVENT_ID_WIRE_V2.json",
+      "sha256": "5986dc2103154db4dfb3e5696565d4121c05a0f0eb293c61967c2b68021d905e"
+    },
+    {
+      "bytes": 57,
+      "git_blob_sha1": "2b6a1174c3a0aad39745b44b49a999c736d137a9",
+      "path": "Design/fixtures/P212_INVALID_DUPLICATE_KEY_RAW.json",
+      "sha256": "fca71db66a4e3f6490d85ff823018cfc250f6509798a78ed6ecde879b9350129"
+    },
+    {
+      "bytes": 1293,
+      "git_blob_sha1": "93059f759ac681c5280942d5782ff35bbab9b6b3",
+      "path": "Design/fixtures/P212_POSITIVE_INBAND_UART_INVALID_V2.json",
+      "sha256": "f4bf810a000198016ec45dad8eb74dcf0943b3763bc56fba24993ea62c4e30bf"
+    },
+    {
+      "bytes": 10575,
+      "git_blob_sha1": "41b5536d37042cb68e71f0c37c40e0b08272617f",
+      "path": "Design/fixtures/P212_PREFLIGHT_NEGATIVE_ORACLE_INDEX.json",
+      "sha256": "acc7f977b2ae69a9251f65d624dd829a1a69d1d4deff581a99dc31d346911651"
+    },
+    {
+      "bytes": 1334,
+      "git_blob_sha1": "6ea6f7ad15558636181e798048c0398bf670cffa",
+      "path": "Design/fixtures/P212_REFERENCE_REJECTION_DIAGNOSTICS.json",
+      "sha256": "fc22a8f4e705a7fdae85262a848065ead67b25da28252aeef872c87dc58f819f"
+    }
+  ],
+  "date": "2026-11-13",
+  "format": "BionicButterfly P212 SHA-256 manifest v1",
+  "source_head": "443d388f29e3a41774d18c7f717783680a47ea3f"
+}

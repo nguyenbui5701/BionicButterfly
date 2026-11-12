@@ -1,0 +1,112 @@
+{
+  "branch": "main",
+  "frozen_r11_contract_changes": 0,
+  "phase_212_update_policy": "ADD_ONLY_NO_EXISTING_FILES_CHANGED",
+  "repository": "nguyenbui5701/BionicButterfly",
+  "source_files": [
+    {
+      "bytes": 4207,
+      "git_blob_sha1": "f4c7d0bd857616fcdbbd978176ed8c9065e98d21",
+      "path": "Design/117_G0A1_INPUT_RESULT_ERRORS_R1.md",
+      "sha256": "31b5a50f57742639154681444bfc8bda30007a6f490134380db409f847e3efb7"
+    },
+    {
+      "bytes": 6402,
+      "git_blob_sha1": "2e154c314fbfdcfed8bc6daa00b72cdf349a6ccb",
+      "path": "Design/132_R11_SCENARIO_WIRE_V2_CLOSED_EVENT_SCHEMA_CANDIDATE.md",
+      "sha256": "8ad452e994f6e6f718ed89d15ec205c2ed3645ee49194d6e5692f570c163945f"
+    },
+    {
+      "bytes": 3819,
+      "git_blob_sha1": "8ea4f2f556d83d6132df86751c9ffd29b931575d",
+      "path": "Design/133_R11_VIRTUAL_MIXER_M0_EXACT_ARITHMETIC_CANDIDATE.md",
+      "sha256": "f801398baf30f8caf4c1440c8aef8d143ea2e392dd0b02af9406af4f740e18d0"
+    },
+    {
+      "bytes": 5649,
+      "git_blob_sha1": "c085995e4fc82095ab0f693426a9d3632db9b14b",
+      "path": "Design/134_R11_TRACE_RECORDS_AND_REPLAY_BYTES_CANDIDATE.md",
+      "sha256": "842f40c6711cf11a2946e48ae603a57f3f9ff7bd14f59aad56431443680915c6"
+    },
+    {
+      "bytes": 4277,
+      "git_blob_sha1": "4e9ea3c60a6d4db59e5fc475db99f58f143ea5ba",
+      "path": "Design/136_R11_INTERFACE_TEST_ORACLES_AND_STATIC_CHECKS.md",
+      "sha256": "7c81d4fd3cabfcac8a6ea377255ce0649ff4e81b87d4cfb388086ea4b4df83ff"
+    },
+    {
+      "bytes": 2917,
+      "git_blob_sha1": "23072451a53d90cb1c59cdbb26cc800662939bfc",
+      "path": "Design/140_PHASE211_REPO_VERIFICATION_AND_OWNER_APPROVAL.md",
+      "sha256": "d28fa9ef5086d2f869469b01284a06353e0f7d501d4ba899a0a1d4312cf43bed"
+    },
+    {
+      "bytes": 4017,
+      "git_blob_sha1": "b21fcb9ed83775054cf2bde0b6533f5b71cb6eda",
+      "path": "Design/141_G0A1_R11_AUTHORITATIVE_CONTRACT_HIERARCHY.md",
+      "sha256": "5747a0f5e6e89890a5a5c1c341455a376afa03ac4ae4757cc3b044798fbc323e"
+    },
+    {
+      "bytes": 3821,
+      "git_blob_sha1": "d45f7081720ad85caabddd16b4e5d602df6eb12d",
+      "path": "Design/142_R11_INPUT_EVENT_AND_PARSER_FREEZE_REVIEW.md",
+      "sha256": "a011895f174dfbda74b3a6e34581057f01a11dcb8ab19a898c63c603a842f69d"
+    },
+    {
+      "bytes": 3258,
+      "git_blob_sha1": "8c9e1d38637a7c3fdd54f8d176b67512a7bb705c",
+      "path": "Design/145_R11_REMAINING_RISKS_AND_SPEC_CHANGE_CONTROL.md",
+      "sha256": "0841a63a4d7c56c89b005aa330ebf08d425a74fa892bc3da8b976bea84ff67f4"
+    },
+    {
+      "bytes": 3245,
+      "git_blob_sha1": "3ff6bdbc32b7563ebb0e92b69b8ad491fb09b048",
+      "path": "Design/146_R11_DEVELOPER_HANDOFF_READINESS_AND_READING_SET.md",
+      "sha256": "f470f32a19d7318d36ae54f54817032cbea4bb4934c436944735b9fb9db2cadd"
+    },
+    {
+      "bytes": 3402,
+      "git_blob_sha1": "e2cfea6a0c4fdbc9f9c5c4c66683718574933328",
+      "path": "Design/147_PHASE211_SA_G0A1_DESIGN_FREEZE_VERDICT.md",
+      "sha256": "06e63daafe0878ffe3db15767a9986c6118a5616c8aff6e60e61e9e2f7aa7c81"
+    },
+    {
+      "bytes": 2551,
+      "git_blob_sha1": "85b6f9f6544914cce9dc421eec2b672a14acc7c0",
+      "path": "Design/148_PHASE211_FOLLOW_ON_SA_WORKPLAN_AND_NO_GO_BOUNDARIES.md",
+      "sha256": "578512775a0808ef95343ee422ab304323d524ed1b9b168a2cf28b73bec4ce32"
+    },
+    {
+      "bytes": 8219,
+      "git_blob_sha1": "1d10c76e34be70880a65252d89a6bca89839fea9",
+      "path": "Design/contracts/G0A1_SCENARIO_WIRE_V2_CANDIDATE.schema.json",
+      "sha256": "621dddeba4e5e54cc833430b3019833cb7d06a341c0b1e3d0d31dae83e1839f4"
+    },
+    {
+      "bytes": 3793,
+      "git_blob_sha1": "c7da5879ef976d7e11186d484ea1e66453229c9a",
+      "path": "Design/contracts/G0A1_EXTERNAL_REPORT_R11_CANDIDATE.schema.json",
+      "sha256": "73f18aac734bcbff22e822dd3e2c51ab2a602ffada683b99d2379936d4e9ac6e"
+    },
+    {
+      "bytes": 5032,
+      "git_blob_sha1": "9ab10e79a560faeb0ad5112bba39543eff906dee",
+      "path": "Design/contracts/G0A1_R11_FROZEN_DESIGN_BASELINE_PHASE211.json",
+      "sha256": "277614a1f7d64da8352cf89833dba163461b3b158c44ec361b6de645ff49a706"
+    },
+    {
+      "bytes": 346,
+      "git_blob_sha1": "7990a0e2c4a95425a61c27c9024a8a0783520663",
+      "path": "Design/fixtures/P210_MINIMAL_WIRE_V2.json",
+      "sha256": "d4b6098748a918d6073deafe016d04f0e229de557ba64786c9989be9d8c8e208"
+    },
+    {
+      "bytes": 1293,
+      "git_blob_sha1": "93059f759ac681c5280942d5782ff35bbab9b6b3",
+      "path": "Design/fixtures/P210_INVALID_UART_WIRE_V2.json",
+      "sha256": "f4bf810a000198016ec45dad8eb74dcf0943b3763bc56fba24993ea62c4e30bf"
+    }
+  ],
+  "source_of_truth": "Design at exact commit",
+  "verified_head": "443d388f29e3a41774d18c7f717783680a47ea3f"
+}
