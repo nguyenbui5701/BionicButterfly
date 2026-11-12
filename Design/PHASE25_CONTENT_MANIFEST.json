@@ -1,0 +1,52 @@
+{
+  "phase": "2.5",
+  "created_at_utc": "2026-11-12T16:46:17.218628+00:00",
+  "verified_github_main_commit": "16d5054ea951b2e52e90c7f81ea2767a7ba82b92",
+  "remote_tree_scope": "Design/ through Phase 2.3 at time checked",
+  "phase24_status": "local candidate, not committed on verified main",
+  "files": [
+    {
+      "path": "Design/91_PHASE25_VERIFIED_BASELINE_AND_SA_REVIEW_SCOPE.md",
+      "sha256": "1a252471221eb15faf7e4769eefc30aa6abe04c9e9b2ac46d2270a922c68ba0b",
+      "bytes": 3308
+    },
+    {
+      "path": "Design/92_NORMATIVE_DOCUMENT_HIERARCHY_AND_CHANGE_MAP.md",
+      "sha256": "089ba0dcf62774590df664dfa75f0c961f5fea12fe8f0d8a95772229b5ba7e8a",
+      "bytes": 3588
+    },
+    {
+      "path": "Design/93_G0A1_CONTRACT_DEFECT_AND_CLOSURE_REGISTER.md",
+      "sha256": "081c2430211eb6152c118ced1d0da97208eedc2b79764f6627ecab3d36d23ee7",
+      "bytes": 4169
+    },
+    {
+      "path": "Design/94_NORMATIVE_REPLAY_TERMINAL_AND_TRACE_ATOMICITY_PATCH.md",
+      "sha256": "24a0470cd12bfff76a1a41c543a5d4088172b905e93d1b34905f6216a1331431",
+      "bytes": 4217
+    },
+    {
+      "path": "Design/95_STATE_MACHINE_EDGE_AND_NO_EVENT_ORACLES.md",
+      "sha256": "d08241fed2acfc6ab1da9ed1c51c527d50fe4b86c43a05186264d7cd32e43f54",
+      "bytes": 4913
+    },
+    {
+      "path": "Design/96_G0A1_DESIGN_COVERAGE_AND_FREEZE_CRITERIA.md",
+      "sha256": "0fc6f2d3cb57e2d0362e5789229a49277301f177a1308ae4debf12c377b44521",
+      "bytes": 3032
+    },
+    {
+      "path": "Design/97_POTENTIAL_DEVELOPER_HANDOFF_BOUNDARIES_NOT_A_TASK.md",
+      "sha256": "00b693c6cebafbee9971c692f1080d559b8f8196287ba2f3fdf1f142e04f2d36",
+      "bytes": 2432
+    },
+    {
+      "path": "Design/98_PHASE25_FINAL_SA_REVIEW_AND_OWNER_DECISION_PACKET.md",
+      "sha256": "603a4b5aea31936fef8d18d0e3f8e1bd33ac956a5d93579ce08cba90fea1326d",
+      "bytes": 4232
+    }
+  ],
+  "physical_tests_run": false,
+  "software_tests_run": false,
+  "owner_approval": false
+}
