@@ -1,7 +1,7 @@
 # BionicButterfly — V1 System Architecture Proposal
 
 - **Document ID:** DESIGN-P1-003
-- **Version:** 0.1
+- **Version:** 0.3
 - **Date:** 2026-11-12
 - **Owner:** Solution Architect
 - **Status:** PROPOSED / **OWNER REVIEW REQUIRED** — no implementation authorization
@@ -9,15 +9,15 @@
 
 ## 1. Goals and boundaries
 
-**Candidate V1 target:** A controllable, twin-servo flapping-wing butterfly **bench prototype** with a virtual simulator, manual throttle/turn, emergency disarm, status telemetry and optional LED effect. Advance to tethered and then free-flight trials only after measured hardware + safety gates. LED, battery size and specific radio hardware remain choices, not fixed requirements.
+**Owner-confirmed V1 product goal:** A butterfly-shaped robot capable of **real, pilot-controlled powered flight using a physical RC transmitter**. Simulation, separated-actuator bench and restrained-wing trials are mandatory engineering phases, **not the V1 final acceptance**. The design shall make manual takeoff/steering/landing measurable; actual flight feasibility has not yet been proven. V2 is autonomous flight only after V1 is completed. LED, battery, exact RC hardware and wing size remain TBD.
 
 **Explicitly outside V1 until proven:** automatic hover/position hold, IMU-based attitude stabilization, GPS navigation, fully autonomous flight, obstacle avoidance, guaranteed outdoor wind resistance and flight-ready certification.
 
 ## 2. Proposed logical architecture (separable modules)
 
 ```text
-           Phone browser UI                     RC receiver
-            (optional)                            (primary candidate)
+       Setup/bench browser UI                Physical RC receiver
+          (not in flight)                     (primary in flight)
                  |                                      |
           Web/API adapter                         RC adapter
                  \                                      /
@@ -53,7 +53,7 @@
 
 | Interface | Proposed fields | Validation / ownership |
 |---|---|---|
-| `ControlCommand` | `source_id`, `sequence`, `timestamp_ms`, `throttle [0..1]`, `steering [-1..1]`, `requested_mode` | Reject stale/replayed/invalid values; one current controlling source; arming requires explicit safe sequence |
+| `ControlCommand` | `source_id`, `trusted_ingress_monotonic_us`, `throttle [0..1]`, `steering [-1..1]`, `requested_profile`, `RF_link_health`, `optional_transport_sequence` | Reject malformed/stale/invalid values; anti-replay only where a protocol actually exposes a trustworthy counter; do not assume CRSF control frames have sequence numbers; one current controlling source; explicit arm edge |
 | `MotionCommand` | `flap_hz`, `amplitude_deg`, `left_right_bias_deg`, `waveform`, `profile_id` | Bounded by approved actuator envelope and measured frequency/current constraints |
 | `SafetyStatus` | `state`, `last_valid_control_age_ms`, `battery_v`, `fault_code`, `armed`, `stop_reason` | Generated internally; UI must not override fault conditions |
 | `ActuatorCommand` | `left_angle_deg`, `right_angle_deg`, `output_enabled` | Mechanical soft limits, slew and servo pulse limits checked immediately before output |
@@ -75,7 +75,7 @@ BOOT -> SELF_TEST -> DISARMED
 ```
 
 - **Ground/bench behavior:** If input fails, immediately prevent new flap commands and use a pre-approved neutral/disable policy that does not hit mechanical stops.
-- **In-flight behavior:** Must be evaluated separately; sudden servo stop can remove lift. **No generic “stop = safe landing” claim.** Flight-specific fallback/landing behavior requires experiments and a risk review.
+- **In-flight behavior (V1 requirement):** Define pilot-selectable emergency response and an aircraft-specific radio-loss/battery-critical response prior to G4. A sudden servo stop can remove lift; **no generic “stop = safe landing” claim**. Loss-of-link logic may differ from grounded bench behavior and must be validated on the restrained airframe and risk-reviewed.
 - `PERCH` should be a deliberate state; whether link-loss can sustain motion is an explicit, testable policy decision. Do not silently bypass watchdog.
 
 ## 5. Configuration and responsibilities
@@ -104,17 +104,40 @@ BOOT -> SELF_TEST -> DISARMED
 
 **G3 — Restrained airframe:** Measure flap frequency/current/temperature/structural integrity with guards, inspect asymmetry, coupling and vibration; evaluate flight-specific failsafe.
 
-**G4 — Controlled flight:** Only after previous gates pass and owner explicitly approves controlled site, equipment, mitigation and acceptance tests.
+**G4 — Controlled flight (V1 product acceptance gate):** Only after previous gates pass and owner explicitly approves controlled site, equipment, mitigation, flight-specific failsafe and numeric pass/fail criteria. Manual powered flight including commanded steering and controlled recovery/landing is the target, not a claim of achieved performance.
 
 **Not a schedule:** Gate labels are sequence/permission constraints, not estimated delivery dates.
 
 ## 8. Decisions requested from owner
 
-1. Priority: decorative flapping/LED demo first, or controlled free-flight as first major milestone?
-2. Intended conditions: indoors or outdoors; wingspan/maximum weight constraints?
-3. Control: phone Wi-Fi as prototype control or proper RC as flight-primary?
+1. **RESOLVED 2026-11-12:** V1 is real manually RC-controlled flight; V2 is autonomy later.
+2. **OPEN:** Intended conditions: indoors or outdoors; wingspan/maximum weight constraints?
+3. **RESOLVED at intent level:** Physical RC transmitter is the V1 flight-primary. Receiver, protocol, failover and channel map remain OPEN.
 4. Hardware: own available ESP32 board/servos/RC receiver and battery details?
 5. Code strategy: confirm **clean-room-inspired implementation** (use ideas, not copied third-party files) for future sharing/commercial freedom.
 6. Are SA/Developer rule files `07`, `10`, `11` approved as the operational governance baseline?
 
 Until recorded decisions and G0 approval, all material in this document remains a design proposal. SA will not publish a dev task or modify `Source/`.
+
+## 9. Architectural impacts of owner decision (2026-11-12)
+
+- **Flight-critical input path:** RC receiver → validated RC adapter → control authority/arming → safety supervisor → motion planner → servo driver. Browser remains setup/bench-only; no Wi-Fi requirement for flight.
+- **Mass and power:** each additional module/LED competes directly with wing loading and energy budget. See `03_HARDWARE_DESIGN.md`.
+- **Control semantics:** pilot command ≠ guaranteed heading response. Actuator steering map must be established by G3/G4 experiments. See `16_RC_INTERFACE_CONTRACT.md`.
+- **Ground vs flight safety:** safety supervisor applies explicitly different policies where justified by flight hazard review; no untested in-air hard stop assumption.
+- **V1 release:** requires G4 observed flight outcome; G1–G3 alone cannot close V1.
+
+*Changelog 2026-11-12 v0.2: RC/manual free flight promoted from later experiment to V1 final objective by owner decision.*
+
+## 10. Integration refinement (v0.3 — 2026-11-12; PROPOSED)
+
+This section supersedes any ambiguous interpretation elsewhere that `sequence` must exist in every RC input, that a browser can command in-flight actuators, or that disarm implies sudden mid-air power removal. Canonical contracts: `26_SYSTEM_INTEGRATION_REVIEW.md`, `27_SAFETY_AND_FLIGHT_STATE_MACHINE.md`, `28_FIRMWARE_MODULE_AND_TIMING_CONTRACT.md`.
+
+- **Source of truth:** RC UART decoder → local timestamp/validated frame → *separately validated receiver RF health* → authority/arming → context-aware supervisor → motion planner → calibrated servo envelope → actuator hardware abstraction. No direct web/ISR-to-servo path.
+- **Flight owner:** physical RC only. Browser/UI may operate only in simulator or authorized grounded bench setup and cannot alter config or safety limits while armed.
+- **Status naming:** `ACTUATION_ACTIVE` means a command requests flapping, not `IN_FLIGHT`. Actual airborne status is unknown without validated observation. The current `GROUND_ARMED` term is a legacy software label and must not be used as a flight sensor.
+- **Output timing:** 5 ms logical control / 20 ms PWM are **candidate engineering hypotheses** for testing, not confirmed servo timings. Hardware timer behavior, power and input sampling must be validated on the selected board.
+- **Flight-critical unknowns:** aerodynamic yaw/pitch/roll controllability, measured lift reserve, in-air loss-of-link/battery contingency and site safety remain **G4 NO-GO** blockers, even if simulator passes.
+- **Approval:** Architecture and all referenced new files remain PROPOSED. Do not issue coding tasks until a bounded G0 approval is explicitly recorded as described in `30_G0_DESIGN_FREEZE_READINESS.md`.
+
+*Changelog v0.3: cross-document interface alignment, clarified RC frame counters, UI authority and unknown airborne status.*

@@ -1,0 +1,14 @@
+flowchart TB
+  B["2S LiPo candidate"] --> F["Protected input + disconnect"]
+  F --> S["BEC for servos"]
+  F --> L["Regulated logic supply with safe power-path"]
+  F --> A["Divider + analog filtering"]
+  S --> SERL["Servo L"]
+  S --> SERR["Servo R"]
+  L --> MCU["XIAO ESP32-C3 candidate"]
+  L --> RX["RC Receiver candidate"]
+  A -->|"ADC1"| MCU
+  TX["Physical RC transmitter"] -.->|"RF"| RX
+  RX <-->|"UART/CRSF"| MCU
+  MCU -->|"PWM"| SERL
+  MCU -->|"PWM"| SERR

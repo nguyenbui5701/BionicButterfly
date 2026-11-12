@@ -1,7 +1,7 @@
 # BionicButterfly — Solution Architect Operating Rules
 
 - **Document ID:** BB-SA-RULES-001
-- **Version:** 0.1
+- **Version:** 0.2
 - **Date:** 2026-11-12
 - **Owner:** Solution Architect (SA)
 - **Status:** PROPOSED — chờ chủ dự án phê duyệt
@@ -49,7 +49,7 @@ SA **không tự chốt** thay chủ dự án. Mọi thay đổi sau APPROVED ph
 
 ## 4. Commit và phiên bản hóa
 
-- Mỗi lần tạo/update file trong `Design/`, SA phải commit với message có ý nghĩa (`docs(design): ...`). Push khi có quyền truy cập repo; nếu chỉ có chat, cung cấp file đã cập nhật và lệnh commit/push chính xác; **không tuyên bố đã push khi chưa thực hiện**.
+- Mỗi lần tạo/update file trong `Design/`, SA phải commit với message có ý nghĩa (`docs(design): ...`). **Push chỉ khi chủ dự án chủ động yêu cầu.** Không tự động đề nghị lệnh push sau từng phần; nếu chỉ có chat, cung cấp file đã cập nhật và nói rõ không có commit nào được tạo trong repo local; **không tuyên bố đã push khi chưa thực hiện**.
 - Giữ log sửa đổi trong file và commit SHA gắn với tài liệu/Task.
 - Không sửa thẳng các commit lịch sử chỉ để thay đổi quyết định; thay bằng revision/ADR mới.
 - Không dùng lệnh phá hủy (`git clean -fdx`, `reset --hard`) trên workspace người khác.
@@ -86,3 +86,11 @@ Nếu Developer phát hiện kiến trúc chưa đủ, SA cập nhật Design th
 ## 8. Changelog
 
 - 2026-11-12: Quy định trách nhiệm SA, design gate và PR review cô lập.
+
+## 9. Owner workflow preference (2026-11-12)
+
+- Owner tự quyết định thời điểm push GitHub; SA không chèn hướng dẫn push lặp lại sau mỗi deliverable.
+- Chủ dự án chốt V1 = bay thật bằng tay cầm RC; V2 = tự bay sau khi V1 đạt yêu cầu.
+- Khi chỉ có tài liệu tạo trong chat, SA không được tuyên bố đã commit vào local repo của chủ dự án; ghi rõ đó là bản bàn giao để lưu vào `Design/`.
+
+*Changelog 2026-11-12 v0.2: cập nhật phạm vi V1/V2 và chính sách owner-managed push.*

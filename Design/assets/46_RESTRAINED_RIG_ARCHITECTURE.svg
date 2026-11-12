@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1250 720">
+<rect width="1250" height="720" fill="#fbfcff"/>
+<style>text{font-family:Arial,sans-serif;fill:#22354f}.title{font-size:29;font-weight:bold}.lbl{font-size:20;font-weight:bold}.note{font-size:17;fill:#56667a}.mech{stroke:#2f486b;stroke-width:4;fill:none}.sensor{fill:#deebfc;stroke:#4172b4;stroke-width:3}.bar{fill:#ccd6e4;stroke:#657c9c;stroke-width:2}.guard{fill:none;stroke:#e28120;stroke-width:4;stroke-dasharray:12 8}</style>
+<text x="48" y="53" class="title">Guarded restrained test rig — mechanical/instrumentation concept</text>
+<rect x="130" y="108" width="900" height="482" rx="18" class="guard"/>
+<text x="142" y="140" class="lbl">Protective enclosure &amp; exclusion zone (geometry TBD)</text>
+<path d="M 605 250 Q 455 117 274 223 Q 375 310 586 317 Z" fill="#b7e8eb" stroke="#157e9b" stroke-width="3"/>
+<path d="M 625 250 Q 775 117 956 223 Q 855 310 644 317 Z" fill="#b7e8eb" stroke="#157e9b" stroke-width="3"/>
+<rect x="580" y="222" width="66" height="135" rx="20" fill="#f4d291" stroke="#98722f" stroke-width="3"/>
+<text x="666" y="340" class="note">restrained C0 airframe</text>
+<rect x="597" y="353" width="32" height="55" class="bar"/>
+<rect x="549" y="410" width="130" height="44" rx="8" class="sensor"/>
+<text x="560" y="440" font-size="17">load sensor</text>
+<rect x="602" y="454" width="24" height="89" class="bar"/>
+<rect x="394" y="540" width="442" height="27" rx="8" class="bar"/>
+<text x="854" y="557" class="note">fixed base</text>
+<rect x="70" y="367" width="226" height="103" rx="12" class="sensor"/><text x="86" y="396" class="lbl">Sync &amp; logging</text><text x="86" y="422" class="note">servo power, IMU</text><text x="86" y="445" class="note">RC, load, video</text>
+<path d="M 296 412 L 540 430" class="mech" stroke-dasharray="7 7"/><text x="218" y="341" class="note">non-load-bearing</text><text x="219" y="362" class="note">instrument wires</text>
+<rect x="948" y="389" width="235" height="91" rx="12" class="sensor"/><text x="962" y="421" class="lbl">External shutoff</text><text x="962" y="447" class="note">BENCH policy only</text>
+<path d="M 949 450 L 846 500" class="mech" stroke-dasharray="7 7"/>
+<text x="55" y="652" class="note">R0 unpowered → R1 servo without wings → R2 guarded wings → R3 calibrated forces/moments.</text>
+<text x="55" y="686" class="note">One-axis load sensor ≠ 6-axis control authority. Rig does NOT authorize free flight.</text>
+</svg>

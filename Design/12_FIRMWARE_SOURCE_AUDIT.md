@@ -1,7 +1,7 @@
 # BionicButterfly — P1 Firmware Source Audit
 
 - **Document ID:** DESIGN-P1-002
-- **Revision:** 1.0 — 2026-11-12
+- **Revision:** 1.1 — 2026-11-12
 - **Owner:** Solution Architect
 - **Status:** DRAFT / SECURITY & SAFETY FINDINGS — **NOT APPROVED FOR FLIGHT OR IMPLEMENTATION**
 - **Inputs:** `P1_Source_Audit.zip` (SHA-256 `3245e30e38d33b06b0fa65f56dd78d9b55a2578508f691783bbf618969946c45`)
@@ -114,3 +114,14 @@ RC edge-age >100 ms -> processFailsafe() -> damp flap offset toward 0
 - `Design/13_V1_ARCHITECTURE_PROPOSAL.md`: candidate design to review, not a dev task.
 - `Design/07_AI_CODING_RULES.md`, `Design/10_SA_OPERATING_RULES.md`, `Design/11_HANDOFF_PR_WORKFLOW.md`: remain role-boundary rules (proposed until approved).
 - **No `Task/TASK-001.md` yet**: deliver a coding task only after owner approves the relevant design revision.
+
+
+## 7. Follow-up — owner-reported clean working tree (2026-11-12)
+
+The owner reports that `git -C ..\ESP-FLUTTER-reference status --short` returned **no output**. This is consistent with a clean working tree for tracked changes and nonignored untracked files. **It does not resolve F-13**, because ignored/untracked files can exist without being displayed in this form, and file contents in the uploaded archive were not independently matched to the recorded Git commit.
+
+To investigate the three path discrepancies without modifying the clone, run the read-only commands recorded in `Design/15_V1_DECISION_REGISTER.md` §3. An empty `git check-ignore` result is possible and is not an error.
+
+**Design impact:** The mismatch does not prevent drafting V1 requirements, but any conclusion relying specifically on `hardware_config.h`, `hover_bias.cpp`, or `led_control.cpp` must retain a provenance qualifier until verified.
+
+**Changelog:** 2026-11-12 revision 1.1 — recorded owner clean-status evidence without claiming Git snapshot equivalence.

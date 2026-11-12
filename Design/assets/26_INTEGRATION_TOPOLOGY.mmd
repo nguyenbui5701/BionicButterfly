@@ -1,0 +1,19 @@
+flowchart TD
+  TX[Physical RC Transmitter] -->|RF| RX[Bound Receiver]
+  RX -->|UART CRSF candidate| RDA[RC Decode and Radio Health Adapter]
+  SIM[PC Virtual Input] --> VAL[Canonical Input Validation]
+  BENCH[Authenticated Bench Setup UI] --> VAL
+  RDA --> VAL
+  VAL --> AUTH[Single Source Authority and Arm Edge]
+  AUTH --> SAFE[Safety Supervisor and State Machine]
+  BAT[Battery and Power Health] --> SAFE
+  TMR[Monotonic Clock / Scheduler Health] --> SAFE
+  SAFE --> MOT[Wing Motion Profile and Mixer]
+  MOT --> ENV[Measured Servo Envelope Gate]
+  ENV --> HAL[Servo PWM HAL]
+  HAL --> WL[Wing L]
+  HAL --> WR[Wing R]
+  SAFE -.-> TLM[Read-only Telemetry / Diagnostics]
+  ENV -.-> TLM
+  TLM -.-> BENCH
+  NOTE[Airborne status UNKNOWN unless proven with sensing] -.-> SAFE

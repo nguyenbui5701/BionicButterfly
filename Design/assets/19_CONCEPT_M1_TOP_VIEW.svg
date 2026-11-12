@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="740" viewBox="0 0 1200 740" role="img" aria-label="Bionic Butterfly V1 mechanical concept top view: mirrored wings, actuators, fuselage, battery and center of gravity">
+ <defs>
+   <linearGradient id="wingL" x1="0" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#bee6f8"/><stop offset="1" stop-color="#73b7da"/></linearGradient>
+   <linearGradient id="wingR" x1="0" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#d7eaff"/><stop offset="1" stop-color="#83bada"/></linearGradient>
+   <style>text{font-family:Arial,DejaVu Sans,sans-serif; fill:#203245}.head{font-size:30px;font-weight:bold}.sub{font-size:17px;fill:#607385}.lab{font-size:19px;font-weight:bold}.sm{font-size:15px}.tiny{font-size:13px}.axis{stroke:#7c8c9c;stroke-width:2;stroke-dasharray:8 7}.dim{stroke:#597588;stroke-width:2;fill:none}.pin{stroke:#324e62;stroke-width:2;fill:none}.box{fill:#f4f8fb;stroke:#5e8099;stroke-width:2}.wing{stroke:#29627c;stroke-width:3}</style>
+ </defs>
+ <rect x="8" y="8" width="1184" height="724" rx="18" fill="#fff" stroke="#dce5ea"/>
+ <text x="46" y="58" class="head">BB-V1 / Concept M1 — Top View</text>
+ <text x="46" y="84" class="sub">SCHEMATIC ONLY | not to scale | no approved build dimensions</text>
+ <!-- aircraft longitudinal axis -->
+ <line x1="600" y1="138" x2="600" y2="650" class="axis"/>
+ <text x="610" y="151" class="sm">+X forward</text>
+ <path d="M600 134 L588 151 L612 151 Z" fill="#607385"/>
+ <!-- left wing lobes -->
+ <path class="wing" fill="url(#wingL)" d="M558 287 C495 204 318 150 112 264 C72 299 105 370 178 391 C268 414 404 368 542 330 Z" />
+ <path class="wing" fill="url(#wingL)" d="M546 330 C436 359 326 375 238 490 C194 568 240 614 323 585 C427 550 504 445 559 373 Z" opacity=".88"/>
+ <!-- right mirrored wing lobes -->
+ <path class="wing" fill="url(#wingR)" d="M642 287 C705 204 882 150 1088 264 C1128 299 1095 370 1022 391 C932 414 796 368 658 330 Z"/>
+ <path class="wing" fill="url(#wingR)" d="M654 330 C764 359 874 375 962 490 C1006 568 960 614 877 585 C773 550 696 445 641 373 Z" opacity=".88"/>
+ <!-- spars -->
+ <path d="M555 315 Q388 265 165 280 M551 347 Q390 410 294 544 M645 315 Q812 265 1035 280 M649 347 Q810 410 906 544" fill="none" stroke="#377b91" stroke-width="3" stroke-dasharray="7 4"/>
+ <!-- fuselage -->
+ <path d="M600 196 Q571 236 568 300 L562 390 Q576 505 592 586 L600 613 L608 586 Q624 505 638 390 L632 300 Q629 236 600 196Z" fill="#e5edf1" stroke="#344f61" stroke-width="3"/>
+ <!-- hinge and actuators -->
+ <circle cx="562" cy="319" r="11" fill="#fff" stroke="#ca7a37" stroke-width="4"/>
+ <circle cx="638" cy="319" r="11" fill="#fff" stroke="#ca7a37" stroke-width="4"/>
+ <rect x="575" y="286" width="22" height="61" rx="5" fill="#f4ac6c" stroke="#a76232" stroke-width="2" />
+ <rect x="603" y="286" width="22" height="61" rx="5" fill="#f4ac6c" stroke="#a76232" stroke-width="2"/>
+ <line x1="576" y1="323" x2="562" y2="319" stroke="#a76232" stroke-width="3"/>
+ <line x1="624" y1="323" x2="638" y2="319" stroke="#a76232" stroke-width="3"/>
+ <rect x="581" y="356" width="38" height="45" rx="5" fill="#83bca8" stroke="#347762" stroke-width="2"/>
+ <text x="600" y="376" text-anchor="middle" class="tiny" fill="#172b20">MCU</text>
+ <rect x="578" y="422" width="44" height="34" rx="5" fill="#c3a5d6" stroke="#70508c" stroke-width="2"/>
+ <text x="600" y="443" class="tiny" text-anchor="middle">RX</text>
+ <rect x="577" y="481" width="46" height="70" rx="9" fill="#f5dc95" stroke="#a87924" stroke-width="2"/>
+ <text x="600" y="518" text-anchor="middle" class="tiny">BAT</text>
+ <circle cx="600" cy="410" r="13" fill="none" stroke="#de5656" stroke-width="3"/>
+ <path d="M582 410 H618 M600 392 V428" stroke="#de5656" stroke-width="3"/>
+ <!-- dims -->
+ <path d="M113 184 V160 H1087 V184" class="dim"/>
+ <text x="600" y="173" class="sm" text-anchor="middle">exploratory span envelope b = 500–700 mm; NOT FIXED</text>
+ <line x1="42" y1="310" x2="110" y2="310" class="pin"/><text x="45" y="302" class="sm">L wing</text>
+ <line x1="1050" y1="440" x2="1132" y2="440" class="pin"/><text x="1050" y="465" class="sm">R wing</text>
+ <path d="M580 287 L460 115 L280 115" class="pin"/><text x="280" y="105" class="lab">Independent servos L/R</text>
+ <path d="M595 384 L735 618 L1080 618" class="pin"/><text x="1080" y="611" text-anchor="end" class="lab">MCU / RX / sliding battery bay</text>
+ <path d="M600 409 L736 675 L1074 675" class="pin"/><text x="1074" y="668" class="sm" text-anchor="end">CG target window: verify experimentally</text>
+ <text x="42" y="682" class="tiny">Wing lobes may be passively coupled within each SIDE; 2 servos do NOT imply 4 independent axes.</text>
+ <text x="42" y="704" class="tiny">No LEDs in C0. Optional C1 puts light near roots first; outer-wing wiring requires new inertia tests.</text>
+ </svg>

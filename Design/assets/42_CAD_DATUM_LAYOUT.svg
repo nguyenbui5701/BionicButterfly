@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1250 750">
+<rect width="1250" height="750" fill="#fbfcff"/>
+<style>text{font-family:Arial,sans-serif;fill:#203047}.a{stroke:#283955;stroke-width:3;fill:none}.dim{stroke:#64748b;stroke-width:1.5;stroke-dasharray:7 6}.wing{fill:#bfe6f1;stroke:#1681a2;stroke-width:3}.core{fill:#f3c87c;stroke:#a46b11;stroke-width:2}.elec{fill:#d3c6ec;stroke:#7e61ac;stroke-width:2}.arrow{stroke-width:4;fill:none}.small{font-size:20}.note{font-size:17;fill:#536174}.title{font-size:30;font-weight:700}</style>
+<text x="60" y="52" class="title">C0 M1 — parametric top layout (NOT FABRICATION CAD)</text>
+<text x="60" y="85" class="note">Body frame B: +X forward (head), +Y right wing, +Z DOWN (out of top view). Datum OB != measured CG.</text>
+<path class="wing" d="M 620 250 Q 510 90 220 120 Q 118 215 325 350 Q 465 440 615 370 Z" />
+<path class="wing" d="M 630 250 Q 740 90 1030 120 Q 1132 215 925 350 Q 785 440 635 370 Z" />
+<path d="M 616 370 Q 460 400 365 555 Q 500 562 618 444 Z" fill="#a9d9e6" stroke="#1681a2" stroke-width="3"/>
+<path d="M 634 370 Q 790 400 885 555 Q 750 562 632 444 Z" fill="#a9d9e6" stroke="#1681a2" stroke-width="3"/>
+<path d="M 625 158 Q 665 290 657 500 Q 640 585 625 600 Q 610 585 593 500 Q 585 290 625 158 Z" class="core"/>
+<rect x="577" y="282" width="48" height="65" rx="8" class="elec"/><rect x="625" y="282" width="48" height="65" rx="8" class="elec"/>
+<rect x="603" y="386" width="44" height="100" rx="12" fill="#b5d0a6" stroke="#608451" stroke-width="2"/>
+<circle cx="625" cy="318" r="7" fill="#cc3f42"/><text x="689" y="319" class="small">OB: structural datum / wing-root reference</text><line x1="632" y1="319" x2="683" y2="319" class="dim"/>
+<text x="78" y="283" class="small">W-A / W-B left</text><text x="940" y="283" class="small">W-A / W-B right</text>
+<text x="675" y="465" class="small">battery slide / CG study</text><line x1="648" y1="433" x2="668" y2="456" class="dim"/>
+<text x="482" y="274" class="small">servo L</text><text x="676" y="274" class="small">servo R</text>
+<circle cx="626" cy="460" r="13" fill="none" stroke="#ba3e8d" stroke-dasharray="5 5" stroke-width="3"/><text x="683" y="525" class="small">CG measured after assembly (sample symbol)</text><line x1="638" y1="460" x2="680" y2="513" class="dim"/>
+<path d="M 103 674 L 103 609" class="arrow" stroke="#d04b45"/><path d="M 103 609 L 94 628 L 112 628 Z" fill="#d04b45"/><text x="120" y="622" class="small">+X forward</text>
+<path d="M 103 674 L 178 674" class="arrow" stroke="#2563eb"/><path d="M 178 674 L 156 666 L 156 682 Z" fill="#2563eb"/><text x="190" y="681" class="small">+Y right</text>
+<text x="60" y="723" class="note">Schematic geometry is NOT dimensioned. Exact root axes, clearances, components and measured mass remain TBD.</text>
+</svg>

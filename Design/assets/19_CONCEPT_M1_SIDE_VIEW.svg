@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-label="Side view concept showing pitch axis and sliding battery position on lightweight butterfly robot">
+ <style>text{font-family:Arial,DejaVu Sans,sans-serif;fill:#253a4a}.title{font-size:30px;font-weight:bold}.sub{font-size:17px;fill:#697d89}.lab{font-size:20px;font-weight:bold}.small{font-size:15px} .leader{stroke:#4d7186;stroke-width:2;fill:none}</style>
+ <rect x="8" y="8" width="1184" height="544" rx="16" fill="#fff" stroke="#dce5ea"/>
+ <text x="40" y="56" class="title">BB-V1 / Concept M1 — Side View</text>
+ <text x="40" y="83" class="sub">Illustration only | battery slide is an adjustment concept, not approved CG</text>
+ <path d="M180 280 Q360 264 520 272 L855 276 Q946 288 1040 305 Q921 323 851 327 L520 321 Q357 320 180 280Z" fill="#e3ecef" stroke="#45697a" stroke-width="3"/>
+ <path d="M320 275 C388 165 470 163 542 250" fill="none" stroke="#4297c5" stroke-width="9" stroke-linecap="round"/>
+ <path d="M320 275 C395 382 480 388 542 320" fill="none" stroke="#4297c5" stroke-width="9" stroke-linecap="round"/>
+ <circle cx="320" cy="281" r="15" fill="#f1b17e" stroke="#ac6634" stroke-width="3"/>
+ <rect x="440" y="275" width="95" height="28" rx="5" fill="#eeb584" stroke="#ac6634" stroke-width="2"/>
+ <rect x="574" y="275" width="65" height="28" rx="5" fill="#80bba4" stroke="#3c7b66" stroke-width="2"/>
+ <rect x="680" y="276" width="125" height="32" rx="6" fill="#f9db92" stroke="#9b792d" stroke-width="2"/>
+ <path d="M646 317 L832 317" stroke="#ac8b51" stroke-width="6" stroke-linecap="round"/>
+ <path d="M694 331 L783 331" stroke="#ac8b51" stroke-width="2" stroke-dasharray="8 4"/>
+ <circle cx="687" cy="304" r="14" fill="#fff" stroke="#d65e54" stroke-width="3"/>
+ <path d="M667 304 H707 M687 284 V324" stroke="#d65e54" stroke-width="2"/>
+ <path d="M468 272 L372 117 L155 117" class="leader"/><text x="155" y="106" class="lab">Servo + wing hinge</text>
+ <path d="M605 276 L687 138 L1020 138" class="leader"/><text x="1020" y="126" text-anchor="end" class="lab">MCU and receiver</text>
+ <path d="M749 307 L904 410 L1080 410" class="leader"/><text x="1080" y="397" text-anchor="end" class="lab">Battery bay adjustable along X</text>
+ <path d="M686 304 L640 471 L250 471" class="leader"/><text x="250" y="490" class="lab">CG to be MEASURED with full aircraft</text>
+ <text x="43" y="520" class="small">Center of gravity alone cannot prove pitch stability. Wing twist, tail and pitching moments require tests.</text>
+ </svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1250 570">
+<rect width="1250" height="570" fill="#fbfcff"/>
+<style>text{font-family:Arial,sans-serif;fill:#25354b}.title{font-size:27;font-weight:bold}.hd{font-size:23;font-weight:bold}.note{font-size:17;fill:#54657b}.line{stroke:#395575;stroke-width:5;fill:none}.pivot{fill:#ffffff;stroke:#213c5c;stroke-width:4}.d{stroke:#718096;stroke-dasharray:7 6;stroke-width:2}</style>
+<text x="44" y="53" class="title">Wing root mechanical trade: A direct drive vs B supported linkage</text>
+<rect x="45" y="95" width="530" height="395" rx="16" fill="#eff6ff" stroke="#c3d6f3"/>
+<rect x="674" y="95" width="530" height="395" rx="16" fill="#f3f8eb" stroke="#c8d7b4"/>
+<text x="75" y="132" class="hd">A — servo shaft at wing root</text>
+<rect x="180" y="250" width="130" height="94" rx="11" fill="#cebdec" stroke="#7a61a3" stroke-width="3"/><text x="196" y="305" font-size="19">servo</text>
+<circle cx="310" cy="296" r="17" class="pivot"/><path d="M 321 286 L 481 192" class="line" stroke="#0e7490"/><path d="M 324 302 L 493 355" stroke="#0e7490"/><path d="M 481 192 Q 545 250 493 355" fill="#b9e5ea" opacity=".6"/>
+<text x="80" y="407" class="note">Bending load can enter servo output shaft</text>
+<text x="80" y="434" class="note">Lowest part count; bearing rating unverified</text>
+<text x="704" y="132" class="hd">B — horn / rod / separate pivot</text>
+<rect x="747" y="285" width="128" height="83" rx="10" fill="#cebdec" stroke="#7a61a3" stroke-width="3"/><text x="766" y="332" font-size="19">servo</text>
+<circle cx="873" cy="325" r="11" class="pivot"/><path d="M 873 325 L 912 292" class="line" stroke="#d38b22"/>
+<line x1="912" y1="292" x2="1050" y2="248" stroke="#de7d28" stroke-width="5"/><circle cx="912" cy="292" r="7" fill="#de7d28"/><circle cx="1050" cy="248" r="7" fill="#de7d28"/>
+<circle cx="1051" cy="305" r="20" class="pivot"/><line x1="1051" y1="305" x2="1050" y2="248" class="line"/><path d="M 1067 290 L 1180 176" class="line" stroke="#0e7490"/><path d="M 1070 316 L 1190 367" class="line" stroke="#0e7490"/>
+<text x="738" y="407" class="note">Pivot takes bending reaction; linkage drives flap</text>
+<text x="738" y="434" class="note">Mass, dead-center, backlash &amp; friction TBD</text>
+<text x="50" y="543" class="note">No lever dimensions or load values are validated. Illustrative kinematic layout only. Separate root support is an OPTION, not a selected part.</text>
+</svg>

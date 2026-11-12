@@ -1,0 +1,60 @@
+{
+  "phase": "2.0",
+  "package_date": "2026-11-12",
+  "source_state": "owner_repository_not_mounted",
+  "owner_git_commit": null,
+  "commit_performed": false,
+  "contains": [
+    "new_design_docs_only"
+  ],
+  "files": [
+    {
+      "path": "Design/48_SYSTEM_DESIGN_BASELINE_AUDIT.md",
+      "sha256": "5fb88f823e688ce9f96af0646f1a3a3738478f6662b5aaeab5ff15c65bd19f45",
+      "bytes": 6828,
+      "document_status": "PROPOSED"
+    },
+    {
+      "path": "Design/49_CROSS_DOCUMENT_CONFLICT_REGISTER.md",
+      "sha256": "6c96536d23f408b07b71de103cc60918b96e36d4993257a85b19f8b2320eec49",
+      "bytes": 6641,
+      "document_status": "PROPOSED"
+    },
+    {
+      "path": "Design/50_ARCHITECTURE_DECISION_DEPENDENCY_MAP.md",
+      "sha256": "2b65c5a5316efff373f371fe9ccebe4431fdf322465e3edfe51b2712e7dda9a2",
+      "bytes": 4456,
+      "document_status": "PROPOSED"
+    },
+    {
+      "path": "Design/51_G0A_PC_SIMULATOR_CONTRACT_CANDIDATE.md",
+      "sha256": "239c7b1b07c83a22c1d0a20ca0857404df4d9134e3819d423cfa8c62a6f23b93",
+      "bytes": 7617,
+      "document_status": "PROPOSED"
+    },
+    {
+      "path": "Design/52_DESIGN_VERIFICATION_AND_EVIDENCE_PLAN.md",
+      "sha256": "4d51cef0b736387400e26a604b22f41d9d8d80bcee6e33b64061ddc3b1fa030c",
+      "bytes": 6350,
+      "document_status": "PROPOSED"
+    },
+    {
+      "path": "Design/53_DESIGN_CHANGE_CONTROL_AND_HANDOFF.md",
+      "sha256": "dc61ed1684687f7e633a22a780caff9974fe3187b92e376dc50ef841834c42e2",
+      "bytes": 5072,
+      "document_status": "PROPOSED"
+    },
+    {
+      "path": "Design/54_PHASE20_FREEZE_REVIEW_PACKET.md",
+      "sha256": "abe61dbf31697687170a3c8cd2bd4ba000a86bc27c99ebb7bfc3f8c65ffd2f33",
+      "bytes": 4715,
+      "document_status": "PROPOSED"
+    },
+    {
+      "path": "Design/55_OPEN_QUESTIONS_EVIDENCE_LEDGER.md",
+      "sha256": "9b72bb49fc6ccb4587e8e3a624d075a3046e47580f50c943f34dfb3eead9999b",
+      "bytes": 4337,
+      "document_status": "PROPOSED"
+    }
+  ]
+}
