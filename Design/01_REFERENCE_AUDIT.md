@@ -1,7 +1,7 @@
 # BionicButterfly — P1 Reference Audit (Preliminary)
 
 - **Document ID:** DESIGN-P1-001
-- **Revision:** 0.1 — Draft
+- **Revision:** 0.2 — Draft
 - **Date:** 2026-11-12
 - **Owner:** Solution Architect
 - **Status:** RESEARCH / NOT APPROVED FOR IMPLEMENTATION
@@ -19,7 +19,7 @@ Assess two external bionic-butterfly repositories as *references*, not as an aut
 - Reported features: ESP-NOW and CRSF/ExpressLRS inputs; configurable flapping frequency, amplitude, waveform, trims, differential-amplitude steering, flight profiles, arming, voltage monitoring, battery cutoff, LED effects, settings persistence.
 - **Important constraint:** README says the current fixed-amplitude test mode uses throttle for flapping frequency. The named `Hover` profile is not automatic stabilization or position hold.
 - **License:** PolyForm Noncommercial License 1.0.0. No commercial reuse of the firmware without appropriate permission.
-- **Audit level:** README inspected; actual local source files and build have **not** been audited yet.
+- **Audit level:** README inspected. File inventory and local HEAD supplied by owner, but actual implementation contents and build have **not** been independently audited.
 
 ### R2 — S-DiY bionic-butterfly, corrected v1.1
 
@@ -29,7 +29,7 @@ Assess two external bionic-butterfly repositories as *references*, not as an aut
 - The build manual includes example pin mapping (Nano D2 PPM, D4/D5 servos, D6 LED), BOM, 3D-print/assembly steps. **Do not treat power-supply choices in the upstream manual as validated for our hardware.**
 - **Documentation discrepancy:** `BUILD_MANUAL.txt` describes some v1.0 build-kit material while README advertises corrected v1.1 firmware. Confirm the local file/version before basing design on it.
 - **License:** Do not assume reuse rights until the repository's license and any third-party components are verified.
-- **Audit level:** README/build manual inspected; actual local firmware and STL not yet validated.
+- **Audit level:** README/build manual inspected. File inventory and local HEAD supplied by owner, but actual firmware and STL contents not independently validated.
 
 ## 3. Comparison
 
@@ -77,8 +77,9 @@ This is an architectural hypothesis for review, **not** a verified circuit or fl
 
 ## 6. Source audit checklist — pending
 
-- [ ] Record exact local Git commit SHA for each reference (`git rev-parse HEAD`).
-- [ ] Enumerate project files and locate entrypoints, pin definitions, configs and dependencies.
+- [x] Record exact local Git commit SHA for each reference (`git rev-parse HEAD`), **as reported by owner**.
+- [x] Enumerate tracked project files (`git ls-files`), **as reported by owner**; entrypoints/config candidates identified by filename only.
+- [ ] Read source file contents to verify actual entrypoints, pin definitions, configs and dependencies.
 - [ ] Read firmware's initialization, control loop, flapping waveform and servo output logic.
 - [ ] Verify RC packet timeout, disarm, input range validation and recovery behavior.
 - [ ] Verify battery monitoring assumptions, voltage calibration and cutoff behavior.
@@ -112,6 +113,27 @@ P1 ends only when the local source audit, mechanical/power feasibility, target r
 - S-DiY README: https://github.com/25sidhx/bionic-butterfly
 - S-DiY BUILD_MANUAL: https://github.com/25sidhx/bionic-butterfly/blob/main/BUILD_MANUAL.txt
 
-## 10. Changelog
+## 10. Local reference snapshot supplied by project owner (2026-11-12)
 
-- 2026-11-12: Initial preliminary reference assessment from public repository documentation. Local implementation, hardware and video-motion audits are pending.
+These snapshots identify the *versions to audit*. Their SHA and tracked path listings were copied from the owner's terminal output; the SA has not read these local files and **does not yet claim source-level verification**.
+
+| Reference | `git rev-parse HEAD` | Candidate files to read next |
+|---|---|---|
+| ESP-FLUTTER | `b1e508f87be7105096661946c209f32db541a5d5` | `ESP-FLUTTER/PROJECT_CONTEXT.md.txt`, `ESP-FLUTTER/platformio.ini`, `ESP-FLUTTER/src/main.cpp`, `config.h`, `hardware_config.cpp`, `wing_motion.*`, `flight_mode.*`, `flight_profile.*`, `wifi_control.*`, `hover_bias.h`, `led_control.h`, `ESP-FLUTTER/include/esp_flutter_espnow_packet.h` |
+| S-DiY | `0ca29a0d14574b94e144325e0bbe1cf80a25fb5e` | `README.md`, `BUILD_MANUAL.txt`, `firmware/firmware.ino`, `lib/PPMReader/src/PPMReader.*`, `v11_diff.txt`, `schematics/circuit-original.jpeg`, `docs/wing-design-original.jpeg`, `print/*.STL`, `print/PRINT_PROFILE.txt` |
+
+### Next evidence required
+
+- **Control pipeline (ESP-FLUTTER):** inspect `main.cpp` → input receiving (Wi-Fi/ESP-NOW/RC) → validated commands → `flight_mode`/`flight_profile` → `wing_motion` → servo outputs; verify actual calls instead of assuming filename roles.
+- **Actuators and power:** inspect `config.h` and `hardware_config.cpp` plus circuit; verify pin mapping, servo range, power and battery/undervoltage assumptions.
+- **S-DiY RC safety:** inspect `.ino`, `PPMReader` and `v11_diff.txt` to assess link-loss behavior, actuator neutral and version-specific differences.
+- **Hardware and fabrication:** inspect STL/wing images for mechanical assumptions; no dimensions or strength claim until measured.
+- **Build/reproducibility:** check `platformio.ini`, library versions and compile results in an isolated workspace; reference clones remain read-only.
+- **Video mapping:** compare b1–b4 observations to a *candidate* feature only; no automatic equivalence with either upstream repo.
+
+**Current P1 gate:** Inventory received ✅; actual source contents, build, hardware, licensing and design approval ⏳. No implementation task should be issued yet.
+
+## 11. Changelog
+
+- 2026-11-12 (v0.1): Initial preliminary reference assessment from public repository documentation.
+- 2026-11-12 (v0.2): Pinned owner-provided reference SHAs and exact candidate files; updated checklist and next audit priorities. Local implementation, hardware and video-motion audits remain pending.
