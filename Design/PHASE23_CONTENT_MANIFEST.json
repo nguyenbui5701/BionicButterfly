@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "package": "BionicButterfly_Phase23_E2E_Architecture_Review",
+  "produced_at_date": "2026-11-12",
+  "repo_head_verified": false,
+  "documents": [
+    {
+      "path": "Design/75_PHASE23_PUBLIC_REPO_BASELINE_STATUS.md",
+      "sha256": "e0fe9ef2460747098c7b413f0f1d37d7412d0a91e42b1456757ef843cc17aa25",
+      "bytes": 4640
+    },
+    {
+      "path": "Design/76_END_TO_END_HOST_CONTROL_PATH_REVIEW.md",
+      "sha256": "91943cb834a3f7f2db719e77dc61c6f8581d9db2ca459475d5dbff68739d319b",
+      "bytes": 5228
+    },
+    {
+      "path": "Design/77_SEMANTIC_CONFLICT_AND_HAZARD_REGISTER.md",
+      "sha256": "1778ccf47e7c444ee30067e38e5fc77555ce77a864b014870588bddddfb37b2b",
+      "bytes": 7012
+    },
+    {
+      "path": "Design/78_HOST_API_NORMATIVE_FREEZE_CANDIDATE.md",
+      "sha256": "50cf42604801f801ed66a27035c8143dbb9bb070828650eec1ca1f374104644a",
+      "bytes": 6618
+    },
+    {
+      "path": "Design/79_PHASE23_E2E_TEST_ORACLES.md",
+      "sha256": "fbcd40ae85693254358fc65dce4095132528466cf8cfb0a0e0f0fdb1fa8337ce",
+      "bytes": 6026
+    },
+    {
+      "path": "Design/80_REPLAY_EVIDENCE_AND_RUN_ID_POLICY.md",
+      "sha256": "d8c0828e8e092486b7fca95fd5d2100f64f676c5fc1afc52cb98e6bbc0cb70ea",
+      "bytes": 4056
+    },
+    {
+      "path": "Design/81_DECISION_DEPENDENCY_AND_CORRECTION_PLAN.md",
+      "sha256": "126c7e75f27c4cb967ad4282942bb3453ca4c283fae10ab4f64502be8eb91370",
+      "bytes": 3624
+    },
+    {
+      "path": "Design/82_PHASE23_ADR_SUPPLEMENT.md",
+      "sha256": "0ffa910c0a4b132c270cc05a3f0ea418cf2e7c0c67fe5bc45295ea12491bd4eb",
+      "bytes": 2206
+    },
+    {
+      "path": "Design/83_PHASE23_G0A1_FREEZE_REVIEW_PACKET.md",
+      "sha256": "85169d4d527f81d9d8c9f11238555ae29f364c0f4f9e2e69de1be12500fb89eb",
+      "bytes": 4554
+    },
+    {
+      "path": "Design/PHASE23_CONTENT_MANIFEST.json",
+      "sha256": "e0bd0197137a71c9bb2763c507c08a5764958d390b8bf29cfc31612e2e30d7d7",
+      "bytes": 1984
+    },
+    {
+      "path": "Design/PHASE23_LOCAL_SNAPSHOT_ATTESTATION.json",
+      "sha256": "a56b34996b39cfa040766993381d6cbb81cbc410f0763342649c10f4b2e343da",
+      "bytes": 5614
+    }
+  ]
+}

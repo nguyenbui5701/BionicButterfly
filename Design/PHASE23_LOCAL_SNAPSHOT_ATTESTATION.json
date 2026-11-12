@@ -1,0 +1,171 @@
+{
+  "attestation_type": "local_snapshot_only_not_remote_git",
+  "created_for": "Phase23 SA Design Review",
+  "as_of": "2026-11-12",
+  "repo_url_declared": "https://github.com/nguyenbui5701/BionicButterfly/tree/main/Design",
+  "git_head_verified": false,
+  "files": [
+    {
+      "source": "P20",
+      "name": "48_SYSTEM_DESIGN_BASELINE_AUDIT.md",
+      "bytes": 6828,
+      "sha256": "5fb88f823e688ce9f96af0646f1a3a3738478f6662b5aaeab5ff15c65bd19f45"
+    },
+    {
+      "source": "P20",
+      "name": "49_CROSS_DOCUMENT_CONFLICT_REGISTER.md",
+      "bytes": 6641,
+      "sha256": "6c96536d23f408b07b71de103cc60918b96e36d4993257a85b19f8b2320eec49"
+    },
+    {
+      "source": "P20",
+      "name": "50_ARCHITECTURE_DECISION_DEPENDENCY_MAP.md",
+      "bytes": 4456,
+      "sha256": "2b65c5a5316efff373f371fe9ccebe4431fdf322465e3edfe51b2712e7dda9a2"
+    },
+    {
+      "source": "P20",
+      "name": "51_G0A_PC_SIMULATOR_CONTRACT_CANDIDATE.md",
+      "bytes": 7617,
+      "sha256": "239c7b1b07c83a22c1d0a20ca0857404df4d9134e3819d423cfa8c62a6f23b93"
+    },
+    {
+      "source": "P20",
+      "name": "52_DESIGN_VERIFICATION_AND_EVIDENCE_PLAN.md",
+      "bytes": 6350,
+      "sha256": "4d51cef0b736387400e26a604b22f41d9d8d80bcee6e33b64061ddc3b1fa030c"
+    },
+    {
+      "source": "P20",
+      "name": "53_DESIGN_CHANGE_CONTROL_AND_HANDOFF.md",
+      "bytes": 5072,
+      "sha256": "dc61ed1684687f7e633a22a780caff9974fe3187b92e376dc50ef841834c42e2"
+    },
+    {
+      "source": "P20",
+      "name": "54_PHASE20_FREEZE_REVIEW_PACKET.md",
+      "bytes": 4715,
+      "sha256": "abe61dbf31697687170a3c8cd2bd4ba000a86bc27c99ebb7bfc3f8c65ffd2f33"
+    },
+    {
+      "source": "P20",
+      "name": "55_OPEN_QUESTIONS_EVIDENCE_LEDGER.md",
+      "bytes": 4337,
+      "sha256": "9b72bb49fc6ccb4587e8e3a624d075a3046e47580f50c943f34dfb3eead9999b"
+    },
+    {
+      "source": "P21",
+      "name": "56_G0A_HOST_SOFTWARE_ARCHITECTURE.md",
+      "bytes": 8186,
+      "sha256": "af995c2f2c04343c8d2209cac7131d2be97b7875a06d8399173045b14ea32a09"
+    },
+    {
+      "source": "P21",
+      "name": "57_CANONICAL_SIM_SCHEMAS_AND_ERRORS.md",
+      "bytes": 9022,
+      "sha256": "97ea98de5c9113056fa7d93ad3d4e9970d00d4acdff8f5b8adcf4a5b6a14f43b"
+    },
+    {
+      "source": "P21",
+      "name": "58_DETERMINISTIC_SAFETY_FSM_SEMANTICS.md",
+      "bytes": 7310,
+      "sha256": "d26273fd5205dd96f27180febe9f20b55dc758d17db12fea9a59148ee744f2fb"
+    },
+    {
+      "source": "P21",
+      "name": "59_VIRTUAL_TIME_EVENT_REPLAY_SPEC.md",
+      "bytes": 7624,
+      "sha256": "c50a64e164b2ece39d72bdeab091fc199c8a64c64afbaf89141823b354cf8f8e"
+    },
+    {
+      "source": "P21",
+      "name": "60_SIM_CONFIGURATION_PROFILE_GOVERNANCE.md",
+      "bytes": 5661,
+      "sha256": "e8476acf6a37fd341ac99fa2e920aec4cef376d5297fdec4e62a1b10bbebe1fa"
+    },
+    {
+      "source": "P21",
+      "name": "61_CORE_API_AND_SEQUENCE_DESIGN.md",
+      "bytes": 6131,
+      "sha256": "3f427f7cdc71a6a808e86f44e96ee2d392e9f3fd475536e34bdeb8ee1199cc05"
+    },
+    {
+      "source": "P21",
+      "name": "62_HOST_SIM_SECURITY_ABUSE_CASES.md",
+      "bytes": 4749,
+      "sha256": "55b506e98bc346b9f1ea7ade2de96b92d4afa88b268b55243b3e200dac444429"
+    },
+    {
+      "source": "P21",
+      "name": "63_G0A_TEST_MATRIX_AND_COVERAGE.md",
+      "bytes": 6341,
+      "sha256": "d5142ba5717b62a1efae6396f90d31dbd511141721d675da6fe78b7eba0657ec"
+    },
+    {
+      "source": "P21",
+      "name": "64_PHASE21_FREEZE_REVIEW_PACKET.md",
+      "bytes": 5576,
+      "sha256": "1cbf89191dce45d7355c7fdf03f53845383191091dcbf3e72f737aee6f8dd7ed"
+    },
+    {
+      "source": "P21",
+      "name": "65_PHASE21_ADR_SUPPLEMENT.md",
+      "bytes": 2144,
+      "sha256": "ee9e4ffba9ef0a131bb2ecb6b8e9ff05ad8c08777e3bad20eae1f5db2374eaba"
+    },
+    {
+      "source": "P22",
+      "name": "66_PHASE22_BASELINE_AND_CONFLICT_RECONCILIATION.md",
+      "bytes": 7240,
+      "sha256": "916e15f28529dc089ead0513ffa24f239df888cfd8ee5e102a275661eb7ee7a7"
+    },
+    {
+      "source": "P22",
+      "name": "67_SIM_ONLY_NUMERIC_POLICY_PROPOSAL.md",
+      "bytes": 8206,
+      "sha256": "451155e9586040087590dd17714c7f40590501d0c6cc80e8b26204626a944d5f"
+    },
+    {
+      "source": "P22",
+      "name": "68_ATOMIC_EVENT_AND_SAFETY_TRANSITION_CONTRACT.md",
+      "bytes": 9360,
+      "sha256": "7908afea77953dfa2ea13992773db3844f52a4873ef7aed602ee27de450bcee9"
+    },
+    {
+      "source": "P22",
+      "name": "69_REPLAY_SERIALIZATION_AND_EVIDENCE_CONTRACT.md",
+      "bytes": 7752,
+      "sha256": "3595cdd4065e67e868bf1c71ffa3f2adc1104702dc2911318f0537c093e48d02"
+    },
+    {
+      "source": "P22",
+      "name": "70_IMMUTABLE_CONFIG_AND_HOST_SCOPE_GATE.md",
+      "bytes": 5988,
+      "sha256": "172c3a69006f06ddb1b55119d815492673ce2dfac2bd1edd24d9130757eb03ec"
+    },
+    {
+      "source": "P22",
+      "name": "71_PHASE22_POLICY_BOUNDARY_TEST_ORACLES.md",
+      "bytes": 7739,
+      "sha256": "314bed09243e9196b19eeff3137778b968e9a2cd9d201bc9074e17a25f9b7b74"
+    },
+    {
+      "source": "P22",
+      "name": "72_FREEZE_GAP_CLOSURE_AND_REPO_RECONCILIATION.md",
+      "bytes": 6126,
+      "sha256": "ed86cbc226c5e9468779c99058ec8bb877038f4b8de8e89326a8f03e638ef97c"
+    },
+    {
+      "source": "P22",
+      "name": "73_PHASE22_ARCHITECTURE_DECISION_SUPPLEMENT.md",
+      "bytes": 3551,
+      "sha256": "28ebfb879e57a8c087c14791d77a29ee43f309519ecc46550a3fdd32c91f7ff5"
+    },
+    {
+      "source": "P22",
+      "name": "74_PHASE22_G0A1_FREEZE_READINESS_REVIEW_PACKET.md",
+      "bytes": 6533,
+      "sha256": "669c452ff7b123fdd193c466743490bae9d71dabf1e8b954a98446770d98b504"
+    }
+  ]
+}

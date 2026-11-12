@@ -1,0 +1,20 @@
+{
+  "package_id": "BionicButterfly_Phase21_Software_Architecture_Design",
+  "date": "2026-11-12",
+  "status": "DESIGN_PROPOSED_NOT_APPROVED",
+  "repository_commit_verified": false,
+  "repo_url": "https://github.com/nguyenbui5701/BionicButterfly/tree/main/Design",
+  "scope": "new Design/56–65; no Source/ or Task/ changes",
+  "sha256_by_relative_path": {
+    "Design/56_G0A_HOST_SOFTWARE_ARCHITECTURE.md": "af995c2f2c04343c8d2209cac7131d2be97b7875a06d8399173045b14ea32a09",
+    "Design/57_CANONICAL_SIM_SCHEMAS_AND_ERRORS.md": "97ea98de5c9113056fa7d93ad3d4e9970d00d4acdff8f5b8adcf4a5b6a14f43b",
+    "Design/58_DETERMINISTIC_SAFETY_FSM_SEMANTICS.md": "d26273fd5205dd96f27180febe9f20b55dc758d17db12fea9a59148ee744f2fb",
+    "Design/59_VIRTUAL_TIME_EVENT_REPLAY_SPEC.md": "c50a64e164b2ece39d72bdeab091fc199c8a64c64afbaf89141823b354cf8f8e",
+    "Design/60_SIM_CONFIGURATION_PROFILE_GOVERNANCE.md": "e8476acf6a37fd341ac99fa2e920aec4cef376d5297fdec4e62a1b10bbebe1fa",
+    "Design/61_CORE_API_AND_SEQUENCE_DESIGN.md": "3f427f7cdc71a6a808e86f44e96ee2d392e9f3fd475536e34bdeb8ee1199cc05",
+    "Design/62_HOST_SIM_SECURITY_ABUSE_CASES.md": "55b506e98bc346b9f1ea7ade2de96b92d4afa88b268b55243b3e200dac444429",
+    "Design/63_G0A_TEST_MATRIX_AND_COVERAGE.md": "d5142ba5717b62a1efae6396f90d31dbd511141721d675da6fe78b7eba0657ec",
+    "Design/64_PHASE21_FREEZE_REVIEW_PACKET.md": "1cbf89191dce45d7355c7fdf03f53845383191091dcbf3e72f737aee6f8dd7ed",
+    "Design/65_PHASE21_ADR_SUPPLEMENT.md": "ee9e4ffba9ef0a131bb2ecb6b8e9ff05ad8c08777e3bad20eae1f5db2374eaba"
+  }
+}
