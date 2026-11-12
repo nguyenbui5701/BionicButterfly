@@ -1,0 +1,12 @@
+flowchart TD
+  A[Owner-approved PC-only policy digest] --> B[Trusted Host Policy Preflight]
+  S[Scenario JSON v1] --> C[Strict Input Validation]
+  B --> D[Virtual Scheduler 5 ms]
+  C --> D
+  D --> E[Full Batch Normalize]
+  E --> F[Safety Supervisor R1]
+  F --> G[Bounded Virtual Effort]
+  G --> H[Canonical Trace Commit]
+  H -->|append acknowledged| I[SIM_ONLY Virtual Sink]
+  H -->|failed| J[FAILED_INCOMPLETE_EVIDENCE]
+  I --> K[External Report Digest after Terminal]

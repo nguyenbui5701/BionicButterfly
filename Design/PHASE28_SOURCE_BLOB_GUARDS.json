@@ -1,0 +1,196 @@
+{
+  "source_repo": "nguyenbui5701/BionicButterfly",
+  "reviewed_source_git_commit": "3d9a4f28d521190d10579cab48d8b732817892c9",
+  "guard_semantics": "Apply replacements only if current file git blob equals expected original_git_blob_sha, otherwise re-review and merge",
+  "file_updates": [
+    {
+      "path": "Design/100_G0A1_UNIFIED_EVENT_TICK_AND_CONTROL_CONTRACT.md",
+      "original_git_blob_sha": "70c1bb80e0a0ff5025d6c0fe3c0ee028afb4377c",
+      "updated_git_blob_sha": "436b29e2fca8fc4303794bb5afb59c3946c5a6bb",
+      "new_authority": "115 (unified safety)",
+      "change": "PREPENDED_SCOPE_LIMITED_SUPERSESSION_NOTICE_PRESERVED_BODY"
+    },
+    {
+      "path": "Design/101_G0A1_ARM_RECOVERY_AND_NO_EVENT_TRANSITION_MATRIX.md",
+      "original_git_blob_sha": "7729ec0a4d39818b4d901b48099b069b351ee5c9",
+      "updated_git_blob_sha": "b3dd8ad728b432ce80ce23ffff87edba382026fb",
+      "new_authority": "115 (arm/recovery)",
+      "change": "PREPENDED_SCOPE_LIMITED_SUPERSESSION_NOTICE_PRESERVED_BODY"
+    },
+    {
+      "path": "Design/102_G0A1_SIM_POLICY_AND_APPROVAL_PROPOSAL.md",
+      "original_git_blob_sha": "6e292c0a0736e47ea718d437a39bed427514f16e",
+      "updated_git_blob_sha": "1888844c51c43898b38115b7bb86ac018b1d7324",
+      "new_authority": "116 (exact policy)",
+      "change": "PREPENDED_SCOPE_LIMITED_SUPERSESSION_NOTICE_PRESERVED_BODY"
+    },
+    {
+      "path": "Design/103_G0A1_REPLAY_TRACE_AND_TRUST_BOUNDARY.md",
+      "original_git_blob_sha": "68a7800fb4242282b6364a0ab8c30ce75700e97f",
+      "updated_git_blob_sha": "628ef654fb134d12c7c7902b092da38fb1baf9f9",
+      "new_authority": "118 (trace)",
+      "change": "PREPENDED_SCOPE_LIMITED_SUPERSESSION_NOTICE_PRESERVED_BODY"
+    },
+    {
+      "path": "Design/104_G0A1_DETERMINISTIC_ACCEPTANCE_VECTORS.md",
+      "original_git_blob_sha": "d4b339e8ad7e782b6181737e6abdc396d7632904",
+      "updated_git_blob_sha": "475f8a56754156906553de5f2a4df28855c3e1b1",
+      "new_authority": "120 (oracles)",
+      "change": "PREPENDED_SCOPE_LIMITED_SUPERSESSION_NOTICE_PRESERVED_BODY"
+    },
+    {
+      "path": "Design/108_PHASE27_CONSOLIDATED_ADR_RESOLUTION_MATRIX.md",
+      "original_git_blob_sha": "110f479a597d366059354b4177f783d8572d0ecc",
+      "updated_git_blob_sha": "debb5c76c4e9f41538954c366d58d3547082a41a",
+      "new_authority": "114 (owner disposition), 119 (register)",
+      "change": "PREPENDED_SCOPE_LIMITED_SUPERSESSION_NOTICE_PRESERVED_BODY"
+    },
+    {
+      "path": "Design/109_G0A1_SEMANTIC_CLOSURE_WALKTHROUGH.md",
+      "original_git_blob_sha": "a8510aa6d84a6320404942e26002e9cafe4bb237",
+      "updated_git_blob_sha": "d4355aca7b65303ef2059a48b082f6ba3c042659",
+      "new_authority": "115 (semantics)",
+      "change": "PREPENDED_SCOPE_LIMITED_SUPERSESSION_NOTICE_PRESERVED_BODY"
+    },
+    {
+      "path": "Design/110_G0A1_REPLAY_POLICY_AND_TRUST_DECISION_GATE.md",
+      "original_git_blob_sha": "27229b7070bf4903d8c3c138b7f0e384794a587b",
+      "updated_git_blob_sha": "494c62b663884d256ddc4f4bc2410490d7013916",
+      "new_authority": "116 and 118 (trust/replay)",
+      "change": "PREPENDED_SCOPE_LIMITED_SUPERSESSION_NOTICE_PRESERVED_BODY"
+    },
+    {
+      "path": "Design/111_G0A1_CONTRACT_CLOSURE_ORACLES_AND_GATES.md",
+      "original_git_blob_sha": "5cc449119735c8807e9237dc433a766d8a356b5c",
+      "updated_git_blob_sha": "f67fa7c4230864c402b215bcfd4e935cac7a922f",
+      "new_authority": "120 (oracles)",
+      "change": "PREPENDED_SCOPE_LIMITED_SUPERSESSION_NOTICE_PRESERVED_BODY"
+    },
+    {
+      "path": "Design/113_PHASE27_OWNER_G0A1_DECISION_PACKET.md",
+      "original_git_blob_sha": "48bfa34e31452aac9407d20daa5de3fa357c5b49",
+      "updated_git_blob_sha": "ac6f514d60b3cd25ee9a99486d2e35f081e8f790",
+      "new_authority": "114 (owner approval and latest source baseline)",
+      "change": "PREPENDED_SCOPE_LIMITED_SUPERSESSION_NOTICE_PRESERVED_BODY"
+    },
+    {
+      "path": "Design/57_CANONICAL_SIM_SCHEMAS_AND_ERRORS.md",
+      "original_git_blob_sha": "833ccfcc0d976cee9504d080b1e12461e9b5c51d",
+      "updated_git_blob_sha": "039b9116cd92654e2be24aba9b86fbd84b690a8b",
+      "new_authority": "117 (input/result-error v2), 115 (tick/health)",
+      "change": "PREPENDED_SCOPE_LIMITED_SUPERSESSION_NOTICE_PRESERVED_BODY"
+    },
+    {
+      "path": "Design/58_DETERMINISTIC_SAFETY_FSM_SEMANTICS.md",
+      "original_git_blob_sha": "841f3d4ad67f08c649f705ca979f046ff3325507",
+      "updated_git_blob_sha": "d0163b20d6820451b43f04a2a001eb9520c9c15a",
+      "new_authority": "115 (safety state transitions)",
+      "change": "PREPENDED_SCOPE_LIMITED_SUPERSESSION_NOTICE_PRESERVED_BODY"
+    },
+    {
+      "path": "Design/59_VIRTUAL_TIME_EVENT_REPLAY_SPEC.md",
+      "original_git_blob_sha": "ea58f382f6ed2e8bf51b6615391834c508a92449",
+      "updated_git_blob_sha": "ad4ac9c0f99bcba98a94a1f31292ba2216e70a5b",
+      "new_authority": "118 (trace/schedule)",
+      "change": "PREPENDED_SCOPE_LIMITED_SUPERSESSION_NOTICE_PRESERVED_BODY"
+    },
+    {
+      "path": "Design/61_CORE_API_AND_SEQUENCE_DESIGN.md",
+      "original_git_blob_sha": "9ef30d68e2afe98a3342477bbc00bf4b57488e39",
+      "updated_git_blob_sha": "21c90d48fbfed26453af5e50886017be945fe92b",
+      "new_authority": "117 (API), 118 (commit ordering)",
+      "change": "PREPENDED_SCOPE_LIMITED_SUPERSESSION_NOTICE_PRESERVED_BODY"
+    },
+    {
+      "path": "Design/67_SIM_ONLY_NUMERIC_POLICY_PROPOSAL.md",
+      "original_git_blob_sha": "06a26f9d355fd4a3728d07f9d87e4653d00648fa",
+      "updated_git_blob_sha": "65eb1b6d228af9ccdda87d0ab6063ee5e5f37b63",
+      "new_authority": "116 (approved numeric policy and exact digest)",
+      "change": "PREPENDED_SCOPE_LIMITED_SUPERSESSION_NOTICE_PRESERVED_BODY"
+    },
+    {
+      "path": "Design/68_ATOMIC_EVENT_AND_SAFETY_TRANSITION_CONTRACT.md",
+      "original_git_blob_sha": "4240405e6fde9a7fd87dce4e179e25e65341bc54",
+      "updated_git_blob_sha": "ba67cb49b6fd6aa4b60daac6ce71c357d8dcd88d",
+      "new_authority": "115 (hazard before RESET, conflicts before LOW)",
+      "change": "PREPENDED_SCOPE_LIMITED_SUPERSESSION_NOTICE_PRESERVED_BODY"
+    },
+    {
+      "path": "Design/69_REPLAY_SERIALIZATION_AND_EVIDENCE_CONTRACT.md",
+      "original_git_blob_sha": "47de847c7742d90c3b3d5272058115885092e996",
+      "updated_git_blob_sha": "e0c5bba94cf154f95c3ba080bf45bdef0ab0c3fd",
+      "new_authority": "118 (JCS JSONL, external digest)",
+      "change": "PREPENDED_SCOPE_LIMITED_SUPERSESSION_NOTICE_PRESERVED_BODY"
+    },
+    {
+      "path": "Design/70_IMMUTABLE_CONFIG_AND_HOST_SCOPE_GATE.md",
+      "original_git_blob_sha": "68f35f8b8d972d499278a0780070f4b97e66b848",
+      "updated_git_blob_sha": "d00a28f4f746f1af0e408c7406ca2155d069c498",
+      "new_authority": "116 (independent policy trust)",
+      "change": "PREPENDED_SCOPE_LIMITED_SUPERSESSION_NOTICE_PRESERVED_BODY"
+    },
+    {
+      "path": "Design/71_PHASE22_POLICY_BOUNDARY_TEST_ORACLES.md",
+      "original_git_blob_sha": "195dcac159aff8d69c161f8a26bc995815dfc5ba",
+      "updated_git_blob_sha": "27bee8771897d1d3924a9f61b6620bd17de3f2a1",
+      "new_authority": "120 (oracle coverage, historical cases retained)",
+      "change": "PREPENDED_SCOPE_LIMITED_SUPERSESSION_NOTICE_PRESERVED_BODY"
+    },
+    {
+      "path": "Design/78_HOST_API_NORMATIVE_FREEZE_CANDIDATE.md",
+      "original_git_blob_sha": "197b3af002976695b5546d2e40e1f1335d873729",
+      "updated_git_blob_sha": "4eec98dfd5e5122af35274ed693f519ae92424d1",
+      "new_authority": "117 (API typed contract), 115 (atomic tick)",
+      "change": "PREPENDED_SCOPE_LIMITED_SUPERSESSION_NOTICE_PRESERVED_BODY"
+    },
+    {
+      "path": "Design/80_REPLAY_EVIDENCE_AND_RUN_ID_POLICY.md",
+      "original_git_blob_sha": "91811f3a53eab22e4d9fa8e74351cb245673f36e",
+      "updated_git_blob_sha": "789430000fa4de3d833436bbfd03b60cc65f45bc",
+      "new_authority": "118 (replay identity)",
+      "change": "PREPENDED_SCOPE_LIMITED_SUPERSESSION_NOTICE_PRESERVED_BODY"
+    },
+    {
+      "path": "Design/84_G0A1_NORMATIVE_SAFETY_AND_EVENT_SEMANTICS.md",
+      "original_git_blob_sha": "2cc1f50a50437e7c820c74909e374237906e1ce3",
+      "updated_git_blob_sha": "227cda10bbf1809b600156d0e0a83620233089d7",
+      "new_authority": "115 (hazard before RESET and S1)",
+      "change": "PREPENDED_SCOPE_LIMITED_SUPERSESSION_NOTICE_PRESERVED_BODY"
+    },
+    {
+      "path": "Design/85_HOST_SCHEMA_ERROR_COMPATIBILITY_V2_CANDIDATE.md",
+      "original_git_blob_sha": "8ee215206449c45d17627f530dbe2c5f5ddd6666",
+      "updated_git_blob_sha": "f12124c626165e95ebda1c8cb216ab838c27cfd8",
+      "new_authority": "117 (errors v2)",
+      "change": "PREPENDED_SCOPE_LIMITED_SUPERSESSION_NOTICE_PRESERVED_BODY"
+    },
+    {
+      "path": "Design/87_TRUST_REPLAY_AND_EVIDENCE_FREEZE_CANDIDATE.md",
+      "original_git_blob_sha": "debc8f0633f740d5c97c54b1eebf82dd4f92cb63",
+      "updated_git_blob_sha": "f885ddd65251fdd806519eec505477b842dd46c0",
+      "new_authority": "118 (trace), 116 (trust)",
+      "change": "PREPENDED_SCOPE_LIMITED_SUPERSESSION_NOTICE_PRESERVED_BODY"
+    },
+    {
+      "path": "Design/93_G0A1_CONTRACT_DEFECT_AND_CLOSURE_REGISTER.md",
+      "original_git_blob_sha": "3dd826459412cbbadb62022944f5d68f4881c028",
+      "updated_git_blob_sha": "08717b241d83c791e79c41895f8617e65ecf6532",
+      "new_authority": "121 (finding dispositions)",
+      "change": "PREPENDED_SCOPE_LIMITED_SUPERSESSION_NOTICE_PRESERVED_BODY"
+    },
+    {
+      "path": "Design/94_NORMATIVE_REPLAY_TERMINAL_AND_TRACE_ATOMICITY_PATCH.md",
+      "original_git_blob_sha": "d5ea99889c906c14b63012648347fb585ea7f6a9",
+      "updated_git_blob_sha": "0e39c7b64abcab7702ff9fbef1fefb9f55f9cf3d",
+      "new_authority": "118 (no terminal self-hash)",
+      "change": "PREPENDED_SCOPE_LIMITED_SUPERSESSION_NOTICE_PRESERVED_BODY"
+    },
+    {
+      "path": "Design/95_STATE_MACHINE_EDGE_AND_NO_EVENT_ORACLES.md",
+      "original_git_blob_sha": "a4f8e33d9af424bcfd0f5a49997909936adc1eb8",
+      "updated_git_blob_sha": "d6db24ccb883b8f753b18471dd154fc7a5ab60b1",
+      "new_authority": "120 (test index)",
+      "change": "PREPENDED_SCOPE_LIMITED_SUPERSESSION_NOTICE_PRESERVED_BODY"
+    }
+  ]
+}

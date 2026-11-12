@@ -1,0 +1,203 @@
+{
+  "status": "DESIGN_ONLY_ALL_NOT_RUN",
+  "scope": "PC_SIM_ONLY",
+  "contract": "G0A1_R1",
+  "oracles": [
+    {
+      "id": "P28-T01",
+      "category": "GLOBAL_DUPLICATE_ID",
+      "scenario": "Duplicate event_id at disjoint timestamps",
+      "expected": "VALIDATION_REJECTED, zero ticks; E_DUPLICATE_EVENT_ID",
+      "execution": "NOT_RUN"
+    },
+    {
+      "id": "P28-T02",
+      "category": "CONFLICT_CONTROL",
+      "scenario": "Two different valid control bodies same tick (LOW and HIGH)",
+      "expected": "E_CONTROL_BATCH_CONFLICT; no accepted LOW/HIGH or age refresh",
+      "execution": "NOT_RUN"
+    },
+    {
+      "id": "P28-T03",
+      "category": "EQUIVALENT_CONTROL",
+      "scenario": "Different IDs, same semantic payload same tick",
+      "expected": "one observation; IDs sorted; latest original timestamp",
+      "execution": "NOT_RUN"
+    },
+    {
+      "id": "P28-T04",
+      "category": "CONTROL_WITH_INVALID",
+      "scenario": "Valid LOW + typed invalid UART in same tick",
+      "expected": "no qualifying LOW; E_FRAME_INVALID",
+      "execution": "NOT_RUN"
+    },
+    {
+      "id": "P28-T05",
+      "category": "RF_CONTRADICTION",
+      "scenario": "Same-tick healthy and lost",
+      "expected": "LOST effective; no arm or active output",
+      "execution": "NOT_RUN"
+    },
+    {
+      "id": "P28-T06",
+      "category": "RESET_WITH_LOSS",
+      "scenario": "ACTIVE + RF LOST + RESET",
+      "expected": "CONTINGENCY, null output",
+      "execution": "NOT_RUN"
+    },
+    {
+      "id": "P28-T07",
+      "category": "RESET_WITH_CATASTROPHE",
+      "scenario": "ACTIVE + catastrophe + RESET",
+      "expected": "FAULT_LATCHED, cannot clear in-run",
+      "execution": "NOT_RUN"
+    },
+    {
+      "id": "P28-T08",
+      "category": "ACK_SAME_TICK_FINAL_LOW",
+      "scenario": "CONTINGENCY + second LOW completing window + ACK",
+      "expected": "deny ACK this tick; remain CONTINGENCY",
+      "execution": "NOT_RUN"
+    },
+    {
+      "id": "P28-T09",
+      "category": "ACK_NEXT_TICK",
+      "scenario": "CONTINGENCY + committed LOW + eligible ACK, all sources restored",
+      "expected": "DISARMED, LOW consumed, no rearm",
+      "execution": "NOT_RUN"
+    },
+    {
+      "id": "P28-T10",
+      "category": "TWO_EQUIVALENT_ACK",
+      "scenario": "Two distinct IDs equivalent ACK same tick",
+      "expected": "one logical ACK; no double recovery",
+      "execution": "NOT_RUN"
+    },
+    {
+      "id": "P28-T11",
+      "category": "INVALID_BREAK_LOW",
+      "scenario": "LOW at 15ms; invalid at 25ms; LOW at 35ms",
+      "expected": "new LOW is first; window not completed",
+      "execution": "NOT_RUN"
+    },
+    {
+      "id": "P28-T12",
+      "category": "HIGH_BOUNDARY",
+      "scenario": "HIGH first at 40ms; confirm 139999us or 140000us",
+      "expected": "139999 no qualification; 140000 yes with healthy preconditions",
+      "execution": "NOT_RUN"
+    },
+    {
+      "id": "P28-T13",
+      "category": "S1_EMPTY_FRESH",
+      "scenario": "ACTIVE, no new control, both ages <=200ms",
+      "expected": "held authorized effort; no timestamp refresh",
+      "execution": "NOT_RUN"
+    },
+    {
+      "id": "P28-T14",
+      "category": "S1_STALE",
+      "scenario": "ACTIVE, no new control, age >200ms",
+      "expected": "CONTINGENCY and (null,null)",
+      "execution": "NOT_RUN"
+    },
+    {
+      "id": "P28-T15",
+      "category": "SELF_TEST_RF_UNKNOWN",
+      "scenario": "SELF_TEST, policy approved and no critical health issue, RF unknown",
+      "expected": "DISARMED but no ARM",
+      "execution": "NOT_RUN"
+    },
+    {
+      "id": "P28-T16",
+      "category": "WARN_RECOVERY_UNSUPPORTED_EVENT",
+      "scenario": "Unrecognized voltage recovery event type in input v1",
+      "expected": "VALIDATION_REJECTED; do not invent event schema",
+      "execution": "NOT_RUN"
+    },
+    {
+      "id": "P28-T17",
+      "category": "SCHEDULER_NONRECOVERABLE",
+      "scenario": "CONTINGENCY with scheduler stalled, ACK after RF healthy",
+      "expected": "no ACK-clear",
+      "execution": "NOT_RUN"
+    },
+    {
+      "id": "P28-T18",
+      "category": "POLICY_SELF_APPROVAL",
+      "scenario": "Scenario includes approved=true and false trusted allowlist",
+      "expected": "preflight rejection, no sink",
+      "execution": "NOT_RUN"
+    },
+    {
+      "id": "P28-T19",
+      "category": "TRACE_SELF_HASH",
+      "scenario": "terminal contains control_trace_sha256",
+      "expected": "nonconforming complete trace; reject",
+      "execution": "NOT_RUN"
+    },
+    {
+      "id": "P28-T20",
+      "category": "EVIDENCE_APPEND_FAILURE",
+      "scenario": "ACTIVE tick append fails before publish",
+      "expected": "no new output, FAILED_INCOMPLETE_EVIDENCE, complete SHA null",
+      "execution": "NOT_RUN"
+    },
+    {
+      "id": "P28-T21",
+      "category": "REPLAY_UUID_INVARIANCE",
+      "scenario": "same scenario/policy/engine/schedule, different execution-instance UUID",
+      "expected": "same normative trace bytes and digest",
+      "execution": "NOT_RUN"
+    },
+    {
+      "id": "P28-T22",
+      "category": "POLICY_DIGEST_PIN",
+      "scenario": "one byte changed in canonical approved policy",
+      "expected": "mismatched digest rejected at preflight",
+      "execution": "NOT_RUN"
+    },
+    {
+      "id": "P28-T23",
+      "category": "OUTSIDE_PHYSICAL_SCOPE",
+      "scenario": "SIM JSON asks real servo PWM/FLIGHT_TEST_APPROVED",
+      "expected": "preflight E_CONTEXT_DENIED; no hardware adapter",
+      "execution": "NOT_RUN"
+    },
+    {
+      "id": "P28-T24",
+      "category": "LEGACY_ERROR_MIGRATION",
+      "scenario": "E_EVENT_ID_CONFLICT ambiguous legacy result",
+      "expected": "no silent alias to v2; report AMBIGUOUS_LEGACY_ERROR",
+      "execution": "NOT_RUN"
+    },
+    {
+      "id": "P28-T25",
+      "category": "DESIGN_FREEZE_DIFF",
+      "scenario": "compare head and prepended notices against blob guards",
+      "expected": "all sources match or freeze BLOCKED",
+      "execution": "NOT_RUN"
+    },
+    {
+      "id": "P28-T26",
+      "category": "BOUNDARY_AGE",
+      "scenario": "frame or RF age equals 200000 vs 200001µs",
+      "expected": "exact boundary allowed; +1 fails if active",
+      "execution": "NOT_RUN"
+    },
+    {
+      "id": "P28-T27",
+      "category": "NO_EVENT_ARM_CHECK",
+      "scenario": "ARM_CHECK 100ms timer tick but no confirming HIGH frame",
+      "expected": "does not reach ARMED_IDLE",
+      "execution": "NOT_RUN"
+    },
+    {
+      "id": "P28-T28",
+      "category": "COMPLETE_TRACE",
+      "scenario": "normal complete run expected fault injection and full terminal",
+      "expected": "can report COMPLETED; PASS only if oracle matches",
+      "execution": "NOT_RUN"
+    }
+  ]
+}

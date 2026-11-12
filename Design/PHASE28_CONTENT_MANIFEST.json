@@ -1,0 +1,231 @@
+{
+  "package": "BionicButterfly_Phase28_Approved_Contract_Reconciliation",
+  "base_git_commit": "3d9a4f28d521190d10579cab48d8b732817892c9",
+  "scope": "PC_SIM_ONLY",
+  "owner_architecture_decision": "CANDIDATE_R1_APPROVED_IN_CONVERSATION",
+  "merged_git_design_freeze": "PENDING_OWNER_INTEGRATION_AND_POST_COMMIT_SA_REVIEW",
+  "policy_core_sha256": "d7567197dd43480d7e96dac121fbb707d3097b6c443b1b7ab55e822dbac66e10",
+  "runtime_tests": "NOT_RUN",
+  "counts": {
+    "new_markdown": 9,
+    "updated_existing_markdown": 27,
+    "source_guard_records": 27
+  },
+  "files": [
+    {
+      "path": "Design/100_G0A1_UNIFIED_EVENT_TICK_AND_CONTROL_CONTRACT.md",
+      "sha256": "c287c74414de95d0ee4567783d575a8360f71656a593a24726bb162a0630fd7e",
+      "bytes": 9449
+    },
+    {
+      "path": "Design/101_G0A1_ARM_RECOVERY_AND_NO_EVENT_TRANSITION_MATRIX.md",
+      "sha256": "db7e07baa5e5f444554fc0c43d6ab4f39858c7054d5c16266cded7f17ef6fc34",
+      "bytes": 8338
+    },
+    {
+      "path": "Design/102_G0A1_SIM_POLICY_AND_APPROVAL_PROPOSAL.md",
+      "sha256": "c9392fb2a0f12245769f976a23b4a499aa4d45ea967d841fec75842566e919f1",
+      "bytes": 5380
+    },
+    {
+      "path": "Design/103_G0A1_REPLAY_TRACE_AND_TRUST_BOUNDARY.md",
+      "sha256": "ee733864898694f26e5dae5fcc31c8e995b203d8b9bd5828215e44ea80be3e3c",
+      "bytes": 6756
+    },
+    {
+      "path": "Design/104_G0A1_DETERMINISTIC_ACCEPTANCE_VECTORS.md",
+      "sha256": "94740b1fed9f74c553b69bdd2bf81d958a38e6fc62d9cdc39349997c3f1d80c7",
+      "bytes": 7441
+    },
+    {
+      "path": "Design/108_PHASE27_CONSOLIDATED_ADR_RESOLUTION_MATRIX.md",
+      "sha256": "bc790b2e89be0aadb82e7a70b5c258886c608cf17164f7a77b308d272fb2dbd6",
+      "bytes": 7434
+    },
+    {
+      "path": "Design/109_G0A1_SEMANTIC_CLOSURE_WALKTHROUGH.md",
+      "sha256": "52584e9e507675331adf3f63edb385b394fad8c16291cda50e106d531b5b70e3",
+      "bytes": 8052
+    },
+    {
+      "path": "Design/110_G0A1_REPLAY_POLICY_AND_TRUST_DECISION_GATE.md",
+      "sha256": "121b30b4d34fc5a5694d7ed18a3cb58a2ee7a40a23c7c6b709b9f8aaf7752e67",
+      "bytes": 6330
+    },
+    {
+      "path": "Design/111_G0A1_CONTRACT_CLOSURE_ORACLES_AND_GATES.md",
+      "sha256": "50aff1e60e9090bebe559e35b1a7c29cd2eec600261740c99f739622630b2d63",
+      "bytes": 6997
+    },
+    {
+      "path": "Design/113_PHASE27_OWNER_G0A1_DECISION_PACKET.md",
+      "sha256": "ebd69054466d11251d18d79dbb37b419ff5628111711e5325a0e16ca56b7e4dd",
+      "bytes": 6519
+    },
+    {
+      "path": "Design/114_PHASE28_OWNER_APPROVAL_AND_SCOPE_BASELINE.md",
+      "sha256": "e93e1058db174ccf9233ba5a497b216db4572df1676a47545d7ae30e74c6dd5b",
+      "bytes": 4335
+    },
+    {
+      "path": "Design/115_G0A1_APPROVED_ATOMIC_SAFETY_CONTRACT_R1.md",
+      "sha256": "c05debee190ddb27a5e48c615a3089658b13818ead326eb0ebb2261499ca58ad",
+      "bytes": 8832
+    },
+    {
+      "path": "Design/116_G0A1_APPROVED_POLICY_DIGEST_AND_TRUST_R1.md",
+      "sha256": "d3cb73aec89cb912ee2c3a7f53a3e68cb26d3cc755074cc34cd142261db3b8ee",
+      "bytes": 4685
+    },
+    {
+      "path": "Design/117_G0A1_INPUT_RESULT_ERRORS_R1.md",
+      "sha256": "31b5a50f57742639154681444bfc8bda30007a6f490134380db409f847e3efb7",
+      "bytes": 4207
+    },
+    {
+      "path": "Design/118_G0A1_REPLAY_AND_OUTPUT_TRANSACTION_R1.md",
+      "sha256": "b122695589c96a01f341b4474c68ff4fb4f625ce086d60ffa00c266fe9b3c60b",
+      "bytes": 3784
+    },
+    {
+      "path": "Design/119_G0A1_CONTROLLED_SUPERSESSION_AND_BLOB_GUARDS.md",
+      "sha256": "bfce36e3051f7577c61dac5ca8726175d7c7a63802ee9d0a02c5910fb78c042e",
+      "bytes": 3069
+    },
+    {
+      "path": "Design/120_G0A1_R1_CONFORMANCE_ORACLES_AND_TRACEABILITY.md",
+      "sha256": "30471af1a7ea0b7ebbc50d6557e5d8c959d57c54f7a461c175b3b89be336c4cd",
+      "bytes": 5465
+    },
+    {
+      "path": "Design/121_G0A1_ARCHITECTURE_FREEZE_READINESS_AND_OPEN_ITEMS.md",
+      "sha256": "9a8a2d4bea1e4105e1ffb2519a60ad228b639019f9b2d0f779c8673121064e1a",
+      "bytes": 3147
+    },
+    {
+      "path": "Design/122_G0A1_DEVELOPER_INTERFACE_HANDOFF_BOUNDARY_NOT_TASK.md",
+      "sha256": "627cec5cd271b251632e7ddc47ccabf421701a32d24ab9b2af7162a711ecff5d",
+      "bytes": 2295
+    },
+    {
+      "path": "Design/57_CANONICAL_SIM_SCHEMAS_AND_ERRORS.md",
+      "sha256": "7599683f10714652df486f00b6becde8f5707bebe4579a6f8aadd2b223eb6458",
+      "bytes": 10688
+    },
+    {
+      "path": "Design/58_DETERMINISTIC_SAFETY_FSM_SEMANTICS.md",
+      "sha256": "cd3e7b7330f77c46a5c0314f46e0fe2e0ed9685741b8c154f8f7ec34d46e5ed7",
+      "bytes": 8821
+    },
+    {
+      "path": "Design/59_VIRTUAL_TIME_EVENT_REPLAY_SPEC.md",
+      "sha256": "412aa9b9e18de81359ad496a2d53278c42564492af4c47b0bc0e4f96d6c6f85d",
+      "bytes": 9180
+    },
+    {
+      "path": "Design/61_CORE_API_AND_SEQUENCE_DESIGN.md",
+      "sha256": "cfd920e8ec3bcbe4691e5b9c3182abc037267a87ef6e4fc4db4f8b62ce4ab154",
+      "bytes": 7636
+    },
+    {
+      "path": "Design/67_SIM_ONLY_NUMERIC_POLICY_PROPOSAL.md",
+      "sha256": "91a8cbdd7f0a61a299be9d699715cee8ffe133569f9628e2b48c7eb35049e878",
+      "bytes": 9745
+    },
+    {
+      "path": "Design/68_ATOMIC_EVENT_AND_SAFETY_TRANSITION_CONTRACT.md",
+      "sha256": "f1bb13e4f308159fa6252ee178150add2af80e6e4dcd742e2e186a6953d72594",
+      "bytes": 11103
+    },
+    {
+      "path": "Design/69_REPLAY_SERIALIZATION_AND_EVIDENCE_CONTRACT.md",
+      "sha256": "d32ad167acf1ef9580192122c56a9d1323df9563b3be095e50c60cac47190010",
+      "bytes": 9355
+    },
+    {
+      "path": "Design/70_IMMUTABLE_CONFIG_AND_HOST_SCOPE_GATE.md",
+      "sha256": "599c10bc531ddc6714d5528926028e44d59af6a385f6b7ed709d47a28721a61d",
+      "bytes": 7459
+    },
+    {
+      "path": "Design/71_PHASE22_POLICY_BOUNDARY_TEST_ORACLES.md",
+      "sha256": "0157d2a29d84b00c3e36c92ee0d3138d106b08bed87b3649c7e486e84af4322c",
+      "bytes": 9235
+    },
+    {
+      "path": "Design/78_HOST_API_NORMATIVE_FREEZE_CANDIDATE.md",
+      "sha256": "6bf2194c494b9c90e49bfcecb194e72a78bf732044ae8386846e604269517857",
+      "bytes": 7437
+    },
+    {
+      "path": "Design/80_REPLAY_EVIDENCE_AND_RUN_ID_POLICY.md",
+      "sha256": "317b8d9ed0a31c6f498c5ca3611f9747c95ad41b1de8d1c8871198c7b4a1f0ea",
+      "bytes": 4853
+    },
+    {
+      "path": "Design/84_G0A1_NORMATIVE_SAFETY_AND_EVENT_SEMANTICS.md",
+      "sha256": "626dc9d802b0b97214e3efefca066b3aaa3ad312e635c546988a6c7a382e4222",
+      "bytes": 11484
+    },
+    {
+      "path": "Design/85_HOST_SCHEMA_ERROR_COMPATIBILITY_V2_CANDIDATE.md",
+      "sha256": "571bc7861916809d09f1eae52e65dc0841af59dcaa29ae74e58972f0edcbb6a4",
+      "bytes": 7124
+    },
+    {
+      "path": "Design/87_TRUST_REPLAY_AND_EVIDENCE_FREEZE_CANDIDATE.md",
+      "sha256": "79f6299aaec60a0de101939f5e182a9f6d1080ccc291bda7bc0d1d30ada5af19",
+      "bytes": 6449
+    },
+    {
+      "path": "Design/93_G0A1_CONTRACT_DEFECT_AND_CLOSURE_REGISTER.md",
+      "sha256": "2d8833e83b5060a0fd0a2c3d4097234d34049d7b4cd010cbba16039a9f78e7b5",
+      "bytes": 4971
+    },
+    {
+      "path": "Design/94_NORMATIVE_REPLAY_TERMINAL_AND_TRACE_ATOMICITY_PATCH.md",
+      "sha256": "2df8991e707e82a7e99c2e8ee454dc16ac18f43b1cf82a076e87eb3fdcf0a655",
+      "bytes": 5020
+    },
+    {
+      "path": "Design/95_STATE_MACHINE_EDGE_AND_NO_EVENT_ORACLES.md",
+      "sha256": "204316a6d615ff7052dfefa79010310517a8e76d44b9a6b2e0f2bf188b0c795d",
+      "bytes": 5705
+    },
+    {
+      "path": "Design/PHASE28_SOURCE_BLOB_GUARDS.json",
+      "sha256": "8e1bdce16e06ce20d3777d18329262cacc4ccca80674b0638f6123a7655d0ef5",
+      "bytes": 10110
+    },
+    {
+      "path": "Design/assets/115_G0A1_APPROVED_CONTROL_PIPELINE.mmd",
+      "sha256": "7c308ec9f39bc9bb0ed472cdd645c7f41465e7b5257066777fa61efa35972e2b",
+      "bytes": 470
+    },
+    {
+      "path": "Design/contracts/G0A1_OWNER_APPROVAL_R1.record.json",
+      "sha256": "7002bb8651b15104db1652f79f6876cb3af8dc364ca00137ec4267419e0f7caf",
+      "bytes": 2183
+    },
+    {
+      "path": "Design/contracts/G0A1_SIM_POLICY_CORE_V1.schema.json",
+      "sha256": "e9c0a4055f89b1b3e26b1296c1c3bd1e2de980a4ab8519ff9a554d882ca1dd09",
+      "bytes": 3195
+    },
+    {
+      "path": "Design/contracts/SIM_POLICY_22A_R1.canonical.json",
+      "sha256": "d7567197dd43480d7e96dac121fbb707d3097b6c443b1b7ab55e822dbac66e10",
+      "bytes": 603
+    },
+    {
+      "path": "Design/contracts/SIM_POLICY_22A_R1.readable.json",
+      "sha256": "666d4632b777919630c0a8902fe1069ffce0574f62adf80f6b17ca1c732bf000",
+      "bytes": 719
+    },
+    {
+      "path": "Design/fixtures/P28_R1_ORACLE_INDEX.json",
+      "sha256": "e23ca0f23fb9bacc36ed126d185c4cc7e24b414994e2654d38062dde9de62623",
+      "bytes": 6709
+    }
+  ]
+}

@@ -1,3 +1,5 @@
+> **Phase 2.8 / G0-A1 R1 approved-scope reconciliation notice (2026-11-13).** The owner approved **PC_SIM_ONLY Candidate R1** in conversation after Phase 2.7; see [`114_PHASE28_OWNER_APPROVAL_AND_SCOPE_BASELINE.md`](114_PHASE28_OWNER_APPROVAL_AND_SCOPE_BASELINE.md). For G0-A1 host-only behavior, the **current controlling specification** is `120 (test index)`; this file’s earlier DRAFT/PROPOSED/PENDING language and any conflicting priority, policy or replay rules are **retained as historical design context, not independently authoritative**. This notice does **not** approve flight/bench hardware, claim tests passed, or authorize tasks. Guard against overwrites: original Git blob SHA `a4f8e33d9af424bcfd0f5a49997909936adc1eb8`, base main `3d9a4f28d521190d10579cab48d8b732817892c9`.
+
 # BionicButterfly — State-Machine Edge Cases & No-Event Evaluation (Design Oracles)
 
 - **ID:** BB-P25-TEST-095 | **Version:** 0.1 | **Status:** TEST DESIGN ONLY; P25-T01–T16 **NOT RUN**.

@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "policy_id": "SIM_POLICY_CANDIDATE_22A",
+  "model_tag": "SIM_ONLY",
+  "allowed_context": "PC_SIM",
+  "owner": "SIMULATOR",
+  "scheduler_step_us": 5000,
+  "arm_low_observation_us": 20000,
+  "arm_high_qualification_us": 100000,
+  "frame_timeout_us": 200000,
+  "rf_status_timeout_us": 200000,
+  "neutral_flap_max": 0.02,
+  "neutral_steer_abs_max": 0.05,
+  "active_flap_threshold": 0.05,
+  "virtual_left_range": [
+    0,
+    1
+  ],
+  "virtual_right_range": [
+    0,
+    1
+  ],
+  "max_scenario_duration_us": 60000000,
+  "max_events": 20000,
+  "max_input_bytes": 2097152,
+  "max_trace_bytes": 16777216,
+  "max_json_nesting": 16,
+  "max_event_id_utf8_bytes": 64,
+  "max_generic_string_bytes": 256
+}

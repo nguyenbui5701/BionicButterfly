@@ -1,3 +1,5 @@
+> **Phase 2.8 / G0-A1 R1 approved-scope reconciliation notice (2026-11-13).** The owner approved **PC_SIM_ONLY Candidate R1** in conversation after Phase 2.7; see [`114_PHASE28_OWNER_APPROVAL_AND_SCOPE_BASELINE.md`](114_PHASE28_OWNER_APPROVAL_AND_SCOPE_BASELINE.md). For G0-A1 host-only behavior, the **current controlling specification** is `120 (oracles)`; this file’s earlier DRAFT/PROPOSED/PENDING language and any conflicting priority, policy or replay rules are **retained as historical design context, not independently authoritative**. This notice does **not** approve flight/bench hardware, claim tests passed, or authorize tasks. Guard against overwrites: original Git blob SHA `5cc449119735c8807e9237dc433a766d8a356b5c`, base main `3d9a4f28d521190d10579cab48d8b732817892c9`.
+
 # BionicButterfly — Phase 2.7 Closure Test Oracles & Review Gates
 
 - **ID:** BB-P27-TEST-111 | **Rev:** 0.1 | **Status:** DESIGN TEST CASES / ALL NOT RUN

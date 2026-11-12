@@ -1,0 +1,159 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:bionicbutterfly:g0a1:sim-policy-core:v1",
+  "title": "G0-A1 SIM-only canonical policy domain object v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "active_flap_threshold",
+    "allowed_context",
+    "arm_high_qualification_us",
+    "arm_low_observation_us",
+    "frame_timeout_us",
+    "max_event_id_utf8_bytes",
+    "max_events",
+    "max_generic_string_bytes",
+    "max_input_bytes",
+    "max_json_nesting",
+    "max_scenario_duration_us",
+    "max_trace_bytes",
+    "model_tag",
+    "neutral_flap_max",
+    "neutral_steer_abs_max",
+    "owner",
+    "policy_id",
+    "rf_status_timeout_us",
+    "scheduler_step_us",
+    "schema_version",
+    "virtual_left_range",
+    "virtual_right_range"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "policy_id": {
+      "const": "SIM_POLICY_CANDIDATE_22A",
+      "type": "string"
+    },
+    "model_tag": {
+      "const": "SIM_ONLY",
+      "type": "string"
+    },
+    "allowed_context": {
+      "const": "PC_SIM",
+      "type": "string"
+    },
+    "owner": {
+      "const": "SIMULATOR",
+      "type": "string"
+    },
+    "scheduler_step_us": {
+      "const": 5000,
+      "type": "integer"
+    },
+    "arm_low_observation_us": {
+      "const": 20000,
+      "type": "integer"
+    },
+    "arm_high_qualification_us": {
+      "const": 100000,
+      "type": "integer"
+    },
+    "frame_timeout_us": {
+      "const": 200000,
+      "type": "integer"
+    },
+    "rf_status_timeout_us": {
+      "const": 200000,
+      "type": "integer"
+    },
+    "neutral_flap_max": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "const": 0.02
+    },
+    "neutral_steer_abs_max": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "const": 0.05
+    },
+    "active_flap_threshold": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "const": 0.05
+    },
+    "virtual_left_range": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      },
+      "prefixItems": [
+        {
+          "const": 0
+        },
+        {
+          "const": 1
+        }
+      ],
+      "minItems": 2,
+      "maxItems": 2,
+      "const": [
+        0,
+        1
+      ]
+    },
+    "virtual_right_range": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      },
+      "prefixItems": [
+        {
+          "const": 0
+        },
+        {
+          "const": 1
+        }
+      ],
+      "minItems": 2,
+      "maxItems": 2,
+      "const": [
+        0,
+        1
+      ]
+    },
+    "max_scenario_duration_us": {
+      "const": 60000000,
+      "type": "integer"
+    },
+    "max_events": {
+      "const": 20000,
+      "type": "integer"
+    },
+    "max_input_bytes": {
+      "const": 2097152,
+      "type": "integer"
+    },
+    "max_trace_bytes": {
+      "const": 16777216,
+      "type": "integer"
+    },
+    "max_json_nesting": {
+      "const": 16,
+      "type": "integer"
+    },
+    "max_event_id_utf8_bytes": {
+      "const": 64,
+      "type": "integer"
+    },
+    "max_generic_string_bytes": {
+      "const": 256,
+      "type": "integer"
+    }
+  }
+}

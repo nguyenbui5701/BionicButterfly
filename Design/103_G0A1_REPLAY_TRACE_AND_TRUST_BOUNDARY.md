@@ -1,3 +1,5 @@
+> **Phase 2.8 / G0-A1 R1 approved-scope reconciliation notice (2026-11-13).** The owner approved **PC_SIM_ONLY Candidate R1** in conversation after Phase 2.7; see [`114_PHASE28_OWNER_APPROVAL_AND_SCOPE_BASELINE.md`](114_PHASE28_OWNER_APPROVAL_AND_SCOPE_BASELINE.md). For G0-A1 host-only behavior, the **current controlling specification** is `118 (trace)`; this file’s earlier DRAFT/PROPOSED/PENDING language and any conflicting priority, policy or replay rules are **retained as historical design context, not independently authoritative**. This notice does **not** approve flight/bench hardware, claim tests passed, or authorize tasks. Guard against overwrites: original Git blob SHA `68a7800fb4242282b6364a0ab8c30ce75700e97f`, base main `3d9a4f28d521190d10579cab48d8b732817892c9`.
+
 # BionicButterfly — G0-A1 Replay, Commit Atomicity and Evidence Contract
 
 - **ID:** BB-P26-TRACE-103 | **Rev:** 0.1 | **Status:** SA proposal / no implementation/test execution.
