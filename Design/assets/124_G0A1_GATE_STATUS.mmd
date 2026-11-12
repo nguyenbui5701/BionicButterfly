@@ -1,0 +1,13 @@
+flowchart TD
+  A[Owner-approved R1 PC-only] --> B[Git baseline byte audit]
+  B --> C[Configuration snapshot LOCKED]
+  C --> D{Exact interface contracts complete?}
+  D -->|No: scenario, mixer, trace| E[Full handoff HOLD]
+  E --> F[Phase 2.10 interface completion review]
+  F --> D
+  D -->|Yes and owner accepts new choices| G[Full G0-A1 Design Freeze]
+  G --> H{Separate task authorization?}
+  H -->|Yes| I[SA issues bounded Developer Task]
+  H -->|No| J[Remain design only]
+  I --> K[G1 executable test evidence]
+  G -.-> Z[G0-B / G4 physical flight separate NO-GO]

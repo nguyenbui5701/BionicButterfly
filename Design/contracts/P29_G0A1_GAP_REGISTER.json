@@ -1,0 +1,75 @@
+{
+  "source_commit": "15803143960e3fc82a468d99e83474670237857f",
+  "open_findings": [
+    {
+      "id": "P29-F01",
+      "priority": "P0-HANDOFF",
+      "subject": "Scenario input v1 wire schema incomplete",
+      "evidence": "117 specifies strict known-only event types; only machine JSON schema bundled is G0A1_SIM_POLICY_CORE_V1.schema.json (policy, not scenario). Exact envelope, all event discriminators and payload fields are not machine pinned.",
+      "impact": "Two parsers could disagree on whether events or unknown keys are valid; risk of inconsistent safety observations.",
+      "resolution": "Publish closed scenario v1 JSON Schema with exhaustive event types, shape/units, unknown field rejection, duplicate key validation pre-parser, BOOT semantics and resource bounds, matching R1; review as R1 compatible supplement.",
+      "owner": "SA + owner if any semantic extension",
+      "test": "P29-T01–T04"
+    },
+    {
+      "id": "P29-F02",
+      "priority": "P0-HANDOFF",
+      "subject": "Virtual L/R mixer formula undefined",
+      "evidence": "115 and 117 lock effort bounds and quantizer, but not a unique function mapping flap_demand, steering_demand into L/R.",
+      "impact": "Both implementations can satisfy bounds but produce different traces and control outputs.",
+      "resolution": "SA to select an explicit purely virtual mapping (coefficients, saturation order, sign convention, rounding, neutral and S1 hold) as a proposed R1.1 contract; owner review if changing expected behavior.",
+      "owner": "SA + owner",
+      "test": "P29-T05–T07"
+    },
+    {
+      "id": "P29-F03",
+      "priority": "P0-HANDOFF",
+      "subject": "Trace record field schemas incomplete",
+      "evidence": "118 fixes JSONL framing, hashing and required information but does not provide closed header/tick/terminal JSON Schemas with exact required/optional keys and versioned enum registry.",
+      "impact": "Two engines can make different hash bytes for identical semantics while appearing compliant.",
+      "resolution": "Create versioned strict trace schema with exact record-type tag, fields, null handling, comparator, reason-code order, terminal semantics, and deterministic replay vectors.",
+      "owner": "SA",
+      "test": "P29-T08–T10"
+    },
+    {
+      "id": "P29-F04",
+      "priority": "P1-DESIGN",
+      "subject": "Scenario fault stimulus coverage incomplete",
+      "evidence": "R1 references critical power/scheduler/catastrophic conditions and VOLTAGE_WARNING_RECOVERABLE as a cause, yet 117 prohibits inventing v1 event types.",
+      "impact": "Some fault or recovery oracles cannot be represented end-to-end without a later schema revision.",
+      "resolution": "Mark unrepresentable cases DEFERRED; approve only types already present in v1, or version a formally reviewed v2 event input.",
+      "owner": "SA",
+      "test": "P29-T11"
+    },
+    {
+      "id": "P29-F05",
+      "priority": "P1-IMPLEMENTATION",
+      "subject": "Runtime trust provisioner remains hypothetical",
+      "evidence": "116 defines independent policy approval; the record explicitly says trusted runtime allowlist is not provisioned.",
+      "impact": "Design approval does not establish secure code execution or an installed host policy.",
+      "resolution": "Future implementation must pin the approved digest in an owner-controlled trusted medium, reject scenario self-approval, and test tamper negative vectors.",
+      "owner": "Developer after task authorization",
+      "test": "P28-T18/P28-T22"
+    },
+    {
+      "id": "P29-F06",
+      "priority": "P1-IMPLEMENTATION",
+      "subject": "No code/evidence acceptance yet",
+      "evidence": "120 and 121 mark all runtime oracles NOT RUN; Phase2.9 only checks doc bytes and JSON Schema for policy.",
+      "impact": "Nothing proves simulator correct, reproducible, or fail-closed at runtime.",
+      "resolution": "Later G1 acceptance must execute fixed oracles and capture complete evidence; preserve all IDs in traceability.",
+      "owner": "Developer/tester after authorization",
+      "test": "P28-T01–T28 and inherited IDs"
+    },
+    {
+      "id": "P29-F07",
+      "priority": "P1-CAPACITY",
+      "subject": "Nominal/full trace byte budget not proven",
+      "evidence": "60s at 5ms yields up to 12001 evaluations including tick zero; 16MiB trace quota may be exceeded depending on record size and event count.",
+      "impact": "A valid long nominal scenario may end FAILED_INCOMPLETE_EVIDENCE despite legal inputs.",
+      "resolution": "Do measured/bounded trace-size calculation against exact record schema; define documented failure cases, not silently increase approved 16MiB quota.",
+      "owner": "SA + later Developer",
+      "test": "P29-T12"
+    }
+  ]
+}

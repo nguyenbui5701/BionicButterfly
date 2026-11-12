@@ -1,0 +1,79 @@
+{
+  "package": "BionicButterfly_Phase29_G0A1_Final_Freeze_Verification",
+  "scope": "PC_SIM_ONLY",
+  "read_baseline_commit": "15803143960e3fc82a468d99e83474670237857f",
+  "owner_approval": "R1_APPROVED",
+  "verified_phase28_git_blobs": 44,
+  "verified_phase28_original_guards": 27,
+  "verified_phase28_updated_guards": 27,
+  "verified_phase28_manifest_files": 43,
+  "policy_sha256": "d7567197dd43480d7e96dac121fbb707d3097b6c443b1b7ab55e822dbac66e10",
+  "gate": "CORE_BASELINE_LOCKED_FULL_HANDOFF_HOLD",
+  "files": [
+    {
+      "path": "Design/123_PHASE29_GITHUB_BASELINE_AND_BYTE_INTEGRITY_REVIEW.md",
+      "size": 3975,
+      "sha256": "5a4f8e1be1d7d739310d66b0267c364ef3f1fc3b7145bd0508b169ad5c1007ce"
+    },
+    {
+      "path": "Design/124_G0A1_R1_CONTROLLED_BASELINE_FREEZE_SCOPE_AND_INVARIANTS.md",
+      "size": 3629,
+      "sha256": "9df6f59e7f9148da0fed396bf6fadd3b3708aa0b7862837f3906a9f33fa151cb"
+    },
+    {
+      "path": "Design/125_G0A1_INTERFACE_COMPLETENESS_AND_RELEASE_BLOCKERS.md",
+      "size": 3642,
+      "sha256": "115594e8cd90614c96e83458d7b6063332445c196c32097f1364fcf2369b75d5"
+    },
+    {
+      "path": "Design/126_G0A1_R1_INTERFACE_COMPLETION_CHANGE_REQUEST.md",
+      "size": 4849,
+      "sha256": "3123cbf5ea4226047007365180c47509bf12dde1fc5e6da9665734055d26bbbe"
+    },
+    {
+      "path": "Design/127_PHASE29_REGRESSION_AND_DESIGN_ORACLE_PLAN.md",
+      "size": 3167,
+      "sha256": "a678fec3ae6f1318857ad379b3b583381f0c9503c6a923340eaa8747d31c726b"
+    },
+    {
+      "path": "Design/128_G0A1_CONFIGURATION_FREEZE_AND_CHANGE_CONTROL.md",
+      "size": 3218,
+      "sha256": "8f1bd064b4076672f0664298a81dc1125582ca2f3b413702b7a08e6c5a7a466a"
+    },
+    {
+      "path": "Design/129_PHASE29_SA_FINAL_GATE_REVIEW_AND_DECISION.md",
+      "size": 3169,
+      "sha256": "84af0fc4fc9c48bc8b4d369a55f04bcc58a514a94bf66b40387e34b034c53288"
+    },
+    {
+      "path": "Design/130_PHASE29_DEVELOPER_HANDOFF_READINESS_REVIEW_NOT_TASK.md",
+      "size": 2600,
+      "sha256": "f799bb6232e7b149c0ceba35f8eebe632fecd5bbc97463f3facb2a5f017c7fc2"
+    },
+    {
+      "path": "Design/assets/124_G0A1_GATE_STATUS.mmd",
+      "size": 566,
+      "sha256": "c6ce7bad88c27dc22ac99f254f490c9969caf4dd6e75fa4a03a68ed6a9acbc40"
+    },
+    {
+      "path": "Design/contracts/P29_G0A1_BASELINE_ATTESTATION.json",
+      "size": 11453,
+      "sha256": "3f78b7586a5eeb92dd5ff6aebd5ad7e186a299e0dcad20768399ff920d465474"
+    },
+    {
+      "path": "Design/contracts/P29_G0A1_GAP_REGISTER.json",
+      "size": 4756,
+      "sha256": "cbc9e0eb24d4cc810c210a0884ac3c03419110a202340e5aed5570bdb037f16d"
+    },
+    {
+      "path": "Design/contracts/P29_G0A1_GATE_VERDICT.json",
+      "size": 533,
+      "sha256": "90c1b5a1cd8b31e752c22e7ad239352b590761d3e87f5266c95d9a4895f57084"
+    },
+    {
+      "path": "Design/fixtures/P29_DESIGN_ORACLE_INDEX.json",
+      "size": 1495,
+      "sha256": "6abc02046c61ef4b11e0ea88c9f9b1dbda5298fe40438fdddd0e9851a6a87253"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "source_commit": "15803143960e3fc82a468d99e83474670237857f",
+  "scope": "PC_SIM_ONLY",
+  "result": "NOT_RUN",
+  "oracles": [
+    {
+      "id": "P29-T01",
+      "status": "SPECIFIED_NOT_RUN",
+      "category": "SCHEMA_UNKNOWN_FIELD"
+    },
+    {
+      "id": "P29-T02",
+      "status": "SPECIFIED_NOT_RUN",
+      "category": "DUP_JSON_KEY"
+    },
+    {
+      "id": "P29-T03",
+      "status": "SPECIFIED_NOT_RUN",
+      "category": "DUP_GLOBAL_EVENT_ID"
+    },
+    {
+      "id": "P29-T04",
+      "status": "SPECIFIED_NOT_RUN",
+      "category": "INVALID_UART_IN_BAND"
+    },
+    {
+      "id": "P29-T05",
+      "status": "SPECIFIED_NOT_RUN",
+      "category": "MIXER_REFERENCE_VECTOR"
+    },
+    {
+      "id": "P29-T06",
+      "status": "SPECIFIED_NOT_RUN",
+      "category": "MIXER_SATURATION"
+    },
+    {
+      "id": "P29-T07",
+      "status": "SPECIFIED_NOT_RUN",
+      "category": "S1_HELD_OUTPUT"
+    },
+    {
+      "id": "P29-T08",
+      "status": "SPECIFIED_NOT_RUN",
+      "category": "TRACE_JCS_ORDER"
+    },
+    {
+      "id": "P29-T09",
+      "status": "SPECIFIED_NOT_RUN",
+      "category": "TRACE_SELF_HASH_REJECT"
+    },
+    {
+      "id": "P29-T10",
+      "status": "SPECIFIED_NOT_RUN",
+      "category": "REPLAY_INVOCATION_INDEPENDENCE"
+    },
+    {
+      "id": "P29-T11",
+      "status": "SPECIFIED_NOT_RUN",
+      "category": "UNKNOWN_WIRE_FAULT_TYPE"
+    },
+    {
+      "id": "P29-T12",
+      "status": "SPECIFIED_NOT_RUN",
+      "category": "TRACE_CAPACITY_QUOTA"
+    }
+  ]
+}
