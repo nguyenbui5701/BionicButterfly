@@ -1,0 +1,113 @@
+{
+  "authoritative_contracts": [
+    {
+      "git_blob_sha1": "e6d988d160773219811d28cdb346b5a4590a0fa0",
+      "note": "R1 approval controls faults/state/authority",
+      "path": "Design/115_G0A1_APPROVED_ATOMIC_SAFETY_CONTRACT_R1.md",
+      "role": "safety_fsm",
+      "sha256": "c05debee190ddb27a5e48c615a3089658b13818ead326eb0ebb2261499ca58ad"
+    },
+    {
+      "git_blob_sha1": "62c35f82c715d3b3587dcc67d74f1320ba160929",
+      "note": "R1 approved policy digest, immutable",
+      "path": "Design/contracts/SIM_POLICY_22A_R1.canonical.json",
+      "role": "policy",
+      "sha256": "d7567197dd43480d7e96dac121fbb707d3097b6c443b1b7ab55e822dbac66e10"
+    },
+    {
+      "git_blob_sha1": "02a0c21faf0b758bb55220debc390c09058021f7",
+      "note": "R1 trusted host policy boundary",
+      "path": "Design/116_G0A1_APPROVED_POLICY_DIGEST_AND_TRUST_R1.md",
+      "role": "policy_trust",
+      "sha256": "d3cb73aec89cb912ee2c3a7f53a3e68cb26d3cc755074cc34cd142261db3b8ee"
+    },
+    {
+      "git_blob_sha1": "f4c7d0bd857616fcdbbd978176ed8c9065e98d21",
+      "note": "R1 error/result outcomes; R1.1 detailed wire fields",
+      "path": "Design/117_G0A1_INPUT_RESULT_ERRORS_R1.md",
+      "role": "result_codes",
+      "sha256": "31b5a50f57742639154681444bfc8bda30007a6f490134380db409f847e3efb7"
+    },
+    {
+      "git_blob_sha1": "fdc4263fd940f7ffd8f256dd617b7c89cc6274fd",
+      "note": "R1 trace commit/identity",
+      "path": "Design/118_G0A1_REPLAY_AND_OUTPUT_TRANSACTION_R1.md",
+      "role": "replay_foundation",
+      "sha256": "b122695589c96a01f341b4474c68ff4fb4f625ce086d60ffa00c266fe9b3c60b"
+    },
+    {
+      "git_blob_sha1": "1d10c76e34be70880a65252d89a6bca89839fea9",
+      "note": "R1.1 approved exact schema bytes; filename historically candidate",
+      "path": "Design/contracts/G0A1_SCENARIO_WIRE_V2_CANDIDATE.schema.json",
+      "role": "scenario_wire",
+      "sha256": "621dddeba4e5e54cc833430b3019833cb7d06a341c0b1e3d0d31dae83e1839f4"
+    },
+    {
+      "git_blob_sha1": "2e154c314fbfdcfed8bc6daa00b72cdf349a6ccb",
+      "note": "R1.1 approved cross-field validation constraints",
+      "path": "Design/132_R11_SCENARIO_WIRE_V2_CLOSED_EVENT_SCHEMA_CANDIDATE.md",
+      "role": "scenario_semantics",
+      "sha256": "8ad452e994f6e6f718ed89d15ec205c2ed3645ee49194d6e5692f570c163945f"
+    },
+    {
+      "git_blob_sha1": "dfde74e76b1bd7eb44088e6d49d06dd1a46cc759",
+      "note": "R1.1 approved exact M0 semantics",
+      "path": "Design/contracts/G0A1_MIXER_M0_R11_CANDIDATE.json",
+      "role": "virtual_mixer",
+      "sha256": "979112229b956e710f801f1f3a72ae303e97f85a3d1e2b802b1c3c2d4efc0106"
+    },
+    {
+      "git_blob_sha1": "8ea4f2f556d83d6132df86751c9ffd29b931575d",
+      "note": "R1.1 integer arithmetic and guard conditions",
+      "path": "Design/133_R11_VIRTUAL_MIXER_M0_EXACT_ARITHMETIC_CANDIDATE.md",
+      "role": "virtual_mixer_guide",
+      "sha256": "f801398baf30f8caf4c1440c8aef8d143ea2e392dd0b02af9406af4f740e18d0"
+    },
+    {
+      "git_blob_sha1": "ef0c1c8d7754042f72449e54e37c650c8fee4be8",
+      "note": "R1.1 approved record types",
+      "path": "Design/contracts/G0A1_TRACE_RECORDS_R11_CANDIDATE.schema.json",
+      "role": "trace_records",
+      "sha256": "85b26885b703c74f83fef9f3a9f8ada38033a5ce9b11e21fba15fa1f395fa3ca"
+    },
+    {
+      "git_blob_sha1": "c7da5879ef976d7e11186d484ea1e66453229c9a",
+      "note": "R1.1 approved report types",
+      "path": "Design/contracts/G0A1_EXTERNAL_REPORT_R11_CANDIDATE.schema.json",
+      "role": "external_report",
+      "sha256": "73f18aac734bcbff22e822dd3e2c51ab2a602ffada683b99d2379936d4e9ac6e"
+    },
+    {
+      "git_blob_sha1": "c085995e4fc82095ab0f693426a9d3632db9b14b",
+      "note": "R1.1 closed trace and sequence semantics",
+      "path": "Design/134_R11_TRACE_RECORDS_AND_REPLAY_BYTES_CANDIDATE.md",
+      "role": "trace_guide",
+      "sha256": "842f40c6711cf11a2946e48ae603a57f3f9ff7bd14f59aad56431443680915c6"
+    }
+  ],
+  "branch": "main",
+  "gate": "G0-A1",
+  "golden": {
+    "path": "Design/fixtures/P210_M0_GOLDEN_VECTORS.json",
+    "sha256": "2be61c8594aea7d06a9772fa8bbb9bd75da69534aafff9fc34602df61cbfb937",
+    "vector_count": 12
+  },
+  "limitations": {
+    "autonomy_v2_approval": false,
+    "generates_developer_task": false,
+    "hardware_approval": false,
+    "requires_runtime_conformance": true
+  },
+  "owner_approval_record": "Design/contracts/G0A1_R11_OWNER_APPROVAL_PHASE211.record.json",
+  "pin_commit": "479f65b1f0f077c0a3a75384dbc6b51b8a24e492",
+  "precedence": [
+    "Owner R1.1 explicit approval and 132/133/134 + frozen machine contract bytes, for wire/mixer/trace extensions",
+    "R1 115/116/117/118 for safety policy/authority/state/replay invariants unchanged",
+    "Earlier documents as history, no automatic promotion of deferred oracles to PASS"
+  ],
+  "r1_policy_digest": "d7567197dd43480d7e96dac121fbb707d3097b6c443b1b7ab55e822dbac66e10",
+  "repository": "nguyenbui5701/BionicButterfly",
+  "schema_version": 1,
+  "scope": "PC_SIM_ONLY",
+  "status": "APPROVED_DESIGN_BASELINE_GIT_VERIFIED"
+}

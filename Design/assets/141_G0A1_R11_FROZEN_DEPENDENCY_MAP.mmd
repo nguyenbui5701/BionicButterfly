@@ -1,0 +1,15 @@
+flowchart TB
+    OWNER[Owner approval: R1 + R1.1] --> PIN[Verified Git Design baseline]
+    PIN --> IDX[Design freeze index / SHA256]
+    IDX --> R1[R1 Safety FSM / Policy / Trust]
+    IDX --> WIRE[R1.1 Wire v2]
+    IDX --> MIX[R1.1 Virtual Mixer M0]
+    IDX --> TRACE[R1.1 JSONL Trace + External Report]
+    WIRE --> CORE[Future PC-only deterministic core]
+    R1 --> CORE
+    MIX --> CORE
+    TRACE --> CORE
+    CORE --> TEST[Future G1 Runtime Test Harness: NOT RUN]
+    PIN --> SA[SA handoff and change control]
+    SA --> TASK[Future Task; not issued]
+    TEST -. NO FLIGHT APPROVAL .-> FLIGHT[Physical G0-B and G4: NO-GO]

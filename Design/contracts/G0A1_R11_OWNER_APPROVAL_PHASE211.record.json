@@ -1,0 +1,39 @@
+{
+  "approval_observed_date_local": "2026-11-13",
+  "approval_source": "OWNER_EXPLICIT_IN_CHAT",
+  "approval_statement_language": "vi",
+  "approval_statement_original": "tôi phê duyệt, đã push 2.10 lên git, bạn hãy làm công việc tiếp theo",
+  "approve_refs": [
+    "Design/138_PHASE210_OWNER_R11_INTERFACE_DECISION_PACKET.md",
+    "Design/132_R11_SCENARIO_WIRE_V2_CLOSED_EVENT_SCHEMA_CANDIDATE.md",
+    "Design/133_R11_VIRTUAL_MIXER_M0_EXACT_ARITHMETIC_CANDIDATE.md",
+    "Design/134_R11_TRACE_RECORDS_AND_REPLAY_BYTES_CANDIDATE.md"
+  ],
+  "approved_decisions": {
+    "R11-D01": "APPROVED_AS_PROPOSED",
+    "R11-D02": "APPROVED_AS_PROPOSED",
+    "R11-D03": "APPROVED_AS_PROPOSED",
+    "R11-D04": "APPROVED_AS_PROPOSED",
+    "R11-D05": "APPROVED_AS_PROPOSED",
+    "R11-D06": "APPROVED_AS_PROPOSED"
+  },
+  "decision_status": "OWNER_APPROVED_DESIGN_ONLY",
+  "design_gate": "G0-A1",
+  "evidence_limits": {
+    "cryptographic_owner_signature": "NONE",
+    "developer_task": "NOT_ISSUED",
+    "physical_test": "NOT_RUN",
+    "running_simulator_acceptance": "NOT_RUN"
+  },
+  "project": "BionicButterfly",
+  "r1_policy_sha256": "d7567197dd43480d7e96dac121fbb707d3097b6c443b1b7ab55e822dbac66e10",
+  "repo": {
+    "artifact_git_blobs_verified": 27,
+    "branch": "main",
+    "commit_sha": "479f65b1f0f077c0a3a75384dbc6b51b8a24e492",
+    "full_name": "nguyenbui5701/BionicButterfly"
+  },
+  "schema_version": 1,
+  "scope": "PC_SIM_ONLY",
+  "supersession": "Phase2.10 documents marked PENDING are historical; this decision records subsequent approval without altering their source bytes."
+}

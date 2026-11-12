@@ -1,0 +1,62 @@
+{
+  "baseline": "479f65b1f0f077c0a3a75384dbc6b51b8a24e492",
+  "findings": [
+    {
+      "classification": "HANDOFF_SCOPE_DEPENDENT",
+      "closure": "Close error/validation subcodes or constrain first Task to existing frozen outcomes; never invent new machine codes.",
+      "id": "R11-GAP-01",
+      "owner": "SA",
+      "priority": "P0 for full parser task",
+      "summary": "Exact preflight issue-code mapping for every malformed JSON/UTF-8/precision/quota class"
+    },
+    {
+      "classification": "IMPLEMENTATION_PREREQUISITE",
+      "closure": "Host immutable allowlist must bind policy digest and exact engine/scheduler revisions; scenario cannot approve itself.",
+      "id": "R11-GAP-02",
+      "owner": "Developer subject to SA review",
+      "priority": "P0 before executing a run",
+      "summary": "Trusted runtime engine/scheduler revision allowlist and executable policy provisioning"
+    },
+    {
+      "classification": "IMPLEMENTATION_VALIDATION",
+      "closure": "Do not treat Python sort_keys reference as general JCS.",
+      "id": "R11-GAP-03",
+      "owner": "Developer+independent test",
+      "priority": "P0 before conformance PASS",
+      "summary": "Independent Unicode/number RFC8785 JCS conformance and numeric token parsing"
+    },
+    {
+      "classification": "IMPLEMENTATION_VALIDATION",
+      "closure": "No virtual output on uncommitted tick, complete hash NULL on incomplete evidence.",
+      "id": "R11-GAP-04",
+      "owner": "Developer+independent test",
+      "priority": "P0 before conformance PASS",
+      "summary": "16 MiB trace quota, append refusal and terminal evidence semantics"
+    },
+    {
+      "classification": "IMPLEMENTATION_VALIDATION",
+      "closure": "Schema maxLength is character count; semantic byte rule is separate.",
+      "id": "R11-GAP-05",
+      "owner": "Developer test",
+      "priority": "P1",
+      "summary": "Non-ASCII event ID byte-length and unsigned UTF-8 sort tests"
+    },
+    {
+      "classification": "DEFERRED_DESIGN",
+      "closure": "Do not accept legacy subset silently or invent SIM_VOLTAGE_WARNING_RECOVERED.",
+      "id": "R11-GAP-06",
+      "owner": "SA+owner for any expansion",
+      "priority": "outside initial G0-A1 R1.1 scope",
+      "summary": "Legacy input v1 migration for ambiguous events and orphan oracles"
+    },
+    {
+      "classification": "PHYSICAL_G4_BLOCKER",
+      "closure": "No lift/roll/yaw proof or real flight authorization in PC-only freeze.",
+      "id": "R11-GAP-07",
+      "owner": "Mechanical/electrical/flight owner",
+      "priority": "NO-GO flight",
+      "summary": "Physical RC, servo PWM, aerodynamic control authority and airborne failsafe"
+    }
+  ],
+  "scope": "PC_SIM_ONLY"
+}

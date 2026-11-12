@@ -1,0 +1,20 @@
+{
+  "duplicate_json_key_parser_rejection": true,
+  "external_report_shape_valid": true,
+  "git_base_sha": "479f65b1f0f077c0a3a75384dbc6b51b8a24e492",
+  "golden_mixer_vectors_static_matched": 12,
+  "hardware_tests_executed": 0,
+  "json_schemas_meta_valid": 4,
+  "local_phase210_manifest_artifact_hash_verified": 27,
+  "new_negative_scenarios_schema_rejected": 5,
+  "note": "Repo hashes checked through GitHub connector at pinned commit; runtime not executed.",
+  "positive_v2_fixtures_schema_valid": 5,
+  "reference_trace_bytes": 1433,
+  "reference_trace_schema_record_count": 4,
+  "reference_trace_sha256": "1cdaa68e016d4227d8623adf285a6d28ace9092bf1c45ef7a21b65638a4a10a3",
+  "repo_phase210_artifact_git_blob_verified": 27,
+  "runtime_simulator_tests_executed": 0,
+  "scope": "DOCUMENT_AND_FIXTURE_ONLY",
+  "stage": "PHASE_2_11",
+  "static_checks_executed": true
+}

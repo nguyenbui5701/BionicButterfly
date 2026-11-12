@@ -1,0 +1,103 @@
+{
+  "artifacts": [
+    {
+      "byte_size": 2917,
+      "git_blob_sha1": "23072451a53d90cb1c59cdbb26cc800662939bfc",
+      "path": "Design/140_PHASE211_REPO_VERIFICATION_AND_OWNER_APPROVAL.md",
+      "sha256": "d28fa9ef5086d2f869469b01284a06353e0f7d501d4ba899a0a1d4312cf43bed"
+    },
+    {
+      "byte_size": 4017,
+      "git_blob_sha1": "b21fcb9ed83775054cf2bde0b6533f5b71cb6eda",
+      "path": "Design/141_G0A1_R11_AUTHORITATIVE_CONTRACT_HIERARCHY.md",
+      "sha256": "5747a0f5e6e89890a5a5c1c341455a376afa03ac4ae4757cc3b044798fbc323e"
+    },
+    {
+      "byte_size": 3821,
+      "git_blob_sha1": "d45f7081720ad85caabddd16b4e5d602df6eb12d",
+      "path": "Design/142_R11_INPUT_EVENT_AND_PARSER_FREEZE_REVIEW.md",
+      "sha256": "a011895f174dfbda74b3a6e34581057f01a11dcb8ab19a898c63c603a842f69d"
+    },
+    {
+      "byte_size": 3311,
+      "git_blob_sha1": "101663bff5c6e0075d069ac0bbd4136086cde34c",
+      "path": "Design/143_R11_MIXER_TRACE_AND_HASH_FREEZE_REVIEW.md",
+      "sha256": "d3c03c30c8db58a2805effd6ff51dec29f9a0cf0722ff5f775e99a73a28bfae5"
+    },
+    {
+      "byte_size": 3295,
+      "git_blob_sha1": "e07216c3d3602d25515334ae6daec9a2eca4acb0",
+      "path": "Design/144_R11_END_TO_END_TRACEABILITY_AND_VALIDATION_PLAN.md",
+      "sha256": "bdf6397fc3428ed7aad9d0df035d1126e506798ad173daef24f41a7724396bbe"
+    },
+    {
+      "byte_size": 3258,
+      "git_blob_sha1": "8c9e1d38637a7c3fdd54f8d176b67512a7bb705c",
+      "path": "Design/145_R11_REMAINING_RISKS_AND_SPEC_CHANGE_CONTROL.md",
+      "sha256": "0841a63a4d7c56c89b005aa330ebf08d425a74fa892bc3da8b976bea84ff67f4"
+    },
+    {
+      "byte_size": 3245,
+      "git_blob_sha1": "3ff6bdbc32b7563ebb0e92b69b8ad491fb09b048",
+      "path": "Design/146_R11_DEVELOPER_HANDOFF_READINESS_AND_READING_SET.md",
+      "sha256": "f470f32a19d7318d36ae54f54817032cbea4bb4934c436944735b9fb9db2cadd"
+    },
+    {
+      "byte_size": 3402,
+      "git_blob_sha1": "e2cfea6a0c4fdbc9f9c5c4c66683718574933328",
+      "path": "Design/147_PHASE211_SA_G0A1_DESIGN_FREEZE_VERDICT.md",
+      "sha256": "06e63daafe0878ffe3db15767a9986c6118a5616c8aff6e60e61e9e2f7aa7c81"
+    },
+    {
+      "byte_size": 2551,
+      "git_blob_sha1": "85b6f9f6544914cce9dc421eec2b672a14acc7c0",
+      "path": "Design/148_PHASE211_FOLLOW_ON_SA_WORKPLAN_AND_NO_GO_BOUNDARIES.md",
+      "sha256": "578512775a0808ef95343ee422ab304323d524ed1b9b168a2cf28b73bec4ce32"
+    },
+    {
+      "byte_size": 627,
+      "git_blob_sha1": "11018531dac135fcb179aeb61c61d38bc78ad0e4",
+      "path": "Design/assets/141_G0A1_R11_FROZEN_DEPENDENCY_MAP.mmd",
+      "sha256": "89941dd80baeab9d22479b202c12889efecdc4d10cdfb8b9c8ab518214a23171"
+    },
+    {
+      "byte_size": 5032,
+      "git_blob_sha1": "9ab10e79a560faeb0ad5112bba39543eff906dee",
+      "path": "Design/contracts/G0A1_R11_FROZEN_DESIGN_BASELINE_PHASE211.json",
+      "sha256": "277614a1f7d64da8352cf89833dba163461b3b158c44ec361b6de645ff49a706"
+    },
+    {
+      "byte_size": 1594,
+      "git_blob_sha1": "7cc89c32f50c0dce62d77f2434cb3cbb2a55c7c2",
+      "path": "Design/contracts/G0A1_R11_OWNER_APPROVAL_PHASE211.record.json",
+      "sha256": "626f093354c52149eee359f3241ce23d58a19a07217442ad6d8df80a16e76705"
+    },
+    {
+      "byte_size": 2713,
+      "git_blob_sha1": "c5f739b9fda6a2107f05b159f8232705a485081b",
+      "path": "Design/contracts/P211_RESIDUAL_RISK_AND_HANDOFF_GATES.json",
+      "sha256": "d9d4b96e0bf3814d11be3c508f81ef795c27e0745aa43045ed23c78aa5905c75"
+    },
+    {
+      "byte_size": 866,
+      "git_blob_sha1": "f7f6c18d5ad69349cb2c4b44f0a26ee932859a1b",
+      "path": "Design/contracts/P211_STATIC_DESIGN_AUDIT_ATTESTATION.json",
+      "sha256": "e697cbd8029213fd810a68ead390e1b39b537d73f703448371a122bf778196fa"
+    },
+    {
+      "byte_size": 3874,
+      "git_blob_sha1": "2e6782712795fed320e3bcce9074fd06d6933eff",
+      "path": "Design/fixtures/P211_FREEZE_AUDIT_AND_FUTURE_CONFORMANCE.json",
+      "sha256": "5bed2211bbbc9f992d803beada3b8e9cb8928f3cd3d379f54cb3600ba8f6c50b"
+    }
+  ],
+  "baseline_commit": "479f65b1f0f077c0a3a75384dbc6b51b8a24e492",
+  "design_contract_status": "APPROVED_GIT_VERIFIED",
+  "owner_r11_decision": "APPROVED_IN_CHAT",
+  "package": "BionicButterfly_Phase211_R11_Freeze_Decision",
+  "phase": "2.11",
+  "physical_flight": "NO_GO",
+  "prior_phase210_artifact_count_verified": 27,
+  "repository": "nguyenbui5701/BionicButterfly",
+  "runtime_tests": "NOT_RUN"
+}

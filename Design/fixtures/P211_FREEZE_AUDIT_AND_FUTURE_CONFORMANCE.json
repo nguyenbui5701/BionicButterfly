@@ -1,0 +1,124 @@
+{
+  "cases": [
+    {
+      "assertion": "27 Phase2.10 artifacts identical to pinned Git tree",
+      "basis": "Git blob SHA1 and local manifest sha256",
+      "id": "P211-S01",
+      "status": "PASS_STATIC"
+    },
+    {
+      "assertion": "V2 scenario JSON schema syntax valid",
+      "basis": "JSON Schema Draft202012 meta check",
+      "id": "P211-S02",
+      "status": "PASS_STATIC"
+    },
+    {
+      "assertion": "V2 minimum scenario accepted",
+      "basis": "P210_MINIMAL_WIRE_V2.json",
+      "id": "P211-S03",
+      "status": "PASS_STATIC"
+    },
+    {
+      "assertion": "V2 nominal scenario accepted",
+      "basis": "P210_NOMINAL_M0_WIRE_V2.json",
+      "id": "P211-S04",
+      "status": "PASS_STATIC"
+    },
+    {
+      "assertion": "V2 typed invalid UART accepted as simulated stimulus",
+      "basis": "P210_INVALID_UART_WIRE_V2.json",
+      "id": "P211-S05",
+      "status": "PASS_STATIC"
+    },
+    {
+      "assertion": "V2 reset+catastrophe and ACK shape accepted",
+      "basis": "P210_RESET_CATA_WIRE_V2.json, P210_ACK_SHAPE_ONLY_V2.json",
+      "id": "P211-S06",
+      "status": "PASS_STATIC"
+    },
+    {
+      "assertion": "physical context and self-approval rejected by schema",
+      "basis": "generated mutation of P210_MINIMAL_WIRE_V2",
+      "id": "P211-S07",
+      "status": "PASS_STATIC"
+    },
+    {
+      "assertion": "wrong schema version, missing or misaligned duration rejected",
+      "basis": "generated mutation of P210_MINIMAL_WIRE_V2",
+      "id": "P211-S08",
+      "status": "PASS_STATIC"
+    },
+    {
+      "assertion": "duplicate root JSON key refused with strict parser hook",
+      "basis": "P210_DUPLICATE_KEYS_INVALID.json",
+      "id": "P211-S09",
+      "status": "PASS_STATIC"
+    },
+    {
+      "assertion": "12 mixer vectors consistent with exact Decimal-scale arithmetic",
+      "basis": "P210_M0_GOLDEN_VECTORS.json",
+      "id": "P211-S10",
+      "status": "PASS_STATIC"
+    },
+    {
+      "assertion": "trace 4 records conform to closed record schema",
+      "basis": "P210_MINIMAL_DESIGN_TRACE.jsonl",
+      "id": "P211-S11",
+      "status": "PASS_STATIC"
+    },
+    {
+      "assertion": "external report conforms, design-only NOT_RUN",
+      "basis": "P210_MINIMAL_DESIGN_EXTERNAL_REPORT.json",
+      "id": "P211-S12",
+      "status": "PASS_STATIC"
+    },
+    {
+      "assertion": "trace byte count/hash matches authored attestation",
+      "basis": "1433 bytes, SHA1 not used; SHA256 matches",
+      "id": "P211-S13",
+      "status": "PASS_STATIC"
+    },
+    {
+      "assertion": "full FSM conformance against real simulator code",
+      "basis": "requires independent G1 implementation",
+      "id": "P211-R01",
+      "status": "NOT_RUN"
+    },
+    {
+      "assertion": "Unicode RFC8785/JCS independent parser vectors",
+      "basis": "requires standards-compliant runtime library",
+      "id": "P211-R02",
+      "status": "NOT_RUN"
+    },
+    {
+      "assertion": "2 MiB JSON, 16 MiB trace budget and simulated append failure",
+      "basis": "requires engine and writer",
+      "id": "P211-R03",
+      "status": "NOT_RUN"
+    },
+    {
+      "assertion": "replay determinism across identical config/engine/scheduler",
+      "basis": "requires independently executed runs",
+      "id": "P211-R04",
+      "status": "NOT_RUN"
+    },
+    {
+      "assertion": "allowlist cannot be self-modified or bypassed by scenario",
+      "basis": "requires deployed host boundary",
+      "id": "P211-R05",
+      "status": "NOT_RUN"
+    },
+    {
+      "assertion": "no physical output adapters in runnable process",
+      "basis": "requires implementation inspection/test",
+      "id": "P211-R06",
+      "status": "NOT_RUN"
+    }
+  ],
+  "git_baseline": "479f65b1f0f077c0a3a75384dbc6b51b8a24e492",
+  "purpose": "DESIGN_STATIC_AUDIT_NOT_EXECUTABLE_SIMULATOR_TEST",
+  "summary": {
+    "runtime_not_run": 6,
+    "static_pass": 13
+  }
+}
