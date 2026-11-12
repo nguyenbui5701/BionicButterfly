@@ -1,6 +1,8 @@
 # BionicButterfly — Immutable Host Configuration, Capability Boundary & Change Governance
 
-- **ID:** BB-G0A-CFG-070 | **Rev:** 0.1 | **Date:** 2026-11-12
+> **Phase 2.4 review note (2026-11-12):** See the candidate corrective addendum at the end and `84–90` before treating older priority/approval text as normative. **Pending owner approval; not code or flight authorization.**
+
+- **ID:** BB-G0A-CFG-070 | **Rev:** 0.2 | **Date:** 2026-11-12
 - **Status:** PROPOSED / PC_SIM_ONLY / NOT APPROVED. Refines `56`, `60`, `61`, `62`; no source files or storage code produced.
 
 ## 1. Narrower first implementation surface, if later approved
@@ -60,3 +62,7 @@ The arrow **approved and pinned** denotes a future gate; **none of the presently
 SA owns Design decisions and drafts, not implementation in `Source/`. Task files in `Task/` are only issued after the owner approves the bounded G0-A1 slice, and only if subsequently requested for implementation. Developer does not silently select unsafe defaults or port SIM policy into hardware firmware. PR review remains isolated under `ReviewPR/` per `11_HANDOFF_PR_WORKFLOW.md`. The owner decides when to commit/push; this phase performs neither.
 
 **No G0-B/G0-C capability follows from an approved host-only configuration.**
+
+## Phase 2.4 trusted policy approval amendment (rev 0.2)
+
+No policy JSON boolean, profile name, user-provided digest, UI state or uploaded scenario can approve its own execution. `87` requires separately provisioned and authorized allowlist/digest tied to an **explicit owner approval of exact policy bytes** and a host-only engine build. No physical IO becomes accessible through flags. This is not implemented; G0-A1 approval pending.

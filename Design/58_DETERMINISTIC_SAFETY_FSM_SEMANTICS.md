@@ -1,6 +1,8 @@
 # BionicButterfly — Phase 2.1 Deterministic Safety FSM Semantics
 
-- **ID:** BB-G0A-FSM-058 · **Rev:** 0.1 · **Date:** 2026-11-12
+> **Phase 2.4 review note (2026-11-12):** See the candidate corrective addendum at the end and `84–90` before treating older priority/approval text as normative. **Pending owner approval; not code or flight authorization.**
+
+- **ID:** BB-G0A-FSM-058 · **Rev:** 0.2 · **Date:** 2026-11-12
 - **Status:** PROPOSED, SIM_ONLY; does **not** implement/authorize in-air failsafe.
 - **Baseline:** conceptual FSM `27` and host-only interface `51`. This document disambiguates **host simulation** transitions, not hardware stop behavior.
 
@@ -72,3 +74,7 @@
 ## 6. Important non-proofs
 
 This FSM can prove **logical** authorization and deterministic virtual output. It cannot prove physical GPIO boot levels, receiver RF health, servo tracking, lift, flight control, hardware disarm safety or airborne recovery. Those remain G0-B/G2/G3/G4 obligations under `14`, `25`, `31`, `40`, `49`.
+
+## Phase 2.4 FSM candidate precedence addendum (rev 0.2)
+
+This earlier design is preserved historically. **Candidate authoritative semantics**, pending owner approval, are in `84_G0A1_NORMATIVE_SAFETY_AND_EVENT_SEMANTICS.md`: control conflict classification precedes any LOW/HIGH acceptance, same-tick catastrophic fault dominates RESET, and ACK requires a previously committed low-qualified snapshot. No real flight policy is specified. Existing G1 test cases remain NOT RUN.

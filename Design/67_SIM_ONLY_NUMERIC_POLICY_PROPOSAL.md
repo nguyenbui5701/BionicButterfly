@@ -1,6 +1,8 @@
 # BionicButterfly — G0-A1 SIM_ONLY Numeric Policy Proposal
 
-- **ID:** BB-G0A-POL-067 | **Revision:** 0.1 | **Date:** 2026-11-12
+> **Phase 2.4 review note (2026-11-12):** See the candidate corrective addendum at the end and `84–90` before treating older priority/approval text as normative. **Pending owner approval; not code or flight authorization.**
+
+- **ID:** BB-G0A-POL-067 | **Revision:** 0.2 | **Date:** 2026-11-12
 - **SA status:** **PROPOSED / OWNER APPROVAL PENDING**. This is a *test fixture policy*, **NOT** flight controller tuning or a receiver, PWM or physical servo specification.
 - **Cross-documents:** `57–60`, `63`, `66`, `68–74`.
 
@@ -91,3 +93,7 @@
 - Multi-step scheduler equivalence across different tick sizes; freeze only a **single** 5ms tick for G0-A1 and compare runs with the same evaluator schedule.
 
 **Decision required:** owner must explicitly accept/revise these values as *simulator-only* under D-061, not as robot flight parameters.
+
+## Phase 2.4 SIM policy authority addendum (rev 0.2)
+
+All numeric values remain **SIM_ONLY CANDIDATES** and are NOT physically validated. The illustrative `approved_for_host_execution: false` (or any scenario-supplied `true`) is **not** the owner approval source. Only an independently approved policy digest allowlisted by a trusted host build may authorize a future simulation as defined in `87`; the owner has NOT signed this policy. The 5,000µs tick is not an ESP32 timing guarantee.

@@ -1,6 +1,8 @@
 # BionicButterfly — G0-A1 Virtual Time, Event Ordering & Replay
 
-- **ID:** BB-G0A-TIME-059 · **Rev:** 0.1 · **Date:** 2026-11-12
+> **Phase 2.4 review note (2026-11-12):** See the candidate corrective addendum at the end and `84–90` before treating older priority/approval text as normative. **Pending owner approval; not code or flight authorization.**
+
+- **ID:** BB-G0A-TIME-059 · **Rev:** 0.2 · **Date:** 2026-11-12
 - **Status:** PROPOSED / HOST-ONLY / NOT EXECUTED
 - **Related:** `51` host candidate, `52` PC-A suite, `56–58`, `60–64`.
 
@@ -68,3 +70,7 @@ Two runs are *logically equal* only when all of the following are equal: `schema
 | `TIME-08` | same physical event time but different valid tick partitions | comparable states at common evaluation instants according to approved quantization contract |
 
 All are **NOT RUN**. `PC-A14/15/18` in `52` cover a subset; the new tests strengthen definitions without claiming physical real-time performance.
+
+## Phase 2.4 scheduler candidate precedence addendum (rev 0.2)
+
+The `RESET > catastrophic fault` ordering in old §2(4) is **not the recommended normative contract**. The **proposed** resolution is `84`: catastrophic wins simultaneous RESET; all same-tick distinct control bodies are classified as a batch before any disarm action. Original `event_at_us` (not rounded) supplies age/interval; one atomic `eval_at_us` marks commit. See `86` tests. `TIME-08` cross-scheduler equivalence remains DEFERRED, not a G0-A1 PASS requirement.

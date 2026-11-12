@@ -1,6 +1,8 @@
 # BionicButterfly — Phase 2.3 GitHub Public Baseline Check
 
-- **ID:** BB-P23-BASE-075 | **Rev:** 0.1 | **Date:** 2026-11-12
+> **Phase 2.4 review note (2026-11-12):** See the candidate corrective addendum at the end and `84–90` before treating older priority/approval text as normative. **Pending owner approval; not code or flight authorization.**
+
+- **ID:** BB-P23-BASE-075 | **Rev:** 0.2 | **Date:** 2026-11-12
 - **Role:** Solution Architect (SA) | **Status:** `REMOTE_UNVERIFIED`, not a claim that the repo is private or that the owner's push failed.
 - **Declared repository:** `https://github.com/nguyenbui5701/BionicButterfly/tree/main/Design`
 - **Scope:** `Design/` on branch `main`; do not modify `Source/` or `Task/`.
@@ -55,3 +57,7 @@ No user action is needed to read this design package. For direct GitHub reposito
 - **Hardware and airworthiness:** physical measurements and G2/G3/G4 approvals; never inferred from host simulator.
 
 **SA disposition:** continue additive design review now; leave Git reconciliation `BLOCKED_BY_ACCESS`, not incorrectly `DONE` or `FAILED`.
+
+## Phase 2.4 POST-VERIFICATION UPDATE (rev 0.2; supersedes historic access limitation)
+
+**NEW OBSERVATION:** on 2026-11-12 the connected GitHub integration successfully read public `nguyenbui5701/BionicButterfly`, `main@16d5054ea951b2e52e90c7f81ea2767a7ba82b92`, including the entire top-level `Design/` listing and Phase23 file blobs. Therefore, the prior `REMOTE_UNVERIFIED` status in v0.1 is **closed for repository access**, not an indication that Git was actually private then. Full attestation `88_REPOSITORY_MAIN_BASELINE_AND_RECONCILIATION.md`. Older text is retained only as historical note of environment access at original drafting.

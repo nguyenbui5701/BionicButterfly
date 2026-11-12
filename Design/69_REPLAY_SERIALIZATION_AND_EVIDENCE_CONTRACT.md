@@ -1,6 +1,8 @@
 # BionicButterfly — Deterministic Replay, Canonical Serialization & Evidence
 
-- **ID:** BB-G0A-TRACE-069 | **Revision:** 0.1 | **Date:** 2026-11-12
+> **Phase 2.4 review note (2026-11-12):** See the candidate corrective addendum at the end and `84–90` before treating older priority/approval text as normative. **Pending owner approval; not code or flight authorization.**
+
+- **ID:** BB-G0A-TRACE-069 | **Revision:** 0.2 | **Date:** 2026-11-12
 - **Status:** SA PROPOSED; no replay engine or runtime test executed. **PC_SIM ONLY.**
 - **Parent:** `57` schema, `59` virtual time, `63` test matrix; refined by `66–68`, tested by design in `71`.
 
@@ -64,3 +66,7 @@ A complete implementation must also include the remaining fields specified above
 - SHA-256 digest convention: NIST FIPS 180-4. This proposal does not claim cryptographic authentication of a user or security proof; hashes identify exact bytes for audit only.
 
 **Owner review:** D-062 and D-064 must be explicitly decided before design freeze, with canonicalization test vectors added to the approved test acceptance. No real code or validation tests exist yet.
+
+## Phase 2.4 canonical replay proposal (rev 0.2)
+
+`87_TRUST_REPLAY_AND_EVIDENCE_FREEZE_CANDIDATE.md` refines earlier replay terminology: separate stable `replay_identity` from volatile `execution_instance_id` (excluded from normative bytes); canonical control JSONL includes JCS objects + LF and stable integer micro-effort, but not visual-only metadata. `control_trace_sha256` exists only for a **complete** normative trace; a partial trace is explicitly labeled and can never claim PASS. See `85` result-contract version and `86` P24-T18..22. Unapproved candidate.

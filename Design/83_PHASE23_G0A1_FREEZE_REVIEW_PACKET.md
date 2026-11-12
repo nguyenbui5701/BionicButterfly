@@ -1,6 +1,8 @@
 # BionicButterfly — Phase 2.3 End-to-End G0-A1 Architecture Review Packet
 
-- **ID:** BB-P23-REVIEW-083 | **Rev:** 0.1 | **Date:** 2026-11-12
+> **Phase 2.4 review note (2026-11-12):** See the candidate corrective addendum at the end and `84–90` before treating older priority/approval text as normative. **Pending owner approval; not code or flight authorization.**
+
+- **ID:** BB-P23-REVIEW-083 | **Rev:** 0.2 | **Date:** 2026-11-12
 - **Owner-facing decision:** `REVISE / DEFER` is currently appropriate; **G0-A1 NOT FROZEN, G1 NOT RUN, G4 NO-GO**.
 - **Architect:** Solution Architect. No Developer task or `Source/` modification.
 
@@ -65,3 +67,7 @@ Authorization for Task: NOT GIVEN
 4. When closure evidence and owner signoff exist, propose a **scoped G0-A1 freeze**. Only after an additional user request may SA issue specific `Task/` handoff to AI Developer.
 
 Hardware C0/C1 and G4 retain their independent no-go conditions, whatever happens to the simulator design.
+
+## Phase 2.4 freeze readiness update (rev 0.2)
+
+**P23-G01 remote identity is no longer blocked:** exact public GitHub HEAD verified at `16d5054ea951b2e52e90c7f81ea2767a7ba82b92` and relevant file blob identities match the prior supplied snapshots (`88`). P23-G02…G09 remain PENDING/NOT GIVEN; critical semantics, SIM policy approval, trust and tests are not approved. Source document corrections are proposed in `84–90`. Refer to new `89` signoff packet. This additive section updates historical status without falsifying old review evidence.

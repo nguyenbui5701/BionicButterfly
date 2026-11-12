@@ -1,6 +1,8 @@
 # BionicButterfly — Phase 2.1 Canonical SIM Schemas, Units & Errors
 
-- **ID:** BB-G0A-DATA-057 · **Rev:** 0.1 · **Date:** 2026-11-12
+> **Phase 2.4 review note (2026-11-12):** See the candidate corrective addendum at the end and `84–90` before treating older priority/approval text as normative. **Pending owner approval; not code or flight authorization.**
+
+- **ID:** BB-G0A-DATA-057 · **Rev:** 0.2 · **Date:** 2026-11-12
 - **Status:** PROPOSED, NOT PRODUCTION SCHEMA / G0-A1 DESIGN ONLY
 - **Related:** `16`, `27–28`, `32–33`, `49`, `51`, `56`, `58–64`.
 
@@ -121,3 +123,7 @@ Reason codes must be stable machine-readable enums. Error strings can be localiz
 - Store no Wi-Fi credentials, actual radio binding secrets, personal pilot names or precise location in canonical trace examples. A future hardware log security policy is separate.
 - Hash the **canonical input and config**; a display screenshot or a claimed PASS cannot replace a replayable event trace. `64` specifies freeze evidence.
 - This is a draft schema. A formal machine-readable JSON Schema should only be included in a future approved implementation task, not forged as already validated software.
+
+## Phase 2.4 authoritative-candidate error compatibility addendum (rev 0.2)
+
+**Historical clarification:** v0.1 `E_EVENT_ID_CONFLICT` in §3 conflates two separate errors. **If/when owner approves** the new `85_HOST_SCHEMA_ERROR_COMPATIBILITY_V2_CANDIDATE.md`, keep scenario input schema v1 but choose result/error contract **v2**, with `E_DUPLICATE_EVENT_ID` for global preflight duplication and `E_CONTROL_BATCH_CONFLICT` for distinct same-tick valid controls. No code/consumer has been migrated. Prior `E_EVENT_ID_CONFLICT` remains historical until that decision. For same-tick atomic rules use `84`; cases `86`.

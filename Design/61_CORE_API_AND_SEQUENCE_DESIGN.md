@@ -1,6 +1,8 @@
 # BionicButterfly — Phase 2.1 Core Ports, APIs & Interaction Sequences
 
-- **ID:** BB-G0A-API-061 · **Rev:** 0.1 · **Date:** 2026-11-12
+> **Phase 2.4 review note (2026-11-12):** See the candidate corrective addendum at the end and `84–90` before treating older priority/approval text as normative. **Pending owner approval; not code or flight authorization.**
+
+- **ID:** BB-G0A-API-061 · **Rev:** 0.2 · **Date:** 2026-11-12
 - **Status:** PROPOSED / API SPECIFICATION, NO IMPLEMENTATION
 - **Scope:** host-only pure core plus scenario runner. No HTTP/Cloud Browser/ESP32 requirements are implied.
 
@@ -124,3 +126,7 @@ Never translate the `SIM_ONLY` virtual output inhibition directly into cutting p
 - `TraceSink` failure ⇒ run not considered PASS; optionally produce deterministic in-memory terminal failure code even if file export fails.
 
 **Pending owner decisions:** choose JSON input, stable tick batching, config-update persistence level and explicit test policy numerical values. No final API freeze yet.
+
+## Phase 2.4 API and trust-boundary correction addendum (rev 0.2)
+
+Before freeze, interface implementations must follow candidate `84–87`: preflight and runtime errors are separate, `SafetyDecision` cannot be caller-injected to bypass supervisor, trust comes from an independently approved policy digest and not the scenario flag, and trace failure cannot return PASS. This is an **SA design proposal**, not a developer instruction or proof of implemented functions.

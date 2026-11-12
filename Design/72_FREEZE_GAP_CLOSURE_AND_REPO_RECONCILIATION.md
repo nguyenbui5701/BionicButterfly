@@ -1,6 +1,8 @@
 # BionicButterfly — G0-A1 Gap Closure and Repository Reconciliation Procedure
 
-- **ID:** BB-G0A-GAP-072 | **Version:** 0.1 | **Date:** 2026-11-12
+> **Phase 2.4 review note (2026-11-12):** See the candidate corrective addendum at the end and `84–90` before treating older priority/approval text as normative. **Pending owner approval; not code or flight authorization.**
+
+- **ID:** BB-G0A-GAP-072 | **Version:** 0.2 | **Date:** 2026-11-12
 - **Author:** SA | **Status:** REVIEW PLAN / NOT COMPLETED
 - **Scope:** reconcile actual owner `Design/` with the **proposal** 66–71 before any design approval. Do not treat a document present on `main` as automatically approved.
 
@@ -64,3 +66,7 @@ Do not rewrite earlier approved files wholesale. At a later controlled revision,
 - **FLIGHT_QUALIFIED**: a completely different and later G4 decision, requiring physical evidence.
 
 Current Phase 2.2 may claim at most DOCUMENT_PACKAGE_VALIDATED after archive checks. It cannot claim source repo equality or test PASS.
+
+## Phase 2.4 repository access change (rev 0.2)
+
+**FRZ-01 repository access blocker is now resolved as of 2026-11-12:** GitHub connected repo `nguyenbui5701/BionicButterfly`, `main@16d5054ea951b2e52e90c7f81ea2767a7ba82b92` was accessed and `Design/75–83` blob hashes matched delivered local documents. See `88`. This does **not** approve semantics, policy values, test results or flight readiness. Source branch HEAD must be rechecked before changes are applied.

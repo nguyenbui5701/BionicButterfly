@@ -1,6 +1,8 @@
 # BionicButterfly — Phase 2.3 Semantic Conflict & Hazard Register
 
-- **ID:** BB-P23-CONFLICT-077 | **Rev:** 0.1 | **Date:** 2026-11-12
+> **Phase 2.4 review note (2026-11-12):** See the candidate corrective addendum at the end and `84–90` before treating older priority/approval text as normative. **Pending owner approval; not code or flight authorization.**
+
+- **ID:** BB-P23-CONFLICT-077 | **Rev:** 0.2 | **Date:** 2026-11-12
 - **Basis:** actual locally available Phase 2.0–2.2 Markdown snapshots, **NOT verified GitHub `main`**.
 - **Status:** all items REVIEW-OPEN unless explicitly recorded as a proposal. Severity: `B` blocks G0-A1, `M` requires resolution before G1, `L` design clarification.
 
@@ -40,3 +42,7 @@ Status: OPEN / PROPOSED_RESOLVED / CLOSED_AFTER_COMMIT
 ```
 
 **SA recommendation:** approve neither a new `E_*` enum nor a reset priority change by silently overwriting old docs. These are **proposed corrections** requiring a versioned freeze review and canonical source updates before tasking a Developer.
+
+## Phase 2.4 finding disposition update (rev 0.2)
+
+**P23-F12 CLOSED FOR ACCESS/IDENTITY:** public repository `main@16d5054ea951b2e52e90c7f81ea2767a7ba82b92` verified; matching Phase23 blobs documented in `88`. This corrects the earlier historical repo-access blocker. Other P23-F01…F11 stay **PROPOSED RESOLVED / NOT OWNER-APPROVED** with normative candidate `84`, error migration `85`, tests `86`, and replay/trust `87`. No old blocker is silently marked PASS by document creation.

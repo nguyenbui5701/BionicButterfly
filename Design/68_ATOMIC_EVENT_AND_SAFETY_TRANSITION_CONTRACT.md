@@ -1,6 +1,8 @@
 # BionicButterfly — Atomic Event Evaluation & Safety State Transitions
 
-- **ID:** BB-G0A-FSM-068 | **Rev:** 0.1 | **Date:** 2026-11-12
+> **Phase 2.4 review note (2026-11-12):** See the candidate corrective addendum at the end and `84–90` before treating older priority/approval text as normative. **Pending owner approval; not code or flight authorization.**
+
+- **ID:** BB-G0A-FSM-068 | **Rev:** 0.2 | **Date:** 2026-11-12
 - **Author:** SA | **Status:** PROPOSED / SIM_ONLY. Only logical virtual wing outputs are defined; this is **NOT** an actual in-air emergency procedure.
 - **Cross references:** `57–59`, `61`, `67`, `69`, `71`.
 
@@ -74,3 +76,7 @@ At each `eval_at_us=k*5000`, construct an immutable **pre-state** and fold every
 ## 6. Document approval consequence
 
 These deterministic SIM-only semantics clarify the earlier `58–59` proposals. They do **not** amend the owner's files automatically, and no code or physical test has been executed. Approval of this state machine is one **bounded G0-A1 design decision**, not permission to fly.
+
+## Phase 2.4 atomic semantics supersession candidate (rev 0.2)
+
+**IMPORTANT: old §2 priority table (RESET first, LOW before conflict) is superseded as a candidate by `84` and MUST NOT be implemented as the final G0-A1 policy without reconciliation.** The proposed new ordering is catastrophe over RESET, then independent faults/conflict before *trusted* disarm; normalize all same-tick valid control frames before interpreting their LOW/HIGH bits. A conflict while armed produces SIM-only CONTINGENCY, not a hidden disarm. `SIM_ACK_FAULT` cannot clear a latch in the tick that completes LOW qualification. See `85` error v2 and `86` tests. None of these changes are approved or code-tested.

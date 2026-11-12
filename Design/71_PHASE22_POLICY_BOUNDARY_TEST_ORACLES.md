@@ -1,6 +1,8 @@
 # BionicButterfly — Phase 2.2 Boundary Test Oracles & Acceptance Vectors
 
-- **ID:** BB-G0A-TEST-071 | **Revision:** 0.1 | **Date:** 2026-11-12
+> **Phase 2.4 review note (2026-11-12):** See the candidate corrective addendum at the end and `84–90` before treating older priority/approval text as normative. **Pending owner approval; not code or flight authorization.**
+
+- **ID:** BB-G0A-TEST-071 | **Revision:** 0.2 | **Date:** 2026-11-12
 - **Status:** TEST DESIGN, ALL **NOT RUN**. No simulation code or hardware tests executed.
 - **Depends on:** `52` PC-A01–20, `63` G1B-01–24, `58–59`, `67–70`. New test prefix `P22-T` does not renumber older test IDs.
 
@@ -70,3 +72,7 @@ This is a **design oracle**, not a result of running code. In this fixture, RF H
 Each future test must record the exact Design commit, accepted `SimPolicy` digest, scenario canonical SHA, engine/build revision, expected-vs-observed categorical state and timestamps, output tolerance, canonical trace SHA, pass/fail/error details and independent reviewer. At design stage each row above remains **NOT RUN**; checked document consistency is a different claim.
 
 **Minimum G0-A1 *design* review:** test oracles mutually consistent with `67–70`, no unapproved physical capability, source conflicts recorded, owner approval exact revision. **Minimum G1 *implementation* verification:** executed PC-A and G1B cases in approved scope plus P22-T cases with actual logs, no safety-critical failure. No such evidence exists now.
+
+## Phase 2.4 test-oracle supplement (rev 0.2)
+
+This test table is preserved. Test cases previously interpreted using old `68` priority must instead use **candidate** `84–86`: conflict before trusted LOW, catastrophe before RESET, ACK after a prior qualifying LOW commit, and distinct preflight duplicate-ID vs runtime control contradiction (proposed error-result contract v2). `P24-T01…T24` add boundary coverage; all tests remain NOT RUN.

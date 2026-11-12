@@ -1,0 +1,144 @@
+{
+  "amended_documents": [
+    {
+      "file": "Design/57_CANONICAL_SIM_SCHEMAS_AND_ERRORS.md",
+      "new_git_blob_sha": "833ccfcc0d976cee9504d080b1e12461e9b5c51d",
+      "new_sha256": "2f6f6577af2ef2b7dc9ef258fcafaad7b79dd2b1c454baa6036ffc6f0f294669",
+      "source_baseline_commit": "16d5054ea951b2e52e90c7f81ea2767a7ba82b92",
+      "source_git_blob_sha": "4b0b27787292e04ecbbee13959995ccb40c20516"
+    },
+    {
+      "file": "Design/58_DETERMINISTIC_SAFETY_FSM_SEMANTICS.md",
+      "new_git_blob_sha": "841f3d4ad67f08c649f705ca979f046ff3325507",
+      "new_sha256": "6567cfbea74fe82b1d669e56229a8ceb72dbc3218fb295dfd8c4d2607cf7a4cb",
+      "source_baseline_commit": "16d5054ea951b2e52e90c7f81ea2767a7ba82b92",
+      "source_git_blob_sha": "28f83a06e1c31c666ccaf95cfb05b4bea38b7ac0"
+    },
+    {
+      "file": "Design/59_VIRTUAL_TIME_EVENT_REPLAY_SPEC.md",
+      "new_git_blob_sha": "ea58f382f6ed2e8bf51b6615391834c508a92449",
+      "new_sha256": "ef8883f72734342e2f62c135d20fdde424cf051ab2238ebaca726b680ddc94ed",
+      "source_baseline_commit": "16d5054ea951b2e52e90c7f81ea2767a7ba82b92",
+      "source_git_blob_sha": "c6a95d2d731dd5a8cfa3ee97d3205193a06048eb"
+    },
+    {
+      "file": "Design/61_CORE_API_AND_SEQUENCE_DESIGN.md",
+      "new_git_blob_sha": "9ef30d68e2afe98a3342477bbc00bf4b57488e39",
+      "new_sha256": "ebde9ca519fb7d1af4f7dd3ebeafb661a41d55202750946dbb776efd0e72baf1",
+      "source_baseline_commit": "16d5054ea951b2e52e90c7f81ea2767a7ba82b92",
+      "source_git_blob_sha": "1bd19c5ccfcca24b4870d0898cbfdc217e5fc5cc"
+    },
+    {
+      "file": "Design/67_SIM_ONLY_NUMERIC_POLICY_PROPOSAL.md",
+      "new_git_blob_sha": "06a26f9d355fd4a3728d07f9d87e4653d00648fa",
+      "new_sha256": "a001c754d0020d8c9ebbd39dbd1a8a1281da0e5ed877eab76765f16434cc6143",
+      "source_baseline_commit": "16d5054ea951b2e52e90c7f81ea2767a7ba82b92",
+      "source_git_blob_sha": "3054342fe8c61dd25aa913aa42ea62c3bedf13eb"
+    },
+    {
+      "file": "Design/68_ATOMIC_EVENT_AND_SAFETY_TRANSITION_CONTRACT.md",
+      "new_git_blob_sha": "4240405e6fde9a7fd87dce4e179e25e65341bc54",
+      "new_sha256": "568dd655d4c7c17f414cb2b932d48604001e3a879275dccbc9691036018c52e1",
+      "source_baseline_commit": "16d5054ea951b2e52e90c7f81ea2767a7ba82b92",
+      "source_git_blob_sha": "d73280915c2e309d909f1f3363e844ea5a039da7"
+    },
+    {
+      "file": "Design/69_REPLAY_SERIALIZATION_AND_EVIDENCE_CONTRACT.md",
+      "new_git_blob_sha": "47de847c7742d90c3b3d5272058115885092e996",
+      "new_sha256": "02b5d63f1529a0e95af334eae6d39c40aeb06fc74f882ecdaacaa6a66c42adc1",
+      "source_baseline_commit": "16d5054ea951b2e52e90c7f81ea2767a7ba82b92",
+      "source_git_blob_sha": "66f95eaaf6d63c4379ad209726628ef8f990be48"
+    },
+    {
+      "file": "Design/70_IMMUTABLE_CONFIG_AND_HOST_SCOPE_GATE.md",
+      "new_git_blob_sha": "68f35f8b8d972d499278a0780070f4b97e66b848",
+      "new_sha256": "dc852a7a8ef4af066361352cff17fbc3fd0922aac8e8ad848a860fec9331c07f",
+      "source_baseline_commit": "16d5054ea951b2e52e90c7f81ea2767a7ba82b92",
+      "source_git_blob_sha": "9ee51e07d018a24b30562bc35265f5f7efddb647"
+    },
+    {
+      "file": "Design/71_PHASE22_POLICY_BOUNDARY_TEST_ORACLES.md",
+      "new_git_blob_sha": "195dcac159aff8d69c161f8a26bc995815dfc5ba",
+      "new_sha256": "d4c99b2dfb2706b7c3e67a857c2045565212cb4f224c04800edddecabe2a7594",
+      "source_baseline_commit": "16d5054ea951b2e52e90c7f81ea2767a7ba82b92",
+      "source_git_blob_sha": "aac0c6adff404a8048fc64b6d2454b1c622a18ff"
+    },
+    {
+      "file": "Design/72_FREEZE_GAP_CLOSURE_AND_REPO_RECONCILIATION.md",
+      "new_git_blob_sha": "18a86834a0af9b9091ae899719aa3aef3a144dfa",
+      "new_sha256": "fdd0f1ac8befe12f43ad73715c832475536bfec47ebbf1c2770e401fecd8d5f8",
+      "source_baseline_commit": "16d5054ea951b2e52e90c7f81ea2767a7ba82b92",
+      "source_git_blob_sha": "8df9d955af189ea05ca071839fa907bfd00ce507"
+    },
+    {
+      "file": "Design/75_PHASE23_PUBLIC_REPO_BASELINE_STATUS.md",
+      "new_git_blob_sha": "99d16a788ec79ce9d224bbb339afd9ec186dd2da",
+      "new_sha256": "b964069d3ccdcdf8dd2289db454b5cad411e4597ccc907f266fee94649022033",
+      "source_baseline_commit": "16d5054ea951b2e52e90c7f81ea2767a7ba82b92",
+      "source_git_blob_sha": "a98f1292b63bd58149758e7e0676b95edd3a21c3"
+    },
+    {
+      "file": "Design/77_SEMANTIC_CONFLICT_AND_HAZARD_REGISTER.md",
+      "new_git_blob_sha": "43a7ce93d5228ae7ca5a117c4e599bf3b844174b",
+      "new_sha256": "2517211895f645200f682c9f9ee7f11dc83a8b53563826c3916bc281e85e35a3",
+      "source_baseline_commit": "16d5054ea951b2e52e90c7f81ea2767a7ba82b92",
+      "source_git_blob_sha": "b179fd077baa799a0258af69d2a2ef006fba5bf2"
+    },
+    {
+      "file": "Design/83_PHASE23_G0A1_FREEZE_REVIEW_PACKET.md",
+      "new_git_blob_sha": "5d47a098059ab34fa5ff04ca0d3ae10a3302a2b8",
+      "new_sha256": "1f0ee4b4ea4b51d198b121462d2917f5ac3d68cc7596bc97a8e2cde9dc827394",
+      "source_baseline_commit": "16d5054ea951b2e52e90c7f81ea2767a7ba82b92",
+      "source_git_blob_sha": "8bc59ff9ac68dd374d2325be25e9241d4a86c245"
+    }
+  ],
+  "approval": "PROPOSED / NOT OWNER APPROVED",
+  "baseline_branch": "main",
+  "baseline_commit": "16d5054ea951b2e52e90c7f81ea2767a7ba82b92",
+  "baseline_repository": "nguyenbui5701/BionicButterfly",
+  "generated_utc": "2026-11-12",
+  "new_documents": [
+    {
+      "file": "Design/84_G0A1_NORMATIVE_SAFETY_AND_EVENT_SEMANTICS.md",
+      "git_blob_sha": "2cc1f50a50437e7c820c74909e374237906e1ce3",
+      "sha256": "4d3b8646fdc9b8f4bf1f3d8cb2cff1be6ebfb97c20809dffb4d37d81ae0e3017"
+    },
+    {
+      "file": "Design/85_HOST_SCHEMA_ERROR_COMPATIBILITY_V2_CANDIDATE.md",
+      "git_blob_sha": "8ee215206449c45d17627f530dbe2c5f5ddd6666",
+      "sha256": "3563e38c878bd32fd60bd417fe134b8aaeb6d8ae52883dacd19251ce20d8c8cb"
+    },
+    {
+      "file": "Design/86_PHASE24_ATOMIC_E2E_ORACLE_MATRIX.md",
+      "git_blob_sha": "752167fa13576a25d8be98ed617a06e37c21ff74",
+      "sha256": "2de66d31f95cbd6bfc5a5af93b00f37c969cdc5815eef2cb9345841cbd5b56af"
+    },
+    {
+      "file": "Design/87_TRUST_REPLAY_AND_EVIDENCE_FREEZE_CANDIDATE.md",
+      "git_blob_sha": "debc8f0633f740d5c97c54b1eebf82dd4f92cb63",
+      "sha256": "a24f7bba28bffc6740eabcbc8d0db2ebca73bfde812b3a335233ee41e5412995"
+    },
+    {
+      "file": "Design/88_REPOSITORY_MAIN_BASELINE_AND_RECONCILIATION.md",
+      "git_blob_sha": "e0cb2a5da72ec8b7bd28cc70a0788c59dd50e592",
+      "sha256": "f94155d3be37358c59e1990b82e3212b8bab3010ccfef9f13ba27f09bb57e147"
+    },
+    {
+      "file": "Design/89_PHASE24_G0A1_APPROVAL_READINESS_PACKET.md",
+      "git_blob_sha": "1e049f9431eb535af45130dcb3639caba69b91b3",
+      "sha256": "96856989bdac2296a6f5f2625d761278ea781dc96cecc4897503b3832e77ef1a"
+    },
+    {
+      "file": "Design/90_PHASE24_ARCHITECTURE_DECISION_SUPPLEMENT.md",
+      "git_blob_sha": "c8520759d49272282b7151f5eefbcaf0a6ef4b7a",
+      "sha256": "32499ba866f52ad0de0a0837dae8bec69d79be04a41a971fa5dcc19b3ff575a7"
+    }
+  ],
+  "package": "BionicButterfly_Phase24_Architecture_Conflict_Resolution",
+  "physical_tests": "NOT RUN",
+  "warnings": [
+    "Compare current branch HEAD and original Git blob SHA before replacing any amended document.",
+    "No Source or Task files are touched.",
+    "No new design decision is implicitly approved."
+  ]
+}
