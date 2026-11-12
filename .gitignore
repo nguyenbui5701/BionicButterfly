@@ -1,0 +1,25 @@
+# Review workspace
+/ReviewPR/
+
+# Build artifacts
+.pio/
+build/
+dist/
+*.bin
+*.elf
+*.o
+
+# Editor
+.vscode/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# System
+.DS_Store
+Thumbs.db
+__pycache__/
