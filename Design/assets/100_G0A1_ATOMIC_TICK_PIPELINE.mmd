@@ -1,0 +1,14 @@
+flowchart TD
+    A[Strict preflight: scenario and externally trusted policy] --> B{Preflight valid?}
+    B -->|No| C[VALIDATION_REJECTED: no core ticks]
+    B -->|Yes| D[Immutable eligible batch at T_k]
+    D --> E[Normalize full batch: RF and control conflicts]
+    E --> F[Pure state decision from pre-snapshot]
+    F --> G[Validate bounded virtual output and serialize JCS tick record]
+    G --> H{Trace append success?}
+    H -->|No| I[FAILED_INCOMPLETE_EVIDENCE: output not published]
+    H -->|Yes| J[Publish one committed post-state and virtual output]
+    J --> K{More ticks?}
+    K -->|Yes| D
+    K -->|No| L[Append terminal without self-digest]
+    L --> M[External report with control_trace_sha256]

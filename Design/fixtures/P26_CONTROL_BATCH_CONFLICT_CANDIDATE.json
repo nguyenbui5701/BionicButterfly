@@ -1,0 +1,52 @@
+{
+  "clock": {
+    "start_us": 0,
+    "step_us": 5000
+  },
+  "config_id": "sim-only-c0-v1",
+  "context": "PC_SIM",
+  "events": [
+    {
+      "event_at_us": 0,
+      "event_id": "boot",
+      "payload": {},
+      "type": "BOOT"
+    },
+    {
+      "event_at_us": 10000,
+      "event_id": "rf1",
+      "payload": {
+        "rf_health": "HEALTHY",
+        "rf_provenance": "INJECTED_SIM"
+      },
+      "type": "SIM_RF_STATUS"
+    },
+    {
+      "event_at_us": 16000,
+      "event_id": "low1",
+      "payload": {
+        "arm_switch": false,
+        "flap_demand": 0,
+        "map_revision": "sim-map-v1",
+        "steering_demand": 0,
+        "uart_frame_status": "VALID"
+      },
+      "type": "SIM_CONTROL_FRAME"
+    },
+    {
+      "event_at_us": 17000,
+      "event_id": "hi1",
+      "payload": {
+        "arm_switch": true,
+        "flap_demand": 0,
+        "map_revision": "sim-map-v1",
+        "steering_demand": 0,
+        "uart_frame_status": "VALID"
+      },
+      "type": "SIM_CONTROL_FRAME"
+    }
+  ],
+  "provenance": "SIM_ONLY",
+  "scenario_id": "P26_CONTROL_BATCH_CONFLICT_CANDIDATE",
+  "schema_version": 1
+}
