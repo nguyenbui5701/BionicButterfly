@@ -1,0 +1,11 @@
+flowchart TD
+  A["Git main@be85c3 — P26 verified"] --> B["SA consolidated candidate R1: D-075..090"]
+  B --> C{"Owner decision?"}
+  C -->|"APPROVE exact R1"| D["Reconcile legacy Design docs under change review"]
+  C -->|"AMEND"| E["Revise semantics and impacted oracles"]
+  C -->|"DEFER"| F["Remain candidate; no freeze"]
+  E --> B
+  D --> G["Pin approved contract + trusted SIM policy record"]
+  G --> H["G0-A1 design freeze review (separate signed decision)"]
+  H --> I["Potential Developer task only if separately requested"]
+  H -.-> J["G0-B/G3/G4 still separately NO-GO"]

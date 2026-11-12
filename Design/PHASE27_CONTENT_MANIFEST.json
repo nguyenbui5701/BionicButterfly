@@ -1,0 +1,65 @@
+{
+  "phase": "2.7",
+  "role": "Solution Architect",
+  "source_repo": "nguyenbui5701/BionicButterfly",
+  "source_main_sha_at_review": "be85c3e28a2ba6891f2bd6199a58fe0ce564f305",
+  "approval_status": "PENDING",
+  "not_run": "ALL SIMULATOR AND HARDWARE TESTS",
+  "preexisting_git_blobs_verified": {
+    "99_GITHUB_MAIN_VERIFIED_BASELINE_AND_FINDING_RECONCILIATION.md": "f95ec37ffae71442388cadb733910855154f9005",
+    "100_G0A1_UNIFIED_EVENT_TICK_AND_CONTROL_CONTRACT.md": "70c1bb80e0a0ff5025d6c0fe3c0ee028afb4377c",
+    "101_G0A1_ARM_RECOVERY_AND_NO_EVENT_TRANSITION_MATRIX.md": "7729ec0a4d39818b4d901b48099b069b351ee5c9",
+    "102_G0A1_SIM_POLICY_AND_APPROVAL_PROPOSAL.md": "6e292c0a0736e47ea718d437a39bed427514f16e",
+    "103_G0A1_REPLAY_TRACE_AND_TRUST_BOUNDARY.md": "68a7800fb4242282b6364a0ab8c30ce75700e97f",
+    "104_G0A1_DETERMINISTIC_ACCEPTANCE_VECTORS.md": "d4b339e8ad7e782b6181737e6abdc396d7632904",
+    "105_G0A1_SOURCE_PATCH_MAP_AND_TRACEABILITY.md": "6e8166a51bd0166de163912aa5607fbd7d8e33e1",
+    "106_PHASE26_G0A1_OWNER_REVIEW_AND_HANDOFF_READINESS.md": "abd353f0f41104f9bb12d06217fc9f464471f460"
+  },
+  "artifacts": [
+    {
+      "path": "Design/107_PHASE27_VERIFIED_BASELINE_AND_GATE_SCOPE.md",
+      "sha256": "6b6a9d2233722abd7fe1c9caae4db47d84e806698d8e65066c4b33f2f05cd73a",
+      "bytes": 4341
+    },
+    {
+      "path": "Design/108_PHASE27_CONSOLIDATED_ADR_RESOLUTION_MATRIX.md",
+      "sha256": "bcdd924f38e284fdb985194127fefa3cc3000f516f0ebde8c55dd26eb9137e31",
+      "bytes": 6619
+    },
+    {
+      "path": "Design/109_G0A1_SEMANTIC_CLOSURE_WALKTHROUGH.md",
+      "sha256": "2edbcf18b763a3a76303df0fb52c6ec68eef48a2cd660490b9bf6359009bad71",
+      "bytes": 7261
+    },
+    {
+      "path": "Design/110_G0A1_REPLAY_POLICY_AND_TRUST_DECISION_GATE.md",
+      "sha256": "ada0703d4d2310a89c8f6487155d6530a2617d7cf12df3541319baad2f5e7070",
+      "bytes": 5528
+    },
+    {
+      "path": "Design/111_G0A1_CONTRACT_CLOSURE_ORACLES_AND_GATES.md",
+      "sha256": "82fe76204812280069c20db686b9db649ffa65a5f52f36f84a986dda5eb9b0c3",
+      "bytes": 6208
+    },
+    {
+      "path": "Design/112_ARCHITECTURE_DOCUMENT_RECONCILIATION_AND_HANDOFF_PLAN.md",
+      "sha256": "a5628732726bb41241924746646df5fad588ad20bd72cb1771e07560936269c9",
+      "bytes": 4653
+    },
+    {
+      "path": "Design/113_PHASE27_OWNER_G0A1_DECISION_PACKET.md",
+      "sha256": "0af48807fbc5a2c659b2ac46742a67f7726b2955d60e16758de21024dabe6165",
+      "bytes": 5696
+    },
+    {
+      "path": "Design/assets/108_DECISION_AND_APPROVAL_FLOW.mmd",
+      "sha256": "41aabddefff93a6f78fd2933235a6f8ff320d9605cbda59d67bb213463bac182",
+      "bytes": 579
+    },
+    {
+      "path": "Design/fixtures/PHASE27_OWNER_DECISION_UNSIGNED_TEMPLATE.json",
+      "sha256": "e42e96b88366871d122b3e2d513c1cc24195502098026c6e9be68cb3ceeb68bc",
+      "bytes": 1043
+    }
+  ]
+}
