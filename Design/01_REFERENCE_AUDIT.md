@@ -1,10 +1,12 @@
-# BionicButterfly — P1 Reference Audit (Preliminary)
+# BionicButterfly — P1 Reference Audit (Preliminary + Firmware Follow-up)
 
 - **Document ID:** DESIGN-P1-001
-- **Revision:** 0.2 — Draft
+- **Revision:** 0.3 — Draft
 - **Date:** 2026-11-12
 - **Owner:** Solution Architect
 - **Status:** RESEARCH / NOT APPROVED FOR IMPLEMENTATION
+
+> **2026-11-12 firmware review addendum:** Source archive `P1_Source_Audit.zip` has now been inspected statically. The earlier "audit level: README/file inventory only" statements below describe the **previous revision** and are superseded for firmware by `Design/12_FIRMWARE_SOURCE_AUDIT.md`. Proposed architecture is in `Design/13_V1_ARCHITECTURE_PROPOSAL.md`. Neither build nor hardware behavior has been verified; do not issue AI Code tasks yet. The archive includes 3 ESP `.cpp/.h` files absent from the prior tracked `git ls-files` list; source provenance requires a local status check.
 
 ## 1. Purpose
 
