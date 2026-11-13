@@ -1,0 +1,384 @@
+{
+  "baseline": "a47dc157453547125f5172b4ef165c3b522ff0c8",
+  "pinned_files": [
+    {
+      "path": "Design/115_G0A1_APPROVED_ATOMIC_SAFETY_CONTRACT_R1.md",
+      "git_blob_sha1": "e6d988d160773219811d28cdb346b5a4590a0fa0"
+    },
+    {
+      "path": "Design/116_G0A1_APPROVED_POLICY_DIGEST_AND_TRUST_R1.md",
+      "git_blob_sha1": "02a0c21faf0b758bb55220debc390c09058021f7"
+    },
+    {
+      "path": "Design/117_G0A1_INPUT_RESULT_ERRORS_R1.md",
+      "git_blob_sha1": "f4c7d0bd857616fcdbbd978176ed8c9065e98d21"
+    },
+    {
+      "path": "Design/141_G0A1_R11_AUTHORITATIVE_CONTRACT_HIERARCHY.md",
+      "git_blob_sha1": "b21fcb9ed83775054cf2bde0b6533f5b71cb6eda"
+    },
+    {
+      "path": "Design/161_G0A1_TICK_OBSERVATION_NORMALIZATION_CONTRACT.md",
+      "git_blob_sha1": "8e503343242c70473d8b0e593cdda2de6dce41be"
+    },
+    {
+      "path": "Design/164_G0A1_TEMPORAL_GUARD_FACTS_CONTRACT.md",
+      "git_blob_sha1": "eed1c062d3de85a2beb361118ba9fd776dd90a36"
+    },
+    {
+      "path": "Design/167_G0A1_SAFETY_PRIORITY_KERNEL_STAGE_C1_CONTRACT.md",
+      "git_blob_sha1": "160d2773df5f68192e7c1638c7be8652144bf904"
+    },
+    {
+      "path": "Design/170_G0A1_ARM_QUALIFICATION_PROPOSALS_STAGE_C2.md",
+      "git_blob_sha1": "790c9c2f45cd5cc05880f4caaa82f17b315f7334"
+    },
+    {
+      "path": "Source/host_batch_observations/src/bb_host_batch_observations/normalizer.py",
+      "git_blob_sha1": "9cf0a1bb6333049dafc46d69691292fe9b7ea3b8"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/src/bb_host_temporal_guard_facts/temporal.py",
+      "git_blob_sha1": "707f3f1aa3c1c997839204c137ee907a7696c57a"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/src/bb_host_safety_priority_kernel/priority.py",
+      "git_blob_sha1": "6a194b6fea178d8e697901448143c90a1edaf531"
+    },
+    {
+      "path": "Source/host_arm_qualification/src/bb_host_arm_qualification/qualification.py",
+      "git_blob_sha1": "57e47ed1ba360af45dfc41ce694179a17b8c7dc4"
+    },
+    {
+      "path": "Design/contracts/SIM_POLICY_22A_R1.canonical.json",
+      "git_blob_sha1": "62c35f82c715d3b3587dcc67d74f1320ba160929"
+    },
+    {
+      "path": "Design/contracts/G0A1_SCENARIO_WIRE_V2_CANDIDATE.schema.json",
+      "git_blob_sha1": "1d10c76e34be70880a65252d89a6bca89839fea9"
+    },
+    {
+      "path": "Design/fixtures/P210_MINIMAL_WIRE_V2.json",
+      "git_blob_sha1": "7990a0e2c4a95425a61c27c9024a8a0783520663"
+    },
+    {
+      "path": "Source/host_preflight_m0/MANIFEST.in",
+      "git_blob_sha1": "0b4290eb40d0cd71a99e14a67b8a697a6e3af5cb"
+    },
+    {
+      "path": "Source/host_preflight_m0/pyproject.toml",
+      "git_blob_sha1": "02c0454b098968647283b7d3e86342a9d0e7d74b"
+    },
+    {
+      "path": "Source/host_preflight_m0/scripts/smoke.py",
+      "git_blob_sha1": "8f6221a9e2b832b05520f67558eea72fc0d4f808"
+    },
+    {
+      "path": "Source/host_preflight_m0/scripts/verify_baseline.py",
+      "git_blob_sha1": "68dd496c08e0db8a83e619603bfd239e54532c03"
+    },
+    {
+      "path": "Source/host_preflight_m0/scripts/verify_delivery.py",
+      "git_blob_sha1": "78e2aaa212d102502d8cff5fe5ce2ea56b31ea63"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/__init__.py",
+      "git_blob_sha1": "e7a00a7d18a82c7997858b989271c5cc36ded4af"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/diagnostics.py",
+      "git_blob_sha1": "35881939fb011bf0e4ab65c44b5a03c348da0f8a"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/exact_decimal.py",
+      "git_blob_sha1": "ae47fae16a49742d20e57e50b35101666783140c"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/lexer.py",
+      "git_blob_sha1": "ed90677e2a68b3a5adbd2c4bd068311b72c16263"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/mixer.py",
+      "git_blob_sha1": "93ad14f32332596697b76c9ea68b3ea8affe8319"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/schema.py",
+      "git_blob_sha1": "2d2e6f874eabd53922e061f0708cc79809a472d9"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/wire.py",
+      "git_blob_sha1": "506aa23cbe5e01671f3f51c1f2fd64444d7f0578"
+    },
+    {
+      "path": "Source/host_preflight_m0/tests/conftest.py",
+      "git_blob_sha1": "bec7c0f8ef0d09850522c05dd8f5f026a9bd5feb"
+    },
+    {
+      "path": "Source/host_preflight_m0/tests/test_boundaries.py",
+      "git_blob_sha1": "1036553d3e607482096d3e35a6a22eb62a02a04d"
+    },
+    {
+      "path": "Source/host_preflight_m0/tests/test_isolation.py",
+      "git_blob_sha1": "44c85be37c9c69d6e4824ea87643da4654ac0451"
+    },
+    {
+      "path": "Source/host_preflight_m0/tests/test_math.py",
+      "git_blob_sha1": "4fd2d406eabe8452194c989502423da65ab6c046"
+    },
+    {
+      "path": "Source/host_preflight_m0/tests/test_oracles.py",
+      "git_blob_sha1": "f2a47a20a7a6ee70ae5443eb6422b21bd346eccf"
+    },
+    {
+      "path": "Source/host_virtual_ticks/MANIFEST.in",
+      "git_blob_sha1": "ea5cfeb395844d727473ea608a36a155d74c73e3"
+    },
+    {
+      "path": "Source/host_virtual_ticks/pyproject.toml",
+      "git_blob_sha1": "14139c679e63f1d2a1458c49b1004ac60bfd0078"
+    },
+    {
+      "path": "Source/host_virtual_ticks/scripts/smoke.py",
+      "git_blob_sha1": "58a496a411e4ee942813f3102b8c21828de3ccf9"
+    },
+    {
+      "path": "Source/host_virtual_ticks/scripts/verify.py",
+      "git_blob_sha1": "ec0e38c1b5802b6753b641a5f6bf90f3bb41cf4e"
+    },
+    {
+      "path": "Source/host_virtual_ticks/src/bb_host_virtual_ticks/__init__.py",
+      "git_blob_sha1": "c7238b3fb0461c0cb25715de0174feb75de3eda4"
+    },
+    {
+      "path": "Source/host_virtual_ticks/src/bb_host_virtual_ticks/scheduler.py",
+      "git_blob_sha1": "755e74b740f1a68eb6f095b6895d80cba3831928"
+    },
+    {
+      "path": "Source/host_virtual_ticks/tests/conftest.py",
+      "git_blob_sha1": "917df6d6cebc819b14e43bdef65a454b9732362c"
+    },
+    {
+      "path": "Source/host_virtual_ticks/tests/test_oracles.py",
+      "git_blob_sha1": "1c06495163fb920e778f66c2056191771184e0c1"
+    },
+    {
+      "path": "Source/host_virtual_ticks/tests/test_scheduler.py",
+      "git_blob_sha1": "31c4bfc6effb849e9712efb2b2e38d8a2cd03f2b"
+    },
+    {
+      "path": "Source/host_batch_observations/MANIFEST.in",
+      "git_blob_sha1": "ea5cfeb395844d727473ea608a36a155d74c73e3"
+    },
+    {
+      "path": "Source/host_batch_observations/pyproject.toml",
+      "git_blob_sha1": "f00f53422e9acf3d333b0dcc895e0e78c13cd190"
+    },
+    {
+      "path": "Source/host_batch_observations/scripts/__init__.py",
+      "git_blob_sha1": "47b1eb40a6cbcf31375b1e37b088abb95b327b8a"
+    },
+    {
+      "path": "Source/host_batch_observations/scripts/scenarios.py",
+      "git_blob_sha1": "d38e5e8c1e0ec423630776cb644fe0a6593165a3"
+    },
+    {
+      "path": "Source/host_batch_observations/scripts/smoke.py",
+      "git_blob_sha1": "ce79cbd425a2b2fc39952d1cf9644fa4df69855f"
+    },
+    {
+      "path": "Source/host_batch_observations/scripts/verify.py",
+      "git_blob_sha1": "5339b594deb8fd5aeded7b19cbcd38937756849d"
+    },
+    {
+      "path": "Source/host_batch_observations/src/bb_host_batch_observations/__init__.py",
+      "git_blob_sha1": "5fb58a909fb6cc3bab1446ed27d13ec689a7cf22"
+    },
+    {
+      "path": "Source/host_batch_observations/tests/conftest.py",
+      "git_blob_sha1": "c690632c5a3b3cf8e121713ee8c8ab737e13af69"
+    },
+    {
+      "path": "Source/host_batch_observations/tests/test_normalizer.py",
+      "git_blob_sha1": "1ceeb2ec3eb8b589685eb0ec46f8ccdc596752ea"
+    },
+    {
+      "path": "Source/host_batch_observations/tests/test_oracles.py",
+      "git_blob_sha1": "56308b142c02fd510687616ca055fb66d052923e"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/MANIFEST.in",
+      "git_blob_sha1": "ea5cfeb395844d727473ea608a36a155d74c73e3"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/pyproject.toml",
+      "git_blob_sha1": "abc0a012a0a60f8139e0662b857e6f90b0cedde9"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/scripts/__init__.py",
+      "git_blob_sha1": "c41fe19a9122819bb7761d153fe8127005e5a428"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/scripts/scenarios.py",
+      "git_blob_sha1": "d8a18d488c52ad13c4340a5ad3615e55c95829d7"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/scripts/smoke.py",
+      "git_blob_sha1": "3acd6426e233a6ffbba5a4ec5021a444d29d2a2f"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/scripts/verify.py",
+      "git_blob_sha1": "f1ee007c03db4d8e9d0133d80a757cb582eea4bd"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/src/bb_host_temporal_guard_facts/__init__.py",
+      "git_blob_sha1": "b316b57637e536dc59f8dc18826101a2ef7cfc10"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/tests/conftest.py",
+      "git_blob_sha1": "5801beaefb1c4e43700cbbfd9effa5ce63c55e50"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/tests/test_oracles.py",
+      "git_blob_sha1": "01a0ad2c1676253c2768a1faec9c25a6a3b35a3e"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/tests/test_temporal.py",
+      "git_blob_sha1": "096d7ce84eb2c7c9218793ce222767ac9d3de06b"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/MANIFEST.in",
+      "git_blob_sha1": "ea5cfeb395844d727473ea608a36a155d74c73e3"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/pyproject.toml",
+      "git_blob_sha1": "d84b3a37a02d74c408fcf989938e57964ae54608"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/scripts/__init__.py",
+      "git_blob_sha1": "e2f160548ca7d2d613e1b4c2f9b3e020551e7975"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/scripts/scenarios.py",
+      "git_blob_sha1": "c01d57577c267026614fc4316d20d46d19083112"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/scripts/smoke.py",
+      "git_blob_sha1": "34602811b8413008e8d50ecd66f788a92de727bd"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/scripts/verify.py",
+      "git_blob_sha1": "45c1bea93741e09e04fadf7fd2c628e08c59c20d"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/src/bb_host_safety_priority_kernel/__init__.py",
+      "git_blob_sha1": "ff2cbdbf0418abbe6f2882a53bfab2181f2b1221"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/tests/conftest.py",
+      "git_blob_sha1": "c893e386f0ef33fabdf51ecb47e03e9e8ea28ffe"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/tests/test_oracles.py",
+      "git_blob_sha1": "935b6c450927e762fd9100b6cce32f5a599ac99c"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/tests/test_priority.py",
+      "git_blob_sha1": "9cae6b0a58a3d8d6c40f171e5f88e9955a53e2d9"
+    },
+    {
+      "path": "Source/host_arm_qualification/MANIFEST.in",
+      "git_blob_sha1": "ea5cfeb395844d727473ea608a36a155d74c73e3"
+    },
+    {
+      "path": "Source/host_arm_qualification/pyproject.toml",
+      "git_blob_sha1": "3181815045e5831e6840ed29482e5a865656091e"
+    },
+    {
+      "path": "Source/host_arm_qualification/scripts/__init__.py",
+      "git_blob_sha1": "e2f160548ca7d2d613e1b4c2f9b3e020551e7975"
+    },
+    {
+      "path": "Source/host_arm_qualification/scripts/scenarios.py",
+      "git_blob_sha1": "e29b7e523fb6b9b1a856c3989e83e35734d92162"
+    },
+    {
+      "path": "Source/host_arm_qualification/scripts/smoke.py",
+      "git_blob_sha1": "c2b3d8be09859085fa9d6c0dc941d0510cbf9282"
+    },
+    {
+      "path": "Source/host_arm_qualification/scripts/verify.py",
+      "git_blob_sha1": "8230374cd27235953f435160eaa4fe66f6cb3700"
+    },
+    {
+      "path": "Source/host_arm_qualification/src/bb_host_arm_qualification/__init__.py",
+      "git_blob_sha1": "7ee8a359b0d0010c48c4d6e969f3d9b6219757d5"
+    },
+    {
+      "path": "Source/host_arm_qualification/tests/conftest.py",
+      "git_blob_sha1": "c893e386f0ef33fabdf51ecb47e03e9e8ea28ffe"
+    },
+    {
+      "path": "Source/host_arm_qualification/tests/test_oracles.py",
+      "git_blob_sha1": "879763233682c8c66ac66c1d039a5c627ce28f6e"
+    },
+    {
+      "path": "Source/host_arm_qualification/tests/test_qualification.py",
+      "git_blob_sha1": "df5d4f2803377b64a4ace4ed8c011fc06dc8efd2"
+    },
+    {
+      "path": "Design/07_AI_CODING_RULES.md",
+      "git_blob_sha1": "a3760b54389d082f9f5f8c0b7cd7296cbe640eb8"
+    },
+    {
+      "path": "Design/10_SA_OPERATING_RULES.md",
+      "git_blob_sha1": "a0d802028e4a86d6f0a8ead6466fb4fe94b319cb"
+    },
+    {
+      "path": "Design/11_HANDOFF_PR_WORKFLOW.md",
+      "git_blob_sha1": "3e4cbb254f086958a98a6e2bc8817b86e341d2aa"
+    },
+    {
+      "path": "Design/118_G0A1_REPLAY_AND_OUTPUT_TRANSACTION_R1.md",
+      "git_blob_sha1": "fdc4263fd940f7ffd8f256dd617b7c89cc6274fd"
+    },
+    {
+      "path": "Design/132_R11_SCENARIO_WIRE_V2_CLOSED_EVENT_SCHEMA_CANDIDATE.md",
+      "git_blob_sha1": "2e154c314fbfdcfed8bc6daa00b72cdf349a6ccb"
+    }
+  ],
+  "release_manifest_sha256": "967a77956405cf22d6036d43c7247314d3913d36366b248894c27c4dee28b228",
+  "release_files": [
+    {
+      "path": "Design/172_TASK006_MERGE_CLOSEOUT_AND_TASK007_BASELINE.md",
+      "bytes": 4569,
+      "sha256": "0dd80153b42eddf5ad20dc553cd444ad8b4bf9f7f331f8a4c1e458e31419ed2d",
+      "git_blob_sha1": "53f6c47e5cb82388c17393773b529d1dde03031a"
+    },
+    {
+      "path": "Design/173_G0A1_RF_CONTROL_HEALTH_EVIDENCE_STAGE_D1.md",
+      "bytes": 9796,
+      "sha256": "f9ed9ebb75ee3d7f2f20f6324a17fb76271645308c380c34a09c971403d27bbb",
+      "git_blob_sha1": "f2e37723f58ced0457c7951cd07672b488793dda"
+    },
+    {
+      "path": "Design/174_TASK007_HEALTH_EVIDENCE_ORACLES_REVIEW.md",
+      "bytes": 4780,
+      "sha256": "c15fdef37bff32d286cceeebd594fc5f14700901fee088332160d4e9e4bc79a8",
+      "git_blob_sha1": "04be5a4a9ec054e2142b782674ecafe02b37d6c2"
+    },
+    {
+      "path": "Design/fixtures/P219_HEALTH_EVIDENCE_ORACLE_INDEX.json",
+      "bytes": 43787,
+      "sha256": "e3c2659050659f205fbd9ce15a645beceec4c10fce3f1e53e5451f90532c23a8",
+      "git_blob_sha1": "6e1ad515d9e7f101dd0a63c0cc70e91e723b5d42"
+    },
+    {
+      "path": "Task/TASK-007_HOST_RF_CONTROL_HEALTH_EVIDENCE.md",
+      "bytes": 6909,
+      "sha256": "ae1637a4c9c9ad2f0db597e4602056bc42fb16149034d17208089467a813269b",
+      "git_blob_sha1": "80f1ab969ad48d298b93619e853b7f56151d407b"
+    }
+  ],
+  "policy_sha256": "d7567197dd43480d7e96dac121fbb707d3097b6c443b1b7ab55e822dbac66e10",
+  "preserved_task001_baseline_sha256": "e6dfcfd1ea13ffb4fb5ba2c3d2b475ef0f62c85d2f84faa666ba6b13af30fd9d"
+}

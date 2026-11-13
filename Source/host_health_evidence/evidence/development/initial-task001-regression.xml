@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="2" failures="0" skipped="0" tests="2" time="0.217" timestamp="2026-11-13T23:50:14.152190+07:00" hostname="DESKTOP-GDP3K0K"><testcase classname="" name="tests.test_boundaries" time="0.000"><error message="collection failure">ImportError while importing test module 'D:\Vibecode\butterfly\BionicButterfly-Workspace\BionicButterfly\Source\host_preflight_m0\tests\test_boundaries.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\importlib\__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests\test_boundaries.py:6: in &lt;module&gt;
+    from jsonschema import Draft202012Validator
+E   ModuleNotFoundError: No module named 'jsonschema'</error></testcase><testcase classname="" name="tests.test_oracles" time="0.000"><error message="collection failure">ImportError while importing test module 'D:\Vibecode\butterfly\BionicButterfly-Workspace\BionicButterfly\Source\host_preflight_m0\tests\test_oracles.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\importlib\__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests\test_oracles.py:7: in &lt;module&gt;
+    from jsonschema import Draft202012Validator
+E   ModuleNotFoundError: No module named 'jsonschema'</error></testcase></testsuite></testsuites>

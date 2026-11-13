@@ -1,0 +1,264 @@
+{
+  "acceptance": {
+    "AC-01": "task-local scope and provenance",
+    "AC-02": "36 individual P219 JUnit cases",
+    "AC-03": "RF order/prior permutations",
+    "AC-04": "independent age boundaries and history invariants",
+    "AC-05": "invalid/conflict/equivalent groups and no cross-refresh",
+    "AC-06": "priority/RF blockers and closed non-authoritative output",
+    "AC-07": "malformed types/records/prior/mirrors reject",
+    "AC-08": "immutability, line-cost, no-IO, locale/TZ/Decimal determinism",
+    "AC-09": "tests/build/install/pip/smoke and six read-only regressions executed",
+    "AC-10": "UAT commands supplied; owner UAT/approval pending; PR not created"
+  },
+  "all_commands_exit_zero": true,
+  "baseline": "a47dc157453547125f5172b4ef165c3b522ff0c8",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "bb-host-arm-qualification": "0.1.0",
+    "bb-host-batch-observations": "0.1.0",
+    "bb-host-health-evidence": "0.1.0",
+    "bb-host-preflight-m0": "0.1.0",
+    "bb-host-safety-priority-kernel": "0.1.0",
+    "bb-host-temporal-guard-facts": "0.1.0",
+    "bb-host-virtual-ticks": "0.1.0",
+    "build": "1.2.2.post1",
+    "colorama": "0.4.6",
+    "iniconfig": "2.1.0",
+    "jsonschema": "4.26.0",
+    "jsonschema-specifications": "2025.9.1",
+    "packaging": "25.0",
+    "pip": "24.0",
+    "pluggy": "1.6.0",
+    "pyproject_hooks": "1.2.0",
+    "pytest": "8.3.5",
+    "referencing": "0.36.2",
+    "rpds-py": "0.27.1",
+    "setuptools": "80.9.0",
+    "typing_extensions": "4.15.0",
+    "wheel": "0.45.1"
+  },
+  "installed_dependencies_match_pinned_source": true,
+  "installed_task007_matches_source": true,
+  "limits": [
+    "PC_SIM_ONLY evidence; no FSM/control acceptance/ARM/output or TASK-006 adapter",
+    "Synthetic prior snapshot is not authenticated or committed history",
+    "Full R1 FSM/trace/authorization/hardware/flight NOT RUN",
+    "TZ environment tested; effective OS timezone switching NOT RUN on Windows without tzset"
+  ],
+  "oracle_results": [
+    {
+      "id": "P219-T01",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T02",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T03",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T04",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T05",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T06",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T07",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T08",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T09",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T10",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T11",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T12",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T13",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T14",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T15",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T16",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T17",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T18",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T19",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T20",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T21",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T22",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T23",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T24",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T25",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T26",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T27",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T28",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T29",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T30",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T31",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T32",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T33",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T34",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T35",
+      "result": "PASS"
+    },
+    {
+      "id": "P219-T36",
+      "result": "PASS"
+    }
+  ],
+  "pinned_files": 86,
+  "revision": {
+    "branch": "feature/TASK-007-host-health-evidence",
+    "files": {
+      "MANIFEST.in": "6ef2d9e05aba91fa839f2237f3ae223cedab0a06c691f8578bb19277aa48657e",
+      "pyproject.toml": "55711087ef289edc8deb67f8fe1031440cc0277c50287968c554d4cdd5a47aca",
+      "scripts/__init__.py": "8f3965bd475fe8321127518508daa4a93ff6739b33b802636bd05f55c6018a02",
+      "scripts/scenarios.py": "2ba4c41d1f8d9ab9f8b0f4cc5da759dddbef9e538254dacba77995a200a637c8",
+      "scripts/smoke.py": "2ffac1b04f0bc04509b9d7efdd783d478854124893327e52f39814aa97080981",
+      "scripts/verify.py": "d61d13db033db85b14e727f085a04f59037082f3f0f3c2d6f60bdaf11fcb0a04",
+      "src/bb_host_health_evidence/__init__.py": "444c3ddd8ae6328360abf25fcd85ebe39c71f5d5d563a9bc2afb07e54b48fba6",
+      "src/bb_host_health_evidence/health.py": "a228b3a1c046fc71d84b14817098ff9185dcff39457e85e824755dedf2630baa",
+      "tests/conftest.py": "5304ee5bfdb9cac1d7288cf7ecfc7534e844cea22a8d4f3e2e41c78029a5d860",
+      "tests/test_health.py": "19a9171b2bcafa04b4a7ebddaa4dd0be3d12247814314861f7ee05b989b36226",
+      "tests/test_oracles.py": "70ef000a73d7e59d4558eb2d8898f7245dd61ae01180f323e81b644399750a6e"
+    },
+    "head": "a47dc157453547125f5172b4ef165c3b522ff0c8",
+    "source_sha256": "4b6e3621564a7675504cb05fca241700687f37f9fb8020b06f3f1a7cbd3d9648"
+  },
+  "smoke": {
+    "development": "36 PASS, 0 FAIL",
+    "installed_wheel": "36 PASS, 0 FAIL"
+  },
+  "status": "PASS",
+  "test_results": {
+    "task001-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 203
+    },
+    "task002-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 44
+    },
+    "task003-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 59
+    },
+    "task004-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 140
+    },
+    "task005-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 208
+    },
+    "task006-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 221
+    },
+    "tests.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 258
+    }
+  },
+  "warnings": []
+}

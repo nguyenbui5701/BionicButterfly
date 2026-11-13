@@ -1,0 +1,40 @@
+{
+  "manifest_version": "P219_TASK007_RELEASE_V1",
+  "source_main_commit": "a47dc157453547125f5172b4ef165c3b522ff0c8",
+  "scope": "G0A1_PC_SIM_ONLY",
+  "release_status": "SA_DESIGN_ONLY_TASK007_NOT_RUN",
+  "policy_sha256": "d7567197dd43480d7e96dac121fbb707d3097b6c443b1b7ab55e822dbac66e10",
+  "oracle_count": 36,
+  "files": [
+    {
+      "path": "Design/172_TASK006_MERGE_CLOSEOUT_AND_TASK007_BASELINE.md",
+      "bytes": 4569,
+      "sha256": "0dd80153b42eddf5ad20dc553cd444ad8b4bf9f7f331f8a4c1e458e31419ed2d",
+      "git_blob_sha1": "53f6c47e5cb82388c17393773b529d1dde03031a"
+    },
+    {
+      "path": "Design/173_G0A1_RF_CONTROL_HEALTH_EVIDENCE_STAGE_D1.md",
+      "bytes": 9796,
+      "sha256": "f9ed9ebb75ee3d7f2f20f6324a17fb76271645308c380c34a09c971403d27bbb",
+      "git_blob_sha1": "f2e37723f58ced0457c7951cd07672b488793dda"
+    },
+    {
+      "path": "Design/174_TASK007_HEALTH_EVIDENCE_ORACLES_REVIEW.md",
+      "bytes": 4780,
+      "sha256": "c15fdef37bff32d286cceeebd594fc5f14700901fee088332160d4e9e4bc79a8",
+      "git_blob_sha1": "04be5a4a9ec054e2142b782674ecafe02b37d6c2"
+    },
+    {
+      "path": "Design/fixtures/P219_HEALTH_EVIDENCE_ORACLE_INDEX.json",
+      "bytes": 43787,
+      "sha256": "e3c2659050659f205fbd9ce15a645beceec4c10fce3f1e53e5451f90532c23a8",
+      "git_blob_sha1": "6e1ad515d9e7f101dd0a63c0cc70e91e723b5d42"
+    },
+    {
+      "path": "Task/TASK-007_HOST_RF_CONTROL_HEALTH_EVIDENCE.md",
+      "bytes": 6909,
+      "sha256": "ae1637a4c9c9ad2f0db597e4602056bc42fb16149034d17208089467a813269b",
+      "git_blob_sha1": "80f1ab969ad48d298b93619e853b7f56151d407b"
+    }
+  ]
+}
