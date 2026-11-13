@@ -1,0 +1,130 @@
+{
+  "TZ_values_tested": [
+    "UTC0",
+    "ICT-7"
+  ],
+  "artifacts": [
+    {
+      "path": ".cache/verify-sxjfkmu8/dependencies/bb_host_arm_qualification-0.1.0-py3-none-any.whl",
+      "sha256": "15c630a14a20173799f57fc76dee07ba28ad23d6ea58d4a2caafc1d2cd378268"
+    },
+    {
+      "path": ".cache/verify-sxjfkmu8/dependencies/bb_host_batch_observations-0.1.0-py3-none-any.whl",
+      "sha256": "49202333a0d5d74bccc96e0ef9274ad9e7b0137f570ab1fafba74b6fbec5b6fa"
+    },
+    {
+      "path": ".cache/verify-sxjfkmu8/dependencies/bb_host_health_evidence-0.1.0-py3-none-any.whl",
+      "sha256": "ce5e6a070c06878c46ef017bdd2a2c8e9308e351457bf69cc57ab6ca0c308958"
+    },
+    {
+      "path": ".cache/verify-sxjfkmu8/dependencies/bb_host_preflight_m0-0.1.0-py3-none-any.whl",
+      "sha256": "dc64699da86b3028f4cee92a17e3c04c3de398d3b89dd46a62ce14ce252afb91"
+    },
+    {
+      "path": ".cache/verify-sxjfkmu8/dependencies/bb_host_safety_priority_kernel-0.1.0-py3-none-any.whl",
+      "sha256": "6321534b0a5b447a74b5942e54830a604a34a78bdc1fb0595df92af22850a610"
+    },
+    {
+      "path": ".cache/verify-sxjfkmu8/dependencies/bb_host_temporal_guard_facts-0.1.0-py3-none-any.whl",
+      "sha256": "7b08dca40a3292cb03afd32d8f30b1a899bf52a30248d3a54cbc1091e679d393"
+    },
+    {
+      "path": ".cache/verify-sxjfkmu8/dependencies/bb_host_virtual_ticks-0.1.0-py3-none-any.whl",
+      "sha256": "e2e8983e98a806910e168c2279a252039ddc164897c0b420706031ff2df95e95"
+    },
+    {
+      "path": ".cache/verify-sxjfkmu8/dist/bb_host_guard_triage-0.1.0-py3-none-any.whl",
+      "sha256": "c03042d962fde80f6218c8bf9fcc0723fc288f663cb9ac1b114899fe1ea28ab5"
+    },
+    {
+      "path": ".cache/verify-sxjfkmu8/dist/bb_host_guard_triage-0.1.0.tar.gz",
+      "sha256": "f1e607a47e33f519070265ed3a655f8a47c28bd6191d322f1deb5d46b76f7afb"
+    }
+  ],
+  "effective_timezone_switch_supported": false,
+  "installed_dependencies_match_pinned_source": true,
+  "installed_task008_matches_source": true,
+  "locales_tested": [
+    "C",
+    "English_United States.1252"
+  ],
+  "packages": {
+    "attrs": "25.3.0",
+    "bb-host-arm-qualification": "0.1.0",
+    "bb-host-batch-observations": "0.1.0",
+    "bb-host-guard-triage": "0.1.0",
+    "bb-host-health-evidence": "0.1.0",
+    "bb-host-preflight-m0": "0.1.0",
+    "bb-host-safety-priority-kernel": "0.1.0",
+    "bb-host-temporal-guard-facts": "0.1.0",
+    "bb-host-virtual-ticks": "0.1.0",
+    "build": "1.2.2.post1",
+    "colorama": "0.4.6",
+    "iniconfig": "2.1.0",
+    "jsonschema": "4.26.0",
+    "jsonschema-specifications": "2025.9.1",
+    "packaging": "25.0",
+    "pip": "24.0",
+    "pluggy": "1.6.0",
+    "pyproject_hooks": "1.2.0",
+    "pytest": "8.3.5",
+    "referencing": "0.36.2",
+    "rpds-py": "0.27.1",
+    "setuptools": "80.9.0",
+    "typing_extensions": "4.15.0",
+    "wheel": "0.45.1"
+  },
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python": "3.11.15",
+  "test_results": {
+    "task001-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 203
+    },
+    "task002-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 44
+    },
+    "task003-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 59
+    },
+    "task004-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 140
+    },
+    "task005-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 208
+    },
+    "task006-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 221
+    },
+    "task007-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 258
+    },
+    "tests.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 345
+    }
+  },
+  "wheel_environment": ".cache/verify-sxjfkmu8/wheel-env"
+}
