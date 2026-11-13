@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="0.239" timestamp="2026-11-14T00:41:55.251073+07:00" hostname="DESKTOP-GDP3K0K"><testcase classname="" name="tests.test_oracles" time="0.000"><error message="collection failure">..\host_guard_triage\.venv\Lib\site-packages\_pytest\python.py:493: in importtestmodule
+    mod = import_path(
+..\host_guard_triage\.venv\Lib\site-packages\_pytest\pathlib.py:587: in import_path
+    importlib.import_module(module_name)
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\importlib\__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+&lt;frozen importlib._bootstrap&gt;:1204: in _gcd_import
+    ???
+&lt;frozen importlib._bootstrap&gt;:1176: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:1147: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:690: in _load_unlocked
+    ???
+..\host_guard_triage\.venv\Lib\site-packages\_pytest\assertion\rewrite.py:185: in exec_module
+    exec(co, module.__dict__)
+tests\test_oracles.py:6: in &lt;module&gt;
+    from bb_host_snapshot_commit_gate import CommitOutcome, SnapshotCommitResult, OwnerSnapshot
+src\bb_host_snapshot_commit_gate\__init__.py:5: in &lt;module&gt;
+    from .ledger import CommitOutcome, SnapshotCommitResult, TestOnlySnapshotLedger
+src\bb_host_snapshot_commit_gate\ledger.py:12: in &lt;module&gt;
+    from ._validation import _validate_tick
+E     File "D:\Vibecode\butterfly\BionicButterfly-Workspace\BionicButterfly\Source\host_snapshot_commit_gate\src\bb_host_snapshot_commit_gate\_validation.py", line 14
+E       PRIOR_STALE_OR_MISSING = "PRIOR_STALE_OR_MISSING"
+E   IndentationError: unexpected indent</error></testcase></testsuite></testsuites>
