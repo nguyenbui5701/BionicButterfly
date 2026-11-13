@@ -1,0 +1,225 @@
+{
+  "baseline": "f2c9237bd4a1e2e077c15db6eb4c22ed2a250d5d",
+  "pinned_files": [
+    {
+      "path": "Design/07_AI_CODING_RULES.md",
+      "git_blob_sha1": "a3760b54389d082f9f5f8c0b7cd7296cbe640eb8",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/10_SA_OPERATING_RULES.md",
+      "git_blob_sha1": "a0d802028e4a86d6f0a8ead6466fb4fe94b319cb",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/115_G0A1_APPROVED_ATOMIC_SAFETY_CONTRACT_R1.md",
+      "git_blob_sha1": "e6d988d160773219811d28cdb346b5a4590a0fa0",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/116_G0A1_APPROVED_POLICY_DIGEST_AND_TRUST_R1.md",
+      "git_blob_sha1": "02a0c21faf0b758bb55220debc390c09058021f7",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/117_G0A1_INPUT_RESULT_ERRORS_R1.md",
+      "git_blob_sha1": "f4c7d0bd857616fcdbbd978176ed8c9065e98d21",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/118_G0A1_REPLAY_AND_OUTPUT_TRANSACTION_R1.md",
+      "git_blob_sha1": "fdc4263fd940f7ffd8f256dd617b7c89cc6274fd",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/11_HANDOFF_PR_WORKFLOW.md",
+      "git_blob_sha1": "3e4cbb254f086958a98a6e2bc8817b86e341d2aa",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/132_R11_SCENARIO_WIRE_V2_CLOSED_EVENT_SCHEMA_CANDIDATE.md",
+      "git_blob_sha1": "2e154c314fbfdcfed8bc6daa00b72cdf349a6ccb",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/133_R11_VIRTUAL_MIXER_M0_EXACT_ARITHMETIC_CANDIDATE.md",
+      "git_blob_sha1": "8ea4f2f556d83d6132df86751c9ffd29b931575d",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/141_G0A1_R11_AUTHORITATIVE_CONTRACT_HIERARCHY.md",
+      "git_blob_sha1": "b21fcb9ed83775054cf2bde0b6533f5b71cb6eda",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/158_G0A1_VIRTUAL_TICK_SCHEDULER_CONTRACT_DERIVED_R11.md",
+      "git_blob_sha1": "d1844889b119804accf24eb7dab66382eedf2a76",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/161_G0A1_TICK_OBSERVATION_NORMALIZATION_CONTRACT.md",
+      "git_blob_sha1": "8e503343242c70473d8b0e593cdda2de6dce41be",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/164_G0A1_TEMPORAL_GUARD_FACTS_CONTRACT.md",
+      "git_blob_sha1": "eed1c062d3de85a2beb361118ba9fd776dd90a36",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/167_G0A1_SAFETY_PRIORITY_KERNEL_STAGE_C1_CONTRACT.md",
+      "git_blob_sha1": "160d2773df5f68192e7c1638c7be8652144bf904",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/contracts/G0A1_SCENARIO_WIRE_V2_CANDIDATE.schema.json",
+      "git_blob_sha1": "1d10c76e34be70880a65252d89a6bca89839fea9",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/contracts/SIM_POLICY_22A_R1.canonical.json",
+      "git_blob_sha1": "62c35f82c715d3b3587dcc67d74f1320ba160929",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/fixtures/P210_MINIMAL_WIRE_V2.json",
+      "git_blob_sha1": "7990a0e2c4a95425a61c27c9024a8a0783520663",
+      "result": "MATCH"
+    },
+    {
+      "path": "Source/host_batch_observations/pyproject.toml",
+      "git_blob_sha1": "f00f53422e9acf3d333b0dcc895e0e78c13cd190",
+      "result": "MATCH"
+    },
+    {
+      "path": "Source/host_batch_observations/src/bb_host_batch_observations/__init__.py",
+      "git_blob_sha1": "5fb58a909fb6cc3bab1446ed27d13ec689a7cf22",
+      "result": "MATCH"
+    },
+    {
+      "path": "Source/host_batch_observations/src/bb_host_batch_observations/normalizer.py",
+      "git_blob_sha1": "9cf0a1bb6333049dafc46d69691292fe9b7ea3b8",
+      "result": "MATCH"
+    },
+    {
+      "path": "Source/host_preflight_m0/pyproject.toml",
+      "git_blob_sha1": "02c0454b098968647283b7d3e86342a9d0e7d74b",
+      "result": "MATCH"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/__init__.py",
+      "git_blob_sha1": "e7a00a7d18a82c7997858b989271c5cc36ded4af",
+      "result": "MATCH"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/diagnostics.py",
+      "git_blob_sha1": "35881939fb011bf0e4ab65c44b5a03c348da0f8a",
+      "result": "MATCH"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/exact_decimal.py",
+      "git_blob_sha1": "ae47fae16a49742d20e57e50b35101666783140c",
+      "result": "MATCH"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/lexer.py",
+      "git_blob_sha1": "ed90677e2a68b3a5adbd2c4bd068311b72c16263",
+      "result": "MATCH"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/mixer.py",
+      "git_blob_sha1": "93ad14f32332596697b76c9ea68b3ea8affe8319",
+      "result": "MATCH"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/schema.py",
+      "git_blob_sha1": "2d2e6f874eabd53922e061f0708cc79809a472d9",
+      "result": "MATCH"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/wire.py",
+      "git_blob_sha1": "506aa23cbe5e01671f3f51c1f2fd64444d7f0578",
+      "result": "MATCH"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/pyproject.toml",
+      "git_blob_sha1": "d84b3a37a02d74c408fcf989938e57964ae54608",
+      "result": "MATCH"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/src/bb_host_safety_priority_kernel/__init__.py",
+      "git_blob_sha1": "ff2cbdbf0418abbe6f2882a53bfab2181f2b1221",
+      "result": "MATCH"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/src/bb_host_safety_priority_kernel/priority.py",
+      "git_blob_sha1": "6a194b6fea178d8e697901448143c90a1edaf531",
+      "result": "MATCH"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/pyproject.toml",
+      "git_blob_sha1": "abc0a012a0a60f8139e0662b857e6f90b0cedde9",
+      "result": "MATCH"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/src/bb_host_temporal_guard_facts/__init__.py",
+      "git_blob_sha1": "b316b57637e536dc59f8dc18826101a2ef7cfc10",
+      "result": "MATCH"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/src/bb_host_temporal_guard_facts/temporal.py",
+      "git_blob_sha1": "707f3f1aa3c1c997839204c137ee907a7696c57a",
+      "result": "MATCH"
+    },
+    {
+      "path": "Source/host_virtual_ticks/pyproject.toml",
+      "git_blob_sha1": "14139c679e63f1d2a1458c49b1004ac60bfd0078",
+      "result": "MATCH"
+    },
+    {
+      "path": "Source/host_virtual_ticks/src/bb_host_virtual_ticks/__init__.py",
+      "git_blob_sha1": "c7238b3fb0461c0cb25715de0174feb75de3eda4",
+      "result": "MATCH"
+    },
+    {
+      "path": "Source/host_virtual_ticks/src/bb_host_virtual_ticks/scheduler.py",
+      "git_blob_sha1": "755e74b740f1a68eb6f095b6895d80cba3831928",
+      "result": "MATCH"
+    }
+  ],
+  "release_files": [
+    {
+      "path": "Design/169_TASK005_CLOSEOUT_AND_TASK006_BASELINE.md",
+      "bytes": 2641,
+      "sha256": "53664159a472ad1bc1aac3b50226d2e2ad4f5da7c07f09d6046a60d7da1ffbd5",
+      "git_blob_sha1": "2573dceec3366937202aca9ff87ca7f7c1f09605"
+    },
+    {
+      "path": "Design/170_G0A1_ARM_QUALIFICATION_PROPOSALS_STAGE_C2.md",
+      "bytes": 12100,
+      "sha256": "2dfcc0b8f99b5357425d4aa18da12ee512753c5c201446b6d3ad0d9e183dc71b",
+      "git_blob_sha1": "790c9c2f45cd5cc05880f4caaa82f17b315f7334"
+    },
+    {
+      "path": "Design/171_TASK006_ARM_QUALIFICATION_ORACLES_AND_REVIEW.md",
+      "bytes": 4161,
+      "sha256": "f7bb16a17ef65a19b5512c1f5c7d27de98c1e7917a5b2b0d4dc3922d2dd76c66",
+      "git_blob_sha1": "7f87eae8e341c06074cdfdd58af36d5448bee81f"
+    },
+    {
+      "path": "Design/fixtures/P218_ARM_QUALIFICATION_ORACLE_INDEX.json",
+      "bytes": 44912,
+      "sha256": "6b2d692aef52f8774250910ab80aac608d362642525f63fbb0335df37807c5f0",
+      "git_blob_sha1": "668c99f4db60c6af0b57d5922c45cbb38d035595"
+    },
+    {
+      "path": "Task/TASK-006_HOST_ARM_QUALIFICATION_PROPOSALS.md",
+      "bytes": 6606,
+      "sha256": "dd1e46e704521ade10a18f9af6874d34acc24f0a38e555b9eff0ea3b927e3ed3",
+      "git_blob_sha1": "cfd789dce087f6575f3ce56d6640a452ec2e1f1f"
+    }
+  ],
+  "release_manifest_sha256": "6072f5019d8ac924334a0a71b3a2927bfe145c88b73335891a7ae7ab539990f9",
+  "policy_sha256": "d7567197dd43480d7e96dac121fbb707d3097b6c443b1b7ab55e822dbac66e10",
+  "preserved_task001_baseline_sha256": "e6dfcfd1ea13ffb4fb5ba2c3d2b475ef0f62c85d2f84faa666ba6b13af30fd9d"
+}
