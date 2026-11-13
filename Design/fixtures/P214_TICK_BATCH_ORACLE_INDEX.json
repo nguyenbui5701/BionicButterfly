@@ -1,0 +1,543 @@
+{
+  "schema_version": 1,
+  "scope": "PC_SIM_ONLY",
+  "baseline_commit": "ca457f784975c2d0959b1baf988483fa042f5c67",
+  "status": "DESIGN_ORACLES_NOT_RUN",
+  "event_definition": "Pseudo-events contain event_id, event_at_us, type; tests supply exact approved wire-v2 payloads according to Design/contracts/G0A1_SCENARIO_WIRE_V2_CANDIDATE.schema.json. All cases start from approved minimal scenario and must pass TASK-001 before any scheduler invocation, except T12 direct caller-negative.",
+  "total": 14,
+  "cases": [
+    {
+      "id": "P214-T01",
+      "name": "boot_and_empty_tick",
+      "scope": "PC_SIM_ONLY",
+      "duration_us": 5000,
+      "events": [
+        {
+          "event_id": "boot",
+          "event_at_us": 0,
+          "type": "BOOT"
+        }
+      ],
+      "expected_tick_count": 2,
+      "expected_batches": [
+        [
+          "boot"
+        ],
+        []
+      ],
+      "notes": "Minimal valid scenario; tick1 still yielded",
+      "status": "DESIGN_ORACLE_NOT_EXECUTED"
+    },
+    {
+      "id": "P214-T02",
+      "name": "inner_and_boundary",
+      "scope": "PC_SIM_ONLY",
+      "duration_us": 10000,
+      "events": [
+        {
+          "event_id": "boot",
+          "event_at_us": 0,
+          "type": "BOOT"
+        },
+        {
+          "event_id": "rf1",
+          "event_at_us": 1,
+          "type": "SIM_RF_STATUS"
+        },
+        {
+          "event_id": "r4999",
+          "event_at_us": 4999,
+          "type": "SIM_RESET"
+        },
+        {
+          "event_id": "ack5000",
+          "event_at_us": 5000,
+          "type": "SIM_ACK_FAULT"
+        },
+        {
+          "event_id": "r5001",
+          "event_at_us": 5001,
+          "type": "SIM_RESET"
+        },
+        {
+          "event_id": "ack10000",
+          "event_at_us": 10000,
+          "type": "SIM_ACK_FAULT"
+        }
+      ],
+      "expected_tick_count": 3,
+      "expected_batches": [
+        [
+          "boot"
+        ],
+        [
+          "rf1",
+          "r4999",
+          "ack5000"
+        ],
+        [
+          "r5001",
+          "ack10000"
+        ]
+      ],
+      "notes": "",
+      "status": "DESIGN_ORACLE_NOT_EXECUTED",
+      "extra_assertions": [
+        "Original event_at_us must be unchanged"
+      ]
+    },
+    {
+      "id": "P214-T03",
+      "name": "exact_interval_edges",
+      "scope": "PC_SIM_ONLY",
+      "duration_us": 15000,
+      "events": [
+        {
+          "event_id": "boot",
+          "event_at_us": 0,
+          "type": "BOOT"
+        },
+        {
+          "event_id": "e5000",
+          "event_at_us": 5000,
+          "type": "SIM_RESET"
+        },
+        {
+          "event_id": "e10000",
+          "event_at_us": 10000,
+          "type": "SIM_RESET"
+        },
+        {
+          "event_id": "e15000",
+          "event_at_us": 15000,
+          "type": "SIM_RESET"
+        }
+      ],
+      "expected_tick_count": 4,
+      "expected_batches": [
+        [
+          "boot"
+        ],
+        [
+          "e5000"
+        ],
+        [
+          "e10000"
+        ],
+        [
+          "e15000"
+        ]
+      ],
+      "notes": "",
+      "status": "DESIGN_ORACLE_NOT_EXECUTED"
+    },
+    {
+      "id": "P214-T04",
+      "name": "multi_event_same_tick",
+      "scope": "PC_SIM_ONLY",
+      "duration_us": 10000,
+      "events": [
+        {
+          "event_id": "boot",
+          "event_at_us": 0,
+          "type": "BOOT"
+        },
+        {
+          "event_id": "a",
+          "event_at_us": 500,
+          "type": "SIM_RESET"
+        },
+        {
+          "event_id": "b",
+          "event_at_us": 500,
+          "type": "SIM_RESET"
+        },
+        {
+          "event_id": "c",
+          "event_at_us": 4999,
+          "type": "SIM_RESET"
+        },
+        {
+          "event_id": "d",
+          "event_at_us": 5000,
+          "type": "SIM_RESET"
+        }
+      ],
+      "expected_tick_count": 3,
+      "expected_batches": [
+        [
+          "boot"
+        ],
+        [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        []
+      ],
+      "notes": "",
+      "status": "DESIGN_ORACLE_NOT_EXECUTED",
+      "extra_assertions": [
+        "Preserve source-array order a,b,c,d"
+      ]
+    },
+    {
+      "id": "P214-T05",
+      "name": "sparse_windows",
+      "scope": "PC_SIM_ONLY",
+      "duration_us": 25000,
+      "events": [
+        {
+          "event_id": "boot",
+          "event_at_us": 0,
+          "type": "BOOT"
+        },
+        {
+          "event_id": "last",
+          "event_at_us": 25000,
+          "type": "SIM_RESET"
+        }
+      ],
+      "expected_tick_count": 6,
+      "expected_batches": [
+        [
+          "boot"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+          "last"
+        ]
+      ],
+      "notes": "",
+      "status": "DESIGN_ORACLE_NOT_EXECUTED"
+    },
+    {
+      "id": "P214-T06",
+      "name": "non_tick_original_times",
+      "scope": "PC_SIM_ONLY",
+      "duration_us": 15000,
+      "events": [
+        {
+          "event_id": "boot",
+          "event_at_us": 0,
+          "type": "BOOT"
+        },
+        {
+          "event_id": "t01",
+          "event_at_us": 1,
+          "type": "SIM_RESET"
+        },
+        {
+          "event_id": "t4999",
+          "event_at_us": 4999,
+          "type": "SIM_RESET"
+        },
+        {
+          "event_id": "t5001",
+          "event_at_us": 5001,
+          "type": "SIM_RESET"
+        },
+        {
+          "event_id": "t14999",
+          "event_at_us": 14999,
+          "type": "SIM_RESET"
+        }
+      ],
+      "expected_tick_count": 4,
+      "expected_batches": [
+        [
+          "boot"
+        ],
+        [
+          "t01",
+          "t4999"
+        ],
+        [
+          "t5001"
+        ],
+        [
+          "t14999"
+        ]
+      ],
+      "notes": "",
+      "status": "DESIGN_ORACLE_NOT_EXECUTED",
+      "extra_assertions": [
+        "Time 14999 must not be rewritten as 15000"
+      ]
+    },
+    {
+      "id": "P214-T07",
+      "name": "inband_invalid_uart",
+      "scope": "PC_SIM_ONLY",
+      "duration_us": 5000,
+      "events": [
+        {
+          "event_id": "boot",
+          "event_at_us": 0,
+          "type": "BOOT"
+        },
+        {
+          "event_id": "uart_invalid",
+          "event_at_us": 100,
+          "type": "SIM_CONTROL_FRAME"
+        }
+      ],
+      "expected_tick_count": 2,
+      "expected_batches": [
+        [
+          "boot"
+        ],
+        [
+          "uart_invalid"
+        ]
+      ],
+      "notes": "",
+      "status": "DESIGN_ORACLE_NOT_EXECUTED",
+      "extra_assertions": [
+        "Use legal payload {uart_frame_status:INVALID}",
+        "No parser fault invented here"
+      ]
+    },
+    {
+      "id": "P214-T08",
+      "name": "control_conflict_preserved",
+      "scope": "PC_SIM_ONLY",
+      "duration_us": 10000,
+      "events": [
+        {
+          "event_id": "boot",
+          "event_at_us": 0,
+          "type": "BOOT"
+        },
+        {
+          "event_id": "c_a",
+          "event_at_us": 6100,
+          "type": "SIM_CONTROL_FRAME"
+        },
+        {
+          "event_id": "c_b",
+          "event_at_us": 6200,
+          "type": "SIM_CONTROL_FRAME"
+        }
+      ],
+      "expected_tick_count": 3,
+      "expected_batches": [
+        [
+          "boot"
+        ],
+        [],
+        [
+          "c_a",
+          "c_b"
+        ]
+      ],
+      "notes": "",
+      "status": "DESIGN_ORACLE_NOT_EXECUTED",
+      "extra_assertions": [
+        "Both complete VALID bodies with different demand, globally unique IDs",
+        "Do not produce E_CONTROL_BATCH_CONFLICT"
+      ]
+    },
+    {
+      "id": "P214-T09",
+      "name": "rf_healthy_lost_preserved",
+      "scope": "PC_SIM_ONLY",
+      "duration_us": 10000,
+      "events": [
+        {
+          "event_id": "boot",
+          "event_at_us": 0,
+          "type": "BOOT"
+        },
+        {
+          "event_id": "rf_ok",
+          "event_at_us": 9000,
+          "type": "SIM_RF_STATUS"
+        },
+        {
+          "event_id": "rf_lost",
+          "event_at_us": 9000,
+          "type": "SIM_RF_STATUS"
+        }
+      ],
+      "expected_tick_count": 3,
+      "expected_batches": [
+        [
+          "boot"
+        ],
+        [],
+        [
+          "rf_ok",
+          "rf_lost"
+        ]
+      ],
+      "notes": "",
+      "status": "DESIGN_ORACLE_NOT_EXECUTED",
+      "extra_assertions": [
+        "RF health priority is NOT decided here"
+      ]
+    },
+    {
+      "id": "P214-T10",
+      "name": "catastrophe_reset_ack_untouched",
+      "scope": "PC_SIM_ONLY",
+      "duration_us": 10000,
+      "events": [
+        {
+          "event_id": "boot",
+          "event_at_us": 0,
+          "type": "BOOT"
+        },
+        {
+          "event_id": "cat",
+          "event_at_us": 5000,
+          "type": "SIM_CATASTROPHIC_FAULT"
+        },
+        {
+          "event_id": "reset",
+          "event_at_us": 5000,
+          "type": "SIM_RESET"
+        },
+        {
+          "event_id": "ack",
+          "event_at_us": 5000,
+          "type": "SIM_ACK_FAULT"
+        }
+      ],
+      "expected_tick_count": 3,
+      "expected_batches": [
+        [
+          "boot"
+        ],
+        [
+          "cat",
+          "reset",
+          "ack"
+        ],
+        []
+      ],
+      "notes": "",
+      "status": "DESIGN_ORACLE_NOT_EXECUTED",
+      "extra_assertions": [
+        "No safety state transitions or priority"
+      ]
+    },
+    {
+      "id": "P214-T11",
+      "name": "max_duration",
+      "scope": "PC_SIM_ONLY",
+      "duration_us": 60000000,
+      "events": [
+        {
+          "event_id": "boot",
+          "event_at_us": 0,
+          "type": "BOOT"
+        }
+      ],
+      "expected_tick_count": 12001,
+      "expected_batches": {
+        "rule": "tick0=[boot]; ticks1..12000=[]"
+      },
+      "notes": "",
+      "status": "DESIGN_ORACLE_NOT_EXECUTED",
+      "extra_assertions": [
+        "Exactly 12001 tick batches",
+        "Memory bounded",
+        "No O(ticks * events) rescans"
+      ]
+    },
+    {
+      "id": "P214-T12",
+      "name": "rejected_or_raw_caller",
+      "scope": "PC_SIM_ONLY",
+      "duration_us": 5000,
+      "events": [
+        {
+          "event_id": "boot",
+          "event_at_us": 0,
+          "type": "BOOT"
+        }
+      ],
+      "expected_tick_count": 2,
+      "expected_batches": null,
+      "notes": "",
+      "status": "DESIGN_ORACLE_NOT_EXECUTED",
+      "extra_assertions": [
+        "RejectedPreflight or raw mapping is not a valid scheduler input",
+        "No ticks emitted",
+        "No new P_* issue"
+      ]
+    },
+    {
+      "id": "P214-T13",
+      "name": "immutability",
+      "scope": "PC_SIM_ONLY",
+      "duration_us": 5000,
+      "events": [
+        {
+          "event_id": "boot",
+          "event_at_us": 0,
+          "type": "BOOT"
+        }
+      ],
+      "expected_tick_count": 2,
+      "expected_batches": [
+        [
+          "boot"
+        ],
+        []
+      ],
+      "notes": "",
+      "status": "DESIGN_ORACLE_NOT_EXECUTED",
+      "extra_assertions": [
+        "Batch/event collection immutable",
+        "Source accepted scenario is unchanged"
+      ]
+    },
+    {
+      "id": "P214-T14",
+      "name": "repeat_determinism",
+      "scope": "PC_SIM_ONLY",
+      "duration_us": 10000,
+      "events": [
+        {
+          "event_id": "boot",
+          "event_at_us": 0,
+          "type": "BOOT"
+        },
+        {
+          "event_id": "x",
+          "event_at_us": 5000,
+          "type": "SIM_RESET"
+        },
+        {
+          "event_id": "y",
+          "event_at_us": 7000,
+          "type": "SIM_RESET"
+        }
+      ],
+      "expected_tick_count": 3,
+      "expected_batches": [
+        [
+          "boot"
+        ],
+        [
+          "x"
+        ],
+        [
+          "y"
+        ]
+      ],
+      "notes": "",
+      "status": "DESIGN_ORACLE_NOT_EXECUTED",
+      "extra_assertions": [
+        "Same normalized batches after 10 enumerations",
+        "Locale/TZ independent"
+      ]
+    }
+  ]
+}

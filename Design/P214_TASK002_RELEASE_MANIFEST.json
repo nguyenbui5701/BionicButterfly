@@ -1,0 +1,39 @@
+{
+  "artifact": "BionicButterfly Phase 2.14 — TASK-002 Virtual Tick Scheduler",
+  "repository": "nguyenbui5701/BionicButterfly",
+  "source_baseline_commit": "ca457f784975c2d0959b1baf988483fa042f5c67",
+  "scope": "PC_SIM_ONLY",
+  "status": "SA_DESIGN_TASK_RELEASE_NOT_RUNTIME",
+  "files": [
+    {
+      "path": "Design/157_TASK001_CLOSEOUT_AND_TASK002_RELEASE_BASELINE.md",
+      "bytes": 3894,
+      "sha256": "2c42dc4ecc53ea1d29aabd6a47671e218f3f552bc8c0face2b131dcbd04c57f9",
+      "git_blob_sha1": "83a80eb0bc3746f737794e1a3f3f81876efc96e2"
+    },
+    {
+      "path": "Design/158_G0A1_VIRTUAL_TICK_SCHEDULER_CONTRACT_DERIVED_R11.md",
+      "bytes": 6085,
+      "sha256": "6905c39193e103c0a66a6066287c8cdeee3d6a7843f0de01c17ebe8d8fda432d",
+      "git_blob_sha1": "d1844889b119804accf24eb7dab66382eedf2a76"
+    },
+    {
+      "path": "Design/159_TASK002_SCHEDULER_TEST_ORACLES_AND_REVIEW.md",
+      "bytes": 3936,
+      "sha256": "2773430dbe75e887671a946d2714550270ed8c98f7ab7507cc2e2f2e38241c54",
+      "git_blob_sha1": "3d335a14403beeae4ec3a70d06841fa08871f67c"
+    },
+    {
+      "path": "Design/fixtures/P214_TICK_BATCH_ORACLE_INDEX.json",
+      "bytes": 11915,
+      "sha256": "850db3c372d04757b7f4e8f10c042fc7b84512467ccb352d15e9f45baed9ff2c",
+      "git_blob_sha1": "e6280d9bfd70dc23f73fafffdb5cdb4a9b7e878a"
+    },
+    {
+      "path": "Task/TASK-002_VIRTUAL_TICK_SCHEDULER.md",
+      "bytes": 10207,
+      "sha256": "6de052b5ab3248195c2a88e654dd912559849f97d0df48eabe0dbc37c4f86403",
+      "git_blob_sha1": "ed3af3c09747bd39f686db721eea27c097935031"
+    }
+  ]
+}

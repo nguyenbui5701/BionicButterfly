@@ -1,0 +1,16 @@
+COMMAND: .venv/Scripts/python.exe -m pytest -q -p no:cacheprovider
+............................................                             [100%]
+44 passed in 1.56s
+EXIT: 0
+
+COMMAND: .venv/Scripts/python.exe scripts/smoke.py
+Smoke: 8 PASS, 0 FAIL (clock, BOOT, boundaries, empty tick, max duration, two invalid callers).
+EXIT: 0
+
+COMMAND: .venv/Scripts/python.exe -m pip check
+No broken requirements found.
+EXIT: 0
+
+COMMAND: .test-env/Scripts/python.exe scripts/smoke.py
+Smoke: 8 PASS, 0 FAIL (clock, BOOT, boundaries, empty tick, max duration, two invalid callers).
+EXIT: 0

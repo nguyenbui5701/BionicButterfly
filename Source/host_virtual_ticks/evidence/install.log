@@ -1,0 +1,17 @@
+Obtaining file:///<REPOSITORY>/Source/host_virtual_ticks
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: bb-host-virtual-ticks
+  Building editable for bb-host-virtual-ticks (pyproject.toml): started
+  Building editable for bb-host-virtual-ticks (pyproject.toml): finished with status 'done'
+  Created wheel for bb-host-virtual-ticks: filename=bb_host_virtual_ticks-0.1.0-0.editable-py3-none-any.whl size=3718 sha256=11afd24a5a55754e1cbd6b2aa54233908549f4bda724561c8184b1788dc33a40
+  Stored in directory: <USERPROFILE>\AppData\Local\Temp\pip-ephem-wheel-cache-nxacoo1r\wheels\f6\58\12\9b70d2a327ebef4e223fa80e02f7d34687a85a0dc2fc0826e8
+Successfully built bb-host-virtual-ticks
+Installing collected packages: bb-host-virtual-ticks
+  Attempting uninstall: bb-host-virtual-ticks
+    Found existing installation: bb-host-virtual-ticks 0.1.0
+    Uninstalling bb-host-virtual-ticks-0.1.0:
+      Successfully uninstalled bb-host-virtual-ticks-0.1.0
+Successfully installed bb-host-virtual-ticks-0.1.0
