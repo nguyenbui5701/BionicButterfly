@@ -1,0 +1,17 @@
+Obtaining file:///<REPOSITORY>/Source/host_snapshot_commit_gate
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: bb-host-snapshot-commit-gate
+  Building editable for bb-host-snapshot-commit-gate (pyproject.toml): started
+  Building editable for bb-host-snapshot-commit-gate (pyproject.toml): finished with status 'done'
+  Created wheel for bb-host-snapshot-commit-gate: filename=bb_host_snapshot_commit_gate-0.1.0-0.editable-py3-none-any.whl size=3264 sha256=cb3b63da1887025c6d8cd8b2e7ee0e5c455c5f2a4dc55053949bf6677115963f
+  Stored in directory: <USERPROFILE>\AppData\Local\Temp\pip-ephem-wheel-cache-iyi668px\wheels\fc\d9\86\77f5b765aca84952a239ad188d60bb7de52e6ae0e34ca40c33
+Successfully built bb-host-snapshot-commit-gate
+Installing collected packages: bb-host-snapshot-commit-gate
+  Attempting uninstall: bb-host-snapshot-commit-gate
+    Found existing installation: bb-host-snapshot-commit-gate 0.1.0
+    Uninstalling bb-host-snapshot-commit-gate-0.1.0:
+      Successfully uninstalled bb-host-snapshot-commit-gate-0.1.0
+Successfully installed bb-host-snapshot-commit-gate-0.1.0

@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools==80.9.0", "wheel==0.45.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bb-host-snapshot-commit-gate"
+version = "0.1.0"
+description = "TASK-009 TEST_ONLY snapshot append-before-commit gate Stage E1"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["bb-host-batch-observations==0.1.0", "bb-host-temporal-guard-facts==0.1.0", "bb-host-safety-priority-kernel==0.1.0", "bb-host-health-evidence==0.1.0", "bb-host-guard-triage==0.1.0"]
+
+[project.optional-dependencies]
+test = [
+  "jsonschema==4.26.0", "attrs==25.3.0", "jsonschema-specifications==2025.9.1",
+  "referencing==0.36.2", "rpds-py==0.27.1", "typing-extensions==4.15.0",
+  "pytest==8.3.5", "colorama==0.4.6", "iniconfig==2.1.0",
+  "packaging==25.0", "pluggy==1.6.0", "build==1.2.2.post1",
+  "pyproject-hooks==1.2.0", "setuptools==80.9.0", "wheel==0.45.1",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

@@ -1,0 +1,334 @@
+{
+  "acceptance": {
+    "AC-01": "task-local scope; frozen source/release hashes match",
+    "AC-02": "48 named P221 cases through genuine upstream pipeline and legal supplemental batches",
+    "AC-03": "14-field immutable snapshot; history invariants, generation and no accepted-history refresh",
+    "AC-04": "latch/catastrophe/contingency; armed explicit or stale hazard before RESET; nonarmed reset; BOOT",
+    "AC-05": "healthy armed/S1/ambiguous/reset-unresolved DEFER; no ARM or recovery decision",
+    "AC-06": "actual append/ack ordering probes; closed deterministic internal record bytes",
+    "AC-07": "serialization, real quota, short write, before/after-write failures and forged ack; terminal no-retry",
+    "AC-08": "exact frozen types, private journal/no receipt API, no IO/clock/adapter or output",
+    "AC-09": "tests/build/install/pip/dev+wheel smoke and eight read-only regressions executed",
+    "AC-10": "UAT commands supplied; owner UAT/approval pending; PR not created"
+  },
+  "all_commands_exit_zero": true,
+  "baseline": "e61f97e388662a48a13ccb6b308954436cbb87ec",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "bb-host-arm-qualification": "0.1.0",
+    "bb-host-batch-observations": "0.1.0",
+    "bb-host-guard-triage": "0.1.0",
+    "bb-host-health-evidence": "0.1.0",
+    "bb-host-preflight-m0": "0.1.0",
+    "bb-host-safety-priority-kernel": "0.1.0",
+    "bb-host-snapshot-commit-gate": "0.1.0",
+    "bb-host-temporal-guard-facts": "0.1.0",
+    "bb-host-virtual-ticks": "0.1.0",
+    "build": "1.2.2.post1",
+    "colorama": "0.4.6",
+    "iniconfig": "2.1.0",
+    "jsonschema": "4.26.0",
+    "jsonschema-specifications": "2025.9.1",
+    "packaging": "25.0",
+    "pip": "24.0",
+    "pluggy": "1.6.0",
+    "pyproject_hooks": "1.2.0",
+    "pytest": "8.3.5",
+    "referencing": "0.36.2",
+    "rpds-py": "0.27.1",
+    "setuptools": "80.9.0",
+    "typing_extensions": "4.15.0",
+    "wheel": "0.45.1"
+  },
+  "installed_dependencies_match_pinned_source": true,
+  "installed_task009_matches_source": true,
+  "limits": [
+    "PC_SIM_ONLY TEST_ONLY in-memory ledger; not a trusted R1 committed-state owner",
+    "No PASS/ADMITTED, accepted RF/control refresh, ARM, S1, output, full FSM, host allowlist or ACK recovery",
+    "Internal journal is not R1 JCS header/tick/terminal trace; no full trace SHA or crash durability",
+    "Full R1 system/hardware/flight NOT RUN; OS timezone switching NOT RUN on Windows without tzset"
+  ],
+  "negative_tests": {
+    "cases": 197,
+    "result": "PASS"
+  },
+  "oracle_results": [
+    {
+      "id": "P221-T01",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T02",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T03",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T04",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T05",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T06",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T07",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T08",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T09",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T10",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T11",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T12",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T13",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T14",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T15",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T16",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T17",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T18",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T19",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T20",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T21",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T22",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T23",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T24",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T25",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T26",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T27",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T28",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T29",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T30",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T31",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T32",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T33",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T34",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T35",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T36",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T37",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T38",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T39",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T40",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T41",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T42",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T43",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T44",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T45",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T46",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T47",
+      "result": "PASS"
+    },
+    {
+      "id": "P221-T48",
+      "result": "PASS"
+    }
+  ],
+  "pinned_files": 163,
+  "revision": {
+    "branch": "feature/TASK-009-host-snapshot-commit-gate",
+    "files": {
+      "MANIFEST.in": "6ef2d9e05aba91fa839f2237f3ae223cedab0a06c691f8578bb19277aa48657e",
+      "pyproject.toml": "05f3062b8f7fd5ec1a29f29590d7bad35a1168185ec35225362e96c8b5c5a342",
+      "scripts/__init__.py": "8f3965bd475fe8321127518508daa4a93ff6739b33b802636bd05f55c6018a02",
+      "scripts/scenarios.py": "081b7384f47acc8f4a24b6c7f67c8a595f9443c68885c1f0ba0fb04dc162db9c",
+      "scripts/smoke.py": "83e3881d4789ac610d40adbcd93a2296d9712785a10bedbb1e63396849b9d78e",
+      "scripts/verify.py": "7fa1ffb73f3f470d94ca327fafacbf67b8d9efbb2e1f6d2910f993eb36e31dcb",
+      "src/bb_host_snapshot_commit_gate/__init__.py": "e74c825e305261c46536a337cd73197269c119bac9897b5a13dd9604cf6208f7",
+      "src/bb_host_snapshot_commit_gate/_testing.py": "fe9ca3e16581784f59cfbee4f5c6767fa763808f5a0d1a5576bc7ab12b626626",
+      "src/bb_host_snapshot_commit_gate/_validation.py": "8f1bdfafb9c932558b9356642865bbc8a0afb5a536433509ee52cb2d4e30e0b8",
+      "src/bb_host_snapshot_commit_gate/journal.py": "5cdc9395fa2306196c451af1d5c2aa894f8b3c92ca7bbd3283c262067be5b724",
+      "src/bb_host_snapshot_commit_gate/ledger.py": "f7f1b10e6677fdee558ee131c56238ac13ad2c8c517291b6835012fcd7d3de14",
+      "src/bb_host_snapshot_commit_gate/snapshot.py": "44b3ba9b7b870022747545628bbe225afd9a28cb7980f77420edf60ed34c1970",
+      "tests/conftest.py": "5304ee5bfdb9cac1d7288cf7ecfc7534e844cea22a8d4f3e2e41c78029a5d860",
+      "tests/test_gate.py": "af366cf1f0a7a8cdc5d7c87bdb7ecdfb087bb79ece9668ed9ce6c7669ab02e8c",
+      "tests/test_oracles.py": "ba99b58b02eacfda828e2b48ebdeccf84de020424ee655de0f7352fcf5d0669f"
+    },
+    "head": "e61f97e388662a48a13ccb6b308954436cbb87ec",
+    "source_sha256": "f96fc978aa5bb5ec55876c4c71a53fc177e7ed6bad32e14675f80ad2427620ad"
+  },
+  "smoke": {
+    "development": "48 PASS, 0 FAIL",
+    "installed_wheel": "48 PASS, 0 FAIL"
+  },
+  "status": "PASS",
+  "test_results": {
+    "task001-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 203
+    },
+    "task002-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 44
+    },
+    "task003-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 59
+    },
+    "task004-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 140
+    },
+    "task005-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 208
+    },
+    "task006-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 221
+    },
+    "task007-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 258
+    },
+    "task008-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 345
+    },
+    "tests.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 246
+    }
+  },
+  "warnings": []
+}
