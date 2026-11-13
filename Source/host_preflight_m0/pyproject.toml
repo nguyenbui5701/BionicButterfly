@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools==80.9.0", "wheel==0.45.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bb-host-preflight-m0"
+version = "0.1.0"
+description = "TASK-001 pure PC-only wire preflight and M0 arithmetic"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+test = [
+  "pytest==8.3.5", "jsonschema==4.26.0", "attrs==25.3.0",
+  "jsonschema-specifications==2025.9.1", "referencing==0.36.2",
+  "rpds-py==0.27.1", "typing-extensions==4.15.0",
+  "colorama==0.4.6", "iniconfig==2.1.0", "packaging==25.0",
+  "pluggy==1.6.0", "build==1.2.2.post1", "pyproject-hooks==1.2.0",
+  "setuptools==80.9.0", "wheel==0.45.1",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

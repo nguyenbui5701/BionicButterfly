@@ -1,0 +1,90 @@
+{
+  "tracked_diff": [],
+  "preserved_owner_untracked": [
+    "Design/156_G0A1_DIAGNOSTIC_V1_APPROVAL_AND_TASK001_RELEASE.md",
+    "PACKAGE_MANIFEST.json",
+    "Task/TASK-001_HOST_PREFLIGHT_M0.md"
+  ],
+  "source_files": [
+    {
+      "path": "Source/host_preflight_m0/.gitignore",
+      "sha256": "d598a009b42e708a504ab2171f0f0bcfc904de9e7641744fbd13477a8fea839a"
+    },
+    {
+      "path": "Source/host_preflight_m0/DEPENDENCIES.md",
+      "sha256": "e3afe764559febb7d6065432d672f916459c9e91b82aba15abd9f0f27f65cf29"
+    },
+    {
+      "path": "Source/host_preflight_m0/MANIFEST.in",
+      "sha256": "15de05bfe9749624173f3bd19643dd65a30c4ab67c7edff8e4dde86aa4ac5450"
+    },
+    {
+      "path": "Source/host_preflight_m0/README.md",
+      "sha256": "e13f0dc2db8b506620d0a86fb1db1d6dcb034d929a2511046e78cc1f3a74c93f"
+    },
+    {
+      "path": "Source/host_preflight_m0/pyproject.toml",
+      "sha256": "1cddb22809fb6315a83b34c0691fb3faac4e92feb582b9624ef0943c48903a47"
+    },
+    {
+      "path": "Source/host_preflight_m0/scripts/smoke.py",
+      "sha256": "96215847bebbaec8259c5c7111531cf0e13224ace20516474ba44b9020848e64"
+    },
+    {
+      "path": "Source/host_preflight_m0/scripts/verify_baseline.py",
+      "sha256": "6621471069b547699539b6e04d032c8696d6413abcb6f6e7edb0d8ac037b48a1"
+    },
+    {
+      "path": "Source/host_preflight_m0/scripts/verify_delivery.py",
+      "sha256": "c001de60d66c423dfa01f0e5bdd4a285960aca5f6e1d29c932ad62a11a171b2e"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/__init__.py",
+      "sha256": "6c1f5cf4433522eb23e87155cc6132e2039db052c355320defdb3d959c3dd30f"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/diagnostics.py",
+      "sha256": "6a0ec50621bfa5d1a11fe1c5437435da7fae63b7012a138b861c9f5d9b2a1879"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/exact_decimal.py",
+      "sha256": "525cb4baab04b85e6b59fa752cdffb7b7e01da050356fb7f6bc9c0d7c878ce29"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/lexer.py",
+      "sha256": "a3f508abebe3c6757b27e4d7a6034c0915ae3df84aa5a77b473dfc489285fa70"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/mixer.py",
+      "sha256": "31c115d5a873c3a2e657846aa7f0b186a30849eb212d16a0a199ff5b0b2d90e9"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/schema.py",
+      "sha256": "4c1e996b35123ba0b89e5a7583d91d84207592f726de32fe39046a43d48f95b4"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/wire.py",
+      "sha256": "e96f3baed048529ef2a81c321cab3760c568398c9c92c69339989badcd2790b4"
+    },
+    {
+      "path": "Source/host_preflight_m0/tests/conftest.py",
+      "sha256": "0d23a755e31b7bbedd79df60c2627afba24462c64b419334963aaf2eea5970c8"
+    },
+    {
+      "path": "Source/host_preflight_m0/tests/test_boundaries.py",
+      "sha256": "5da931a33cce08010901f7d602ba60f21f3714bef0958e82064c27028924db42"
+    },
+    {
+      "path": "Source/host_preflight_m0/tests/test_isolation.py",
+      "sha256": "c52380f77f4cf767f9c7ccb493ef00c2f53b58afdaeda0c41f40995abf6e3772"
+    },
+    {
+      "path": "Source/host_preflight_m0/tests/test_math.py",
+      "sha256": "889041a9abb99873b79a0702df5f58e9d1e066ff98662fcfc6c3ca5ff668ca27"
+    },
+    {
+      "path": "Source/host_preflight_m0/tests/test_oracles.py",
+      "sha256": "e492a799d1f4d0c9a575c03bf3e62459dc70e7a4707b9a14011bfa5200dd5671"
+    }
+  ]
+}

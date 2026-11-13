@@ -1,0 +1,18 @@
+COMMAND: .venv/Scripts/python.exe -m pytest -q
+........................................................................ [ 35%]
+........................................................................ [ 70%]
+...........................................................              [100%]
+203 passed in 5.05s
+EXIT: 0
+
+COMMAND: .venv/Scripts/python.exe scripts/smoke.py
+Smoke: 6 PASS, 0 FAIL. PC-only library; no core runner instantiated.
+EXIT: 0
+
+COMMAND: .venv/Scripts/python.exe -m pip check
+No broken requirements found.
+EXIT: 0
+
+COMMAND: .test-env/Scripts/python.exe scripts/smoke.py
+Smoke: 6 PASS, 0 FAIL. PC-only library; no core runner instantiated.
+EXIT: 0
