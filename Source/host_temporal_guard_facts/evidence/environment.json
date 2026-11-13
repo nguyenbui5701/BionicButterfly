@@ -1,0 +1,81 @@
+{
+  "TZ_values_tested": [
+    "UTC0",
+    "ICT-7"
+  ],
+  "artifacts": [
+    {
+      "path": ".cache/pr-dist/bb_host_temporal_guard_facts-0.1.0-py3-none-any.whl",
+      "sha256": "92d91d9a457a055a7f4df3bf65ac434917dbe4cd095c54358acaad6b73415bc3"
+    },
+    {
+      "path": ".cache/pr-dist/bb_host_temporal_guard_facts-0.1.0.tar.gz",
+      "sha256": "bd9ec5f02061862dd7236118d9cace627bbef32d289aa4fe2af47828f760a5de"
+    },
+    {
+      "path": ".cache/pr-deps/bb_host_batch_observations-0.1.0-py3-none-any.whl",
+      "sha256": "db42d9ee3f083afd036f278a50a37d56754e861bd96ed0287e23d5d8f8cba0c4"
+    },
+    {
+      "path": ".cache/pr-deps/bb_host_preflight_m0-0.1.0-py3-none-any.whl",
+      "sha256": "176efefe8c4fb943f4acf67735000d11f387d79ea449ff820012ae4c9127d366"
+    },
+    {
+      "path": ".cache/pr-deps/bb_host_virtual_ticks-0.1.0-py3-none-any.whl",
+      "sha256": "5cb9e262e2c2aaba8a86c08a6bd6e17b7d51c666b93bf48d018edbad2c1b23d0"
+    }
+  ],
+  "effective_timezone_switch_supported": false,
+  "installed_dependencies_match_pinned_source": true,
+  "installed_task004_matches_source": true,
+  "locales_tested": [
+    "C",
+    "English_United States.1252"
+  ],
+  "packages": {
+    "bb-host-batch-observations": "0.1.0",
+    "bb-host-preflight-m0": "0.1.0",
+    "bb-host-temporal-guard-facts": "0.1.0",
+    "bb-host-virtual-ticks": "0.1.0",
+    "build": "1.2.2.post1",
+    "colorama": "0.4.6",
+    "iniconfig": "2.1.0",
+    "packaging": "25.0",
+    "pip": "24.0",
+    "pluggy": "1.6.0",
+    "pyproject_hooks": "1.2.0",
+    "pytest": "8.3.5",
+    "setuptools": "80.9.0",
+    "wheel": "0.45.1"
+  },
+  "platform": "Windows-10-10.0.19045-SP0",
+  "pr_packaging_retry": "Old dist artifact write/read denied by Windows; rebuilt TASK-004 to fresh output and prerequisites from exact baseline Git blobs, with no source changes",
+  "pr_wheel_environment": ".cache/pr-wheel-env",
+  "python": "3.11.15",
+  "test_results": {
+    "task001-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 203
+    },
+    "task002-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 44
+    },
+    "task003-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 59
+    },
+    "tests.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 140
+    }
+  }
+}

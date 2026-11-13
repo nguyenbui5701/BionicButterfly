@@ -1,0 +1,42 @@
+{
+  "artifact": "BionicButterfly Phase 2.16 / TASK-004 Temporal Guard Facts",
+  "repository": "nguyenbui5701/BionicButterfly",
+  "source_baseline_commit": "ed106d22c52647090768ef60fb1e4c33384e9227",
+  "scope": "PC_SIM_ONLY",
+  "status": "DESIGN_AND_TASK_RELEASE; NOT_RUNTIME_TESTED",
+  "ownership": "Owner handles git and unzip; Developer code/tests; SA reviews",
+  "files": [
+    {
+      "path": "Design/163_TASK003_MERGE_CLOSEOUT_AND_TASK004_BASELINE.md",
+      "sha256": "69df78046f533d78439af9943c9f9d7bb7863b6b2e25114720bd1d735190bdd0",
+      "git_blob_sha1": "f94f0f01e6a2a7200ea0260572878d0d24d30e82",
+      "bytes": 3045
+    },
+    {
+      "path": "Design/164_G0A1_TEMPORAL_GUARD_FACTS_CONTRACT.md",
+      "sha256": "c81cd026e4a6939a8afcfc4ed8bb87fdf8c65450b488bc9bd358083611cecec1",
+      "git_blob_sha1": "eed1c062d3de85a2beb361118ba9fd776dd90a36",
+      "bytes": 8010
+    },
+    {
+      "path": "Design/165_TASK004_TEMPORAL_GUARD_TEST_AND_REVIEW.md",
+      "sha256": "f29b8fb6e8c4d970f8fce31399b3c4c5198328268272f2f897e56455bcc4992d",
+      "git_blob_sha1": "4c028b7642c82ca2514f8ea519cdd4c7826dc6c9",
+      "bytes": 3606
+    },
+    {
+      "path": "Design/fixtures/P216_TEMPORAL_GUARD_ORACLE_INDEX.json",
+      "sha256": "eadb4649dd608782a0b2fbb4b3b5ce405ca2228222eb15e35e4378743547c4e7",
+      "git_blob_sha1": "6d0fd0237b1093ea8c9f93e1b254dcef7bde10cd",
+      "bytes": 25426
+    },
+    {
+      "path": "Task/TASK-004_HOST_TEMPORAL_GUARD_FACTS.md",
+      "sha256": "53841a792d8fc4938fbc8d4bbf40a8e62a639961c7b28c16235ce89228314c67",
+      "git_blob_sha1": "d576556660a94c5080c36ff3812a99178d71344c",
+      "bytes": 7174
+    }
+  ],
+  "case_count": 22,
+  "qa_note": "22 authorship-time arithmetic and scenario-shape checks; NO Developer runtime PASS"
+}

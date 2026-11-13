@@ -1,0 +1,171 @@
+{
+  "files": [
+    {
+      "path": "Source/host_temporal_guard_facts/.gitignore",
+      "sha256": "11d2f1bd9f4dfabf12cb3d9aa51e0021a907547f7b0f48047a8c3ebcca11fde5"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/MANIFEST.in",
+      "sha256": "6ef2d9e05aba91fa839f2237f3ae223cedab0a06c691f8578bb19277aa48657e"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/README.md",
+      "sha256": "b88b611a459480125159d5958e9e7293349b51ca587896c0ec5967234aa247d5"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/PR_HANDOFF.md",
+      "sha256": "401cb95d35551c963a03eb790c14e849d22d8ed39e787c63af87f18b3f51a5d5"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/REPORT.md",
+      "sha256": "3fa3a3b48f0f71bcec5bbe09f691ddb7573e876df5f27977ad8f87a621c89e3f"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/baseline.json",
+      "sha256": "15dd907a8764b9afd62cb7cdd3ce9f925b4260a56051998f55d5e2276f0a27ba"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/build-pr-initial-failure.log",
+      "sha256": "36aa0efbf664126372d60f9b2e23ea6735372c9ea4ab19b80775f55256cf67e7"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/build.log",
+      "sha256": "74bf530466155db0043c3f340733bc118be489112d07b317883b6d157b583056"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/commands.json",
+      "sha256": "192a99558e0992d6e6b7a5118bb5210ede593be1ca6a467fdd2919c1c1835abb"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/dependencies.log",
+      "sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/environment.json",
+      "sha256": "aad1c3f097c8510f5f9ddc5ebe897b9a0cae2258a920a4aaa90f4698c5a197e8"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/install.log",
+      "sha256": "bd48959a06cebcca618d1a67b040328b7c4dc05cb77ef4a8e786dd203e1cdb07"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/pr-build-host_batch_observations.log",
+      "sha256": "01fb09846c67f28029fba8a3a08687b21db2218d3512d81073d253074e80e91c"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/pr-build-host_preflight_m0.log",
+      "sha256": "ae866c2428c66f8b5860bc0503e29c20c84fb04e2934e30de4de3e7f6eeff1c1"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/pr-build-host_virtual_ticks.log",
+      "sha256": "8c8d2d370170ee5108e409c6080d515d993460172cb86f92c2ebc5d0ba3fec8b"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/smoke.log",
+      "sha256": "d0743dd57dc85541e68484f60d8d3811e8558987a860ad16141cec146241b569"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/task001-regression.log",
+      "sha256": "182ad63f33ad352d8a0055b3db19174c209a5cb7ed04aa0664fb1232e05dadaf"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/task001-regression.xml",
+      "sha256": "45efa84ed6d0e53ae2957c791d11d5acafe6f5b9bcc31fc6791c9f9bba420e88"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/task002-regression.log",
+      "sha256": "dfb5ce6c0484114cb1ef48e8d412af9114f411686f3da4648c16ede5d8def134"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/task002-regression.xml",
+      "sha256": "240b2390e3dd9d4478721649c5f162301356c0517378b513762743d42c8a2a7e"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/task003-regression-initial-failure.log",
+      "sha256": "aa3e5004605d17e443c5a577663179d2559167852194b45b92fa819a2034a901"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/task003-regression.log",
+      "sha256": "aa5dcf4880f0f16f53a0bf3b8ec8ad4130c5d671689640c33e14ce7ff99fb4c2"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/task003-regression.xml",
+      "sha256": "700138158656c872344c84202618affbd18e485e47a50e3ef25ecde783a91257"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/tests.log",
+      "sha256": "2ed2a49675ac9c2558b1276c7f70799d99c66f8c150c7c6c46c7e1920ef6d7d3"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/tests.xml",
+      "sha256": "116aed862deaffda41a7cc97c188639aac7b420f32f6cb4c838f5072bb55acb7"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/wheel-dependencies.log",
+      "sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/wheel-environment.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/wheel-install-pr-initial-failure.log",
+      "sha256": "ffda65ceae63d30caeb9f27f07900a3b3605dc317ed4ec24db2c0657865942fd"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/wheel-install.log",
+      "sha256": "51895137d7e06880588af5f96b17da351dfc99120ece05ca7037ce0cecb2e42b"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/wheel-smoke.log",
+      "sha256": "d0743dd57dc85541e68484f60d8d3811e8558987a860ad16141cec146241b569"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/pyproject.toml",
+      "sha256": "a100bbbb35280e28e9a2b5a8f83770292e2ad8651b1e4b12c8279aa32a299f83"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/scripts/__init__.py",
+      "sha256": "646509f76f0315a7f840930cf4adc56ede5c4b3abe11a2599236749fc225433d"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/scripts/scenarios.py",
+      "sha256": "83a7ec0021573df01c7fc7d5618e41018661d3e1ffbaef8cb5c81c5233c8829b"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/scripts/smoke.py",
+      "sha256": "bc52d6096a0969f9f56273784b4ed7911193b10d5236db996e296cd3f8237716"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/scripts/verify.py",
+      "sha256": "9ac84e2f6e146759984675ac661a351ff917ba05f08cc90c238b4768fb90705e"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/src/bb_host_temporal_guard_facts/__init__.py",
+      "sha256": "0c3ea3d83556fbb8acfafc9fb77e52697a88de736849fc34b176b5135c60b833"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/src/bb_host_temporal_guard_facts/temporal.py",
+      "sha256": "6b112675a8e7a63a0c34cda09a1de60890e220f17c3322a2e06bbd79f65be207"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/tests/conftest.py",
+      "sha256": "8659c4f6af34a32f61ecc29774fd873cf628e7e0828ce9ff04773418357a6cc6"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/tests/test_oracles.py",
+      "sha256": "9b8f0349bd1dd46702931cc4af2dfe04ddb85bd9d48d804aa46ed301786e9e69"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/tests/test_temporal.py",
+      "sha256": "bbf97424e6d439942c79063fc79a9d1ecb61439475d73889aa0b550466f64262"
+    }
+  ],
+  "inventory_excludes_itself": true,
+  "hash_basis": "Git index blob bytes after text EOL normalization",
+  "scope_audit": "PASS: 42 task source/evidence files plus 6 unchanged owner release artifacts; unrelated TASK-001 edit excluded and preserved"
+}
