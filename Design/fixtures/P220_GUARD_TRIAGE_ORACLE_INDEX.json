@@ -1,0 +1,625 @@
+{
+  "schema_version": "P220_GUARD_TRIAGE_ORACLE_INDEX_V1",
+  "source_main_commit": "7c09bb5ab4d05d16bfa53439b5dab5b465ec8b05",
+  "scope": "PC_SIM_ONLY",
+  "status": "SA_DESIGN_ONLY_RUNTIME_NOT_RUN",
+  "source_fixture": "Design/fixtures/P219_HEALTH_EVIDENCE_ORACLE_INDEX.json",
+  "source_fixture_blob_sha1": "6e1ad515d9e7f101dd0a63c0cc70e91e723b5d42",
+  "count": 36,
+  "source_recipe_rule": "Use exact P219 recipe at matching ID, rebuild genuine TASK-001 -> 002 -> 003 -> 004 -> 005 -> 007, then invoke TASK-008 with immutable outputs. P219 expected is not a substitute for executing the pipeline.",
+  "value_binding": "The two =temporal.* expressions mean assert actual TASK-008 field equals the genuine TASK-004 property at runtime, including None; do not literal-eval or interpolate expressions.",
+  "cases": [
+    {
+      "id": "P220-T01",
+      "source_case_id": "P219-T01",
+      "expected": {
+        "rf_lane": "NOT_HEALTHY",
+        "control_lane": "NO_CANDIDATE",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "PRIORITY_BLOCKED",
+          "RF_NOT_HEALTHY",
+          "NO_UNCONTESTED_CONTROL",
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T02",
+      "source_case_id": "P219-T02",
+      "expected": {
+        "rf_lane": "CURRENT_HEALTHY_UNCOMMITTED",
+        "control_lane": "NO_CANDIDATE",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "NO_UNCONTESTED_CONTROL",
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T03",
+      "source_case_id": "P219-T03",
+      "expected": {
+        "rf_lane": "CURRENT_HEALTHY_UNCOMMITTED",
+        "control_lane": "NO_CANDIDATE",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "NO_UNCONTESTED_CONTROL",
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T04",
+      "source_case_id": "P219-T04",
+      "expected": {
+        "rf_lane": "NOT_HEALTHY",
+        "control_lane": "NO_CANDIDATE",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "RF_NOT_HEALTHY",
+          "NO_UNCONTESTED_CONTROL",
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T05",
+      "source_case_id": "P219-T05",
+      "expected": {
+        "rf_lane": "NOT_HEALTHY",
+        "control_lane": "NO_CANDIDATE",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "RF_NOT_HEALTHY",
+          "NO_UNCONTESTED_CONTROL",
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T06",
+      "source_case_id": "P219-T06",
+      "expected": {
+        "rf_lane": "NOT_HEALTHY",
+        "control_lane": "NO_CANDIDATE",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "RF_NOT_HEALTHY",
+          "NO_UNCONTESTED_CONTROL",
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T07",
+      "source_case_id": "P219-T07",
+      "expected": {
+        "rf_lane": "NOT_HEALTHY",
+        "control_lane": "NO_CANDIDATE",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "RF_NOT_HEALTHY",
+          "NO_UNCONTESTED_CONTROL",
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T08",
+      "source_case_id": "P219-T08",
+      "expected": {
+        "rf_lane": "AMBIGUOUS",
+        "control_lane": "NO_CANDIDATE",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "RF_AMBIGUOUS",
+          "NO_UNCONTESTED_CONTROL",
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T09",
+      "source_case_id": "P219-T09",
+      "expected": {
+        "rf_lane": "AMBIGUOUS",
+        "control_lane": "NO_CANDIDATE",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "RF_AMBIGUOUS",
+          "NO_UNCONTESTED_CONTROL",
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T10",
+      "source_case_id": "P219-T10",
+      "expected": {
+        "rf_lane": "NOT_HEALTHY",
+        "control_lane": "NO_CANDIDATE",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "RF_NOT_HEALTHY",
+          "NO_UNCONTESTED_CONTROL",
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T11",
+      "source_case_id": "P219-T11",
+      "expected": {
+        "rf_lane": "NOT_HEALTHY",
+        "control_lane": "NO_CANDIDATE",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "RF_NOT_HEALTHY",
+          "NO_UNCONTESTED_CONTROL",
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T12",
+      "source_case_id": "P219-T12",
+      "expected": {
+        "rf_lane": "CARRIED_HEALTHY_UNVERIFIED",
+        "control_lane": "NO_CANDIDATE",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "NO_UNCONTESTED_CONTROL",
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T13",
+      "source_case_id": "P219-T13",
+      "expected": {
+        "rf_lane": "NOT_HEALTHY",
+        "control_lane": "NO_CANDIDATE",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "RF_NOT_HEALTHY",
+          "NO_UNCONTESTED_CONTROL",
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T14",
+      "source_case_id": "P219-T14",
+      "expected": {
+        "rf_lane": "NOT_HEALTHY",
+        "control_lane": "NO_CANDIDATE",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "RF_NOT_HEALTHY",
+          "NO_UNCONTESTED_CONTROL",
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T15",
+      "source_case_id": "P219-T15",
+      "expected": {
+        "rf_lane": "NOT_HEALTHY",
+        "control_lane": "NO_CANDIDATE",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "RF_NOT_HEALTHY",
+          "NO_UNCONTESTED_CONTROL",
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T16",
+      "source_case_id": "P219-T16",
+      "expected": {
+        "rf_lane": "NOT_HEALTHY",
+        "control_lane": "NO_CANDIDATE",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "RF_NOT_HEALTHY",
+          "NO_UNCONTESTED_CONTROL",
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T17",
+      "source_case_id": "P219-T17",
+      "expected": {
+        "rf_lane": "CURRENT_HEALTHY_UNCOMMITTED",
+        "control_lane": "NO_CANDIDATE",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "NO_UNCONTESTED_CONTROL",
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T18",
+      "source_case_id": "P219-T18",
+      "expected": {
+        "rf_lane": "NOT_HEALTHY",
+        "control_lane": "NO_CANDIDATE",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "RF_NOT_HEALTHY",
+          "NO_UNCONTESTED_CONTROL",
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T19",
+      "source_case_id": "P219-T19",
+      "expected": {
+        "rf_lane": "CURRENT_HEALTHY_UNCOMMITTED",
+        "control_lane": "INVALID_OR_CONFLICT",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "CONTROL_INVALID",
+          "NO_UNCONTESTED_CONTROL",
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T20",
+      "source_case_id": "P219-T20",
+      "expected": {
+        "rf_lane": "CURRENT_HEALTHY_UNCOMMITTED",
+        "control_lane": "INVALID_OR_CONFLICT",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "CONTROL_CONFLICT",
+          "NO_UNCONTESTED_CONTROL",
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T21",
+      "source_case_id": "P219-T21",
+      "expected": {
+        "rf_lane": "CURRENT_HEALTHY_UNCOMMITTED",
+        "control_lane": "UNTRUSTED_CANDIDATE",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T22",
+      "source_case_id": "P219-T22",
+      "expected": {
+        "rf_lane": "NOT_HEALTHY",
+        "control_lane": "RF_BLOCKED",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "RF_NOT_HEALTHY",
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T23",
+      "source_case_id": "P219-T23",
+      "expected": {
+        "rf_lane": "CARRIED_HEALTHY_UNVERIFIED",
+        "control_lane": "UNTRUSTED_CANDIDATE",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T24",
+      "source_case_id": "P219-T24",
+      "expected": {
+        "rf_lane": "NOT_HEALTHY",
+        "control_lane": "RF_BLOCKED",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "RF_NOT_HEALTHY",
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T25",
+      "source_case_id": "P219-T25",
+      "expected": {
+        "rf_lane": "AMBIGUOUS",
+        "control_lane": "RF_AMBIGUOUS",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "RF_AMBIGUOUS",
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T26",
+      "source_case_id": "P219-T26",
+      "expected": {
+        "rf_lane": "NOT_HEALTHY",
+        "control_lane": "RF_BLOCKED",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "RF_NOT_HEALTHY",
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T27",
+      "source_case_id": "P219-T27",
+      "expected": {
+        "rf_lane": "CURRENT_HEALTHY_UNCOMMITTED",
+        "control_lane": "PRIORITY_BLOCKED",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "PRIORITY_BLOCKED",
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T28",
+      "source_case_id": "P219-T28",
+      "expected": {
+        "rf_lane": "CURRENT_HEALTHY_UNCOMMITTED",
+        "control_lane": "PRIORITY_BLOCKED",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "PRIORITY_BLOCKED",
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T29",
+      "source_case_id": "P219-T29",
+      "expected": {
+        "rf_lane": "CURRENT_HEALTHY_UNCOMMITTED",
+        "control_lane": "NO_CANDIDATE",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "NO_UNCONTESTED_CONTROL",
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T30",
+      "source_case_id": "P219-T30",
+      "expected": {
+        "rf_lane": "CURRENT_HEALTHY_UNCOMMITTED",
+        "control_lane": "PRIORITY_BLOCKED",
+        "armed_continuity_lane": "PRIOR_STALE_OR_MISSING",
+        "unresolved_reasons": [
+          "ARMED_PRIOR_CONTROL_STALE_OR_MISSING",
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T31",
+      "source_case_id": "P219-T31",
+      "expected": {
+        "rf_lane": "CURRENT_HEALTHY_UNCOMMITTED",
+        "control_lane": "UNTRUSTED_CANDIDATE",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T32",
+      "source_case_id": "P219-T32",
+      "expected": {
+        "rf_lane": "CURRENT_HEALTHY_UNCOMMITTED",
+        "control_lane": "UNTRUSTED_CANDIDATE",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T33",
+      "source_case_id": "P219-T33",
+      "expected": {
+        "rf_lane": "NOT_HEALTHY",
+        "control_lane": "RF_BLOCKED",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "RF_NOT_HEALTHY",
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T34",
+      "source_case_id": "P219-T34",
+      "expected": {
+        "rf_lane": "NOT_HEALTHY",
+        "control_lane": "RF_BLOCKED",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "RF_NOT_HEALTHY",
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T35",
+      "source_case_id": "P219-T35",
+      "expected": {
+        "rf_lane": "NOT_HEALTHY",
+        "control_lane": "INVALID_OR_CONFLICT",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "RF_NOT_HEALTHY",
+          "CONTROL_INVALID",
+          "CONTROL_CONFLICT",
+          "NO_UNCONTESTED_CONTROL",
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P220-T36",
+      "source_case_id": "P219-T36",
+      "expected": {
+        "rf_lane": "CURRENT_HEALTHY_UNCOMMITTED",
+        "control_lane": "PRIORITY_BLOCKED",
+        "armed_continuity_lane": "NOT_ARMED",
+        "unresolved_reasons": [
+          "PRIORITY_BLOCKED",
+          "TRUST_NOT_PROVEN"
+        ],
+        "current_rf_candidate_original_at_us": "=temporal.observed_uncontested_healthy_rf_at_us",
+        "current_control_candidate_original_at_us": "=temporal.observed_uncontested_valid_control_at_us",
+        "requires_full_fsm": true
+      }
+    }
+  ],
+  "mandatory_negative_test_families": [
+    "N01 wrong exact upstream classes, enum subclass, bool-as-int, tick mismatches, out of range",
+    "N02 forged TASK-007 HEALTHY_CURRENT while observations LOST/UNKNOWN or no RF; reject",
+    "N03 forged HEALTHY_CARRIED while prior RF freshness false or current RF exists; reject",
+    "N04 forged AMBIGUOUS_CURRENT without simultaneous HEALTHY+UNKNOWN and no LOST; reject",
+    "N05 forged SINGLE_CANDIDATE with no current uncontested control or with priority blocker; reject",
+    "N06 do not invert no-frame, stale or priority blocker to PASS/ADMITTED/ACTIVE",
+    "N07 amended D1 timestamp vs TASK-004 candidate mismatch, flags and frozen shapes; reject",
+    "N08 200000 inclusive vs 200001 strict for prior RF/control; armed stale current new cannot rescue",
+    "N09 armed S1 evidence with 0 current control frames, prior ages fresh => POTENTIAL_S1_UNVERIFIED, never authorization",
+    "N10 armed fresh RF but prior control stale => PRIOR_STALE_OR_MISSING, even with current valid",
+    "N11 armed fresh control but prior RF stale => PRIOR_STALE_OR_MISSING, even with current healthy",
+    "N12 armed both prior fresh, RF LOST or UNKNOWN => HAZARD_OR_UNRESOLVED; reset plus stale never bypasses hazard",
+    "N13 zero event and 5000 duplicate equivalent controls produce constant TASK-008 runtime line count",
+    "N14 1 versus 5000 RF events precomputed by TASK-007: TASK-008 O(1), never rescans sources",
+    "N15 fixed enum order, tuple reason ordering, frozen outputs, no reason codes or new public wire fields",
+    "N16 no I/O, network, clock, RNG, global state, TASK-006 verdict construction, trace or hardware adapter",
+    "N17 negative API cases raise TypeError/ValueError; do not emit new E_/P_ runtime errors",
+    "N18 deterministic locale/TZ/Decimal contexts and repeatability independent of iteration order"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "manifest_version": "P220_TASK008_RELEASE_V1",
+  "source_main_commit": "7c09bb5ab4d05d16bfa53439b5dab5b465ec8b05",
+  "scope": "G0A1_PC_SIM_ONLY",
+  "release_status": "SA_DESIGN_ONLY_TASK008_NOT_RUN",
+  "policy_sha256": "d7567197dd43480d7e96dac121fbb707d3097b6c443b1b7ab55e822dbac66e10",
+  "oracle_count": 36,
+  "negative_test_families": 18,
+  "files": [
+    {
+      "path": "Design/175_TASK007_MERGE_CLOSEOUT_AND_TASK008_BASELINE.md",
+      "bytes": 4699,
+      "sha256": "0ab9fcb2e043c6e4163baae1433ad0e1073bae8b132241e59f32711444e97923",
+      "git_blob_sha1": "e0bef2cc70b2b8d01a3735781577a4591423248c"
+    },
+    {
+      "path": "Design/176_G0A1_GUARD_TRIAGE_STAGE_D2_CONTRACT.md",
+      "bytes": 11476,
+      "sha256": "fcacda09b2c9ec5434decf80f898a5ed767d5d9a667b8c7fab15037c1ae22255",
+      "git_blob_sha1": "679ab5c50ff4576f0419e5173e387249def34e8c"
+    },
+    {
+      "path": "Design/177_TASK008_GUARD_TRIAGE_ORACLES_AND_REVIEW.md",
+      "bytes": 5653,
+      "sha256": "5c45b314d3fcd52cf37b6803079efcfead552db19c8aa3381abf3d6fc21b2d8b",
+      "git_blob_sha1": "69a2cacf3468a4601aa240cca930ffc26fa84a3f"
+    },
+    {
+      "path": "Design/fixtures/P220_GUARD_TRIAGE_ORACLE_INDEX.json",
+      "bytes": 23775,
+      "sha256": "8900b2c07efecd9797552e0df28fa348da96b9c0350ba1347f10f3156c1fa110",
+      "git_blob_sha1": "57f88ea32dd6275f86e456539a46f186d8b157f8"
+    },
+    {
+      "path": "Task/TASK-008_HOST_GUARD_TRIAGE.md",
+      "bytes": 7158,
+      "sha256": "f0733b3bd9aa0e4b329f7c20b05b43091bef21de143c6fb1da0f8554cd0a8e64",
+      "git_blob_sha1": "d500f8e4edca5b3a603b1ba3e9ea854a8a1f3b9d"
+    }
+  ]
+}
