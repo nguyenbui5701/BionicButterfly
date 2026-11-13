@@ -17,7 +17,8 @@ The prepared `.venv` uses Python 3.11.15. Run exactly these three commands:
 
 Expect all tests passed, smoke checks PASS and `No broken requirements found`.
 If anything fails, send the terminal output. Logs and AC mapping are in `evidence/`.
-No PR is created before the owner's explicit instruction for TASK-002.
+The owner confirmed these UAT results and authorized a TASK-002 PR on 2026-11-13;
+SA review and the owner's merge decision remain separate.
 
 ## API
 
@@ -81,6 +82,7 @@ is BSD-3-Clause and packaging is Apache-2.0 OR BSD-2-Clause. These are the same
 reviewed tooling versions used in TASK-001, without vendoring tool code.
 
 The P214 release docs/oracle are owner-supplied files in Design and Task; they
-must be present for oracle tests and release-hash verification. The developer
-does not edit or publish them. Locale tests use two available Windows locales;
+must be present for oracle tests and release-hash verification. The owner has
+authorized tracking these exact files with TASK-002; their contents are unchanged.
+Locale tests use two available Windows locales;
 effective OS timezone switching is tested only where Python supports `tzset`.

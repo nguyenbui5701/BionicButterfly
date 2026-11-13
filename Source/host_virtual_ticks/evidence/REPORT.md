@@ -1,8 +1,15 @@
-# TASK-002 — READY FOR OWNER UAT
+# TASK-002 — OWNER ACCEPTED / READY FOR SA REVIEW
 
 Date: 2026-11-13 (Asia/Saigon). Branch: `feature/TASK-002-host-virtual-ticks`.
 Baseline: `ca457f784975c2d0959b1baf988483fa042f5c67` (merged TASK-001).
-No commit, push or Pull Request created for TASK-002.
+Owner UAT confirmed: 44 pytest PASS, smoke 8 PASS / 0 FAIL, pip check PASS.
+The owner authorized tracking the required release documents, pushing TASK-002
+and creating a PR into main. Merge is not authorized.
+
+Pre-PR recheck: **44 PASS, 0 FAIL, 0 SKIP** in 1.56 s, both development and
+installed-wheel smoke **8/8 PASS**, pip check PASS. See
+[pr-verification.log](pr-verification.log). All 29 files in the original delivery
+inventory matched before handoff updates; runtime/tests have not changed since UAT.
 
 ## Actual final results
 
@@ -52,10 +59,13 @@ Package/docs: `pyproject.toml`, `MANIFEST.in`, `.gitignore`, `README.md`.
 Evidence: this report, provenance, environment, command logs, testcase XML and
 [file inventory](files.json).
 
-Design/Task and TASK-001 source were read only. The pre-existing modification to
+Design/Task contents and TASK-001 source were read only. The pre-existing modification to
 `Source/host_preflight_m0/evidence/baseline.json` was preserved byte-for-byte;
-its SHA-256 is recorded in environment evidence. Owner-supplied release docs
-remain untracked as found. No ReviewPR/firmware/schema/policy writes occurred.
+its SHA-256 is recorded in environment evidence and the change is excluded from
+this PR. Per the owner's latest instruction, the six required release files
+(Design 157/158/159, P214 manifest, P214 oracle and TASK-002) are now included in
+the PR without content edits. All five manifest entries match their exact bytes
+and Git blobs. No ReviewPR/firmware/schema/policy content changes occurred.
 
 Runtime implements enumeration only, with no FSM, conflict/RF resolution, M0,
 trace/replay, hardware or execution authorization. No output or flight claim.
@@ -74,4 +84,5 @@ Open PowerShell at `BionicButterfly/Source/host_virtual_ticks`:
 ```
 
 Expected: **44 passed**, **Smoke: 8 PASS, 0 FAIL**, and **No broken requirements found**.
-Owner UAT and later SA review remain pending. PR: **NOT CREATED — WAITING FOR OWNER**.
+Owner UAT is accepted. PR creation is authorized; SA review remains pending.
+See GitHub for the PR state. Developer does not self-approve or merge.
