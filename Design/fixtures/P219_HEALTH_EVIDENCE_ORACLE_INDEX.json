@@ -1,0 +1,1610 @@
+{
+  "schema_version": "P219_HEALTH_EVIDENCE_ORACLE_INDEX_V1",
+  "baseline_commit": "a47dc157453547125f5172b4ef165c3b522ff0c8",
+  "scope": "G0-A1 PC_SIM_ONLY / Stage D1 evidence, not an R1-approved guard or accepted control",
+  "status": "DESIGN_SPECIFIED_NOT_RUN",
+  "count": 36,
+  "rf_evidence_enum": [
+    "MISSING",
+    "STALE_PRIOR",
+    "HEALTHY_CURRENT",
+    "HEALTHY_CARRIED",
+    "LOST_CURRENT",
+    "LOST_CARRIED",
+    "UNKNOWN_CURRENT",
+    "UNKNOWN_CARRIED",
+    "AMBIGUOUS_CURRENT"
+  ],
+  "control_evidence_enum": [
+    "ABSENT",
+    "SINGLE_CANDIDATE",
+    "INVALID",
+    "CONFLICT",
+    "INVALID_AND_CONFLICT",
+    "BLOCKED_RF",
+    "BLOCKED_PRIORITY",
+    "DEFER_RF_AMBIGUOUS"
+  ],
+  "recipe": "pseudo events become legal R1.1 wire-v2 bytes from P210_MINIMAL_WIRE_V2.json; BOOT at zero; prior_timestamp_snapshot and prior_rf_snapshot are independent synthetic TEST inputs, never wire JSON; expected fields are evidence-only and non-authoritative",
+  "cases": [
+    {
+      "id": "P219-T01",
+      "name": "boot_t0_no_rf_no_control",
+      "eval_at_us": 0,
+      "pre_state": "BOOT",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": null,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": null,
+        "last_rf_status": null,
+        "last_rf_original_at_us": null
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 0,
+        "eval_at_us": 0,
+        "pre_state": "BOOT",
+        "rf_evidence": "MISSING",
+        "latest_current_rf_original_at_us": null,
+        "control_evidence": "ABSENT",
+        "observed_control_candidate_original_at_us": null,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T02",
+      "name": "healthy_only_current",
+      "eval_at_us": 5000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "rfhealthy",
+          "event_at_us": 4999,
+          "kind": "RF_HEALTHY"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_rf_status": null,
+        "last_rf_original_at_us": null
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 1,
+        "eval_at_us": 5000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "HEALTHY_CURRENT",
+        "latest_current_rf_original_at_us": 4999,
+        "control_evidence": "ABSENT",
+        "observed_control_candidate_original_at_us": null,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T03",
+      "name": "two_healthy_latest_original",
+      "eval_at_us": 5000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "h1",
+          "event_at_us": 4001,
+          "kind": "RF_HEALTHY"
+        },
+        {
+          "id": "h2",
+          "event_at_us": 4999,
+          "kind": "RF_HEALTHY"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_rf_status": null,
+        "last_rf_original_at_us": null
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 1,
+        "eval_at_us": 5000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "HEALTHY_CURRENT",
+        "latest_current_rf_original_at_us": 4999,
+        "control_evidence": "ABSENT",
+        "observed_control_candidate_original_at_us": null,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T04",
+      "name": "lost_only_current",
+      "eval_at_us": 5000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "rflost",
+          "event_at_us": 4999,
+          "kind": "RF_LOST"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_rf_status": null,
+        "last_rf_original_at_us": null
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 1,
+        "eval_at_us": 5000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "LOST_CURRENT",
+        "latest_current_rf_original_at_us": 4999,
+        "control_evidence": "ABSENT",
+        "observed_control_candidate_original_at_us": null,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T05",
+      "name": "healthy_and_lost_lost_wins",
+      "eval_at_us": 5000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "h",
+          "event_at_us": 4998,
+          "kind": "RF_HEALTHY"
+        },
+        {
+          "id": "l",
+          "event_at_us": 4999,
+          "kind": "RF_LOST"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_rf_status": null,
+        "last_rf_original_at_us": null
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 1,
+        "eval_at_us": 5000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "LOST_CURRENT",
+        "latest_current_rf_original_at_us": 4999,
+        "control_evidence": "ABSENT",
+        "observed_control_candidate_original_at_us": null,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T06",
+      "name": "lost_and_healthy_lost_wins",
+      "eval_at_us": 5000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "l",
+          "event_at_us": 4998,
+          "kind": "RF_LOST"
+        },
+        {
+          "id": "h",
+          "event_at_us": 4999,
+          "kind": "RF_HEALTHY"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_rf_status": null,
+        "last_rf_original_at_us": null
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 1,
+        "eval_at_us": 5000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "LOST_CURRENT",
+        "latest_current_rf_original_at_us": 4999,
+        "control_evidence": "ABSENT",
+        "observed_control_candidate_original_at_us": null,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T07",
+      "name": "unknown_only_current",
+      "eval_at_us": 5000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "rfunknown",
+          "event_at_us": 4999,
+          "kind": "RF_UNKNOWN"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_rf_status": null,
+        "last_rf_original_at_us": null
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 1,
+        "eval_at_us": 5000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "UNKNOWN_CURRENT",
+        "latest_current_rf_original_at_us": 4999,
+        "control_evidence": "ABSENT",
+        "observed_control_candidate_original_at_us": null,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T08",
+      "name": "healthy_unknown_ambiguous",
+      "eval_at_us": 5000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "h",
+          "event_at_us": 4998,
+          "kind": "RF_HEALTHY"
+        },
+        {
+          "id": "u",
+          "event_at_us": 4999,
+          "kind": "RF_UNKNOWN"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_rf_status": null,
+        "last_rf_original_at_us": null
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 1,
+        "eval_at_us": 5000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "AMBIGUOUS_CURRENT",
+        "latest_current_rf_original_at_us": 4999,
+        "control_evidence": "ABSENT",
+        "observed_control_candidate_original_at_us": null,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T09",
+      "name": "unknown_healthy_ambiguous",
+      "eval_at_us": 5000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "u",
+          "event_at_us": 4998,
+          "kind": "RF_UNKNOWN"
+        },
+        {
+          "id": "h",
+          "event_at_us": 4999,
+          "kind": "RF_HEALTHY"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_rf_status": null,
+        "last_rf_original_at_us": null
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 1,
+        "eval_at_us": 5000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "AMBIGUOUS_CURRENT",
+        "latest_current_rf_original_at_us": 4999,
+        "control_evidence": "ABSENT",
+        "observed_control_candidate_original_at_us": null,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T10",
+      "name": "lost_plus_unknown_lost_dominates",
+      "eval_at_us": 5000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "l",
+          "event_at_us": 4998,
+          "kind": "RF_LOST"
+        },
+        {
+          "id": "u",
+          "event_at_us": 4999,
+          "kind": "RF_UNKNOWN"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_rf_status": null,
+        "last_rf_original_at_us": null
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 1,
+        "eval_at_us": 5000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "LOST_CURRENT",
+        "latest_current_rf_original_at_us": 4999,
+        "control_evidence": "ABSENT",
+        "observed_control_candidate_original_at_us": null,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T11",
+      "name": "healthy_lost_unknown_lost_dominates",
+      "eval_at_us": 5000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "h",
+          "event_at_us": 4997,
+          "kind": "RF_HEALTHY"
+        },
+        {
+          "id": "l",
+          "event_at_us": 4998,
+          "kind": "RF_LOST"
+        },
+        {
+          "id": "u",
+          "event_at_us": 4999,
+          "kind": "RF_UNKNOWN"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_rf_status": null,
+        "last_rf_original_at_us": null
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 1,
+        "eval_at_us": 5000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "LOST_CURRENT",
+        "latest_current_rf_original_at_us": 4999,
+        "control_evidence": "ABSENT",
+        "observed_control_candidate_original_at_us": null,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T12",
+      "name": "silent_prior_healthy_exact_200000",
+      "eval_at_us": 205000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": 5000
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_rf_status": "HEALTHY",
+        "last_rf_original_at_us": 5000
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 41,
+        "eval_at_us": 205000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "HEALTHY_CARRIED",
+        "latest_current_rf_original_at_us": null,
+        "control_evidence": "ABSENT",
+        "observed_control_candidate_original_at_us": null,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T13",
+      "name": "silent_prior_healthy_200001_stale",
+      "eval_at_us": 205000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": 4999
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_rf_status": "HEALTHY",
+        "last_rf_original_at_us": 4999
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 41,
+        "eval_at_us": 205000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "STALE_PRIOR",
+        "latest_current_rf_original_at_us": null,
+        "control_evidence": "ABSENT",
+        "observed_control_candidate_original_at_us": null,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T14",
+      "name": "silent_prior_lost_healthy_timestamp_still_fresh",
+      "eval_at_us": 205000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": 5000
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_rf_status": "LOST",
+        "last_rf_original_at_us": 200000
+      },
+      "note": "Old RF healthy age is 200000us but latest committed RF status is LOST; do not promote HEALTHY",
+      "expected": {
+        "tick_index": 41,
+        "eval_at_us": 205000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "LOST_CARRIED",
+        "latest_current_rf_original_at_us": null,
+        "control_evidence": "ABSENT",
+        "observed_control_candidate_original_at_us": null,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T15",
+      "name": "silent_prior_unknown",
+      "eval_at_us": 205000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": 5000
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_rf_status": "UNKNOWN",
+        "last_rf_original_at_us": 200000
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 41,
+        "eval_at_us": 205000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "UNKNOWN_CARRIED",
+        "latest_current_rf_original_at_us": null,
+        "control_evidence": "ABSENT",
+        "observed_control_candidate_original_at_us": null,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T16",
+      "name": "silent_without_prior_missing",
+      "eval_at_us": 205000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_rf_status": null,
+        "last_rf_original_at_us": null
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 41,
+        "eval_at_us": 205000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "MISSING",
+        "latest_current_rf_original_at_us": null,
+        "control_evidence": "ABSENT",
+        "observed_control_candidate_original_at_us": null,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T17",
+      "name": "current_healthy_replaces_old_lost",
+      "eval_at_us": 205000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "rfhealthy",
+          "event_at_us": 204999,
+          "kind": "RF_HEALTHY"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": 5000
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_rf_status": "LOST",
+        "last_rf_original_at_us": 200000
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 41,
+        "eval_at_us": 205000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "HEALTHY_CURRENT",
+        "latest_current_rf_original_at_us": 204999,
+        "control_evidence": "ABSENT",
+        "observed_control_candidate_original_at_us": null,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T18",
+      "name": "current_lost_overrides_recent_prior_healthy",
+      "eval_at_us": 205000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "rflost",
+          "event_at_us": 204999,
+          "kind": "RF_LOST"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": 5000
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_rf_status": "HEALTHY",
+        "last_rf_original_at_us": 5000
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 41,
+        "eval_at_us": 205000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "LOST_CURRENT",
+        "latest_current_rf_original_at_us": 204999,
+        "control_evidence": "ABSENT",
+        "observed_control_candidate_original_at_us": null,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T19",
+      "name": "invalid_plus_valid_healthy",
+      "eval_at_us": 5000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "v",
+          "event_at_us": 4998,
+          "kind": "CONTROL_VALID",
+          "arm": false,
+          "flap": "0",
+          "steer": "0"
+        },
+        {
+          "id": "invalid",
+          "event_at_us": 4999,
+          "kind": "CONTROL_INVALID"
+        },
+        {
+          "id": "h",
+          "event_at_us": 4997,
+          "kind": "RF_HEALTHY"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_rf_status": null,
+        "last_rf_original_at_us": null
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 1,
+        "eval_at_us": 5000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "HEALTHY_CURRENT",
+        "latest_current_rf_original_at_us": 4997,
+        "control_evidence": "INVALID",
+        "observed_control_candidate_original_at_us": null,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T20",
+      "name": "conflicting_valid_plus_healthy",
+      "eval_at_us": 5000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "a",
+          "event_at_us": 4997,
+          "kind": "CONTROL_VALID",
+          "arm": false,
+          "flap": "0",
+          "steer": "0"
+        },
+        {
+          "id": "b",
+          "event_at_us": 4999,
+          "kind": "CONTROL_VALID",
+          "arm": true,
+          "flap": "0",
+          "steer": "0"
+        },
+        {
+          "id": "h",
+          "event_at_us": 4998,
+          "kind": "RF_HEALTHY"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_rf_status": null,
+        "last_rf_original_at_us": null
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 1,
+        "eval_at_us": 5000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "HEALTHY_CURRENT",
+        "latest_current_rf_original_at_us": 4998,
+        "control_evidence": "CONFLICT",
+        "observed_control_candidate_original_at_us": null,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T21",
+      "name": "single_control_current_healthy",
+      "eval_at_us": 5000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "control",
+          "event_at_us": 4999,
+          "kind": "CONTROL_VALID",
+          "arm": false,
+          "flap": "0",
+          "steer": "0"
+        },
+        {
+          "id": "rfhealthy",
+          "event_at_us": 4998,
+          "kind": "RF_HEALTHY"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_rf_status": null,
+        "last_rf_original_at_us": null
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 1,
+        "eval_at_us": 5000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "HEALTHY_CURRENT",
+        "latest_current_rf_original_at_us": 4998,
+        "control_evidence": "SINGLE_CANDIDATE",
+        "observed_control_candidate_original_at_us": 4999,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T22",
+      "name": "single_control_silent_missing_rf",
+      "eval_at_us": 5000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "control",
+          "event_at_us": 4999,
+          "kind": "CONTROL_VALID",
+          "arm": false,
+          "flap": "0",
+          "steer": "0"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_rf_status": null,
+        "last_rf_original_at_us": null
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 1,
+        "eval_at_us": 5000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "MISSING",
+        "latest_current_rf_original_at_us": null,
+        "control_evidence": "BLOCKED_RF",
+        "observed_control_candidate_original_at_us": 4999,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T23",
+      "name": "single_control_prior_healthy_fresh",
+      "eval_at_us": 205000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "control",
+          "event_at_us": 204999,
+          "kind": "CONTROL_VALID",
+          "arm": false,
+          "flap": "0",
+          "steer": "0"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": 5000
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_rf_status": "HEALTHY",
+        "last_rf_original_at_us": 5000
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 41,
+        "eval_at_us": 205000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "HEALTHY_CARRIED",
+        "latest_current_rf_original_at_us": null,
+        "control_evidence": "SINGLE_CANDIDATE",
+        "observed_control_candidate_original_at_us": 204999,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T24",
+      "name": "single_control_prior_healthy_stale",
+      "eval_at_us": 205000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "control",
+          "event_at_us": 204999,
+          "kind": "CONTROL_VALID",
+          "arm": false,
+          "flap": "0",
+          "steer": "0"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": 4999
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_rf_status": "HEALTHY",
+        "last_rf_original_at_us": 4999
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 41,
+        "eval_at_us": 205000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "STALE_PRIOR",
+        "latest_current_rf_original_at_us": null,
+        "control_evidence": "BLOCKED_RF",
+        "observed_control_candidate_original_at_us": 204999,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T25",
+      "name": "control_with_ambiguous_healthy_unknown",
+      "eval_at_us": 5000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "control",
+          "event_at_us": 4999,
+          "kind": "CONTROL_VALID",
+          "arm": false,
+          "flap": "0",
+          "steer": "0"
+        },
+        {
+          "id": "h",
+          "event_at_us": 4997,
+          "kind": "RF_HEALTHY"
+        },
+        {
+          "id": "u",
+          "event_at_us": 4998,
+          "kind": "RF_UNKNOWN"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_rf_status": null,
+        "last_rf_original_at_us": null
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 1,
+        "eval_at_us": 5000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "AMBIGUOUS_CURRENT",
+        "latest_current_rf_original_at_us": 4998,
+        "control_evidence": "DEFER_RF_AMBIGUOUS",
+        "observed_control_candidate_original_at_us": 4999,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T26",
+      "name": "control_with_current_lost",
+      "eval_at_us": 5000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "control",
+          "event_at_us": 4999,
+          "kind": "CONTROL_VALID",
+          "arm": false,
+          "flap": "0",
+          "steer": "0"
+        },
+        {
+          "id": "rflost",
+          "event_at_us": 4998,
+          "kind": "RF_LOST"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_rf_status": null,
+        "last_rf_original_at_us": null
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 1,
+        "eval_at_us": 5000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "LOST_CURRENT",
+        "latest_current_rf_original_at_us": 4998,
+        "control_evidence": "BLOCKED_RF",
+        "observed_control_candidate_original_at_us": 4999,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T27",
+      "name": "control_with_reset_and_healthy",
+      "eval_at_us": 5000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "control",
+          "event_at_us": 4999,
+          "kind": "CONTROL_VALID",
+          "arm": false,
+          "flap": "0",
+          "steer": "0"
+        },
+        {
+          "id": "rfhealthy",
+          "event_at_us": 4997,
+          "kind": "RF_HEALTHY"
+        },
+        {
+          "id": "reset",
+          "event_at_us": 4998,
+          "kind": "RESET"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_rf_status": null,
+        "last_rf_original_at_us": null
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 1,
+        "eval_at_us": 5000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "HEALTHY_CURRENT",
+        "latest_current_rf_original_at_us": 4997,
+        "control_evidence": "BLOCKED_PRIORITY",
+        "observed_control_candidate_original_at_us": 4999,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T28",
+      "name": "control_with_catastrophe_and_healthy",
+      "eval_at_us": 5000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "control",
+          "event_at_us": 4999,
+          "kind": "CONTROL_VALID",
+          "arm": false,
+          "flap": "0",
+          "steer": "0"
+        },
+        {
+          "id": "rfhealthy",
+          "event_at_us": 4997,
+          "kind": "RF_HEALTHY"
+        },
+        {
+          "id": "cata",
+          "event_at_us": 4998,
+          "kind": "CATA"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_rf_status": null,
+        "last_rf_original_at_us": null
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 1,
+        "eval_at_us": 5000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "HEALTHY_CURRENT",
+        "latest_current_rf_original_at_us": 4997,
+        "control_evidence": "BLOCKED_PRIORITY",
+        "observed_control_candidate_original_at_us": 4999,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T29",
+      "name": "no_control_current_healthy_and_prior_fresh_control",
+      "eval_at_us": 5000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "rfhealthy",
+          "event_at_us": 4999,
+          "kind": "RF_HEALTHY"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_accepted_control_at_us": 0,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_rf_status": null,
+        "last_rf_original_at_us": null
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 1,
+        "eval_at_us": 5000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "HEALTHY_CURRENT",
+        "latest_current_rf_original_at_us": 4999,
+        "control_evidence": "ABSENT",
+        "observed_control_candidate_original_at_us": null,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T30",
+      "name": "armed_with_stale_prior_control_cannot_promote",
+      "eval_at_us": 205000,
+      "pre_state": "ARMED_IDLE",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "control",
+          "event_at_us": 204999,
+          "kind": "CONTROL_VALID",
+          "arm": false,
+          "flap": "0",
+          "steer": "0"
+        },
+        {
+          "id": "rfhealthy",
+          "event_at_us": 204998,
+          "kind": "RF_HEALTHY"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_accepted_control_at_us": 4999,
+        "last_uncontested_healthy_rf_at_us": 5000
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_rf_status": "HEALTHY",
+        "last_rf_original_at_us": 5000
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 41,
+        "eval_at_us": 205000,
+        "pre_state": "ARMED_IDLE",
+        "rf_evidence": "HEALTHY_CURRENT",
+        "latest_current_rf_original_at_us": 204998,
+        "control_evidence": "BLOCKED_PRIORITY",
+        "observed_control_candidate_original_at_us": 204999,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T31",
+      "name": "duplicate_semantic_controls_one_candidate",
+      "eval_at_us": 5000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "a",
+          "event_at_us": 4998,
+          "kind": "CONTROL_VALID",
+          "arm": false,
+          "flap": "0.1000000",
+          "steer": "0"
+        },
+        {
+          "id": "b",
+          "event_at_us": 4999,
+          "kind": "CONTROL_VALID",
+          "arm": false,
+          "flap": "1e-1",
+          "steer": "0"
+        },
+        {
+          "id": "rfhealthy",
+          "event_at_us": 4997,
+          "kind": "RF_HEALTHY"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_rf_status": null,
+        "last_rf_original_at_us": null
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 1,
+        "eval_at_us": 5000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "HEALTHY_CURRENT",
+        "latest_current_rf_original_at_us": 4997,
+        "control_evidence": "SINGLE_CANDIDATE",
+        "observed_control_candidate_original_at_us": 4999,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T32",
+      "name": "fresh_current_healthy_overrides_stale_prior",
+      "eval_at_us": 205000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "control",
+          "event_at_us": 204999,
+          "kind": "CONTROL_VALID",
+          "arm": false,
+          "flap": "0",
+          "steer": "0"
+        },
+        {
+          "id": "rfhealthy",
+          "event_at_us": 204998,
+          "kind": "RF_HEALTHY"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": 4999
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_rf_status": "HEALTHY",
+        "last_rf_original_at_us": 4999
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 41,
+        "eval_at_us": 205000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "HEALTHY_CURRENT",
+        "latest_current_rf_original_at_us": 204998,
+        "control_evidence": "SINGLE_CANDIDATE",
+        "observed_control_candidate_original_at_us": 204999,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T33",
+      "name": "silent_old_prior_unknown_blocks",
+      "eval_at_us": 205000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "control",
+          "event_at_us": 204999,
+          "kind": "CONTROL_VALID",
+          "arm": false,
+          "flap": "0",
+          "steer": "0"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_rf_status": "UNKNOWN",
+        "last_rf_original_at_us": 4999
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 41,
+        "eval_at_us": 205000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "UNKNOWN_CARRIED",
+        "latest_current_rf_original_at_us": null,
+        "control_evidence": "BLOCKED_RF",
+        "observed_control_candidate_original_at_us": 204999,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T34",
+      "name": "control_with_unknown_only_blocks",
+      "eval_at_us": 5000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "control",
+          "event_at_us": 4999,
+          "kind": "CONTROL_VALID",
+          "arm": false,
+          "flap": "0",
+          "steer": "0"
+        },
+        {
+          "id": "rfunknown",
+          "event_at_us": 4998,
+          "kind": "RF_UNKNOWN"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_rf_status": null,
+        "last_rf_original_at_us": null
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 1,
+        "eval_at_us": 5000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "UNKNOWN_CURRENT",
+        "latest_current_rf_original_at_us": 4998,
+        "control_evidence": "BLOCKED_RF",
+        "observed_control_candidate_original_at_us": 4999,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T35",
+      "name": "invalid_plus_conflict_lost_diagnostics",
+      "eval_at_us": 5000,
+      "pre_state": "DISARMED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "a",
+          "event_at_us": 4995,
+          "kind": "CONTROL_VALID",
+          "arm": false,
+          "flap": "0",
+          "steer": "0"
+        },
+        {
+          "id": "b",
+          "event_at_us": 4996,
+          "kind": "CONTROL_VALID",
+          "arm": true,
+          "flap": "0",
+          "steer": "0"
+        },
+        {
+          "id": "invalid",
+          "event_at_us": 4997,
+          "kind": "CONTROL_INVALID"
+        },
+        {
+          "id": "rflost",
+          "event_at_us": 4998,
+          "kind": "RF_LOST"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_rf_status": null,
+        "last_rf_original_at_us": null
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 1,
+        "eval_at_us": 5000,
+        "pre_state": "DISARMED",
+        "rf_evidence": "LOST_CURRENT",
+        "latest_current_rf_original_at_us": 4998,
+        "control_evidence": "INVALID_AND_CONFLICT",
+        "observed_control_candidate_original_at_us": null,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P219-T36",
+      "name": "latched_prestate_blocks_healthy_control",
+      "eval_at_us": 205000,
+      "pre_state": "FAULT_LATCHED",
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "control",
+          "event_at_us": 204999,
+          "kind": "CONTROL_VALID",
+          "arm": false,
+          "flap": "0",
+          "steer": "0"
+        },
+        {
+          "id": "rfhealthy",
+          "event_at_us": 204998,
+          "kind": "RF_HEALTHY"
+        }
+      ],
+      "prior_timestamp_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": 5000
+      },
+      "prior_rf_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_rf_status": "HEALTHY",
+        "last_rf_original_at_us": 5000
+      },
+      "note": "",
+      "expected": {
+        "tick_index": 41,
+        "eval_at_us": 205000,
+        "pre_state": "FAULT_LATCHED",
+        "rf_evidence": "HEALTHY_CURRENT",
+        "latest_current_rf_original_at_us": 204998,
+        "control_evidence": "BLOCKED_PRIORITY",
+        "observed_control_candidate_original_at_us": 204999,
+        "requires_full_fsm": true
+      }
+    }
+  ]
+}
