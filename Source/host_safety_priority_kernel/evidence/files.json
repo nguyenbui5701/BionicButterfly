@@ -1,0 +1,172 @@
+{
+  "files": [
+    {
+      "path": "Source/host_safety_priority_kernel/.gitignore",
+      "sha256": "ae2f55b618854ee18fd5cf4ca575b330e4f30650586d918f09306eff73770bab"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/MANIFEST.in",
+      "sha256": "6ef2d9e05aba91fa839f2237f3ae223cedab0a06c691f8578bb19277aa48657e"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/README.md",
+      "sha256": "99652f91cc283e12a0d93ffd3260de7714f562ec5e5b0d8a85fb26bf9eb0e45e"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/REPORT.md",
+      "sha256": "d1287ad9673c579047c2d983254b780118a00b4d2a961cb659a0f76b744e9b0d"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/baseline.json",
+      "sha256": "d54f368bef954dd1e7a125e14528caf09b47bc5908cf9adff49887f738d40f0f"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/build-task001.log",
+      "sha256": "74e95439ab641a4359a49d8a3e34b8f9c4840020c47b5865571222b1b22ef988"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/build-task002.log",
+      "sha256": "c7fd4a8ce75b008c486dab21b44ff34959154b58ce9ff8d7abdadc0cf5e50947"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/build-task003.log",
+      "sha256": "45ad0bb2bfad7622b4ac9bb2c194404f71e7f7246c2fdd12896084d1a8c1906b"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/build-task004.log",
+      "sha256": "41c10683c172b145cbf213116c2a673c66abeec870b47edb05de455193617f7f"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/build.log",
+      "sha256": "e7a095163f2e99221ee72469375de384df6bd7a2fcfe16b2c7038d947eadc4a0"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/commands.json",
+      "sha256": "4524ab88d73bb07362142657941bbb6f2f766cf8a4b376392f6bc64a776f3002"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/dependencies.log",
+      "sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/environment.json",
+      "sha256": "0f746cf81dc35735c6df7e9444ed6a1af2d0f72ed2f1e933949db79024379773"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/install-prerequisites.log",
+      "sha256": "d5ee5583012b5d9cf8c9088123b15a471848a04e8037bed0a5671101186fcafd"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/install.log",
+      "sha256": "8ee8fe02dcce77257c1b3190a812b291cfc535af31fbd30fe879d69982c4f083"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/smoke.log",
+      "sha256": "d0743dd57dc85541e68484f60d8d3811e8558987a860ad16141cec146241b569"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/task001-regression.log",
+      "sha256": "6282f0921e7d848f93281d0bbb7155ee593333ec894a022d44e1dcbf43ef8edc"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/task001-regression.xml",
+      "sha256": "0cf67a17d3f387b8da9a1b8f3c95f4c0eee03333075f841a3325bd3589553c74"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/task002-regression.log",
+      "sha256": "889225084b9a2159fdf6b51c9df0f8b22bb8f6eeb693bc8fa7209b2a30730d99"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/task002-regression.xml",
+      "sha256": "de8b28f63739ec56a1dab93cacce2134c530fb3a162b5d41d29267a700ff2580"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/task003-regression.log",
+      "sha256": "1cff877d4c5ca3c0959fdab4a8f6965c6717dd2cad85daff60fca76f723d51f7"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/task003-regression.xml",
+      "sha256": "cdb07b1346521834e791852c1495db9797b92fb9448f4183588ccefe33f75507"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/task004-regression.log",
+      "sha256": "42b72f73535a6d31485822bd903cfbdda29fe810cae528d6579541b3a0b3b2f2"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/task004-regression.xml",
+      "sha256": "842fea6e79d2d7cb0964456d2315d4c55f95618bf44362154dbad8754690930a"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/tests.log",
+      "sha256": "40a99002ead69f9a6029cdfa53449c4d8e810634574a58fadf1faa242c859809"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/tests.xml",
+      "sha256": "26930ebccd76ab5ce630a26adb5d0d942d4323d14cc0d9aa02655828a2499123"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/wheel-dependencies.log",
+      "sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/wheel-environment.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/wheel-install.log",
+      "sha256": "c4921d0adc90674dea086e40d5b36e647c2334e6c6a2e90efd1d728069d503ec"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/wheel-smoke.log",
+      "sha256": "d0743dd57dc85541e68484f60d8d3811e8558987a860ad16141cec146241b569"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/pyproject.toml",
+      "sha256": "f26dd48b05d6502293c365da34044695026fd5df6e87c8582d0718568b31e226"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/scripts/__init__.py",
+      "sha256": "8f3965bd475fe8321127518508daa4a93ff6739b33b802636bd05f55c6018a02"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/scripts/scenarios.py",
+      "sha256": "8607eeaee24bc91ce3157da0768781c14d7a54ba50a50136f7d359c597b3b53c"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/scripts/smoke.py",
+      "sha256": "bea95cc64c5efc01f3a34b7f1684e911df339b0d4ed52c26f0c9b0633d965fd0"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/scripts/verify.py",
+      "sha256": "1cb1523c425ab65f5162cc402ea3eb926d9249a6b2086f5f17fdc2cf559f2e97"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/src/bb_host_safety_priority_kernel/__init__.py",
+      "sha256": "c202efb2a95496b6c7bf825c8387c385ea58eaf2dee9e349564152016c059ebd"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/src/bb_host_safety_priority_kernel/priority.py",
+      "sha256": "953e68ccafedede8f778d40b43c10980a52dbd197c562b627363753ee4c38756"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/tests/conftest.py",
+      "sha256": "5304ee5bfdb9cac1d7288cf7ecfc7534e844cea22a8d4f3e2e41c78029a5d860"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/tests/test_oracles.py",
+      "sha256": "ecdd35f31baed788ed12f8cffabb569a8353ddb845480fb8e9f5e453e9d36066"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/tests/test_priority.py",
+      "sha256": "d3a88e5a0740ae3d9dabda058a5ae2c77c79cbc3170f16e2af55d4f31dcbcc7c"
+    }
+  ],
+  "inventory_excludes_itself": true,
+  "hash_basis": "Working-tree bytes before Git staging",
+  "scope_audit": "PASS: only task subtree created; owner release artifacts unchanged; pre-existing TASK-001 evidence edit preserved",
+  "test_summary": "654 PASS, 0 FAIL, 0 ERROR, 0 SKIP; development and installed wheel smoke 12/12 each; all verification commands exit 0"
+}
