@@ -1,0 +1,54 @@
+{
+  "TZ_values_tested": [
+    "UTC0",
+    "ICT-7"
+  ],
+  "artifacts": [
+    {
+      "path": "dist/bb_host_virtual_ticks-0.1.0-py3-none-any.whl",
+      "sha256": "c503266b6664c77b0abf8c014c9ccb4fc6a2fbf9ea159dd2af0cddddc4b09673"
+    },
+    {
+      "path": "dist/bb_host_virtual_ticks-0.1.0.tar.gz",
+      "sha256": "0bf83434471947d5522db460904de28c4afb9d71d856f5058a4c98919f0cd905"
+    }
+  ],
+  "effective_timezone_switch_supported": false,
+  "installed_preflight_matches_pinned_source": true,
+  "installed_scheduler_matches_source": true,
+  "locales_tested": [
+    "C",
+    "English_United States.1252"
+  ],
+  "packages": {
+    "bb-host-preflight-m0": "0.1.0",
+    "bb-host-virtual-ticks": "0.1.0",
+    "build": "1.2.2.post1",
+    "colorama": "0.4.6",
+    "iniconfig": "2.1.0",
+    "packaging": "25.0",
+    "pip": "24.0",
+    "pluggy": "1.6.0",
+    "pyproject_hooks": "1.2.0",
+    "pytest": "8.3.5",
+    "setuptools": "80.9.0",
+    "wheel": "0.45.1"
+  },
+  "platform": "Windows-10-10.0.19045-SP0",
+  "preserved_task001_baseline_sha256": "e6dfcfd1ea13ffb4fb5ba2c3d2b475ef0f62c85d2f84faa666ba6b13af30fd9d",
+  "python": "3.11.15",
+  "test_results": {
+    "task001-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 203
+    },
+    "tests.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 44
+    }
+  }
+}

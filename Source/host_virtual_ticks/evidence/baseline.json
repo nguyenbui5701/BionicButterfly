@@ -1,0 +1,139 @@
+{
+  "baseline": "ca457f784975c2d0959b1baf988483fa042f5c67",
+  "branch": "feature/TASK-002-host-virtual-ticks",
+  "pinned_files": [
+    {
+      "path": "Design/07_AI_CODING_RULES.md",
+      "git_blob_sha1": "a3760b54389d082f9f5f8c0b7cd7296cbe640eb8",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/10_SA_OPERATING_RULES.md",
+      "git_blob_sha1": "a0d802028e4a86d6f0a8ead6466fb4fe94b319cb",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/115_G0A1_APPROVED_ATOMIC_SAFETY_CONTRACT_R1.md",
+      "git_blob_sha1": "e6d988d160773219811d28cdb346b5a4590a0fa0",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/116_G0A1_APPROVED_POLICY_DIGEST_AND_TRUST_R1.md",
+      "git_blob_sha1": "02a0c21faf0b758bb55220debc390c09058021f7",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/118_G0A1_REPLAY_AND_OUTPUT_TRANSACTION_R1.md",
+      "git_blob_sha1": "fdc4263fd940f7ffd8f256dd617b7c89cc6274fd",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/11_HANDOFF_PR_WORKFLOW.md",
+      "git_blob_sha1": "3e4cbb254f086958a98a6e2bc8817b86e341d2aa",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/132_R11_SCENARIO_WIRE_V2_CLOSED_EVENT_SCHEMA_CANDIDATE.md",
+      "git_blob_sha1": "2e154c314fbfdcfed8bc6daa00b72cdf349a6ccb",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/141_G0A1_R11_AUTHORITATIVE_CONTRACT_HIERARCHY.md",
+      "git_blob_sha1": "b21fcb9ed83775054cf2bde0b6533f5b71cb6eda",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/contracts/G0A1_SCENARIO_WIRE_V2_CANDIDATE.schema.json",
+      "git_blob_sha1": "1d10c76e34be70880a65252d89a6bca89839fea9",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/fixtures/P210_MINIMAL_WIRE_V2.json",
+      "git_blob_sha1": "7990a0e2c4a95425a61c27c9024a8a0783520663",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/fixtures/P210_NOMINAL_M0_WIRE_V2.json",
+      "git_blob_sha1": "4e772fe51f0cfb5e085e7da81030dca02814d0b3",
+      "result": "MATCH"
+    },
+    {
+      "path": "Source/host_preflight_m0/pyproject.toml",
+      "git_blob_sha1": "02c0454b098968647283b7d3e86342a9d0e7d74b",
+      "result": "MATCH"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/__init__.py",
+      "git_blob_sha1": "e7a00a7d18a82c7997858b989271c5cc36ded4af",
+      "result": "MATCH"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/diagnostics.py",
+      "git_blob_sha1": "35881939fb011bf0e4ab65c44b5a03c348da0f8a",
+      "result": "MATCH"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/exact_decimal.py",
+      "git_blob_sha1": "ae47fae16a49742d20e57e50b35101666783140c",
+      "result": "MATCH"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/lexer.py",
+      "git_blob_sha1": "ed90677e2a68b3a5adbd2c4bd068311b72c16263",
+      "result": "MATCH"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/mixer.py",
+      "git_blob_sha1": "93ad14f32332596697b76c9ea68b3ea8affe8319",
+      "result": "MATCH"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/schema.py",
+      "git_blob_sha1": "2d2e6f874eabd53922e061f0708cc79809a472d9",
+      "result": "MATCH"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/wire.py",
+      "git_blob_sha1": "506aa23cbe5e01671f3f51c1f2fd64444d7f0578",
+      "result": "MATCH"
+    },
+    {
+      "path": "Source/host_preflight_m0/tests/conftest.py",
+      "git_blob_sha1": "bec7c0f8ef0d09850522c05dd8f5f026a9bd5feb",
+      "result": "MATCH"
+    }
+  ],
+  "release_files": [
+    {
+      "path": "Design/157_TASK001_CLOSEOUT_AND_TASK002_RELEASE_BASELINE.md",
+      "bytes": 3894,
+      "sha256": "2c42dc4ecc53ea1d29aabd6a47671e218f3f552bc8c0face2b131dcbd04c57f9",
+      "git_blob_sha1": "83a80eb0bc3746f737794e1a3f3f81876efc96e2"
+    },
+    {
+      "path": "Design/158_G0A1_VIRTUAL_TICK_SCHEDULER_CONTRACT_DERIVED_R11.md",
+      "bytes": 6085,
+      "sha256": "6905c39193e103c0a66a6066287c8cdeee3d6a7843f0de01c17ebe8d8fda432d",
+      "git_blob_sha1": "d1844889b119804accf24eb7dab66382eedf2a76"
+    },
+    {
+      "path": "Design/159_TASK002_SCHEDULER_TEST_ORACLES_AND_REVIEW.md",
+      "bytes": 3936,
+      "sha256": "2773430dbe75e887671a946d2714550270ed8c98f7ab7507cc2e2f2e38241c54",
+      "git_blob_sha1": "3d335a14403beeae4ec3a70d06841fa08871f67c"
+    },
+    {
+      "path": "Design/fixtures/P214_TICK_BATCH_ORACLE_INDEX.json",
+      "bytes": 11915,
+      "sha256": "850db3c372d04757b7f4e8f10c042fc7b84512467ccb352d15e9f45baed9ff2c",
+      "git_blob_sha1": "e6280d9bfd70dc23f73fafffdb5cdb4a9b7e878a"
+    },
+    {
+      "path": "Task/TASK-002_VIRTUAL_TICK_SCHEDULER.md",
+      "bytes": 10207,
+      "sha256": "6de052b5ab3248195c2a88e654dd912559849f97d0df48eabe0dbc37c4f86403",
+      "git_blob_sha1": "ed3af3c09747bd39f686db721eea27c097935031"
+    }
+  ],
+  "release_result": "5/5 MATCH"
+}
