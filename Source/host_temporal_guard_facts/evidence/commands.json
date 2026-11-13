@@ -121,7 +121,7 @@
     "log": "task003-regression.log"
   },
   {
-    "name": "build",
+    "name": "build-existing-artifact-attempt",
     "command": [
       "<REPOSITORY>\\Source\\host_temporal_guard_facts\\.venv\\Scripts\\python.exe",
       "-m",
@@ -129,6 +129,20 @@
       "--no-isolation"
     ],
     "cwd": "<REPOSITORY>\\Source\\host_temporal_guard_facts",
+    "exit_code": 1,
+    "log": "build-pr-initial-failure.log"
+  },
+  {
+    "name": "build",
+    "command": [
+      "<REPOSITORY>\\Source\\host_temporal_guard_facts\\.venv\\Scripts\\python.exe",
+      "-m",
+      "build",
+      "--no-isolation",
+      "--outdir",
+      ".cache/pr-dist"
+    ],
+    "cwd": "<REPOSITORY>/Source/host_temporal_guard_facts",
     "exit_code": 0,
     "log": "build.log"
   },
@@ -138,51 +152,117 @@
       "<REPOSITORY>\\Source\\host_temporal_guard_facts\\.venv\\Scripts\\python.exe",
       "-m",
       "venv",
-      ".test-env"
+      ".cache/pr-wheel-env"
     ],
-    "cwd": "<REPOSITORY>\\Source\\host_temporal_guard_facts",
+    "cwd": "<REPOSITORY>/Source/host_temporal_guard_facts",
     "exit_code": 0,
     "log": "wheel-environment.log"
   },
   {
-    "name": "wheel-install",
+    "name": "wheel-install-existing-artifact-attempt",
     "command": [
-      "<REPOSITORY>\\Source\\host_temporal_guard_facts\\.test-env\\Scripts\\python.exe",
+      "<REPOSITORY>\\Source\\host_temporal_guard_facts\\.cache\\pr-wheel-env\\Scripts\\python.exe",
       "-m",
       "pip",
       "install",
       "--disable-pip-version-check",
       "--no-index",
       "--no-deps",
-      "--force-reinstall",
       "../host_preflight_m0/dist/bb_host_preflight_m0-0.1.0-py3-none-any.whl",
       "../host_virtual_ticks/dist/bb_host_virtual_ticks-0.1.0-py3-none-any.whl",
       "../host_batch_observations/dist/bb_host_batch_observations-0.1.0-py3-none-any.whl",
-      "dist/bb_host_temporal_guard_facts-0.1.0-py3-none-any.whl"
+      ".cache/pr-dist/bb_host_temporal_guard_facts-0.1.0-py3-none-any.whl"
     ],
-    "cwd": "<REPOSITORY>\\Source\\host_temporal_guard_facts",
+    "cwd": "<REPOSITORY>/Source/host_temporal_guard_facts",
+    "exit_code": 1,
+    "log": "wheel-install-pr-initial-failure.log"
+  },
+  {
+    "name": "pr-build-host_preflight_m0",
+    "command": [
+      "<REPOSITORY>\\Source\\host_temporal_guard_facts\\.venv\\Scripts\\python.exe",
+      "-m",
+      "build",
+      "--wheel",
+      "--no-isolation",
+      "--outdir",
+      "<REPOSITORY>\\Source\\host_temporal_guard_facts\\.cache\\pr-deps",
+      "<REPOSITORY>\\Source\\host_temporal_guard_facts\\.cache\\pr-source\\host_preflight_m0"
+    ],
+    "cwd": "<REPOSITORY>/Source/host_temporal_guard_facts",
+    "exit_code": 0,
+    "log": "pr-build-host_preflight_m0.log"
+  },
+  {
+    "name": "pr-build-host_virtual_ticks",
+    "command": [
+      "<REPOSITORY>\\Source\\host_temporal_guard_facts\\.venv\\Scripts\\python.exe",
+      "-m",
+      "build",
+      "--wheel",
+      "--no-isolation",
+      "--outdir",
+      "<REPOSITORY>\\Source\\host_temporal_guard_facts\\.cache\\pr-deps",
+      "<REPOSITORY>\\Source\\host_temporal_guard_facts\\.cache\\pr-source\\host_virtual_ticks"
+    ],
+    "cwd": "<REPOSITORY>/Source/host_temporal_guard_facts",
+    "exit_code": 0,
+    "log": "pr-build-host_virtual_ticks.log"
+  },
+  {
+    "name": "pr-build-host_batch_observations",
+    "command": [
+      "<REPOSITORY>\\Source\\host_temporal_guard_facts\\.venv\\Scripts\\python.exe",
+      "-m",
+      "build",
+      "--wheel",
+      "--no-isolation",
+      "--outdir",
+      "<REPOSITORY>\\Source\\host_temporal_guard_facts\\.cache\\pr-deps",
+      "<REPOSITORY>\\Source\\host_temporal_guard_facts\\.cache\\pr-source\\host_batch_observations"
+    ],
+    "cwd": "<REPOSITORY>/Source/host_temporal_guard_facts",
+    "exit_code": 0,
+    "log": "pr-build-host_batch_observations.log"
+  },
+  {
+    "name": "wheel-install",
+    "command": [
+      "<REPOSITORY>\\Source\\host_temporal_guard_facts\\.cache\\pr-wheel-env\\Scripts\\python.exe",
+      "-m",
+      "pip",
+      "install",
+      "--disable-pip-version-check",
+      "--no-index",
+      "--no-deps",
+      "<REPOSITORY>\\Source\\host_temporal_guard_facts\\.cache\\pr-deps\\bb_host_preflight_m0-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_temporal_guard_facts\\.cache\\pr-deps\\bb_host_virtual_ticks-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_temporal_guard_facts\\.cache\\pr-deps\\bb_host_batch_observations-0.1.0-py3-none-any.whl",
+      ".cache/pr-dist/bb_host_temporal_guard_facts-0.1.0-py3-none-any.whl"
+    ],
+    "cwd": "<REPOSITORY>/Source/host_temporal_guard_facts",
     "exit_code": 0,
     "log": "wheel-install.log"
   },
   {
     "name": "wheel-smoke",
     "command": [
-      "<REPOSITORY>\\Source\\host_temporal_guard_facts\\.test-env\\Scripts\\python.exe",
+      "<REPOSITORY>\\Source\\host_temporal_guard_facts\\.cache\\pr-wheel-env\\Scripts\\python.exe",
       "scripts/smoke.py"
     ],
-    "cwd": "<REPOSITORY>\\Source\\host_temporal_guard_facts",
+    "cwd": "<REPOSITORY>/Source/host_temporal_guard_facts",
     "exit_code": 0,
     "log": "wheel-smoke.log"
   },
   {
     "name": "wheel-dependencies",
     "command": [
-      "<REPOSITORY>\\Source\\host_temporal_guard_facts\\.test-env\\Scripts\\python.exe",
+      "<REPOSITORY>\\Source\\host_temporal_guard_facts\\.cache\\pr-wheel-env\\Scripts\\python.exe",
       "-m",
       "pip",
       "check"
     ],
-    "cwd": "<REPOSITORY>\\Source\\host_temporal_guard_facts",
+    "cwd": "<REPOSITORY>/Source/host_temporal_guard_facts",
     "exit_code": 0,
     "log": "wheel-dependencies.log"
   }

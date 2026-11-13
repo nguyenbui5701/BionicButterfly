@@ -1,0 +1,835 @@
+{
+  "schema_version": 1,
+  "baseline_commit": "ed106d22c52647090768ef60fb1e4c33384e9227",
+  "scope": "PC_SIM_ONLY",
+  "status": "DESIGN_ORACLES_NOT_EXECUTED_ON_TASK004",
+  "total": 22,
+  "recipe": {
+    "base": "Design/fixtures/P210_MINIMAL_WIRE_V2.json",
+    "operation": "Build wire-v2 schema-valid scenario with BOOT at 0 and listed pseudo-events. duration_us = max(5000, eval_at_us). Run actual TASK-001 preflight then TASK-002 scheduler then TASK-003 normalizer for selected tick. Feed prior_snapshot as separately created immutable TEST stub, NOT from scenario JSON. At T0 use BOOT-only. Use correct schema payload for RF, VALID/INVALID control and RESET.",
+    "kind_mapping": {
+      "BOOT": "BOOT with empty payload",
+      "RF_HEALTHY": "SIM_RF_STATUS rf_health=HEALTHY, rf_provenance=INJECTED_SIM",
+      "RF_LOST": "SIM_RF_STATUS rf_health=LOST, rf_provenance=INJECTED_SIM",
+      "RF_UNKNOWN": "SIM_RF_STATUS rf_health=UNKNOWN, rf_provenance=INJECTED_SIM",
+      "CONTROL_VALID": "SIM_CONTROL_FRAME uart_frame_status=VALID, arm_switch=arm, flap_demand=raw JSON numeric token flap, steering_demand=raw JSON numeric token steer, map_revision=sim-map-v1",
+      "CONTROL_INVALID": "SIM_CONTROL_FRAME uart_frame_status=INVALID",
+      "RESET": "SIM_RESET {}"
+    },
+    "no_authority": "Prior snapshot data are hypothetical committed timestamps used only as arithmetic test inputs; no task-004 code can accept/refresh or commit them."
+  },
+  "cases": [
+    {
+      "id": "P216-T01",
+      "name": "boot_t0_all_unknown",
+      "eval_at_us": 0,
+      "prior_snapshot": {
+        "last_committed_eval_at_us": null,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        }
+      ],
+      "expected": {
+        "tick_index": 0,
+        "eval_at_us": 0,
+        "prior_control_age_us": null,
+        "prior_rf_age_us": null,
+        "prior_control_within_timeout": false,
+        "prior_rf_within_timeout": false,
+        "observed_uncontested_valid_control_at_us": null,
+        "observed_uncontested_healthy_rf_at_us": null,
+        "has_rf_lost_observation": false,
+        "has_rf_unknown_observation": false,
+        "has_invalid_control_observation": false,
+        "has_valid_control_conflict": false
+      },
+      "note": ""
+    },
+    {
+      "id": "P216-T02",
+      "name": "later_empty_no_prior_observations",
+      "eval_at_us": 5000,
+      "prior_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        }
+      ],
+      "expected": {
+        "tick_index": 1,
+        "eval_at_us": 5000,
+        "prior_control_age_us": null,
+        "prior_rf_age_us": null,
+        "prior_control_within_timeout": false,
+        "prior_rf_within_timeout": false,
+        "observed_uncontested_valid_control_at_us": null,
+        "observed_uncontested_healthy_rf_at_us": null,
+        "has_rf_lost_observation": false,
+        "has_rf_unknown_observation": false,
+        "has_invalid_control_observation": false,
+        "has_valid_control_conflict": false
+      },
+      "note": ""
+    },
+    {
+      "id": "P216-T03",
+      "name": "control_age_equal_boundary",
+      "eval_at_us": 205000,
+      "prior_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_accepted_control_at_us": 5000,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        }
+      ],
+      "expected": {
+        "tick_index": 41,
+        "eval_at_us": 205000,
+        "prior_control_age_us": 200000,
+        "prior_rf_age_us": null,
+        "prior_control_within_timeout": true,
+        "prior_rf_within_timeout": false,
+        "observed_uncontested_valid_control_at_us": null,
+        "observed_uncontested_healthy_rf_at_us": null,
+        "has_rf_lost_observation": false,
+        "has_rf_unknown_observation": false,
+        "has_invalid_control_observation": false,
+        "has_valid_control_conflict": false
+      },
+      "note": ""
+    },
+    {
+      "id": "P216-T04",
+      "name": "control_age_plus_one_stale",
+      "eval_at_us": 205000,
+      "prior_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_accepted_control_at_us": 4999,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        }
+      ],
+      "expected": {
+        "tick_index": 41,
+        "eval_at_us": 205000,
+        "prior_control_age_us": 200001,
+        "prior_rf_age_us": null,
+        "prior_control_within_timeout": false,
+        "prior_rf_within_timeout": false,
+        "observed_uncontested_valid_control_at_us": null,
+        "observed_uncontested_healthy_rf_at_us": null,
+        "has_rf_lost_observation": false,
+        "has_rf_unknown_observation": false,
+        "has_invalid_control_observation": false,
+        "has_valid_control_conflict": false
+      },
+      "note": ""
+    },
+    {
+      "id": "P216-T05",
+      "name": "rf_age_equal_boundary",
+      "eval_at_us": 205000,
+      "prior_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": 5000
+      },
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        }
+      ],
+      "expected": {
+        "tick_index": 41,
+        "eval_at_us": 205000,
+        "prior_control_age_us": null,
+        "prior_rf_age_us": 200000,
+        "prior_control_within_timeout": false,
+        "prior_rf_within_timeout": true,
+        "observed_uncontested_valid_control_at_us": null,
+        "observed_uncontested_healthy_rf_at_us": null,
+        "has_rf_lost_observation": false,
+        "has_rf_unknown_observation": false,
+        "has_invalid_control_observation": false,
+        "has_valid_control_conflict": false
+      },
+      "note": ""
+    },
+    {
+      "id": "P216-T06",
+      "name": "rf_age_plus_one_stale",
+      "eval_at_us": 205000,
+      "prior_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": 4999
+      },
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        }
+      ],
+      "expected": {
+        "tick_index": 41,
+        "eval_at_us": 205000,
+        "prior_control_age_us": null,
+        "prior_rf_age_us": 200001,
+        "prior_control_within_timeout": false,
+        "prior_rf_within_timeout": false,
+        "observed_uncontested_valid_control_at_us": null,
+        "observed_uncontested_healthy_rf_at_us": null,
+        "has_rf_lost_observation": false,
+        "has_rf_unknown_observation": false,
+        "has_invalid_control_observation": false,
+        "has_valid_control_conflict": false
+      },
+      "note": ""
+    },
+    {
+      "id": "P216-T07",
+      "name": "control_fresh_rf_stale",
+      "eval_at_us": 205000,
+      "prior_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_accepted_control_at_us": 5000,
+        "last_uncontested_healthy_rf_at_us": 4999
+      },
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        }
+      ],
+      "expected": {
+        "tick_index": 41,
+        "eval_at_us": 205000,
+        "prior_control_age_us": 200000,
+        "prior_rf_age_us": 200001,
+        "prior_control_within_timeout": true,
+        "prior_rf_within_timeout": false,
+        "observed_uncontested_valid_control_at_us": null,
+        "observed_uncontested_healthy_rf_at_us": null,
+        "has_rf_lost_observation": false,
+        "has_rf_unknown_observation": false,
+        "has_invalid_control_observation": false,
+        "has_valid_control_conflict": false
+      },
+      "note": ""
+    },
+    {
+      "id": "P216-T08",
+      "name": "rf_fresh_control_stale",
+      "eval_at_us": 205000,
+      "prior_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_accepted_control_at_us": 4999,
+        "last_uncontested_healthy_rf_at_us": 5000
+      },
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        }
+      ],
+      "expected": {
+        "tick_index": 41,
+        "eval_at_us": 205000,
+        "prior_control_age_us": 200001,
+        "prior_rf_age_us": 200000,
+        "prior_control_within_timeout": false,
+        "prior_rf_within_timeout": true,
+        "observed_uncontested_valid_control_at_us": null,
+        "observed_uncontested_healthy_rf_at_us": null,
+        "has_rf_lost_observation": false,
+        "has_rf_unknown_observation": false,
+        "has_invalid_control_observation": false,
+        "has_valid_control_conflict": false
+      },
+      "note": ""
+    },
+    {
+      "id": "P216-T09",
+      "name": "both_prior_fresh_no_new_events",
+      "eval_at_us": 205000,
+      "prior_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_accepted_control_at_us": 5000,
+        "last_uncontested_healthy_rf_at_us": 5000
+      },
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        }
+      ],
+      "expected": {
+        "tick_index": 41,
+        "eval_at_us": 205000,
+        "prior_control_age_us": 200000,
+        "prior_rf_age_us": 200000,
+        "prior_control_within_timeout": true,
+        "prior_rf_within_timeout": true,
+        "observed_uncontested_valid_control_at_us": null,
+        "observed_uncontested_healthy_rf_at_us": null,
+        "has_rf_lost_observation": false,
+        "has_rf_unknown_observation": false,
+        "has_invalid_control_observation": false,
+        "has_valid_control_conflict": false
+      },
+      "note": "These two age booleans are not ARM permission."
+    },
+    {
+      "id": "P216-T10",
+      "name": "both_stale",
+      "eval_at_us": 205000,
+      "prior_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_accepted_control_at_us": 4999,
+        "last_uncontested_healthy_rf_at_us": 4999
+      },
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        }
+      ],
+      "expected": {
+        "tick_index": 41,
+        "eval_at_us": 205000,
+        "prior_control_age_us": 200001,
+        "prior_rf_age_us": 200001,
+        "prior_control_within_timeout": false,
+        "prior_rf_within_timeout": false,
+        "observed_uncontested_valid_control_at_us": null,
+        "observed_uncontested_healthy_rf_at_us": null,
+        "has_rf_lost_observation": false,
+        "has_rf_unknown_observation": false,
+        "has_invalid_control_observation": false,
+        "has_valid_control_conflict": false
+      },
+      "note": ""
+    },
+    {
+      "id": "P216-T11",
+      "name": "control_missing_rf_fresh",
+      "eval_at_us": 205000,
+      "prior_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": 5000
+      },
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        }
+      ],
+      "expected": {
+        "tick_index": 41,
+        "eval_at_us": 205000,
+        "prior_control_age_us": null,
+        "prior_rf_age_us": 200000,
+        "prior_control_within_timeout": false,
+        "prior_rf_within_timeout": true,
+        "observed_uncontested_valid_control_at_us": null,
+        "observed_uncontested_healthy_rf_at_us": null,
+        "has_rf_lost_observation": false,
+        "has_rf_unknown_observation": false,
+        "has_invalid_control_observation": false,
+        "has_valid_control_conflict": false
+      },
+      "note": ""
+    },
+    {
+      "id": "P216-T12",
+      "name": "only_rf_healthy_candidate",
+      "eval_at_us": 5000,
+      "prior_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "h1",
+          "event_at_us": 4999,
+          "kind": "RF_HEALTHY"
+        }
+      ],
+      "expected": {
+        "tick_index": 1,
+        "eval_at_us": 5000,
+        "prior_control_age_us": null,
+        "prior_rf_age_us": null,
+        "prior_control_within_timeout": false,
+        "prior_rf_within_timeout": false,
+        "observed_uncontested_valid_control_at_us": null,
+        "observed_uncontested_healthy_rf_at_us": 4999,
+        "has_rf_lost_observation": false,
+        "has_rf_unknown_observation": false,
+        "has_invalid_control_observation": false,
+        "has_valid_control_conflict": false
+      },
+      "note": ""
+    },
+    {
+      "id": "P216-T13",
+      "name": "two_rf_healthy_latest_original",
+      "eval_at_us": 5000,
+      "prior_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "h1",
+          "event_at_us": 4999,
+          "kind": "RF_HEALTHY"
+        },
+        {
+          "id": "h2",
+          "event_at_us": 5000,
+          "kind": "RF_HEALTHY"
+        }
+      ],
+      "expected": {
+        "tick_index": 1,
+        "eval_at_us": 5000,
+        "prior_control_age_us": null,
+        "prior_rf_age_us": null,
+        "prior_control_within_timeout": false,
+        "prior_rf_within_timeout": false,
+        "observed_uncontested_valid_control_at_us": null,
+        "observed_uncontested_healthy_rf_at_us": 5000,
+        "has_rf_lost_observation": false,
+        "has_rf_unknown_observation": false,
+        "has_invalid_control_observation": false,
+        "has_valid_control_conflict": false
+      },
+      "note": ""
+    },
+    {
+      "id": "P216-T14",
+      "name": "rf_healthy_plus_lost_no_candidate",
+      "eval_at_us": 5000,
+      "prior_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "h",
+          "event_at_us": 4999,
+          "kind": "RF_HEALTHY"
+        },
+        {
+          "id": "l",
+          "event_at_us": 5000,
+          "kind": "RF_LOST"
+        }
+      ],
+      "expected": {
+        "tick_index": 1,
+        "eval_at_us": 5000,
+        "prior_control_age_us": null,
+        "prior_rf_age_us": null,
+        "prior_control_within_timeout": false,
+        "prior_rf_within_timeout": false,
+        "observed_uncontested_valid_control_at_us": null,
+        "observed_uncontested_healthy_rf_at_us": null,
+        "has_rf_lost_observation": true,
+        "has_rf_unknown_observation": false,
+        "has_invalid_control_observation": false,
+        "has_valid_control_conflict": false
+      },
+      "note": ""
+    },
+    {
+      "id": "P216-T15",
+      "name": "rf_healthy_plus_unknown_no_candidate",
+      "eval_at_us": 5000,
+      "prior_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "h",
+          "event_at_us": 4999,
+          "kind": "RF_HEALTHY"
+        },
+        {
+          "id": "u",
+          "event_at_us": 5000,
+          "kind": "RF_UNKNOWN"
+        }
+      ],
+      "expected": {
+        "tick_index": 1,
+        "eval_at_us": 5000,
+        "prior_control_age_us": null,
+        "prior_rf_age_us": null,
+        "prior_control_within_timeout": false,
+        "prior_rf_within_timeout": false,
+        "observed_uncontested_valid_control_at_us": null,
+        "observed_uncontested_healthy_rf_at_us": null,
+        "has_rf_lost_observation": false,
+        "has_rf_unknown_observation": true,
+        "has_invalid_control_observation": false,
+        "has_valid_control_conflict": false
+      },
+      "note": "Do not invent effective RF priority."
+    },
+    {
+      "id": "P216-T16",
+      "name": "rf_lost_only",
+      "eval_at_us": 5000,
+      "prior_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "l",
+          "event_at_us": 4999,
+          "kind": "RF_LOST"
+        }
+      ],
+      "expected": {
+        "tick_index": 1,
+        "eval_at_us": 5000,
+        "prior_control_age_us": null,
+        "prior_rf_age_us": null,
+        "prior_control_within_timeout": false,
+        "prior_rf_within_timeout": false,
+        "observed_uncontested_valid_control_at_us": null,
+        "observed_uncontested_healthy_rf_at_us": null,
+        "has_rf_lost_observation": true,
+        "has_rf_unknown_observation": false,
+        "has_invalid_control_observation": false,
+        "has_valid_control_conflict": false
+      },
+      "note": ""
+    },
+    {
+      "id": "P216-T17",
+      "name": "valid_control_candidate_but_not_accepted",
+      "eval_at_us": 5000,
+      "prior_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "v",
+          "event_at_us": 4999,
+          "kind": "CONTROL_VALID",
+          "arm": false,
+          "flap": "0.1",
+          "steer": "0"
+        }
+      ],
+      "expected": {
+        "tick_index": 1,
+        "eval_at_us": 5000,
+        "prior_control_age_us": null,
+        "prior_rf_age_us": null,
+        "prior_control_within_timeout": false,
+        "prior_rf_within_timeout": false,
+        "observed_uncontested_valid_control_at_us": 4999,
+        "observed_uncontested_healthy_rf_at_us": null,
+        "has_rf_lost_observation": false,
+        "has_rf_unknown_observation": false,
+        "has_invalid_control_observation": false,
+        "has_valid_control_conflict": false
+      },
+      "note": ""
+    },
+    {
+      "id": "P216-T18",
+      "name": "valid_plus_injected_invalid_no_candidate",
+      "eval_at_us": 5000,
+      "prior_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "v",
+          "event_at_us": 4999,
+          "kind": "CONTROL_VALID",
+          "arm": false,
+          "flap": "0.1",
+          "steer": "0"
+        },
+        {
+          "id": "bad",
+          "event_at_us": 5000,
+          "kind": "CONTROL_INVALID"
+        }
+      ],
+      "expected": {
+        "tick_index": 1,
+        "eval_at_us": 5000,
+        "prior_control_age_us": null,
+        "prior_rf_age_us": null,
+        "prior_control_within_timeout": false,
+        "prior_rf_within_timeout": false,
+        "observed_uncontested_valid_control_at_us": null,
+        "observed_uncontested_healthy_rf_at_us": null,
+        "has_rf_lost_observation": false,
+        "has_rf_unknown_observation": false,
+        "has_invalid_control_observation": true,
+        "has_valid_control_conflict": false
+      },
+      "note": ""
+    },
+    {
+      "id": "P216-T19",
+      "name": "distinct_valid_conflict_plus_invalid",
+      "eval_at_us": 5000,
+      "prior_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "v1",
+          "event_at_us": 4998,
+          "kind": "CONTROL_VALID",
+          "arm": false,
+          "flap": "0.1",
+          "steer": "0"
+        },
+        {
+          "id": "v2",
+          "event_at_us": 4999,
+          "kind": "CONTROL_VALID",
+          "arm": true,
+          "flap": "0.1",
+          "steer": "0"
+        },
+        {
+          "id": "bad",
+          "event_at_us": 5000,
+          "kind": "CONTROL_INVALID"
+        }
+      ],
+      "expected": {
+        "tick_index": 1,
+        "eval_at_us": 5000,
+        "prior_control_age_us": null,
+        "prior_rf_age_us": null,
+        "prior_control_within_timeout": false,
+        "prior_rf_within_timeout": false,
+        "observed_uncontested_valid_control_at_us": null,
+        "observed_uncontested_healthy_rf_at_us": null,
+        "has_rf_lost_observation": false,
+        "has_rf_unknown_observation": false,
+        "has_invalid_control_observation": true,
+        "has_valid_control_conflict": true
+      },
+      "note": ""
+    },
+    {
+      "id": "P216-T20",
+      "name": "reset_plus_valid_is_observation_only",
+      "eval_at_us": 5000,
+      "prior_snapshot": {
+        "last_committed_eval_at_us": 0,
+        "last_accepted_control_at_us": null,
+        "last_uncontested_healthy_rf_at_us": null
+      },
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "reset",
+          "event_at_us": 4999,
+          "kind": "RESET"
+        },
+        {
+          "id": "v",
+          "event_at_us": 5000,
+          "kind": "CONTROL_VALID",
+          "arm": true,
+          "flap": "0",
+          "steer": "0"
+        }
+      ],
+      "expected": {
+        "tick_index": 1,
+        "eval_at_us": 5000,
+        "prior_control_age_us": null,
+        "prior_rf_age_us": null,
+        "prior_control_within_timeout": false,
+        "prior_rf_within_timeout": false,
+        "observed_uncontested_valid_control_at_us": 5000,
+        "observed_uncontested_healthy_rf_at_us": null,
+        "has_rf_lost_observation": false,
+        "has_rf_unknown_observation": false,
+        "has_invalid_control_observation": false,
+        "has_valid_control_conflict": false
+      },
+      "note": "Future R1 FSM must block acceptance on RESET; no state action in Stage B."
+    },
+    {
+      "id": "P216-T21",
+      "name": "prior_rf_fresh_current_lost_still_hazard",
+      "eval_at_us": 205000,
+      "prior_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_accepted_control_at_us": 5000,
+        "last_uncontested_healthy_rf_at_us": 5000
+      },
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "lost",
+          "event_at_us": 204999,
+          "kind": "RF_LOST"
+        }
+      ],
+      "expected": {
+        "tick_index": 41,
+        "eval_at_us": 205000,
+        "prior_control_age_us": 200000,
+        "prior_rf_age_us": 200000,
+        "prior_control_within_timeout": true,
+        "prior_rf_within_timeout": true,
+        "observed_uncontested_valid_control_at_us": null,
+        "observed_uncontested_healthy_rf_at_us": null,
+        "has_rf_lost_observation": true,
+        "has_rf_unknown_observation": false,
+        "has_invalid_control_observation": false,
+        "has_valid_control_conflict": false
+      },
+      "note": "prior_rf_within_timeout=True is arithmetic only; LOST is an independent current hazard."
+    },
+    {
+      "id": "P216-T22",
+      "name": "prior_control_stale_current_valid_no_refresh",
+      "eval_at_us": 205000,
+      "prior_snapshot": {
+        "last_committed_eval_at_us": 200000,
+        "last_accepted_control_at_us": 4999,
+        "last_uncontested_healthy_rf_at_us": 5000
+      },
+      "pseudo_events": [
+        {
+          "id": "boot",
+          "event_at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "v",
+          "event_at_us": 204999,
+          "kind": "CONTROL_VALID",
+          "arm": false,
+          "flap": "0",
+          "steer": "0"
+        }
+      ],
+      "expected": {
+        "tick_index": 41,
+        "eval_at_us": 205000,
+        "prior_control_age_us": 200001,
+        "prior_rf_age_us": 200000,
+        "prior_control_within_timeout": false,
+        "prior_rf_within_timeout": true,
+        "observed_uncontested_valid_control_at_us": 204999,
+        "observed_uncontested_healthy_rf_at_us": null,
+        "has_rf_lost_observation": false,
+        "has_rf_unknown_observation": false,
+        "has_invalid_control_observation": false,
+        "has_valid_control_conflict": false
+      },
+      "note": "Prior age remains stale; new control is uncommitted only."
+    }
+  ]
+}

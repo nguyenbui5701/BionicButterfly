@@ -4,9 +4,15 @@ Date: 2026-11-13 (Asia/Saigon). Branch:
 `feature/TASK-004-host-temporal-guard-facts`.
 Source pin: `ed106d22c52647090768ef60fb1e4c33384e9227` (merged PR #3).
 Implementation: pure read-only temporal age and candidate facts, Design/164.
-No commit, push or PR created. Owner UAT and SA review remain pending.
+Owner confirmed UAT PASS and explicitly authorized the PR into main on 2026-11-13.
+Accepted implementation commit: `fcca5d39903a0e773b68c49dd40dc115526bfb8a`.
+SA review and owner merge decision remain pending. Developer does not merge.
+See [PR handoff](PR_HANDOFF.md) for the complete PR file list and review instructions.
 
 ## Actual final results
+
+Full verification rerun for the PR handoff; runtime, tests and scripts are
+unchanged from the owner-accepted implementation.
 
 | Check | Result | Evidence |
 |---|---|---|
@@ -16,14 +22,14 @@ No commit, push or PR created. Owner UAT and SA review remain pending.
 | TASK-003 read-only regression | **59 PASS, 0 FAIL, 0 ERROR, 0 SKIP** | [task003-regression.log](task003-regression.log) |
 | Development smoke | **12 PASS, 0 FAIL** | [smoke.log](smoke.log) |
 | Installed-wheel smoke | **12 PASS, 0 FAIL** | [wheel-smoke.log](wheel-smoke.log) |
-| Compile, install, wheel/sdist build, both pip checks | **PASS**, every final command exit 0 | [commands.json](commands.json) |
+| Compile, install, wheel/sdist build, both pip checks | **PASS**, final successful attempts exit 0 | [commands.json](commands.json) |
 | Pinned source/Design and release provenance | **27 pinned files + 5 release artifacts MATCH**, policy SHA-256 MATCH | [baseline.json](baseline.json) |
 
 Final total: **446 tests PASS**, plus both smoke runs. Windows AMD64,
 CPython 3.11.15. Exact package versions, test counts and artifact SHA-256 are in
 [environment.json](environment.json). The owner `.venv` uses the three local
-prerequisite wheels and editable TASK-004. A separate `.test-env` installs all
-four local wheels; prerequisite runtime bytes match the pinned Git tree, and
+prerequisite wheels and editable TASK-004. For this PR, a fresh `.cache/pr-wheel-env` installs all
+four locally rebuilt wheels; prerequisite runtime bytes match the pinned Git tree, and
 installed TASK-004 runtime bytes match source. No unresolved failing check.
 
 ## Errors found and resolved
@@ -41,6 +47,19 @@ installed TASK-004 runtime bytes match source. No unresolved failing check.
   own working directory and interpreter, `-B`, no pytest cache, and an absolute
   JUnit destination inside TASK-004. No prerequisite file was edited. The full
   final verification rerun passed, including all 59 TASK-003 regressions.
+
+- PR packaging rerun encountered Windows artifact permissions: original TASK-004
+  sdist replacement failed with `PermissionError: [WinError 5] Access is denied`;
+  reading the old TASK-001 wheel then failed with `[Errno 13] Permission denied`.
+  Full logs: [build-pr-initial-failure.log](build-pr-initial-failure.log) and
+  [wheel-install-pr-initial-failure.log](wheel-install-pr-initial-failure.log).
+  Built TASK-004 into `.cache/pr-dist`; rebuilt all three prerequisites from
+  exact baseline Git blobs in `.cache/pr-source`, with wheels in `.cache/pr-deps`.
+  Installed all four wheels into fresh `.cache/pr-wheel-env`: smoke 12/12 and
+  pip check PASS; installed prerequisite bytes match Git and TASK-004 matches
+  source. No runtime/test/script changes or permission changes were required.
+  `commands.json` preserves both failed attempts and subsequent successful
+  commands; artifact hashes and fresh environment location are in environment.json.
 
 ## Acceptance map
 
@@ -67,9 +86,12 @@ or group rescan, normalization rerun or per-tick history is involved.
 
 - All implementation, tests, packaging and evidence live under
   `Source/host_temporal_guard_facts/**`; see [file inventory](files.json).
-  Design/Task files were read only and remain owner-managed. Existing TASK-001
+  The six required owner Design/Task release files are tracked unchanged in the
+  PR, as explicitly requested. Manifest-listed bytes and hashes are verified. Existing TASK-001
   evidence change retains its baseline SHA-256. No .github, ReviewPR, firmware,
-  prerequisite code or schema edits; no Git staging, commit, push or PR.
+  prerequisite code or schema edits. The unrelated TASK-001 evidence edit is
+  excluded from the PR. Implementation writes remain in the allowed subtree;
+  release-document tracking does not change the specifications.
 - This is PC_SIM_ONLY arithmetic and uncommitted observation evidence. No FSM,
   ARM qualification, accepted-frame update, effective RF selection, trace
   transaction, host allowlist, output adapter or hardware/flight test was run.

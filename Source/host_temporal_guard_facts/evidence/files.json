@@ -10,23 +10,31 @@
     },
     {
       "path": "Source/host_temporal_guard_facts/README.md",
-      "sha256": "ab4e4eebd9ed3d76e554d8770555961e70b2239f3ccf33607f65704791684025"
+      "sha256": "b88b611a459480125159d5958e9e7293349b51ca587896c0ec5967234aa247d5"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/PR_HANDOFF.md",
+      "sha256": "401cb95d35551c963a03eb790c14e849d22d8ed39e787c63af87f18b3f51a5d5"
     },
     {
       "path": "Source/host_temporal_guard_facts/evidence/REPORT.md",
-      "sha256": "d43b4f5a6a47e9f6bc5e1a3fa071574ef96d1fd87b795cbcb966214a3186a0bf"
+      "sha256": "3fa3a3b48f0f71bcec5bbe09f691ddb7573e876df5f27977ad8f87a621c89e3f"
     },
     {
       "path": "Source/host_temporal_guard_facts/evidence/baseline.json",
       "sha256": "15dd907a8764b9afd62cb7cdd3ce9f925b4260a56051998f55d5e2276f0a27ba"
     },
     {
+      "path": "Source/host_temporal_guard_facts/evidence/build-pr-initial-failure.log",
+      "sha256": "36aa0efbf664126372d60f9b2e23ea6735372c9ea4ab19b80775f55256cf67e7"
+    },
+    {
       "path": "Source/host_temporal_guard_facts/evidence/build.log",
-      "sha256": "5a0637ca590c9170961911f8142efb9b47731164c44bb0782ae43171d413eecb"
+      "sha256": "74bf530466155db0043c3f340733bc118be489112d07b317883b6d157b583056"
     },
     {
       "path": "Source/host_temporal_guard_facts/evidence/commands.json",
-      "sha256": "062c71834ae76f559106d7b29bf37b7a2f842068c657513e7a526cf6a4834727"
+      "sha256": "192a99558e0992d6e6b7a5118bb5210ede593be1ca6a467fdd2919c1c1835abb"
     },
     {
       "path": "Source/host_temporal_guard_facts/evidence/compile.log",
@@ -38,11 +46,23 @@
     },
     {
       "path": "Source/host_temporal_guard_facts/evidence/environment.json",
-      "sha256": "5b0f4c4b9310ef1b7b3a2b30d8d2a0d8356c47d89035b61f853608ba4845fba8"
+      "sha256": "aad1c3f097c8510f5f9ddc5ebe897b9a0cae2258a920a4aaa90f4698c5a197e8"
     },
     {
       "path": "Source/host_temporal_guard_facts/evidence/install.log",
-      "sha256": "151faaa35811378040d37f268924c6e971d0c110dacaa7a5d1b9b185e705384d"
+      "sha256": "bd48959a06cebcca618d1a67b040328b7c4dc05cb77ef4a8e786dd203e1cdb07"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/pr-build-host_batch_observations.log",
+      "sha256": "01fb09846c67f28029fba8a3a08687b21db2218d3512d81073d253074e80e91c"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/pr-build-host_preflight_m0.log",
+      "sha256": "ae866c2428c66f8b5860bc0503e29c20c84fb04e2934e30de4de3e7f6eeff1c1"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/pr-build-host_virtual_ticks.log",
+      "sha256": "8c8d2d370170ee5108e409c6080d515d993460172cb86f92c2ebc5d0ba3fec8b"
     },
     {
       "path": "Source/host_temporal_guard_facts/evidence/smoke.log",
@@ -50,19 +70,19 @@
     },
     {
       "path": "Source/host_temporal_guard_facts/evidence/task001-regression.log",
-      "sha256": "258416ee9d45698216c06336505ccee504b62082eab79eb2b76efbf1e75649ef"
+      "sha256": "182ad63f33ad352d8a0055b3db19174c209a5cb7ed04aa0664fb1232e05dadaf"
     },
     {
       "path": "Source/host_temporal_guard_facts/evidence/task001-regression.xml",
-      "sha256": "a933586ffe57949e397273a278dfe489b61a6e35e61ca7c5507b9b7f2422f703"
+      "sha256": "45efa84ed6d0e53ae2957c791d11d5acafe6f5b9bcc31fc6791c9f9bba420e88"
     },
     {
       "path": "Source/host_temporal_guard_facts/evidence/task002-regression.log",
-      "sha256": "9275e72977fa4037fb3617762f617a74c0d474f86e17e38b144576660c6ee710"
+      "sha256": "dfb5ce6c0484114cb1ef48e8d412af9114f411686f3da4648c16ede5d8def134"
     },
     {
       "path": "Source/host_temporal_guard_facts/evidence/task002-regression.xml",
-      "sha256": "a36acea6dec83de9f6dcea8791ea11c6688051f8a849d74e002f9b0c55f9d4c1"
+      "sha256": "240b2390e3dd9d4478721649c5f162301356c0517378b513762743d42c8a2a7e"
     },
     {
       "path": "Source/host_temporal_guard_facts/evidence/task003-regression-initial-failure.log",
@@ -70,19 +90,19 @@
     },
     {
       "path": "Source/host_temporal_guard_facts/evidence/task003-regression.log",
-      "sha256": "59aee3b6d1e4ebff4b1fb2d43b27a3f2a609c7980123413750328f3fccd4ea56"
+      "sha256": "aa5dcf4880f0f16f53a0bf3b8ec8ad4130c5d671689640c33e14ce7ff99fb4c2"
     },
     {
       "path": "Source/host_temporal_guard_facts/evidence/task003-regression.xml",
-      "sha256": "2c4a812ea63f142e7758f4c14a979b2e6b2dadd75980b8b573ff0a4b492dcb16"
+      "sha256": "700138158656c872344c84202618affbd18e485e47a50e3ef25ecde783a91257"
     },
     {
       "path": "Source/host_temporal_guard_facts/evidence/tests.log",
-      "sha256": "887dea0cf1c93f76262555a2db96e763b05d4a42ccdbdf8eb9f674d9d96e9680"
+      "sha256": "2ed2a49675ac9c2558b1276c7f70799d99c66f8c150c7c6c46c7e1920ef6d7d3"
     },
     {
       "path": "Source/host_temporal_guard_facts/evidence/tests.xml",
-      "sha256": "d200250cb65c6eca8be3fe6e04104bfda542f31047131bd49b373a39a6543964"
+      "sha256": "116aed862deaffda41a7cc97c188639aac7b420f32f6cb4c838f5072bb55acb7"
     },
     {
       "path": "Source/host_temporal_guard_facts/evidence/wheel-dependencies.log",
@@ -93,8 +113,12 @@
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
+      "path": "Source/host_temporal_guard_facts/evidence/wheel-install-pr-initial-failure.log",
+      "sha256": "ffda65ceae63d30caeb9f27f07900a3b3605dc317ed4ec24db2c0657865942fd"
+    },
+    {
       "path": "Source/host_temporal_guard_facts/evidence/wheel-install.log",
-      "sha256": "9c9fe10e942ded6ddcf8c55e8f3fed8515d8de6267ab886049fcba2fe664471c"
+      "sha256": "51895137d7e06880588af5f96b17da351dfc99120ece05ca7037ce0cecb2e42b"
     },
     {
       "path": "Source/host_temporal_guard_facts/evidence/wheel-smoke.log",
@@ -142,6 +166,6 @@
     }
   ],
   "inventory_excludes_itself": true,
-  "hash_basis": "Working-tree bytes before Git staging",
-  "scope_audit": "PASS: only task subtree created; owner release files unchanged; existing TASK-001 evidence edit preserved"
+  "hash_basis": "Git index blob bytes after text EOL normalization",
+  "scope_audit": "PASS: 42 task source/evidence files plus 6 unchanged owner release artifacts; unrelated TASK-001 edit excluded and preserved"
 }

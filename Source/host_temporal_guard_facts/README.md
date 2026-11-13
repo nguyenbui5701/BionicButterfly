@@ -14,7 +14,8 @@ Open PowerShell in `BionicButterfly/Source/host_temporal_guard_facts` and run:
 ```
 
 The prepared environment uses Python 3.11.15. Actual results and AC mapping are
-in `evidence/REPORT.md`. Owner UAT and explicit PR authorization remain pending.
+in `evidence/REPORT.md`. Owner UAT is accepted and the PR into main is authorized. SA review and the
+owner merge decision remain pending; see `evidence/PR_HANDOFF.md`.
 
 ## API and boundaries
 
