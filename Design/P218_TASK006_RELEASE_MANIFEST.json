@@ -1,0 +1,49 @@
+{
+  "artifact": "BionicButterfly Phase 2.18 TASK-006 ARM Qualification Stage C2",
+  "repository": "nguyenbui5701/BionicButterfly",
+  "source_main_commit": "f2c9237bd4a1e2e077c15db6eb4c22ed2a250d5d",
+  "pr5_merged_verified": true,
+  "scope": "G0-A1_PC_SIM_ONLY",
+  "status": "SA_RELEASE_SPEC_ONLY_NO_TASK006_RUNTIME",
+  "oracle_count": 32,
+  "qa": "32/32 design-reference consistency PASS; these are not executable TASK-006 runtime tests",
+  "policy_sha256": "d7567197dd43480d7e96dac121fbb707d3097b6c443b1b7ab55e822dbac66e10",
+  "source_git_blob_guards": {
+    "Design/115_G0A1_APPROVED_ATOMIC_SAFETY_CONTRACT_R1.md": "e6d988d160773219811d28cdb346b5a4590a0fa0",
+    "Design/116_G0A1_APPROVED_POLICY_DIGEST_AND_TRUST_R1.md": "02a0c21faf0b758bb55220debc390c09058021f7",
+    "Design/167_G0A1_SAFETY_PRIORITY_KERNEL_STAGE_C1_CONTRACT.md": "160d2773df5f68192e7c1638c7be8652144bf904",
+    "Source/host_safety_priority_kernel/src/bb_host_safety_priority_kernel/priority.py": "6a194b6fea178d8e697901448143c90a1edaf531"
+  },
+  "files": [
+    {
+      "path": "Design/169_TASK005_CLOSEOUT_AND_TASK006_BASELINE.md",
+      "bytes": 2641,
+      "sha256": "53664159a472ad1bc1aac3b50226d2e2ad4f5da7c07f09d6046a60d7da1ffbd5",
+      "git_blob_sha1": "2573dceec3366937202aca9ff87ca7f7c1f09605"
+    },
+    {
+      "path": "Design/170_G0A1_ARM_QUALIFICATION_PROPOSALS_STAGE_C2.md",
+      "bytes": 12100,
+      "sha256": "2dfcc0b8f99b5357425d4aa18da12ee512753c5c201446b6d3ad0d9e183dc71b",
+      "git_blob_sha1": "790c9c2f45cd5cc05880f4caaa82f17b315f7334"
+    },
+    {
+      "path": "Design/171_TASK006_ARM_QUALIFICATION_ORACLES_AND_REVIEW.md",
+      "bytes": 4161,
+      "sha256": "f7bb16a17ef65a19b5512c1f5c7d27de98c1e7917a5b2b0d4dc3922d2dd76c66",
+      "git_blob_sha1": "7f87eae8e341c06074cdfdd58af36d5448bee81f"
+    },
+    {
+      "path": "Design/fixtures/P218_ARM_QUALIFICATION_ORACLE_INDEX.json",
+      "bytes": 44912,
+      "sha256": "6b2d692aef52f8774250910ab80aac608d362642525f63fbb0335df37807c5f0",
+      "git_blob_sha1": "668c99f4db60c6af0b57d5922c45cbb38d035595"
+    },
+    {
+      "path": "Task/TASK-006_HOST_ARM_QUALIFICATION_PROPOSALS.md",
+      "bytes": 6606,
+      "sha256": "dd1e46e704521ade10a18f9af6874d34acc24f0a38e555b9eff0ea3b927e3ed3",
+      "git_blob_sha1": "cfd789dce087f6575f3ce56d6640a452ec2e1f1f"
+    }
+  ]
+}

@@ -1,11 +1,9 @@
 * Getting build dependencies for sdist...
 running egg_info
-creating src\bb_host_arm_qualification.egg-info
 writing src\bb_host_arm_qualification.egg-info\PKG-INFO
 writing dependency_links to src\bb_host_arm_qualification.egg-info\dependency_links.txt
 writing requirements to src\bb_host_arm_qualification.egg-info\requires.txt
 writing top-level names to src\bb_host_arm_qualification.egg-info\top_level.txt
-writing manifest file 'src\bb_host_arm_qualification.egg-info\SOURCES.txt'
 reading manifest file 'src\bb_host_arm_qualification.egg-info\SOURCES.txt'
 reading manifest template 'MANIFEST.in'
 writing manifest file 'src\bb_host_arm_qualification.egg-info\SOURCES.txt'
@@ -83,7 +81,7 @@ running install_egg_info
 Copying src\bb_host_arm_qualification.egg-info to build\bdist.win-amd64\wheel\.\bb_host_arm_qualification-0.1.0-py3.11.egg-info
 running install_scripts
 creating build\bdist.win-amd64\wheel\bb_host_arm_qualification-0.1.0.dist-info\WHEEL
-creating '<REPOSITORY>\Source\host_arm_qualification\.cache\verify-dsgutmkr\dist\.tmp-c1w_x68b\bb_host_arm_qualification-0.1.0-py3-none-any.whl' and adding 'build\bdist.win-amd64\wheel' to it
+creating '<REPOSITORY>\Source\host_arm_qualification\.cache\verify-z8f268al\dist\.tmp-4tn6marn\bb_host_arm_qualification-0.1.0-py3-none-any.whl' and adding 'build\bdist.win-amd64\wheel' to it
 adding 'bb_host_arm_qualification/__init__.py'
 adding 'bb_host_arm_qualification/qualification.py'
 adding 'bb_host_arm_qualification-0.1.0.dist-info/METADATA'

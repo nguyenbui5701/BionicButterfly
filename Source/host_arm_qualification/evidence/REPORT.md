@@ -3,9 +3,15 @@
 Date: 2026-11-13 (Asia/Saigon). Branch: `feature/TASK-006-host-arm-qualification`.
 Pinned parent: `f2c9237bd4a1e2e077c15db6eb4c22ed2a250d5d` (merged PR #5).
 Scope: Design/170 ARM Qualification Proposals Stage C2, PC_SIM_ONLY.
-No staging, commit, push or PR. Owner UAT and SA review remain pending.
+Owner confirmed UAT PASS and authorized the PR into main on 2026-11-13.
+Accepted implementation: `66be76cf8cedf32a90ee6de770bd362f3613edda`.
+SA review and owner merge decision remain pending; developer does not merge.
+See [PR handoff](PR_HANDOFF.md) for the complete scope and review instructions.
 
 ## Actual results
+
+Full verification rerun for PR preparation; runtime, tests and scripts remain
+unchanged from the owner-accepted implementation.
 
 | Check | Actual result | Evidence |
 |---|---|---|
@@ -55,10 +61,11 @@ and JUnit files written only under TASK-006 evidence.
   Tests: `tests/{conftest,test_oracles,test_qualification}.py`.
   Helpers: `scripts/{__init__,scenarios,smoke,verify}.py`; packaging/README and
   evidence. [files.json](files.json) records complete task file hashes/scope.
-- Design/Task release files remain unchanged and owner-managed/untracked as
-  found. Existing TASK-001 evidence edit retains its recorded SHA-256. No edits
-  to upstream source, schema, .github, ReviewPR, firmware or hardware. No Git
-  staging, commit, push, PR or merge performed for TASK-006.
+- The six approved owner Design/Task release files are tracked unchanged in
+  the PR as explicitly requested; their original bytes and hashes are verified. Existing TASK-001 evidence edit retains its recorded SHA-256. No edits
+  to upstream source, schema, .github, ReviewPR, firmware or hardware. No changes to the prerequisite modules. The pre-existing TASK-001 evidence edit
+  is excluded from the PR. Source-only implementation scope is distinct from
+  tracking the original release documents; no specification content changed.
 - No R1 policy conflict identified for the stated proposal mechanics. This is
   developer implementation evidence, not SA approval or safety certification.
   Hypothetical PASS/ADMITTED inputs are not an arbiter, trust token, real frame

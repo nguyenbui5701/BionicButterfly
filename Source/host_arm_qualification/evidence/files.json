@@ -10,11 +10,15 @@
     },
     {
       "path": "Source/host_arm_qualification/README.md",
-      "sha256": "44926b1ff9a891e725896ac9308895ca4240a875490136e186d7ae43f480672f"
+      "sha256": "85859986fa4bfc2613095cb017f72729d628bd034dca5d9ca883834928b8a03b"
+    },
+    {
+      "path": "Source/host_arm_qualification/evidence/PR_HANDOFF.md",
+      "sha256": "56a5a3e513db213958ee623c45732c2308f7a8371f186ad461d72480abdfea9d"
     },
     {
       "path": "Source/host_arm_qualification/evidence/REPORT.md",
-      "sha256": "f62e84f4e2670f80986bdc02a1acdd0433049c29a7363eccd7ecfa4646f15be8"
+      "sha256": "32cbad21579d3b8e5a37aea29b84242413f96b7f9cf57dbcce3785b7c8472551"
     },
     {
       "path": "Source/host_arm_qualification/evidence/baseline.json",
@@ -22,31 +26,31 @@
     },
     {
       "path": "Source/host_arm_qualification/evidence/build-task001.log",
-      "sha256": "1138e393c67ee98093988951377cf9ddc9edcdf7f5f2adf34f8dcc0a6493992e"
+      "sha256": "b468360f1f0e2ea29967333cd423939bd737b447303522ef1490917701c0f2b0"
     },
     {
       "path": "Source/host_arm_qualification/evidence/build-task002.log",
-      "sha256": "77cd42aa153eaf2d0871b3d0c659ada45032b3107b916d1af1dcddc56fc4e6a8"
+      "sha256": "be97eed303b67e0e5de5ecad2370a85bedf8325ccb4fd9123ed4a590ef64b8ab"
     },
     {
       "path": "Source/host_arm_qualification/evidence/build-task003.log",
-      "sha256": "c825b12e501103c3142f8ef159a3c8950dfb849d6a143de0dd9f9de41dc6cc05"
+      "sha256": "f4d716e98e64ef970aa402ceb5f7385f03ca00c83f96d082a72f03f250837fe7"
     },
     {
       "path": "Source/host_arm_qualification/evidence/build-task004.log",
-      "sha256": "03a67ff4b1f31e03d24f68102a2af3cc0e113443d77ed426eee67c545bc07fb6"
+      "sha256": "43495d360961261804c2da6e6ddae76c078e0e92d13360139542c0c70220d7b1"
     },
     {
       "path": "Source/host_arm_qualification/evidence/build-task005.log",
-      "sha256": "5d08b83351551f3339ea73928764660457a191c972273413fe2edb84d2ef7d4c"
+      "sha256": "8ea2f778bc3e444e23e39e3b7b815a637a896aeaa989644c3da23a0318ca99dd"
     },
     {
       "path": "Source/host_arm_qualification/evidence/build.log",
-      "sha256": "84c8e67483002829fd546f776dc92f2611dc1f45b62c8be03ac418b59bfa3f36"
+      "sha256": "813326323910fe98b68fb80e86f621ef4eb4a87dc19b9a7e3a3f03f82b52933c"
     },
     {
       "path": "Source/host_arm_qualification/evidence/commands.json",
-      "sha256": "3be724ee5855712852d25e5b5232a96927301f82d197d854e3065b54f91bc492"
+      "sha256": "3cda0eca76c1a6a892b7b6dd40fc826851bd1e82b8901fd7b4dc00c07f7d13b9"
     },
     {
       "path": "Source/host_arm_qualification/evidence/compile.log",
@@ -58,15 +62,15 @@
     },
     {
       "path": "Source/host_arm_qualification/evidence/environment.json",
-      "sha256": "f75d71c90def7084a6daee67c7f887f209d7b189da766ff7e7cef42719c8e6e9"
+      "sha256": "314798c7a8ca9d70212af7ef9d704e8780fbfc16e6859f157f790f1914cc9a3b"
     },
     {
       "path": "Source/host_arm_qualification/evidence/install-prerequisites.log",
-      "sha256": "6622c0745fd4a0a2770678d518fd369abe38f1f1972e8be44e9f06026e64291c"
+      "sha256": "71805907831a44728f31ab37c349fdfb116ea4664836f7a93dfff27a13627ec6"
     },
     {
       "path": "Source/host_arm_qualification/evidence/install.log",
-      "sha256": "247624cda53a74c5769d84d78348dcbf96ca1119f0571d242477c015c3cbe2b4"
+      "sha256": "5fb219c5b1c1698fa9eca5417de3d81b2b8b46b460047e9cb7efc8aa98ef3936"
     },
     {
       "path": "Source/host_arm_qualification/evidence/smoke.log",
@@ -74,51 +78,51 @@
     },
     {
       "path": "Source/host_arm_qualification/evidence/task001-regression.log",
-      "sha256": "40f2b6a2715a534b24eb1fc4dd6c7cd228e4070238426c892902c88b1eec532f"
+      "sha256": "8bd7d3009abf6498b4d4ee9743f3995bfeb4e2c615a614a523aaaeb0701edcbe"
     },
     {
       "path": "Source/host_arm_qualification/evidence/task001-regression.xml",
-      "sha256": "847e1f5db4f0200951da7dbd371614c5b6b27c0b68aed0cf8210660f58bb8b21"
+      "sha256": "c06b37bd0591f7aad7de1ef10937f50eadc36d05216e50c1ffd4aaec1b0cbf24"
     },
     {
       "path": "Source/host_arm_qualification/evidence/task002-regression.log",
-      "sha256": "9131e6dd89024c0d14f06a6f2752858d9ff1ad486f1ac143233cf97442f40b5a"
+      "sha256": "f814ee4cb9ec38051013c541c596e42d064efe5e80c59321b05febf01b71b756"
     },
     {
       "path": "Source/host_arm_qualification/evidence/task002-regression.xml",
-      "sha256": "e29ccbf38c8873e1b7882936545e4b0ea5ef10b0479c97ff7f1b7d0a8d4a2733"
+      "sha256": "b4991bdc5ba1b2830486da75cc65e27c951fe759f9edc11b14e69d07be8b0be0"
     },
     {
       "path": "Source/host_arm_qualification/evidence/task003-regression.log",
-      "sha256": "9bc732c2d4bb8b24a65d1f7625ecbdbe6c7511bce1d2e88004165f54b1e0230f"
+      "sha256": "5ede8b8dd077db82e5f09beff0b949adedb1bbeab9b77e28f53fa3df0fff6163"
     },
     {
       "path": "Source/host_arm_qualification/evidence/task003-regression.xml",
-      "sha256": "81d3498b63073b9bbda04382ad52c3a37563f95009b67f02b9f78a6e8e0324c9"
+      "sha256": "a7dfbe169ec12a1152eb539b12509514f73153d0b6beff00781ac479554f6177"
     },
     {
       "path": "Source/host_arm_qualification/evidence/task004-regression.log",
-      "sha256": "eee6ab33b54738ad39fccdf055bc5f4ced1d27d6a68a930f425920aea565cba4"
+      "sha256": "e11f1d53fd8b255108a8896bd4248330d5f6c4aa841dfd7366d612412b4aeddc"
     },
     {
       "path": "Source/host_arm_qualification/evidence/task004-regression.xml",
-      "sha256": "10f10403461e0c0d0f457a3e7e5bf16180e000cf1d8b52972b1f947af73fddf6"
+      "sha256": "0064d623a0d699bd02bd8bc1c286906072bdd329d0d05bd66a84338b62802454"
     },
     {
       "path": "Source/host_arm_qualification/evidence/task005-regression.log",
-      "sha256": "e23fafe77f691eb4bc625cf7bf1c708a2a524a71d19036d3d796a37720bbb5d1"
+      "sha256": "778aedb7d5319e27db1dc8504eff98f2ced7ead97d3a565dace18ccdc0697033"
     },
     {
       "path": "Source/host_arm_qualification/evidence/task005-regression.xml",
-      "sha256": "339f7a93d9ddadfc4704db763855427d7b62b301ae2b209f2c6dc4abf98df790"
+      "sha256": "f3a65d5d04415abd560ab157d86779433f77c8bae2fb8509f151b2ea407bd6e9"
     },
     {
       "path": "Source/host_arm_qualification/evidence/tests.log",
-      "sha256": "e608db026d49eb26febeb1a691cdc116c852732615690c52e6ac15dbf0e301ef"
+      "sha256": "97f7b0cfb3f1fdca2fd133add90721e94153b3085448442430a87e0cb262d1d0"
     },
     {
       "path": "Source/host_arm_qualification/evidence/tests.xml",
-      "sha256": "0d518896e24244d76b29c771d3c7b87c86370e26a948f6ba30d58e7d9045020b"
+      "sha256": "ee9659988e18c0662fe57c683cf037be446c788717387558b2f16ad8e29d9a8c"
     },
     {
       "path": "Source/host_arm_qualification/evidence/wheel-dependencies.log",
@@ -130,7 +134,7 @@
     },
     {
       "path": "Source/host_arm_qualification/evidence/wheel-install.log",
-      "sha256": "f6b70b26a37fc6c934f254e5eff77b92f2c9570f889e1bbcc4d5abaeebe0824d"
+      "sha256": "722113a51fa0498e9e332c778dac47bdc3bacea2ed71cdf5bc4767bac20fe083"
     },
     {
       "path": "Source/host_arm_qualification/evidence/wheel-smoke.log",
@@ -178,7 +182,7 @@
     }
   ],
   "inventory_excludes_itself": true,
-  "hash_basis": "Working-tree bytes before Git staging",
-  "scope_audit": "PASS: only TASK-006 subtree created; owner release artifacts unchanged; pre-existing TASK-001 evidence edit preserved",
-  "test_summary": "875 PASS, 0 FAIL/ERROR/SKIP; all 32 oracle JUnit cases confirmed; dev/wheel smoke 16/16 each; all verification commands exit 0"
+  "hash_basis": "Git index blob bytes after text EOL normalization",
+  "scope_audit": "PASS: 46 TASK-006 source/evidence files plus 6 unchanged owner release artifacts; TASK-001..005 unchanged in PR; pre-existing TASK-001 evidence edit preserved and excluded",
+  "test_summary": "875 PASS, 0 FAIL/ERROR/SKIP; 32 P218 JUnit oracle cases; dev/wheel smoke 16/16 each; all commands exit 0"
 }

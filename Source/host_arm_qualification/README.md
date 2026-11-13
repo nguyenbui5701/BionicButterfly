@@ -14,8 +14,8 @@ Open PowerShell at `BionicButterfly/Source/host_arm_qualification`:
 ```
 
 The prepared environment uses Python 3.11.15. Actual test results, all 32 oracle
-outcomes and AC evidence are in `evidence/REPORT.md`. Owner UAT and explicit PR
-permission pending; no developer merge.
+outcomes and AC evidence are in `evidence/REPORT.md`. Owner UAT PASS is accepted and PR into main explicitly authorized.
+SA review and owner merge decision remain pending; see `evidence/PR_HANDOFF.md`.
 
 ## API and interpretation
 
