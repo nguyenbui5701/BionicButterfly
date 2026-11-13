@@ -6,11 +6,11 @@
   "artifacts": [
     {
       "path": "dist/bb_host_batch_observations-0.1.0-py3-none-any.whl",
-      "sha256": "5117d973e931746d886ee180fd00f9eed76471ae8ac3736790089432770e0fd2"
+      "sha256": "9cbe09850fa29b076d97bd8ff2aea59767f0b13d2a3263249575d4b67848865f"
     },
     {
       "path": "dist/bb_host_batch_observations-0.1.0.tar.gz",
-      "sha256": "a9a8cc54b146c4ef90a2dee6eb61f92d371aad925210e0efd2df385252e1331a"
+      "sha256": "c6ead1b730918c229b43c9fa421d96cfe7858cb19a4394e075f0fabb2ad4512d"
     }
   ],
   "effective_timezone_switch_supported": false,

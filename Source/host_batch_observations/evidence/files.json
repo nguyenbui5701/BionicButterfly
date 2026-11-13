@@ -10,23 +10,27 @@
     },
     {
       "path": "Source/host_batch_observations/README.md",
-      "sha256": "7d5dde8fa5556bcc3bf4121b3e563d07ded2c590c5533124cb6eb985019925af"
+      "sha256": "8f18588a25e3bf278bd7488ce3a826fb12503baabb3148bc1b6739b7adb86468"
+    },
+    {
+      "path": "Source/host_batch_observations/evidence/PR_HANDOFF.md",
+      "sha256": "0c27f827d2618f0c418dbae678d4837f00104a8ec10b0195f8973655897df7a0"
     },
     {
       "path": "Source/host_batch_observations/evidence/REPORT.md",
-      "sha256": "3b3b6687ff4c3d3b6fbe307cf680bc46857576d20ac7e89e1f41fa97d40d6044"
+      "sha256": "1126b85de04ea2d6abb4a1f3e7f7d38e0675c322592b5161a8f99f51b1fa76ae"
     },
     {
       "path": "Source/host_batch_observations/evidence/baseline.json",
-      "sha256": "329bc180896c49202c04c530d67d07c2954695170798132a33312b06c55963c9"
+      "sha256": "a248d178ab26169df5c050e7b43d0bd8ca98f2c0f69f55b9d7e05329cfde3ac9"
     },
     {
       "path": "Source/host_batch_observations/evidence/build.log",
-      "sha256": "2f7d736547a0ebe4182e940a0a3c2a1fd28a802b734d20e09a73399fab0ff8b8"
+      "sha256": "efa1ecceb68ddf5d4b4689989227b7a2bfa71dcb00f800edb526edeb5c79f44b"
     },
     {
       "path": "Source/host_batch_observations/evidence/commands.json",
-      "sha256": "216c062c86a3a1f663b16c1f3f94ad9a99a4ebf7702abc802355d1e769a2833c"
+      "sha256": "031739493d75def1a18f356ec678df155b9c4797090d0d26f66027466064ffe3"
     },
     {
       "path": "Source/host_batch_observations/evidence/compile.log",
@@ -34,35 +38,35 @@
     },
     {
       "path": "Source/host_batch_observations/evidence/dependencies.log",
-      "sha256": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf"
+      "sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09"
     },
     {
       "path": "Source/host_batch_observations/evidence/environment.json",
-      "sha256": "9c1c9fb4512ca21606ce6527745a946b641da6d0ad728cef3c968854f7e298b1"
+      "sha256": "8ae1ae96a538a9a1545432f73fdecaf2f314dcd7dd0dd877b190fce1633555a5"
     },
     {
       "path": "Source/host_batch_observations/evidence/install.log",
-      "sha256": "0621402a19c88d236355f8782e235d6cfb9deceff82ac62e594aefd66f0fdc1a"
+      "sha256": "db7400db45b9fe8c5434fad1df5c84c2be0fac3484b3cb3fd93bb84f350c842c"
     },
     {
       "path": "Source/host_batch_observations/evidence/smoke.log",
-      "sha256": "d4c38f4d0e82a8d46a88fb507d009f46bdbcdff27681ecf8e0acb286935b6f21"
+      "sha256": "2cc02a8553f71757aa16647a51dd29da2c167973f7857037e0147f6ba928a9b8"
     },
     {
       "path": "Source/host_batch_observations/evidence/task001-regression.log",
-      "sha256": "95b3cdca89c302fe6159da07c06ce0aadcf82e4db95e3b5bc0ddf410e26a5176"
+      "sha256": "7fcc400536f4d1b6029e0823dbf34c95975dd0b252720c5432fb44df35f0e03b"
     },
     {
       "path": "Source/host_batch_observations/evidence/task001-regression.xml",
-      "sha256": "a965cc83fafab37055755c9dffc6fd88067805022de22653dc69abf56031d5d7"
+      "sha256": "1375f7271b519e7601de6fd56da7a9b087db4e7436a487197c2e26884a786035"
     },
     {
       "path": "Source/host_batch_observations/evidence/task002-regression.log",
-      "sha256": "44ef169a8c89ca90d0a9d7d4b209e4a07296f0699298d2874dfc755f45e02c08"
+      "sha256": "4234e7f9539e88eb4d6c8bb9152c548a59f4938fdd4b445032cd657df329ac7e"
     },
     {
       "path": "Source/host_batch_observations/evidence/task002-regression.xml",
-      "sha256": "e77afb68786b8469c25135b6a0796069929595a8ebb31753acfdf4341549f8f7"
+      "sha256": "6aa0291363d68c0bc464f29b48acb64e520baa0977e5bdfb9a5a9e502bf48e8d"
     },
     {
       "path": "Source/host_batch_observations/evidence/test-environment.log",
@@ -70,23 +74,23 @@
     },
     {
       "path": "Source/host_batch_observations/evidence/tests.log",
-      "sha256": "576814f265fe0b35e86d09df6f96e2f0c0dc1f7d92d6b8d727215791131d9472"
+      "sha256": "d7fe5c713c08d401002dfca2477a34cbf78df90001e5aab327a166fc3522d49e"
     },
     {
       "path": "Source/host_batch_observations/evidence/tests.xml",
-      "sha256": "b0deb94f1d8f0a1d0d3b9cec15e47a705366f7724cb262eb376aa7acba063e86"
+      "sha256": "c3d152a3720460b20532577bdf5d3200aae5ef3d7786582f1e6dc3320a695f41"
     },
     {
       "path": "Source/host_batch_observations/evidence/wheel-dependencies.log",
-      "sha256": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf"
+      "sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09"
     },
     {
       "path": "Source/host_batch_observations/evidence/wheel-install.log",
-      "sha256": "b4a7d657553d7d650ef46c67e7775e1e20c2e24fe84e45ce866d9447c337efca"
+      "sha256": "cacce13aaf2ffcacc24bf2054567b347dc588659b446425e361010919b1266bf"
     },
     {
       "path": "Source/host_batch_observations/evidence/wheel-smoke.log",
-      "sha256": "d4c38f4d0e82a8d46a88fb507d009f46bdbcdff27681ecf8e0acb286935b6f21"
+      "sha256": "2cc02a8553f71757aa16647a51dd29da2c167973f7857037e0147f6ba928a9b8"
     },
     {
       "path": "Source/host_batch_observations/pyproject.toml",
@@ -132,5 +136,6 @@
   "inventory_excludes_itself": true,
   "pre_existing_tracked_change_preserved": [
     "Source/host_preflight_m0/evidence/baseline.json"
-  ]
+  ],
+  "hash_basis": "Git index blob bytes, after text line-ending normalization; independent of checkout EOL settings"
 }

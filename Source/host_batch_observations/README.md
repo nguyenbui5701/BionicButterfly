@@ -16,8 +16,9 @@ Open PowerShell at `BionicButterfly/Source/host_batch_observations`. The prepare
 ```
 
 Expect all tests passed, all smoke checks PASS, and `No broken requirements found`.
-Actual counts, logs and the AC map are in `evidence/REPORT.md`. Owner UAT and
-explicit PR authorization are pending; no automatic commit, push or PR.
+Actual counts, logs and the AC map are in `evidence/REPORT.md`. The owner has
+accepted UAT and authorized the TASK-003 PR into main. SA review and the owner
+merge decision remain pending. See `evidence/PR_HANDOFF.md` for review context.
 
 ## API and guarantees
 
@@ -77,7 +78,8 @@ The aggregate verification script additionally uses the existing prerequisite
 development environments for read-only regression runs.
 
 The P215 owner-supplied Design/Task/oracle files must be present for tests and
-provenance checking. This implementation does not edit or publish them.
+provenance checking. The PR tracks the owner-supplied release files unchanged;
+the five manifest-listed artifacts match their approved byte counts and hashes.
 Tests construct raw unquoted decimal tokens directly from their recipes.
 
 Runtime uses the standard library and these two local project dependencies.

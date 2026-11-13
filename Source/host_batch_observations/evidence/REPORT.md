@@ -2,15 +2,21 @@
 
 Date: 2026-11-13 (Asia/Saigon). Branch: `feature/TASK-003-host-batch-observations`.
 Baseline: `12b4ee1355d146080810d028843d24481f88af77` (merged PR #2).
-No commit, push or Pull Request created for TASK-003. Owner UAT and SA review pending.
+Owner UAT accepted and PR into main explicitly authorized on 2026-11-13.
+Implementation commit: `07467847d460d755b4719c69533f405ad6701d3d`.
+SA review and owner merge decision remain pending; the developer does not merge.
+See [PR handoff](PR_HANDOFF.md) for scope, complete file list and review guidance.
 
 ## Actual results
 
+All checks below were rerun successfully for the PR handoff on 2026-11-13.
+The accepted implementation source and tests are unchanged.
+
 | Check | Result | Evidence |
 |---|---|---|
-| TASK-003 unit/integration, all 18 P215 oracles | **59 PASS, 0 FAIL, 0 SKIP**, 2.02 s | [tests.log](tests.log), [tests.xml](tests.xml) |
-| Read-only TASK-001 regression | **203 PASS, 0 FAIL, 0 SKIP**, 4.36 s | [task001-regression.log](task001-regression.log) |
-| Read-only TASK-002 regression | **44 PASS, 0 FAIL, 0 SKIP**, 1.63 s | [task002-regression.log](task002-regression.log) |
+| TASK-003 unit/integration, all 18 P215 oracles | **59 PASS, 0 FAIL, 0 SKIP**, 1.72 s | [tests.log](tests.log), [tests.xml](tests.xml) |
+| Read-only TASK-001 regression | **203 PASS, 0 FAIL, 0 SKIP**, 4.11 s | [task001-regression.log](task001-regression.log) |
+| Read-only TASK-002 regression | **44 PASS, 0 FAIL, 0 SKIP**, 1.56 s | [task002-regression.log](task002-regression.log) |
 | Development smoke | **10 PASS, 0 FAIL** | [smoke.log](smoke.log) |
 | Installed-wheel smoke | **10 PASS, 0 FAIL** | [wheel-smoke.log](wheel-smoke.log) |
 | Build/install/compile/pip check | All exit 0 | [commands.json](commands.json) |
@@ -54,10 +60,12 @@ worst-case O(N log N) comparisons. No per-group source rescan occurs.
 - Packaging/docs: `.gitignore`, `MANIFEST.in`, `pyproject.toml`, `README.md`.
 - Evidence: this report, logs, XML, pinned hashes, versions and [file inventory](files.json).
 
-Design/Task and both prerequisite source trees were read only. The pre-existing
+Design/Task content and both prerequisite source trees were read only. The pre-existing
 `Source/host_preflight_m0/evidence/baseline.json` working-tree change remains
-byte-identical (SHA-256 in environment evidence). Owner release docs remain
-untracked as found. No ReviewPR, firmware, schema or policy content was changed.
+byte-identical (SHA-256 in environment evidence). The PR additionally tracks the six required owner release
+files unchanged (manifest plus five hash-verified artifacts), preserving the
+owner instruction to track the necessary Design/Task documentation. This is
+release-document inclusion, not a change to the Source-only implementation scope. No ReviewPR, firmware, schema or policy content was changed.
 
 No known failing check remains. Effective OS timezone switching is **NOT RUN**
 on Windows Python without `tzset`; two actual locales and two TZ environment
