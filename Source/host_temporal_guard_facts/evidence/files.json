@@ -1,0 +1,147 @@
+{
+  "files": [
+    {
+      "path": "Source/host_temporal_guard_facts/.gitignore",
+      "sha256": "11d2f1bd9f4dfabf12cb3d9aa51e0021a907547f7b0f48047a8c3ebcca11fde5"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/MANIFEST.in",
+      "sha256": "6ef2d9e05aba91fa839f2237f3ae223cedab0a06c691f8578bb19277aa48657e"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/README.md",
+      "sha256": "ab4e4eebd9ed3d76e554d8770555961e70b2239f3ccf33607f65704791684025"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/REPORT.md",
+      "sha256": "d43b4f5a6a47e9f6bc5e1a3fa071574ef96d1fd87b795cbcb966214a3186a0bf"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/baseline.json",
+      "sha256": "15dd907a8764b9afd62cb7cdd3ce9f925b4260a56051998f55d5e2276f0a27ba"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/build.log",
+      "sha256": "5a0637ca590c9170961911f8142efb9b47731164c44bb0782ae43171d413eecb"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/commands.json",
+      "sha256": "062c71834ae76f559106d7b29bf37b7a2f842068c657513e7a526cf6a4834727"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/dependencies.log",
+      "sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/environment.json",
+      "sha256": "5b0f4c4b9310ef1b7b3a2b30d8d2a0d8356c47d89035b61f853608ba4845fba8"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/install.log",
+      "sha256": "151faaa35811378040d37f268924c6e971d0c110dacaa7a5d1b9b185e705384d"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/smoke.log",
+      "sha256": "d0743dd57dc85541e68484f60d8d3811e8558987a860ad16141cec146241b569"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/task001-regression.log",
+      "sha256": "258416ee9d45698216c06336505ccee504b62082eab79eb2b76efbf1e75649ef"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/task001-regression.xml",
+      "sha256": "a933586ffe57949e397273a278dfe489b61a6e35e61ca7c5507b9b7f2422f703"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/task002-regression.log",
+      "sha256": "9275e72977fa4037fb3617762f617a74c0d474f86e17e38b144576660c6ee710"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/task002-regression.xml",
+      "sha256": "a36acea6dec83de9f6dcea8791ea11c6688051f8a849d74e002f9b0c55f9d4c1"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/task003-regression-initial-failure.log",
+      "sha256": "aa3e5004605d17e443c5a577663179d2559167852194b45b92fa819a2034a901"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/task003-regression.log",
+      "sha256": "59aee3b6d1e4ebff4b1fb2d43b27a3f2a609c7980123413750328f3fccd4ea56"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/task003-regression.xml",
+      "sha256": "2c4a812ea63f142e7758f4c14a979b2e6b2dadd75980b8b573ff0a4b492dcb16"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/tests.log",
+      "sha256": "887dea0cf1c93f76262555a2db96e763b05d4a42ccdbdf8eb9f674d9d96e9680"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/tests.xml",
+      "sha256": "d200250cb65c6eca8be3fe6e04104bfda542f31047131bd49b373a39a6543964"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/wheel-dependencies.log",
+      "sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/wheel-environment.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/wheel-install.log",
+      "sha256": "9c9fe10e942ded6ddcf8c55e8f3fed8515d8de6267ab886049fcba2fe664471c"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/wheel-smoke.log",
+      "sha256": "d0743dd57dc85541e68484f60d8d3811e8558987a860ad16141cec146241b569"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/pyproject.toml",
+      "sha256": "a100bbbb35280e28e9a2b5a8f83770292e2ad8651b1e4b12c8279aa32a299f83"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/scripts/__init__.py",
+      "sha256": "646509f76f0315a7f840930cf4adc56ede5c4b3abe11a2599236749fc225433d"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/scripts/scenarios.py",
+      "sha256": "83a7ec0021573df01c7fc7d5618e41018661d3e1ffbaef8cb5c81c5233c8829b"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/scripts/smoke.py",
+      "sha256": "bc52d6096a0969f9f56273784b4ed7911193b10d5236db996e296cd3f8237716"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/scripts/verify.py",
+      "sha256": "9ac84e2f6e146759984675ac661a351ff917ba05f08cc90c238b4768fb90705e"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/src/bb_host_temporal_guard_facts/__init__.py",
+      "sha256": "0c3ea3d83556fbb8acfafc9fb77e52697a88de736849fc34b176b5135c60b833"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/src/bb_host_temporal_guard_facts/temporal.py",
+      "sha256": "6b112675a8e7a63a0c34cda09a1de60890e220f17c3322a2e06bbd79f65be207"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/tests/conftest.py",
+      "sha256": "8659c4f6af34a32f61ecc29774fd873cf628e7e0828ce9ff04773418357a6cc6"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/tests/test_oracles.py",
+      "sha256": "9b8f0349bd1dd46702931cc4af2dfe04ddb85bd9d48d804aa46ed301786e9e69"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/tests/test_temporal.py",
+      "sha256": "bbf97424e6d439942c79063fc79a9d1ecb61439475d73889aa0b550466f64262"
+    }
+  ],
+  "inventory_excludes_itself": true,
+  "hash_basis": "Working-tree bytes before Git staging",
+  "scope_audit": "PASS: only task subtree created; owner release files unchanged; existing TASK-001 evidence edit preserved"
+}
