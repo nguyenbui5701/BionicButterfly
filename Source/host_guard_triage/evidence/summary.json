@@ -1,0 +1,363 @@
+{
+  "acceptance": {
+    "AC-01": "task-local scope and provenance",
+    "AC-02": "36 individual P220 JUnit cases with all 10 exact fields/types",
+    "AC-03": "LOST dominance, HEALTHY+UNKNOWN ambiguity, carried nonhealthy retained",
+    "AC-04": "independent prior RF/control 200000/200001us and no current refresh",
+    "AC-05": "invalid/conflict/equivalent groups and no cross-refresh",
+    "AC-06": "armed stale wins; potential S1 stays unverified; restricted/reset/catastrophe diagnostics",
+    "AC-07": "N01..N18 all executed; inconsistent types/records/prior/mirrors reject",
+    "AC-08": "frozen ten fields, ordered reasons, O(1) with 5000 controls/RF, no-IO, locale/TZ/Decimal determinism",
+    "AC-09": "tests/build/install/pip/smoke and seven read-only regressions executed",
+    "AC-10": "UAT commands supplied; owner UAT/approval pending; PR not created"
+  },
+  "all_commands_exit_zero": true,
+  "baseline": "7c09bb5ab4d05d16bfa53439b5dab5b465ec8b05",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "bb-host-arm-qualification": "0.1.0",
+    "bb-host-batch-observations": "0.1.0",
+    "bb-host-guard-triage": "0.1.0",
+    "bb-host-health-evidence": "0.1.0",
+    "bb-host-preflight-m0": "0.1.0",
+    "bb-host-safety-priority-kernel": "0.1.0",
+    "bb-host-temporal-guard-facts": "0.1.0",
+    "bb-host-virtual-ticks": "0.1.0",
+    "build": "1.2.2.post1",
+    "colorama": "0.4.6",
+    "iniconfig": "2.1.0",
+    "jsonschema": "4.26.0",
+    "jsonschema-specifications": "2025.9.1",
+    "packaging": "25.0",
+    "pip": "24.0",
+    "pluggy": "1.6.0",
+    "pyproject_hooks": "1.2.0",
+    "pytest": "8.3.5",
+    "referencing": "0.36.2",
+    "rpds-py": "0.27.1",
+    "setuptools": "80.9.0",
+    "typing_extensions": "4.15.0",
+    "wheel": "0.45.1"
+  },
+  "installed_dependencies_match_pinned_source": true,
+  "installed_task008_matches_source": true,
+  "limits": [
+    "PC_SIM_ONLY guard triage; no PASS/ADMITTED, accepted timestamps, FSM commit, ARM/S1/output or TASK-006 adapter",
+    "Synthetic prior snapshot is not authenticated or committed history",
+    "Full R1 FSM/trace/authorization/hardware/flight NOT RUN",
+    "TZ environment tested; effective OS timezone switching NOT RUN on Windows without tzset"
+  ],
+  "negative_families": [
+    {
+      "cases": 71,
+      "id": "N01",
+      "result": "PASS"
+    },
+    {
+      "cases": 14,
+      "id": "N02",
+      "result": "PASS"
+    },
+    {
+      "cases": 11,
+      "id": "N03",
+      "result": "PASS"
+    },
+    {
+      "cases": 12,
+      "id": "N04",
+      "result": "PASS"
+    },
+    {
+      "cases": 14,
+      "id": "N05",
+      "result": "PASS"
+    },
+    {
+      "cases": 15,
+      "id": "N06",
+      "result": "PASS"
+    },
+    {
+      "cases": 65,
+      "id": "N07",
+      "result": "PASS"
+    },
+    {
+      "cases": 18,
+      "id": "N08",
+      "result": "PASS"
+    },
+    {
+      "cases": 6,
+      "id": "N09",
+      "result": "PASS"
+    },
+    {
+      "cases": 9,
+      "id": "N10",
+      "result": "PASS"
+    },
+    {
+      "cases": 9,
+      "id": "N11",
+      "result": "PASS"
+    },
+    {
+      "cases": 16,
+      "id": "N12",
+      "result": "PASS"
+    },
+    {
+      "cases": 1,
+      "id": "N13",
+      "result": "PASS"
+    },
+    {
+      "cases": 1,
+      "id": "N14",
+      "result": "PASS"
+    },
+    {
+      "cases": 8,
+      "id": "N15",
+      "result": "PASS"
+    },
+    {
+      "cases": 2,
+      "id": "N16",
+      "result": "PASS"
+    },
+    {
+      "cases": 23,
+      "id": "N17",
+      "result": "PASS"
+    },
+    {
+      "cases": 12,
+      "id": "N18",
+      "result": "PASS"
+    }
+  ],
+  "oracle_results": [
+    {
+      "id": "P220-T01",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T02",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T03",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T04",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T05",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T06",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T07",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T08",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T09",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T10",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T11",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T12",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T13",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T14",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T15",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T16",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T17",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T18",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T19",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T20",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T21",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T22",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T23",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T24",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T25",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T26",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T27",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T28",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T29",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T30",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T31",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T32",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T33",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T34",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T35",
+      "result": "PASS"
+    },
+    {
+      "id": "P220-T36",
+      "result": "PASS"
+    }
+  ],
+  "pinned_files": 145,
+  "revision": {
+    "branch": "feature/TASK-008-host-guard-triage",
+    "files": {
+      "MANIFEST.in": "6ef2d9e05aba91fa839f2237f3ae223cedab0a06c691f8578bb19277aa48657e",
+      "pyproject.toml": "6b7fb87bc235707a208cd589316cb6bf40c1ff70a40c6a813a3d0f3c3933999b",
+      "scripts/__init__.py": "8f3965bd475fe8321127518508daa4a93ff6739b33b802636bd05f55c6018a02",
+      "scripts/scenarios.py": "a1b49b05ff3f67f5bdb04b7044b5816d272eb7b03cae99a9145945692a191295",
+      "scripts/smoke.py": "d5b583a4c54fde94e7d2044b267e75816d4e711f793038fe4745e870b720db89",
+      "scripts/verify.py": "33210134ec18b5a0d0e99204a8f542c3c7aa5aa28182ffd19a08e9c3031c9534",
+      "src/bb_host_guard_triage/__init__.py": "aaf3396fb5c9049112455b2e4043bda57de042088aadd26a84f32c5d669cea7f",
+      "src/bb_host_guard_triage/triage.py": "fe097cdfb736fd3f28afe3274b996b63bc133184edc91b023616c5b0358ad91d",
+      "tests/conftest.py": "5304ee5bfdb9cac1d7288cf7ecfc7534e844cea22a8d4f3e2e41c78029a5d860",
+      "tests/test_negatives.py": "8945374b9dd00b7abe99e42499897c02dd328f1bb55eadde1fcfabc34f4b9532",
+      "tests/test_oracles.py": "aca71e11776583ff9a7279a8b386282bfa4426c1330651676463372244a63e70"
+    },
+    "head": "7c09bb5ab4d05d16bfa53439b5dab5b465ec8b05",
+    "source_sha256": "28b91120e39aa436bedf8f54c1da026f64a1274c0207beb95fafe6b0a004906a"
+  },
+  "smoke": {
+    "development": "36 PASS, 0 FAIL",
+    "installed_wheel": "36 PASS, 0 FAIL"
+  },
+  "status": "PASS",
+  "test_results": {
+    "task001-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 203
+    },
+    "task002-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 44
+    },
+    "task003-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 59
+    },
+    "task004-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 140
+    },
+    "task005-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 208
+    },
+    "task006-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 221
+    },
+    "task007-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 258
+    },
+    "tests.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 345
+    }
+  },
+  "warnings": []
+}

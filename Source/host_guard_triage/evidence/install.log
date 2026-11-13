@@ -1,0 +1,17 @@
+Obtaining file:///<REPOSITORY>/Source/host_guard_triage
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: bb-host-guard-triage
+  Building editable for bb-host-guard-triage (pyproject.toml): started
+  Building editable for bb-host-guard-triage (pyproject.toml): finished with status 'done'
+  Created wheel for bb-host-guard-triage: filename=bb_host_guard_triage-0.1.0-0.editable-py3-none-any.whl size=3104 sha256=1b91b8ac15e47c2ebcaede5e99a8697ad5362be7561de6579ea127508b0fb65f
+  Stored in directory: <USERPROFILE>\AppData\Local\Temp\pip-ephem-wheel-cache-6p_o8nf0\wheels\0f\c3\42\3865eef2f5a16605a2be2ca3ca5f160e795b9c74b6bf8014e6
+Successfully built bb-host-guard-triage
+Installing collected packages: bb-host-guard-triage
+  Attempting uninstall: bb-host-guard-triage
+    Found existing installation: bb-host-guard-triage 0.1.0
+    Uninstalling bb-host-guard-triage-0.1.0:
+      Successfully uninstalled bb-host-guard-triage-0.1.0
+Successfully installed bb-host-guard-triage-0.1.0
