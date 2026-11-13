@@ -1,0 +1,40 @@
+{
+  "manifest_version": "P221_TASK009_RELEASE_V1",
+  "source_main_commit": "e61f97e388662a48a13ccb6b308954436cbb87ec",
+  "scope": "G0-A1_PC_SIM_ONLY_TEST_ONLY",
+  "release_status": "SA_DESIGN_ONLY_TASK009_RUNTIME_NOT_RUN",
+  "policy_sha256": "d7567197dd43480d7e96dac121fbb707d3097b6c443b1b7ab55e822dbac66e10",
+  "oracle_count": 48,
+  "files": [
+    {
+      "path": "Design/178_TASK008_MERGE_CLOSEOUT_AND_TASK009_BASELINE.md",
+      "bytes": 4150,
+      "sha256": "dbccf01aa95cc95e025d52964d05e9774be3ed94dfa7fd293bc1664006d806d6",
+      "git_blob_sha1": "3e282dc3e9bc71b8b2fc2d1ad2bbfcb7a04310ed"
+    },
+    {
+      "path": "Design/179_G0A1_COMMITTED_SNAPSHOT_GATE_STAGE_E1.md",
+      "bytes": 11971,
+      "sha256": "2306ad6e848ab4d518c904e403d8b80c70729a2587793d4b0061fbe8cfdb3a32",
+      "git_blob_sha1": "745d4bba1e06d29b253ddeb2bcdedb93b7e96506"
+    },
+    {
+      "path": "Design/180_TASK009_SNAPSHOT_GATE_ORACLES_AND_SA_REVIEW.md",
+      "bytes": 4481,
+      "sha256": "a28a4c6fc4aee629bba6196b86c1f7e6926bc8b25b9a1a5cf4a02b0898b666b2",
+      "git_blob_sha1": "468d3551c2160e6bd244d8ef3f5c1d50513cdbc6"
+    },
+    {
+      "path": "Design/fixtures/P221_SNAPSHOT_GATE_ORACLE_INDEX.json",
+      "bytes": 33594,
+      "sha256": "df8023d87ae75e1b4e0e75f6edf8e8bbc18284535d39a5379233d9c118d73bde",
+      "git_blob_sha1": "16b89e148a55d35749cc2e3912123972970387a4"
+    },
+    {
+      "path": "Task/TASK-009_HOST_SNAPSHOT_COMMIT_GATE.md",
+      "bytes": 7081,
+      "sha256": "bfdb229a7762af16deb73a2f268ada6af8fee8cda86dbb000d2bb179cc7553b9",
+      "git_blob_sha1": "53f0bd04715c5b5323c0e6f352de336d497ea37c"
+    }
+  ]
+}
