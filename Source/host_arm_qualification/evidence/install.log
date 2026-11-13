@@ -1,0 +1,17 @@
+Obtaining file:///<REPOSITORY>/Source/host_arm_qualification
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: bb-host-arm-qualification
+  Building editable for bb-host-arm-qualification (pyproject.toml): started
+  Building editable for bb-host-arm-qualification (pyproject.toml): finished with status 'done'
+  Created wheel for bb-host-arm-qualification: filename=bb_host_arm_qualification-0.1.0-0.editable-py3-none-any.whl size=3728 sha256=65a5b47d07bbe75b0f64530beebf7ce20a38e6f54b60dd8c798f668aa99ae4cb
+  Stored in directory: <USERPROFILE>\AppData\Local\Temp\pip-ephem-wheel-cache-mymk39tn\wheels\3e\76\af\532bbb5eaaac41c245b460463681158553fd8ec9018948473b
+Successfully built bb-host-arm-qualification
+Installing collected packages: bb-host-arm-qualification
+  Attempting uninstall: bb-host-arm-qualification
+    Found existing installation: bb-host-arm-qualification 0.1.0
+    Uninstalling bb-host-arm-qualification-0.1.0:
+      Successfully uninstalled bb-host-arm-qualification-0.1.0
+Successfully installed bb-host-arm-qualification-0.1.0
