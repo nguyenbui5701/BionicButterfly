@@ -1,0 +1,17 @@
+Obtaining file:///<PACKAGE>
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: bb-host-preflight-m0
+  Building editable for bb-host-preflight-m0 (pyproject.toml): started
+  Building editable for bb-host-preflight-m0 (pyproject.toml): finished with status 'done'
+  Created wheel for bb-host-preflight-m0: filename=bb_host_preflight_m0-0.1.0-0.editable-py3-none-any.whl size=4958 sha256=4c73c9abeabf23300a4ee373b43f2572da9e435600645ba4245a3556ef01d837
+  Stored in directory: <USERPROFILE>\AppData\Local\Temp\pip-ephem-wheel-cache-eywcz4ku\wheels\3e\10\1c\0a4e8820096f5e4501e026d8210b65c276eca4c918a80e0d7f
+Successfully built bb-host-preflight-m0
+Installing collected packages: bb-host-preflight-m0
+  Attempting uninstall: bb-host-preflight-m0
+    Found existing installation: bb-host-preflight-m0 0.1.0
+    Uninstalling bb-host-preflight-m0-0.1.0:
+      Successfully uninstalled bb-host-preflight-m0-0.1.0
+Successfully installed bb-host-preflight-m0-0.1.0

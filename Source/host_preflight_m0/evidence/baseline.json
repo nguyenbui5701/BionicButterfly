@@ -1,0 +1,210 @@
+{
+  "baseline": "f378ec294a4a05887b03a9431696994dc22c0a4f",
+  "head": "f378ec294a4a05887b03a9431696994dc22c0a4f",
+  "contracts": [
+    {
+      "path": "Design/07_AI_CODING_RULES.md",
+      "git_blob_sha1": "a3760b54389d082f9f5f8c0b7cd7296cbe640eb8",
+      "sha256": "cc8a0f1d516a88ae8292a2468fda7aebd0d93e0876761b890ee4a8110e6529f1",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/10_SA_OPERATING_RULES.md",
+      "git_blob_sha1": "a0d802028e4a86d6f0a8ead6466fb4fe94b319cb",
+      "sha256": "a8d4779dfd4f7c07b05aef4686a89803007cdbbe135d646f954dc1ebe8835630",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/117_G0A1_INPUT_RESULT_ERRORS_R1.md",
+      "git_blob_sha1": "f4c7d0bd857616fcdbbd978176ed8c9065e98d21",
+      "sha256": "31b5a50f57742639154681444bfc8bda30007a6f490134380db409f847e3efb7",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/11_HANDOFF_PR_WORKFLOW.md",
+      "git_blob_sha1": "3e4cbb254f086958a98a6e2bc8817b86e341d2aa",
+      "sha256": "07e520ff725001bc13ebc660dc8c5efb29f13a6429f390a5869db8771139f991",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/132_R11_SCENARIO_WIRE_V2_CLOSED_EVENT_SCHEMA_CANDIDATE.md",
+      "git_blob_sha1": "2e154c314fbfdcfed8bc6daa00b72cdf349a6ccb",
+      "sha256": "8ad452e994f6e6f718ed89d15ec205c2ed3645ee49194d6e5692f570c163945f",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/133_R11_VIRTUAL_MIXER_M0_EXACT_ARITHMETIC_CANDIDATE.md",
+      "git_blob_sha1": "8ea4f2f556d83d6132df86751c9ffd29b931575d",
+      "sha256": "f801398baf30f8caf4c1440c8aef8d143ea2e392dd0b02af9406af4f740e18d0",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/136_R11_INTERFACE_TEST_ORACLES_AND_STATIC_CHECKS.md",
+      "git_blob_sha1": "4e9ea3c60a6d4db59e5fc475db99f58f143ea5ba",
+      "sha256": "7c81d4fd3cabfcac8a6ea377255ce0649ff4e81b87d4cfb388086ea4b4df83ff",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/141_G0A1_R11_AUTHORITATIVE_CONTRACT_HIERARCHY.md",
+      "git_blob_sha1": "b21fcb9ed83775054cf2bde0b6533f5b71cb6eda",
+      "sha256": "5747a0f5e6e89890a5a5c1c341455a376afa03ac4ae4757cc3b044798fbc323e",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/142_R11_INPUT_EVENT_AND_PARSER_FREEZE_REVIEW.md",
+      "git_blob_sha1": "d45f7081720ad85caabddd16b4e5d602df6eb12d",
+      "sha256": "a011895f174dfbda74b3a6e34581057f01a11dcb8ab19a898c63c603a842f69d",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/150_G0A1_PARSER_DIAGNOSTIC_SIDECAR_CONTRACT.md",
+      "git_blob_sha1": "b96beba505a4db94c16e1c0f2b0f8ec65fd740f9",
+      "sha256": "e4000bd72d0e0f64f3b0317c64b2c9f562023693007d86885ba2f19970246c36",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/151_G0A1_PREFLIGHT_PRECEDENCE_POINTER_AND_ERROR_REGISTRY.md",
+      "git_blob_sha1": "d1ba14b4d8cf31926353fb72fb20c29c148a9a40",
+      "sha256": "46fc9e46384f0cebca3deed4c02c21b0268bc384d4f00c96c18ed1459fd15738",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/153_G0A1_FIRST_DEVELOPER_HANDOFF_READINESS_NOT_TASK.md",
+      "git_blob_sha1": "a299b4a9d2948eeefdd7a1027fb003a8c86aad2e",
+      "sha256": "b02a9589bf91340c4f4ab2307044b2ee704a5606bf8f6918fd7f73ece129afc1",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/154_PHASE212_PARSER_DIAGNOSTIC_ORACLE_MATRIX.md",
+      "git_blob_sha1": "3a143185c59879faa09d2a75f339a8112190d70c",
+      "sha256": "78f767cb8ec050f48809c776e5e91c6c846d09f369b638a2a0142475409c7dc8",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/contracts/G0A1_MIXER_M0_R11_CANDIDATE.json",
+      "git_blob_sha1": "dfde74e76b1bd7eb44088e6d49d06dd1a46cc759",
+      "sha256": "979112229b956e710f801f1f3a72ae303e97f85a3d1e2b802b1c3c2d4efc0106",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/contracts/G0A1_PREFLIGHT_DIAGNOSTIC_V1_CANDIDATE.schema.json",
+      "git_blob_sha1": "d41091455e112cbcede1c7c0ce391c91827bfb41",
+      "sha256": "c1aaea5340b07994249273e0b272197d64edd8f92af17a00fcc0be8477914974",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/contracts/G0A1_PREFLIGHT_ISSUE_REGISTRY_V1_CANDIDATE.json",
+      "git_blob_sha1": "ed7cb5305bf40996a006ac853d7b1990de4eaa70",
+      "sha256": "ddba76efc89aa1f677de78a5ab0b6f3e4c4d2fcb02bcb154deb2c3ca7abfcd4a",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/contracts/G0A1_SCENARIO_WIRE_V2_CANDIDATE.schema.json",
+      "git_blob_sha1": "1d10c76e34be70880a65252d89a6bca89839fea9",
+      "sha256": "621dddeba4e5e54cc833430b3019833cb7d06a341c0b1e3d0d31dae83e1839f4",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/fixtures/P210_ACK_SHAPE_ONLY_V2.json",
+      "git_blob_sha1": "7db5ab21d8ae26537eb21cf594c14942ec7cde1f",
+      "sha256": "ae665411db1f3a99a0b153ebf7aa8e484658144358f035bab8f6fa64097eae2e",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/fixtures/P210_DUPLICATE_KEYS_INVALID.json",
+      "git_blob_sha1": "43f7b34fc91657433ad89e03b8072c55280a7d3a",
+      "sha256": "88a70b76ca391463fe1e21cfe3ba2d495bf83a86d660283af779e5f14c2a616c",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/fixtures/P210_INVALID_UART_WIRE_V2.json",
+      "git_blob_sha1": "93059f759ac681c5280942d5782ff35bbab9b6b3",
+      "sha256": "f4bf810a000198016ec45dad8eb74dcf0943b3763bc56fba24993ea62c4e30bf",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/fixtures/P210_M0_GOLDEN_VECTORS.json",
+      "git_blob_sha1": "165aee1347a619c6f2514e522bf0e4fc4b518a6c",
+      "sha256": "2be61c8594aea7d06a9772fa8bbb9bd75da69534aafff9fc34602df61cbfb937",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/fixtures/P210_MINIMAL_DESIGN_EXTERNAL_REPORT.json",
+      "git_blob_sha1": "87af6934233261badf670eb3eb0aea35a4c65575",
+      "sha256": "1c954d16e6bdb0a00351bbf9be1da74e9fc6485c1380b71a6383108247caa9cf",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/fixtures/P210_MINIMAL_DESIGN_TRACE.jsonl",
+      "git_blob_sha1": "4b7677fa4cdd6d15da61751349c872997fa6f2bc",
+      "sha256": "1cdaa68e016d4227d8623adf285a6d28ace9092bf1c45ef7a21b65638a4a10a3",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/fixtures/P210_MINIMAL_VECTOR_ATTESTATION.json",
+      "git_blob_sha1": "358337af2a2b9ffb7e0aa0f1fcfd2cdbb6ed8991",
+      "sha256": "16c14bd989a2aed1e92700c2532d0c5e5f8c3843f75c51eaffe849f7a2c7bc97",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/fixtures/P210_MINIMAL_WIRE_V2.json",
+      "git_blob_sha1": "7990a0e2c4a95425a61c27c9024a8a0783520663",
+      "sha256": "d4b6098748a918d6073deafe016d04f0e229de557ba64786c9989be9d8c8e208",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/fixtures/P210_NOMINAL_M0_WIRE_V2.json",
+      "git_blob_sha1": "4e772fe51f0cfb5e085e7da81030dca02814d0b3",
+      "sha256": "022a36b4537e7644484b9a74998f831005ec375e97e3feb3f1d905df96f4a8e4",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/fixtures/P210_RESET_CATA_WIRE_V2.json",
+      "git_blob_sha1": "b0502ff2548ec95541cff70337874a6d4461601a",
+      "sha256": "eabccfba11a39f1fca39f970ea9b41bb04ad40a71958aac5b4e17164c8ec9c11",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/fixtures/P212_INVALID_DUPLICATE_EVENT_ID_WIRE_V2.json",
+      "git_blob_sha1": "4d819db66f4bfab28df23672e24d50dd1697a2b0",
+      "sha256": "5986dc2103154db4dfb3e5696565d4121c05a0f0eb293c61967c2b68021d905e",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/fixtures/P212_INVALID_DUPLICATE_KEY_RAW.json",
+      "git_blob_sha1": "2b6a1174c3a0aad39745b44b49a999c736d137a9",
+      "sha256": "fca71db66a4e3f6490d85ff823018cfc250f6509798a78ed6ecde879b9350129",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/fixtures/P212_POSITIVE_INBAND_UART_INVALID_V2.json",
+      "git_blob_sha1": "93059f759ac681c5280942d5782ff35bbab9b6b3",
+      "sha256": "f4bf810a000198016ec45dad8eb74dcf0943b3763bc56fba24993ea62c4e30bf",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/fixtures/P212_PREFLIGHT_NEGATIVE_ORACLE_INDEX.json",
+      "git_blob_sha1": "41b5536d37042cb68e71f0c37c40e0b08272617f",
+      "sha256": "acc7f977b2ae69a9251f65d624dd829a1a69d1d4deff581a99dc31d346911651",
+      "result": "MATCH"
+    },
+    {
+      "path": "Design/fixtures/P212_REFERENCE_REJECTION_DIAGNOSTICS.json",
+      "git_blob_sha1": "6ea6f7ad15558636181e798048c0398bf670cffa",
+      "sha256": "fc22a8f4e705a7fdae85262a848065ead67b25da28252aeef872c87dc58f819f",
+      "result": "MATCH"
+    }
+  ],
+  "release_artifacts": [
+    {
+      "path": "Design/156_G0A1_DIAGNOSTIC_V1_APPROVAL_AND_TASK001_RELEASE.md",
+      "sha256": "4fc688faf96691f8fa786e74e57805911104a293cc0a90610dc1539a8242fc9f",
+      "result": "MATCH_RELEASE_MANIFEST"
+    },
+    {
+      "path": "Task/TASK-001_HOST_PREFLIGHT_M0.md",
+      "sha256": "c8eadc933f4c074436ada9caf5870b06827ff5b75c64f9832cba901b6e48833e",
+      "result": "MATCH_RELEASE_MANIFEST"
+    }
+  ]
+}

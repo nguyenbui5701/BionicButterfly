@@ -1,0 +1,18 @@
+{
+  "artifact": "BionicButterfly Phase 2.13 — First Developer Task",
+  "status": "OWNER_APPROVED_TASK_RELEASE; NO IMPLEMENTATION",
+  "repository": "nguyenbui5701/BionicButterfly",
+  "source_baseline_commit": "f378ec294a4a05887b03a9431696994dc22c0a4f",
+  "files": [
+    {
+      "path": "Design/156_G0A1_DIAGNOSTIC_V1_APPROVAL_AND_TASK001_RELEASE.md",
+      "sha256": "4fc688faf96691f8fa786e74e57805911104a293cc0a90610dc1539a8242fc9f",
+      "bytes": 5317
+    },
+    {
+      "path": "Task/TASK-001_HOST_PREFLIGHT_M0.md",
+      "sha256": "c8eadc933f4c074436ada9caf5870b06827ff5b75c64f9832cba901b6e48833e",
+      "bytes": 18097
+    }
+  ]
+}

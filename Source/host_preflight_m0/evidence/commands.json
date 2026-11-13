@@ -1,0 +1,142 @@
+[
+  {
+    "name": "baseline",
+    "command": [
+      "<PACKAGE>\\.venv\\Scripts\\python.exe",
+      "scripts/verify_baseline.py"
+    ],
+    "exit_code": 0,
+    "log": "baseline.log"
+  },
+  {
+    "name": "editable-install",
+    "command": [
+      "<PACKAGE>\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pip",
+      "install",
+      "--disable-pip-version-check",
+      "--no-index",
+      "--no-deps",
+      "--no-build-isolation",
+      "-e",
+      "."
+    ],
+    "exit_code": 0,
+    "log": "editable-install.log"
+  },
+  {
+    "name": "dependency-check",
+    "command": [
+      "<PACKAGE>\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pip",
+      "check"
+    ],
+    "exit_code": 0,
+    "log": "dependency-check.log"
+  },
+  {
+    "name": "compile",
+    "command": [
+      "<PACKAGE>\\.venv\\Scripts\\python.exe",
+      "-m",
+      "compileall",
+      "-q",
+      "src",
+      "tests",
+      "scripts"
+    ],
+    "exit_code": 0,
+    "log": "compile.log"
+  },
+  {
+    "name": "pytest",
+    "command": [
+      "<PACKAGE>\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "--junitxml=evidence/pytest.xml"
+    ],
+    "exit_code": 0,
+    "log": "pytest.log"
+  },
+  {
+    "name": "smoke-development",
+    "command": [
+      "<PACKAGE>\\.venv\\Scripts\\python.exe",
+      "scripts/smoke.py"
+    ],
+    "exit_code": 0,
+    "log": "smoke-development.log"
+  },
+  {
+    "name": "build",
+    "command": [
+      "<PACKAGE>\\.venv\\Scripts\\python.exe",
+      "-m",
+      "build",
+      "--no-isolation"
+    ],
+    "exit_code": 0,
+    "log": "build.log"
+  },
+  {
+    "name": "test-environment",
+    "command": [
+      "<PACKAGE>\\.venv\\Scripts\\python.exe",
+      "-m",
+      "venv",
+      ".test-env"
+    ],
+    "exit_code": 0,
+    "log": "test-environment.log"
+  },
+  {
+    "name": "wheel-install",
+    "command": [
+      "<PACKAGE>\\.test-env\\Scripts\\python.exe",
+      "-m",
+      "pip",
+      "install",
+      "--disable-pip-version-check",
+      "--no-index",
+      "--no-deps",
+      "--force-reinstall",
+      "dist/bb_host_preflight_m0-0.1.0-py3-none-any.whl"
+    ],
+    "exit_code": 0,
+    "log": "wheel-install.log"
+  },
+  {
+    "name": "wheel-dependency-check",
+    "command": [
+      "<PACKAGE>\\.test-env\\Scripts\\python.exe",
+      "-m",
+      "pip",
+      "check"
+    ],
+    "exit_code": 0,
+    "log": "wheel-dependency-check.log"
+  },
+  {
+    "name": "smoke-installed-wheel",
+    "command": [
+      "<PACKAGE>\\.test-env\\Scripts\\python.exe",
+      "scripts/smoke.py"
+    ],
+    "exit_code": 0,
+    "log": "smoke-installed-wheel.log"
+  },
+  {
+    "name": "wheel-location",
+    "command": [
+      "<PACKAGE>\\.test-env\\Scripts\\python.exe",
+      "-c",
+      "import bb_host_preflight_m0; print(bb_host_preflight_m0.__file__)"
+    ],
+    "exit_code": 0,
+    "log": "wheel-location.log"
+  }
+]
