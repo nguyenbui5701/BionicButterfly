@@ -1,0 +1,22 @@
+Processing <REPOSITORY>\source\host_safety_priority_kernel\.cache\verify-4wrwo018\dependencies\bb_host_preflight_m0-0.1.0-py3-none-any.whl
+Processing <REPOSITORY>\source\host_safety_priority_kernel\.cache\verify-4wrwo018\dependencies\bb_host_virtual_ticks-0.1.0-py3-none-any.whl
+Processing <REPOSITORY>\source\host_safety_priority_kernel\.cache\verify-4wrwo018\dependencies\bb_host_batch_observations-0.1.0-py3-none-any.whl
+Processing <REPOSITORY>\source\host_safety_priority_kernel\.cache\verify-4wrwo018\dependencies\bb_host_temporal_guard_facts-0.1.0-py3-none-any.whl
+Installing collected packages: bb-host-virtual-ticks, bb-host-temporal-guard-facts, bb-host-preflight-m0, bb-host-batch-observations
+  Attempting uninstall: bb-host-virtual-ticks
+    Found existing installation: bb-host-virtual-ticks 0.1.0
+    Uninstalling bb-host-virtual-ticks-0.1.0:
+      Successfully uninstalled bb-host-virtual-ticks-0.1.0
+  Attempting uninstall: bb-host-temporal-guard-facts
+    Found existing installation: bb-host-temporal-guard-facts 0.1.0
+    Uninstalling bb-host-temporal-guard-facts-0.1.0:
+      Successfully uninstalled bb-host-temporal-guard-facts-0.1.0
+  Attempting uninstall: bb-host-preflight-m0
+    Found existing installation: bb-host-preflight-m0 0.1.0
+    Uninstalling bb-host-preflight-m0-0.1.0:
+      Successfully uninstalled bb-host-preflight-m0-0.1.0
+  Attempting uninstall: bb-host-batch-observations
+    Found existing installation: bb-host-batch-observations 0.1.0
+    Uninstalling bb-host-batch-observations-0.1.0:
+      Successfully uninstalled bb-host-batch-observations-0.1.0
+Successfully installed bb-host-batch-observations-0.1.0 bb-host-preflight-m0-0.1.0 bb-host-temporal-guard-facts-0.1.0 bb-host-virtual-ticks-0.1.0

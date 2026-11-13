@@ -1,0 +1,176 @@
+{
+  "files": [
+    {
+      "path": "Source/host_safety_priority_kernel/.gitignore",
+      "sha256": "ae2f55b618854ee18fd5cf4ca575b330e4f30650586d918f09306eff73770bab"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/MANIFEST.in",
+      "sha256": "6ef2d9e05aba91fa839f2237f3ae223cedab0a06c691f8578bb19277aa48657e"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/README.md",
+      "sha256": "5ecf463ffc7981e6baa6d0490a5e2a873bf3d08e5a9bc0748ef28ab370443810"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/PR_HANDOFF.md",
+      "sha256": "45d27b37a57db075f5ed4dbcf6dd55856607acd153a3c58113ee3a6f0afc478d"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/REPORT.md",
+      "sha256": "1749c3cc36e927e2ff4a9e675a26df30545910db8de31f9031828f39cdbf6ca6"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/baseline.json",
+      "sha256": "d54f368bef954dd1e7a125e14528caf09b47bc5908cf9adff49887f738d40f0f"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/build-task001.log",
+      "sha256": "5d5a9d874d6a260d2f488a8d9b4b62962aebb2ca9afa58fae6583b8d372a22f5"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/build-task002.log",
+      "sha256": "8aac76b6a476d1f33314dea53c085b2905f4622eeea44ea80df6b6c060c491dd"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/build-task003.log",
+      "sha256": "983a5951dd3d4edff30d51785fb88dcefbe30d460d553779bbb3790646f5f28c"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/build-task004.log",
+      "sha256": "53f9014decd4fdfd13c914885658c39c1f9d503b12146fc573f09f4a2271c733"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/build.log",
+      "sha256": "e76a70bf6335aae0a9d31621e655fc0e9c28b2c96280552781659983efae3a44"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/commands.json",
+      "sha256": "7d98b58ce0598a1ef238c02ae20cdb9f57a7f1fa7ad456d2dc9166c20fa4c30d"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/dependencies.log",
+      "sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/environment.json",
+      "sha256": "bc8bad32695c20fb5aa4630c657dc7aae0f8af3f6770925ce55e61bf94a569a9"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/install-prerequisites.log",
+      "sha256": "ec0fb0f646faca094779adb8b8b01e68f8eb0504ff3618286ae8a7c8f57715ff"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/install.log",
+      "sha256": "42cea4654d1d1b371afd62ecb6bd126a90c83c4174586c50588922c0fed3997b"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/smoke.log",
+      "sha256": "d0743dd57dc85541e68484f60d8d3811e8558987a860ad16141cec146241b569"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/task001-regression.log",
+      "sha256": "f3605e3b80186270248297cb4172cada90c7e02b03275c2c7e8d4376596f72a4"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/task001-regression.xml",
+      "sha256": "8dc75a0e564fad55698f3799931c95c221f99db0fed25ce751fe5855f4836797"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/task002-regression.log",
+      "sha256": "889225084b9a2159fdf6b51c9df0f8b22bb8f6eeb693bc8fa7209b2a30730d99"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/task002-regression.xml",
+      "sha256": "9008a42c95ffa9f3a5c2e773802fe24a38c4a80530223ee4b1ee9ec1b24cc97f"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/task003-regression.log",
+      "sha256": "86074ad280f9ab74186e988aa13585b2f0d42df6d8f15a42cc0db86e793f8442"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/task003-regression.xml",
+      "sha256": "73fa7a28a031355efef89cfd9541801104ff586ae9ddd2bd0ec17f5a943b2103"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/task004-regression.log",
+      "sha256": "488dcd45b973229892b921d95b07bbc184804229ad833e871d9a523494dffc80"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/task004-regression.xml",
+      "sha256": "12cc7e21f100d6382d647f6fda07c18e6f5608f5d0bd889a35063005e2a34a9d"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/tests.log",
+      "sha256": "fb53b7216958e4c7f150d80b945018f08da524a21c5047d9ca2468f7f40eec7c"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/tests.xml",
+      "sha256": "c5d1632214b2e34c842658609465059a89c4acbc835bb7797d417877112faa78"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/wheel-dependencies.log",
+      "sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/wheel-environment.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/wheel-install.log",
+      "sha256": "0234eda37bdbd15ce77af260a2672a445e78380aa2904a4df5725c674eedf2a2"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/wheel-smoke.log",
+      "sha256": "d0743dd57dc85541e68484f60d8d3811e8558987a860ad16141cec146241b569"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/pyproject.toml",
+      "sha256": "f26dd48b05d6502293c365da34044695026fd5df6e87c8582d0718568b31e226"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/scripts/__init__.py",
+      "sha256": "8f3965bd475fe8321127518508daa4a93ff6739b33b802636bd05f55c6018a02"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/scripts/scenarios.py",
+      "sha256": "8607eeaee24bc91ce3157da0768781c14d7a54ba50a50136f7d359c597b3b53c"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/scripts/smoke.py",
+      "sha256": "bea95cc64c5efc01f3a34b7f1684e911df339b0d4ed52c26f0c9b0633d965fd0"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/scripts/verify.py",
+      "sha256": "1cb1523c425ab65f5162cc402ea3eb926d9249a6b2086f5f17fdc2cf559f2e97"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/src/bb_host_safety_priority_kernel/__init__.py",
+      "sha256": "c202efb2a95496b6c7bf825c8387c385ea58eaf2dee9e349564152016c059ebd"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/src/bb_host_safety_priority_kernel/priority.py",
+      "sha256": "953e68ccafedede8f778d40b43c10980a52dbd197c562b627363753ee4c38756"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/tests/conftest.py",
+      "sha256": "5304ee5bfdb9cac1d7288cf7ecfc7534e844cea22a8d4f3e2e41c78029a5d860"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/tests/test_oracles.py",
+      "sha256": "ecdd35f31baed788ed12f8cffabb569a8353ddb845480fb8e9f5e453e9d36066"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/tests/test_priority.py",
+      "sha256": "d3a88e5a0740ae3d9dabda058a5ae2c77c79cbc3170f16e2af55d4f31dcbcc7c"
+    }
+  ],
+  "inventory_excludes_itself": true,
+  "hash_basis": "Git index blob bytes after text EOL normalization",
+  "scope_audit": "PASS: 43 task source/evidence files plus 6 unchanged owner release artifacts; unrelated TASK-001 edit excluded and preserved",
+  "test_summary": "654 PASS, 0 FAIL, 0 ERROR, 0 SKIP; dev/wheel smoke 12/12 each; all commands exit 0; all 22 oracles individually verified in JUnit"
+}

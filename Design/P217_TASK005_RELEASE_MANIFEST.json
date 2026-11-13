@@ -1,0 +1,40 @@
+{
+  "artifact": "BionicButterfly Phase 2.17 — TASK-005 Safety Priority Kernel Stage C1",
+  "scope": "PC_SIM_ONLY",
+  "source_main_commit": "efe7fa3aff1beeb01af98b98a06593bd8e7af192",
+  "merged_pr4_head": "1bf8333518ad9078ceefff28fd1d01036e7bcf1e",
+  "status": "SA_DESIGN_AND_TASK_ONLY; NO_DEVELOPER_RUNTIME_EXECUTION",
+  "oracle_count": 22,
+  "files": [
+    {
+      "path": "Design/166_TASK004_CLOSEOUT_AND_TASK005_BASELINE.md",
+      "bytes": 2949,
+      "sha256": "fbbfa8b6215dd2c19f15a1679c27eaa4e551049060b88385fe432c96950d9470",
+      "git_blob_sha1": "31e687038ddd328b4396a62684ea1356debf7b77"
+    },
+    {
+      "path": "Design/167_G0A1_SAFETY_PRIORITY_KERNEL_STAGE_C1_CONTRACT.md",
+      "bytes": 9429,
+      "sha256": "6f0a2aff2573bf7c40346c6262da4949f318b5ec91b5f471c8265a11beb6b333",
+      "git_blob_sha1": "160d2773df5f68192e7c1638c7be8652144bf904"
+    },
+    {
+      "path": "Design/168_TASK005_PRIORITY_KERNEL_ORACLES_AND_REVIEW.md",
+      "bytes": 4038,
+      "sha256": "d67465d55646e32575fa5ead135fa01d0fe2d3b5ca4a33548d3cb9cf34300c18",
+      "git_blob_sha1": "1c9daf9285f5322d41b5bfc9b6fe3a59c0d4f67e"
+    },
+    {
+      "path": "Design/fixtures/P217_SAFETY_PRIORITY_ORACLE_INDEX.json",
+      "bytes": 20576,
+      "sha256": "dd5ca1fff04be47f88b93815a0ce90cfc4b2e95f59e667de5ecf0d5db5210dae",
+      "git_blob_sha1": "6cb915ad33571e3452e5a8d28a6a85a9a97df7ab"
+    },
+    {
+      "path": "Task/TASK-005_HOST_SAFETY_PRIORITY_KERNEL.md",
+      "bytes": 7673,
+      "sha256": "c27c4acdf61a380de8d635e880d6dac8c2ad564ba2a32b7183dce3d397670c92",
+      "git_blob_sha1": "6a2d85f6d2a9b7dfe7e0f52194a59dfc83f56536"
+    }
+  ]
+}
