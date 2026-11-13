@@ -14,11 +14,11 @@
     },
     {
       "path": "Source/host_arm_qualification/evidence/PR_HANDOFF.md",
-      "sha256": "56a5a3e513db213958ee623c45732c2308f7a8371f186ad461d72480abdfea9d"
+      "sha256": "7a61f6f4354cf41db5c2f824c20b4f91ac95f8d5b9159fa4ea012b59702d9a5b"
     },
     {
       "path": "Source/host_arm_qualification/evidence/REPORT.md",
-      "sha256": "32cbad21579d3b8e5a37aea29b84242413f96b7f9cf57dbcce3785b7c8472551"
+      "sha256": "0f3fcba804b98667f707db155e3f9432c933e67821cea16df017dbe71ce2c034"
     },
     {
       "path": "Source/host_arm_qualification/evidence/baseline.json",

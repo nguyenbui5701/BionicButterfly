@@ -2,7 +2,7 @@
 
 Owner confirmed UAT PASS and authorized this PR into main on 2026-11-13.
 Ready for Solution Architect review; developer does not merge.
-Branch: `feature/TASK-006-host-arm-qualification`.
+Branch: `feature/TASK-006`.
 Baseline: `f2c9237bd4a1e2e077c15db6eb4c22ed2a250d5d` (merged PR #5), verified against origin/main.
 Accepted implementation: `66be76cf8cedf32a90ee6de770bd362f3613edda`.
 The handoff commit updates documentation/evidence and tracks original release

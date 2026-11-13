@@ -1,6 +1,6 @@
 # TASK-006 — READY FOR OWNER UAT
 
-Date: 2026-11-13 (Asia/Saigon). Branch: `feature/TASK-006-host-arm-qualification`.
+Date: 2026-11-13 (Asia/Saigon). Branch: `feature/TASK-006`.
 Pinned parent: `f2c9237bd4a1e2e077c15db6eb4c22ed2a250d5d` (merged PR #5).
 Scope: Design/170 ARM Qualification Proposals Stage C2, PC_SIM_ONLY.
 Owner confirmed UAT PASS and authorized the PR into main on 2026-11-13.
