@@ -1,0 +1,17 @@
+Obtaining file:///<REPOSITORY>/Source/host_health_evidence
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: bb-host-health-evidence
+  Building editable for bb-host-health-evidence (pyproject.toml): started
+  Building editable for bb-host-health-evidence (pyproject.toml): finished with status 'done'
+  Created wheel for bb-host-health-evidence: filename=bb_host_health_evidence-0.1.0-0.editable-py3-none-any.whl size=2905 sha256=0d85c950566d7e364c092c5d24ddc500cfd8b11987422b0ebdb285c1856b8220
+  Stored in directory: <USERPROFILE>\AppData\Local\Temp\pip-ephem-wheel-cache-bz_3w80y\wheels\89\ba\7e\73c4721fc598c1bdc8c121486ab8bd56157a4cecc4ae5aabff
+Successfully built bb-host-health-evidence
+Installing collected packages: bb-host-health-evidence
+  Attempting uninstall: bb-host-health-evidence
+    Found existing installation: bb-host-health-evidence 0.1.0
+    Uninstalling bb-host-health-evidence-0.1.0:
+      Successfully uninstalled bb-host-health-evidence-0.1.0
+Successfully installed bb-host-health-evidence-0.1.0

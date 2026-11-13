@@ -1,0 +1,230 @@
+{
+  "commands": [
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_health_evidence\\.venv\\Scripts\\python.exe",
+        "-m",
+        "build",
+        "--wheel",
+        "--no-isolation",
+        "--outdir",
+        "<REPOSITORY>\\Source\\host_health_evidence\\.cache\\verify-l1jfftdg\\dependencies",
+        "<REPOSITORY>\\Source\\host_health_evidence\\.cache\\verify-l1jfftdg\\source\\host_preflight_m0"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_health_evidence",
+      "exit_code": 0,
+      "log": "build-task001.log",
+      "name": "build-task001"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_health_evidence\\.venv\\Scripts\\python.exe",
+        "-m",
+        "build",
+        "--wheel",
+        "--no-isolation",
+        "--outdir",
+        "<REPOSITORY>\\Source\\host_health_evidence\\.cache\\verify-l1jfftdg\\dependencies",
+        "<REPOSITORY>\\Source\\host_health_evidence\\.cache\\verify-l1jfftdg\\source\\host_virtual_ticks"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_health_evidence",
+      "exit_code": 0,
+      "log": "build-task002.log",
+      "name": "build-task002"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_health_evidence\\.venv\\Scripts\\python.exe",
+        "-m",
+        "build",
+        "--wheel",
+        "--no-isolation",
+        "--outdir",
+        "<REPOSITORY>\\Source\\host_health_evidence\\.cache\\verify-l1jfftdg\\dependencies",
+        "<REPOSITORY>\\Source\\host_health_evidence\\.cache\\verify-l1jfftdg\\source\\host_batch_observations"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_health_evidence",
+      "exit_code": 0,
+      "log": "build-task003.log",
+      "name": "build-task003"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_health_evidence\\.venv\\Scripts\\python.exe",
+        "-m",
+        "build",
+        "--wheel",
+        "--no-isolation",
+        "--outdir",
+        "<REPOSITORY>\\Source\\host_health_evidence\\.cache\\verify-l1jfftdg\\dependencies",
+        "<REPOSITORY>\\Source\\host_health_evidence\\.cache\\verify-l1jfftdg\\source\\host_temporal_guard_facts"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_health_evidence",
+      "exit_code": 0,
+      "log": "build-task004.log",
+      "name": "build-task004"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_health_evidence\\.venv\\Scripts\\python.exe",
+        "-m",
+        "build",
+        "--wheel",
+        "--no-isolation",
+        "--outdir",
+        "<REPOSITORY>\\Source\\host_health_evidence\\.cache\\verify-l1jfftdg\\dependencies",
+        "<REPOSITORY>\\Source\\host_health_evidence\\.cache\\verify-l1jfftdg\\source\\host_safety_priority_kernel"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_health_evidence",
+      "exit_code": 0,
+      "log": "build-task005.log",
+      "name": "build-task005"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_health_evidence\\.venv\\Scripts\\python.exe",
+        "-m",
+        "build",
+        "--wheel",
+        "--no-isolation",
+        "--outdir",
+        "<REPOSITORY>\\Source\\host_health_evidence\\.cache\\verify-l1jfftdg\\dependencies",
+        "<REPOSITORY>\\Source\\host_health_evidence\\.cache\\verify-l1jfftdg\\source\\host_arm_qualification"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_health_evidence",
+      "exit_code": 0,
+      "log": "build-task006.log",
+      "name": "build-task006"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_health_evidence\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "install",
+        "--disable-pip-version-check",
+        "--no-index",
+        "--no-deps",
+        "--force-reinstall",
+        "<REPOSITORY>\\Source\\host_health_evidence\\.cache\\verify-l1jfftdg\\dependencies\\bb_host_preflight_m0-0.1.0-py3-none-any.whl",
+        "<REPOSITORY>\\Source\\host_health_evidence\\.cache\\verify-l1jfftdg\\dependencies\\bb_host_virtual_ticks-0.1.0-py3-none-any.whl",
+        "<REPOSITORY>\\Source\\host_health_evidence\\.cache\\verify-l1jfftdg\\dependencies\\bb_host_batch_observations-0.1.0-py3-none-any.whl",
+        "<REPOSITORY>\\Source\\host_health_evidence\\.cache\\verify-l1jfftdg\\dependencies\\bb_host_temporal_guard_facts-0.1.0-py3-none-any.whl",
+        "<REPOSITORY>\\Source\\host_health_evidence\\.cache\\verify-l1jfftdg\\dependencies\\bb_host_safety_priority_kernel-0.1.0-py3-none-any.whl",
+        "<REPOSITORY>\\Source\\host_health_evidence\\.cache\\verify-l1jfftdg\\dependencies\\bb_host_arm_qualification-0.1.0-py3-none-any.whl"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_health_evidence",
+      "exit_code": 0,
+      "log": "install-prerequisites.log",
+      "name": "install-prerequisites"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_health_evidence\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "install",
+        "--disable-pip-version-check",
+        "--no-index",
+        "--no-deps",
+        "--no-build-isolation",
+        "-e",
+        "."
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_health_evidence",
+      "exit_code": 0,
+      "log": "install.log",
+      "name": "install"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_health_evidence\\.venv\\Scripts\\python.exe",
+        "-m",
+        "compileall",
+        "-q",
+        "src",
+        "tests",
+        "scripts"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_health_evidence",
+      "exit_code": 0,
+      "log": "compile.log",
+      "name": "compile"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_health_evidence\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "--junitxml=evidence/tests.xml"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_health_evidence",
+      "exit_code": 0,
+      "log": "tests.log",
+      "name": "tests"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_health_evidence\\.venv\\Scripts\\python.exe",
+        "scripts/smoke.py"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_health_evidence",
+      "exit_code": 0,
+      "log": "smoke.log",
+      "name": "smoke"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_health_evidence\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_health_evidence",
+      "exit_code": 0,
+      "log": "dependencies.log",
+      "name": "dependencies"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_health_evidence\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests",
+        "--junitxml=<REPOSITORY>\\Source\\host_health_evidence\\evidence\\task001-regression.xml"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_preflight_m0",
+      "exit_code": 2,
+      "log": "task001-regression.log",
+      "name": "task001-regression"
+    }
+  ],
+  "error": "SystemExit: 2",
+  "failed_command": "task001-regression",
+  "revision": {
+    "branch": "feature/TASK-007-host-health-evidence",
+    "files": {
+      "MANIFEST.in": "6ef2d9e05aba91fa839f2237f3ae223cedab0a06c691f8578bb19277aa48657e",
+      "pyproject.toml": "9b5e255435a6bbc515684e98e18b25f05718e04c4ab3e96b3d5e62860e84a017",
+      "scripts/__init__.py": "8f3965bd475fe8321127518508daa4a93ff6739b33b802636bd05f55c6018a02",
+      "scripts/scenarios.py": "2ba4c41d1f8d9ab9f8b0f4cc5da759dddbef9e538254dacba77995a200a637c8",
+      "scripts/smoke.py": "2ffac1b04f0bc04509b9d7efdd783d478854124893327e52f39814aa97080981",
+      "scripts/verify.py": "d61d13db033db85b14e727f085a04f59037082f3f0f3c2d6f60bdaf11fcb0a04",
+      "src/bb_host_health_evidence/__init__.py": "444c3ddd8ae6328360abf25fcd85ebe39c71f5d5d563a9bc2afb07e54b48fba6",
+      "src/bb_host_health_evidence/health.py": "a228b3a1c046fc71d84b14817098ff9185dcff39457e85e824755dedf2630baa",
+      "tests/conftest.py": "5304ee5bfdb9cac1d7288cf7ecfc7534e844cea22a8d4f3e2e41c78029a5d860",
+      "tests/test_health.py": "19a9171b2bcafa04b4a7ebddaa4dd0be3d12247814314861f7ee05b989b36226",
+      "tests/test_oracles.py": "70ef000a73d7e59d4558eb2d8898f7245dd61ae01180f323e81b644399750a6e"
+    },
+    "head": "a47dc157453547125f5172b4ef165c3b522ff0c8",
+    "source_sha256": "974175d04969df64e753bce7e94602e547f92f756bb021bb04a94a8b12e494e1"
+  },
+  "status": "FAIL"
+}
