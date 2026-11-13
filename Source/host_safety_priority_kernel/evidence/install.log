@@ -6,8 +6,12 @@ Obtaining file:///<REPOSITORY>/Source/host_safety_priority_kernel
 Building wheels for collected packages: bb-host-safety-priority-kernel
   Building editable for bb-host-safety-priority-kernel (pyproject.toml): started
   Building editable for bb-host-safety-priority-kernel (pyproject.toml): finished with status 'done'
-  Created wheel for bb-host-safety-priority-kernel: filename=bb_host_safety_priority_kernel-0.1.0-0.editable-py3-none-any.whl size=3473 sha256=1b9bbe11f80623f11567e0f6a1880eccfcfad78fad852a85348104285777e55f
-  Stored in directory: <USERPROFILE>\AppData\Local\Temp\pip-ephem-wheel-cache-99m_930y\wheels\d1\7e\d6\dfa4586900d9f72244d9c44a0f32bd7e095b1d0ef86e1418c9
+  Created wheel for bb-host-safety-priority-kernel: filename=bb_host_safety_priority_kernel-0.1.0-0.editable-py3-none-any.whl size=3525 sha256=010dd9538424d58feb80ada46a5be4c1131293ca32d9f528f8e771f8d5bc6f12
+  Stored in directory: <USERPROFILE>\AppData\Local\Temp\pip-ephem-wheel-cache-pew4tev3\wheels\d1\7e\d6\dfa4586900d9f72244d9c44a0f32bd7e095b1d0ef86e1418c9
 Successfully built bb-host-safety-priority-kernel
 Installing collected packages: bb-host-safety-priority-kernel
+  Attempting uninstall: bb-host-safety-priority-kernel
+    Found existing installation: bb-host-safety-priority-kernel 0.1.0
+    Uninstalling bb-host-safety-priority-kernel-0.1.0:
+      Successfully uninstalled bb-host-safety-priority-kernel-0.1.0
 Successfully installed bb-host-safety-priority-kernel-0.1.0

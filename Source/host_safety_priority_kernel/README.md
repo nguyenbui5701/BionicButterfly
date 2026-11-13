@@ -14,7 +14,8 @@ Open PowerShell at `BionicButterfly/Source/host_safety_priority_kernel`:
 ```
 
 The prepared `.venv` uses Python 3.11.15. Actual results, AC-01..10 evidence and
-limits are in `evidence/REPORT.md`. Owner UAT and explicit PR permission pending.
+limits are in `evidence/REPORT.md`. Owner UAT PASS accepted and PR into main explicitly authorized. SA review and
+owner merge decision pending. See `evidence/PR_HANDOFF.md`.
 
 ## API and exact scope
 
