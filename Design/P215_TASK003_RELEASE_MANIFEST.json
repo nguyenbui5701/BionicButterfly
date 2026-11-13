@@ -1,0 +1,42 @@
+{
+  "artifact": "BionicButterfly Phase 2.15 / TASK-003 SafetySupervisor Stage A",
+  "repo": "nguyenbui5701/BionicButterfly",
+  "source_baseline_commit": "12b4ee1355d146080810d028843d24481f88af77",
+  "pr2_merge_verified": true,
+  "scope": "PC_SIM_ONLY",
+  "status": "SA_DESIGN_TASK_RELEASE_NOT_RUNTIME",
+  "oracle_cases": 18,
+  "authoring_qa": "18 independent static pseudo-oracle calculations passed; no Developer runtime tests performed",
+  "files": [
+    {
+      "path": "Design/160_TASK002_MERGE_CLOSEOUT_AND_TASK003_BASELINE.md",
+      "bytes": 2330,
+      "sha256": "5c820aa1b8c78e590e5a6555fec2bb515c33e17401a247540509938308c4c184",
+      "git_blob_sha1": "f8918b224510c61e95e163b0c273f52d6eb5fd54"
+    },
+    {
+      "path": "Design/161_G0A1_TICK_OBSERVATION_NORMALIZATION_CONTRACT.md",
+      "bytes": 6222,
+      "sha256": "1948f4ecf84718ae51ac90b20b8c7962be8ecdb974382fa8c5ecce0f756423e1",
+      "git_blob_sha1": "8e503343242c70473d8b0e593cdda2de6dce41be"
+    },
+    {
+      "path": "Design/162_G0A1_TASK003_NORMALIZER_ORACLES_AND_REVIEW.md",
+      "bytes": 3252,
+      "sha256": "6b5f8d744b2c2f1bdd35dc857e2bb471bb8ff3d11ab8d1c0901066f48b42793f",
+      "git_blob_sha1": "ed1038fa15447f8d67b321d787175ceeeb98bef5"
+    },
+    {
+      "path": "Design/fixtures/P215_BATCH_NORMALIZER_ORACLE_INDEX.json",
+      "bytes": 27290,
+      "sha256": "0155870472190ef30f66fe849e0418930b90241373b3ebe8388e4e236c53aea2",
+      "git_blob_sha1": "8eb8c1c99c3152e24eaaffdd1b54475738f89359"
+    },
+    {
+      "path": "Task/TASK-003_HOST_BATCH_OBSERVATION_NORMALIZER.md",
+      "bytes": 6444,
+      "sha256": "d61ba82a1056d887e4bd53168d9c97aa56ee56ce995eca18b1c2bec99da5b58e",
+      "git_blob_sha1": "f30ca2f39dfa1e6970d05ba9932901bd9c50e99e"
+    }
+  ]
+}

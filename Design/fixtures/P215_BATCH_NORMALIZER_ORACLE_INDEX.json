@@ -1,0 +1,1072 @@
+{
+  "schema_version": 1,
+  "scope": "PC_SIM_ONLY",
+  "baseline_commit": "12b4ee1355d146080810d028843d24481f88af77",
+  "status": "DESIGN_ORACLES_NOT_RUNTIME_PASS",
+  "total": 18,
+  "recipe_semantics": {
+    "base": "Design/fixtures/P210_MINIMAL_WIRE_V2.json",
+    "events": "Replace base events by pseudo events. id => event_id; at_us => event_at_us; emit type/payload from kind mapping. All scenarios are PC_SIM, SIM_ONLY, config_id sim-only-c0-v1, 5ms clock, duration 15000, exactly BOOT at T0.",
+    "kind_mapping": {
+      "BOOT": "BOOT with {}",
+      "CONTROL_VALID": "SIM_CONTROL_FRAME VALID with arm_switch, flap_demand=flap_token, steering_demand=steer_token, map_revision=sim-map-v1",
+      "CONTROL_INVALID": "SIM_CONTROL_FRAME INVALID with payload {uart_frame_status:INVALID}",
+      "RF_HEALTHY": "SIM_RF_STATUS {rf_health:HEALTHY,rf_provenance:INJECTED_SIM}",
+      "RF_LOST": "SIM_RF_STATUS {rf_health:LOST,rf_provenance:INJECTED_SIM}",
+      "RF_UNKNOWN": "SIM_RF_STATUS {rf_health:UNKNOWN,rf_provenance:INJECTED_SIM}",
+      "RESET": "SIM_RESET {}",
+      "ACK": "SIM_ACK_FAULT {}",
+      "CATA": "SIM_CATASTROPHIC_FAULT {}"
+    },
+    "numbers": "Encode flap_token/steer_token as raw UNQUOTED JSON numeric tokens; do not go through Python float. Expected semantic_control decimals compared mathematically exactly, not by string format.",
+    "groups": "Valid-control group order = first source appearance; group members source order but group IDs sorted unsigned UTF8."
+  },
+  "cases": [
+    {
+      "id": "P215-T01",
+      "name": "boot_only",
+      "duration_us": 15000,
+      "events": [
+        {
+          "id": "boot",
+          "at_us": 0,
+          "kind": "BOOT"
+        }
+      ],
+      "target_tick_us": 0,
+      "expected": {
+        "source_ids": [
+          "boot"
+        ],
+        "causal_ids_utf8_sorted": [
+          "boot"
+        ],
+        "valid_control_groups": [],
+        "invalid_control_event_ids_utf8_sorted": [],
+        "rf_observation_statuses": [],
+        "flags": {
+          "has_invalid_control": false,
+          "has_distinct_valid_control_conflict": false,
+          "has_duplicate_semantic_control": false,
+          "rf_has_healthy": false,
+          "rf_has_lost": false,
+          "rf_has_unknown": false,
+          "has_boot": true,
+          "has_reset": false,
+          "has_ack": false,
+          "has_catastrophe": false
+        }
+      },
+      "notes": ""
+    },
+    {
+      "id": "P215-T02",
+      "name": "empty_tick",
+      "duration_us": 15000,
+      "events": [
+        {
+          "id": "boot",
+          "at_us": 0,
+          "kind": "BOOT"
+        }
+      ],
+      "target_tick_us": 5000,
+      "expected": {
+        "source_ids": [],
+        "causal_ids_utf8_sorted": [],
+        "valid_control_groups": [],
+        "invalid_control_event_ids_utf8_sorted": [],
+        "rf_observation_statuses": [],
+        "flags": {
+          "has_invalid_control": false,
+          "has_distinct_valid_control_conflict": false,
+          "has_duplicate_semantic_control": false,
+          "rf_has_healthy": false,
+          "rf_has_lost": false,
+          "rf_has_unknown": false,
+          "has_boot": false,
+          "has_reset": false,
+          "has_ack": false,
+          "has_catastrophe": false
+        }
+      },
+      "notes": ""
+    },
+    {
+      "id": "P215-T03",
+      "name": "single_valid_low",
+      "duration_us": 15000,
+      "events": [
+        {
+          "id": "boot",
+          "at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "low",
+          "at_us": 4000,
+          "kind": "CONTROL_VALID",
+          "arm": false,
+          "flap_token": "0",
+          "steer_token": "0"
+        }
+      ],
+      "target_tick_us": 5000,
+      "expected": {
+        "source_ids": [
+          "low"
+        ],
+        "causal_ids_utf8_sorted": [
+          "low"
+        ],
+        "valid_control_groups": [
+          {
+            "member_ids_utf8_sorted": [
+              "low"
+            ],
+            "latest_original_at_us": 4000,
+            "semantic_control": {
+              "arm_switch": false,
+              "flap_exact": "0",
+              "steer_exact": "0",
+              "map_revision": "sim-map-v1"
+            }
+          }
+        ],
+        "invalid_control_event_ids_utf8_sorted": [],
+        "rf_observation_statuses": [],
+        "flags": {
+          "has_invalid_control": false,
+          "has_distinct_valid_control_conflict": false,
+          "has_duplicate_semantic_control": false,
+          "rf_has_healthy": false,
+          "rf_has_lost": false,
+          "rf_has_unknown": false,
+          "has_boot": false,
+          "has_reset": false,
+          "has_ack": false,
+          "has_catastrophe": false
+        }
+      },
+      "notes": ""
+    },
+    {
+      "id": "P215-T04",
+      "name": "single_valid_high",
+      "duration_us": 15000,
+      "events": [
+        {
+          "id": "boot",
+          "at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "hi",
+          "at_us": 5000,
+          "kind": "CONTROL_VALID",
+          "arm": true,
+          "flap_token": "0.01",
+          "steer_token": "-0.05"
+        }
+      ],
+      "target_tick_us": 5000,
+      "expected": {
+        "source_ids": [
+          "hi"
+        ],
+        "causal_ids_utf8_sorted": [
+          "hi"
+        ],
+        "valid_control_groups": [
+          {
+            "member_ids_utf8_sorted": [
+              "hi"
+            ],
+            "latest_original_at_us": 5000,
+            "semantic_control": {
+              "arm_switch": true,
+              "flap_exact": "0.01",
+              "steer_exact": "-0.05",
+              "map_revision": "sim-map-v1"
+            }
+          }
+        ],
+        "invalid_control_event_ids_utf8_sorted": [],
+        "rf_observation_statuses": [],
+        "flags": {
+          "has_invalid_control": false,
+          "has_distinct_valid_control_conflict": false,
+          "has_duplicate_semantic_control": false,
+          "rf_has_healthy": false,
+          "rf_has_lost": false,
+          "rf_has_unknown": false,
+          "has_boot": false,
+          "has_reset": false,
+          "has_ack": false,
+          "has_catastrophe": false
+        }
+      },
+      "notes": ""
+    },
+    {
+      "id": "P215-T05",
+      "name": "same_body_two_ids",
+      "duration_us": 15000,
+      "events": [
+        {
+          "id": "boot",
+          "at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "z_eq",
+          "at_us": 5001,
+          "kind": "CONTROL_VALID",
+          "arm": false,
+          "flap_token": "0.25",
+          "steer_token": "0"
+        },
+        {
+          "id": "a_eq",
+          "at_us": 9999,
+          "kind": "CONTROL_VALID",
+          "arm": false,
+          "flap_token": "0.25",
+          "steer_token": "0"
+        }
+      ],
+      "target_tick_us": 10000,
+      "expected": {
+        "source_ids": [
+          "z_eq",
+          "a_eq"
+        ],
+        "causal_ids_utf8_sorted": [
+          "a_eq",
+          "z_eq"
+        ],
+        "valid_control_groups": [
+          {
+            "member_ids_utf8_sorted": [
+              "a_eq",
+              "z_eq"
+            ],
+            "latest_original_at_us": 9999,
+            "semantic_control": {
+              "arm_switch": false,
+              "flap_exact": "0.25",
+              "steer_exact": "0",
+              "map_revision": "sim-map-v1"
+            }
+          }
+        ],
+        "invalid_control_event_ids_utf8_sorted": [],
+        "rf_observation_statuses": [],
+        "flags": {
+          "has_invalid_control": false,
+          "has_distinct_valid_control_conflict": false,
+          "has_duplicate_semantic_control": true,
+          "rf_has_healthy": false,
+          "rf_has_lost": false,
+          "rf_has_unknown": false,
+          "has_boot": false,
+          "has_reset": false,
+          "has_ack": false,
+          "has_catastrophe": false
+        }
+      },
+      "notes": ""
+    },
+    {
+      "id": "P215-T06",
+      "name": "different_valid_controls",
+      "duration_us": 15000,
+      "events": [
+        {
+          "id": "boot",
+          "at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "c_a",
+          "at_us": 6100,
+          "kind": "CONTROL_VALID",
+          "arm": false,
+          "flap_token": "0.2",
+          "steer_token": "0"
+        },
+        {
+          "id": "c_b",
+          "at_us": 6200,
+          "kind": "CONTROL_VALID",
+          "arm": true,
+          "flap_token": "0.2",
+          "steer_token": "0"
+        }
+      ],
+      "target_tick_us": 10000,
+      "expected": {
+        "source_ids": [
+          "c_a",
+          "c_b"
+        ],
+        "causal_ids_utf8_sorted": [
+          "c_a",
+          "c_b"
+        ],
+        "valid_control_groups": [
+          {
+            "member_ids_utf8_sorted": [
+              "c_a"
+            ],
+            "latest_original_at_us": 6100,
+            "semantic_control": {
+              "arm_switch": false,
+              "flap_exact": "0.2",
+              "steer_exact": "0",
+              "map_revision": "sim-map-v1"
+            }
+          },
+          {
+            "member_ids_utf8_sorted": [
+              "c_b"
+            ],
+            "latest_original_at_us": 6200,
+            "semantic_control": {
+              "arm_switch": true,
+              "flap_exact": "0.2",
+              "steer_exact": "0",
+              "map_revision": "sim-map-v1"
+            }
+          }
+        ],
+        "invalid_control_event_ids_utf8_sorted": [],
+        "rf_observation_statuses": [],
+        "flags": {
+          "has_invalid_control": false,
+          "has_distinct_valid_control_conflict": true,
+          "has_duplicate_semantic_control": false,
+          "rf_has_healthy": false,
+          "rf_has_lost": false,
+          "rf_has_unknown": false,
+          "has_boot": false,
+          "has_reset": false,
+          "has_ack": false,
+          "has_catastrophe": false
+        }
+      },
+      "notes": ""
+    },
+    {
+      "id": "P215-T07",
+      "name": "invalid_uart",
+      "duration_us": 15000,
+      "events": [
+        {
+          "id": "boot",
+          "at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "bad",
+          "at_us": 4000,
+          "kind": "CONTROL_INVALID"
+        }
+      ],
+      "target_tick_us": 5000,
+      "expected": {
+        "source_ids": [
+          "bad"
+        ],
+        "causal_ids_utf8_sorted": [
+          "bad"
+        ],
+        "valid_control_groups": [],
+        "invalid_control_event_ids_utf8_sorted": [
+          "bad"
+        ],
+        "rf_observation_statuses": [],
+        "flags": {
+          "has_invalid_control": true,
+          "has_distinct_valid_control_conflict": false,
+          "has_duplicate_semantic_control": false,
+          "rf_has_healthy": false,
+          "rf_has_lost": false,
+          "rf_has_unknown": false,
+          "has_boot": false,
+          "has_reset": false,
+          "has_ack": false,
+          "has_catastrophe": false
+        }
+      },
+      "notes": ""
+    },
+    {
+      "id": "P215-T08",
+      "name": "valid_and_invalid",
+      "duration_us": 15000,
+      "events": [
+        {
+          "id": "boot",
+          "at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "v",
+          "at_us": 4000,
+          "kind": "CONTROL_VALID",
+          "arm": false,
+          "flap_token": "0",
+          "steer_token": "0"
+        },
+        {
+          "id": "bad",
+          "at_us": 4500,
+          "kind": "CONTROL_INVALID"
+        }
+      ],
+      "target_tick_us": 5000,
+      "expected": {
+        "source_ids": [
+          "v",
+          "bad"
+        ],
+        "causal_ids_utf8_sorted": [
+          "bad",
+          "v"
+        ],
+        "valid_control_groups": [
+          {
+            "member_ids_utf8_sorted": [
+              "v"
+            ],
+            "latest_original_at_us": 4000,
+            "semantic_control": {
+              "arm_switch": false,
+              "flap_exact": "0",
+              "steer_exact": "0",
+              "map_revision": "sim-map-v1"
+            }
+          }
+        ],
+        "invalid_control_event_ids_utf8_sorted": [
+          "bad"
+        ],
+        "rf_observation_statuses": [],
+        "flags": {
+          "has_invalid_control": true,
+          "has_distinct_valid_control_conflict": false,
+          "has_duplicate_semantic_control": false,
+          "rf_has_healthy": false,
+          "rf_has_lost": false,
+          "rf_has_unknown": false,
+          "has_boot": false,
+          "has_reset": false,
+          "has_ack": false,
+          "has_catastrophe": false
+        }
+      },
+      "notes": ""
+    },
+    {
+      "id": "P215-T09",
+      "name": "invalid_and_conflict",
+      "duration_us": 15000,
+      "events": [
+        {
+          "id": "boot",
+          "at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "v1",
+          "at_us": 5100,
+          "kind": "CONTROL_VALID",
+          "arm": false,
+          "flap_token": "0",
+          "steer_token": "0"
+        },
+        {
+          "id": "v2",
+          "at_us": 5200,
+          "kind": "CONTROL_VALID",
+          "arm": true,
+          "flap_token": "0",
+          "steer_token": "0"
+        },
+        {
+          "id": "inv",
+          "at_us": 5300,
+          "kind": "CONTROL_INVALID"
+        }
+      ],
+      "target_tick_us": 10000,
+      "expected": {
+        "source_ids": [
+          "v1",
+          "v2",
+          "inv"
+        ],
+        "causal_ids_utf8_sorted": [
+          "inv",
+          "v1",
+          "v2"
+        ],
+        "valid_control_groups": [
+          {
+            "member_ids_utf8_sorted": [
+              "v1"
+            ],
+            "latest_original_at_us": 5100,
+            "semantic_control": {
+              "arm_switch": false,
+              "flap_exact": "0",
+              "steer_exact": "0",
+              "map_revision": "sim-map-v1"
+            }
+          },
+          {
+            "member_ids_utf8_sorted": [
+              "v2"
+            ],
+            "latest_original_at_us": 5200,
+            "semantic_control": {
+              "arm_switch": true,
+              "flap_exact": "0",
+              "steer_exact": "0",
+              "map_revision": "sim-map-v1"
+            }
+          }
+        ],
+        "invalid_control_event_ids_utf8_sorted": [
+          "inv"
+        ],
+        "rf_observation_statuses": [],
+        "flags": {
+          "has_invalid_control": true,
+          "has_distinct_valid_control_conflict": true,
+          "has_duplicate_semantic_control": false,
+          "rf_has_healthy": false,
+          "rf_has_lost": false,
+          "rf_has_unknown": false,
+          "has_boot": false,
+          "has_reset": false,
+          "has_ack": false,
+          "has_catastrophe": false
+        }
+      },
+      "notes": ""
+    },
+    {
+      "id": "P215-T10",
+      "name": "rf_healthy_lost",
+      "duration_us": 15000,
+      "events": [
+        {
+          "id": "boot",
+          "at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "ok",
+          "at_us": 7000,
+          "kind": "RF_HEALTHY"
+        },
+        {
+          "id": "lost",
+          "at_us": 7200,
+          "kind": "RF_LOST"
+        }
+      ],
+      "target_tick_us": 10000,
+      "expected": {
+        "source_ids": [
+          "ok",
+          "lost"
+        ],
+        "causal_ids_utf8_sorted": [
+          "lost",
+          "ok"
+        ],
+        "valid_control_groups": [],
+        "invalid_control_event_ids_utf8_sorted": [],
+        "rf_observation_statuses": [
+          "HEALTHY",
+          "LOST"
+        ],
+        "flags": {
+          "has_invalid_control": false,
+          "has_distinct_valid_control_conflict": false,
+          "has_duplicate_semantic_control": false,
+          "rf_has_healthy": true,
+          "rf_has_lost": true,
+          "rf_has_unknown": false,
+          "has_boot": false,
+          "has_reset": false,
+          "has_ack": false,
+          "has_catastrophe": false
+        }
+      },
+      "notes": ""
+    },
+    {
+      "id": "P215-T11",
+      "name": "rf_unknown_healthy",
+      "duration_us": 15000,
+      "events": [
+        {
+          "id": "boot",
+          "at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "unk",
+          "at_us": 5200,
+          "kind": "RF_UNKNOWN"
+        },
+        {
+          "id": "ok",
+          "at_us": 5300,
+          "kind": "RF_HEALTHY"
+        }
+      ],
+      "target_tick_us": 10000,
+      "expected": {
+        "source_ids": [
+          "unk",
+          "ok"
+        ],
+        "causal_ids_utf8_sorted": [
+          "ok",
+          "unk"
+        ],
+        "valid_control_groups": [],
+        "invalid_control_event_ids_utf8_sorted": [],
+        "rf_observation_statuses": [
+          "UNKNOWN",
+          "HEALTHY"
+        ],
+        "flags": {
+          "has_invalid_control": false,
+          "has_distinct_valid_control_conflict": false,
+          "has_duplicate_semantic_control": false,
+          "rf_has_healthy": true,
+          "rf_has_lost": false,
+          "rf_has_unknown": true,
+          "has_boot": false,
+          "has_reset": false,
+          "has_ack": false,
+          "has_catastrophe": false
+        }
+      },
+      "notes": ""
+    },
+    {
+      "id": "P215-T12",
+      "name": "two_healthy_rf",
+      "duration_us": 15000,
+      "events": [
+        {
+          "id": "boot",
+          "at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "r1",
+          "at_us": 5500,
+          "kind": "RF_HEALTHY"
+        },
+        {
+          "id": "r2",
+          "at_us": 6000,
+          "kind": "RF_HEALTHY"
+        }
+      ],
+      "target_tick_us": 10000,
+      "expected": {
+        "source_ids": [
+          "r1",
+          "r2"
+        ],
+        "causal_ids_utf8_sorted": [
+          "r1",
+          "r2"
+        ],
+        "valid_control_groups": [],
+        "invalid_control_event_ids_utf8_sorted": [],
+        "rf_observation_statuses": [
+          "HEALTHY",
+          "HEALTHY"
+        ],
+        "flags": {
+          "has_invalid_control": false,
+          "has_distinct_valid_control_conflict": false,
+          "has_duplicate_semantic_control": false,
+          "rf_has_healthy": true,
+          "rf_has_lost": false,
+          "rf_has_unknown": false,
+          "has_boot": false,
+          "has_reset": false,
+          "has_ack": false,
+          "has_catastrophe": false
+        }
+      },
+      "notes": ""
+    },
+    {
+      "id": "P215-T13",
+      "name": "cat_reset_ack",
+      "duration_us": 15000,
+      "events": [
+        {
+          "id": "boot",
+          "at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "cat",
+          "at_us": 5000,
+          "kind": "CATA"
+        },
+        {
+          "id": "reset",
+          "at_us": 5000,
+          "kind": "RESET"
+        },
+        {
+          "id": "ack",
+          "at_us": 5000,
+          "kind": "ACK"
+        }
+      ],
+      "target_tick_us": 5000,
+      "expected": {
+        "source_ids": [
+          "cat",
+          "reset",
+          "ack"
+        ],
+        "causal_ids_utf8_sorted": [
+          "ack",
+          "cat",
+          "reset"
+        ],
+        "valid_control_groups": [],
+        "invalid_control_event_ids_utf8_sorted": [],
+        "rf_observation_statuses": [],
+        "flags": {
+          "has_invalid_control": false,
+          "has_distinct_valid_control_conflict": false,
+          "has_duplicate_semantic_control": false,
+          "rf_has_healthy": false,
+          "rf_has_lost": false,
+          "rf_has_unknown": false,
+          "has_boot": false,
+          "has_reset": true,
+          "has_ack": true,
+          "has_catastrophe": true
+        }
+      },
+      "notes": ""
+    },
+    {
+      "id": "P215-T14",
+      "name": "multiple_ack",
+      "duration_us": 15000,
+      "events": [
+        {
+          "id": "boot",
+          "at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "z_ack",
+          "at_us": 9999,
+          "kind": "ACK"
+        },
+        {
+          "id": "a_ack",
+          "at_us": 10000,
+          "kind": "ACK"
+        }
+      ],
+      "target_tick_us": 10000,
+      "expected": {
+        "source_ids": [
+          "z_ack",
+          "a_ack"
+        ],
+        "causal_ids_utf8_sorted": [
+          "a_ack",
+          "z_ack"
+        ],
+        "valid_control_groups": [],
+        "invalid_control_event_ids_utf8_sorted": [],
+        "rf_observation_statuses": [],
+        "flags": {
+          "has_invalid_control": false,
+          "has_distinct_valid_control_conflict": false,
+          "has_duplicate_semantic_control": false,
+          "rf_has_healthy": false,
+          "rf_has_lost": false,
+          "rf_has_unknown": false,
+          "has_boot": false,
+          "has_reset": false,
+          "has_ack": true,
+          "has_catastrophe": false
+        }
+      },
+      "notes": ""
+    },
+    {
+      "id": "P215-T15",
+      "name": "source_vs_sorted_ids",
+      "duration_us": 15000,
+      "events": [
+        {
+          "id": "boot",
+          "at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "z_first",
+          "at_us": 5000,
+          "kind": "CONTROL_VALID",
+          "arm": true,
+          "flap_token": "0",
+          "steer_token": "0"
+        },
+        {
+          "id": "a_second",
+          "at_us": 5000,
+          "kind": "CONTROL_VALID",
+          "arm": false,
+          "flap_token": "0",
+          "steer_token": "0"
+        }
+      ],
+      "target_tick_us": 5000,
+      "expected": {
+        "source_ids": [
+          "z_first",
+          "a_second"
+        ],
+        "causal_ids_utf8_sorted": [
+          "a_second",
+          "z_first"
+        ],
+        "valid_control_groups": [
+          {
+            "member_ids_utf8_sorted": [
+              "z_first"
+            ],
+            "latest_original_at_us": 5000,
+            "semantic_control": {
+              "arm_switch": true,
+              "flap_exact": "0",
+              "steer_exact": "0",
+              "map_revision": "sim-map-v1"
+            }
+          },
+          {
+            "member_ids_utf8_sorted": [
+              "a_second"
+            ],
+            "latest_original_at_us": 5000,
+            "semantic_control": {
+              "arm_switch": false,
+              "flap_exact": "0",
+              "steer_exact": "0",
+              "map_revision": "sim-map-v1"
+            }
+          }
+        ],
+        "invalid_control_event_ids_utf8_sorted": [],
+        "rf_observation_statuses": [],
+        "flags": {
+          "has_invalid_control": false,
+          "has_distinct_valid_control_conflict": true,
+          "has_duplicate_semantic_control": false,
+          "rf_has_healthy": false,
+          "rf_has_lost": false,
+          "rf_has_unknown": false,
+          "has_boot": false,
+          "has_reset": false,
+          "has_ack": false,
+          "has_catastrophe": false
+        }
+      },
+      "notes": ""
+    },
+    {
+      "id": "P215-T16",
+      "name": "unicode_no_normalization",
+      "duration_us": 15000,
+      "events": [
+        {
+          "id": "boot",
+          "at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "é",
+          "at_us": 5000,
+          "kind": "RESET"
+        },
+        {
+          "id": "é",
+          "at_us": 5000,
+          "kind": "ACK"
+        }
+      ],
+      "target_tick_us": 5000,
+      "expected": {
+        "source_ids": [
+          "é",
+          "é"
+        ],
+        "causal_ids_utf8_sorted": [
+          "é",
+          "é"
+        ],
+        "valid_control_groups": [],
+        "invalid_control_event_ids_utf8_sorted": [],
+        "rf_observation_statuses": [],
+        "flags": {
+          "has_invalid_control": false,
+          "has_distinct_valid_control_conflict": false,
+          "has_duplicate_semantic_control": false,
+          "rf_has_healthy": false,
+          "rf_has_lost": false,
+          "rf_has_unknown": false,
+          "has_boot": false,
+          "has_reset": true,
+          "has_ack": true,
+          "has_catastrophe": false
+        }
+      },
+      "notes": ""
+    },
+    {
+      "id": "P215-T17",
+      "name": "decimal_spellings_equivalent",
+      "duration_us": 15000,
+      "events": [
+        {
+          "id": "boot",
+          "at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "a_dec",
+          "at_us": 6000,
+          "kind": "CONTROL_VALID",
+          "arm": false,
+          "flap_token": "0.1000000",
+          "steer_token": "0"
+        },
+        {
+          "id": "b_exp",
+          "at_us": 7500,
+          "kind": "CONTROL_VALID",
+          "arm": false,
+          "flap_token": "1e-1",
+          "steer_token": "0"
+        }
+      ],
+      "target_tick_us": 10000,
+      "expected": {
+        "source_ids": [
+          "a_dec",
+          "b_exp"
+        ],
+        "causal_ids_utf8_sorted": [
+          "a_dec",
+          "b_exp"
+        ],
+        "valid_control_groups": [
+          {
+            "member_ids_utf8_sorted": [
+              "a_dec",
+              "b_exp"
+            ],
+            "latest_original_at_us": 7500,
+            "semantic_control": {
+              "arm_switch": false,
+              "flap_exact": "0.1",
+              "steer_exact": "0",
+              "map_revision": "sim-map-v1"
+            }
+          }
+        ],
+        "invalid_control_event_ids_utf8_sorted": [],
+        "rf_observation_statuses": [],
+        "flags": {
+          "has_invalid_control": false,
+          "has_distinct_valid_control_conflict": false,
+          "has_duplicate_semantic_control": true,
+          "rf_has_healthy": false,
+          "rf_has_lost": false,
+          "rf_has_unknown": false,
+          "has_boot": false,
+          "has_reset": false,
+          "has_ack": false,
+          "has_catastrophe": false
+        }
+      },
+      "notes": "Construct original JSON numeric tokens directly; exact accepted decimals compare equal."
+    },
+    {
+      "id": "P215-T18",
+      "name": "no_prior_tick_carryover",
+      "duration_us": 15000,
+      "events": [
+        {
+          "id": "boot",
+          "at_us": 0,
+          "kind": "BOOT"
+        },
+        {
+          "id": "prev",
+          "at_us": 4500,
+          "kind": "CONTROL_VALID",
+          "arm": true,
+          "flap_token": "0.5",
+          "steer_token": "0"
+        },
+        {
+          "id": "now",
+          "at_us": 10001,
+          "kind": "RF_UNKNOWN"
+        }
+      ],
+      "target_tick_us": 15000,
+      "expected": {
+        "source_ids": [
+          "now"
+        ],
+        "causal_ids_utf8_sorted": [
+          "now"
+        ],
+        "valid_control_groups": [],
+        "invalid_control_event_ids_utf8_sorted": [],
+        "rf_observation_statuses": [
+          "UNKNOWN"
+        ],
+        "flags": {
+          "has_invalid_control": false,
+          "has_distinct_valid_control_conflict": false,
+          "has_duplicate_semantic_control": false,
+          "rf_has_healthy": false,
+          "rf_has_lost": false,
+          "rf_has_unknown": true,
+          "has_boot": false,
+          "has_reset": false,
+          "has_ack": false,
+          "has_catastrophe": false
+        }
+      },
+      "notes": ""
+    }
+  ]
+}
