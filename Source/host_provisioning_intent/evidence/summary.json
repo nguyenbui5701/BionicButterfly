@@ -1,0 +1,436 @@
+{
+  "acceptance": {
+    "AC-01": "new pip-installable package only; frozen source/release hashes match",
+    "AC-02": "nine frozen fields and closed enums; init=False permanent authority deficits",
+    "AC-03": "strict sixteen-field canonical ASCII manifest; duplicate/unknown/type/encoding/quota rejected without hash",
+    "AC-04": "declared and computed policy digest both bound to frozen R1, even self-consistent altered bytes denied",
+    "AC-05": "synthetic TEST_ONLY engine/scheduler exact-byte binding; no authentication claim",
+    "AC-06": "genuine E2 mismatch/rejection and malformed wrappers checked before E3 parse/hash",
+    "AC-07": "48 named P223 cases through genuine TASK-001 and TASK-010; all N01-N18 families",
+    "AC-08": "bounded pure runtime; immutable result; AST/IO/ledger/upstream spies and 20000-event upstream",
+    "AC-09": "tests/build/install/pip/dev+wheel smoke and ten read-only regressions executed",
+    "AC-10": "three UAT commands plus full verify supplied; owner UAT/approval pending; no PR"
+  },
+  "all_commands_exit_zero": true,
+  "baseline": "7872c415c73146e33a5596b010320f76596588cb",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "bb-host-arm-qualification": "0.1.0",
+    "bb-host-batch-observations": "0.1.0",
+    "bb-host-guard-triage": "0.1.0",
+    "bb-host-health-evidence": "0.1.0",
+    "bb-host-preflight-m0": "0.1.0",
+    "bb-host-provisioning-intent": "0.1.0",
+    "bb-host-safety-priority-kernel": "0.1.0",
+    "bb-host-snapshot-commit-gate": "0.1.0",
+    "bb-host-temporal-guard-facts": "0.1.0",
+    "bb-host-trust-boundary": "0.1.0",
+    "bb-host-virtual-ticks": "0.1.0",
+    "build": "1.2.2.post1",
+    "colorama": "0.4.6",
+    "iniconfig": "2.1.0",
+    "jsonschema": "4.26.0",
+    "jsonschema-specifications": "2025.9.1",
+    "packaging": "25.0",
+    "pip": "24.0",
+    "pluggy": "1.6.0",
+    "pyproject_hooks": "1.2.0",
+    "pytest": "8.3.5",
+    "referencing": "0.36.2",
+    "rpds-py": "0.27.1",
+    "setuptools": "80.9.0",
+    "typing_extensions": "4.15.0",
+    "wheel": "0.45.1"
+  },
+  "full_verification_run": true,
+  "installed_dependencies_match_pinned_source": true,
+  "installed_task011_matches_source": true,
+  "limits": [
+    "PC_SIM_ONLY TEST_ONLY intent consistency; no authenticated executable or real provisioning",
+    "Matching caller-supplied artifact digests is self-consistency only; exact forged E2 data cannot grant authority",
+    "No signer/key/allowlist, runtime permission, ARM, FSM, output, journal or trace publication",
+    "Full R1 system/hardware/flight NOT RUN; actual OS timezone switching NOT RUN on Windows without tzset"
+  ],
+  "negative_families": [
+    {
+      "id": "N01",
+      "result": "PASS",
+      "tests": 73
+    },
+    {
+      "id": "N02",
+      "result": "PASS",
+      "tests": 16
+    },
+    {
+      "id": "N03",
+      "result": "PASS",
+      "tests": 28
+    },
+    {
+      "id": "N04",
+      "result": "PASS",
+      "tests": 80
+    },
+    {
+      "id": "N05",
+      "result": "PASS",
+      "tests": 44
+    },
+    {
+      "id": "N06",
+      "result": "PASS",
+      "tests": 30
+    },
+    {
+      "id": "N07",
+      "result": "PASS",
+      "tests": 24
+    },
+    {
+      "id": "N08",
+      "result": "PASS",
+      "tests": 6
+    },
+    {
+      "id": "N09",
+      "result": "PASS",
+      "tests": 4
+    },
+    {
+      "id": "N10",
+      "result": "PASS",
+      "tests": 4
+    },
+    {
+      "id": "N11",
+      "result": "PASS",
+      "tests": 9
+    },
+    {
+      "id": "N12",
+      "result": "PASS",
+      "tests": 7
+    },
+    {
+      "id": "N13",
+      "result": "PASS",
+      "tests": 1
+    },
+    {
+      "id": "N14",
+      "result": "PASS",
+      "tests": 9
+    },
+    {
+      "id": "N15",
+      "result": "PASS",
+      "tests": 1
+    },
+    {
+      "id": "N16",
+      "result": "PASS",
+      "tests": 2
+    },
+    {
+      "id": "N17",
+      "result": "PASS",
+      "tests": 4
+    },
+    {
+      "id": "N18",
+      "result": "PASS",
+      "tests": 1
+    }
+  ],
+  "negative_tests": {
+    "cases": 343,
+    "result": "PASS"
+  },
+  "oracle_results": [
+    {
+      "id": "P223-T01",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T02",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T03",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T04",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T05",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T06",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T07",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T08",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T09",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T10",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T11",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T12",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T13",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T14",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T15",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T16",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T17",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T18",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T19",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T20",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T21",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T22",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T23",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T24",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T25",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T26",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T27",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T28",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T29",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T30",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T31",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T32",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T33",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T34",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T35",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T36",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T37",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T38",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T39",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T40",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T41",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T42",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T43",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T44",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T45",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T46",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T47",
+      "result": "PASS"
+    },
+    {
+      "id": "P223-T48",
+      "result": "PASS"
+    }
+  ],
+  "pinned_files": 424,
+  "revision": {
+    "branch": "feature/TASK-011-host-provisioning-intent",
+    "files": {
+      "MANIFEST.in": "6ef2d9e05aba91fa839f2237f3ae223cedab0a06c691f8578bb19277aa48657e",
+      "pyproject.toml": "40f1f2d0ddec73476802cd65efb6b0eace1022daedecab466f5a56f396672bbb",
+      "scripts/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scripts/scenarios.py": "3f1cae7ac3d60041f0aec01f9b66b85918d6ae8911feab9ab6566031a6949292",
+      "scripts/smoke.py": "a6e6fae22d21ee51fe178cbaa6045fd1a28a5b0245f00ce7da31dcbceabe272a",
+      "scripts/verify.py": "839e1c8e24698eaa8179c724bb1b8a8bfc996838514d682b91c4a2e6c6e0ce25",
+      "src/bb_host_provisioning_intent/__init__.py": "b61de618e232a94af4cdc2caba15839bcb24673b2eb9f29b485a816d7ddaaa3f",
+      "src/bb_host_provisioning_intent/intent.py": "7de8e55abf3ac86d070178f5c177d3e0a7788f0a1a40111afd807bdcd5d76dc3",
+      "tests/test_intent.py": "76e5b8987fd8c32d4ba337c6ba3083291dc82b2605cb3a4df2c5c8b8ce5dd8f4",
+      "tests/test_oracles.py": "639ac69b4df14e6fa8174dfe0a31b11e13177350f7dcb312435eed074cd99a88"
+    },
+    "head": "7872c415c73146e33a5596b010320f76596588cb",
+    "source_sha256": "59af85857699a65a80afdbfc997cdda4d25f1b7e787d7d704fc94af15ba851f0"
+  },
+  "smoke": {
+    "development": "48 PASS, 0 FAIL",
+    "installed_wheel": "48 PASS, 0 FAIL"
+  },
+  "status": "PASS",
+  "test_results": {
+    "task001-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 203
+    },
+    "task002-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 44
+    },
+    "task003-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 59
+    },
+    "task004-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 140
+    },
+    "task005-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 208
+    },
+    "task006-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 221
+    },
+    "task007-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 258
+    },
+    "task008-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 345
+    },
+    "task009-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 246
+    },
+    "task010-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 387
+    },
+    "tests.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 392
+    }
+  },
+  "warnings": []
+}
