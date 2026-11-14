@@ -1,0 +1,149 @@
+{
+  "schema_version": "P224_INTEGRATED_SHADOW_ORACLE_INDEX_V1",
+  "baseline_main_sha": "ccb6babea26be805f752b80488a7232eff70aa06",
+  "scope": "G0A1_PC_SIM_ONLY_TEST_ONLY_NO_OUTPUT",
+  "status": "DESIGN_CASES_ONLY_RUNTIME_NOT_RUN",
+  "case_count": 20,
+  "demo_presets": {
+    "minimal": "Design/fixtures/P224_MINIMAL_WIRE_V2.json",
+    "pilot": "Design/fixtures/P224_PILOT_WIRE_V2.json",
+    "hazard": "Design/fixtures/P224_HAZARD_WIRE_V2.json",
+    "conflict": "Design/fixtures/P224_CONFLICT_WIRE_V2.json"
+  },
+  "wire_v2_schema": "Design/contracts/G0A1_SCENARIO_WIRE_V2_CANDIDATE.schema.json",
+  "policy_raw": "Design/contracts/SIM_POLICY_22A_R1.canonical.json",
+  "e2_fixture": "Design/fixtures/P222_HOST_REFERENCE_ORACLE_INDEX.json",
+  "e3_fixture": "Design/fixtures/P223_HOST_PROVISIONING_INTENT_ORACLE_INDEX.json",
+  "mutation_rules": {
+    "valid": "use exact demo input bytes",
+    "inject_unknown_approval": "decode valid JSON; add top-level approved:true; encode JSON; real TASK-001 must reject",
+    "policy_add_lf": "append literal LF to frozen policy bytes supplied to E2 and E3; do not mutate frozen file",
+    "manifest_bad_policy_digest": "construct canonical P223 test-only 16-field manifest with policy_sha256=64 lower-case zeros; E2 policy remains canonical",
+    "synthetic_engine_modified": "append LF to P223 engine_artifact bytes but keep original P223 16-field manifest digest",
+    "E2_engine_claim_bad": "change only E2 TEST_ONLY claimed engine_revision to BAD_ENGINE; E3 reference result not eligible",
+    "E1_before_append_fault": "monkeypatch private test journal _append to raise before append on first tick; no public fault parameter",
+    "E1_after_write_no_ack": "monkeypatch private test journal _append to record full bytes then raise, only in test; no public injection parameter"
+  },
+  "cases": [
+    {
+      "id": "P224-T01",
+      "preset": "minimal",
+      "mutation": "valid",
+      "assertion": "minimal BOOT to SELF_TEST, T1 SELF_TEST hold, two acknowledged E1 journal records"
+    },
+    {
+      "id": "P224-T02",
+      "preset": "pilot",
+      "mutation": "valid",
+      "assertion": "8 shadow tick rows; never ARMED/ACTIVE; never output"
+    },
+    {
+      "id": "P224-T03",
+      "preset": "pilot",
+      "mutation": "valid",
+      "assertion": "tick 5ms current HEALTHY + unique valid low -> mathematical preview only"
+    },
+    {
+      "id": "P224-T04",
+      "preset": "pilot",
+      "mutation": "valid",
+      "assertion": "tick 10ms ARM requested HIGH, preview exists, SELF_TEST remains, no authorization"
+    },
+    {
+      "id": "P224-T05",
+      "preset": "pilot",
+      "mutation": "valid",
+      "assertion": "tick 15ms negative steer preview uses correct sign/saturation"
+    },
+    {
+      "id": "P224-T06",
+      "preset": "pilot",
+      "mutation": "valid",
+      "assertion": "RESET tick 20ms -> SELF_TEST, no preview from same tick"
+    },
+    {
+      "id": "P224-T07",
+      "preset": "pilot",
+      "mutation": "valid",
+      "assertion": "RF LOST tick 30ms denies preview despite valid control; accepted times unchanged"
+    },
+    {
+      "id": "P224-T08",
+      "preset": "pilot",
+      "mutation": "valid",
+      "assertion": "catastrophe tick 35ms -> FAULT_LATCHED and output inhibited"
+    },
+    {
+      "id": "P224-T09",
+      "preset": "hazard",
+      "mutation": "valid",
+      "assertion": "current INVALID+LOST tick 10ms preview none, state remains SELF_TEST"
+    },
+    {
+      "id": "P224-T10",
+      "preset": "hazard",
+      "mutation": "valid",
+      "assertion": "FAULT_LATCHED tick 20ms remains latched at later reset+healthy"
+    },
+    {
+      "id": "P224-T11",
+      "preset": "conflict",
+      "mutation": "valid",
+      "assertion": "two distinct valid frame bodies in tick 5ms -> conflict; no preview"
+    },
+    {
+      "id": "P224-T12",
+      "preset": "conflict",
+      "mutation": "valid",
+      "assertion": "duplicate-equivalent control bodies tick 10ms group once, causal IDs preserved, preview"
+    },
+    {
+      "id": "P224-T13",
+      "preset": "conflict",
+      "mutation": "valid",
+      "assertion": "INVALID mixed with valid tick 15ms -> preview none"
+    },
+    {
+      "id": "P224-T14",
+      "preset": "pilot",
+      "mutation": "inject_unknown_approval",
+      "assertion": "illegal authority field -> preflight rejection, zero shadow ticks"
+    },
+    {
+      "id": "P224-T15",
+      "preset": "pilot",
+      "mutation": "policy_add_lf",
+      "assertion": "E2 mismatch, E3 upstream ineligible, zero shadow ticks"
+    },
+    {
+      "id": "P224-T16",
+      "preset": "pilot",
+      "mutation": "manifest_bad_policy_digest",
+      "assertion": "E3 mismatch (E2 matches), zero shadow ticks"
+    },
+    {
+      "id": "P224-T17",
+      "preset": "pilot",
+      "mutation": "synthetic_engine_modified",
+      "assertion": "E3 digest mismatch, zero shadow ticks"
+    },
+    {
+      "id": "P224-T18",
+      "preset": "pilot",
+      "mutation": "E2_engine_claim_bad",
+      "assertion": "E2 mismatch, E3 upstream ineligible, zero shadow ticks"
+    },
+    {
+      "id": "P224-T19",
+      "preset": "pilot",
+      "mutation": "E1_before_append_fault",
+      "assertion": "injected test-only journal fails before ack, stops, no uncommitted row/output"
+    },
+    {
+      "id": "P224-T20",
+      "preset": "pilot",
+      "mutation": "E1_after_write_no_ack",
+      "assertion": "orphan internal journal bytes never become committed snapshot or R1 trace"
+    }
+  ]
+}

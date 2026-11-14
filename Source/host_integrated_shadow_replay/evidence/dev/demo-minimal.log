@@ -1,0 +1,10 @@
+PC_SIM_ONLY / NO_OUTPUT / NOT A FLIGHT TEST
+NO OUTPUT / ARM NOT GRANTED | MATH_PREVIEW_UNTRUSTED
+HEALTHY* = observed, NOT committed/authorized; SELF_TEST = UNRESOLVED_FULL_FSM
+T(ms) | RF | INPUT (original us) | E1 STATE / COMMIT | ARM REQUEST | PREVIEW L/R (micro) | OUTPUT
+    0 | MISSING | boot@0:BOOT | SELF_TEST / COMMITTED_TEST_ONLY | NONE | -- | INHIBITED
+      control=ABSENT; reasons=PRIORITY_BLOCKED,RF_NOT_HEALTHY,NO_UNCONTESTED_CONTROL,TRUST_NOT_PROVEN
+    5 | MISSING | NONE | SELF_TEST / COMMITTED_TEST_ONLY | NONE | -- | INHIBITED
+      control=ABSENT; reasons=RF_NOT_HEALTHY,NO_UNCONTESTED_CONTROL,TRUST_NOT_PROVEN
+SHADOW_DIAGNOSTICS_COMPLETE: 2 acknowledged shadow ticks; blocked_at_tick=None
+runtime_authorized=False; requires_full_fsm=True; actual_virtual_output=None; physical_output=None

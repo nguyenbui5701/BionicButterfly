@@ -1,0 +1,66 @@
+{
+  "manifest_version": "P224_TASK012_RELEASE_V1",
+  "source_main_commit": "ccb6babea26be805f752b80488a7232eff70aa06",
+  "policy_sha256": "d7567197dd43480d7e96dac121fbb707d3097b6c443b1b7ab55e822dbac66e10",
+  "scope": "G0A1_PC_SIM_ONLY_TEST_ONLY_NO_OUTPUT",
+  "status": "SA_DESIGN_ONLY_TASK012_RUNTIME_NOT_RUN",
+  "oracle_count": 20,
+  "demo_count": 4,
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Design/187_TASK011_MERGE_CLOSEOUT_AND_TASK012_BASELINE.md",
+      "bytes": 6296,
+      "sha256": "0afd2003389f33121ef879f9e47c7591fefbd497acc25320647e4c72b60c5462",
+      "git_blob_sha1": "025378e6817e842729a87d6ed5757938305de16c"
+    },
+    {
+      "path": "Design/188_G0A1_INTEGRATED_SHADOW_REPLAY_STAGE_F0_CONTRACT.md",
+      "bytes": 11574,
+      "sha256": "38c9e63f81f5f826235e15e7514c86a2c3d0eed3466d08ac263b6b0f07e6bcda",
+      "git_blob_sha1": "9557ad0e21d1d9863204b82c265136889e462dc2"
+    },
+    {
+      "path": "Design/189_TASK012_INTEGRATION_ACCEPTANCE_AND_G0B_ROADMAP.md",
+      "bytes": 8031,
+      "sha256": "78b54cf212890a4faecf6d47e8c1c551b790bb71177ac847ec4ec6e794f29868",
+      "git_blob_sha1": "2482724078248a3813f53b9a80ef39ad5e7c9c2e"
+    },
+    {
+      "path": "Design/fixtures/P224_CONFLICT_WIRE_V2.json",
+      "bytes": 2421,
+      "sha256": "87f74370ca08d12acd15ed5ad94b97b54d8c7dba2039755573740d4905b7e4ca",
+      "git_blob_sha1": "3e7c48bc184240ea394469d3d0aa3c509a95283a"
+    },
+    {
+      "path": "Design/fixtures/P224_HAZARD_WIRE_V2.json",
+      "bytes": 1987,
+      "sha256": "7060c1756f464772d12e842ff85c0bd42f03f8720d2323defc631607d51fc0cd",
+      "git_blob_sha1": "0922a534f1b672053990e743de70f073017b02a8"
+    },
+    {
+      "path": "Design/fixtures/P224_INTEGRATED_SHADOW_ORACLE_INDEX.json",
+      "bytes": 5464,
+      "sha256": "ba13ac3412c613610444c1d736b000733b4a48551e6eba130d3da192ccd9198e",
+      "git_blob_sha1": "d87534720ff196c3cf8ba08d32fafb17d494d4fe"
+    },
+    {
+      "path": "Design/fixtures/P224_MINIMAL_WIRE_V2.json",
+      "bytes": 353,
+      "sha256": "43309b71d2240b39c0c10388f66f0b47af69df4eebba839ac1ee85e06edfe01f",
+      "git_blob_sha1": "49b13b463d85a19f06e0b5a17d084add2057ca7c"
+    },
+    {
+      "path": "Design/fixtures/P224_PILOT_WIRE_V2.json",
+      "bytes": 3097,
+      "sha256": "5538c68be7db9191fee4d3ce96d83f411a3db80dbe833f955afbb456b2297c5b",
+      "git_blob_sha1": "9ea6ea334fcf9bcd7c11aec45cc90d6cda4259a0"
+    },
+    {
+      "path": "Task/TASK-012_INTEGRATED_PC_SHADOW_REPLAY.md",
+      "bytes": 6078,
+      "sha256": "8a09013c77a61c3591edcde5f0bb3deaa58294c97d447b4b26f7d656c104953d",
+      "git_blob_sha1": "bf0345e409025288c0346f9bfe13070299124b4a"
+    }
+  ]
+}

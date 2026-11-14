@@ -1,0 +1,593 @@
+[
+  {
+    "name": "build-task001",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "-m",
+      "build",
+      "--wheel",
+      "--no-isolation",
+      "--outdir",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\source\\host_preflight_m0"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_integrated_shadow_replay",
+    "exit_code": 0,
+    "log": "build-task001.log"
+  },
+  {
+    "name": "build-task002",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "-m",
+      "build",
+      "--wheel",
+      "--no-isolation",
+      "--outdir",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\source\\host_virtual_ticks"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_integrated_shadow_replay",
+    "exit_code": 0,
+    "log": "build-task002.log"
+  },
+  {
+    "name": "build-task003",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "-m",
+      "build",
+      "--wheel",
+      "--no-isolation",
+      "--outdir",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\source\\host_batch_observations"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_integrated_shadow_replay",
+    "exit_code": 0,
+    "log": "build-task003.log"
+  },
+  {
+    "name": "build-task004",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "-m",
+      "build",
+      "--wheel",
+      "--no-isolation",
+      "--outdir",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\source\\host_temporal_guard_facts"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_integrated_shadow_replay",
+    "exit_code": 0,
+    "log": "build-task004.log"
+  },
+  {
+    "name": "build-task005",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "-m",
+      "build",
+      "--wheel",
+      "--no-isolation",
+      "--outdir",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\source\\host_safety_priority_kernel"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_integrated_shadow_replay",
+    "exit_code": 0,
+    "log": "build-task005.log"
+  },
+  {
+    "name": "build-task006",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "-m",
+      "build",
+      "--wheel",
+      "--no-isolation",
+      "--outdir",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\source\\host_arm_qualification"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_integrated_shadow_replay",
+    "exit_code": 0,
+    "log": "build-task006.log"
+  },
+  {
+    "name": "build-task007",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "-m",
+      "build",
+      "--wheel",
+      "--no-isolation",
+      "--outdir",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\source\\host_health_evidence"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_integrated_shadow_replay",
+    "exit_code": 0,
+    "log": "build-task007.log"
+  },
+  {
+    "name": "build-task008",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "-m",
+      "build",
+      "--wheel",
+      "--no-isolation",
+      "--outdir",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\source\\host_guard_triage"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_integrated_shadow_replay",
+    "exit_code": 0,
+    "log": "build-task008.log"
+  },
+  {
+    "name": "build-task009",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "-m",
+      "build",
+      "--wheel",
+      "--no-isolation",
+      "--outdir",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\source\\host_snapshot_commit_gate"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_integrated_shadow_replay",
+    "exit_code": 0,
+    "log": "build-task009.log"
+  },
+  {
+    "name": "build-task010",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "-m",
+      "build",
+      "--wheel",
+      "--no-isolation",
+      "--outdir",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\source\\host_trust_boundary"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_integrated_shadow_replay",
+    "exit_code": 0,
+    "log": "build-task010.log"
+  },
+  {
+    "name": "build-task011",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "-m",
+      "build",
+      "--wheel",
+      "--no-isolation",
+      "--outdir",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\source\\host_provisioning_intent"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_integrated_shadow_replay",
+    "exit_code": 0,
+    "log": "build-task011.log"
+  },
+  {
+    "name": "install-prerequisites",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pip",
+      "install",
+      "--disable-pip-version-check",
+      "--no-index",
+      "--no-deps",
+      "--force-reinstall",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies\\bb_host_preflight_m0-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies\\bb_host_virtual_ticks-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies\\bb_host_batch_observations-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies\\bb_host_temporal_guard_facts-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies\\bb_host_safety_priority_kernel-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies\\bb_host_arm_qualification-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies\\bb_host_health_evidence-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies\\bb_host_guard_triage-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies\\bb_host_snapshot_commit_gate-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies\\bb_host_trust_boundary-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies\\bb_host_provisioning_intent-0.1.0-py3-none-any.whl"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_integrated_shadow_replay",
+    "exit_code": 0,
+    "log": "install-prerequisites.log"
+  },
+  {
+    "name": "install",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pip",
+      "install",
+      "--disable-pip-version-check",
+      "--no-index",
+      "--no-deps",
+      "--no-build-isolation",
+      "-e",
+      "."
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_integrated_shadow_replay",
+    "exit_code": 0,
+    "log": "install.log"
+  },
+  {
+    "name": "compile",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "-m",
+      "compileall",
+      "-q",
+      "src",
+      "tests",
+      "scripts"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_integrated_shadow_replay",
+    "exit_code": 0,
+    "log": "compile.log"
+  },
+  {
+    "name": "tests",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "--junitxml=<REPOSITORY>\\Source\\host_integrated_shadow_replay\\evidence\\owner\\tests.xml"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_integrated_shadow_replay",
+    "exit_code": 0,
+    "log": "tests.log"
+  },
+  {
+    "name": "smoke",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "scripts/smoke.py"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_integrated_shadow_replay",
+    "exit_code": 0,
+    "log": "smoke.log"
+  },
+  {
+    "name": "dependencies",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pip",
+      "check"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_integrated_shadow_replay",
+    "exit_code": 0,
+    "log": "dependencies.log"
+  },
+  {
+    "name": "demo-pilot",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "scripts/demo.py",
+      "--case",
+      "pilot",
+      "--jsonl",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\evidence\\owner\\demo-pilot.jsonl"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_integrated_shadow_replay",
+    "exit_code": 0,
+    "log": "demo-pilot.log"
+  },
+  {
+    "name": "demo-hazard",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "scripts/demo.py",
+      "--case",
+      "hazard",
+      "--jsonl",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\evidence\\owner\\demo-hazard.jsonl"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_integrated_shadow_replay",
+    "exit_code": 0,
+    "log": "demo-hazard.log"
+  },
+  {
+    "name": "demo-conflict",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "scripts/demo.py",
+      "--case",
+      "conflict",
+      "--jsonl",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\evidence\\owner\\demo-conflict.jsonl"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_integrated_shadow_replay",
+    "exit_code": 0,
+    "log": "demo-conflict.log"
+  },
+  {
+    "name": "demo-minimal",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "scripts/demo.py",
+      "--case",
+      "minimal",
+      "--jsonl",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\evidence\\owner\\demo-minimal.jsonl"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_integrated_shadow_replay",
+    "exit_code": 0,
+    "log": "demo-minimal.log"
+  },
+  {
+    "name": "task001-regression",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "tests",
+      "--junitxml=<REPOSITORY>\\Source\\host_integrated_shadow_replay\\evidence\\owner\\task001-regression.xml"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_preflight_m0",
+    "exit_code": 0,
+    "log": "task001-regression.log"
+  },
+  {
+    "name": "task002-regression",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "tests",
+      "--junitxml=<REPOSITORY>\\Source\\host_integrated_shadow_replay\\evidence\\owner\\task002-regression.xml"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_virtual_ticks",
+    "exit_code": 0,
+    "log": "task002-regression.log"
+  },
+  {
+    "name": "task003-regression",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "tests",
+      "--junitxml=<REPOSITORY>\\Source\\host_integrated_shadow_replay\\evidence\\owner\\task003-regression.xml"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_batch_observations",
+    "exit_code": 0,
+    "log": "task003-regression.log"
+  },
+  {
+    "name": "task004-regression",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "tests",
+      "--junitxml=<REPOSITORY>\\Source\\host_integrated_shadow_replay\\evidence\\owner\\task004-regression.xml"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_temporal_guard_facts",
+    "exit_code": 0,
+    "log": "task004-regression.log"
+  },
+  {
+    "name": "task005-regression",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "tests",
+      "--junitxml=<REPOSITORY>\\Source\\host_integrated_shadow_replay\\evidence\\owner\\task005-regression.xml"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_safety_priority_kernel",
+    "exit_code": 0,
+    "log": "task005-regression.log"
+  },
+  {
+    "name": "task006-regression",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "tests",
+      "--junitxml=<REPOSITORY>\\Source\\host_integrated_shadow_replay\\evidence\\owner\\task006-regression.xml"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_arm_qualification",
+    "exit_code": 0,
+    "log": "task006-regression.log"
+  },
+  {
+    "name": "task007-regression",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "tests",
+      "--junitxml=<REPOSITORY>\\Source\\host_integrated_shadow_replay\\evidence\\owner\\task007-regression.xml"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_health_evidence",
+    "exit_code": 0,
+    "log": "task007-regression.log"
+  },
+  {
+    "name": "task008-regression",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "tests",
+      "--junitxml=<REPOSITORY>\\Source\\host_integrated_shadow_replay\\evidence\\owner\\task008-regression.xml"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_guard_triage",
+    "exit_code": 0,
+    "log": "task008-regression.log"
+  },
+  {
+    "name": "task009-regression",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "tests",
+      "--junitxml=<REPOSITORY>\\Source\\host_integrated_shadow_replay\\evidence\\owner\\task009-regression.xml"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_snapshot_commit_gate",
+    "exit_code": 0,
+    "log": "task009-regression.log"
+  },
+  {
+    "name": "task010-regression",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "tests",
+      "--junitxml=<REPOSITORY>\\Source\\host_integrated_shadow_replay\\evidence\\owner\\task010-regression.xml"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_trust_boundary",
+    "exit_code": 0,
+    "log": "task010-regression.log"
+  },
+  {
+    "name": "task011-regression",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "tests",
+      "--junitxml=<REPOSITORY>\\Source\\host_integrated_shadow_replay\\evidence\\owner\\task011-regression.xml"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_provisioning_intent",
+    "exit_code": 0,
+    "log": "task011-regression.log"
+  },
+  {
+    "name": "build",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "-m",
+      "build",
+      "--no-isolation",
+      "--outdir",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dist"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_integrated_shadow_replay",
+    "exit_code": 0,
+    "log": "build.log"
+  },
+  {
+    "name": "wheel-environment",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.venv\\Scripts\\python.exe",
+      "-m",
+      "venv",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\wheel-env"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_integrated_shadow_replay",
+    "exit_code": 0,
+    "log": "wheel-environment.log"
+  },
+  {
+    "name": "wheel-install",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\wheel-env\\Scripts\\python.exe",
+      "-m",
+      "pip",
+      "install",
+      "--disable-pip-version-check",
+      "--no-index",
+      "--no-deps",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies\\bb_host_preflight_m0-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies\\bb_host_virtual_ticks-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies\\bb_host_batch_observations-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies\\bb_host_temporal_guard_facts-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies\\bb_host_safety_priority_kernel-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies\\bb_host_arm_qualification-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies\\bb_host_health_evidence-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies\\bb_host_guard_triage-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies\\bb_host_snapshot_commit_gate-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies\\bb_host_trust_boundary-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dependencies\\bb_host_provisioning_intent-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\dist\\bb_host_integrated_shadow_replay-0.1.0-py3-none-any.whl"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_integrated_shadow_replay",
+    "exit_code": 0,
+    "log": "wheel-install.log"
+  },
+  {
+    "name": "wheel-smoke",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\wheel-env\\Scripts\\python.exe",
+      "scripts/smoke.py"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_integrated_shadow_replay",
+    "exit_code": 0,
+    "log": "wheel-smoke.log"
+  },
+  {
+    "name": "wheel-dependencies",
+    "command": [
+      "<REPOSITORY>\\Source\\host_integrated_shadow_replay\\.cache\\verify-p89b3aof\\wheel-env\\Scripts\\python.exe",
+      "-m",
+      "pip",
+      "check"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_integrated_shadow_replay",
+    "exit_code": 0,
+    "log": "wheel-dependencies.log"
+  }
+]

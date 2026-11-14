@@ -1,0 +1,17 @@
+Obtaining file:///<REPOSITORY>/Source/host_integrated_shadow_replay
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: bb-host-integrated-shadow-replay
+  Building editable for bb-host-integrated-shadow-replay (pyproject.toml): started
+  Building editable for bb-host-integrated-shadow-replay (pyproject.toml): finished with status 'done'
+  Created wheel for bb-host-integrated-shadow-replay: filename=bb_host_integrated_shadow_replay-0.1.0-0.editable-py3-none-any.whl size=4296 sha256=c230d56a049ad56148fafb338f78b9c5d794ede82bf2cfc9d645353983083cb1
+  Stored in directory: <USERPROFILE>\AppData\Local\Temp\pip-ephem-wheel-cache-rhdr3crw\wheels\e9\2b\1f\7daddbb89cd253a86c1d441ed849dec2198ddc3e52dfb91f6c
+Successfully built bb-host-integrated-shadow-replay
+Installing collected packages: bb-host-integrated-shadow-replay
+  Attempting uninstall: bb-host-integrated-shadow-replay
+    Found existing installation: bb-host-integrated-shadow-replay 0.1.0
+    Uninstalling bb-host-integrated-shadow-replay-0.1.0:
+      Successfully uninstalled bb-host-integrated-shadow-replay-0.1.0
+Successfully installed bb-host-integrated-shadow-replay-0.1.0

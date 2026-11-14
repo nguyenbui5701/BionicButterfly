@@ -1,0 +1,160 @@
+{
+  "acceptance": {
+    "AC-01": "task-local files; baseline 444 files and release/policy checks MATCH",
+    "AC-02": "four genuine wire-v2 demos with separate P222/P223 TEST_ONLY references",
+    "AC-03": "ten genuine composable packages; TASK006 not imported by replay",
+    "AC-04": "genesis and acknowledged prior bridge; unchanged accepted history",
+    "AC-05": "four actual console demos, request denial/LOST/conflict/reset/catastrophe visible",
+    "AC-06": "real M0, exact Decimal-to-micro and clipping under varied context precision",
+    "AC-07": "upstream rejection/mismatch short-circuit before ledger/scheduler",
+    "AC-08": "before/after-append and other journal faults; no tentative row/retry",
+    "AC-09": "frozen typed summaries, deterministic JSONL, 12001-tick/20000-event bounded test",
+    "AC-10": "20 genuine P224 cases plus adversarial tests and four real smoke demos",
+    "AC-11": "separate DEV/OWNER modes and evidence; old regressions run only by --owner",
+    "AC-12": "build/install/wheel/pip/provenance checked; OWNER acceptance and PR permission pending"
+  },
+  "additional_tests": {
+    "cases": 90,
+    "result": "PASS"
+  },
+  "all_commands_exit_zero": true,
+  "baseline": "ccb6babea26be805f752b80488a7232eff70aa06",
+  "baseline_design_pins": 24,
+  "demos": {
+    "conflict": "exit 0; console + diagnostic JSONL saved",
+    "hazard": "exit 0; console + diagnostic JSONL saved",
+    "minimal": "exit 0; console + diagnostic JSONL saved",
+    "pilot": "exit 0; console + diagnostic JSONL saved"
+  },
+  "full_verification_run": false,
+  "installed_dependencies_match_pinned_source": true,
+  "installed_task012_matches_source": true,
+  "limits": [
+    "PC_SIM_ONLY TEST_ONLY: SELF_TEST remains UNRESOLVED_FULL_FSM",
+    "No runtime/ARM authority, accepted control/RF history, authorized virtual output or physical output",
+    "No complete FSM, canonical R1 trace, hardware/servo or flight tests",
+    "Offline diagnostic serialization is stable ASCII/LF, not general JCS; atomic replace is not power-loss durability"
+  ],
+  "mode": "DEV_CHECK",
+  "oracle_results": [
+    {
+      "id": "P224-T01",
+      "result": "PASS"
+    },
+    {
+      "id": "P224-T02",
+      "result": "PASS"
+    },
+    {
+      "id": "P224-T03",
+      "result": "PASS"
+    },
+    {
+      "id": "P224-T04",
+      "result": "PASS"
+    },
+    {
+      "id": "P224-T05",
+      "result": "PASS"
+    },
+    {
+      "id": "P224-T06",
+      "result": "PASS"
+    },
+    {
+      "id": "P224-T07",
+      "result": "PASS"
+    },
+    {
+      "id": "P224-T08",
+      "result": "PASS"
+    },
+    {
+      "id": "P224-T09",
+      "result": "PASS"
+    },
+    {
+      "id": "P224-T10",
+      "result": "PASS"
+    },
+    {
+      "id": "P224-T11",
+      "result": "PASS"
+    },
+    {
+      "id": "P224-T12",
+      "result": "PASS"
+    },
+    {
+      "id": "P224-T13",
+      "result": "PASS"
+    },
+    {
+      "id": "P224-T14",
+      "result": "PASS"
+    },
+    {
+      "id": "P224-T15",
+      "result": "PASS"
+    },
+    {
+      "id": "P224-T16",
+      "result": "PASS"
+    },
+    {
+      "id": "P224-T17",
+      "result": "PASS"
+    },
+    {
+      "id": "P224-T18",
+      "result": "PASS"
+    },
+    {
+      "id": "P224-T19",
+      "result": "PASS"
+    },
+    {
+      "id": "P224-T20",
+      "result": "PASS"
+    }
+  ],
+  "pinned_files": 444,
+  "policy": "MATCH",
+  "prior_regressions": "NOT RUN: reserved for OWNER FULL UAT",
+  "release_artifacts": 9,
+  "revision": {
+    "branch": "feature/TASK-012-integrated-pc-shadow-replay",
+    "files": {
+      "MANIFEST.in": "6ef2d9e05aba91fa839f2237f3ae223cedab0a06c691f8578bb19277aa48657e",
+      "pyproject.toml": "2f9eecd2ca8171d55dc04a85189c4ad1f4749ec68d68a6640ede0200fe605865",
+      "scripts/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scripts/demo.py": "9b64400c397fe6f4711c486860eb383fec1e6c80943b2faa070f6a2a7f667ccb",
+      "scripts/fixtures.py": "c55614aa262f3d6637b3c2ce34931246df2e4080dfa9b146929a63805c17056f",
+      "scripts/smoke.py": "cafb7549fb8ae26a09d01b14be892c59f7e0b3e34df017b7a774760a15c6e183",
+      "scripts/verify.py": "df85ae016237e2b509b510fc6347238afc900ab75aad3212fc79bda47e877706",
+      "src/bb_host_integrated_shadow_replay/__init__.py": "f92e11c661b13b782e8ed999276fe2739e4eb226add84227700a4a80878b2e8f",
+      "src/bb_host_integrated_shadow_replay/diagnostic.py": "f3cc0fa974919f968e6c3bd0e8a153092e6bf1e2fa9770b6457883706433d262",
+      "src/bb_host_integrated_shadow_replay/replay.py": "1468fc1edbcaf2a2f811c523b4c9fcb6e19190383ccdea1c51d4de8125fbd2b6",
+      "tests/test_boundaries.py": "92b9878a685cd16b7f67dc9d763d6af0941dd65b3d277cdb28f4e31ff47953e6",
+      "tests/test_cli.py": "13f5df980e90d09875441340a3789e6a3f052c3172e6b1bf5475d057d21e965e",
+      "tests/test_oracles.py": "360e427f328d4e13fc13a6155d18615b3a766332100dc94d965b521e11ee28c5",
+      "tests/test_replay.py": "68a348b361be85830094564e7380e94bbfcae3ee114707315acaa2f16d43aac3"
+    },
+    "head": "ccb6babea26be805f752b80488a7232eff70aa06",
+    "source_sha256": "987f7ac1999a58fc23bcd0312e2e00aa7f6ffd52aaae5edf11d31f83d806666b"
+  },
+  "smoke": {
+    "development": "4 PASS, 0 FAIL",
+    "installed_wheel": "4 PASS, 0 FAIL"
+  },
+  "status": "PASS",
+  "test_results": {
+    "tests.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 111
+    }
+  },
+  "warnings": []
+}
