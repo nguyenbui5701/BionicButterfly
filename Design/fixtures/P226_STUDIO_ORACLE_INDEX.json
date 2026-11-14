@@ -1,0 +1,128 @@
+{
+  "baseline": "0a0a49ba0bbd2a87a1771ef4ad09d0b2f55b4b09",
+  "fixture_version": "P226_F2_STUDIO_ORACLES_V1",
+  "items": [
+    {
+      "case": "nominal",
+      "id": "P226-T01",
+      "independent_expected": "generated wire v2 strict preflight acceptance; one BOOT T0"
+    },
+    {
+      "case": "nominal",
+      "id": "P226-T02",
+      "independent_expected": "low1 at 15000 does not qualify until low2 at 35000"
+    },
+    {
+      "case": "nominal",
+      "id": "P226-T03",
+      "independent_expected": "low2 qualifies at 35000 original separation=20000"
+    },
+    {
+      "case": "nominal",
+      "id": "P226-T04",
+      "independent_expected": "edge at 40000 model ARM_CHECK with no operational ARM"
+    },
+    {
+      "case": "nominal",
+      "id": "P226-T05",
+      "independent_expected": "confirm at 140000 model ARMED_IDLE 100000us after edge"
+    },
+    {
+      "case": "nominal",
+      "id": "P226-T06",
+      "independent_expected": "active at 145000 model ACTIVE effort 250000/750000"
+    },
+    {
+      "case": "nominal",
+      "id": "P226-T07",
+      "independent_expected": "150000 S1_HELD model effort 250000/750000, no timestamp refresh"
+    },
+    {
+      "case": "nominal",
+      "id": "P226-T08",
+      "independent_expected": "rf LOST at 155000 model CONTINGENCY, no model effort"
+    },
+    {
+      "case": "nominal",
+      "id": "P226-T09",
+      "independent_expected": "recovery-low1 165000, low2 185000 qualifies previous committed"
+    },
+    {
+      "case": "nominal",
+      "id": "P226-T10",
+      "independent_expected": "ACK at 190000 moves model DISARMED, no operational output"
+    },
+    {
+      "case": "nominal",
+      "id": "P226-T11",
+      "independent_expected": "all 40 model ticks (0..195000 in 5000us steps) and deterministic ID ordering"
+    },
+    {
+      "case": "nominal",
+      "id": "P226-T12",
+      "independent_expected": "replaying same session gives byte-identical wire and candidate trace"
+    },
+    {
+      "case": "nominal",
+      "id": "P226-T13",
+      "independent_expected": "GUI headless controller returns same F1 model result as CLI"
+    },
+    {
+      "case": "nominal",
+      "id": "P226-T14",
+      "independent_expected": "UI labels model efforts dimensionless not servo PWM or physical lift"
+    },
+    {
+      "case": "rf-loss",
+      "id": "P226-T15",
+      "independent_expected": "early HIGH before LOW denied"
+    },
+    {
+      "case": "rf-loss",
+      "id": "P226-T16",
+      "independent_expected": "RF LOST 45000 interrupts ARM_CHECK; no model effort"
+    },
+    {
+      "case": "rf-loss",
+      "id": "P226-T17",
+      "independent_expected": "VALID frame with RF LOST does not refresh accepted control"
+    },
+    {
+      "case": "rf-loss",
+      "id": "P226-T18",
+      "independent_expected": "INVALID at 60000 cannot rearm"
+    },
+    {
+      "case": "rf-loss",
+      "id": "P226-T19",
+      "independent_expected": "catastrophe 65000 latches, RESET at 70000 does not clear"
+    },
+    {
+      "case": "rf-loss",
+      "id": "P226-T20",
+      "independent_expected": "all displayed model rows append-acknowledged before export"
+    },
+    {
+      "case": "ambiguous",
+      "id": "P226-T21",
+      "independent_expected": "HEALTHY+UNKNOWN 15000 => MODEL_CONTRACT_BLOCKED and no row at 15000"
+    },
+    {
+      "case": "ambiguous",
+      "id": "P226-T22",
+      "independent_expected": "blocked replay cannot claim MODEL_REPLAY_COMPLETE or full candidate digest"
+    },
+    {
+      "case": "all",
+      "id": "P226-T23",
+      "independent_expected": "all outcomes deny runtime/output_allowed/actual_virtual_output/physical_output"
+    },
+    {
+      "case": "all",
+      "id": "P226-T24",
+      "independent_expected": "fresh-clone Owner regression runs from task-local pinned TASK001 preserved fixture; absent/mismatched fixture fails verification and blocks PR, never PASS"
+    }
+  ],
+  "oracle_count": 24,
+  "status": "DESIGN_ORACLES_NOT_YET_EXECUTED"
+}

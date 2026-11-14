@@ -1,0 +1,74 @@
+{
+  "baseline_explicit_git_blob_pins": 39,
+  "demo_session_count": 3,
+  "file_count": 10,
+  "files": [
+    {
+      "bytes": 7104,
+      "git_blob_sha1": "57e2fb16d5c55fba314abcd8d289b4836b01b49d",
+      "path": "Design/194_TASK013_MERGE_CLOSEOUT_AND_TASK014_BASELINE.md",
+      "sha256": "d5890f0e1a12abf4360db9ba20aaa0b99928597eb471cb8b8d23f67f33bfe36a"
+    },
+    {
+      "bytes": 8593,
+      "git_blob_sha1": "b91a8833b5c5cd67a4a82791071955bf0bd85502",
+      "path": "Design/195_F2_INTEGRATED_VIRTUAL_CONTROL_STUDIO_CONTRACT.md",
+      "sha256": "0064ac321998b9bb6dbaffe3f9d76954d0053c380224e24f7cbe9142c8352a28"
+    },
+    {
+      "bytes": 7413,
+      "git_blob_sha1": "f7e5f1001834e90220fceeb4af3798539fb8882a",
+      "path": "Design/196_TASK014_SYSTEM_ACCEPTANCE_UAT_AND_FRESH_CLONE.md",
+      "sha256": "1c6c56be565a9fccd450b3bea61757ce42e85fff172c5cd71b8d863499415606"
+    },
+    {
+      "bytes": 3653,
+      "git_blob_sha1": "48c319f663332def5d9f01b1ab591c101b22df29",
+      "path": "Design/197_G0B_AND_RUNTIME_SECURITY_OWNER_DECISION_PACKET.md",
+      "sha256": "5c088f5163e50b700a4fd24d1852d2bf57808dbbf361b1fd6c5c2c98d70cea89"
+    },
+    {
+      "bytes": 5910,
+      "git_blob_sha1": "18dc30e20aa22f8ce4e904581361fcde09e0d306",
+      "path": "Design/fixtures/P226_STUDIO_ACTIONS.schema.json",
+      "sha256": "cfe1a1b29026d655e8c7e3cc4674e037deae04a977fbf5003b91f4a9ce888835"
+    },
+    {
+      "bytes": 3945,
+      "git_blob_sha1": "7b0df7fcc92001fae6195e864c61112578e35bf2",
+      "path": "Design/fixtures/P226_STUDIO_ORACLE_INDEX.json",
+      "sha256": "eae68f4f06528d0112c0c04c6d5fbf3073cddce2003e20523ea8cbf2ca3c1999"
+    },
+    {
+      "bytes": 545,
+      "git_blob_sha1": "f51d0dfd782ba939871394d76e78a842f2c6be5e",
+      "path": "Design/fixtures/P226_STUDIO_SESSION_AMBIGUOUS.json",
+      "sha256": "812ace0fb38c2c0d2d4d6275a0c405d14b7bfaa584d9fa8a3b0a6ddaae46f5a7"
+    },
+    {
+      "bytes": 1680,
+      "git_blob_sha1": "003d89a357937363561ca2e00e919f2aaf84a901",
+      "path": "Design/fixtures/P226_STUDIO_SESSION_NOMINAL.json",
+      "sha256": "e8fcf60fc8d5518ce35bf58e7646fc5fd2d53683f1fc0323ca44f417fff102dc"
+    },
+    {
+      "bytes": 1468,
+      "git_blob_sha1": "3d9c2816ea9891f17adbd7d2a396b18b04eae4cc",
+      "path": "Design/fixtures/P226_STUDIO_SESSION_RF_LOSS.json",
+      "sha256": "bfc2e0298363061f57ea24e1527b8416585aa283b21d15ac692c25dc5fdac422"
+    },
+    {
+      "bytes": 4449,
+      "git_blob_sha1": "a4d09f64e04500c01fd9d14c884ca2694a64a538",
+      "path": "Task/TASK-014_INTEGRATED_VIRTUAL_CONTROL_STUDIO.md",
+      "sha256": "06b4c0db5edea52c83fb97a1c78e62fe6c1d5f66f24c37dc9dc0427b914f0589"
+    }
+  ],
+  "manifest_version": "P226_TASK014_RELEASE_V1",
+  "negative_family_count": 24,
+  "oracle_count": 24,
+  "policy_sha256": "d7567197dd43480d7e96dac121fbb707d3097b6c443b1b7ab55e822dbac66e10",
+  "scope": "G0A1_PC_SIM_ONLY_MODEL_ONLY_NO_OUTPUT",
+  "source_main_commit": "0a0a49ba0bbd2a87a1771ef4ad09d0b2f55b4b09",
+  "status": "SA_DESIGN_RELEASE_ONLY_TASK014_NOT_RUN"
+}

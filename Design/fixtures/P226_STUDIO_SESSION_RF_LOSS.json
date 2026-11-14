@@ -1,0 +1,77 @@
+{
+  "actions": [
+    {
+      "at_us": 5000,
+      "id": "rf0",
+      "kind": "RF_HEALTHY"
+    },
+    {
+      "arm_switch": true,
+      "at_us": 10000,
+      "flap_micro": 500000,
+      "id": "early-high",
+      "kind": "CONTROL_VALID",
+      "steer_micro": 250000
+    },
+    {
+      "arm_switch": false,
+      "at_us": 15000,
+      "flap_micro": 0,
+      "id": "low1",
+      "kind": "CONTROL_VALID",
+      "steer_micro": 0
+    },
+    {
+      "arm_switch": false,
+      "at_us": 35000,
+      "flap_micro": 0,
+      "id": "low2",
+      "kind": "CONTROL_VALID",
+      "steer_micro": 0
+    },
+    {
+      "arm_switch": true,
+      "at_us": 40000,
+      "flap_micro": 0,
+      "id": "edge",
+      "kind": "CONTROL_VALID",
+      "steer_micro": 0
+    },
+    {
+      "at_us": 45000,
+      "id": "lost",
+      "kind": "RF_LOST"
+    },
+    {
+      "arm_switch": true,
+      "at_us": 50000,
+      "flap_micro": 500000,
+      "id": "invalid-rf-frame",
+      "kind": "CONTROL_VALID",
+      "steer_micro": 0
+    },
+    {
+      "at_us": 55000,
+      "id": "recovered",
+      "kind": "RF_HEALTHY"
+    },
+    {
+      "at_us": 60000,
+      "id": "invalid",
+      "kind": "CONTROL_INVALID"
+    },
+    {
+      "at_us": 65000,
+      "id": "catastrophe",
+      "kind": "CATASTROPHE"
+    },
+    {
+      "at_us": 70000,
+      "id": "reset-after-fault",
+      "kind": "RESET"
+    }
+  ],
+  "duration_us": 75000,
+  "session_id": "p226_rf_loss",
+  "session_schema": "BB_P226_STUDIO_ACTIONS_V1"
+}

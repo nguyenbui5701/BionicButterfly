@@ -1,0 +1,58 @@
+* Getting build dependencies for wheel...
+running egg_info
+creating src\bb_host_snapshot_commit_gate.egg-info
+writing src\bb_host_snapshot_commit_gate.egg-info\PKG-INFO
+writing dependency_links to src\bb_host_snapshot_commit_gate.egg-info\dependency_links.txt
+writing requirements to src\bb_host_snapshot_commit_gate.egg-info\requires.txt
+writing top-level names to src\bb_host_snapshot_commit_gate.egg-info\top_level.txt
+writing manifest file 'src\bb_host_snapshot_commit_gate.egg-info\SOURCES.txt'
+reading manifest file 'src\bb_host_snapshot_commit_gate.egg-info\SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+writing manifest file 'src\bb_host_snapshot_commit_gate.egg-info\SOURCES.txt'
+* Building wheel...
+running bdist_wheel
+running build
+running build_py
+creating build\lib\bb_host_snapshot_commit_gate
+copying src\bb_host_snapshot_commit_gate\journal.py -> build\lib\bb_host_snapshot_commit_gate
+copying src\bb_host_snapshot_commit_gate\ledger.py -> build\lib\bb_host_snapshot_commit_gate
+copying src\bb_host_snapshot_commit_gate\snapshot.py -> build\lib\bb_host_snapshot_commit_gate
+copying src\bb_host_snapshot_commit_gate\_testing.py -> build\lib\bb_host_snapshot_commit_gate
+copying src\bb_host_snapshot_commit_gate\_validation.py -> build\lib\bb_host_snapshot_commit_gate
+copying src\bb_host_snapshot_commit_gate\__init__.py -> build\lib\bb_host_snapshot_commit_gate
+running egg_info
+writing src\bb_host_snapshot_commit_gate.egg-info\PKG-INFO
+writing dependency_links to src\bb_host_snapshot_commit_gate.egg-info\dependency_links.txt
+writing requirements to src\bb_host_snapshot_commit_gate.egg-info\requires.txt
+writing top-level names to src\bb_host_snapshot_commit_gate.egg-info\top_level.txt
+reading manifest file 'src\bb_host_snapshot_commit_gate.egg-info\SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+writing manifest file 'src\bb_host_snapshot_commit_gate.egg-info\SOURCES.txt'
+installing to build\bdist.win-amd64\wheel
+running install
+running install_lib
+creating build\bdist.win-amd64\wheel
+creating build\bdist.win-amd64\wheel\bb_host_snapshot_commit_gate
+copying build\lib\bb_host_snapshot_commit_gate\journal.py -> build\bdist.win-amd64\wheel\.\bb_host_snapshot_commit_gate
+copying build\lib\bb_host_snapshot_commit_gate\ledger.py -> build\bdist.win-amd64\wheel\.\bb_host_snapshot_commit_gate
+copying build\lib\bb_host_snapshot_commit_gate\snapshot.py -> build\bdist.win-amd64\wheel\.\bb_host_snapshot_commit_gate
+copying build\lib\bb_host_snapshot_commit_gate\_testing.py -> build\bdist.win-amd64\wheel\.\bb_host_snapshot_commit_gate
+copying build\lib\bb_host_snapshot_commit_gate\_validation.py -> build\bdist.win-amd64\wheel\.\bb_host_snapshot_commit_gate
+copying build\lib\bb_host_snapshot_commit_gate\__init__.py -> build\bdist.win-amd64\wheel\.\bb_host_snapshot_commit_gate
+running install_egg_info
+Copying src\bb_host_snapshot_commit_gate.egg-info to build\bdist.win-amd64\wheel\.\bb_host_snapshot_commit_gate-0.1.0-py3.11.egg-info
+running install_scripts
+creating build\bdist.win-amd64\wheel\bb_host_snapshot_commit_gate-0.1.0.dist-info\WHEEL
+creating '<REPOSITORY>\Source\host_virtual_control_studio\.cache\verify-5ks82vx5\wheels\.tmp-5scqubps\bb_host_snapshot_commit_gate-0.1.0-py3-none-any.whl' and adding 'build\bdist.win-amd64\wheel' to it
+adding 'bb_host_snapshot_commit_gate/__init__.py'
+adding 'bb_host_snapshot_commit_gate/_testing.py'
+adding 'bb_host_snapshot_commit_gate/_validation.py'
+adding 'bb_host_snapshot_commit_gate/journal.py'
+adding 'bb_host_snapshot_commit_gate/ledger.py'
+adding 'bb_host_snapshot_commit_gate/snapshot.py'
+adding 'bb_host_snapshot_commit_gate-0.1.0.dist-info/METADATA'
+adding 'bb_host_snapshot_commit_gate-0.1.0.dist-info/WHEEL'
+adding 'bb_host_snapshot_commit_gate-0.1.0.dist-info/top_level.txt'
+adding 'bb_host_snapshot_commit_gate-0.1.0.dist-info/RECORD'
+removing build\bdist.win-amd64\wheel
+Successfully built bb_host_snapshot_commit_gate-0.1.0-py3-none-any.whl

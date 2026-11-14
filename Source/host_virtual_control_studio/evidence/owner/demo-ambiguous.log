@@ -1,0 +1,15 @@
+MODEL_ONLY / NOT PROVISIONED / NO OUTPUT
+Dimensionless model effort; not servo position, PWM, lift or flight readiness.
+Studio: MODEL_CONTRACT_BLOCKED
+MODEL_ONLY / RUNTIME_NOT_PROVISIONED / NO_ACTUATOR_OUTPUT
+Counterfactual model effort only; not servo position, PWM, lift or flight readiness.
+T(us) | model_state | RF / control | ARM request | model effort L/R | mode | model reasons
+      0 | SELF_TEST | UNKNOWN/ABSENT | False (NOT GRANTED) | -- | NONE | R_BOOT_OBSERVED
+        INPUT F/S micro=None/None; original_us=(0,); LOW_qualified=None; HIGH_edge=None; IDs=('studio_boot',)
+   5000 | DISARMED | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_SELF_TEST_COMPLETE
+        INPUT F/S micro=None/None; original_us=(5000,); LOW_qualified=None; HIGH_edge=None; IDs=('action_00001',)
+  10000 | DISARMED | HEALTHY/SINGLE_CANDIDATE | False (NOT GRANTED) | -- | NONE | R_LOW_OBSERVED
+        INPUT F/S micro=0/0; original_us=(10000,); LOW_qualified=None; HIGH_edge=None; IDs=('action_00002',)
+MODEL_CONTRACT_BLOCKED: 3 MODEL commits; blocked_at_tick=3; HEALTHY+UNKNOWN effective RF unresolved by frozen R1; SA clarification required
+F0 comparator: SHADOW_DIAGNOSTICS_COMPLETE, 6 ticks (separate, no authority)
+runtime_authorized=False; output_allowed=False; actual_virtual_output=None; physical_output=None; control_trace_sha256=None
