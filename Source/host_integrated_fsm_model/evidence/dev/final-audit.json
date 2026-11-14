@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "execution_fingerprint_matches_dev_check": true,
+  "source_sha256": "09918fc67cb9d611a543b21ca099d1ba532d147f8442dd3bb3bf9dd6e0e66931",
+  "prior_source_changes_made_by_developer": [],
+  "preserved_preexisting_change": "Source/host_preflight_m0/evidence/baseline.json",
+  "approved_release_files_unchanged": true,
+  "dev_command_count": 27,
+  "owner_full_uat": "Prior attempt FAIL; NOT RERUN by Developer",
+  "pull_request_created": false,
+  "changed_since_owner_attempt": [
+    "scripts/verify.py",
+    "tests/test_verification.py"
+  ],
+  "targeted_prior_tests": "TASK010 N18: 1 PASS; TASK011 N18: 1 PASS"
+}

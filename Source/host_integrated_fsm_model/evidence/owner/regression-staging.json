@@ -1,0 +1,6 @@
+{
+  "path": "Source/host_preflight_m0/evidence/baseline.json",
+  "scope": "isolated regression workspace only",
+  "sha256": "e6dfcfd1ea13ffb4fb5ba2c3d2b475ef0f62c85d2f84faa666ba6b13af30fd9d",
+  "source": "verified preserved working bytes"
+}

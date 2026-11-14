@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="24" skipped="0" tests="24" time="0.740" timestamp="2026-11-14T11:01:44.522533+07:00" hostname="DESKTOP-GDP3K0K"><testcase classname="tests.test_oracles" name="test_p225_real_pipeline[P225-T01]" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'">case = {'actual_virtual_output': None, 'control_trace_sha256': None, 'eval_at_us': 0, 'expectation': 'BOOT only; no model effort', ...}
+
+    @pytest.mark.parametrize("case", CASES, ids=lambda c:c["id"])
+    def test_p225_real_pipeline(case):
+&gt;       report = run_fsm_model(**inputs(case["fixture"]))
+
+tests\test_oracles.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\fixtures.py:25: in inputs
+    e2 = json.loads(frozen_bytes("Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json"))
+scripts\fixtures.py:14: in frozen_bytes
+    raw = (ROOT / path).read_bytes()
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1050: in read_bytes
+    with self.open(mode='rb') as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Vibecode/butterfly/BionicButterfly-Workspace/BionicButterfly/Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'
+
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1044: FileNotFoundError</failure></testcase><testcase classname="tests.test_oracles" name="test_p225_real_pipeline[P225-T02]" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'">case = {'actual_virtual_output': None, 'control_trace_sha256': None, 'eval_at_us': 5000, 'expectation': 'SELF_TEST auto transition in modeled policy, RF UNKNOWN does not grant ARM', ...}
+
+    @pytest.mark.parametrize("case", CASES, ids=lambda c:c["id"])
+    def test_p225_real_pipeline(case):
+&gt;       report = run_fsm_model(**inputs(case["fixture"]))
+
+tests\test_oracles.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\fixtures.py:25: in inputs
+    e2 = json.loads(frozen_bytes("Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json"))
+scripts\fixtures.py:14: in frozen_bytes
+    raw = (ROOT / path).read_bytes()
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1050: in read_bytes
+    with self.open(mode='rb') as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Vibecode/butterfly/BionicButterfly-Workspace/BionicButterfly/Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'
+
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1044: FileNotFoundError</failure></testcase><testcase classname="tests.test_oracles" name="test_p225_real_pipeline[P225-T03]" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'">case = {'actual_virtual_output': None, 'control_trace_sha256': None, 'eval_at_us': 15000, 'expectation': 'LOW starts with accepted ORIGINAL time 15000', ...}
+
+    @pytest.mark.parametrize("case", CASES, ids=lambda c:c["id"])
+    def test_p225_real_pipeline(case):
+&gt;       report = run_fsm_model(**inputs(case["fixture"]))
+
+tests\test_oracles.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\fixtures.py:25: in inputs
+    e2 = json.loads(frozen_bytes("Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json"))
+scripts\fixtures.py:14: in frozen_bytes
+    raw = (ROOT / path).read_bytes()
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1050: in read_bytes
+    with self.open(mode='rb') as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Vibecode/butterfly/BionicButterfly-Workspace/BionicButterfly/Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'
+
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1044: FileNotFoundError</failure></testcase><testcase classname="tests.test_oracles" name="test_p225_real_pipeline[P225-T04]" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'">case = {'actual_virtual_output': None, 'control_trace_sha256': None, 'eval_at_us': 35000, 'expectation': 'Second LOW original delta exactly 20000, qualified at prior commit after this tick', ...}
+
+    @pytest.mark.parametrize("case", CASES, ids=lambda c:c["id"])
+    def test_p225_real_pipeline(case):
+&gt;       report = run_fsm_model(**inputs(case["fixture"]))
+
+tests\test_oracles.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\fixtures.py:25: in inputs
+    e2 = json.loads(frozen_bytes("Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json"))
+scripts\fixtures.py:14: in frozen_bytes
+    raw = (ROOT / path).read_bytes()
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1050: in read_bytes
+    with self.open(mode='rb') as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Vibecode/butterfly/BionicButterfly-Workspace/BionicButterfly/Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'
+
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1044: FileNotFoundError</failure></testcase><testcase classname="tests.test_oracles" name="test_p225_real_pipeline[P225-T05]" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'">case = {'actual_virtual_output': None, 'control_trace_sha256': None, 'eval_at_us': 40000, 'expectation': 'Later HIGH edge after previously committed LOW', ...}
+
+    @pytest.mark.parametrize("case", CASES, ids=lambda c:c["id"])
+    def test_p225_real_pipeline(case):
+&gt;       report = run_fsm_model(**inputs(case["fixture"]))
+
+tests\test_oracles.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\fixtures.py:25: in inputs
+    e2 = json.loads(frozen_bytes("Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json"))
+scripts\fixtures.py:14: in frozen_bytes
+    raw = (ROOT / path).read_bytes()
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1050: in read_bytes
+    with self.open(mode='rb') as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Vibecode/butterfly/BionicButterfly-Workspace/BionicButterfly/Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'
+
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1044: FileNotFoundError</failure></testcase><testcase classname="tests.test_oracles" name="test_p225_real_pipeline[P225-T06]" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'">case = {'actual_virtual_output': None, 'control_trace_sha256': None, 'eval_at_us': 140000, 'expectation': 'Second HIGH original delta exactly 100000 and neutral', ...}
+
+    @pytest.mark.parametrize("case", CASES, ids=lambda c:c["id"])
+    def test_p225_real_pipeline(case):
+&gt;       report = run_fsm_model(**inputs(case["fixture"]))
+
+tests\test_oracles.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\fixtures.py:25: in inputs
+    e2 = json.loads(frozen_bytes("Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json"))
+scripts\fixtures.py:14: in frozen_bytes
+    raw = (ROOT / path).read_bytes()
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1050: in read_bytes
+    with self.open(mode='rb') as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Vibecode/butterfly/BionicButterfly-Workspace/BionicButterfly/Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'
+
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1044: FileNotFoundError</failure></testcase><testcase classname="tests.test_oracles" name="test_p225_real_pipeline[P225-T07]" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'">case = {'actual_virtual_output': None, 'control_trace_sha256': None, 'eval_at_us': 145000, 'expectation': 'Fresh HIGH flap=0.5 steer=0.25 model effort L=250000 R=750000', ...}
+
+    @pytest.mark.parametrize("case", CASES, ids=lambda c:c["id"])
+    def test_p225_real_pipeline(case):
+&gt;       report = run_fsm_model(**inputs(case["fixture"]))
+
+tests\test_oracles.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\fixtures.py:25: in inputs
+    e2 = json.loads(frozen_bytes("Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json"))
+scripts\fixtures.py:14: in frozen_bytes
+    raw = (ROOT / path).read_bytes()
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1050: in read_bytes
+    with self.open(mode='rb') as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Vibecode/butterfly/BionicButterfly-Workspace/BionicButterfly/Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'
+
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1044: FileNotFoundError</failure></testcase><testcase classname="tests.test_oracles" name="test_p225_real_pipeline[P225-T08]" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'">case = {'actual_virtual_output': None, 'control_trace_sha256': None, 'eval_at_us': 150000, 'expectation': 'S1 held model with no accepted timestamp refresh', ...}
+
+    @pytest.mark.parametrize("case", CASES, ids=lambda c:c["id"])
+    def test_p225_real_pipeline(case):
+&gt;       report = run_fsm_model(**inputs(case["fixture"]))
+
+tests\test_oracles.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\fixtures.py:25: in inputs
+    e2 = json.loads(frozen_bytes("Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json"))
+scripts\fixtures.py:14: in frozen_bytes
+    raw = (ROOT / path).read_bytes()
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1050: in read_bytes
+    with self.open(mode='rb') as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Vibecode/butterfly/BionicButterfly-Workspace/BionicButterfly/Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'
+
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1044: FileNotFoundError</failure></testcase><testcase classname="tests.test_oracles" name="test_p225_real_pipeline[P225-T09]" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'">case = {'actual_virtual_output': None, 'control_trace_sha256': None, 'eval_at_us': 155000, 'expectation': 'RF LOST while modeled active inhibits modeled effort', ...}
+
+    @pytest.mark.parametrize("case", CASES, ids=lambda c:c["id"])
+    def test_p225_real_pipeline(case):
+&gt;       report = run_fsm_model(**inputs(case["fixture"]))
+
+tests\test_oracles.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\fixtures.py:25: in inputs
+    e2 = json.loads(frozen_bytes("Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json"))
+scripts\fixtures.py:14: in frozen_bytes
+    raw = (ROOT / path).read_bytes()
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1050: in read_bytes
+    with self.open(mode='rb') as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Vibecode/butterfly/BionicButterfly-Workspace/BionicButterfly/Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'
+
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1044: FileNotFoundError</failure></testcase><testcase classname="tests.test_oracles" name="test_p225_real_pipeline[P225-T10]" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'">case = {'actual_virtual_output': None, 'control_trace_sha256': None, 'eval_at_us': 160000, 'expectation': 'HEALTHY restored does not auto clear fault or arm', ...}
+
+    @pytest.mark.parametrize("case", CASES, ids=lambda c:c["id"])
+    def test_p225_real_pipeline(case):
+&gt;       report = run_fsm_model(**inputs(case["fixture"]))
+
+tests\test_oracles.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\fixtures.py:25: in inputs
+    e2 = json.loads(frozen_bytes("Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json"))
+scripts\fixtures.py:14: in frozen_bytes
+    raw = (ROOT / path).read_bytes()
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1050: in read_bytes
+    with self.open(mode='rb') as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Vibecode/butterfly/BionicButterfly-Workspace/BionicButterfly/Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'
+
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1044: FileNotFoundError</failure></testcase><testcase classname="tests.test_oracles" name="test_p225_real_pipeline[P225-T11]" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'">case = {'actual_virtual_output': None, 'control_trace_sha256': None, 'eval_at_us': 185000, 'expectation': 'Two recovery LOW observations with prior committed qualification', ...}
+
+    @pytest.mark.parametrize("case", CASES, ids=lambda c:c["id"])
+    def test_p225_real_pipeline(case):
+&gt;       report = run_fsm_model(**inputs(case["fixture"]))
+
+tests\test_oracles.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\fixtures.py:25: in inputs
+    e2 = json.loads(frozen_bytes("Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json"))
+scripts\fixtures.py:14: in frozen_bytes
+    raw = (ROOT / path).read_bytes()
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1050: in read_bytes
+    with self.open(mode='rb') as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Vibecode/butterfly/BionicButterfly-Workspace/BionicButterfly/Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'
+
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1044: FileNotFoundError</failure></testcase><testcase classname="tests.test_oracles" name="test_p225_real_pipeline[P225-T12]" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'">case = {'actual_virtual_output': None, 'control_trace_sha256': None, 'eval_at_us': 190000, 'expectation': 'ACK after already committed qualified LOW and restored RF', ...}
+
+    @pytest.mark.parametrize("case", CASES, ids=lambda c:c["id"])
+    def test_p225_real_pipeline(case):
+&gt;       report = run_fsm_model(**inputs(case["fixture"]))
+
+tests\test_oracles.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\fixtures.py:25: in inputs
+    e2 = json.loads(frozen_bytes("Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json"))
+scripts\fixtures.py:14: in frozen_bytes
+    raw = (ROOT / path).read_bytes()
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1050: in read_bytes
+    with self.open(mode='rb') as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Vibecode/butterfly/BionicButterfly-Workspace/BionicButterfly/Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'
+
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1044: FileNotFoundError</failure></testcase><testcase classname="tests.test_oracles" name="test_p225_real_pipeline[P225-T13]" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'">case = {'actual_virtual_output': None, 'control_trace_sha256': None, 'eval_at_us': 220000, 'expectation': 'New rearm sequence LOW at 195000 and 215000, edge 220000', ...}
+
+    @pytest.mark.parametrize("case", CASES, ids=lambda c:c["id"])
+    def test_p225_real_pipeline(case):
+&gt;       report = run_fsm_model(**inputs(case["fixture"]))
+
+tests\test_oracles.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\fixtures.py:25: in inputs
+    e2 = json.loads(frozen_bytes("Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json"))
+scripts\fixtures.py:14: in frozen_bytes
+    raw = (ROOT / path).read_bytes()
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1050: in read_bytes
+    with self.open(mode='rb') as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Vibecode/butterfly/BionicButterfly-Workspace/BionicButterfly/Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'
+
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1044: FileNotFoundError</failure></testcase><testcase classname="tests.test_oracles" name="test_p225_real_pipeline[P225-T14]" time="0.002"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'">case = {'actual_virtual_output': None, 'control_trace_sha256': None, 'eval_at_us': 325000, 'expectation': 'Rearm confirmation +105000 from second edge', ...}
+
+    @pytest.mark.parametrize("case", CASES, ids=lambda c:c["id"])
+    def test_p225_real_pipeline(case):
+&gt;       report = run_fsm_model(**inputs(case["fixture"]))
+
+tests\test_oracles.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\fixtures.py:25: in inputs
+    e2 = json.loads(frozen_bytes("Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json"))
+scripts\fixtures.py:14: in frozen_bytes
+    raw = (ROOT / path).read_bytes()
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1050: in read_bytes
+    with self.open(mode='rb') as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Vibecode/butterfly/BionicButterfly-Workspace/BionicButterfly/Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'
+
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1044: FileNotFoundError</failure></testcase><testcase classname="tests.test_oracles" name="test_p225_real_pipeline[P225-T15]" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'">case = {'actual_virtual_output': None, 'control_trace_sha256': None, 'eval_at_us': 330000, 'expectation': 'Model math F=.6 S=-.1 gives L=700000 R=500000', ...}
+
+    @pytest.mark.parametrize("case", CASES, ids=lambda c:c["id"])
+    def test_p225_real_pipeline(case):
+&gt;       report = run_fsm_model(**inputs(case["fixture"]))
+
+tests\test_oracles.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\fixtures.py:25: in inputs
+    e2 = json.loads(frozen_bytes("Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json"))
+scripts\fixtures.py:14: in frozen_bytes
+    raw = (ROOT / path).read_bytes()
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1050: in read_bytes
+    with self.open(mode='rb') as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Vibecode/butterfly/BionicButterfly-Workspace/BionicButterfly/Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'
+
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1044: FileNotFoundError</failure></testcase><testcase classname="tests.test_oracles" name="test_p225_real_pipeline[P225-T16]" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'">case = {'actual_virtual_output': None, 'control_trace_sha256': None, 'eval_at_us': 335000, 'expectation': 'Catastrophic fault latches; always output inhibited', ...}
+
+    @pytest.mark.parametrize("case", CASES, ids=lambda c:c["id"])
+    def test_p225_real_pipeline(case):
+&gt;       report = run_fsm_model(**inputs(case["fixture"]))
+
+tests\test_oracles.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\fixtures.py:25: in inputs
+    e2 = json.loads(frozen_bytes("Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json"))
+scripts\fixtures.py:14: in frozen_bytes
+    raw = (ROOT / path).read_bytes()
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1050: in read_bytes
+    with self.open(mode='rb') as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Vibecode/butterfly/BionicButterfly-Workspace/BionicButterfly/Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'
+
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1044: FileNotFoundError</failure></testcase><testcase classname="tests.test_oracles" name="test_p225_real_pipeline[P225-T17]" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'">case = {'actual_virtual_output': None, 'control_trace_sha256': None, 'eval_at_us': 340000, 'expectation': 'RESET cannot clear latch', ...}
+
+    @pytest.mark.parametrize("case", CASES, ids=lambda c:c["id"])
+    def test_p225_real_pipeline(case):
+&gt;       report = run_fsm_model(**inputs(case["fixture"]))
+
+tests\test_oracles.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\fixtures.py:25: in inputs
+    e2 = json.loads(frozen_bytes("Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json"))
+scripts\fixtures.py:14: in frozen_bytes
+    raw = (ROOT / path).read_bytes()
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1050: in read_bytes
+    with self.open(mode='rb') as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Vibecode/butterfly/BionicButterfly-Workspace/BionicButterfly/Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'
+
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1044: FileNotFoundError</failure></testcase><testcase classname="tests.test_oracles" name="test_p225_real_pipeline[P225-T18]" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'">case = {'actual_virtual_output': None, 'control_trace_sha256': None, 'eval_at_us': 10000, 'expectation': 'HIGH without prior qualified LOW must not ARM', ...}
+
+    @pytest.mark.parametrize("case", CASES, ids=lambda c:c["id"])
+    def test_p225_real_pipeline(case):
+&gt;       report = run_fsm_model(**inputs(case["fixture"]))
+
+tests\test_oracles.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\fixtures.py:25: in inputs
+    e2 = json.loads(frozen_bytes("Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json"))
+scripts\fixtures.py:14: in frozen_bytes
+    raw = (ROOT / path).read_bytes()
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1050: in read_bytes
+    with self.open(mode='rb') as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Vibecode/butterfly/BionicButterfly-Workspace/BionicButterfly/Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'
+
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1044: FileNotFoundError</failure></testcase><testcase classname="tests.test_oracles" name="test_p225_real_pipeline[P225-T19]" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'">case = {'actual_virtual_output': None, 'control_trace_sha256': None, 'eval_at_us': 35000, 'expectation': 'Short LOW separation 15000 cannot qualify', ...}
+
+    @pytest.mark.parametrize("case", CASES, ids=lambda c:c["id"])
+    def test_p225_real_pipeline(case):
+&gt;       report = run_fsm_model(**inputs(case["fixture"]))
+
+tests\test_oracles.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\fixtures.py:25: in inputs
+    e2 = json.loads(frozen_bytes("Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json"))
+scripts\fixtures.py:14: in frozen_bytes
+    raw = (ROOT / path).read_bytes()
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1050: in read_bytes
+    with self.open(mode='rb') as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Vibecode/butterfly/BionicButterfly-Workspace/BionicButterfly/Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'
+
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1044: FileNotFoundError</failure></testcase><testcase classname="tests.test_oracles" name="test_p225_real_pipeline[P225-T20]" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'">case = {'actual_virtual_output': None, 'control_trace_sha256': None, 'eval_at_us': 45000, 'expectation': 'Qualifying second LOW at 40000, later HIGH edge 45000', ...}
+
+    @pytest.mark.parametrize("case", CASES, ids=lambda c:c["id"])
+    def test_p225_real_pipeline(case):
+&gt;       report = run_fsm_model(**inputs(case["fixture"]))
+
+tests\test_oracles.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\fixtures.py:25: in inputs
+    e2 = json.loads(frozen_bytes("Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json"))
+scripts\fixtures.py:14: in frozen_bytes
+    raw = (ROOT / path).read_bytes()
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1050: in read_bytes
+    with self.open(mode='rb') as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Vibecode/butterfly/BionicButterfly-Workspace/BionicButterfly/Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'
+
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1044: FileNotFoundError</failure></testcase><testcase classname="tests.test_oracles" name="test_p225_real_pipeline[P225-T21]" time="0.002"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'">case = {'actual_virtual_output': None, 'control_trace_sha256': None, 'eval_at_us': 160000, 'expectation': 'ACK before recovery LOW qualification cannot clear', ...}
+
+    @pytest.mark.parametrize("case", CASES, ids=lambda c:c["id"])
+    def test_p225_real_pipeline(case):
+&gt;       report = run_fsm_model(**inputs(case["fixture"]))
+
+tests\test_oracles.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\fixtures.py:25: in inputs
+    e2 = json.loads(frozen_bytes("Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json"))
+scripts\fixtures.py:14: in frozen_bytes
+    raw = (ROOT / path).read_bytes()
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1050: in read_bytes
+    with self.open(mode='rb') as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Vibecode/butterfly/BionicButterfly-Workspace/BionicButterfly/Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'
+
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1044: FileNotFoundError</failure></testcase><testcase classname="tests.test_oracles" name="test_p225_real_pipeline[P225-T22]" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'">case = {'actual_virtual_output': None, 'control_trace_sha256': None, 'eval_at_us': 195000, 'expectation': 'ACK with restored RF and previously committed LOW', ...}
+
+    @pytest.mark.parametrize("case", CASES, ids=lambda c:c["id"])
+    def test_p225_real_pipeline(case):
+&gt;       report = run_fsm_model(**inputs(case["fixture"]))
+
+tests\test_oracles.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\fixtures.py:25: in inputs
+    e2 = json.loads(frozen_bytes("Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json"))
+scripts\fixtures.py:14: in frozen_bytes
+    raw = (ROOT / path).read_bytes()
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1050: in read_bytes
+    with self.open(mode='rb') as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Vibecode/butterfly/BionicButterfly-Workspace/BionicButterfly/Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'
+
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1044: FileNotFoundError</failure></testcase><testcase classname="tests.test_oracles" name="test_p225_real_pipeline[P225-T23]" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'">case = {'actual_virtual_output': None, 'control_trace_sha256': None, 'eval_at_us': 15000, 'expectation': 'Distinct valid control batch conflict denies acceptance', ...}
+
+    @pytest.mark.parametrize("case", CASES, ids=lambda c:c["id"])
+    def test_p225_real_pipeline(case):
+&gt;       report = run_fsm_model(**inputs(case["fixture"]))
+
+tests\test_oracles.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\fixtures.py:25: in inputs
+    e2 = json.loads(frozen_bytes("Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json"))
+scripts\fixtures.py:14: in frozen_bytes
+    raw = (ROOT / path).read_bytes()
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1050: in read_bytes
+    with self.open(mode='rb') as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Vibecode/butterfly/BionicButterfly-Workspace/BionicButterfly/Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'
+
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1044: FileNotFoundError</failure></testcase><testcase classname="tests.test_oracles" name="test_p225_real_pipeline[P225-T24]" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'">case = {'actual_virtual_output': None, 'control_trace_sha256': None, 'eval_at_us': 35000, 'expectation': 'Catastrophe+RESET+ACK+LOW resolves latch', ...}
+
+    @pytest.mark.parametrize("case", CASES, ids=lambda c:c["id"])
+    def test_p225_real_pipeline(case):
+&gt;       report = run_fsm_model(**inputs(case["fixture"]))
+
+tests\test_oracles.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\fixtures.py:25: in inputs
+    e2 = json.loads(frozen_bytes("Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json"))
+scripts\fixtures.py:14: in frozen_bytes
+    raw = (ROOT / path).read_bytes()
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1050: in read_bytes
+    with self.open(mode='rb') as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Vibecode/butterfly/BionicButterfly-Workspace/BionicButterfly/Design/fixtures/P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Design\\fixtures\\P222_HOST_TRUST_BOUNDARY_ORACLE_INDEX.json'
+
+C:\Users\tuank\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py:1044: FileNotFoundError</failure></testcase></testsuite></testsuites>

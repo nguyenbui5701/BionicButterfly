@@ -1,0 +1,227 @@
+{
+  "acceptance": {
+    "AC-01": "new task subtree only; prior Source and approved release/policy unchanged",
+    "AC-02": "real TASK001-005/007/008, E2/E3, separate TASK012/F0+E1 comparator",
+    "AC-03": "eight-state model, exact original LOW/HIGH times, independent freshness, S1 and qualified ACK",
+    "AC-04": "frozen constants and genuine exact M0; no synthetic TASK006 admission",
+    "AC-05": "counterfactual MODEL ACTIVE visible; permanent operational denial",
+    "AC-06": "pinned offline rfc8785, independent RFC/V8 and candidate schema/order/identity vectors",
+    "AC-07": "sticky private append barrier with before/short/after/quota/serializer and terminal failures",
+    "AC-08": "three genuine CLI demos and self-contained offline HTML state/effort viewer",
+    "AC-09": "24 authored P225 oracles and all N01-N24 adversarial families",
+    "AC-10": "60s/12001-tick/20000-event test, bounded bytes/allocations, no repeated event rescan",
+    "AC-11": "DEV only new tests; OWNER all twelve prior regressions in isolated copies",
+    "AC-12": "32 pins + nine release files + manifest and policy MATCH; G0-B remains not approved"
+  },
+  "additional_tests": {
+    "cases": 158,
+    "result": "PASS"
+  },
+  "all_commands_exit_zero": true,
+  "baseline": "eb4dbc8830d864c9cfd5c4d94bf00180aa960b5d",
+  "baseline_design_pins": 32,
+  "demos": {
+    "conflict": "exit 0; console + offline HTML + labeled candidate JSONL saved",
+    "nominal": "exit 0; console + offline HTML + labeled candidate JSONL saved",
+    "recovery": "exit 0; console + offline HTML + labeled candidate JSONL saved"
+  },
+  "full_verification_run": false,
+  "installed_dependencies_match_pinned_source": true,
+  "installed_task013_matches_source": true,
+  "jcs_reference": "RFC8785 Appendix B plus 4120 Node/V8 binary64 comparisons and Unicode/candidate vectors",
+  "limits": [
+    "MODEL_ONLY: no operational runtime/ARM/output; no complete R1 runtime claim",
+    "No physical output, device/firmware/servo or flight tests",
+    "Ambiguous HEALTHY+UNKNOWN stops MODEL_CONTRACT_BLOCKED for SA; no invented effective RF priority",
+    "Candidate terminal FAILED/E_OWNER_DENIED is schema-conformance only, not runtime execution",
+    "Atomic offline replacement is not power-loss durability; actual OS timezone switching not tested"
+  ],
+  "mode": "DEV_CHECK",
+  "negative_families": [
+    "N01",
+    "N02",
+    "N03",
+    "N04",
+    "N05",
+    "N06",
+    "N07",
+    "N08",
+    "N09",
+    "N10",
+    "N11",
+    "N12",
+    "N13",
+    "N14",
+    "N15",
+    "N16",
+    "N17",
+    "N18",
+    "N19",
+    "N20",
+    "N21",
+    "N22",
+    "N23",
+    "N24"
+  ],
+  "oracle_results": [
+    {
+      "id": "P225-T01",
+      "result": "PASS"
+    },
+    {
+      "id": "P225-T02",
+      "result": "PASS"
+    },
+    {
+      "id": "P225-T03",
+      "result": "PASS"
+    },
+    {
+      "id": "P225-T04",
+      "result": "PASS"
+    },
+    {
+      "id": "P225-T05",
+      "result": "PASS"
+    },
+    {
+      "id": "P225-T06",
+      "result": "PASS"
+    },
+    {
+      "id": "P225-T07",
+      "result": "PASS"
+    },
+    {
+      "id": "P225-T08",
+      "result": "PASS"
+    },
+    {
+      "id": "P225-T09",
+      "result": "PASS"
+    },
+    {
+      "id": "P225-T10",
+      "result": "PASS"
+    },
+    {
+      "id": "P225-T11",
+      "result": "PASS"
+    },
+    {
+      "id": "P225-T12",
+      "result": "PASS"
+    },
+    {
+      "id": "P225-T13",
+      "result": "PASS"
+    },
+    {
+      "id": "P225-T14",
+      "result": "PASS"
+    },
+    {
+      "id": "P225-T15",
+      "result": "PASS"
+    },
+    {
+      "id": "P225-T16",
+      "result": "PASS"
+    },
+    {
+      "id": "P225-T17",
+      "result": "PASS"
+    },
+    {
+      "id": "P225-T18",
+      "result": "PASS"
+    },
+    {
+      "id": "P225-T19",
+      "result": "PASS"
+    },
+    {
+      "id": "P225-T20",
+      "result": "PASS"
+    },
+    {
+      "id": "P225-T21",
+      "result": "PASS"
+    },
+    {
+      "id": "P225-T22",
+      "result": "PASS"
+    },
+    {
+      "id": "P225-T23",
+      "result": "PASS"
+    },
+    {
+      "id": "P225-T24",
+      "result": "PASS"
+    }
+  ],
+  "pinned_files": 570,
+  "policy": "MATCH",
+  "prior_regressions": "NOT RUN: reserved for OWNER FULL UAT",
+  "release_artifacts": 9,
+  "revision": {
+    "branch": "feature/TASK-013-integrated-fsm-model",
+    "files": {
+      "MANIFEST.in": "e076119201aa6b8a0e66c2edb8bbe76a60baee4be53458c8e3b31ef823575149",
+      "pyproject.toml": "ab7c5804f4f4f615b990c86c609ebd3ee518f3c8edb5fcf061660b3ccc0af800",
+      "scripts/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scripts/demo.py": "34fcc358b2eaa5dc18a430a8b109b2b314be486346407cdfbbf212f37321eefc",
+      "scripts/fixtures.py": "b93d07149919c3c026be40c53452e23b7babd853b0a0e05e7cc7674ec0ce7815",
+      "scripts/jcs_reference.js": "2cca89a6761f87403a0507c7966ad3a6e87114205ba6b4ce6e9d03110f848cbb",
+      "scripts/smoke.py": "df60417746e99e64d6db4c1225a3335ecebd568b32e386511c65deb4dd49ac08",
+      "scripts/verify.py": "778c7013731f40bb454e9be0c75cba640bc70853f9f5c7eba3ad88a28cea7d6e",
+      "scripts/viewer_reference.js": "7083c615258ffebabe63f978d69d72b45fb2f47d306a2b8270d1230f4342d166",
+      "src/bb_host_integrated_fsm_model/__init__.py": "2b8a4e14fbf01cc1976eb71d695ce19c2d531484c230cd41d122ca62f1146880",
+      "src/bb_host_integrated_fsm_model/jcs.py": "12a3d5bed58ffd82c2bc335fae9c4f98530ce6c735050e512851c4583e86a539",
+      "src/bb_host_integrated_fsm_model/model.py": "fc2f3607819e2aeaaea5e947138e70d8882c143bf3743662ea7dbaf29082d0d3",
+      "src/bb_host_integrated_fsm_model/trace.py": "1cf890874febb57fb58015a0c6ccbbe4e4f530ec967988129c2607539aec3249",
+      "src/bb_host_integrated_fsm_model/viewer.py": "6c257b633fed7feb6f8f67ba7fee65605b3cf4393a9fde7ad28f6381b451bbde",
+      "tests/test_jcs.py": "095ba46ead06d422800c129dfac7a630b6c4588e11f9f4e547e6a5df437bc999",
+      "tests/test_model.py": "da5394eaae686406f3cab5acf08237061f51cbf13c69d2aca4b6d244b5e44c19",
+      "tests/test_oracles.py": "7f01c7fa644a20cd4086e6c76e02ad716d4b3326d9605537b435f3fe2be4e309",
+      "tests/test_system.py": "88b6f2003dd8e65e220a79aeb0e0120b4090f713caab2781271c0cf0fde8d836",
+      "vendor/LICENSE.rfc8785.txt": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+      "vendor/manifest.json": "1a4afc2c4b0848b7b17d758e09bded64a7cfffd349d101dddacdf77ee4a863fe",
+      "vendor/rfc8785-0.1.4-py3-none-any.whl": "520d690b448ecf0703691c76e1a34a24ddcd4fc5bc41d589cb7c58ec651bcd48"
+    },
+    "head": "eb4dbc8830d864c9cfd5c4d94bf00180aa960b5d",
+    "source_sha256": "9e9f00e3f1ea1d4d27e8b195b848208e17fc7e9d9d26ec0c1aec58f31594f459"
+  },
+  "smoke": {
+    "development": "3 PASS, 0 FAIL",
+    "installed_wheel": "3 PASS, 0 FAIL"
+  },
+  "status": "PASS",
+  "test_results": {
+    "tests.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 182
+    }
+  },
+  "warnings": [
+    {
+      "line": "warning: no files found matching '*.json' under directory 'tests'",
+      "log": "build.log"
+    },
+    {
+      "line": "warning: no files found matching '*.json' under directory 'tests'",
+      "log": "build.log"
+    },
+    {
+      "line": "warning: no files found matching '*.json' under directory 'tests'",
+      "log": "build.log"
+    },
+    {
+      "line": "warning: no files found matching '*.json' under directory 'tests'",
+      "log": "build.log"
+    }
+  ]
+}

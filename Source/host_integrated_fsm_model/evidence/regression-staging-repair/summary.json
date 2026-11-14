@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "scope": "targeted TASK010/011 provenance tests only",
+  "revision": {
+    "head": "eb4dbc8830d864c9cfd5c4d94bf00180aa960b5d",
+    "branch": "feature/TASK-013-integrated-fsm-model",
+    "files": {
+      "MANIFEST.in": "c940fa599c8052c3edc260d75834932650e8b064f60ba1fa65d764b3ce77e31e",
+      "pyproject.toml": "ab7c5804f4f4f615b990c86c609ebd3ee518f3c8edb5fcf061660b3ccc0af800",
+      "scripts/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scripts/demo.py": "34fcc358b2eaa5dc18a430a8b109b2b314be486346407cdfbbf212f37321eefc",
+      "scripts/fixtures.py": "b93d07149919c3c026be40c53452e23b7babd853b0a0e05e7cc7674ec0ce7815",
+      "scripts/jcs_reference.js": "2cca89a6761f87403a0507c7966ad3a6e87114205ba6b4ce6e9d03110f848cbb",
+      "scripts/smoke.py": "df60417746e99e64d6db4c1225a3335ecebd568b32e386511c65deb4dd49ac08",
+      "scripts/verify.py": "fcb0a5120673c792e15fdf5b4bc55c4c1b79beae5e69af1df556ef1ff6c6eece",
+      "scripts/viewer_reference.js": "7083c615258ffebabe63f978d69d72b45fb2f47d306a2b8270d1230f4342d166",
+      "src/bb_host_integrated_fsm_model/__init__.py": "2b8a4e14fbf01cc1976eb71d695ce19c2d531484c230cd41d122ca62f1146880",
+      "src/bb_host_integrated_fsm_model/jcs.py": "12a3d5bed58ffd82c2bc335fae9c4f98530ce6c735050e512851c4583e86a539",
+      "src/bb_host_integrated_fsm_model/model.py": "f9c73aa64e7b753688bed14474c6713efee89fa15d4de46e627f9c10f911f479",
+      "src/bb_host_integrated_fsm_model/trace.py": "1cf890874febb57fb58015a0c6ccbbe4e4f530ec967988129c2607539aec3249",
+      "src/bb_host_integrated_fsm_model/viewer.py": "f1927e69771aba3faf097138ec7069e81065aff71e91aaac90bc34d95829807d",
+      "tests/test_jcs.py": "095ba46ead06d422800c129dfac7a630b6c4588e11f9f4e547e6a5df437bc999",
+      "tests/test_model.py": "da5394eaae686406f3cab5acf08237061f51cbf13c69d2aca4b6d244b5e44c19",
+      "tests/test_oracles.py": "7f01c7fa644a20cd4086e6c76e02ad716d4b3326d9605537b435f3fe2be4e309",
+      "tests/test_system.py": "d8682190161b15944418e9ec2b296e5344421340ba9ba4520ab0567bb2e4b804",
+      "tests/test_verification.py": "1795c6c83a6e014b36f2440337e2064dc647b24cd90913171c199e5be52f87ad",
+      "vendor/LICENSE.rfc8785.txt": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+      "vendor/manifest.json": "1a4afc2c4b0848b7b17d758e09bded64a7cfffd349d101dddacdf77ee4a863fe",
+      "vendor/rfc8785-0.1.4-py3-none-any.whl": "520d690b448ecf0703691c76e1a34a24ddcd4fc5bc41d589cb7c58ec651bcd48"
+    },
+    "source_sha256": "9f92ab9f992ab45d9af51f5034965041493c053a79fc6dbd77156c371507e0ff"
+  },
+  "tests": [
+    {
+      "name": "task010",
+      "node": "tests/test_boundary.py::test_N18_installed_local_prerequisite_and_release_provenance",
+      "exit_code": 0,
+      "command": [
+        "D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests/test_boundary.py::test_N18_installed_local_prerequisite_and_release_provenance",
+        "--junitxml=D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Source\\host_integrated_fsm_model\\evidence\\regression-staging-repair\\task010.xml"
+      ],
+      "log": "task010.log"
+    },
+    {
+      "name": "task011",
+      "node": "tests/test_intent.py::test_N18_installed_baseline_and_release_hashes",
+      "exit_code": 0,
+      "command": [
+        "D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests/test_intent.py::test_N18_installed_baseline_and_release_hashes",
+        "--junitxml=D:\\Vibecode\\butterfly\\BionicButterfly-Workspace\\BionicButterfly\\Source\\host_integrated_fsm_model\\evidence\\regression-staging-repair\\task011.xml"
+      ],
+      "log": "task011.log"
+    }
+  ],
+  "owner_full_uat": "NOT RERUN; prior Owner failure retained"
+}

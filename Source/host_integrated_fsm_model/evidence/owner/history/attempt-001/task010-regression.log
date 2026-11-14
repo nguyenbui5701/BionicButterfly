@@ -1,0 +1,47 @@
+........................................................................ [ 18%]
+........................................................................ [ 37%]
+........................................................................ [ 55%]
+........................................................................ [ 74%]
+.................................................F...................... [ 93%]
+...........................                                              [100%]
+================================== FAILURES ===================================
+________ test_N18_installed_local_prerequisite_and_release_provenance _________
+
+    def test_N18_installed_local_prerequisite_and_release_provenance():
+        from scripts.verify import provenance, installed_dependencies, PACKAGE
+>       provenance()
+
+tests\test_boundary.py:413: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def provenance():
+        record = json.loads((EVIDENCE / "baseline.json").read_text(encoding="utf-8"))
+        assert record["baseline"] == BASELINE
+        git("merge-base", "--is-ancestor", BASELINE, "HEAD")
+        for row in record["pinned_files"]:
+            assert git("rev-parse", BASELINE + ":" + row["path"]).decode().strip() == row["git_blob_sha1"]
+            assert git("hash-object", row["path"]).decode().strip() == row["git_blob_sha1"], row["path"]
+        design_pins = re.findall(r"\| `([^`]+)` \| `([0-9a-f]{40})` \|",
+                                 (ROOT / "Design/181_TASK009_MERGE_CLOSEOUT_AND_TASK010_BASELINE.md").read_text(encoding="utf-8"))
+        assert len(design_pins) == 18
+        for path, expected in design_pins:
+            raw = (ROOT / path).read_bytes()
+            assert git("rev-parse", BASELINE + ":" + path).decode().strip() == expected
+            assert hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest() == expected, path
+        manifest_path = ROOT / "Design/P222_TASK010_RELEASE_MANIFEST.json"
+        assert hashlib.sha256(manifest_path.read_bytes()).hexdigest() == record["release_manifest_sha256"]
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        assert manifest["source_main_commit"] == BASELINE and manifest["files"] == record["release_files"]
+        for row in manifest["files"]:
+            raw = (ROOT / row["path"]).read_bytes()
+            assert len(raw) == row["bytes"] and hashlib.sha256(raw).hexdigest() == row["sha256"], row["path"]
+            assert hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest() == row["git_blob_sha1"]
+        assert hashlib.sha256((ROOT / "Design/contracts/SIM_POLICY_22A_R1.canonical.json").read_bytes()).hexdigest() == record["policy_sha256"]
+>       assert hashlib.sha256((ROOT / "Source/host_preflight_m0/evidence/baseline.json").read_bytes()).hexdigest() == record["preserved_task001_baseline_sha256"]
+E       AssertionError
+
+scripts\verify.py:50: AssertionError
+- generated xml file: <REPOSITORY>\Source\host_integrated_fsm_model\evidence\owner\task010-regression.xml -
+=========================== short test summary info ===========================
+FAILED tests/test_boundary.py::test_N18_installed_local_prerequisite_and_release_provenance
+1 failed, 386 passed in 30.20s

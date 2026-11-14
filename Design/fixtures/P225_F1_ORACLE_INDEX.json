@@ -1,0 +1,376 @@
+{
+  "baseline": "eb4dbc8830d864c9cfd5c4d94bf00180aa960b5d",
+  "cases": [
+    {
+      "actual_virtual_output": null,
+      "control_trace_sha256": null,
+      "eval_at_us": 0,
+      "expectation": "BOOT only; no model effort",
+      "expected_model_state": "SELF_TEST",
+      "fixture": "nominal",
+      "id": "P225-T01",
+      "operational_runtime_authorized": false,
+      "physical_output": null
+    },
+    {
+      "actual_virtual_output": null,
+      "control_trace_sha256": null,
+      "eval_at_us": 5000,
+      "expectation": "SELF_TEST auto transition in modeled policy, RF UNKNOWN does not grant ARM",
+      "expected_model_state": "DISARMED",
+      "fixture": "nominal",
+      "id": "P225-T02",
+      "operational_runtime_authorized": false,
+      "physical_output": null
+    },
+    {
+      "actual_virtual_output": null,
+      "control_trace_sha256": null,
+      "eval_at_us": 15000,
+      "expectation": "LOW starts with accepted ORIGINAL time 15000",
+      "expected_model_state": "DISARMED",
+      "fixture": "nominal",
+      "id": "P225-T03",
+      "operational_runtime_authorized": false,
+      "physical_output": null
+    },
+    {
+      "actual_virtual_output": null,
+      "control_trace_sha256": null,
+      "eval_at_us": 35000,
+      "expectation": "Second LOW original delta exactly 20000, qualified at prior commit after this tick",
+      "expected_model_state": "DISARMED",
+      "fixture": "nominal",
+      "id": "P225-T04",
+      "operational_runtime_authorized": false,
+      "physical_output": null
+    },
+    {
+      "actual_virtual_output": null,
+      "control_trace_sha256": null,
+      "eval_at_us": 40000,
+      "expectation": "Later HIGH edge after previously committed LOW",
+      "expected_model_state": "ARM_CHECK",
+      "fixture": "nominal",
+      "id": "P225-T05",
+      "operational_runtime_authorized": false,
+      "physical_output": null
+    },
+    {
+      "actual_virtual_output": null,
+      "control_trace_sha256": null,
+      "eval_at_us": 140000,
+      "expectation": "Second HIGH original delta exactly 100000 and neutral",
+      "expected_model_state": "ARMED_IDLE",
+      "fixture": "nominal",
+      "id": "P225-T06",
+      "operational_runtime_authorized": false,
+      "physical_output": null
+    },
+    {
+      "actual_virtual_output": null,
+      "control_trace_sha256": null,
+      "eval_at_us": 145000,
+      "expectation": "Fresh HIGH flap=0.5 steer=0.25 model effort L=250000 R=750000",
+      "expected_model_state": "ACTUATION_ACTIVE",
+      "fixture": "nominal",
+      "id": "P225-T07",
+      "operational_runtime_authorized": false,
+      "physical_output": null
+    },
+    {
+      "actual_virtual_output": null,
+      "control_trace_sha256": null,
+      "eval_at_us": 150000,
+      "expectation": "S1 held model with no accepted timestamp refresh",
+      "expected_model_state": "ACTUATION_ACTIVE",
+      "fixture": "nominal",
+      "id": "P225-T08",
+      "operational_runtime_authorized": false,
+      "physical_output": null
+    },
+    {
+      "actual_virtual_output": null,
+      "control_trace_sha256": null,
+      "eval_at_us": 155000,
+      "expectation": "RF LOST while modeled active inhibits modeled effort",
+      "expected_model_state": "CONTINGENCY",
+      "fixture": "nominal",
+      "id": "P225-T09",
+      "operational_runtime_authorized": false,
+      "physical_output": null
+    },
+    {
+      "actual_virtual_output": null,
+      "control_trace_sha256": null,
+      "eval_at_us": 160000,
+      "expectation": "HEALTHY restored does not auto clear fault or arm",
+      "expected_model_state": "CONTINGENCY",
+      "fixture": "nominal",
+      "id": "P225-T10",
+      "operational_runtime_authorized": false,
+      "physical_output": null
+    },
+    {
+      "actual_virtual_output": null,
+      "control_trace_sha256": null,
+      "eval_at_us": 185000,
+      "expectation": "Two recovery LOW observations with prior committed qualification",
+      "expected_model_state": "CONTINGENCY",
+      "fixture": "nominal",
+      "id": "P225-T11",
+      "operational_runtime_authorized": false,
+      "physical_output": null
+    },
+    {
+      "actual_virtual_output": null,
+      "control_trace_sha256": null,
+      "eval_at_us": 190000,
+      "expectation": "ACK after already committed qualified LOW and restored RF",
+      "expected_model_state": "DISARMED",
+      "fixture": "nominal",
+      "id": "P225-T12",
+      "operational_runtime_authorized": false,
+      "physical_output": null
+    },
+    {
+      "actual_virtual_output": null,
+      "control_trace_sha256": null,
+      "eval_at_us": 220000,
+      "expectation": "New rearm sequence LOW at 195000 and 215000, edge 220000",
+      "expected_model_state": "ARM_CHECK",
+      "fixture": "nominal",
+      "id": "P225-T13",
+      "operational_runtime_authorized": false,
+      "physical_output": null
+    },
+    {
+      "actual_virtual_output": null,
+      "control_trace_sha256": null,
+      "eval_at_us": 325000,
+      "expectation": "Rearm confirmation +105000 from second edge",
+      "expected_model_state": "ARMED_IDLE",
+      "fixture": "nominal",
+      "id": "P225-T14",
+      "operational_runtime_authorized": false,
+      "physical_output": null
+    },
+    {
+      "actual_virtual_output": null,
+      "control_trace_sha256": null,
+      "eval_at_us": 330000,
+      "expectation": "Model math F=.6 S=-.1 gives L=700000 R=500000",
+      "expected_model_state": "ACTUATION_ACTIVE",
+      "fixture": "nominal",
+      "id": "P225-T15",
+      "operational_runtime_authorized": false,
+      "physical_output": null
+    },
+    {
+      "actual_virtual_output": null,
+      "control_trace_sha256": null,
+      "eval_at_us": 335000,
+      "expectation": "Catastrophic fault latches; always output inhibited",
+      "expected_model_state": "FAULT_LATCHED",
+      "fixture": "nominal",
+      "id": "P225-T16",
+      "operational_runtime_authorized": false,
+      "physical_output": null
+    },
+    {
+      "actual_virtual_output": null,
+      "control_trace_sha256": null,
+      "eval_at_us": 340000,
+      "expectation": "RESET cannot clear latch",
+      "expected_model_state": "FAULT_LATCHED",
+      "fixture": "nominal",
+      "id": "P225-T17",
+      "operational_runtime_authorized": false,
+      "physical_output": null
+    },
+    {
+      "actual_virtual_output": null,
+      "control_trace_sha256": null,
+      "eval_at_us": 10000,
+      "expectation": "HIGH without prior qualified LOW must not ARM",
+      "expected_model_state": "DISARMED",
+      "fixture": "recovery",
+      "id": "P225-T18",
+      "operational_runtime_authorized": false,
+      "physical_output": null
+    },
+    {
+      "actual_virtual_output": null,
+      "control_trace_sha256": null,
+      "eval_at_us": 35000,
+      "expectation": "Short LOW separation 15000 cannot qualify",
+      "expected_model_state": "DISARMED",
+      "fixture": "recovery",
+      "id": "P225-T19",
+      "operational_runtime_authorized": false,
+      "physical_output": null
+    },
+    {
+      "actual_virtual_output": null,
+      "control_trace_sha256": null,
+      "eval_at_us": 45000,
+      "expectation": "Qualifying second LOW at 40000, later HIGH edge 45000",
+      "expected_model_state": "ARM_CHECK",
+      "fixture": "recovery",
+      "id": "P225-T20",
+      "operational_runtime_authorized": false,
+      "physical_output": null
+    },
+    {
+      "actual_virtual_output": null,
+      "control_trace_sha256": null,
+      "eval_at_us": 160000,
+      "expectation": "ACK before recovery LOW qualification cannot clear",
+      "expected_model_state": "CONTINGENCY",
+      "fixture": "recovery",
+      "id": "P225-T21",
+      "operational_runtime_authorized": false,
+      "physical_output": null
+    },
+    {
+      "actual_virtual_output": null,
+      "control_trace_sha256": null,
+      "eval_at_us": 195000,
+      "expectation": "ACK with restored RF and previously committed LOW",
+      "expected_model_state": "DISARMED",
+      "fixture": "recovery",
+      "id": "P225-T22",
+      "operational_runtime_authorized": false,
+      "physical_output": null
+    },
+    {
+      "actual_virtual_output": null,
+      "control_trace_sha256": null,
+      "eval_at_us": 15000,
+      "expectation": "Distinct valid control batch conflict denies acceptance",
+      "expected_model_state": "DISARMED",
+      "fixture": "conflict",
+      "id": "P225-T23",
+      "operational_runtime_authorized": false,
+      "physical_output": null
+    },
+    {
+      "actual_virtual_output": null,
+      "control_trace_sha256": null,
+      "eval_at_us": 35000,
+      "expectation": "Catastrophe+RESET+ACK+LOW resolves latch",
+      "expected_model_state": "FAULT_LATCHED",
+      "fixture": "conflict",
+      "id": "P225-T24",
+      "operational_runtime_authorized": false,
+      "physical_output": null
+    }
+  ],
+  "fixture_status": "DESIGN_ONLY_NOT_EXECUTED",
+  "fixtures": {
+    "conflict": "Design/fixtures/P225_F1_CONFLICT_WIRE_V2.json",
+    "nominal": "Design/fixtures/P225_F1_NOMINAL_WIRE_V2.json",
+    "recovery": "Design/fixtures/P225_F1_RECOVERY_WIRE_V2.json"
+  },
+  "model_oracle_count": 24,
+  "negative_families": [
+    {
+      "family": "wrong Python types",
+      "id": "N01"
+    },
+    {
+      "family": "E2 E3 mismatch",
+      "id": "N02"
+    },
+    {
+      "family": "modified frozen policy",
+      "id": "N03"
+    },
+    {
+      "family": "unauthorized keys/plugins",
+      "id": "N04"
+    },
+    {
+      "family": "duplicate event IDs",
+      "id": "N05"
+    },
+    {
+      "family": "valid batch conflict",
+      "id": "N06"
+    },
+    {
+      "family": "INVALID plus VALID",
+      "id": "N07"
+    },
+    {
+      "family": "HEALTHY versus LOST same tick",
+      "id": "N08"
+    },
+    {
+      "family": "original timestamp boundaries",
+      "id": "N09"
+    },
+    {
+      "family": "LOW 19999/20000",
+      "id": "N10"
+    },
+    {
+      "family": "HIGH 99999/100000",
+      "id": "N11"
+    },
+    {
+      "family": "independent ages 200000/200001",
+      "id": "N12"
+    },
+    {
+      "family": "held HIGH startup and reset",
+      "id": "N13"
+    },
+    {
+      "family": "catastrophe dominates reset",
+      "id": "N14"
+    },
+    {
+      "family": "ACK needs prior committed LOW",
+      "id": "N15"
+    },
+    {
+      "family": "S1 hold no timestamp refresh",
+      "id": "N16"
+    },
+    {
+      "family": "fault injection atomic append",
+      "id": "N17"
+    },
+    {
+      "family": "RFC8785 I-JSON and Unicode test vectors",
+      "id": "N18"
+    },
+    {
+      "family": "runtime authorization always denied",
+      "id": "N19"
+    },
+    {
+      "family": "no hardware/network I/O",
+      "id": "N20"
+    },
+    {
+      "family": "locale TZ deterministic replay",
+      "id": "N21"
+    },
+    {
+      "family": "60s and 20k events",
+      "id": "N22"
+    },
+    {
+      "family": "TASK006 D2 never authority",
+      "id": "N23"
+    },
+    {
+      "family": "HTML viewer cannot publish or command",
+      "id": "N24"
+    }
+  ],
+  "oracle_meaning": "hand authored from Design/115 + /116 + /132; not runtime-generated PASS",
+  "policy_sha256": "d7567197dd43480d7e96dac121fbb707d3097b6c443b1b7ab55e822dbac66e10"
+}

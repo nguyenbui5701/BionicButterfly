@@ -1,0 +1,9 @@
+{
+  "package": "rfc8785",
+  "version": "0.1.4",
+  "license": "Apache-2.0",
+  "source": "https://github.com/trailofbits/rfc8785.py",
+  "wheel": "rfc8785-0.1.4-py3-none-any.whl",
+  "sha256": "520d690b448ecf0703691c76e1a34a24ddcd4fc5bc41d589cb7c58ec651bcd48",
+  "review": "Reviewed _impl.py: no dependencies/IO, UTF-16BE sorting, Unicode rejection, finite binary64 ECMAScript formatting. Independent Node/V8 and RFC vectors required."
+}
