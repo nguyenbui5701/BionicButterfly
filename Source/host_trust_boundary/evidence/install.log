@@ -1,0 +1,17 @@
+Obtaining file:///<REPOSITORY>/Source/host_trust_boundary
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: bb-host-trust-boundary
+  Building editable for bb-host-trust-boundary (pyproject.toml): started
+  Building editable for bb-host-trust-boundary (pyproject.toml): finished with status 'done'
+  Created wheel for bb-host-trust-boundary: filename=bb_host_trust_boundary-0.1.0-0.editable-py3-none-any.whl size=3437 sha256=b07f03409c2d88574dd35915a6251805925868db58c4f66ab00d2a7cd9a6d0d4
+  Stored in directory: <USERPROFILE>\AppData\Local\Temp\pip-ephem-wheel-cache-y04xs91u\wheels\f7\30\82\b9b979ec3701cfff296b1bd58a3acae021d7df1be7b7940111
+Successfully built bb-host-trust-boundary
+Installing collected packages: bb-host-trust-boundary
+  Attempting uninstall: bb-host-trust-boundary
+    Found existing installation: bb-host-trust-boundary 0.1.0
+    Uninstalling bb-host-trust-boundary-0.1.0:
+      Successfully uninstalled bb-host-trust-boundary-0.1.0
+Successfully installed bb-host-trust-boundary-0.1.0

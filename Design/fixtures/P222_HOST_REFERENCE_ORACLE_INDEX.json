@@ -1,0 +1,1185 @@
+{
+  "schema_version": "P222_HOST_REFERENCE_ORACLE_INDEX_V1",
+  "source_main_commit": "4c7c92524837c8c728d0f206e5ba4655f9513399",
+  "status": "DESIGN_SPECIFIED_ONLY_TASK010_RUNTIME_NOT_RUN",
+  "scope": "PC_SIM_ONLY_TEST_ONLY",
+  "count": 48,
+  "source_wire_fixture": "Design/fixtures/P210_MINIMAL_WIRE_V2.json",
+  "source_policy_bytes": "Design/contracts/SIM_POLICY_22A_R1.canonical.json",
+  "reference_host_claim": {
+    "context": "PC_SIM",
+    "scope": "PC_SIM_ONLY",
+    "owner": "SIMULATOR",
+    "contract_revision": "G0A1_R11_E2_TEST_REFERENCE_ONLY",
+    "engine_revision": "G0A1_E2_TEST_ENGINE_ONLY",
+    "scheduler_revision": "G0A1_E2_TEST_SCHEDULER_ONLY",
+    "scheduler_step_us": 5000,
+    "scenario_wire_schema_version": 2,
+    "result_contract_version": 2,
+    "trace_format_version": 1,
+    "mixer_revision": "G0A1_M0_R11"
+  },
+  "recipe_instruction": "Start from exact P210 legal wire raw bytes; apply wire_case mutation in tests, then invoke genuine TASK-001 validate_wire on pinned schema. For valid preflight only, invoke TASK-010 with exact policy raw bytes or named byte mutation and claimed HostFingerprint TEST_ONLY. For rejected preflight invoke E2 and assert UPSTREAM_REJECTED regardless other arguments. Do not use JSON extras as host claim.",
+  "hash_assertion": "candidate_policy_sha256 equality marker =sha256(selected_raw_policy_bytes).hexdigest() means recompute digest on actual transformed bytes; no eval of marker expression.",
+  "host_fields": [
+    "context",
+    "scope",
+    "owner",
+    "contract_revision",
+    "engine_revision",
+    "scheduler_revision",
+    "scheduler_step_us",
+    "scenario_wire_schema_version",
+    "result_contract_version",
+    "trace_format_version",
+    "mixer_revision"
+  ],
+  "ordered_reasons": [
+    "UPSTREAM_REJECTED",
+    "POLICY_BYTES_MISMATCH",
+    "CONTEXT_MISMATCH",
+    "SCOPE_MISMATCH",
+    "OWNER_MISMATCH",
+    "CONTRACT_REVISION_MISMATCH",
+    "ENGINE_REVISION_MISMATCH",
+    "SCHEDULER_REVISION_MISMATCH",
+    "SCHEDULER_STEP_MISMATCH",
+    "WIRE_VERSION_MISMATCH",
+    "RESULT_VERSION_MISMATCH",
+    "TRACE_VERSION_MISMATCH",
+    "MIXER_REVISION_MISMATCH",
+    "HOST_IDENTITY_NOT_ATTESTED",
+    "TRUST_NOT_PROVISIONED"
+  ],
+  "cases": [
+    {
+      "id": "P222-T01",
+      "name": "exact_frozen_bytes_and_test_claim_match_no_authority",
+      "wire_case": "VALID_MINIMAL",
+      "policy_raw_variant": "EXACT",
+      "host_overrides": {},
+      "expected": {
+        "outcome": "REFERENCE_MATCH_NO_AUTHORITY",
+        "candidate_policy_sha256": "=sha256(selected_raw_policy_bytes).hexdigest()",
+        "wire_schema_version": 2,
+        "reference_pin_match": true,
+        "reasons": [
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T02",
+      "name": "flip_single_policy_byte",
+      "wire_case": "VALID_MINIMAL",
+      "policy_raw_variant": "BYTE_FLIP",
+      "host_overrides": {},
+      "expected": {
+        "outcome": "REFERENCE_MISMATCH",
+        "candidate_policy_sha256": "=sha256(selected_raw_policy_bytes).hexdigest()",
+        "wire_schema_version": 2,
+        "reference_pin_match": false,
+        "reasons": [
+          "POLICY_BYTES_MISMATCH",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T03",
+      "name": "trailing_lf_rejected",
+      "wire_case": "VALID_MINIMAL",
+      "policy_raw_variant": "TRAILING_LF",
+      "host_overrides": {},
+      "expected": {
+        "outcome": "REFERENCE_MISMATCH",
+        "candidate_policy_sha256": "=sha256(selected_raw_policy_bytes).hexdigest()",
+        "wire_schema_version": 2,
+        "reference_pin_match": false,
+        "reasons": [
+          "POLICY_BYTES_MISMATCH",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T04",
+      "name": "leading_bom_rejected",
+      "wire_case": "VALID_MINIMAL",
+      "policy_raw_variant": "LEADING_BOM",
+      "host_overrides": {},
+      "expected": {
+        "outcome": "REFERENCE_MISMATCH",
+        "candidate_policy_sha256": "=sha256(selected_raw_policy_bytes).hexdigest()",
+        "wire_schema_version": 2,
+        "reference_pin_match": false,
+        "reasons": [
+          "POLICY_BYTES_MISMATCH",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T05",
+      "name": "whitespace_rewrite_rejected",
+      "wire_case": "VALID_MINIMAL",
+      "policy_raw_variant": "WHITESPACE",
+      "host_overrides": {},
+      "expected": {
+        "outcome": "REFERENCE_MISMATCH",
+        "candidate_policy_sha256": "=sha256(selected_raw_policy_bytes).hexdigest()",
+        "wire_schema_version": 2,
+        "reference_pin_match": false,
+        "reasons": [
+          "POLICY_BYTES_MISMATCH",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T06",
+      "name": "reordered_json_keys_rejected",
+      "wire_case": "VALID_MINIMAL",
+      "policy_raw_variant": "REORDERED_KEYS",
+      "host_overrides": {},
+      "expected": {
+        "outcome": "REFERENCE_MISMATCH",
+        "candidate_policy_sha256": "=sha256(selected_raw_policy_bytes).hexdigest()",
+        "wire_schema_version": 2,
+        "reference_pin_match": false,
+        "reasons": [
+          "POLICY_BYTES_MISMATCH",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T07",
+      "name": "policy_step_change_rejected",
+      "wire_case": "VALID_MINIMAL",
+      "policy_raw_variant": "STEP_10000",
+      "host_overrides": {},
+      "expected": {
+        "outcome": "REFERENCE_MISMATCH",
+        "candidate_policy_sha256": "=sha256(selected_raw_policy_bytes).hexdigest()",
+        "wire_schema_version": 2,
+        "reference_pin_match": false,
+        "reasons": [
+          "POLICY_BYTES_MISMATCH",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T08",
+      "name": "policy_owner_change_rejected",
+      "wire_case": "VALID_MINIMAL",
+      "policy_raw_variant": "OWNER_USER",
+      "host_overrides": {},
+      "expected": {
+        "outcome": "REFERENCE_MISMATCH",
+        "candidate_policy_sha256": "=sha256(selected_raw_policy_bytes).hexdigest()",
+        "wire_schema_version": 2,
+        "reference_pin_match": false,
+        "reasons": [
+          "POLICY_BYTES_MISMATCH",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T09",
+      "name": "approval_added_rejected",
+      "wire_case": "VALID_MINIMAL",
+      "policy_raw_variant": "APPROVED_TRUE_KEY",
+      "host_overrides": {},
+      "expected": {
+        "outcome": "REFERENCE_MISMATCH",
+        "candidate_policy_sha256": "=sha256(selected_raw_policy_bytes).hexdigest()",
+        "wire_schema_version": 2,
+        "reference_pin_match": false,
+        "reasons": [
+          "POLICY_BYTES_MISMATCH",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T10",
+      "name": "empty_policy_rejected",
+      "wire_case": "VALID_MINIMAL",
+      "policy_raw_variant": "EMPTY",
+      "host_overrides": {},
+      "expected": {
+        "outcome": "REFERENCE_MISMATCH",
+        "candidate_policy_sha256": "=sha256(selected_raw_policy_bytes).hexdigest()",
+        "wire_schema_version": 2,
+        "reference_pin_match": false,
+        "reasons": [
+          "POLICY_BYTES_MISMATCH",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T11",
+      "name": "invalid_utf8_policy_bytes_rejected",
+      "wire_case": "VALID_MINIMAL",
+      "policy_raw_variant": "INVALID_UTF8",
+      "host_overrides": {},
+      "expected": {
+        "outcome": "REFERENCE_MISMATCH",
+        "candidate_policy_sha256": "=sha256(selected_raw_policy_bytes).hexdigest()",
+        "wire_schema_version": 2,
+        "reference_pin_match": false,
+        "reasons": [
+          "POLICY_BYTES_MISMATCH",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T12",
+      "name": "numeric_value_semantic_edit_rejected",
+      "wire_case": "VALID_MINIMAL",
+      "policy_raw_variant": "RF_TIMEOUT_200001",
+      "host_overrides": {},
+      "expected": {
+        "outcome": "REFERENCE_MISMATCH",
+        "candidate_policy_sha256": "=sha256(selected_raw_policy_bytes).hexdigest()",
+        "wire_schema_version": 2,
+        "reference_pin_match": false,
+        "reasons": [
+          "POLICY_BYTES_MISMATCH",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T13",
+      "name": "wrong_host_context",
+      "wire_case": "VALID_MINIMAL",
+      "policy_raw_variant": "EXACT",
+      "host_overrides": {
+        "context": "PC_SIM_WRONG"
+      },
+      "expected": {
+        "outcome": "REFERENCE_MISMATCH",
+        "candidate_policy_sha256": "=sha256(selected_raw_policy_bytes).hexdigest()",
+        "wire_schema_version": 2,
+        "reference_pin_match": false,
+        "reasons": [
+          "CONTEXT_MISMATCH",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T14",
+      "name": "wrong_host_scope",
+      "wire_case": "VALID_MINIMAL",
+      "policy_raw_variant": "EXACT",
+      "host_overrides": {
+        "scope": "PC_SIM_ONLY_WRONG"
+      },
+      "expected": {
+        "outcome": "REFERENCE_MISMATCH",
+        "candidate_policy_sha256": "=sha256(selected_raw_policy_bytes).hexdigest()",
+        "wire_schema_version": 2,
+        "reference_pin_match": false,
+        "reasons": [
+          "SCOPE_MISMATCH",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T15",
+      "name": "wrong_host_owner",
+      "wire_case": "VALID_MINIMAL",
+      "policy_raw_variant": "EXACT",
+      "host_overrides": {
+        "owner": "SIMULATOR_WRONG"
+      },
+      "expected": {
+        "outcome": "REFERENCE_MISMATCH",
+        "candidate_policy_sha256": "=sha256(selected_raw_policy_bytes).hexdigest()",
+        "wire_schema_version": 2,
+        "reference_pin_match": false,
+        "reasons": [
+          "OWNER_MISMATCH",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T16",
+      "name": "wrong_host_contract_revision",
+      "wire_case": "VALID_MINIMAL",
+      "policy_raw_variant": "EXACT",
+      "host_overrides": {
+        "contract_revision": "G0A1_R11_E2_TEST_REFERENCE_ONLY_WRONG"
+      },
+      "expected": {
+        "outcome": "REFERENCE_MISMATCH",
+        "candidate_policy_sha256": "=sha256(selected_raw_policy_bytes).hexdigest()",
+        "wire_schema_version": 2,
+        "reference_pin_match": false,
+        "reasons": [
+          "CONTRACT_REVISION_MISMATCH",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T17",
+      "name": "wrong_host_engine_revision",
+      "wire_case": "VALID_MINIMAL",
+      "policy_raw_variant": "EXACT",
+      "host_overrides": {
+        "engine_revision": "G0A1_E2_TEST_ENGINE_ONLY_WRONG"
+      },
+      "expected": {
+        "outcome": "REFERENCE_MISMATCH",
+        "candidate_policy_sha256": "=sha256(selected_raw_policy_bytes).hexdigest()",
+        "wire_schema_version": 2,
+        "reference_pin_match": false,
+        "reasons": [
+          "ENGINE_REVISION_MISMATCH",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T18",
+      "name": "wrong_host_scheduler_revision",
+      "wire_case": "VALID_MINIMAL",
+      "policy_raw_variant": "EXACT",
+      "host_overrides": {
+        "scheduler_revision": "G0A1_E2_TEST_SCHEDULER_ONLY_WRONG"
+      },
+      "expected": {
+        "outcome": "REFERENCE_MISMATCH",
+        "candidate_policy_sha256": "=sha256(selected_raw_policy_bytes).hexdigest()",
+        "wire_schema_version": 2,
+        "reference_pin_match": false,
+        "reasons": [
+          "SCHEDULER_REVISION_MISMATCH",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T19",
+      "name": "wrong_host_scheduler_step_us",
+      "wire_case": "VALID_MINIMAL",
+      "policy_raw_variant": "EXACT",
+      "host_overrides": {
+        "scheduler_step_us": 5001
+      },
+      "expected": {
+        "outcome": "REFERENCE_MISMATCH",
+        "candidate_policy_sha256": "=sha256(selected_raw_policy_bytes).hexdigest()",
+        "wire_schema_version": 2,
+        "reference_pin_match": false,
+        "reasons": [
+          "SCHEDULER_STEP_MISMATCH",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T20",
+      "name": "wrong_host_scenario_wire_schema_version",
+      "wire_case": "VALID_MINIMAL",
+      "policy_raw_variant": "EXACT",
+      "host_overrides": {
+        "scenario_wire_schema_version": 3
+      },
+      "expected": {
+        "outcome": "REFERENCE_MISMATCH",
+        "candidate_policy_sha256": "=sha256(selected_raw_policy_bytes).hexdigest()",
+        "wire_schema_version": 2,
+        "reference_pin_match": false,
+        "reasons": [
+          "WIRE_VERSION_MISMATCH",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T21",
+      "name": "wrong_host_result_contract_version",
+      "wire_case": "VALID_MINIMAL",
+      "policy_raw_variant": "EXACT",
+      "host_overrides": {
+        "result_contract_version": 3
+      },
+      "expected": {
+        "outcome": "REFERENCE_MISMATCH",
+        "candidate_policy_sha256": "=sha256(selected_raw_policy_bytes).hexdigest()",
+        "wire_schema_version": 2,
+        "reference_pin_match": false,
+        "reasons": [
+          "RESULT_VERSION_MISMATCH",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T22",
+      "name": "wrong_host_trace_format_version",
+      "wire_case": "VALID_MINIMAL",
+      "policy_raw_variant": "EXACT",
+      "host_overrides": {
+        "trace_format_version": 2
+      },
+      "expected": {
+        "outcome": "REFERENCE_MISMATCH",
+        "candidate_policy_sha256": "=sha256(selected_raw_policy_bytes).hexdigest()",
+        "wire_schema_version": 2,
+        "reference_pin_match": false,
+        "reasons": [
+          "TRACE_VERSION_MISMATCH",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T23",
+      "name": "wrong_host_mixer_revision",
+      "wire_case": "VALID_MINIMAL",
+      "policy_raw_variant": "EXACT",
+      "host_overrides": {
+        "mixer_revision": "G0A1_M0_R11_WRONG"
+      },
+      "expected": {
+        "outcome": "REFERENCE_MISMATCH",
+        "candidate_policy_sha256": "=sha256(selected_raw_policy_bytes).hexdigest()",
+        "wire_schema_version": 2,
+        "reference_pin_match": false,
+        "reasons": [
+          "MIXER_REVISION_MISMATCH",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T24",
+      "name": "wrong_scope_and_owner",
+      "wire_case": "VALID_MINIMAL",
+      "policy_raw_variant": "EXACT",
+      "host_overrides": {
+        "scope": "RC_PRIMARY",
+        "owner": "UNTRUSTED_USER"
+      },
+      "expected": {
+        "outcome": "REFERENCE_MISMATCH",
+        "candidate_policy_sha256": "=sha256(selected_raw_policy_bytes).hexdigest()",
+        "wire_schema_version": 2,
+        "reference_pin_match": false,
+        "reasons": [
+          "SCOPE_MISMATCH",
+          "OWNER_MISMATCH",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T25",
+      "name": "wrong_engine_and_scheduler",
+      "wire_case": "VALID_MINIMAL",
+      "policy_raw_variant": "EXACT",
+      "host_overrides": {
+        "engine_revision": "G0A1_DESIGN_REFERENCE_1",
+        "scheduler_revision": "FIXED_5MS_DESIGN_1"
+      },
+      "expected": {
+        "outcome": "REFERENCE_MISMATCH",
+        "candidate_policy_sha256": "=sha256(selected_raw_policy_bytes).hexdigest()",
+        "wire_schema_version": 2,
+        "reference_pin_match": false,
+        "reasons": [
+          "ENGINE_REVISION_MISMATCH",
+          "SCHEDULER_REVISION_MISMATCH",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T26",
+      "name": "wrong_policy_and_scope",
+      "wire_case": "VALID_MINIMAL",
+      "policy_raw_variant": "TRAILING_LF",
+      "host_overrides": {
+        "scope": "PC_SIM_RUNTIME"
+      },
+      "expected": {
+        "outcome": "REFERENCE_MISMATCH",
+        "candidate_policy_sha256": "=sha256(selected_raw_policy_bytes).hexdigest()",
+        "wire_schema_version": 2,
+        "reference_pin_match": false,
+        "reasons": [
+          "POLICY_BYTES_MISMATCH",
+          "SCOPE_MISMATCH",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T27",
+      "name": "wrong_policy_engine_trace_versions",
+      "wire_case": "VALID_MINIMAL",
+      "policy_raw_variant": "BYTE_FLIP",
+      "host_overrides": {
+        "engine_revision": "REPLACED",
+        "trace_format_version": 2
+      },
+      "expected": {
+        "outcome": "REFERENCE_MISMATCH",
+        "candidate_policy_sha256": "=sha256(selected_raw_policy_bytes).hexdigest()",
+        "wire_schema_version": 2,
+        "reference_pin_match": false,
+        "reasons": [
+          "POLICY_BYTES_MISMATCH",
+          "ENGINE_REVISION_MISMATCH",
+          "TRACE_VERSION_MISMATCH",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T28",
+      "name": "wrong_policy_wire_and_context",
+      "wire_case": "VALID_MINIMAL",
+      "policy_raw_variant": "EMPTY",
+      "host_overrides": {
+        "scenario_wire_schema_version": 1,
+        "context": "RC"
+      },
+      "expected": {
+        "outcome": "REFERENCE_MISMATCH",
+        "candidate_policy_sha256": "=sha256(selected_raw_policy_bytes).hexdigest()",
+        "wire_schema_version": 2,
+        "reference_pin_match": false,
+        "reasons": [
+          "POLICY_BYTES_MISMATCH",
+          "CONTEXT_MISMATCH",
+          "WIRE_VERSION_MISMATCH",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T29",
+      "name": "unknown_top_level_approved_rejected",
+      "wire_case": "UNKNOWN_APPROVED",
+      "policy_raw_variant": "EXACT",
+      "host_overrides": {},
+      "expected": {
+        "outcome": "UPSTREAM_REJECTED",
+        "candidate_policy_sha256": null,
+        "wire_schema_version": null,
+        "reference_pin_match": false,
+        "reasons": [
+          "UPSTREAM_REJECTED",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T30",
+      "name": "unknown_top_level_owner_rejected",
+      "wire_case": "UNKNOWN_OWNER",
+      "policy_raw_variant": "EXACT",
+      "host_overrides": {},
+      "expected": {
+        "outcome": "UPSTREAM_REJECTED",
+        "candidate_policy_sha256": null,
+        "wire_schema_version": null,
+        "reference_pin_match": false,
+        "reasons": [
+          "UPSTREAM_REJECTED",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T31",
+      "name": "unknown_sink_rejected",
+      "wire_case": "UNKNOWN_SINK",
+      "policy_raw_variant": "EXACT",
+      "host_overrides": {},
+      "expected": {
+        "outcome": "UPSTREAM_REJECTED",
+        "candidate_policy_sha256": null,
+        "wire_schema_version": null,
+        "reference_pin_match": false,
+        "reasons": [
+          "UPSTREAM_REJECTED",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T32",
+      "name": "unknown_allowlist_rejected",
+      "wire_case": "UNKNOWN_ALLOWLIST",
+      "policy_raw_variant": "EXACT",
+      "host_overrides": {},
+      "expected": {
+        "outcome": "UPSTREAM_REJECTED",
+        "candidate_policy_sha256": null,
+        "wire_schema_version": null,
+        "reference_pin_match": false,
+        "reasons": [
+          "UPSTREAM_REJECTED",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T33",
+      "name": "unknown_engine_rejected",
+      "wire_case": "UNKNOWN_ENGINE",
+      "policy_raw_variant": "EXACT",
+      "host_overrides": {},
+      "expected": {
+        "outcome": "UPSTREAM_REJECTED",
+        "candidate_policy_sha256": null,
+        "wire_schema_version": null,
+        "reference_pin_match": false,
+        "reasons": [
+          "UPSTREAM_REJECTED",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T34",
+      "name": "unknown_scheduler_rejected",
+      "wire_case": "UNKNOWN_SCHEDULER",
+      "policy_raw_variant": "EXACT",
+      "host_overrides": {},
+      "expected": {
+        "outcome": "UPSTREAM_REJECTED",
+        "candidate_policy_sha256": null,
+        "wire_schema_version": null,
+        "reference_pin_match": false,
+        "reasons": [
+          "UPSTREAM_REJECTED",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T35",
+      "name": "wrong_scenario_context_rejected",
+      "wire_case": "WRONG_CONTEXT",
+      "policy_raw_variant": "EXACT",
+      "host_overrides": {},
+      "expected": {
+        "outcome": "UPSTREAM_REJECTED",
+        "candidate_policy_sha256": null,
+        "wire_schema_version": null,
+        "reference_pin_match": false,
+        "reasons": [
+          "UPSTREAM_REJECTED",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T36",
+      "name": "wrong_wire_version_rejected",
+      "wire_case": "WRONG_VERSION",
+      "policy_raw_variant": "EXACT",
+      "host_overrides": {},
+      "expected": {
+        "outcome": "UPSTREAM_REJECTED",
+        "candidate_policy_sha256": null,
+        "wire_schema_version": null,
+        "reference_pin_match": false,
+        "reasons": [
+          "UPSTREAM_REJECTED",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T37",
+      "name": "wrong_provenance_rejected",
+      "wire_case": "WRONG_PROVENANCE",
+      "policy_raw_variant": "EXACT",
+      "host_overrides": {},
+      "expected": {
+        "outcome": "UPSTREAM_REJECTED",
+        "candidate_policy_sha256": null,
+        "wire_schema_version": null,
+        "reference_pin_match": false,
+        "reasons": [
+          "UPSTREAM_REJECTED",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T38",
+      "name": "wrong_config_id_rejected",
+      "wire_case": "WRONG_CONFIG",
+      "policy_raw_variant": "EXACT",
+      "host_overrides": {},
+      "expected": {
+        "outcome": "UPSTREAM_REJECTED",
+        "candidate_policy_sha256": null,
+        "wire_schema_version": null,
+        "reference_pin_match": false,
+        "reasons": [
+          "UPSTREAM_REJECTED",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T39",
+      "name": "wrong_clock_step_rejected",
+      "wire_case": "WRONG_CLOCK",
+      "policy_raw_variant": "EXACT",
+      "host_overrides": {},
+      "expected": {
+        "outcome": "UPSTREAM_REJECTED",
+        "candidate_policy_sha256": null,
+        "wire_schema_version": null,
+        "reference_pin_match": false,
+        "reasons": [
+          "UPSTREAM_REJECTED",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T40",
+      "name": "extra_event_type_rejected",
+      "wire_case": "UNKNOWN_EVENT",
+      "policy_raw_variant": "EXACT",
+      "host_overrides": {},
+      "expected": {
+        "outcome": "UPSTREAM_REJECTED",
+        "candidate_policy_sha256": null,
+        "wire_schema_version": null,
+        "reference_pin_match": false,
+        "reasons": [
+          "UPSTREAM_REJECTED",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T41",
+      "name": "duplicate_boot_rejected",
+      "wire_case": "DUPLICATE_BOOT",
+      "policy_raw_variant": "EXACT",
+      "host_overrides": {},
+      "expected": {
+        "outcome": "UPSTREAM_REJECTED",
+        "candidate_policy_sha256": null,
+        "wire_schema_version": null,
+        "reference_pin_match": false,
+        "reasons": [
+          "UPSTREAM_REJECTED",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T42",
+      "name": "utf8_bom_wire_rejected",
+      "wire_case": "WIRE_BOM",
+      "policy_raw_variant": "EXACT",
+      "host_overrides": {},
+      "expected": {
+        "outcome": "UPSTREAM_REJECTED",
+        "candidate_policy_sha256": null,
+        "wire_schema_version": null,
+        "reference_pin_match": false,
+        "reasons": [
+          "UPSTREAM_REJECTED",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T43",
+      "name": "duplicate_json_key_rejected",
+      "wire_case": "DUPLICATE_JSON_KEY",
+      "policy_raw_variant": "EXACT",
+      "host_overrides": {},
+      "expected": {
+        "outcome": "UPSTREAM_REJECTED",
+        "candidate_policy_sha256": null,
+        "wire_schema_version": null,
+        "reference_pin_match": false,
+        "reasons": [
+          "UPSTREAM_REJECTED",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T44",
+      "name": "rejected_wire_cannot_be_rescued_by_policy_claim",
+      "wire_case": "WRONG_CONTEXT",
+      "policy_raw_variant": "EXACT",
+      "host_overrides": {
+        "scope": "PC_SIM_ONLY"
+      },
+      "expected": {
+        "outcome": "UPSTREAM_REJECTED",
+        "candidate_policy_sha256": null,
+        "wire_schema_version": null,
+        "reference_pin_match": false,
+        "reasons": [
+          "UPSTREAM_REJECTED",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T45",
+      "name": "rejected_wire_with_bad_policy_precedence",
+      "wire_case": "WRONG_VERSION",
+      "policy_raw_variant": "TRAILING_LF",
+      "host_overrides": {
+        "engine_revision": "BAD"
+      },
+      "expected": {
+        "outcome": "UPSTREAM_REJECTED",
+        "candidate_policy_sha256": null,
+        "wire_schema_version": null,
+        "reference_pin_match": false,
+        "reasons": [
+          "UPSTREAM_REJECTED",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T46",
+      "name": "rejected_schema_injection_and_good_claim",
+      "wire_case": "UNKNOWN_APPROVED",
+      "policy_raw_variant": "EXACT",
+      "host_overrides": {},
+      "expected": {
+        "outcome": "UPSTREAM_REJECTED",
+        "candidate_policy_sha256": null,
+        "wire_schema_version": null,
+        "reference_pin_match": false,
+        "reasons": [
+          "UPSTREAM_REJECTED",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T47",
+      "name": "test_claim_exact_but_policy_tampered",
+      "wire_case": "VALID_MINIMAL",
+      "policy_raw_variant": "RF_TIMEOUT_200001",
+      "host_overrides": {},
+      "expected": {
+        "outcome": "REFERENCE_MISMATCH",
+        "candidate_policy_sha256": "=sha256(selected_raw_policy_bytes).hexdigest()",
+        "wire_schema_version": 2,
+        "reference_pin_match": false,
+        "reasons": [
+          "POLICY_BYTES_MISMATCH",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P222-T48",
+      "name": "all_host_values_wrong_plus_bad_policy",
+      "wire_case": "VALID_MINIMAL",
+      "policy_raw_variant": "LEADING_BOM",
+      "host_overrides": {
+        "context": "PC_SIM_WRONG",
+        "scope": "PC_SIM_ONLY_WRONG",
+        "owner": "SIMULATOR_WRONG",
+        "contract_revision": "G0A1_R11_E2_TEST_REFERENCE_ONLY_WRONG",
+        "engine_revision": "G0A1_E2_TEST_ENGINE_ONLY_WRONG",
+        "scheduler_revision": "G0A1_E2_TEST_SCHEDULER_ONLY_WRONG",
+        "scheduler_step_us": 5001,
+        "scenario_wire_schema_version": 3,
+        "result_contract_version": 3,
+        "trace_format_version": 2,
+        "mixer_revision": "G0A1_M0_R11_WRONG"
+      },
+      "expected": {
+        "outcome": "REFERENCE_MISMATCH",
+        "candidate_policy_sha256": "=sha256(selected_raw_policy_bytes).hexdigest()",
+        "wire_schema_version": 2,
+        "reference_pin_match": false,
+        "reasons": [
+          "POLICY_BYTES_MISMATCH",
+          "CONTEXT_MISMATCH",
+          "SCOPE_MISMATCH",
+          "OWNER_MISMATCH",
+          "CONTRACT_REVISION_MISMATCH",
+          "ENGINE_REVISION_MISMATCH",
+          "SCHEDULER_REVISION_MISMATCH",
+          "SCHEDULER_STEP_MISMATCH",
+          "WIRE_VERSION_MISMATCH",
+          "RESULT_VERSION_MISMATCH",
+          "TRACE_VERSION_MISMATCH",
+          "MIXER_REVISION_MISMATCH",
+          "HOST_IDENTITY_NOT_ATTESTED",
+          "TRUST_NOT_PROVISIONED"
+        ],
+        "runtime_authorized": false,
+        "requires_trusted_host_provisioning": true,
+        "requires_full_fsm": true
+      }
+    }
+  ],
+  "mandatory_negative_test_families": [
+    "N01 exact preflight result classes and strict accepted/rejected shapes; fabricated wrapper never grants authority",
+    "N02 wrong host claim type, str subclass, bool-as-int, float step, nonintegral/NaN/Decimal versions, extra kwargs",
+    "N03 wrong policy raw type bytearray/memoryview/str and forged digest field; require exact bytes",
+    "N04 policy mutations: trailing LF/BOM/whitespace/key order/new approved key/numeric changes even if semantic object looks similar",
+    "N05 verify exact digest of Design/116 canonical bytes and enforce pinned reference identity, not trust",
+    "N06 genuine TASK-001 rejected preflight precedence over valid claim or policy; zero core ticks",
+    "N07 scenario-injected approved/owner/engine/scheduler/trust/physical sink forbidden by frozen wire schema",
+    "N08 accepted valid minimal wire with matching test claim never authorized; always two missing-trust reasons",
+    "N09 all 11 claim values mismatch independently and in combination with stable ordered reason tuple",
+    "N10 frozen result exact eight fields and three terminal booleans, no exposure of actual authorization token",
+    "N11 constant O(1) inspection of accepted scenario header regardless number of events; no event rescan",
+    "N12 no filesystem/environment/network/time/random/trace/mixer/ledger/physical device APIs in runtime",
+    "N13 neither design trace engine revision nor owner chat approval record grants runtime host binary trust",
+    "N14 non-latin strings, control char, Unicode confusables, case/whitespace spoofing in claim deny by strict equality",
+    "N15 allowlist cannot be supplied/rotated by scenario, CLI test claim, GUI, environment or user input",
+    "N16 deterministic repeated evaluation under locale/TZ/Decimal precision; source data immutable",
+    "N17 no HealthVerdict.PASS, ControlVerdict.ADMITTED, FSM changes, accepted RF/control history, snapshot journal calls",
+    "N18 build/wheel/reinstall with only pinned local packages; read-only TASK-001…009 regression/compact machine evidence"
+  ],
+  "policy_variant_mutations": {
+    "EXACT": "No alteration; pass exact file bytes without adding newline",
+    "BYTE_FLIP": "Replace first raw byte 0x7b (ASCII {) with 0x5b (ASCII [); do not decode or repair malformed JSON",
+    "TRAILING_LF": "Append exactly one LF byte 0x0a to original canonical raw policy bytes",
+    "LEADING_BOM": "Prefix UTF-8 BOM bytes ef bb bf to original canonical raw policy bytes",
+    "WHITESPACE": "Replace the first raw colon byte 0x3a with colon+ASCII space bytes 3a 20",
+    "REORDERED_KEYS": "Decode original ASCII JSON, construct root dict with reversed original key insertion order, then dumps with separators=(comma,colon), ensure_ascii=True, sort_keys=False, encoding ASCII; keys have changed order even though domain values match",
+    "STEP_10000": "Replace exact byte substring b'\"scheduler_step_us\":5000' with b'\"scheduler_step_us\":10000', assert it occurred exactly once",
+    "OWNER_USER": "Replace exact byte substring b'\"owner\":\"SIMULATOR\"' with b'\"owner\":\"USER\"', assert one occurrence",
+    "APPROVED_TRUE_KEY": "Replace the final closing byte of the root JSON } with ASCII bytes ,\"approved\":true}; preserve all other bytes",
+    "EMPTY": "Pass b'' as exact policy bytes",
+    "INVALID_UTF8": "Pass b'\\xff' as exact policy bytes; E2 computes its digest without decoding",
+    "RF_TIMEOUT_200001": "Replace exact byte substring b'\"rf_status_timeout_us\":200000' with b'\"rf_status_timeout_us\":200001', assert one occurrence"
+  },
+  "wire_variant_mutations": {
+    "VALID_MINIMAL": "Use exact P210_MINIMAL_WIRE_V2.json bytes; no modification",
+    "UNKNOWN_APPROVED": "Decode legal minimal JSON, set illegal top-level approved=true, reserialize UTF-8",
+    "UNKNOWN_OWNER": "Decode legal minimal JSON, set illegal top-level owner=\"SIMULATOR\", reserialize UTF-8",
+    "UNKNOWN_SINK": "Decode legal minimal JSON, set illegal top-level output_adapter=\"PWM\", reserialize UTF-8",
+    "UNKNOWN_ALLOWLIST": "Decode legal minimal JSON, set illegal top-level policy_allowlist=[\"fake\"], reserialize UTF-8",
+    "UNKNOWN_ENGINE": "Decode legal minimal JSON, set illegal top-level engine_revision=\"G0A1_E2_TEST_ENGINE_ONLY\", reserialize UTF-8",
+    "UNKNOWN_SCHEDULER": "Decode legal minimal JSON, set illegal top-level scheduler_revision=\"G0A1_E2_TEST_SCHEDULER_ONLY\", reserialize UTF-8",
+    "WRONG_CONTEXT": "Decode legal minimal JSON, replace top-level context with \"RC_PRIMARY\", reserialize UTF-8",
+    "WRONG_VERSION": "Decode legal minimal JSON, replace schema_version integer 2 with integer 1, reserialize UTF-8",
+    "WRONG_PROVENANCE": "Decode legal minimal JSON, replace provenance with \"RF_PRIMARY\", reserialize UTF-8",
+    "WRONG_CONFIG": "Decode legal minimal JSON, replace config_id with \"unauthorized-config\", reserialize UTF-8",
+    "WRONG_CLOCK": "Decode legal minimal JSON, replace clock.step_us integer 5000 with integer 10000, reserialize UTF-8",
+    "UNKNOWN_EVENT": "Decode legal minimal JSON, append at time 5000 a legal-shape event with event_id=\"illegal\", type=\"UNSUPPORTED_EVENT\", payload={}, reserialize UTF-8",
+    "DUPLICATE_BOOT": "Decode legal minimal JSON, append at time 5000 an event with event_id=\"boot-two\", type=\"BOOT\", payload={}, reserialize UTF-8",
+    "WIRE_BOM": "Prefix BOM bytes ef bb bf to otherwise exact legal P210 wire bytes",
+    "DUPLICATE_JSON_KEY": "Take otherwise legal minimal raw JSON bytes and insert raw b'\"context\":\"PC_SIM\",' immediately after the first opening root ASCII { before existing context; duplicate object key is rejected at parser level"
+  }
+}
