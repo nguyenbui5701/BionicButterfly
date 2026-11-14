@@ -1,0 +1,222 @@
+{
+  "baseline": "ccb6babea26be805f752b80488a7232eff70aa06",
+  "baseline_files": {
+    "count": 444,
+    "result": "MATCH"
+  },
+  "check_type": "READ_ONLY_POST_UAT_PACKAGING_AUDIT_NOT_TEST_RERUN",
+  "code_test_script_config_sha256": {
+    "MANIFEST.in": "6ef2d9e05aba91fa839f2237f3ae223cedab0a06c691f8578bb19277aa48657e",
+    "pyproject.toml": "2f9eecd2ca8171d55dc04a85189c4ad1f4749ec68d68a6640ede0200fe605865",
+    "scripts/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scripts/demo.py": "9b64400c397fe6f4711c486860eb383fec1e6c80943b2faa070f6a2a7f667ccb",
+    "scripts/fixtures.py": "c55614aa262f3d6637b3c2ce34931246df2e4080dfa9b146929a63805c17056f",
+    "scripts/smoke.py": "cafb7549fb8ae26a09d01b14be892c59f7e0b3e34df017b7a774760a15c6e183",
+    "scripts/verify.py": "df85ae016237e2b509b510fc6347238afc900ab75aad3212fc79bda47e877706",
+    "src/bb_host_integrated_shadow_replay/__init__.py": "f92e11c661b13b782e8ed999276fe2739e4eb226add84227700a4a80878b2e8f",
+    "src/bb_host_integrated_shadow_replay/diagnostic.py": "f3cc0fa974919f968e6c3bd0e8a153092e6bf1e2fa9770b6457883706433d262",
+    "src/bb_host_integrated_shadow_replay/replay.py": "1468fc1edbcaf2a2f811c523b4c9fcb6e19190383ccdea1c51d4de8125fbd2b6",
+    "tests/test_boundaries.py": "92b9878a685cd16b7f67dc9d763d6af0941dd65b3d277cdb28f4e31ff47953e6",
+    "tests/test_cli.py": "13f5df980e90d09875441340a3789e6a3f052c3172e6b1bf5475d057d21e965e",
+    "tests/test_oracles.py": "360e427f328d4e13fc13a6155d18615b3a766332100dc94d965b521e11ee28c5",
+    "tests/test_replay.py": "68a348b361be85830094564e7380e94bbfcae3ee114707315acaa2f16d43aac3"
+  },
+  "dependency_versions": {
+    "attrs": "25.3.0",
+    "bb-host-arm-qualification": "0.1.0",
+    "bb-host-batch-observations": "0.1.0",
+    "bb-host-guard-triage": "0.1.0",
+    "bb-host-health-evidence": "0.1.0",
+    "bb-host-integrated-shadow-replay": "0.1.0",
+    "bb-host-preflight-m0": "0.1.0",
+    "bb-host-provisioning-intent": "0.1.0",
+    "bb-host-safety-priority-kernel": "0.1.0",
+    "bb-host-snapshot-commit-gate": "0.1.0",
+    "bb-host-temporal-guard-facts": "0.1.0",
+    "bb-host-trust-boundary": "0.1.0",
+    "bb-host-virtual-ticks": "0.1.0",
+    "build": "1.2.2.post1",
+    "colorama": "0.4.6",
+    "iniconfig": "2.1.0",
+    "jsonschema": "4.26.0",
+    "jsonschema-specifications": "2025.9.1",
+    "packaging": "25.0",
+    "pip": "24.0",
+    "pluggy": "1.6.0",
+    "pyproject_hooks": "1.2.0",
+    "pytest": "8.3.5",
+    "referencing": "0.36.2",
+    "rpds-py": "0.27.1",
+    "setuptools": "80.9.0",
+    "typing_extensions": "4.15.0",
+    "wheel": "0.45.1"
+  },
+  "excluded_preexisting_file": "Source/host_preflight_m0/evidence/baseline.json",
+  "excluded_preexisting_file_sha256": "e6dfcfd1ea13ffb4fb5ba2c3d2b475ef0f62c85d2f84faa666ba6b13af30fd9d",
+  "execution_changes_after_uat": false,
+  "explicit_design_pins": {
+    "count": 24,
+    "result": "MATCH"
+  },
+  "git_diff_check": {
+    "exit_code": 2,
+    "files": [
+      "Design/188_G0A1_INTEGRATED_SHADOW_REPLAY_STAGE_F0_CONTRACT.md",
+      "Source/host_integrated_shadow_replay/evidence/DEV_CHECK.md",
+      "Source/host_integrated_shadow_replay/evidence/bootstrap.log",
+      "Source/host_integrated_shadow_replay/evidence/performance.json"
+    ],
+    "interpretation": "Whitespace only in frozen Design188 / historical evidence and CRLF logs; original bytes retained. No executable change."
+  },
+  "installed_dependency_and_wheel_source": "MATCH",
+  "owner_artifacts": [
+    {
+      "path": ".cache/verify-p89b3aof/dependencies/bb_host_arm_qualification-0.1.0-py3-none-any.whl",
+      "sha256": "d9156b02a15e87faa70f7cae0a8479de74ee14711b4b3ba94a3df06dff605597"
+    },
+    {
+      "path": ".cache/verify-p89b3aof/dependencies/bb_host_batch_observations-0.1.0-py3-none-any.whl",
+      "sha256": "02bef7189d0add9db3442cbcbee97b5e6ca755f0eb68da712291c37bf3ffe274"
+    },
+    {
+      "path": ".cache/verify-p89b3aof/dependencies/bb_host_guard_triage-0.1.0-py3-none-any.whl",
+      "sha256": "54dd0261e366835333bd75a9498256287b4aa0f6e2a30e37ff48d8abfec52de0"
+    },
+    {
+      "path": ".cache/verify-p89b3aof/dependencies/bb_host_health_evidence-0.1.0-py3-none-any.whl",
+      "sha256": "b66bc2203db33f33fbdccacc1ea2f64572f651e61609627aaab5b2c19c1413f2"
+    },
+    {
+      "path": ".cache/verify-p89b3aof/dependencies/bb_host_preflight_m0-0.1.0-py3-none-any.whl",
+      "sha256": "64e5e7a6944c1c2669d2176c7e05b7d22ad5a7dc3f479f4897cd6dfd069380ac"
+    },
+    {
+      "path": ".cache/verify-p89b3aof/dependencies/bb_host_provisioning_intent-0.1.0-py3-none-any.whl",
+      "sha256": "c77fb0468d3d5b14a05fe7df86fba0292b6e699970041e81f9fded9b8ebb8cd9"
+    },
+    {
+      "path": ".cache/verify-p89b3aof/dependencies/bb_host_safety_priority_kernel-0.1.0-py3-none-any.whl",
+      "sha256": "3ea3ad225a180aac021a3134537ddec6c804f0913e7744ea96954304d958fcc1"
+    },
+    {
+      "path": ".cache/verify-p89b3aof/dependencies/bb_host_snapshot_commit_gate-0.1.0-py3-none-any.whl",
+      "sha256": "ba12c9df68b46b528e614146820a98f51f8ea3f2e19a9fb6ce88b8157a90ddeb"
+    },
+    {
+      "path": ".cache/verify-p89b3aof/dependencies/bb_host_temporal_guard_facts-0.1.0-py3-none-any.whl",
+      "sha256": "99a0bf919ce6cf9e6d69ae9005eb7f65099ce4bc881cc74f27c2007459723572"
+    },
+    {
+      "path": ".cache/verify-p89b3aof/dependencies/bb_host_trust_boundary-0.1.0-py3-none-any.whl",
+      "sha256": "f176874cb898a4f93c266b723573b29da219f990ea1c60170b9aa6eadc90b236"
+    },
+    {
+      "path": ".cache/verify-p89b3aof/dependencies/bb_host_virtual_ticks-0.1.0-py3-none-any.whl",
+      "sha256": "18cf8ae990fafd52d4ebcdbfa6aef4b766d9c85be7977ec3dd2274dbeeff1483"
+    },
+    {
+      "path": ".cache/verify-p89b3aof/dist/bb_host_integrated_shadow_replay-0.1.0-py3-none-any.whl",
+      "sha256": "9d374f3e217ac8fa552f8c60e8fc8ba9c53949e9e22af123bb79c9895e426946"
+    },
+    {
+      "path": ".cache/verify-p89b3aof/dist/bb_host_integrated_shadow_replay-0.1.0.tar.gz",
+      "sha256": "7cee3b0b6b76e154ce7c6b79a76f635341ad2fcc297dd2b0b9709dec460953f6"
+    }
+  ],
+  "owner_evidence_sha256": {
+    "owner/build-task001.log": "b5e6bebde05363bb480ede571d694137996066645caf8c8ceefc1c2ffefab64f",
+    "owner/build-task002.log": "ef0da19a1e9a83a32ac8470d24de45211fbe1fb4036b82d88487d0c61e5e13c4",
+    "owner/build-task003.log": "69877a98f9cc97bbfebde3a1653e3af395de1cd9815e8a7636b4b83b88699b2e",
+    "owner/build-task004.log": "c9d551f8f21182294b1ad8ff294664c405eacf16fa9639f0ca8e7e4bda39baa0",
+    "owner/build-task005.log": "e1eee453a4c89797d26dd5eb2d61f244c452597331e29bafc105ed096716f9ab",
+    "owner/build-task006.log": "48cb80c5bc1f625cdb3cd1278ccab6d48691d311938184ec6be3de182237b404",
+    "owner/build-task007.log": "96deae55268d39904806f24db290c33ffcac47bbcd5d0954fccdb2ae1229127e",
+    "owner/build-task008.log": "88aedf7792c58527c178eb36c772b3c6b7f46dc0f7f6ddc8b0ebd93ec7824795",
+    "owner/build-task009.log": "29a83b312c88cea604345c2af8328a941f7600cdf108e6c7b12e1ed9b9264ea4",
+    "owner/build-task010.log": "c37866ddd047abfb55329e6f6b15459042c6345e551abc6d3645e21d628d8b05",
+    "owner/build-task011.log": "47adb47dbb8cc892946fc86a90cd78dbca69ac805dc9e6d28e1599d74741617f",
+    "owner/build.log": "a25e6479635255bc8151b4f8e493917a20ffcc021541cbe47f2db4751e5c976c",
+    "owner/commands.json": "4e89b0e1d4fc996c6abc99d5c5c13966fa18fc3c4517a687a484ed851821599d",
+    "owner/compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "owner/demo-conflict.jsonl": "df8438988fc48a39a1676cd8e1e7d4cdcf69296b5cf218f2bfd34a0e92d1bcab",
+    "owner/demo-conflict.log": "38f6aa99262c5e39344ce45fc6724939ecdd473e540e032b37f5bbd62b28bc84",
+    "owner/demo-hazard.jsonl": "ee13ab879cdba3c8e4a11f1fe3e640938625472320835d0470a6f3229c0cd3e2",
+    "owner/demo-hazard.log": "44fd86474b794f3be21f276cd508118c4af48f22eb3028b508222d20b25e600c",
+    "owner/demo-minimal.jsonl": "64b3c31df9921577db86431834e006f044bc3832cff75e8493182d1e3803e62a",
+    "owner/demo-minimal.log": "1bed853b81ec09455e5c6d3da05939d4bde1de178dd04f5f9d6dacfb1065b28a",
+    "owner/demo-pilot.jsonl": "0f47cb948fee26054b827e45db599512a3d9eb90527302f88cc043706e7b471f",
+    "owner/demo-pilot.log": "6e1edddb41335aa7ca04b9f79ccb79cb0c7ba36f276283b7578aa5b5e6ac7568",
+    "owner/dependencies.log": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09",
+    "owner/environment.json": "c906766134872c57635247040ca15ee08927b7223ef2a57ff441dcb0c6a3fdd9",
+    "owner/install-prerequisites.log": "f8e12be0b7bf65140775f9ee2cb6c41966088768a7fa14b2294683a2bb734bd6",
+    "owner/install.log": "d020f01c92f0aea82dacd03f799be1f1ed89a7b02ee4619076e736404330de10",
+    "owner/smoke.log": "83aa721ff2c3f259ba5bc6355947d83afa5d90badca1667a9f695c5c64a36b05",
+    "owner/summary.json": "e9f3dd4a79eabc0690f9f7e8973b6c8ad63fa478cfd695b57529d2260cc96f40",
+    "owner/task001-regression.log": "9b945fa5a70d44da8c7228fdd4a3b37efd8a7bf3947332ed7b7fa2153a12e5f1",
+    "owner/task001-regression.xml": "f1536bf26477d3ec3d81fb6a09390438f1c0cf0f97e214e6d215599f74cd62ca",
+    "owner/task002-regression.log": "864859215b6fbcf046f58a97249d3245e1d085cb8cba29b7f13980a96d965a48",
+    "owner/task002-regression.xml": "0f7ff8b068afd298073aa6e44b65aea6de08c5374e21e825cc40b22663c38cec",
+    "owner/task003-regression.log": "b663d3f51c03eacb2ea7f176c1647ee9ad1f4d47cd138fd60732611e8507cfea",
+    "owner/task003-regression.xml": "32e5aa6e15f4d883f9832fe2e6a4c0a2636636fd2c41bbe687213452e85591d0",
+    "owner/task004-regression.log": "a0a8b41292c12cd9816e0f23a25fdd244705d0fed1f1838f127202004947c6bc",
+    "owner/task004-regression.xml": "6fb6712d0f0494d5542c988b5fa992c997609a4063a08ca3d392ebce02c578d6",
+    "owner/task005-regression.log": "21faf95e7eac61fdc1abc84bd39f222a9d08fbc44d339053600bf78103c08efb",
+    "owner/task005-regression.xml": "2610aed75c6198243e2513c96c1168a1285b45fa295b316449c59348fe5d5bf4",
+    "owner/task006-regression.log": "588199c242a363d8725e0bb3c8ad2933c982e34186a0a996fe2c9801f9338163",
+    "owner/task006-regression.xml": "f95d9d70bef8a31eccbd2a77a82bef7eb4127554494a1b571ca5dec66149f180",
+    "owner/task007-regression.log": "40240e7561c951a4fd49c7b01eae8f13ada877ec7aee6dbf6839c35171e4da26",
+    "owner/task007-regression.xml": "7e228aaae39af99048b8cef67135ef6023d0a625697bc6b74d375d1757d803a8",
+    "owner/task008-regression.log": "505eb63d53fa4ea1ec79e55ee55ce4383da62184e8ffc582a9e8a6a4c60dc50d",
+    "owner/task008-regression.xml": "92f4f3fe365bfaafaaf41f33df572a4dfb1181808d0d79852e293978cfdd96d5",
+    "owner/task009-regression.log": "bae5cf4887b6aadd11c8f521c56e7c172a1a3409ee39a1aee4bed7accac697b0",
+    "owner/task009-regression.xml": "0aff8b4ed11b9bc7ec200d6d40f02394e6478212d3b2bba9b442ff044dd64ea7",
+    "owner/task010-regression.log": "94320331ff06250d121746c25539f307e76bded7e807d15c9fdcb98ba4c41769",
+    "owner/task010-regression.xml": "c84ca9e683736a49af5a2dd2903c01b3708aebcc57be91b9c5cba12c609006e8",
+    "owner/task011-regression.log": "081ce7da68405137104f681197fb49fa2638504ca54244bd041ef16ca7263d7f",
+    "owner/task011-regression.xml": "de079a383f3b05254584c2f07525b8ae44a1eeb616dbcd38457e7126d3c7a22f",
+    "owner/tests.log": "7d451fbbec7bdbe03d5944dec5a4ee42a6effdf784d5325551bcc166c5b26b9b",
+    "owner/tests.xml": "d56ca1489abf0139f5ee58d8715ac573bff653fcc02d727d7de15439607e3709",
+    "owner/wheel-dependencies.log": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09",
+    "owner/wheel-environment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "owner/wheel-install.log": "73fe62cfcc4ea7c0e5a7c08be9216c33bc2c318c1687a484167740d3d3afb505",
+    "owner/wheel-smoke.log": "83aa721ff2c3f259ba5bc6355947d83afa5d90badca1667a9f695c5c64a36b05"
+  },
+  "owner_regression_tests": 2503,
+  "policy_sha256": "d7567197dd43480d7e96dac121fbb707d3097b6c443b1b7ab55e822dbac66e10",
+  "publication_branch": "feature/TASK-012-integrated-shadow-replay",
+  "release_files_sha256": {
+    "Design/187_TASK011_MERGE_CLOSEOUT_AND_TASK012_BASELINE.md": "0afd2003389f33121ef879f9e47c7591fefbd497acc25320647e4c72b60c5462",
+    "Design/188_G0A1_INTEGRATED_SHADOW_REPLAY_STAGE_F0_CONTRACT.md": "38c9e63f81f5f826235e15e7514c86a2c3d0eed3466d08ac263b6b0f07e6bcda",
+    "Design/189_TASK012_INTEGRATION_ACCEPTANCE_AND_G0B_ROADMAP.md": "78b54cf212890a4faecf6d47e8c1c551b790bb71177ac847ec4ec6e794f29868",
+    "Design/P224_TASK012_RELEASE_MANIFEST.json": "50c09f426ae20f95c2a3059ab4ed762afaf50e75c7acef67ef3cc4f0b18b41c7",
+    "Design/fixtures/P224_CONFLICT_WIRE_V2.json": "87f74370ca08d12acd15ed5ad94b97b54d8c7dba2039755573740d4905b7e4ca",
+    "Design/fixtures/P224_HAZARD_WIRE_V2.json": "7060c1756f464772d12e842ff85c0bd42f03f8720d2323defc631607d51fc0cd",
+    "Design/fixtures/P224_INTEGRATED_SHADOW_ORACLE_INDEX.json": "ba13ac3412c613610444c1d736b000733b4a48551e6eba130d3da192ccd9198e",
+    "Design/fixtures/P224_MINIMAL_WIRE_V2.json": "43309b71d2240b39c0c10388f66f0b47af69df4eebba839ac1ee85e06edfe01f",
+    "Design/fixtures/P224_PILOT_WIRE_V2.json": "5538c68be7db9191fee4d3ce96d83f411a3db80dbe833f955afbb456b2297c5b",
+    "Task/TASK-012_INTEGRATED_PC_SHADOW_REPLAY.md": "8a09013c77a61c3591edcde5f0bb3deaa58294c97d447b4b26f7d656c104953d"
+  },
+  "source_sha256": "987f7ac1999a58fc23bcd0312e2e00aa7f6ffd52aaae5edf11d31f83d806666b",
+  "tests_rerun": false,
+  "uat_revision": {
+    "branch": "feature/TASK-012-integrated-pc-shadow-replay",
+    "files": {
+      "MANIFEST.in": "6ef2d9e05aba91fa839f2237f3ae223cedab0a06c691f8578bb19277aa48657e",
+      "pyproject.toml": "2f9eecd2ca8171d55dc04a85189c4ad1f4749ec68d68a6640ede0200fe605865",
+      "scripts/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scripts/demo.py": "9b64400c397fe6f4711c486860eb383fec1e6c80943b2faa070f6a2a7f667ccb",
+      "scripts/fixtures.py": "c55614aa262f3d6637b3c2ce34931246df2e4080dfa9b146929a63805c17056f",
+      "scripts/smoke.py": "cafb7549fb8ae26a09d01b14be892c59f7e0b3e34df017b7a774760a15c6e183",
+      "scripts/verify.py": "df85ae016237e2b509b510fc6347238afc900ab75aad3212fc79bda47e877706",
+      "src/bb_host_integrated_shadow_replay/__init__.py": "f92e11c661b13b782e8ed999276fe2739e4eb226add84227700a4a80878b2e8f",
+      "src/bb_host_integrated_shadow_replay/diagnostic.py": "f3cc0fa974919f968e6c3bd0e8a153092e6bf1e2fa9770b6457883706433d262",
+      "src/bb_host_integrated_shadow_replay/replay.py": "1468fc1edbcaf2a2f811c523b4c9fcb6e19190383ccdea1c51d4de8125fbd2b6",
+      "tests/test_boundaries.py": "92b9878a685cd16b7f67dc9d763d6af0941dd65b3d277cdb28f4e31ff47953e6",
+      "tests/test_cli.py": "13f5df980e90d09875441340a3789e6a3f052c3172e6b1bf5475d057d21e965e",
+      "tests/test_oracles.py": "360e427f328d4e13fc13a6155d18615b3a766332100dc94d965b521e11ee28c5",
+      "tests/test_replay.py": "68a348b361be85830094564e7380e94bbfcae3ee114707315acaa2f16d43aac3"
+    },
+    "head": "ccb6babea26be805f752b80488a7232eff70aa06",
+    "source_sha256": "987f7ac1999a58fc23bcd0312e2e00aa7f6ffd52aaae5edf11d31f83d806666b"
+  }
+}

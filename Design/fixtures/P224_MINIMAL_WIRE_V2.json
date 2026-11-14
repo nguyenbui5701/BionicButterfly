@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "scenario_id": "p224_minimal_shadow",
+  "context": "PC_SIM",
+  "provenance": "SIM_ONLY",
+  "config_id": "sim-only-c0-v1",
+  "clock": {
+    "start_us": 0,
+    "step_us": 5000
+  },
+  "duration_us": 5000,
+  "events": [
+    {
+      "event_id": "boot",
+      "event_at_us": 0,
+      "type": "BOOT",
+      "payload": {}
+    }
+  ]
+}

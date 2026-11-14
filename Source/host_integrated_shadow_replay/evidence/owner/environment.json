@@ -1,0 +1,165 @@
+{
+  "artifacts": [
+    {
+      "path": ".cache/verify-p89b3aof/dependencies/bb_host_arm_qualification-0.1.0-py3-none-any.whl",
+      "sha256": "d9156b02a15e87faa70f7cae0a8479de74ee14711b4b3ba94a3df06dff605597"
+    },
+    {
+      "path": ".cache/verify-p89b3aof/dependencies/bb_host_batch_observations-0.1.0-py3-none-any.whl",
+      "sha256": "02bef7189d0add9db3442cbcbee97b5e6ca755f0eb68da712291c37bf3ffe274"
+    },
+    {
+      "path": ".cache/verify-p89b3aof/dependencies/bb_host_guard_triage-0.1.0-py3-none-any.whl",
+      "sha256": "54dd0261e366835333bd75a9498256287b4aa0f6e2a30e37ff48d8abfec52de0"
+    },
+    {
+      "path": ".cache/verify-p89b3aof/dependencies/bb_host_health_evidence-0.1.0-py3-none-any.whl",
+      "sha256": "b66bc2203db33f33fbdccacc1ea2f64572f651e61609627aaab5b2c19c1413f2"
+    },
+    {
+      "path": ".cache/verify-p89b3aof/dependencies/bb_host_preflight_m0-0.1.0-py3-none-any.whl",
+      "sha256": "64e5e7a6944c1c2669d2176c7e05b7d22ad5a7dc3f479f4897cd6dfd069380ac"
+    },
+    {
+      "path": ".cache/verify-p89b3aof/dependencies/bb_host_provisioning_intent-0.1.0-py3-none-any.whl",
+      "sha256": "c77fb0468d3d5b14a05fe7df86fba0292b6e699970041e81f9fded9b8ebb8cd9"
+    },
+    {
+      "path": ".cache/verify-p89b3aof/dependencies/bb_host_safety_priority_kernel-0.1.0-py3-none-any.whl",
+      "sha256": "3ea3ad225a180aac021a3134537ddec6c804f0913e7744ea96954304d958fcc1"
+    },
+    {
+      "path": ".cache/verify-p89b3aof/dependencies/bb_host_snapshot_commit_gate-0.1.0-py3-none-any.whl",
+      "sha256": "ba12c9df68b46b528e614146820a98f51f8ea3f2e19a9fb6ce88b8157a90ddeb"
+    },
+    {
+      "path": ".cache/verify-p89b3aof/dependencies/bb_host_temporal_guard_facts-0.1.0-py3-none-any.whl",
+      "sha256": "99a0bf919ce6cf9e6d69ae9005eb7f65099ce4bc881cc74f27c2007459723572"
+    },
+    {
+      "path": ".cache/verify-p89b3aof/dependencies/bb_host_trust_boundary-0.1.0-py3-none-any.whl",
+      "sha256": "f176874cb898a4f93c266b723573b29da219f990ea1c60170b9aa6eadc90b236"
+    },
+    {
+      "path": ".cache/verify-p89b3aof/dependencies/bb_host_virtual_ticks-0.1.0-py3-none-any.whl",
+      "sha256": "18cf8ae990fafd52d4ebcdbfa6aef4b766d9c85be7977ec3dd2274dbeeff1483"
+    },
+    {
+      "path": ".cache/verify-p89b3aof/dist/bb_host_integrated_shadow_replay-0.1.0-py3-none-any.whl",
+      "sha256": "9d374f3e217ac8fa552f8c60e8fc8ba9c53949e9e22af123bb79c9895e426946"
+    },
+    {
+      "path": ".cache/verify-p89b3aof/dist/bb_host_integrated_shadow_replay-0.1.0.tar.gz",
+      "sha256": "7cee3b0b6b76e154ce7c6b79a76f635341ad2fcc297dd2b0b9709dec460953f6"
+    }
+  ],
+  "installed_dependencies_match_pinned_source": true,
+  "installed_task012_matches_source": true,
+  "packages": {
+    "attrs": "25.3.0",
+    "bb-host-arm-qualification": "0.1.0",
+    "bb-host-batch-observations": "0.1.0",
+    "bb-host-guard-triage": "0.1.0",
+    "bb-host-health-evidence": "0.1.0",
+    "bb-host-integrated-shadow-replay": "0.1.0",
+    "bb-host-preflight-m0": "0.1.0",
+    "bb-host-provisioning-intent": "0.1.0",
+    "bb-host-safety-priority-kernel": "0.1.0",
+    "bb-host-snapshot-commit-gate": "0.1.0",
+    "bb-host-temporal-guard-facts": "0.1.0",
+    "bb-host-trust-boundary": "0.1.0",
+    "bb-host-virtual-ticks": "0.1.0",
+    "build": "1.2.2.post1",
+    "colorama": "0.4.6",
+    "iniconfig": "2.1.0",
+    "jsonschema": "4.26.0",
+    "jsonschema-specifications": "2025.9.1",
+    "packaging": "25.0",
+    "pip": "24.0",
+    "pluggy": "1.6.0",
+    "pyproject_hooks": "1.2.0",
+    "pytest": "8.3.5",
+    "referencing": "0.36.2",
+    "rpds-py": "0.27.1",
+    "setuptools": "80.9.0",
+    "typing_extensions": "4.15.0",
+    "wheel": "0.45.1"
+  },
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python": "3.11.15",
+  "test_results": {
+    "task001-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 203
+    },
+    "task002-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 44
+    },
+    "task003-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 59
+    },
+    "task004-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 140
+    },
+    "task005-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 208
+    },
+    "task006-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 221
+    },
+    "task007-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 258
+    },
+    "task008-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 345
+    },
+    "task009-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 246
+    },
+    "task010-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 387
+    },
+    "task011-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 392
+    },
+    "tests.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 111
+    }
+  },
+  "wheel_environment": ".cache/verify-p89b3aof/wheel-env"
+}

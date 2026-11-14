@@ -1,0 +1,99 @@
+{
+  "artifacts": [
+    {
+      "path": ".cache/verify-06fifqzk/dependencies/bb_host_arm_qualification-0.1.0-py3-none-any.whl",
+      "sha256": "8aedb4786a801159fa905e8e8015a01fca77a2922d9525912598dc27c10fef44"
+    },
+    {
+      "path": ".cache/verify-06fifqzk/dependencies/bb_host_batch_observations-0.1.0-py3-none-any.whl",
+      "sha256": "28203fb4dfe8ff352d195daba8c19ac85f98ac05c21dcfc7367d77dee4e2c0e7"
+    },
+    {
+      "path": ".cache/verify-06fifqzk/dependencies/bb_host_guard_triage-0.1.0-py3-none-any.whl",
+      "sha256": "cf63612b7d84162ae81cf16daea51f886e02c5867770aafdb769e4c82535f29b"
+    },
+    {
+      "path": ".cache/verify-06fifqzk/dependencies/bb_host_health_evidence-0.1.0-py3-none-any.whl",
+      "sha256": "c0bb0a0ff28c9ae6d88e282490b50759a651db3afb608ea777912ea9a6850c68"
+    },
+    {
+      "path": ".cache/verify-06fifqzk/dependencies/bb_host_preflight_m0-0.1.0-py3-none-any.whl",
+      "sha256": "93b06d002ade75db22e2d9e4e6764aac81d946d9a9ae906c820ee9de51a52542"
+    },
+    {
+      "path": ".cache/verify-06fifqzk/dependencies/bb_host_provisioning_intent-0.1.0-py3-none-any.whl",
+      "sha256": "c78d81aca41949242946449f728e1d8c13578ec80aa87ff2f1cd106135219b70"
+    },
+    {
+      "path": ".cache/verify-06fifqzk/dependencies/bb_host_safety_priority_kernel-0.1.0-py3-none-any.whl",
+      "sha256": "724177ff828fa4c34067b252447a3e0bd0d6121771d736cd0479bc0d69572d16"
+    },
+    {
+      "path": ".cache/verify-06fifqzk/dependencies/bb_host_snapshot_commit_gate-0.1.0-py3-none-any.whl",
+      "sha256": "6b9c1a6129ff90e3a221cc40d3b8767050f87ede01951a39f59cb67c2bb1de85"
+    },
+    {
+      "path": ".cache/verify-06fifqzk/dependencies/bb_host_temporal_guard_facts-0.1.0-py3-none-any.whl",
+      "sha256": "07d0a66a5068781c9fcff817d31311473f9b7f5f1bbb0e5cb037dd45ba0e1cd5"
+    },
+    {
+      "path": ".cache/verify-06fifqzk/dependencies/bb_host_trust_boundary-0.1.0-py3-none-any.whl",
+      "sha256": "19ee42665cc870225b49e36c514402435066d27b6b9e9bb45b5601bc8d564115"
+    },
+    {
+      "path": ".cache/verify-06fifqzk/dependencies/bb_host_virtual_ticks-0.1.0-py3-none-any.whl",
+      "sha256": "a864b312a6e257d063fb17645cf86ee300ebff34989f7bd9da52c85d60dcfecd"
+    },
+    {
+      "path": ".cache/verify-06fifqzk/dist/bb_host_integrated_shadow_replay-0.1.0-py3-none-any.whl",
+      "sha256": "3c127302175c6470a6cc4a3e5f85c4c1c53328d46e091e6b5a46afc5e210e742"
+    },
+    {
+      "path": ".cache/verify-06fifqzk/dist/bb_host_integrated_shadow_replay-0.1.0.tar.gz",
+      "sha256": "5c0de2189819af0949c4f9733edaa22a90cc9533715aeb7b4250122888c94758"
+    }
+  ],
+  "installed_dependencies_match_pinned_source": true,
+  "installed_task012_matches_source": true,
+  "packages": {
+    "attrs": "25.3.0",
+    "bb-host-arm-qualification": "0.1.0",
+    "bb-host-batch-observations": "0.1.0",
+    "bb-host-guard-triage": "0.1.0",
+    "bb-host-health-evidence": "0.1.0",
+    "bb-host-integrated-shadow-replay": "0.1.0",
+    "bb-host-preflight-m0": "0.1.0",
+    "bb-host-provisioning-intent": "0.1.0",
+    "bb-host-safety-priority-kernel": "0.1.0",
+    "bb-host-snapshot-commit-gate": "0.1.0",
+    "bb-host-temporal-guard-facts": "0.1.0",
+    "bb-host-trust-boundary": "0.1.0",
+    "bb-host-virtual-ticks": "0.1.0",
+    "build": "1.2.2.post1",
+    "colorama": "0.4.6",
+    "iniconfig": "2.1.0",
+    "jsonschema": "4.26.0",
+    "jsonschema-specifications": "2025.9.1",
+    "packaging": "25.0",
+    "pip": "24.0",
+    "pluggy": "1.6.0",
+    "pyproject_hooks": "1.2.0",
+    "pytest": "8.3.5",
+    "referencing": "0.36.2",
+    "rpds-py": "0.27.1",
+    "setuptools": "80.9.0",
+    "typing_extensions": "4.15.0",
+    "wheel": "0.45.1"
+  },
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python": "3.11.15",
+  "test_results": {
+    "tests.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 111
+    }
+  },
+  "wheel_environment": ".cache/verify-06fifqzk/wheel-env"
+}

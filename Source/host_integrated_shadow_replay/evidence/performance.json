@@ -1,0 +1,9 @@
+{
+  "ticks": 12001,
+  "events": 20000,
+  "elapsed_seconds": 17.17136279999977,
+  "peak_python_tracemalloc_bytes": 22832840,
+  "diagnostic_bytes": 6504724,
+  "process_peak_memory": "NOT MEASURED",
+  "scope": "TASK012 DEV CHECK, no prior regression"
+}
