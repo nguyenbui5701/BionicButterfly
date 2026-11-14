@@ -1,0 +1,148 @@
+MODEL_ONLY / RUNTIME_NOT_PROVISIONED / NO_ACTUATOR_OUTPUT
+Counterfactual model effort only; not servo position, PWM, lift or flight readiness.
+T(us) | model_state | RF / control | ARM request | model effort L/R | mode | model reasons
+      0 | SELF_TEST | UNKNOWN/ABSENT | False (NOT GRANTED) | -- | NONE | R_BOOT_OBSERVED
+        INPUT F/S micro=None/None; original_us=(0,); LOW_qualified=None; HIGH_edge=None; IDs=('boot',)
+   5000 | DISARMED | UNKNOWN/ABSENT | False (NOT GRANTED) | -- | NONE | R_SELF_TEST_COMPLETE
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=None; IDs=()
+  10000 | DISARMED | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | E_FRAME_STALE,R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(10000,); LOW_qualified=None; HIGH_edge=None; IDs=('rf0',)
+  15000 | DISARMED | HEALTHY/SINGLE_CANDIDATE | False (NOT GRANTED) | -- | NONE | R_LOW_OBSERVED
+        INPUT F/S micro=0/0; original_us=(15000,); LOW_qualified=None; HIGH_edge=None; IDs=('low1',)
+  20000 | DISARMED | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=None; IDs=()
+  25000 | DISARMED | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=None; IDs=()
+  30000 | DISARMED | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=None; IDs=()
+  35000 | DISARMED | HEALTHY/SINGLE_CANDIDATE | False (NOT GRANTED) | -- | NONE | R_LOW_OBSERVED,R_LOW_QUALIFIED
+        INPUT F/S micro=0/0; original_us=(35000,); LOW_qualified=35000; HIGH_edge=None; IDs=('low2',)
+  40000 | ARM_CHECK | HEALTHY/SINGLE_CANDIDATE | True (NOT GRANTED) | -- | NONE | R_ARM_EDGE_ACCEPTED
+        INPUT F/S micro=0/0; original_us=(40000,); LOW_qualified=None; HIGH_edge=40000; IDs=('edge1',)
+  45000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=40000; IDs=()
+  50000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=40000; IDs=()
+  55000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=40000; IDs=()
+  60000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=40000; IDs=()
+  65000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=40000; IDs=()
+  70000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=40000; IDs=()
+  75000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=40000; IDs=()
+  80000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=40000; IDs=()
+  85000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=40000; IDs=()
+  90000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=40000; IDs=()
+  95000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=40000; IDs=()
+ 100000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=40000; IDs=()
+ 105000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=40000; IDs=()
+ 110000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(110000,); LOW_qualified=None; HIGH_edge=40000; IDs=('rf1',)
+ 115000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=40000; IDs=()
+ 120000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=40000; IDs=()
+ 125000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=40000; IDs=()
+ 130000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=40000; IDs=()
+ 135000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=40000; IDs=()
+ 140000 | ARMED_IDLE | HEALTHY/SINGLE_CANDIDATE | True (NOT GRANTED) | -- | NONE | R_ARM_CONFIRMED
+        INPUT F/S micro=0/0; original_us=(140000,); LOW_qualified=None; HIGH_edge=None; IDs=('confirm1',)
+ 145000 | ACTUATION_ACTIVE | HEALTHY/SINGLE_CANDIDATE | True (NOT GRANTED) | 250000/750000 | FRESH | R_ACTIVE_DEMAND_ACCEPTED
+        INPUT F/S micro=500000/250000; original_us=(145000,); LOW_qualified=None; HIGH_edge=None; IDs=('active1',)
+ 150000 | ACTUATION_ACTIVE | HEALTHY/ABSENT | False (NOT GRANTED) | 250000/750000 | S1_HELD | R_ACTIVE_HELD_S1,R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=None; IDs=()
+ 155000 | CONTINGENCY | LOST/ABSENT | False (NOT GRANTED) | -- | NONE | E_RF_NOT_HEALTHY,R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(155000,); LOW_qualified=None; HIGH_edge=None; IDs=('lost',)
+ 160000 | CONTINGENCY | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(160000,); LOW_qualified=None; HIGH_edge=None; IDs=('restore',)
+ 165000 | CONTINGENCY | HEALTHY/BLOCKED_PRIORITY | False (NOT GRANTED) | -- | NONE | R_LOW_OBSERVED
+        INPUT F/S micro=0/0; original_us=(165000,); LOW_qualified=None; HIGH_edge=None; IDs=('recovery-low1',)
+ 170000 | CONTINGENCY | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=None; IDs=()
+ 175000 | CONTINGENCY | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=None; IDs=()
+ 180000 | CONTINGENCY | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=None; IDs=()
+ 185000 | CONTINGENCY | HEALTHY/BLOCKED_PRIORITY | False (NOT GRANTED) | -- | NONE | R_LOW_OBSERVED,R_LOW_QUALIFIED
+        INPUT F/S micro=0/0; original_us=(185000,); LOW_qualified=185000; HIGH_edge=None; IDs=('recovery-low2',)
+ 190000 | DISARMED | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_ACK_ACCEPTED,R_HEALTH_RESTORED,R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(190000,); LOW_qualified=None; HIGH_edge=None; IDs=('ack',)
+ 195000 | DISARMED | HEALTHY/SINGLE_CANDIDATE | False (NOT GRANTED) | -- | NONE | R_LOW_OBSERVED
+        INPUT F/S micro=0/0; original_us=(195000,); LOW_qualified=None; HIGH_edge=None; IDs=('rearm-low1',)
+ 200000 | DISARMED | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=None; IDs=()
+ 205000 | DISARMED | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=None; IDs=()
+ 210000 | DISARMED | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=None; IDs=()
+ 215000 | DISARMED | HEALTHY/SINGLE_CANDIDATE | False (NOT GRANTED) | -- | NONE | R_LOW_OBSERVED,R_LOW_QUALIFIED
+        INPUT F/S micro=0/0; original_us=(215000,); LOW_qualified=215000; HIGH_edge=None; IDs=('rearm-low2',)
+ 220000 | ARM_CHECK | HEALTHY/SINGLE_CANDIDATE | True (NOT GRANTED) | -- | NONE | R_ARM_EDGE_ACCEPTED
+        INPUT F/S micro=0/0; original_us=(220000,); LOW_qualified=None; HIGH_edge=220000; IDs=('rearm-edge',)
+ 225000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=220000; IDs=()
+ 230000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=220000; IDs=()
+ 235000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=220000; IDs=()
+ 240000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=220000; IDs=()
+ 245000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=220000; IDs=()
+ 250000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=220000; IDs=()
+ 255000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=220000; IDs=()
+ 260000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=220000; IDs=()
+ 265000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=220000; IDs=()
+ 270000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=220000; IDs=()
+ 275000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=220000; IDs=()
+ 280000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=220000; IDs=()
+ 285000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=220000; IDs=()
+ 290000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=220000; IDs=()
+ 295000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=220000; IDs=()
+ 300000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(300000,); LOW_qualified=None; HIGH_edge=220000; IDs=('rf2',)
+ 305000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=220000; IDs=()
+ 310000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=220000; IDs=()
+ 315000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=220000; IDs=()
+ 320000 | ARM_CHECK | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=220000; IDs=()
+ 325000 | ARMED_IDLE | HEALTHY/SINGLE_CANDIDATE | True (NOT GRANTED) | -- | NONE | R_ARM_CONFIRMED
+        INPUT F/S micro=0/0; original_us=(325000,); LOW_qualified=None; HIGH_edge=None; IDs=('rearm-confirm',)
+ 330000 | ACTUATION_ACTIVE | HEALTHY/SINGLE_CANDIDATE | True (NOT GRANTED) | 700000/500000 | FRESH | R_ACTIVE_DEMAND_ACCEPTED
+        INPUT F/S micro=600000/-100000; original_us=(330000,); LOW_qualified=None; HIGH_edge=None; IDs=('rearm-active',)
+ 335000 | FAULT_LATCHED | UNKNOWN/ABSENT | False (NOT GRANTED) | -- | NONE | E_SIM_FAULT,R_CATASTROPHIC_LATCH
+        INPUT F/S micro=None/None; original_us=(335000,); LOW_qualified=None; HIGH_edge=None; IDs=('catastrophe',)
+ 340000 | FAULT_LATCHED | UNKNOWN/ABSENT | False (NOT GRANTED) | -- | NONE | E_SIM_FAULT,R_CATASTROPHIC_LATCH
+        INPUT F/S micro=None/None; original_us=(340000,); LOW_qualified=None; HIGH_edge=None; IDs=('postfault-reset',)
+ 345000 | FAULT_LATCHED | UNKNOWN/ABSENT | False (NOT GRANTED) | -- | NONE | E_SIM_FAULT,R_CATASTROPHIC_LATCH
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=None; IDs=()
+ 350000 | FAULT_LATCHED | UNKNOWN/ABSENT | False (NOT GRANTED) | -- | NONE | E_SIM_FAULT,R_CATASTROPHIC_LATCH
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=None; IDs=()
+MODEL_REPLAY_COMPLETE: 71 MODEL commits; blocked_at_tick=None; 
+F0 comparator: SHADOW_DIAGNOSTICS_COMPLETE, 71 ticks (separate, no authority)
+runtime_authorized=False; output_allowed=False; actual_virtual_output=None; physical_output=None; control_trace_sha256=None

@@ -1,0 +1,8 @@
+{
+  "events": 20000,
+  "ticks": 12001,
+  "elapsed_seconds": 36.03584999999998,
+  "peak_python_allocation_bytes": 38574050,
+  "process_peak_memory": "NOT MEASURED",
+  "candidate_bytes": 5340591
+}

@@ -1,0 +1,67 @@
+{
+  "demo_count": 3,
+  "explicit_baseline_git_blob_pins": 32,
+  "file_count": 9,
+  "files": [
+    {
+      "bytes": 6585,
+      "git_blob_sha1": "7378ce99dfacec093392062817299083c61c7190",
+      "path": "Design/190_TASK012_MERGE_CLOSEOUT_AND_TASK013_BASELINE.md",
+      "sha256": "f3ddd5ead0dec26bdd13e1085274525670ee43e1c4ea6b4d3857d14fae6a3dce"
+    },
+    {
+      "bytes": 11104,
+      "git_blob_sha1": "6e3199ddc1709ac4bcb117aeb22be02d814e7397",
+      "path": "Design/191_G0A1_F1_INTEGRATED_FSM_MODEL_AND_TRACE_CONTRACT.md",
+      "sha256": "1b1942467938bce093a989da3a0a2b2348bbc29cf7d273add5eeb99f33b3071c"
+    },
+    {
+      "bytes": 6881,
+      "git_blob_sha1": "cd0fe9ec3c4368ce8fb53e2d86d0a7cbce2b9738",
+      "path": "Design/192_TASK013_INTEGRATED_SYSTEM_ACCEPTANCE_AND_UAT.md",
+      "sha256": "83bd402a251fbe119be66e370ffe794b1ebbccc6190bd203421eba6859d0dc6b"
+    },
+    {
+      "bytes": 4176,
+      "git_blob_sha1": "2b5aefa27873409e13eb09de062ef51e98d14697",
+      "path": "Design/193_G0B_PARALLEL_BENCH_READINESS_DECISION_PACKET.md",
+      "sha256": "201b840f14973894f48cb135f42f8fa1a75644903e4e5153ba0cc731f537f6eb"
+    },
+    {
+      "bytes": 3643,
+      "git_blob_sha1": "bb4564ea1d12b897b879f944c99815898c1d4ab4",
+      "path": "Design/fixtures/P225_F1_CONFLICT_WIRE_V2.json",
+      "sha256": "627b679eb27c374a4c4fa18d1de4b984d39d29041c17afd9f1f40f25ff0b1808"
+    },
+    {
+      "bytes": 5311,
+      "git_blob_sha1": "60b54a3c27d9eb2bc5b8e84ce57cb18b263b10c8",
+      "path": "Design/fixtures/P225_F1_NOMINAL_WIRE_V2.json",
+      "sha256": "19e598c79c985132a638684024cdf9a0a1feeb4a7b3dd63f0d33a1998ea9f930"
+    },
+    {
+      "bytes": 11105,
+      "git_blob_sha1": "003317f058d8452eee0e1491ad23b148c075559f",
+      "path": "Design/fixtures/P225_F1_ORACLE_INDEX.json",
+      "sha256": "73c88a83a89cdabdcb0655f8d4ade8103da8c63b02bd6c383311cb74918f6e5d"
+    },
+    {
+      "bytes": 5025,
+      "git_blob_sha1": "c3e9a57b99a34bb526ca7efe3613db65cffcaa5d",
+      "path": "Design/fixtures/P225_F1_RECOVERY_WIRE_V2.json",
+      "sha256": "9d2040eabb63416af8ddd40772bbab454c39315ae040e2243c3322e6c340fb97"
+    },
+    {
+      "bytes": 4969,
+      "git_blob_sha1": "ea082bfa7d92aa07fdf2c47ef4fc4f093754a6b9",
+      "path": "Task/TASK-013_INTEGRATED_FSM_MODEL_TRACE_VIEWER.md",
+      "sha256": "8ce738837a1f23bffcf3b3331250c3b6f1dc59ccfad390f7938f92227a895a5e"
+    }
+  ],
+  "manifest_version": "P225_TASK013_RELEASE_V1",
+  "oracle_count": 24,
+  "policy_sha256": "d7567197dd43480d7e96dac121fbb707d3097b6c443b1b7ab55e822dbac66e10",
+  "scope": "G0A1_PC_SIM_ONLY_MODEL_ONLY_NO_ACTUATOR_OUTPUT",
+  "source_main_commit": "eb4dbc8830d864c9cfd5c4d94bf00180aa960b5d",
+  "status": "SA_DESIGN_ONLY_TASK013_RUNTIME_NOT_RUN"
+}

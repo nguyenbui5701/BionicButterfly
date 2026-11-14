@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="28" time="0.736" timestamp="2026-11-14T14:25:02.391011+07:00" hostname="DESKTOP-GDP3K0K"><testcase classname="tests.test_system" name="test_N24_actual_viewer_js_playback_cannot_command_core" time="0.096" /><testcase classname="tests.test_system" name="test_N17_offline_failures_preserve_prior_report[quota]" time="0.032" /><testcase classname="tests.test_system" name="test_N17_offline_failures_preserve_prior_report[replace]" time="0.027" /><testcase classname="tests.test_system" name="test_N17_offline_failures_preserve_prior_report[permission]" time="0.028" /><testcase classname="tests.test_system" name="test_N17_offline_failures_preserve_prior_report[short_write]" time="0.028" /><testcase classname="tests.test_system" name="test_N24_no_device_network_or_executable_destination[\\\\server\\file.html]" time="0.001" /><testcase classname="tests.test_system" name="test_N24_no_device_network_or_executable_destination[//server/file.html]" time="0.001" /><testcase classname="tests.test_system" name="test_N24_no_device_network_or_executable_destination[COM1]" time="0.000" /><testcase classname="tests.test_system" name="test_N24_no_device_network_or_executable_destination[file.html:stream]" time="0.000" /><testcase classname="tests.test_system" name="test_N24_no_device_network_or_executable_destination[file.exe]" time="0.000" /><testcase classname="tests.test_system" name="test_N17_cli_failure_no_success_or_complete_candidate" time="0.021" /><testcase classname="tests.test_system" name="test_N11_threshold_and_exact_m0_clipping[0.05-0-ARMED_IDLE-None-None-tags0]" time="0.023" /><testcase classname="tests.test_system" name="test_N11_threshold_and_exact_m0_clipping[0.050001-0-ACTUATION_ACTIVE-50001-50001-tags1]" time="0.025" /><testcase classname="tests.test_system" name="test_N11_threshold_and_exact_m0_clipping[0.999999-2e-06-ACTUATION_ACTIVE-999997-1000000-tags2]" time="0.023" /><testcase classname="tests.test_system" name="test_N11_threshold_and_exact_m0_clipping[1--1-ACTUATION_ACTIVE-1000000-0-tags3]" time="0.023" /><testcase classname="tests.test_system" name="test_N11_threshold_and_exact_m0_clipping[0.1-0.5-ACTUATION_ACTIVE-0-600000-tags4]" time="0.023" /><testcase classname="tests.test_system" name="test_N11_edge_neutrality[0.02-0.05-True]" time="0.029" /><testcase classname="tests.test_system" name="test_N11_edge_neutrality[0.020001-0-False]" time="0.024" /><testcase classname="tests.test_system" name="test_N11_edge_neutrality[0--0.050001-False]" time="0.024" /><testcase classname="tests.test_system" name="test_N13_disarming_low_not_first_rearm_sample" time="0.023" /><testcase classname="tests.test_system" name="test_N08_unknown_rf_cannot_refresh_control" time="0.024" /><testcase classname="tests.test_system" name="test_N19_candidate_no_authority_flags_cannot_be_initialized" time="0.000" /><testcase classname="tests.test_system" name="test_N20_owner_regressions_are_not_scheduled_by_dev" time="0.000" /><testcase classname="tests.test_system" name="test_N17_genuine_f0_append_failure_blocks_model" time="0.008" /><testcase classname="tests.test_system" name="test_N15_low_then_ack_then_high_priority[True-True-DISARMED]" time="0.024" /><testcase classname="tests.test_system" name="test_N15_low_then_ack_then_high_priority[False-True-CONTINGENCY]" time="0.004"><failure message="StopIteration">high = False, prior_low_qualified = True, expected = 'CONTINGENCY'
+
+    @pytest.mark.parametrize('high,prior_low_qualified,expected',[
+        (True,True,'DISARMED'),(False,True,'CONTINGENCY'),(True,False,'CONTINGENCY')])
+    def test_N15_low_then_ack_then_high_priority(high,prior_low_qualified,expected):
+        # Frozen Design/115 priority 5 &gt; 6 &gt; 7. ACK consumes prior qualification;
+        # a simultaneous HIGH cannot rearm or take priority over that recovery.
+        args,data=wire()
+        if not prior_low_qualified:
+            data['events']=[e for e in data['events'] if e['event_id']!='recover-low2']
+&gt;       source=event(data,'active1' if high else 'recover-low1')
+
+tests\test_system.py:118: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+data = {'clock': {'start_us': 0, 'step_us': 5000}, 'config_id': 'sim-only-c0-v1', 'context': 'PC_SIM', 'duration_us': 350000, ...}
+identity = 'recover-low1'
+
+    def event(data,identity):
+&gt;       return next(e for e in data["events"] if e["event_id"]==identity)
+E       StopIteration
+
+tests\test_model.py:37: StopIteration</failure></testcase><testcase classname="tests.test_system" name="test_N15_low_then_ack_then_high_priority[True-False-CONTINGENCY]" time="0.024"><failure message="AssertionError: assert 'DISARMED' == 'CONTINGENCY'&#10;  &#10;  - CONTINGENCY&#10;  + DISARMED">high = True, prior_low_qualified = False, expected = 'CONTINGENCY'
+
+    @pytest.mark.parametrize('high,prior_low_qualified,expected',[
+        (True,True,'DISARMED'),(False,True,'CONTINGENCY'),(True,False,'CONTINGENCY')])
+    def test_N15_low_then_ack_then_high_priority(high,prior_low_qualified,expected):
+        # Frozen Design/115 priority 5 &gt; 6 &gt; 7. ACK consumes prior qualification;
+        # a simultaneous HIGH cannot rearm or take priority over that recovery.
+        args,data=wire()
+        if not prior_low_qualified:
+            data['events']=[e for e in data['events'] if e['event_id']!='recover-low2']
+        source=event(data,'active1' if high else 'recover-low1')
+        data['events'].append(dict(source,event_id='control-with-ack',event_at_us=190000))
+        sort(data); row=run(args,data).model_ticks[38]
+&gt;       assert row.model_state.value==expected
+E       AssertionError: assert 'DISARMED' == 'CONTINGENCY'
+E         
+E         - CONTINGENCY
+E         + DISARMED
+
+tests\test_system.py:121: AssertionError</failure></testcase><testcase classname="tests.test_system" name="test_N08_ambiguous_healthy_unknown_stops_without_inventing_rf_priority" time="0.017" /></testsuite></testsuites>

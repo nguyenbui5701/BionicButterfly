@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "browser": "Microsoft Edge headless",
+  "exit_code": 0,
+  "html_sha256": "6b866df9fe6bb200b9ad481d249fccdf353ef7a766a2ee7c4209aa39d367670c",
+  "checks": [
+    "actual browser JS rendered SELF_TEST",
+    "both effort displays inhibited at genesis",
+    "operational ARM not granted",
+    "offline local file"
+  ],
+  "playback": "Actual viewer JS independently exercised by test_N24_actual_viewer_js_playback_cannot_command_core; see tests.xml"
+}

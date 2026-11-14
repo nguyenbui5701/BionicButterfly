@@ -1,0 +1,24 @@
+MODEL_ONLY / RUNTIME_NOT_PROVISIONED / NO_ACTUATOR_OUTPUT
+Counterfactual model effort only; not servo position, PWM, lift or flight readiness.
+T(us) | model_state | RF / control | ARM request | model effort L/R | mode | model reasons
+      0 | SELF_TEST | UNKNOWN/ABSENT | False (NOT GRANTED) | -- | NONE | R_BOOT_OBSERVED
+        INPUT F/S micro=None/None; original_us=(0,); LOW_qualified=None; HIGH_edge=None; IDs=('boot',)
+   5000 | DISARMED | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_SELF_TEST_COMPLETE
+        INPUT F/S micro=None/None; original_us=(5000,); LOW_qualified=None; HIGH_edge=None; IDs=('rf-h',)
+  10000 | DISARMED | HEALTHY/SINGLE_CANDIDATE | False (NOT GRANTED) | -- | NONE | R_LOW_OBSERVED
+        INPUT F/S micro=0/0; original_us=(10000,); LOW_qualified=None; HIGH_edge=None; IDs=('low',)
+  15000 | DISARMED | HEALTHY/CONFLICT | True (NOT GRANTED) | -- | NONE | E_CONTROL_BATCH_CONFLICT
+        INPUT F/S micro=None/None; original_us=(15000, 15000); LOW_qualified=None; HIGH_edge=None; IDs=('conflict-a', 'conflict-b')
+  20000 | DISARMED | HEALTHY/SINGLE_CANDIDATE | False (NOT GRANTED) | -- | NONE | R_DUPLICATE_SEMANTIC_OBSERVATION,R_LOW_OBSERVED
+        INPUT F/S micro=0/0; original_us=(20000, 20000); LOW_qualified=None; HIGH_edge=None; IDs=('identical-a', 'identical-b')
+  25000 | DISARMED | HEALTHY/INVALID | False (NOT GRANTED) | -- | NONE | E_FRAME_INVALID
+        INPUT F/S micro=0/0; original_us=(25000, 25000); LOW_qualified=None; HIGH_edge=None; IDs=('invalid', 'simultaneous-valid')
+  30000 | SELF_TEST | HEALTHY/BLOCKED_PRIORITY | True (NOT GRANTED) | -- | NONE | R_RESET_APPLIED
+        INPUT F/S micro=0/0; original_us=(30000, 30000); LOW_qualified=None; HIGH_edge=None; IDs=('high-with-reset', 'reset')
+  35000 | FAULT_LATCHED | UNKNOWN/BLOCKED_PRIORITY | False (NOT GRANTED) | -- | NONE | E_SIM_FAULT,R_CATASTROPHIC_LATCH
+        INPUT F/S micro=0/0; original_us=(35000, 35000, 35000, 35000); LOW_qualified=None; HIGH_edge=None; IDs=('ack-catastrophe', 'catastrophe', 'low-catastrophe', 'reset-catastrophe')
+  40000 | FAULT_LATCHED | UNKNOWN/ABSENT | False (NOT GRANTED) | -- | NONE | E_SIM_FAULT,R_CATASTROPHIC_LATCH
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=None; IDs=()
+MODEL_REPLAY_COMPLETE: 9 MODEL commits; blocked_at_tick=None; 
+F0 comparator: SHADOW_DIAGNOSTICS_COMPLETE, 9 ticks (separate, no authority)
+runtime_authorized=False; output_allowed=False; actual_virtual_output=None; physical_output=None; control_trace_sha256=None

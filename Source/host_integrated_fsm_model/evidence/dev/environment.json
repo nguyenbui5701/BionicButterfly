@@ -1,0 +1,105 @@
+{
+  "artifacts": [
+    {
+      "path": ".cache/verify-kletjv1i/dependencies/bb_host_arm_qualification-0.1.0-py3-none-any.whl",
+      "sha256": "cb999b19143207fc8c557163c2568e9ff0894dc995f6b14cc8296801171c6739"
+    },
+    {
+      "path": ".cache/verify-kletjv1i/dependencies/bb_host_batch_observations-0.1.0-py3-none-any.whl",
+      "sha256": "3cd8fb9bda773cb0e85df8d1e5d40806b2d6fedb8ad05e8e3b1910f39be8a69d"
+    },
+    {
+      "path": ".cache/verify-kletjv1i/dependencies/bb_host_guard_triage-0.1.0-py3-none-any.whl",
+      "sha256": "a1ac6cb12a30e46b01c62bbff87e16f2b1271ddcf17d48686829dcb3c4c3fa4d"
+    },
+    {
+      "path": ".cache/verify-kletjv1i/dependencies/bb_host_health_evidence-0.1.0-py3-none-any.whl",
+      "sha256": "4accce9c6433a53935b74c6dad8c6b939afdb89a285961e06be1aeaab1206ee6"
+    },
+    {
+      "path": ".cache/verify-kletjv1i/dependencies/bb_host_integrated_shadow_replay-0.1.0-py3-none-any.whl",
+      "sha256": "d664c943881740f64e01ca0df744926b5657cae3155c97a86d86df4358fee7f7"
+    },
+    {
+      "path": ".cache/verify-kletjv1i/dependencies/bb_host_preflight_m0-0.1.0-py3-none-any.whl",
+      "sha256": "d209f1ce4a0826fd911a468b7a3e084c387dabe52f59599c8d163d827848e323"
+    },
+    {
+      "path": ".cache/verify-kletjv1i/dependencies/bb_host_provisioning_intent-0.1.0-py3-none-any.whl",
+      "sha256": "f0a1e8d55a406dafbf67174bfb66508c979f25466eb3d8f004d70615992f772c"
+    },
+    {
+      "path": ".cache/verify-kletjv1i/dependencies/bb_host_safety_priority_kernel-0.1.0-py3-none-any.whl",
+      "sha256": "df8bdec010a805b9aba413cf47757bd51d34402c7b5c41fa5c3ae5b525bc99a6"
+    },
+    {
+      "path": ".cache/verify-kletjv1i/dependencies/bb_host_snapshot_commit_gate-0.1.0-py3-none-any.whl",
+      "sha256": "297567004c3be60a5ca92dd43e3f7bb0ecab1e920cc308beec7de7b0d1737f27"
+    },
+    {
+      "path": ".cache/verify-kletjv1i/dependencies/bb_host_temporal_guard_facts-0.1.0-py3-none-any.whl",
+      "sha256": "a0b9a6dafdcc4c94723a1f9337b6a0bcee6b4fb90cb5167851deef94b5e5b715"
+    },
+    {
+      "path": ".cache/verify-kletjv1i/dependencies/bb_host_trust_boundary-0.1.0-py3-none-any.whl",
+      "sha256": "9bc94ed06c44397d8ad19636ee1a2a70f46220441189a9666cad53a41babd49f"
+    },
+    {
+      "path": ".cache/verify-kletjv1i/dependencies/bb_host_virtual_ticks-0.1.0-py3-none-any.whl",
+      "sha256": "88806757688b26ff7d294170b1a3bd0103b31612f19f878506baefa72487082e"
+    },
+    {
+      "path": ".cache/verify-kletjv1i/dist/bb_host_integrated_fsm_model-0.1.0-py3-none-any.whl",
+      "sha256": "230759977f1dca823f8dda67b138e5ba1f53be4fa9ebe5381815c3db024396f1"
+    },
+    {
+      "path": ".cache/verify-kletjv1i/dist/bb_host_integrated_fsm_model-0.1.0.tar.gz",
+      "sha256": "7c014d87be08f00c7e7d7d6f5ad3d3a4d17f136ae5ace1f08743f117d5f1c597"
+    }
+  ],
+  "installed_dependencies_match_pinned_source": true,
+  "installed_task013_matches_source": true,
+  "packages": {
+    "attrs": "25.3.0",
+    "bb-host-arm-qualification": "0.1.0",
+    "bb-host-batch-observations": "0.1.0",
+    "bb-host-guard-triage": "0.1.0",
+    "bb-host-health-evidence": "0.1.0",
+    "bb-host-integrated-fsm-model": "0.1.0",
+    "bb-host-integrated-shadow-replay": "0.1.0",
+    "bb-host-preflight-m0": "0.1.0",
+    "bb-host-provisioning-intent": "0.1.0",
+    "bb-host-safety-priority-kernel": "0.1.0",
+    "bb-host-snapshot-commit-gate": "0.1.0",
+    "bb-host-temporal-guard-facts": "0.1.0",
+    "bb-host-trust-boundary": "0.1.0",
+    "bb-host-virtual-ticks": "0.1.0",
+    "build": "1.2.2.post1",
+    "colorama": "0.4.6",
+    "iniconfig": "2.1.0",
+    "jsonschema": "4.26.0",
+    "jsonschema-specifications": "2025.9.1",
+    "packaging": "25.0",
+    "pip": "24.0",
+    "pluggy": "1.6.0",
+    "pyproject_hooks": "1.2.0",
+    "pytest": "8.3.5",
+    "referencing": "0.36.2",
+    "rfc8785": "0.1.4",
+    "rpds-py": "0.27.1",
+    "setuptools": "80.9.0",
+    "typing_extensions": "4.15.0",
+    "wheel": "0.45.1"
+  },
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python": "3.11.15",
+  "test_results": {
+    "tests.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 189
+    }
+  },
+  "wheel_environment": ".cache/verify-kletjv1i/wheel-env"
+}

@@ -1,0 +1,17 @@
+Obtaining file:///<REPOSITORY>/Source/host_integrated_fsm_model
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: bb-host-integrated-fsm-model
+  Building editable for bb-host-integrated-fsm-model (pyproject.toml): started
+  Building editable for bb-host-integrated-fsm-model (pyproject.toml): finished with status 'done'
+  Created wheel for bb-host-integrated-fsm-model: filename=bb_host_integrated_fsm_model-0.1.0-0.editable-py3-none-any.whl size=5653 sha256=71f81ceb46c0452b34313b2d2ce12e7f63cecbd056b8b85a23553fb8798fc1e9
+  Stored in directory: <USERPROFILE>\AppData\Local\Temp\pip-ephem-wheel-cache-pz2gr9ih\wheels\3c\8b\a1\4d9f8cf6d24ec5c81eb3ced396f2878cf13a9479b8752793b5
+Successfully built bb-host-integrated-fsm-model
+Installing collected packages: bb-host-integrated-fsm-model
+  Attempting uninstall: bb-host-integrated-fsm-model
+    Found existing installation: bb-host-integrated-fsm-model 0.1.0
+    Uninstalling bb-host-integrated-fsm-model-0.1.0:
+      Successfully uninstalled bb-host-integrated-fsm-model-0.1.0
+Successfully installed bb-host-integrated-fsm-model-0.1.0

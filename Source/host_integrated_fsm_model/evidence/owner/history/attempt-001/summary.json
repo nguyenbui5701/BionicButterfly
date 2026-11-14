@@ -1,0 +1,554 @@
+{
+  "commands": [
+    {
+      "command": [
+        "node",
+        "--version"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_integrated_fsm_model",
+      "exit_code": 0,
+      "log": "node-reference-version.log",
+      "name": "node-reference-version"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "-m",
+        "build",
+        "--wheel",
+        "--no-isolation",
+        "--outdir",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\dependencies",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\source\\host_preflight_m0"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_integrated_fsm_model",
+      "exit_code": 0,
+      "log": "build-task001.log",
+      "name": "build-task001"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "-m",
+        "build",
+        "--wheel",
+        "--no-isolation",
+        "--outdir",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\dependencies",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\source\\host_virtual_ticks"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_integrated_fsm_model",
+      "exit_code": 0,
+      "log": "build-task002.log",
+      "name": "build-task002"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "-m",
+        "build",
+        "--wheel",
+        "--no-isolation",
+        "--outdir",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\dependencies",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\source\\host_batch_observations"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_integrated_fsm_model",
+      "exit_code": 0,
+      "log": "build-task003.log",
+      "name": "build-task003"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "-m",
+        "build",
+        "--wheel",
+        "--no-isolation",
+        "--outdir",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\dependencies",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\source\\host_temporal_guard_facts"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_integrated_fsm_model",
+      "exit_code": 0,
+      "log": "build-task004.log",
+      "name": "build-task004"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "-m",
+        "build",
+        "--wheel",
+        "--no-isolation",
+        "--outdir",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\dependencies",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\source\\host_safety_priority_kernel"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_integrated_fsm_model",
+      "exit_code": 0,
+      "log": "build-task005.log",
+      "name": "build-task005"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "-m",
+        "build",
+        "--wheel",
+        "--no-isolation",
+        "--outdir",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\dependencies",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\source\\host_arm_qualification"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_integrated_fsm_model",
+      "exit_code": 0,
+      "log": "build-task006.log",
+      "name": "build-task006"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "-m",
+        "build",
+        "--wheel",
+        "--no-isolation",
+        "--outdir",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\dependencies",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\source\\host_health_evidence"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_integrated_fsm_model",
+      "exit_code": 0,
+      "log": "build-task007.log",
+      "name": "build-task007"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "-m",
+        "build",
+        "--wheel",
+        "--no-isolation",
+        "--outdir",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\dependencies",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\source\\host_guard_triage"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_integrated_fsm_model",
+      "exit_code": 0,
+      "log": "build-task008.log",
+      "name": "build-task008"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "-m",
+        "build",
+        "--wheel",
+        "--no-isolation",
+        "--outdir",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\dependencies",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\source\\host_snapshot_commit_gate"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_integrated_fsm_model",
+      "exit_code": 0,
+      "log": "build-task009.log",
+      "name": "build-task009"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "-m",
+        "build",
+        "--wheel",
+        "--no-isolation",
+        "--outdir",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\dependencies",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\source\\host_trust_boundary"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_integrated_fsm_model",
+      "exit_code": 0,
+      "log": "build-task010.log",
+      "name": "build-task010"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "-m",
+        "build",
+        "--wheel",
+        "--no-isolation",
+        "--outdir",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\dependencies",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\source\\host_provisioning_intent"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_integrated_fsm_model",
+      "exit_code": 0,
+      "log": "build-task011.log",
+      "name": "build-task011"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "-m",
+        "build",
+        "--wheel",
+        "--no-isolation",
+        "--outdir",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\dependencies",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\source\\host_integrated_shadow_replay"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_integrated_fsm_model",
+      "exit_code": 0,
+      "log": "build-task012.log",
+      "name": "build-task012"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "install",
+        "--disable-pip-version-check",
+        "--no-index",
+        "--no-deps",
+        "--force-reinstall",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\dependencies\\bb_host_preflight_m0-0.1.0-py3-none-any.whl",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\dependencies\\bb_host_virtual_ticks-0.1.0-py3-none-any.whl",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\dependencies\\bb_host_batch_observations-0.1.0-py3-none-any.whl",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\dependencies\\bb_host_temporal_guard_facts-0.1.0-py3-none-any.whl",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\dependencies\\bb_host_safety_priority_kernel-0.1.0-py3-none-any.whl",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\dependencies\\bb_host_arm_qualification-0.1.0-py3-none-any.whl",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\dependencies\\bb_host_health_evidence-0.1.0-py3-none-any.whl",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\dependencies\\bb_host_guard_triage-0.1.0-py3-none-any.whl",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\dependencies\\bb_host_snapshot_commit_gate-0.1.0-py3-none-any.whl",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\dependencies\\bb_host_trust_boundary-0.1.0-py3-none-any.whl",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\dependencies\\bb_host_provisioning_intent-0.1.0-py3-none-any.whl",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\dependencies\\bb_host_integrated_shadow_replay-0.1.0-py3-none-any.whl",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\vendor\\rfc8785-0.1.4-py3-none-any.whl"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_integrated_fsm_model",
+      "exit_code": 0,
+      "log": "install-prerequisites.log",
+      "name": "install-prerequisites"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "install",
+        "--disable-pip-version-check",
+        "--no-index",
+        "--no-deps",
+        "--no-build-isolation",
+        "-e",
+        "."
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_integrated_fsm_model",
+      "exit_code": 0,
+      "log": "install.log",
+      "name": "install"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "-m",
+        "compileall",
+        "-q",
+        "src",
+        "tests",
+        "scripts"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_integrated_fsm_model",
+      "exit_code": 0,
+      "log": "compile.log",
+      "name": "compile"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "--junitxml=<REPOSITORY>\\Source\\host_integrated_fsm_model\\evidence\\owner\\tests.xml"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_integrated_fsm_model",
+      "exit_code": 0,
+      "log": "tests.log",
+      "name": "tests"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "scripts/smoke.py"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_integrated_fsm_model",
+      "exit_code": 0,
+      "log": "smoke.log",
+      "name": "smoke"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_integrated_fsm_model",
+      "exit_code": 0,
+      "log": "dependencies.log",
+      "name": "dependencies"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "scripts/demo.py",
+        "--case",
+        "nominal",
+        "--view",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\evidence\\owner\\viewer-nominal.html",
+        "--candidate",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\evidence\\owner\\demo-nominal.model-candidate.jsonl"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_integrated_fsm_model",
+      "exit_code": 0,
+      "log": "demo-nominal.log",
+      "name": "demo-nominal"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "scripts/demo.py",
+        "--case",
+        "recovery",
+        "--view",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\evidence\\owner\\viewer-recovery.html",
+        "--candidate",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\evidence\\owner\\demo-recovery.model-candidate.jsonl"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_integrated_fsm_model",
+      "exit_code": 0,
+      "log": "demo-recovery.log",
+      "name": "demo-recovery"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "scripts/demo.py",
+        "--case",
+        "conflict",
+        "--view",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\evidence\\owner\\viewer-conflict.html",
+        "--candidate",
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\evidence\\owner\\demo-conflict.model-candidate.jsonl"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_integrated_fsm_model",
+      "exit_code": 0,
+      "log": "demo-conflict.log",
+      "name": "demo-conflict"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests",
+        "--junitxml=<REPOSITORY>\\Source\\host_integrated_fsm_model\\evidence\\owner\\task001-regression.xml"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\regression-workspace\\Source\\host_preflight_m0",
+      "exit_code": 0,
+      "log": "task001-regression.log",
+      "name": "task001-regression"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests",
+        "--junitxml=<REPOSITORY>\\Source\\host_integrated_fsm_model\\evidence\\owner\\task002-regression.xml"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\regression-workspace\\Source\\host_virtual_ticks",
+      "exit_code": 0,
+      "log": "task002-regression.log",
+      "name": "task002-regression"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests",
+        "--junitxml=<REPOSITORY>\\Source\\host_integrated_fsm_model\\evidence\\owner\\task003-regression.xml"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\regression-workspace\\Source\\host_batch_observations",
+      "exit_code": 0,
+      "log": "task003-regression.log",
+      "name": "task003-regression"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests",
+        "--junitxml=<REPOSITORY>\\Source\\host_integrated_fsm_model\\evidence\\owner\\task004-regression.xml"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\regression-workspace\\Source\\host_temporal_guard_facts",
+      "exit_code": 0,
+      "log": "task004-regression.log",
+      "name": "task004-regression"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests",
+        "--junitxml=<REPOSITORY>\\Source\\host_integrated_fsm_model\\evidence\\owner\\task005-regression.xml"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\regression-workspace\\Source\\host_safety_priority_kernel",
+      "exit_code": 0,
+      "log": "task005-regression.log",
+      "name": "task005-regression"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests",
+        "--junitxml=<REPOSITORY>\\Source\\host_integrated_fsm_model\\evidence\\owner\\task006-regression.xml"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\regression-workspace\\Source\\host_arm_qualification",
+      "exit_code": 0,
+      "log": "task006-regression.log",
+      "name": "task006-regression"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests",
+        "--junitxml=<REPOSITORY>\\Source\\host_integrated_fsm_model\\evidence\\owner\\task007-regression.xml"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\regression-workspace\\Source\\host_health_evidence",
+      "exit_code": 0,
+      "log": "task007-regression.log",
+      "name": "task007-regression"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests",
+        "--junitxml=<REPOSITORY>\\Source\\host_integrated_fsm_model\\evidence\\owner\\task008-regression.xml"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\regression-workspace\\Source\\host_guard_triage",
+      "exit_code": 0,
+      "log": "task008-regression.log",
+      "name": "task008-regression"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests",
+        "--junitxml=<REPOSITORY>\\Source\\host_integrated_fsm_model\\evidence\\owner\\task009-regression.xml"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\regression-workspace\\Source\\host_snapshot_commit_gate",
+      "exit_code": 0,
+      "log": "task009-regression.log",
+      "name": "task009-regression"
+    },
+    {
+      "command": [
+        "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests",
+        "--junitxml=<REPOSITORY>\\Source\\host_integrated_fsm_model\\evidence\\owner\\task010-regression.xml"
+      ],
+      "cwd": "<REPOSITORY>\\Source\\host_integrated_fsm_model\\.cache\\verify-1t4jdj1x\\regression-workspace\\Source\\host_trust_boundary",
+      "exit_code": 1,
+      "log": "task010-regression.log",
+      "name": "task010-regression"
+    }
+  ],
+  "error": "SystemExit: 1",
+  "failed_command": "task010-regression",
+  "revision": {
+    "branch": "feature/TASK-013-integrated-fsm-model",
+    "files": {
+      "MANIFEST.in": "c940fa599c8052c3edc260d75834932650e8b064f60ba1fa65d764b3ce77e31e",
+      "pyproject.toml": "ab7c5804f4f4f615b990c86c609ebd3ee518f3c8edb5fcf061660b3ccc0af800",
+      "scripts/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scripts/demo.py": "34fcc358b2eaa5dc18a430a8b109b2b314be486346407cdfbbf212f37321eefc",
+      "scripts/fixtures.py": "b93d07149919c3c026be40c53452e23b7babd853b0a0e05e7cc7674ec0ce7815",
+      "scripts/jcs_reference.js": "2cca89a6761f87403a0507c7966ad3a6e87114205ba6b4ce6e9d03110f848cbb",
+      "scripts/smoke.py": "df60417746e99e64d6db4c1225a3335ecebd568b32e386511c65deb4dd49ac08",
+      "scripts/verify.py": "778c7013731f40bb454e9be0c75cba640bc70853f9f5c7eba3ad88a28cea7d6e",
+      "scripts/viewer_reference.js": "7083c615258ffebabe63f978d69d72b45fb2f47d306a2b8270d1230f4342d166",
+      "src/bb_host_integrated_fsm_model/__init__.py": "2b8a4e14fbf01cc1976eb71d695ce19c2d531484c230cd41d122ca62f1146880",
+      "src/bb_host_integrated_fsm_model/jcs.py": "12a3d5bed58ffd82c2bc335fae9c4f98530ce6c735050e512851c4583e86a539",
+      "src/bb_host_integrated_fsm_model/model.py": "f9c73aa64e7b753688bed14474c6713efee89fa15d4de46e627f9c10f911f479",
+      "src/bb_host_integrated_fsm_model/trace.py": "1cf890874febb57fb58015a0c6ccbbe4e4f530ec967988129c2607539aec3249",
+      "src/bb_host_integrated_fsm_model/viewer.py": "f1927e69771aba3faf097138ec7069e81065aff71e91aaac90bc34d95829807d",
+      "tests/test_jcs.py": "095ba46ead06d422800c129dfac7a630b6c4588e11f9f4e547e6a5df437bc999",
+      "tests/test_model.py": "da5394eaae686406f3cab5acf08237061f51cbf13c69d2aca4b6d244b5e44c19",
+      "tests/test_oracles.py": "7f01c7fa644a20cd4086e6c76e02ad716d4b3326d9605537b435f3fe2be4e309",
+      "tests/test_system.py": "d8682190161b15944418e9ec2b296e5344421340ba9ba4520ab0567bb2e4b804",
+      "vendor/LICENSE.rfc8785.txt": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+      "vendor/manifest.json": "1a4afc2c4b0848b7b17d758e09bded64a7cfffd349d101dddacdf77ee4a863fe",
+      "vendor/rfc8785-0.1.4-py3-none-any.whl": "520d690b448ecf0703691c76e1a34a24ddcd4fc5bc41d589cb7c58ec651bcd48"
+    },
+    "head": "eb4dbc8830d864c9cfd5c4d94bf00180aa960b5d",
+    "source_sha256": "35d90f8164fdb925ce09ca61cde0cab62e6d6adb716fc3cd1604034f9f334d12"
+  },
+  "status": "FAIL"
+}
