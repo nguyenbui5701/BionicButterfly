@@ -1,0 +1,236 @@
+{
+  "$id": "urn:bionicbutterfly:p226:studio-actions-v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "actions": {
+      "items": {
+        "oneOf": [
+          {
+            "additionalProperties": false,
+            "properties": {
+              "at_us": {
+                "maximum": 60000000,
+                "minimum": 1,
+                "type": "integer"
+              },
+              "id": {
+                "pattern": "^[A-Za-z0-9_-]{1,64}$",
+                "type": "string"
+              },
+              "kind": {
+                "const": "RF_HEALTHY"
+              }
+            },
+            "required": [
+              "kind",
+              "id",
+              "at_us"
+            ],
+            "type": "object"
+          },
+          {
+            "additionalProperties": false,
+            "properties": {
+              "at_us": {
+                "maximum": 60000000,
+                "minimum": 1,
+                "type": "integer"
+              },
+              "id": {
+                "pattern": "^[A-Za-z0-9_-]{1,64}$",
+                "type": "string"
+              },
+              "kind": {
+                "const": "RF_LOST"
+              }
+            },
+            "required": [
+              "kind",
+              "id",
+              "at_us"
+            ],
+            "type": "object"
+          },
+          {
+            "additionalProperties": false,
+            "properties": {
+              "at_us": {
+                "maximum": 60000000,
+                "minimum": 1,
+                "type": "integer"
+              },
+              "id": {
+                "pattern": "^[A-Za-z0-9_-]{1,64}$",
+                "type": "string"
+              },
+              "kind": {
+                "const": "RF_UNKNOWN"
+              }
+            },
+            "required": [
+              "kind",
+              "id",
+              "at_us"
+            ],
+            "type": "object"
+          },
+          {
+            "additionalProperties": false,
+            "properties": {
+              "at_us": {
+                "maximum": 60000000,
+                "minimum": 1,
+                "type": "integer"
+              },
+              "id": {
+                "pattern": "^[A-Za-z0-9_-]{1,64}$",
+                "type": "string"
+              },
+              "kind": {
+                "const": "CONTROL_INVALID"
+              }
+            },
+            "required": [
+              "kind",
+              "id",
+              "at_us"
+            ],
+            "type": "object"
+          },
+          {
+            "additionalProperties": false,
+            "properties": {
+              "at_us": {
+                "maximum": 60000000,
+                "minimum": 1,
+                "type": "integer"
+              },
+              "id": {
+                "pattern": "^[A-Za-z0-9_-]{1,64}$",
+                "type": "string"
+              },
+              "kind": {
+                "const": "RESET"
+              }
+            },
+            "required": [
+              "kind",
+              "id",
+              "at_us"
+            ],
+            "type": "object"
+          },
+          {
+            "additionalProperties": false,
+            "properties": {
+              "at_us": {
+                "maximum": 60000000,
+                "minimum": 1,
+                "type": "integer"
+              },
+              "id": {
+                "pattern": "^[A-Za-z0-9_-]{1,64}$",
+                "type": "string"
+              },
+              "kind": {
+                "const": "ACK"
+              }
+            },
+            "required": [
+              "kind",
+              "id",
+              "at_us"
+            ],
+            "type": "object"
+          },
+          {
+            "additionalProperties": false,
+            "properties": {
+              "at_us": {
+                "maximum": 60000000,
+                "minimum": 1,
+                "type": "integer"
+              },
+              "id": {
+                "pattern": "^[A-Za-z0-9_-]{1,64}$",
+                "type": "string"
+              },
+              "kind": {
+                "const": "CATASTROPHE"
+              }
+            },
+            "required": [
+              "kind",
+              "id",
+              "at_us"
+            ],
+            "type": "object"
+          },
+          {
+            "additionalProperties": false,
+            "properties": {
+              "arm_switch": {
+                "type": "boolean"
+              },
+              "at_us": {
+                "maximum": 60000000,
+                "minimum": 1,
+                "type": "integer"
+              },
+              "flap_micro": {
+                "maximum": 1000000,
+                "minimum": 0,
+                "type": "integer"
+              },
+              "id": {
+                "pattern": "^[A-Za-z0-9_-]{1,64}$",
+                "type": "string"
+              },
+              "kind": {
+                "const": "CONTROL_VALID"
+              },
+              "steer_micro": {
+                "maximum": 1000000,
+                "minimum": -1000000,
+                "type": "integer"
+              }
+            },
+            "required": [
+              "kind",
+              "id",
+              "at_us",
+              "flap_micro",
+              "steer_micro",
+              "arm_switch"
+            ],
+            "type": "object"
+          }
+        ]
+      },
+      "maxItems": 19999,
+      "minItems": 0,
+      "type": "array"
+    },
+    "duration_us": {
+      "maximum": 60000000,
+      "minimum": 5000,
+      "multipleOf": 5000,
+      "type": "integer"
+    },
+    "session_id": {
+      "pattern": "^[A-Za-z0-9_-]{1,64}$",
+      "type": "string"
+    },
+    "session_schema": {
+      "const": "BB_P226_STUDIO_ACTIONS_V1"
+    }
+  },
+  "required": [
+    "session_schema",
+    "session_id",
+    "duration_us",
+    "actions"
+  ],
+  "type": "object"
+}

@@ -1,0 +1,30 @@
+{
+  "actions": [
+    {
+      "at_us": 5000,
+      "id": "rf0",
+      "kind": "RF_HEALTHY"
+    },
+    {
+      "arm_switch": false,
+      "at_us": 10000,
+      "flap_micro": 0,
+      "id": "low",
+      "kind": "CONTROL_VALID",
+      "steer_micro": 0
+    },
+    {
+      "at_us": 15000,
+      "id": "ambiguous-h",
+      "kind": "RF_HEALTHY"
+    },
+    {
+      "at_us": 15000,
+      "id": "ambiguous-u",
+      "kind": "RF_UNKNOWN"
+    }
+  ],
+  "duration_us": 25000,
+  "session_id": "p226_ambiguous",
+  "session_schema": "BB_P226_STUDIO_ACTIONS_V1"
+}

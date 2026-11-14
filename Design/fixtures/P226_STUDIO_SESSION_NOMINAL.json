@@ -1,0 +1,88 @@
+{
+  "actions": [
+    {
+      "at_us": 10000,
+      "id": "rf0",
+      "kind": "RF_HEALTHY"
+    },
+    {
+      "arm_switch": false,
+      "at_us": 15000,
+      "flap_micro": 0,
+      "id": "low1",
+      "kind": "CONTROL_VALID",
+      "steer_micro": 0
+    },
+    {
+      "arm_switch": false,
+      "at_us": 35000,
+      "flap_micro": 0,
+      "id": "low2",
+      "kind": "CONTROL_VALID",
+      "steer_micro": 0
+    },
+    {
+      "arm_switch": true,
+      "at_us": 40000,
+      "flap_micro": 0,
+      "id": "edge",
+      "kind": "CONTROL_VALID",
+      "steer_micro": 0
+    },
+    {
+      "at_us": 110000,
+      "id": "rf1",
+      "kind": "RF_HEALTHY"
+    },
+    {
+      "arm_switch": true,
+      "at_us": 140000,
+      "flap_micro": 0,
+      "id": "confirm",
+      "kind": "CONTROL_VALID",
+      "steer_micro": 0
+    },
+    {
+      "arm_switch": true,
+      "at_us": 145000,
+      "flap_micro": 500000,
+      "id": "active",
+      "kind": "CONTROL_VALID",
+      "steer_micro": 250000
+    },
+    {
+      "at_us": 155000,
+      "id": "lost",
+      "kind": "RF_LOST"
+    },
+    {
+      "at_us": 160000,
+      "id": "restored",
+      "kind": "RF_HEALTHY"
+    },
+    {
+      "arm_switch": false,
+      "at_us": 165000,
+      "flap_micro": 0,
+      "id": "recovery-low1",
+      "kind": "CONTROL_VALID",
+      "steer_micro": 0
+    },
+    {
+      "arm_switch": false,
+      "at_us": 185000,
+      "flap_micro": 0,
+      "id": "recovery-low2",
+      "kind": "CONTROL_VALID",
+      "steer_micro": 0
+    },
+    {
+      "at_us": 190000,
+      "id": "ack",
+      "kind": "ACK"
+    }
+  ],
+  "duration_us": 195000,
+  "session_id": "p226_nominal",
+  "session_schema": "BB_P226_STUDIO_ACTIONS_V1"
+}

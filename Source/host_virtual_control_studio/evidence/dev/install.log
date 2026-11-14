@@ -1,0 +1,17 @@
+Obtaining file:///D:/Vibecode/butterfly/BionicButterfly-Workspace/BionicButterfly/Source/host_virtual_control_studio
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: bb-host-virtual-control-studio
+  Building editable for bb-host-virtual-control-studio (pyproject.toml): started
+  Building editable for bb-host-virtual-control-studio (pyproject.toml): finished with status 'done'
+  Created wheel for bb-host-virtual-control-studio: filename=bb_host_virtual_control_studio-0.1.0-0.editable-py3-none-any.whl size=5329 sha256=6794ac2d5ef612052775a9d8d45ae83578c1020b08b2ae10ea606a5e0dbad716
+  Stored in directory: <USERPROFILE>\AppData\Local\Temp\pip-ephem-wheel-cache-9h3u_u0z\wheels\9e\66\f5\df597fa60a13403598ea12d2738d09176c232efe44860003eb
+Successfully built bb-host-virtual-control-studio
+Installing collected packages: bb-host-virtual-control-studio
+  Attempting uninstall: bb-host-virtual-control-studio
+    Found existing installation: bb-host-virtual-control-studio 0.1.0
+    Uninstalling bb-host-virtual-control-studio-0.1.0:
+      Successfully uninstalled bb-host-virtual-control-studio-0.1.0
+Successfully installed bb-host-virtual-control-studio-0.1.0

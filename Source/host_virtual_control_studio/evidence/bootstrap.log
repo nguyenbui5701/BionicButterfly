@@ -1,0 +1,103 @@
+Processing d:\vibecode\butterfly\bionicbutterfly-workspace\bionicbutterfly\source\host_integrated_fsm_model\.cache\verify-9uols_0r\dependencies\bb_host_arm_qualification-0.1.0-py3-none-any.whl
+Processing d:\vibecode\butterfly\bionicbutterfly-workspace\bionicbutterfly\source\host_integrated_fsm_model\.cache\verify-9uols_0r\dependencies\bb_host_batch_observations-0.1.0-py3-none-any.whl
+Processing d:\vibecode\butterfly\bionicbutterfly-workspace\bionicbutterfly\source\host_integrated_fsm_model\.cache\verify-9uols_0r\dependencies\bb_host_guard_triage-0.1.0-py3-none-any.whl
+Processing d:\vibecode\butterfly\bionicbutterfly-workspace\bionicbutterfly\source\host_integrated_fsm_model\.cache\verify-9uols_0r\dependencies\bb_host_health_evidence-0.1.0-py3-none-any.whl
+Processing d:\vibecode\butterfly\bionicbutterfly-workspace\bionicbutterfly\source\host_integrated_fsm_model\.cache\verify-9uols_0r\dependencies\bb_host_integrated_shadow_replay-0.1.0-py3-none-any.whl
+Processing d:\vibecode\butterfly\bionicbutterfly-workspace\bionicbutterfly\source\host_integrated_fsm_model\.cache\verify-9uols_0r\dependencies\bb_host_preflight_m0-0.1.0-py3-none-any.whl
+Processing d:\vibecode\butterfly\bionicbutterfly-workspace\bionicbutterfly\source\host_integrated_fsm_model\.cache\verify-9uols_0r\dependencies\bb_host_provisioning_intent-0.1.0-py3-none-any.whl
+Processing d:\vibecode\butterfly\bionicbutterfly-workspace\bionicbutterfly\source\host_integrated_fsm_model\.cache\verify-9uols_0r\dependencies\bb_host_safety_priority_kernel-0.1.0-py3-none-any.whl
+Processing d:\vibecode\butterfly\bionicbutterfly-workspace\bionicbutterfly\source\host_integrated_fsm_model\.cache\verify-9uols_0r\dependencies\bb_host_snapshot_commit_gate-0.1.0-py3-none-any.whl
+Processing d:\vibecode\butterfly\bionicbutterfly-workspace\bionicbutterfly\source\host_integrated_fsm_model\.cache\verify-9uols_0r\dependencies\bb_host_temporal_guard_facts-0.1.0-py3-none-any.whl
+Processing d:\vibecode\butterfly\bionicbutterfly-workspace\bionicbutterfly\source\host_integrated_fsm_model\.cache\verify-9uols_0r\dependencies\bb_host_trust_boundary-0.1.0-py3-none-any.whl
+Processing d:\vibecode\butterfly\bionicbutterfly-workspace\bionicbutterfly\source\host_integrated_fsm_model\.cache\verify-9uols_0r\dependencies\bb_host_virtual_ticks-0.1.0-py3-none-any.whl
+Processing d:\vibecode\butterfly\bionicbutterfly-workspace\bionicbutterfly\source\host_integrated_fsm_model\.cache\verify-9uols_0r\dist\bb_host_integrated_fsm_model-0.1.0-py3-none-any.whl
+Processing d:\vibecode\butterfly\bionicbutterfly-workspace\bionicbutterfly\source\host_virtual_control_studio\vendor\rfc8785-0.1.4-py3-none-any.whl
+Installing collected packages: rfc8785, bb-host-virtual-ticks, bb-host-trust-boundary, bb-host-temporal-guard-facts, bb-host-snapshot-commit-gate, bb-host-safety-priority-kernel, bb-host-provisioning-intent, bb-host-preflight-m0, bb-host-integrated-shadow-replay, bb-host-integrated-fsm-model, bb-host-health-evidence, bb-host-guard-triage, bb-host-batch-observations, bb-host-arm-qualification
+Successfully installed bb-host-arm-qualification-0.1.0 bb-host-batch-observations-0.1.0 bb-host-guard-triage-0.1.0 bb-host-health-evidence-0.1.0 bb-host-integrated-fsm-model-0.1.0 bb-host-integrated-shadow-replay-0.1.0 bb-host-preflight-m0-0.1.0 bb-host-provisioning-intent-0.1.0 bb-host-safety-priority-kernel-0.1.0 bb-host-snapshot-commit-gate-0.1.0 bb-host-temporal-guard-facts-0.1.0 bb-host-trust-boundary-0.1.0 bb-host-virtual-ticks-0.1.0 rfc8785-0.1.4
+Collecting setuptools==80.9.0
+  Using cached setuptools-80.9.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting wheel==0.45.1
+  Using cached wheel-0.45.1-py3-none-any.whl.metadata (2.3 kB)
+Using cached setuptools-80.9.0-py3-none-any.whl (1.2 MB)
+Using cached wheel-0.45.1-py3-none-any.whl (72 kB)
+Installing collected packages: wheel, setuptools
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 79.0.1
+    Uninstalling setuptools-79.0.1:
+      Successfully uninstalled setuptools-79.0.1
+Successfully installed setuptools-80.9.0 wheel-0.45.1
+Obtaining file:///D:/Vibecode/butterfly/BionicButterfly-Workspace/BionicButterfly/Source/host_virtual_control_studio
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: bb-host-integrated-fsm-model==0.1.0 in d:\vibecode\butterfly\bionicbutterfly-workspace\bionicbutterfly\source\host_virtual_control_studio\.venv\lib\site-packages (from bb-host-virtual-control-studio==0.1.0) (0.1.0)
+Collecting jsonschema==4.26.0 (from bb-host-virtual-control-studio==0.1.0)
+  Using cached jsonschema-4.26.0-py3-none-any.whl.metadata (7.6 kB)
+Requirement already satisfied: bb-host-preflight-m0==0.1.0 in d:\vibecode\butterfly\bionicbutterfly-workspace\bionicbutterfly\source\host_virtual_control_studio\.venv\lib\site-packages (from bb-host-integrated-fsm-model==0.1.0->bb-host-virtual-control-studio==0.1.0) (0.1.0)
+Requirement already satisfied: bb-host-virtual-ticks==0.1.0 in d:\vibecode\butterfly\bionicbutterfly-workspace\bionicbutterfly\source\host_virtual_control_studio\.venv\lib\site-packages (from bb-host-integrated-fsm-model==0.1.0->bb-host-virtual-control-studio==0.1.0) (0.1.0)
+Requirement already satisfied: bb-host-batch-observations==0.1.0 in d:\vibecode\butterfly\bionicbutterfly-workspace\bionicbutterfly\source\host_virtual_control_studio\.venv\lib\site-packages (from bb-host-integrated-fsm-model==0.1.0->bb-host-virtual-control-studio==0.1.0) (0.1.0)
+Requirement already satisfied: bb-host-temporal-guard-facts==0.1.0 in d:\vibecode\butterfly\bionicbutterfly-workspace\bionicbutterfly\source\host_virtual_control_studio\.venv\lib\site-packages (from bb-host-integrated-fsm-model==0.1.0->bb-host-virtual-control-studio==0.1.0) (0.1.0)
+Requirement already satisfied: bb-host-safety-priority-kernel==0.1.0 in d:\vibecode\butterfly\bionicbutterfly-workspace\bionicbutterfly\source\host_virtual_control_studio\.venv\lib\site-packages (from bb-host-integrated-fsm-model==0.1.0->bb-host-virtual-control-studio==0.1.0) (0.1.0)
+Requirement already satisfied: bb-host-health-evidence==0.1.0 in d:\vibecode\butterfly\bionicbutterfly-workspace\bionicbutterfly\source\host_virtual_control_studio\.venv\lib\site-packages (from bb-host-integrated-fsm-model==0.1.0->bb-host-virtual-control-studio==0.1.0) (0.1.0)
+Requirement already satisfied: bb-host-guard-triage==0.1.0 in d:\vibecode\butterfly\bionicbutterfly-workspace\bionicbutterfly\source\host_virtual_control_studio\.venv\lib\site-packages (from bb-host-integrated-fsm-model==0.1.0->bb-host-virtual-control-studio==0.1.0) (0.1.0)
+Requirement already satisfied: bb-host-snapshot-commit-gate==0.1.0 in d:\vibecode\butterfly\bionicbutterfly-workspace\bionicbutterfly\source\host_virtual_control_studio\.venv\lib\site-packages (from bb-host-integrated-fsm-model==0.1.0->bb-host-virtual-control-studio==0.1.0) (0.1.0)
+Requirement already satisfied: bb-host-trust-boundary==0.1.0 in d:\vibecode\butterfly\bionicbutterfly-workspace\bionicbutterfly\source\host_virtual_control_studio\.venv\lib\site-packages (from bb-host-integrated-fsm-model==0.1.0->bb-host-virtual-control-studio==0.1.0) (0.1.0)
+Requirement already satisfied: bb-host-provisioning-intent==0.1.0 in d:\vibecode\butterfly\bionicbutterfly-workspace\bionicbutterfly\source\host_virtual_control_studio\.venv\lib\site-packages (from bb-host-integrated-fsm-model==0.1.0->bb-host-virtual-control-studio==0.1.0) (0.1.0)
+Requirement already satisfied: bb-host-integrated-shadow-replay==0.1.0 in d:\vibecode\butterfly\bionicbutterfly-workspace\bionicbutterfly\source\host_virtual_control_studio\.venv\lib\site-packages (from bb-host-integrated-fsm-model==0.1.0->bb-host-virtual-control-studio==0.1.0) (0.1.0)
+Requirement already satisfied: rfc8785==0.1.4 in d:\vibecode\butterfly\bionicbutterfly-workspace\bionicbutterfly\source\host_virtual_control_studio\.venv\lib\site-packages (from bb-host-integrated-fsm-model==0.1.0->bb-host-virtual-control-studio==0.1.0) (0.1.4)
+Collecting attrs>=22.2.0 (from jsonschema==4.26.0->bb-host-virtual-control-studio==0.1.0)
+  Downloading attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+Collecting jsonschema-specifications>=2023.03.6 (from jsonschema==4.26.0->bb-host-virtual-control-studio==0.1.0)
+  Using cached jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+Collecting referencing>=0.28.4 (from jsonschema==4.26.0->bb-host-virtual-control-studio==0.1.0)
+  Using cached referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+Collecting rpds-py>=0.25.0 (from jsonschema==4.26.0->bb-host-virtual-control-studio==0.1.0)
+  Downloading rpds_py-2026.9.1-cp311-cp311-win_amd64.whl.metadata (4.2 kB)
+Collecting attrs>=22.2.0 (from jsonschema==4.26.0->bb-host-virtual-control-studio==0.1.0)
+  Using cached attrs-25.3.0-py3-none-any.whl.metadata (10 kB)
+Collecting referencing>=0.28.4 (from jsonschema==4.26.0->bb-host-virtual-control-studio==0.1.0)
+  Using cached referencing-0.36.2-py3-none-any.whl.metadata (2.8 kB)
+Collecting rpds-py>=0.25.0 (from jsonschema==4.26.0->bb-host-virtual-control-studio==0.1.0)
+  Using cached rpds_py-0.27.1-cp311-cp311-win_amd64.whl.metadata (4.3 kB)
+Collecting typing-extensions==4.15.0 (from bb-host-virtual-control-studio==0.1.0)
+  Using cached typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting pytest==8.3.5 (from bb-host-virtual-control-studio==0.1.0)
+  Using cached pytest-8.3.5-py3-none-any.whl.metadata (7.6 kB)
+Collecting colorama==0.4.6 (from bb-host-virtual-control-studio==0.1.0)
+  Using cached colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting iniconfig==2.1.0 (from bb-host-virtual-control-studio==0.1.0)
+  Using cached iniconfig-2.1.0-py3-none-any.whl.metadata (2.7 kB)
+Collecting packaging==25.0 (from bb-host-virtual-control-studio==0.1.0)
+  Using cached packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting pluggy==1.6.0 (from bb-host-virtual-control-studio==0.1.0)
+  Using cached pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+Collecting build==1.2.2.post1 (from bb-host-virtual-control-studio==0.1.0)
+  Using cached build-1.2.2.post1-py3-none-any.whl.metadata (6.5 kB)
+Collecting pyproject-hooks==1.2.0 (from bb-host-virtual-control-studio==0.1.0)
+  Using cached pyproject_hooks-1.2.0-py3-none-any.whl.metadata (1.3 kB)
+Requirement already satisfied: setuptools==80.9.0 in d:\vibecode\butterfly\bionicbutterfly-workspace\bionicbutterfly\source\host_virtual_control_studio\.venv\lib\site-packages (from bb-host-virtual-control-studio==0.1.0) (80.9.0)
+Requirement already satisfied: wheel==0.45.1 in d:\vibecode\butterfly\bionicbutterfly-workspace\bionicbutterfly\source\host_virtual_control_studio\.venv\lib\site-packages (from bb-host-virtual-control-studio==0.1.0) (0.45.1)
+Using cached jsonschema-4.26.0-py3-none-any.whl (90 kB)
+Using cached attrs-25.3.0-py3-none-any.whl (63 kB)
+Using cached build-1.2.2.post1-py3-none-any.whl (22 kB)
+Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Using cached iniconfig-2.1.0-py3-none-any.whl (6.0 kB)
+Using cached jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+Using cached packaging-25.0-py3-none-any.whl (66 kB)
+Using cached pluggy-1.6.0-py3-none-any.whl (20 kB)
+Using cached pyproject_hooks-1.2.0-py3-none-any.whl (10 kB)
+Using cached pytest-8.3.5-py3-none-any.whl (343 kB)
+Using cached referencing-0.36.2-py3-none-any.whl (26 kB)
+Using cached rpds_py-0.27.1-cp311-cp311-win_amd64.whl (228 kB)
+Using cached typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Checking if build backend supports build_editable: started
+Checking if build backend supports build_editable: finished with status 'done'
+Building wheels for collected packages: bb-host-virtual-control-studio
+  Building editable for bb-host-virtual-control-studio (pyproject.toml): started
+  Building editable for bb-host-virtual-control-studio (pyproject.toml): finished with status 'done'
+  Created wheel for bb-host-virtual-control-studio: filename=bb_host_virtual_control_studio-0.1.0-0.editable-py3-none-any.whl size=1901 sha256=4394a77013fba80a6e07253252dc150765ebe96f0687d24c2a06468140be2fa2
+  Stored in directory: C:\Users\tuank\AppData\Local\Temp\pip-ephem-wheel-cache-e8v0vswb\wheels\9e\66\f5\df597fa60a13403598ea12d2738d09176c232efe44860003eb
+Successfully built bb-host-virtual-control-studio
+Installing collected packages: typing-extensions, rpds-py, pyproject-hooks, pluggy, packaging, iniconfig, colorama, attrs, referencing, pytest, build, jsonschema-specifications, jsonschema, bb-host-virtual-control-studio
+Successfully installed attrs-25.3.0 bb-host-virtual-control-studio-0.1.0 build-1.2.2.post1 colorama-0.4.6 iniconfig-2.1.0 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 packaging-25.0 pluggy-1.6.0 pyproject-hooks-1.2.0 pytest-8.3.5 referencing-0.36.2 rpds-py-0.27.1 typing-extensions-4.15.0

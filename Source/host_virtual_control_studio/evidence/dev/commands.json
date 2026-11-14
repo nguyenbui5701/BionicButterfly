@@ -1,0 +1,505 @@
+[
+  {
+    "name": "build-task001",
+    "command": [
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.venv\\Scripts\\python.exe",
+      "-m",
+      "build",
+      "--wheel",
+      "--no-isolation",
+      "--outdir",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\fresh-clone\\Source\\host_preflight_m0"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_virtual_control_studio",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "log": "build-task001.log"
+  },
+  {
+    "name": "build-task002",
+    "command": [
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.venv\\Scripts\\python.exe",
+      "-m",
+      "build",
+      "--wheel",
+      "--no-isolation",
+      "--outdir",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\fresh-clone\\Source\\host_virtual_ticks"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_virtual_control_studio",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "log": "build-task002.log"
+  },
+  {
+    "name": "build-task003",
+    "command": [
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.venv\\Scripts\\python.exe",
+      "-m",
+      "build",
+      "--wheel",
+      "--no-isolation",
+      "--outdir",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\fresh-clone\\Source\\host_batch_observations"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_virtual_control_studio",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "log": "build-task003.log"
+  },
+  {
+    "name": "build-task004",
+    "command": [
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.venv\\Scripts\\python.exe",
+      "-m",
+      "build",
+      "--wheel",
+      "--no-isolation",
+      "--outdir",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\fresh-clone\\Source\\host_temporal_guard_facts"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_virtual_control_studio",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "log": "build-task004.log"
+  },
+  {
+    "name": "build-task005",
+    "command": [
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.venv\\Scripts\\python.exe",
+      "-m",
+      "build",
+      "--wheel",
+      "--no-isolation",
+      "--outdir",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\fresh-clone\\Source\\host_safety_priority_kernel"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_virtual_control_studio",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "log": "build-task005.log"
+  },
+  {
+    "name": "build-task006",
+    "command": [
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.venv\\Scripts\\python.exe",
+      "-m",
+      "build",
+      "--wheel",
+      "--no-isolation",
+      "--outdir",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\fresh-clone\\Source\\host_arm_qualification"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_virtual_control_studio",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "log": "build-task006.log"
+  },
+  {
+    "name": "build-task007",
+    "command": [
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.venv\\Scripts\\python.exe",
+      "-m",
+      "build",
+      "--wheel",
+      "--no-isolation",
+      "--outdir",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\fresh-clone\\Source\\host_health_evidence"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_virtual_control_studio",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "log": "build-task007.log"
+  },
+  {
+    "name": "build-task008",
+    "command": [
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.venv\\Scripts\\python.exe",
+      "-m",
+      "build",
+      "--wheel",
+      "--no-isolation",
+      "--outdir",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\fresh-clone\\Source\\host_guard_triage"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_virtual_control_studio",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "log": "build-task008.log"
+  },
+  {
+    "name": "build-task009",
+    "command": [
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.venv\\Scripts\\python.exe",
+      "-m",
+      "build",
+      "--wheel",
+      "--no-isolation",
+      "--outdir",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\fresh-clone\\Source\\host_snapshot_commit_gate"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_virtual_control_studio",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "log": "build-task009.log"
+  },
+  {
+    "name": "build-task010",
+    "command": [
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.venv\\Scripts\\python.exe",
+      "-m",
+      "build",
+      "--wheel",
+      "--no-isolation",
+      "--outdir",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\fresh-clone\\Source\\host_trust_boundary"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_virtual_control_studio",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "log": "build-task010.log"
+  },
+  {
+    "name": "build-task011",
+    "command": [
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.venv\\Scripts\\python.exe",
+      "-m",
+      "build",
+      "--wheel",
+      "--no-isolation",
+      "--outdir",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\fresh-clone\\Source\\host_provisioning_intent"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_virtual_control_studio",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "log": "build-task011.log"
+  },
+  {
+    "name": "build-task012",
+    "command": [
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.venv\\Scripts\\python.exe",
+      "-m",
+      "build",
+      "--wheel",
+      "--no-isolation",
+      "--outdir",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\fresh-clone\\Source\\host_integrated_shadow_replay"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_virtual_control_studio",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "log": "build-task012.log"
+  },
+  {
+    "name": "build-task013",
+    "command": [
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.venv\\Scripts\\python.exe",
+      "-m",
+      "build",
+      "--wheel",
+      "--no-isolation",
+      "--outdir",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\fresh-clone\\Source\\host_integrated_fsm_model"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_virtual_control_studio",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "log": "build-task013.log"
+  },
+  {
+    "name": "install-prerequisites",
+    "command": [
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pip",
+      "install",
+      "--disable-pip-version-check",
+      "--no-index",
+      "--no-deps",
+      "--force-reinstall",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels\\bb_host_preflight_m0-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels\\bb_host_virtual_ticks-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels\\bb_host_batch_observations-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels\\bb_host_temporal_guard_facts-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels\\bb_host_safety_priority_kernel-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels\\bb_host_arm_qualification-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels\\bb_host_health_evidence-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels\\bb_host_guard_triage-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels\\bb_host_snapshot_commit_gate-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels\\bb_host_trust_boundary-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels\\bb_host_provisioning_intent-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels\\bb_host_integrated_shadow_replay-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels\\bb_host_integrated_fsm_model-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\vendor\\rfc8785-0.1.4-py3-none-any.whl"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_virtual_control_studio",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "log": "install-prerequisites.log"
+  },
+  {
+    "name": "install",
+    "command": [
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pip",
+      "install",
+      "--disable-pip-version-check",
+      "--no-index",
+      "--no-deps",
+      "--no-build-isolation",
+      "-e",
+      "."
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_virtual_control_studio",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "log": "install.log"
+  },
+  {
+    "name": "tests",
+    "command": [
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "--junitxml=<REPOSITORY>\\Source\\host_virtual_control_studio\\evidence\\dev\\tests.xml"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_virtual_control_studio",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "log": "tests.log"
+  },
+  {
+    "name": "smoke",
+    "command": [
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.venv\\Scripts\\python.exe",
+      "scripts/smoke.py"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_virtual_control_studio",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "log": "smoke.log"
+  },
+  {
+    "name": "dependencies",
+    "command": [
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pip",
+      "check"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_virtual_control_studio",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "log": "dependencies.log"
+  },
+  {
+    "name": "demo-nominal",
+    "command": [
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.venv\\Scripts\\python.exe",
+      "scripts/studio.py",
+      "--case",
+      "nominal",
+      "--text",
+      "--view",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\evidence\\dev\\nominal.html",
+      "--proof",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\evidence\\dev\\nominal.model.json",
+      "--candidate",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\evidence\\dev\\nominal.model-candidate.jsonl"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_virtual_control_studio",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "log": "demo-nominal.log"
+  },
+  {
+    "name": "demo-rf-loss",
+    "command": [
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.venv\\Scripts\\python.exe",
+      "scripts/studio.py",
+      "--case",
+      "rf-loss",
+      "--text",
+      "--view",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\evidence\\dev\\rf-loss.html",
+      "--proof",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\evidence\\dev\\rf-loss.model.json",
+      "--candidate",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\evidence\\dev\\rf-loss.model-candidate.jsonl"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_virtual_control_studio",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "log": "demo-rf-loss.log"
+  },
+  {
+    "name": "demo-ambiguous",
+    "command": [
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.venv\\Scripts\\python.exe",
+      "scripts/studio.py",
+      "--case",
+      "ambiguous",
+      "--text"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_virtual_control_studio",
+    "exit_code": 2,
+    "expected_exit": 2,
+    "log": "demo-ambiguous.log"
+  },
+  {
+    "name": "fresh-clone-fixture-tests",
+    "command": [
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "tests/test_verification.py",
+      "--junitxml=<REPOSITORY>\\Source\\host_virtual_control_studio\\evidence\\dev\\fresh-clone.xml"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\fresh-clone\\Source\\host_virtual_control_studio",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "log": "fresh-clone-fixture-tests.log"
+  },
+  {
+    "name": "fresh-host_trust_boundary",
+    "command": [
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "tests/test_boundary.py::test_N18_installed_local_prerequisite_and_release_provenance",
+      "--junitxml=<REPOSITORY>\\Source\\host_virtual_control_studio\\evidence\\dev\\host_trust_boundary.xml"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\fresh-clone\\Source\\host_trust_boundary",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "log": "fresh-host_trust_boundary.log"
+  },
+  {
+    "name": "fresh-host_provisioning_intent",
+    "command": [
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "tests/test_intent.py::test_N18_installed_baseline_and_release_hashes",
+      "--junitxml=<REPOSITORY>\\Source\\host_virtual_control_studio\\evidence\\dev\\host_provisioning_intent.xml"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\fresh-clone\\Source\\host_provisioning_intent",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "log": "fresh-host_provisioning_intent.log"
+  },
+  {
+    "name": "build",
+    "command": [
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.venv\\Scripts\\python.exe",
+      "-m",
+      "build",
+      "--no-isolation",
+      "--outdir",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\dist"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_virtual_control_studio",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "log": "build.log"
+  },
+  {
+    "name": "wheel-env",
+    "command": [
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.venv\\Scripts\\python.exe",
+      "-m",
+      "venv",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheel-env"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_virtual_control_studio",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "log": "wheel-env.log"
+  },
+  {
+    "name": "wheel-install",
+    "command": [
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheel-env\\Scripts\\python.exe",
+      "-m",
+      "pip",
+      "install",
+      "--disable-pip-version-check",
+      "--no-index",
+      "--find-links",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\vendor\\test-wheels",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels\\bb_host_preflight_m0-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels\\bb_host_virtual_ticks-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels\\bb_host_batch_observations-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels\\bb_host_temporal_guard_facts-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels\\bb_host_safety_priority_kernel-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels\\bb_host_arm_qualification-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels\\bb_host_health_evidence-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels\\bb_host_guard_triage-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels\\bb_host_snapshot_commit_gate-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels\\bb_host_trust_boundary-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels\\bb_host_provisioning_intent-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels\\bb_host_integrated_shadow_replay-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheels\\bb_host_integrated_fsm_model-0.1.0-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\vendor\\rfc8785-0.1.4-py3-none-any.whl",
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\dist\\bb_host_virtual_control_studio-0.1.0-py3-none-any.whl"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_virtual_control_studio",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "log": "wheel-install.log"
+  },
+  {
+    "name": "wheel-smoke",
+    "command": [
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheel-env\\Scripts\\python.exe",
+      "scripts/smoke.py"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_virtual_control_studio",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "log": "wheel-smoke.log"
+  },
+  {
+    "name": "wheel-dependencies",
+    "command": [
+      "<REPOSITORY>\\Source\\host_virtual_control_studio\\.cache\\verify-p4rnta84\\wheel-env\\Scripts\\python.exe",
+      "-m",
+      "pip",
+      "check"
+    ],
+    "cwd": "<REPOSITORY>\\Source\\host_virtual_control_studio",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "log": "wheel-dependencies.log"
+  }
+]

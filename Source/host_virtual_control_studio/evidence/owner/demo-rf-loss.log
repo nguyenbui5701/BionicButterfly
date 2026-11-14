@@ -1,0 +1,41 @@
+MODEL_ONLY / NOT PROVISIONED / NO OUTPUT
+Dimensionless model effort; not servo position, PWM, lift or flight readiness.
+Studio: MODEL_REPLAY_COMPLETE
+MODEL_ONLY / RUNTIME_NOT_PROVISIONED / NO_ACTUATOR_OUTPUT
+Counterfactual model effort only; not servo position, PWM, lift or flight readiness.
+T(us) | model_state | RF / control | ARM request | model effort L/R | mode | model reasons
+      0 | SELF_TEST | UNKNOWN/ABSENT | False (NOT GRANTED) | -- | NONE | R_BOOT_OBSERVED
+        INPUT F/S micro=None/None; original_us=(0,); LOW_qualified=None; HIGH_edge=None; IDs=('studio_boot',)
+   5000 | DISARMED | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_SELF_TEST_COMPLETE
+        INPUT F/S micro=None/None; original_us=(5000,); LOW_qualified=None; HIGH_edge=None; IDs=('action_00001',)
+  10000 | DISARMED | HEALTHY/SINGLE_CANDIDATE | True (NOT GRANTED) | -- | NONE | E_ARM_PRECONDITION
+        INPUT F/S micro=500000/250000; original_us=(10000,); LOW_qualified=None; HIGH_edge=None; IDs=('action_00002',)
+  15000 | DISARMED | HEALTHY/SINGLE_CANDIDATE | False (NOT GRANTED) | -- | NONE | R_LOW_OBSERVED
+        INPUT F/S micro=0/0; original_us=(15000,); LOW_qualified=None; HIGH_edge=None; IDs=('action_00003',)
+  20000 | DISARMED | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=None; IDs=()
+  25000 | DISARMED | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=None; IDs=()
+  30000 | DISARMED | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=None; IDs=()
+  35000 | DISARMED | HEALTHY/SINGLE_CANDIDATE | False (NOT GRANTED) | -- | NONE | R_LOW_OBSERVED,R_LOW_QUALIFIED
+        INPUT F/S micro=0/0; original_us=(35000,); LOW_qualified=35000; HIGH_edge=None; IDs=('action_00004',)
+  40000 | ARM_CHECK | HEALTHY/SINGLE_CANDIDATE | True (NOT GRANTED) | -- | NONE | R_ARM_EDGE_ACCEPTED
+        INPUT F/S micro=0/0; original_us=(40000,); LOW_qualified=None; HIGH_edge=40000; IDs=('action_00005',)
+  45000 | CONTINGENCY | LOST/ABSENT | False (NOT GRANTED) | -- | NONE | E_RF_NOT_HEALTHY,R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(45000,); LOW_qualified=None; HIGH_edge=None; IDs=('action_00006',)
+  50000 | CONTINGENCY | LOST/BLOCKED_PRIORITY | True (NOT GRANTED) | -- | NONE | E_RF_NOT_HEALTHY
+        INPUT F/S micro=500000/0; original_us=(50000,); LOW_qualified=None; HIGH_edge=None; IDs=('action_00007',)
+  55000 | CONTINGENCY | HEALTHY/ABSENT | False (NOT GRANTED) | -- | NONE | R_NO_NEW_FRAME
+        INPUT F/S micro=None/None; original_us=(55000,); LOW_qualified=None; HIGH_edge=None; IDs=('action_00008',)
+  60000 | CONTINGENCY | HEALTHY/INVALID | False (NOT GRANTED) | -- | NONE | E_FRAME_INVALID
+        INPUT F/S micro=None/None; original_us=(60000,); LOW_qualified=None; HIGH_edge=None; IDs=('action_00009',)
+  65000 | FAULT_LATCHED | UNKNOWN/ABSENT | False (NOT GRANTED) | -- | NONE | E_SIM_FAULT,R_CATASTROPHIC_LATCH
+        INPUT F/S micro=None/None; original_us=(65000,); LOW_qualified=None; HIGH_edge=None; IDs=('action_00010',)
+  70000 | FAULT_LATCHED | UNKNOWN/ABSENT | False (NOT GRANTED) | -- | NONE | E_SIM_FAULT,R_CATASTROPHIC_LATCH
+        INPUT F/S micro=None/None; original_us=(70000,); LOW_qualified=None; HIGH_edge=None; IDs=('action_00011',)
+  75000 | FAULT_LATCHED | UNKNOWN/ABSENT | False (NOT GRANTED) | -- | NONE | E_SIM_FAULT,R_CATASTROPHIC_LATCH
+        INPUT F/S micro=None/None; original_us=(); LOW_qualified=None; HIGH_edge=None; IDs=()
+MODEL_REPLAY_COMPLETE: 16 MODEL commits; blocked_at_tick=None; 
+F0 comparator: SHADOW_DIAGNOSTICS_COMPLETE, 16 ticks (separate, no authority)
+runtime_authorized=False; output_allowed=False; actual_virtual_output=None; physical_output=None; control_trace_sha256=None

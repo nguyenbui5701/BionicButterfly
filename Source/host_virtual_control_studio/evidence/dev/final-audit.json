@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "source_sha256": "887bc6fa96627b370c9c72db3c01966e3330d2f8cdae7d9f5aa216c0e7998e28",
+  "execution_fingerprint_matches": true,
+  "prior_source_edited": false,
+  "preserved_task001_unchanged": true,
+  "release_files_unchanged": true,
+  "commands": 29,
+  "expected_ambiguous_exit": 2,
+  "warnings": [],
+  "full_prior_regression": "NOT RUN",
+  "owner_gui_manual": "NOT RUN",
+  "pr_created": false
+}

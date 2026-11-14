@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "baseline": "0a0a49ba0bbd2a87a1771ef4ad09d0b2f55b4b09",
+  "staging": {
+    "path": "Source/host_preflight_m0/evidence/baseline.json",
+    "sha256": "e6dfcfd1ea13ffb4fb5ba2c3d2b475ef0f62c85d2f84faa666ba6b13af30fd9d",
+    "source": "TASK014 immutable fixture; no current TASK001 worktree read"
+  },
+  "provenance_tests": "all prior regressions",
+  "current_task001_read": false
+}

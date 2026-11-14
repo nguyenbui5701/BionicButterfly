@@ -1,0 +1,66 @@
+{
+  "python": "3.11.15 (main, May 10 2026, 19:31:25) [MSC v.1944 64 bit (AMD64)]",
+  "installed_project_bytes_match": true,
+  "artifacts": [
+    {
+      "path": ".cache/verify-p4rnta84/wheels/bb_host_arm_qualification-0.1.0-py3-none-any.whl",
+      "sha256": "4a37092224634d2b8b9cb3b2733dceb34444972df320b7cd560516b1c0083310"
+    },
+    {
+      "path": ".cache/verify-p4rnta84/wheels/bb_host_batch_observations-0.1.0-py3-none-any.whl",
+      "sha256": "b1f9df9af550fc8145027df121e5ee32222a2c82cc82b426187193f122f2ac82"
+    },
+    {
+      "path": ".cache/verify-p4rnta84/wheels/bb_host_guard_triage-0.1.0-py3-none-any.whl",
+      "sha256": "45c3b4d22871eabe05538597319dee80bb44a34b6f5eab2104969636add7b79c"
+    },
+    {
+      "path": ".cache/verify-p4rnta84/wheels/bb_host_health_evidence-0.1.0-py3-none-any.whl",
+      "sha256": "4c677107d4f2eff22d71e2fe08767b70873e20504c0d1339325db007747b744b"
+    },
+    {
+      "path": ".cache/verify-p4rnta84/wheels/bb_host_integrated_fsm_model-0.1.0-py3-none-any.whl",
+      "sha256": "5505a2e8e189225d48aaf5065f4c4ef6bacb8d524da5f57889a20e79bb3ce731"
+    },
+    {
+      "path": ".cache/verify-p4rnta84/wheels/bb_host_integrated_shadow_replay-0.1.0-py3-none-any.whl",
+      "sha256": "8952d83327d3fcd5c7799ceaf38d30ff7296d5c01da9de64ad531b9dadb68848"
+    },
+    {
+      "path": ".cache/verify-p4rnta84/wheels/bb_host_preflight_m0-0.1.0-py3-none-any.whl",
+      "sha256": "13894365bb199568e012cb62aaf862bee0590299eb7b9b33702d449221054c44"
+    },
+    {
+      "path": ".cache/verify-p4rnta84/wheels/bb_host_provisioning_intent-0.1.0-py3-none-any.whl",
+      "sha256": "051cd46bc6bc7e3e0fc0084dd93cd6ed350d1c622ddccdc724620a100d3a6062"
+    },
+    {
+      "path": ".cache/verify-p4rnta84/wheels/bb_host_safety_priority_kernel-0.1.0-py3-none-any.whl",
+      "sha256": "a106754073f999f85a12db755913da083925ecf6a5679e6609a0651e1bf5465e"
+    },
+    {
+      "path": ".cache/verify-p4rnta84/wheels/bb_host_snapshot_commit_gate-0.1.0-py3-none-any.whl",
+      "sha256": "5cd24fa22749ae4a5431aa50313dd09648b3bb0934b5166e3033d1b29f00155d"
+    },
+    {
+      "path": ".cache/verify-p4rnta84/wheels/bb_host_temporal_guard_facts-0.1.0-py3-none-any.whl",
+      "sha256": "26eee6f72e68796fd3af0d91297a47215569124ee1e4320044e7d669fcee773f"
+    },
+    {
+      "path": ".cache/verify-p4rnta84/wheels/bb_host_trust_boundary-0.1.0-py3-none-any.whl",
+      "sha256": "86873f88e2788fb14e49ff7b288ac962835fcb5037c1733c550fc5c10f6d5863"
+    },
+    {
+      "path": ".cache/verify-p4rnta84/wheels/bb_host_virtual_ticks-0.1.0-py3-none-any.whl",
+      "sha256": "726affc390166f71c01fa11ebdc9fe96449b61a92840aa44ef7f79f9a8626c81"
+    },
+    {
+      "path": ".cache/verify-p4rnta84/dist/bb_host_virtual_control_studio-0.1.0-py3-none-any.whl",
+      "sha256": "00424d48e8281a3a4563ff2943db4528bd7cfe6d918154304ede4abb8ee8cd14"
+    },
+    {
+      "path": ".cache/verify-p4rnta84/dist/bb_host_virtual_control_studio-0.1.0.tar.gz",
+      "sha256": "f0714e67b45b614f6be7ab7e7f92516c4e0ef61ced3d3c5479b0a21cdd9705a2"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "kind": "programmatic hidden Tk adapter smoke; NOT manual GUI UAT",
+  "checks": [
+    "real widgets created",
+    "nominal replay 40 rows",
+    "ACTIVE effort pair 250000/750000",
+    "ambiguous stops with 3 rows"
+  ],
+  "manual_gui": "NOT RUN"
+}

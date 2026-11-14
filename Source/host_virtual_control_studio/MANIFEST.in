@@ -1,0 +1,5 @@
+include README.md
+recursive-include scripts *.py
+recursive-include tests *.py
+recursive-include fixtures *.json *.md
+recursive-include vendor *.whl *.txt *.json
