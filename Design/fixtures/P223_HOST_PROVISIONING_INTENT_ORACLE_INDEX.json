@@ -1,0 +1,1513 @@
+{
+  "schema_version": "P223_HOST_PROVISIONING_INTENT_ORACLES_V1",
+  "source_main_commit": "7872c415c73146e33a5596b010320f76596588cb",
+  "scope": "G0A1_PC_SIM_ONLY_TEST_ONLY",
+  "status": "DESIGN_ONLY_TASK011_NOT_RUN",
+  "count": 48,
+  "negative_test_family_count": 18,
+  "source_wire_fixture": "Design/fixtures/P210_MINIMAL_WIRE_V2.json",
+  "source_wire_schema": "Design/contracts/G0A1_SCENARIO_WIRE_V2_CANDIDATE.schema.json",
+  "source_policy_bytes": "Design/contracts/SIM_POLICY_22A_R1.canonical.json",
+  "engine_artifact_utf8_test_only": "BB_P223_SYNTHETIC_ENGINE_ARTIFACT_TEST_ONLY_V1",
+  "scheduler_artifact_utf8_test_only": "BB_P223_SYNTHETIC_SCHEDULER_ARTIFACT_TEST_ONLY_V1",
+  "base_intent": {
+    "format": "BB_E3_PROVISIONING_INTENT_V1",
+    "context": "PC_SIM",
+    "scope": "PC_SIM_ONLY",
+    "owner": "SIMULATOR",
+    "policy_sha256": "d7567197dd43480d7e96dac121fbb707d3097b6c443b1b7ab55e822dbac66e10",
+    "contract_revision": "G0A1_R11_E3_TEST_REFERENCE_ONLY",
+    "engine_revision": "G0A1_E3_TEST_ENGINE_ONLY",
+    "scheduler_revision": "G0A1_E3_TEST_SCHEDULER_ONLY",
+    "scheduler_step_us": 5000,
+    "scenario_wire_schema_version": 2,
+    "result_contract_version": 2,
+    "trace_format_version": 1,
+    "mixer_revision": "G0A1_M0_R11",
+    "engine_artifact_sha256": "566fdd854b288227721050c168bdc4278cba64d43717b3c899d6021a0a421546",
+    "scheduler_artifact_sha256": "3b2d0e531ac73c6664b970fb1658bc9704f476fc22a95c1d14c7afbf97f8f9b7",
+    "review_reference": "P223_TEST_REVIEW_NOT_OWNER_APPROVAL"
+  },
+  "field_mismatch_values": {
+    "format": "BB_E3_FAKE_PROVISIONER",
+    "context": "RC_PRIMARY",
+    "scope": "RC_PRIMARY",
+    "owner": "USER",
+    "policy_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "contract_revision": "G0A1_R11_E2_TEST_REFERENCE_ONLY",
+    "engine_revision": "G0A1_E3_FAKE_ENGINE",
+    "scheduler_revision": "G0A1_E3_FAKE_SCHEDULER",
+    "scheduler_step_us": 10000,
+    "scenario_wire_schema_version": 1,
+    "result_contract_version": 1,
+    "trace_format_version": 2,
+    "mixer_revision": "G0A1_OTHER_M0",
+    "engine_artifact_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "scheduler_artifact_sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+    "review_reference": "OWNER_APPROVED_SELF_ASSERTION"
+  },
+  "ordered_reasons": [
+    "UPSTREAM_NOT_ELIGIBLE",
+    "MALFORMED_INTENT",
+    "FORMAT_MISMATCH",
+    "CONTEXT_MISMATCH",
+    "SCOPE_MISMATCH",
+    "OWNER_MISMATCH",
+    "POLICY_DIGEST_MISMATCH",
+    "CONTRACT_REVISION_MISMATCH",
+    "ENGINE_REVISION_MISMATCH",
+    "SCHEDULER_REVISION_MISMATCH",
+    "SCHEDULER_STEP_MISMATCH",
+    "WIRE_VERSION_MISMATCH",
+    "RESULT_VERSION_MISMATCH",
+    "TRACE_VERSION_MISMATCH",
+    "MIXER_REVISION_MISMATCH",
+    "ENGINE_DIGEST_MISMATCH",
+    "SCHEDULER_DIGEST_MISMATCH",
+    "REVIEW_REFERENCE_MISMATCH",
+    "OWNER_SIGNOFF_MISSING",
+    "PROTECTED_INSTALL_NOT_PROVEN",
+    "HOST_IDENTITY_NOT_ATTESTED"
+  ],
+  "output_fields": [
+    "outcome",
+    "policy_sha256",
+    "engine_artifact_sha256",
+    "scheduler_artifact_sha256",
+    "reasons",
+    "content_consistent",
+    "runtime_authorized",
+    "requires_owner_provisioning",
+    "requires_full_fsm"
+  ],
+  "base_intent_serialization": "JSON ASCII (all strings in provided fixture ASCII and no float); sorted keys, separators=(comma,colon), no LF/BOM. No general RFC8785 claim.",
+  "raw_variant_instructions": {
+    "CANONICAL": "Use BASE_INTENT with per-case field overrides; render JSON in sorted-key ASCII, compact, no LF.",
+    "WHITESPACE_INSERTION": "Insert one ASCII space after the first colon into an otherwise valid canonical byte string.",
+    "TRAILING_LF": "Append a single ASCII LF to the canonical bytes.",
+    "LEADING_BOM": "Prepend UTF-8 BOM EF BB BF.",
+    "DUPLICATE_JSON_KEY": "Add a second key named context at root without removing the original key; use raw byte insertion.",
+    "UNKNOWN_APPROVED_KEY": "Add root approved:true; canonicalize with sorted keys.",
+    "MISSING_REVIEW_REFERENCE": "Remove key review_reference and canonicalize.",
+    "INVALID_UTF8": "Insert raw FF byte at the beginning.",
+    "JSON_ARRAY": "Return b[] instead of the object.",
+    "RAW_NAN_TOKEN": "Replace literal scheduler_step_us:5000 with scheduler_step_us:NaN (nonstandard JSON).",
+    "REVERSED_KEY_ORDER": "Reverse root insertion order before serialization, enforce changed raw bytes and identical parsed dict.",
+    "OVERSIZED_4097": "Return b space repeated 4097 bytes (over size quota).",
+    "UNKNOWN_SIGNATURE_KEY": "Add root signature:\"fake\"; canonicalize with sorted keys.",
+    "UNKNOWN_TRUSTED_HOST_KEY": "Add root trusted_host:true; canonicalize with sorted keys."
+  },
+  "byte_variant_instructions": {
+    "EXACT": "Use exact frozen policy raw bytes or exact ASCII test artifact bytes from index.",
+    "TRAILING_LF": "Append exactly b\\n.",
+    "APPEND_LF": "Append exactly b\\n.",
+    "FLIP_FIRST": "Flip first byte ASCII to Z if first byte is not Z, else to Y.",
+    "TRUNCATE_LAST": "Remove final byte; test byte strings are nonempty and remain nonempty."
+  },
+  "upstream_e2_instructions": {
+    "MATCH": "Use real TASK-001 accepted minimal wire + TASK-010 reference host claim and canonical policy bytes; assert REFERENCE_MATCH_NO_AUTHORITY and no authority.",
+    "UPSTREAM_REJECTED": "Use real TASK-001 rejected wire with extra approved key, then TASK-010; result UPSTREAM_REJECTED.",
+    "REFERENCE_MISMATCH": "Use real TASK-001 accepted wire but E2 policy bytes with appended LF, then TASK-010; result REFERENCE_MISMATCH."
+  },
+  "hash_expression_instruction": "=sha256(selected_*_bytes).hexdigest() is a declarative equality marker; compare to actual digest explicitly in test, never eval()",
+  "cases": [
+    {
+      "id": "P223-T01",
+      "name": "canonical_synthetic_intent_content_match_but_unprovisioned",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {},
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "INTENT_CONSISTENT_UNPROVISIONED",
+        "policy_sha256": "=sha256(selected_policy_bytes).hexdigest()",
+        "engine_artifact_sha256": "=sha256(selected_engine_bytes).hexdigest()",
+        "scheduler_artifact_sha256": "=sha256(selected_scheduler_bytes).hexdigest()",
+        "reasons": [
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": true,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T02",
+      "name": "single_intent_field_mismatch_format",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {
+        "format": "BB_E3_FAKE_PROVISIONER"
+      },
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "INTENT_MISMATCH",
+        "policy_sha256": "=sha256(selected_policy_bytes).hexdigest()",
+        "engine_artifact_sha256": "=sha256(selected_engine_bytes).hexdigest()",
+        "scheduler_artifact_sha256": "=sha256(selected_scheduler_bytes).hexdigest()",
+        "reasons": [
+          "FORMAT_MISMATCH",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T03",
+      "name": "single_intent_field_mismatch_context",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {
+        "context": "RC_PRIMARY"
+      },
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "INTENT_MISMATCH",
+        "policy_sha256": "=sha256(selected_policy_bytes).hexdigest()",
+        "engine_artifact_sha256": "=sha256(selected_engine_bytes).hexdigest()",
+        "scheduler_artifact_sha256": "=sha256(selected_scheduler_bytes).hexdigest()",
+        "reasons": [
+          "CONTEXT_MISMATCH",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T04",
+      "name": "single_intent_field_mismatch_scope",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {
+        "scope": "RC_PRIMARY"
+      },
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "INTENT_MISMATCH",
+        "policy_sha256": "=sha256(selected_policy_bytes).hexdigest()",
+        "engine_artifact_sha256": "=sha256(selected_engine_bytes).hexdigest()",
+        "scheduler_artifact_sha256": "=sha256(selected_scheduler_bytes).hexdigest()",
+        "reasons": [
+          "SCOPE_MISMATCH",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T05",
+      "name": "single_intent_field_mismatch_owner",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {
+        "owner": "USER"
+      },
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "INTENT_MISMATCH",
+        "policy_sha256": "=sha256(selected_policy_bytes).hexdigest()",
+        "engine_artifact_sha256": "=sha256(selected_engine_bytes).hexdigest()",
+        "scheduler_artifact_sha256": "=sha256(selected_scheduler_bytes).hexdigest()",
+        "reasons": [
+          "OWNER_MISMATCH",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T06",
+      "name": "single_intent_field_mismatch_policy_sha256",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {
+        "policy_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "INTENT_MISMATCH",
+        "policy_sha256": "=sha256(selected_policy_bytes).hexdigest()",
+        "engine_artifact_sha256": "=sha256(selected_engine_bytes).hexdigest()",
+        "scheduler_artifact_sha256": "=sha256(selected_scheduler_bytes).hexdigest()",
+        "reasons": [
+          "POLICY_DIGEST_MISMATCH",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T07",
+      "name": "single_intent_field_mismatch_contract_revision",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {
+        "contract_revision": "G0A1_R11_E2_TEST_REFERENCE_ONLY"
+      },
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "INTENT_MISMATCH",
+        "policy_sha256": "=sha256(selected_policy_bytes).hexdigest()",
+        "engine_artifact_sha256": "=sha256(selected_engine_bytes).hexdigest()",
+        "scheduler_artifact_sha256": "=sha256(selected_scheduler_bytes).hexdigest()",
+        "reasons": [
+          "CONTRACT_REVISION_MISMATCH",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T08",
+      "name": "single_intent_field_mismatch_engine_revision",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {
+        "engine_revision": "G0A1_E3_FAKE_ENGINE"
+      },
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "INTENT_MISMATCH",
+        "policy_sha256": "=sha256(selected_policy_bytes).hexdigest()",
+        "engine_artifact_sha256": "=sha256(selected_engine_bytes).hexdigest()",
+        "scheduler_artifact_sha256": "=sha256(selected_scheduler_bytes).hexdigest()",
+        "reasons": [
+          "ENGINE_REVISION_MISMATCH",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T09",
+      "name": "single_intent_field_mismatch_scheduler_revision",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {
+        "scheduler_revision": "G0A1_E3_FAKE_SCHEDULER"
+      },
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "INTENT_MISMATCH",
+        "policy_sha256": "=sha256(selected_policy_bytes).hexdigest()",
+        "engine_artifact_sha256": "=sha256(selected_engine_bytes).hexdigest()",
+        "scheduler_artifact_sha256": "=sha256(selected_scheduler_bytes).hexdigest()",
+        "reasons": [
+          "SCHEDULER_REVISION_MISMATCH",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T10",
+      "name": "single_intent_field_mismatch_scheduler_step_us",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {
+        "scheduler_step_us": 10000
+      },
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "INTENT_MISMATCH",
+        "policy_sha256": "=sha256(selected_policy_bytes).hexdigest()",
+        "engine_artifact_sha256": "=sha256(selected_engine_bytes).hexdigest()",
+        "scheduler_artifact_sha256": "=sha256(selected_scheduler_bytes).hexdigest()",
+        "reasons": [
+          "SCHEDULER_STEP_MISMATCH",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T11",
+      "name": "single_intent_field_mismatch_scenario_wire_schema_version",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {
+        "scenario_wire_schema_version": 1
+      },
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "INTENT_MISMATCH",
+        "policy_sha256": "=sha256(selected_policy_bytes).hexdigest()",
+        "engine_artifact_sha256": "=sha256(selected_engine_bytes).hexdigest()",
+        "scheduler_artifact_sha256": "=sha256(selected_scheduler_bytes).hexdigest()",
+        "reasons": [
+          "WIRE_VERSION_MISMATCH",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T12",
+      "name": "single_intent_field_mismatch_result_contract_version",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {
+        "result_contract_version": 1
+      },
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "INTENT_MISMATCH",
+        "policy_sha256": "=sha256(selected_policy_bytes).hexdigest()",
+        "engine_artifact_sha256": "=sha256(selected_engine_bytes).hexdigest()",
+        "scheduler_artifact_sha256": "=sha256(selected_scheduler_bytes).hexdigest()",
+        "reasons": [
+          "RESULT_VERSION_MISMATCH",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T13",
+      "name": "single_intent_field_mismatch_trace_format_version",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {
+        "trace_format_version": 2
+      },
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "INTENT_MISMATCH",
+        "policy_sha256": "=sha256(selected_policy_bytes).hexdigest()",
+        "engine_artifact_sha256": "=sha256(selected_engine_bytes).hexdigest()",
+        "scheduler_artifact_sha256": "=sha256(selected_scheduler_bytes).hexdigest()",
+        "reasons": [
+          "TRACE_VERSION_MISMATCH",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T14",
+      "name": "single_intent_field_mismatch_mixer_revision",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {
+        "mixer_revision": "G0A1_OTHER_M0"
+      },
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "INTENT_MISMATCH",
+        "policy_sha256": "=sha256(selected_policy_bytes).hexdigest()",
+        "engine_artifact_sha256": "=sha256(selected_engine_bytes).hexdigest()",
+        "scheduler_artifact_sha256": "=sha256(selected_scheduler_bytes).hexdigest()",
+        "reasons": [
+          "MIXER_REVISION_MISMATCH",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T15",
+      "name": "single_intent_field_mismatch_engine_artifact_sha256",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {
+        "engine_artifact_sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+      },
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "INTENT_MISMATCH",
+        "policy_sha256": "=sha256(selected_policy_bytes).hexdigest()",
+        "engine_artifact_sha256": "=sha256(selected_engine_bytes).hexdigest()",
+        "scheduler_artifact_sha256": "=sha256(selected_scheduler_bytes).hexdigest()",
+        "reasons": [
+          "ENGINE_DIGEST_MISMATCH",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T16",
+      "name": "single_intent_field_mismatch_scheduler_artifact_sha256",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {
+        "scheduler_artifact_sha256": "2222222222222222222222222222222222222222222222222222222222222222"
+      },
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "INTENT_MISMATCH",
+        "policy_sha256": "=sha256(selected_policy_bytes).hexdigest()",
+        "engine_artifact_sha256": "=sha256(selected_engine_bytes).hexdigest()",
+        "scheduler_artifact_sha256": "=sha256(selected_scheduler_bytes).hexdigest()",
+        "reasons": [
+          "SCHEDULER_DIGEST_MISMATCH",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T17",
+      "name": "single_intent_field_mismatch_review_reference",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {
+        "review_reference": "OWNER_APPROVED_SELF_ASSERTION"
+      },
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "INTENT_MISMATCH",
+        "policy_sha256": "=sha256(selected_policy_bytes).hexdigest()",
+        "engine_artifact_sha256": "=sha256(selected_engine_bytes).hexdigest()",
+        "scheduler_artifact_sha256": "=sha256(selected_scheduler_bytes).hexdigest()",
+        "reasons": [
+          "REVIEW_REFERENCE_MISMATCH",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T18",
+      "name": "combined_mismatches_1",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {
+        "context": "RC_PRIMARY",
+        "scope": "RC_PRIMARY"
+      },
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "INTENT_MISMATCH",
+        "policy_sha256": "=sha256(selected_policy_bytes).hexdigest()",
+        "engine_artifact_sha256": "=sha256(selected_engine_bytes).hexdigest()",
+        "scheduler_artifact_sha256": "=sha256(selected_scheduler_bytes).hexdigest()",
+        "reasons": [
+          "CONTEXT_MISMATCH",
+          "SCOPE_MISMATCH",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T19",
+      "name": "combined_mismatches_2",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {
+        "owner": "USER",
+        "review_reference": "OWNER_APPROVED_SELF_ASSERTION"
+      },
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "INTENT_MISMATCH",
+        "policy_sha256": "=sha256(selected_policy_bytes).hexdigest()",
+        "engine_artifact_sha256": "=sha256(selected_engine_bytes).hexdigest()",
+        "scheduler_artifact_sha256": "=sha256(selected_scheduler_bytes).hexdigest()",
+        "reasons": [
+          "OWNER_MISMATCH",
+          "REVIEW_REFERENCE_MISMATCH",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T20",
+      "name": "combined_mismatches_3",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {
+        "policy_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "engine_artifact_sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+      },
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "INTENT_MISMATCH",
+        "policy_sha256": "=sha256(selected_policy_bytes).hexdigest()",
+        "engine_artifact_sha256": "=sha256(selected_engine_bytes).hexdigest()",
+        "scheduler_artifact_sha256": "=sha256(selected_scheduler_bytes).hexdigest()",
+        "reasons": [
+          "POLICY_DIGEST_MISMATCH",
+          "ENGINE_DIGEST_MISMATCH",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T21",
+      "name": "combined_mismatches_4",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {
+        "engine_revision": "G0A1_E3_FAKE_ENGINE",
+        "scheduler_revision": "G0A1_E3_FAKE_SCHEDULER"
+      },
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "INTENT_MISMATCH",
+        "policy_sha256": "=sha256(selected_policy_bytes).hexdigest()",
+        "engine_artifact_sha256": "=sha256(selected_engine_bytes).hexdigest()",
+        "scheduler_artifact_sha256": "=sha256(selected_scheduler_bytes).hexdigest()",
+        "reasons": [
+          "ENGINE_REVISION_MISMATCH",
+          "SCHEDULER_REVISION_MISMATCH",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T22",
+      "name": "combined_mismatches_5",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {
+        "scheduler_step_us": 10000,
+        "scenario_wire_schema_version": 1
+      },
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "INTENT_MISMATCH",
+        "policy_sha256": "=sha256(selected_policy_bytes).hexdigest()",
+        "engine_artifact_sha256": "=sha256(selected_engine_bytes).hexdigest()",
+        "scheduler_artifact_sha256": "=sha256(selected_scheduler_bytes).hexdigest()",
+        "reasons": [
+          "SCHEDULER_STEP_MISMATCH",
+          "WIRE_VERSION_MISMATCH",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T23",
+      "name": "combined_mismatches_6",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {
+        "format": "BB_E3_FAKE_PROVISIONER",
+        "result_contract_version": 1,
+        "trace_format_version": 2
+      },
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "INTENT_MISMATCH",
+        "policy_sha256": "=sha256(selected_policy_bytes).hexdigest()",
+        "engine_artifact_sha256": "=sha256(selected_engine_bytes).hexdigest()",
+        "scheduler_artifact_sha256": "=sha256(selected_scheduler_bytes).hexdigest()",
+        "reasons": [
+          "FORMAT_MISMATCH",
+          "RESULT_VERSION_MISMATCH",
+          "TRACE_VERSION_MISMATCH",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T24",
+      "name": "combined_mismatches_7",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {
+        "contract_revision": "G0A1_R11_E2_TEST_REFERENCE_ONLY",
+        "mixer_revision": "G0A1_OTHER_M0"
+      },
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "INTENT_MISMATCH",
+        "policy_sha256": "=sha256(selected_policy_bytes).hexdigest()",
+        "engine_artifact_sha256": "=sha256(selected_engine_bytes).hexdigest()",
+        "scheduler_artifact_sha256": "=sha256(selected_scheduler_bytes).hexdigest()",
+        "reasons": [
+          "CONTRACT_REVISION_MISMATCH",
+          "MIXER_REVISION_MISMATCH",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T25",
+      "name": "combined_mismatches_8",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {
+        "policy_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "scheduler_artifact_sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+        "review_reference": "OWNER_APPROVED_SELF_ASSERTION"
+      },
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "INTENT_MISMATCH",
+        "policy_sha256": "=sha256(selected_policy_bytes).hexdigest()",
+        "engine_artifact_sha256": "=sha256(selected_engine_bytes).hexdigest()",
+        "scheduler_artifact_sha256": "=sha256(selected_scheduler_bytes).hexdigest()",
+        "reasons": [
+          "POLICY_DIGEST_MISMATCH",
+          "SCHEDULER_DIGEST_MISMATCH",
+          "REVIEW_REFERENCE_MISMATCH",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T26",
+      "name": "malformed_raw_whitespace_insertion",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {},
+      "raw_variant": "WHITESPACE_INSERTION",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "MALFORMED_INTENT",
+        "policy_sha256": null,
+        "engine_artifact_sha256": null,
+        "scheduler_artifact_sha256": null,
+        "reasons": [
+          "MALFORMED_INTENT",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T27",
+      "name": "malformed_raw_trailing_lf",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {},
+      "raw_variant": "TRAILING_LF",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "MALFORMED_INTENT",
+        "policy_sha256": null,
+        "engine_artifact_sha256": null,
+        "scheduler_artifact_sha256": null,
+        "reasons": [
+          "MALFORMED_INTENT",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T28",
+      "name": "malformed_raw_leading_bom",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {},
+      "raw_variant": "LEADING_BOM",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "MALFORMED_INTENT",
+        "policy_sha256": null,
+        "engine_artifact_sha256": null,
+        "scheduler_artifact_sha256": null,
+        "reasons": [
+          "MALFORMED_INTENT",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T29",
+      "name": "malformed_raw_duplicate_json_key",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {},
+      "raw_variant": "DUPLICATE_JSON_KEY",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "MALFORMED_INTENT",
+        "policy_sha256": null,
+        "engine_artifact_sha256": null,
+        "scheduler_artifact_sha256": null,
+        "reasons": [
+          "MALFORMED_INTENT",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T30",
+      "name": "malformed_raw_unknown_approved_key",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {},
+      "raw_variant": "UNKNOWN_APPROVED_KEY",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "MALFORMED_INTENT",
+        "policy_sha256": null,
+        "engine_artifact_sha256": null,
+        "scheduler_artifact_sha256": null,
+        "reasons": [
+          "MALFORMED_INTENT",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T31",
+      "name": "malformed_raw_missing_review_reference",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {},
+      "raw_variant": "MISSING_REVIEW_REFERENCE",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "MALFORMED_INTENT",
+        "policy_sha256": null,
+        "engine_artifact_sha256": null,
+        "scheduler_artifact_sha256": null,
+        "reasons": [
+          "MALFORMED_INTENT",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T32",
+      "name": "malformed_raw_invalid_utf8",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {},
+      "raw_variant": "INVALID_UTF8",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "MALFORMED_INTENT",
+        "policy_sha256": null,
+        "engine_artifact_sha256": null,
+        "scheduler_artifact_sha256": null,
+        "reasons": [
+          "MALFORMED_INTENT",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T33",
+      "name": "malformed_raw_json_array",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {},
+      "raw_variant": "JSON_ARRAY",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "MALFORMED_INTENT",
+        "policy_sha256": null,
+        "engine_artifact_sha256": null,
+        "scheduler_artifact_sha256": null,
+        "reasons": [
+          "MALFORMED_INTENT",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T34",
+      "name": "malformed_raw_raw_nan_token",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {},
+      "raw_variant": "RAW_NAN_TOKEN",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "MALFORMED_INTENT",
+        "policy_sha256": null,
+        "engine_artifact_sha256": null,
+        "scheduler_artifact_sha256": null,
+        "reasons": [
+          "MALFORMED_INTENT",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T35",
+      "name": "malformed_raw_reversed_key_order",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {},
+      "raw_variant": "REVERSED_KEY_ORDER",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "MALFORMED_INTENT",
+        "policy_sha256": null,
+        "engine_artifact_sha256": null,
+        "scheduler_artifact_sha256": null,
+        "reasons": [
+          "MALFORMED_INTENT",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T36",
+      "name": "malformed_raw_oversized_4097",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {},
+      "raw_variant": "OVERSIZED_4097",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "MALFORMED_INTENT",
+        "policy_sha256": null,
+        "engine_artifact_sha256": null,
+        "scheduler_artifact_sha256": null,
+        "reasons": [
+          "MALFORMED_INTENT",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T37",
+      "name": "policy_bytes_changed_after_intent",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {},
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "TRAILING_LF",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "INTENT_MISMATCH",
+        "policy_sha256": "=sha256(selected_policy_bytes).hexdigest()",
+        "engine_artifact_sha256": "=sha256(selected_engine_bytes).hexdigest()",
+        "scheduler_artifact_sha256": "=sha256(selected_scheduler_bytes).hexdigest()",
+        "reasons": [
+          "POLICY_DIGEST_MISMATCH",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T38",
+      "name": "engine_artifact_changed_after_intent",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {},
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "APPEND_LF",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "INTENT_MISMATCH",
+        "policy_sha256": "=sha256(selected_policy_bytes).hexdigest()",
+        "engine_artifact_sha256": "=sha256(selected_engine_bytes).hexdigest()",
+        "scheduler_artifact_sha256": "=sha256(selected_scheduler_bytes).hexdigest()",
+        "reasons": [
+          "ENGINE_DIGEST_MISMATCH",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T39",
+      "name": "scheduler_artifact_changed_after_intent",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {},
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "APPEND_LF",
+      "expected": {
+        "outcome": "INTENT_MISMATCH",
+        "policy_sha256": "=sha256(selected_policy_bytes).hexdigest()",
+        "engine_artifact_sha256": "=sha256(selected_engine_bytes).hexdigest()",
+        "scheduler_artifact_sha256": "=sha256(selected_scheduler_bytes).hexdigest()",
+        "reasons": [
+          "SCHEDULER_DIGEST_MISMATCH",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T40",
+      "name": "both_artifacts_changed_after_intent",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {},
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "FLIP_FIRST",
+      "scheduler_bytes_variant": "FLIP_FIRST",
+      "expected": {
+        "outcome": "INTENT_MISMATCH",
+        "policy_sha256": "=sha256(selected_policy_bytes).hexdigest()",
+        "engine_artifact_sha256": "=sha256(selected_engine_bytes).hexdigest()",
+        "scheduler_artifact_sha256": "=sha256(selected_scheduler_bytes).hexdigest()",
+        "reasons": [
+          "ENGINE_DIGEST_MISMATCH",
+          "SCHEDULER_DIGEST_MISMATCH",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T41",
+      "name": "policy_plus_artifact_changed_after_intent",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {},
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "FLIP_FIRST",
+      "engine_bytes_variant": "TRUNCATE_LAST",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "INTENT_MISMATCH",
+        "policy_sha256": "=sha256(selected_policy_bytes).hexdigest()",
+        "engine_artifact_sha256": "=sha256(selected_engine_bytes).hexdigest()",
+        "scheduler_artifact_sha256": "=sha256(selected_scheduler_bytes).hexdigest()",
+        "reasons": [
+          "POLICY_DIGEST_MISMATCH",
+          "ENGINE_DIGEST_MISMATCH",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T42",
+      "name": "rejected_preflight_never_promoted",
+      "upstream_e2": "UPSTREAM_REJECTED",
+      "intent_field_overrides": {},
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "UPSTREAM_NOT_ELIGIBLE",
+        "policy_sha256": null,
+        "engine_artifact_sha256": null,
+        "scheduler_artifact_sha256": null,
+        "reasons": [
+          "UPSTREAM_NOT_ELIGIBLE",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T43",
+      "name": "upstream_reference_mismatch_never_promoted",
+      "upstream_e2": "REFERENCE_MISMATCH",
+      "intent_field_overrides": {},
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "UPSTREAM_NOT_ELIGIBLE",
+        "policy_sha256": null,
+        "engine_artifact_sha256": null,
+        "scheduler_artifact_sha256": null,
+        "reasons": [
+          "UPSTREAM_NOT_ELIGIBLE",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T44",
+      "name": "upstream_rejected_with_bad_intent_is_not_parsed",
+      "upstream_e2": "UPSTREAM_REJECTED",
+      "intent_field_overrides": {},
+      "raw_variant": "LEADING_BOM",
+      "policy_bytes_variant": "FLIP_FIRST",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "UPSTREAM_NOT_ELIGIBLE",
+        "policy_sha256": null,
+        "engine_artifact_sha256": null,
+        "scheduler_artifact_sha256": null,
+        "reasons": [
+          "UPSTREAM_NOT_ELIGIBLE",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T45",
+      "name": "upstream_mismatch_with_bytes_changed_still_not_inspected",
+      "upstream_e2": "REFERENCE_MISMATCH",
+      "intent_field_overrides": {},
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "APPEND_LF",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "UPSTREAM_NOT_ELIGIBLE",
+        "policy_sha256": null,
+        "engine_artifact_sha256": null,
+        "scheduler_artifact_sha256": null,
+        "reasons": [
+          "UPSTREAM_NOT_ELIGIBLE",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T46",
+      "name": "injected_signature_field_is_illegal",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {},
+      "raw_variant": "UNKNOWN_SIGNATURE_KEY",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "MALFORMED_INTENT",
+        "policy_sha256": null,
+        "engine_artifact_sha256": null,
+        "scheduler_artifact_sha256": null,
+        "reasons": [
+          "MALFORMED_INTENT",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T47",
+      "name": "injected_trusted_host_field_is_illegal",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {},
+      "raw_variant": "UNKNOWN_TRUSTED_HOST_KEY",
+      "policy_bytes_variant": "EXACT",
+      "engine_bytes_variant": "EXACT",
+      "scheduler_bytes_variant": "EXACT",
+      "expected": {
+        "outcome": "MALFORMED_INTENT",
+        "policy_sha256": null,
+        "engine_artifact_sha256": null,
+        "scheduler_artifact_sha256": null,
+        "reasons": [
+          "MALFORMED_INTENT",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    },
+    {
+      "id": "P223-T48",
+      "name": "multiple_referents_and_artifact_changes",
+      "upstream_e2": "MATCH",
+      "intent_field_overrides": {
+        "review_reference": "OWNER_APPROVED_SELF_ASSERTION",
+        "engine_revision": "G0A1_E3_FAKE_ENGINE"
+      },
+      "raw_variant": "CANONICAL",
+      "policy_bytes_variant": "APPEND_LF",
+      "engine_bytes_variant": "FLIP_FIRST",
+      "scheduler_bytes_variant": "TRUNCATE_LAST",
+      "expected": {
+        "outcome": "INTENT_MISMATCH",
+        "policy_sha256": "=sha256(selected_policy_bytes).hexdigest()",
+        "engine_artifact_sha256": "=sha256(selected_engine_bytes).hexdigest()",
+        "scheduler_artifact_sha256": "=sha256(selected_scheduler_bytes).hexdigest()",
+        "reasons": [
+          "POLICY_DIGEST_MISMATCH",
+          "ENGINE_REVISION_MISMATCH",
+          "ENGINE_DIGEST_MISMATCH",
+          "SCHEDULER_DIGEST_MISMATCH",
+          "REVIEW_REFERENCE_MISMATCH",
+          "OWNER_SIGNOFF_MISSING",
+          "PROTECTED_INSTALL_NOT_PROVEN",
+          "HOST_IDENTITY_NOT_ATTESTED"
+        ],
+        "content_consistent": false,
+        "runtime_authorized": false,
+        "requires_owner_provisioning": true,
+        "requires_full_fsm": true
+      }
+    }
+  ],
+  "mandatory_negative_test_families": [
+    {
+      "id": "N01",
+      "description": "N01 exact input classes and bool-as-int, subclasses, malformed E2"
+    },
+    {
+      "id": "N02",
+      "description": "N02 input byte caps: 4096 intent and 1048576 each artifact/policy, reject oversize before parse/hash"
+    },
+    {
+      "id": "N03",
+      "description": "N03 canonical ASCII-only JSON, sorted ASCII keys, no BOM/whitespace/LF, no invalid UTF-8"
+    },
+    {
+      "id": "N04",
+      "description": "N04 duplicate JSON keys, unknown/missing fields and nested/arrays rejected"
+    },
+    {
+      "id": "N05",
+      "description": "N05 NaN/Infinity/floats/bools rejected for numeric fields, no json loose parsing"
+    },
+    {
+      "id": "N06",
+      "description": "N06 strict lowerhex digest shape; uppercase/short/nonhex rejected as malformed"
+    },
+    {
+      "id": "N07",
+      "description": "N07 wrong context/scope/owner/contract/mixer/step/version keys mismatch not upgrade"
+    },
+    {
+      "id": "N08",
+      "description": "N08 policy digest equality both declared field and independently supplied policy bytes"
+    },
+    {
+      "id": "N09",
+      "description": "N09 engine artifact bytes changed after intent fails; self-described digest is not authenticated identity"
+    },
+    {
+      "id": "N10",
+      "description": "N10 scheduler artifact bytes changed after intent fails; revision labels are TEST_ONLY"
+    },
+    {
+      "id": "N11",
+      "description": "N11 public caller signature/trusted_host/approved fields rejected, no key usage/secret files"
+    },
+    {
+      "id": "N12",
+      "description": "N12 invalid or rejected E2 result short-circuits BEFORE parsing/hashing candidate bytes"
+    },
+    {
+      "id": "N13",
+      "description": "N13 syntactically forged E2 match could pass content check but never yield any authority"
+    },
+    {
+      "id": "N14",
+      "description": "N14 deterministic ordered tuple reasons; permanent three trust deficits last"
+    },
+    {
+      "id": "N15",
+      "description": "N15 frozen nine-field result; constants runtime_authorized false and requires_full_fsm true unmodifiable"
+    },
+    {
+      "id": "N16",
+      "description": "N16 pure runtime no filesystem/OS/env/network/clock/RNG/trace/journal/driver/hardware"
+    },
+    {
+      "id": "N17",
+      "description": "N17 no direct E2 mutation or TASK-009/006 adapter, no simulator runner/output creation"
+    },
+    {
+      "id": "N18",
+      "description": "N18 dev+wheel smoke, accurate JUnit, provenance hashes, ten prior regressions TASK-001..010 and UAT non-duplicated"
+    }
+  ]
+}

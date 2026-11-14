@@ -1,0 +1,17 @@
+Obtaining file:///<REPOSITORY>/Source/host_provisioning_intent
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: bb-host-provisioning-intent
+  Building editable for bb-host-provisioning-intent (pyproject.toml): started
+  Building editable for bb-host-provisioning-intent (pyproject.toml): finished with status 'done'
+  Created wheel for bb-host-provisioning-intent: filename=bb_host_provisioning_intent-0.1.0-0.editable-py3-none-any.whl size=3821 sha256=1a979a46736b7eee9c5665444600f170b8295c209256f8356d91934db6e62b77
+  Stored in directory: <USERPROFILE>\AppData\Local\Temp\pip-ephem-wheel-cache-ckpbkil7\wheels\99\ec\20\d628dba1547d1bbfc2224fb59182e62bb2b74e159df59017f3
+Successfully built bb-host-provisioning-intent
+Installing collected packages: bb-host-provisioning-intent
+  Attempting uninstall: bb-host-provisioning-intent
+    Found existing installation: bb-host-provisioning-intent 0.1.0
+    Uninstalling bb-host-provisioning-intent-0.1.0:
+      Successfully uninstalled bb-host-provisioning-intent-0.1.0
+Successfully installed bb-host-provisioning-intent-0.1.0

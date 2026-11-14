@@ -1,0 +1,1736 @@
+{
+  "baseline": "7872c415c73146e33a5596b010320f76596588cb",
+  "pinned_files": [
+    {
+      "path": "Design/01_REFERENCE_AUDIT.md",
+      "git_blob_sha1": "b8115dc163210cb96b29c25b853e46ad437e2733"
+    },
+    {
+      "path": "Design/02_V1_REQUIREMENTS.md",
+      "git_blob_sha1": "0d494ecfeb5025dd69a0d045ecbf1d23dca94f63"
+    },
+    {
+      "path": "Design/03_HARDWARE_DESIGN.md",
+      "git_blob_sha1": "0219c8781f8189c7132714f7f61e304e4a2df174"
+    },
+    {
+      "path": "Design/05_UI_UX_DESIGN.md",
+      "git_blob_sha1": "ec5b4bf95025237b12d293b5e908447eb162cb6d"
+    },
+    {
+      "path": "Design/07_AI_CODING_RULES.md",
+      "git_blob_sha1": "a3760b54389d082f9f5f8c0b7cd7296cbe640eb8"
+    },
+    {
+      "path": "Design/100_G0A1_UNIFIED_EVENT_TICK_AND_CONTROL_CONTRACT.md",
+      "git_blob_sha1": "436b29e2fca8fc4303794bb5afb59c3946c5a6bb"
+    },
+    {
+      "path": "Design/101_G0A1_ARM_RECOVERY_AND_NO_EVENT_TRANSITION_MATRIX.md",
+      "git_blob_sha1": "b3dd8ad728b432ce80ce23ffff87edba382026fb"
+    },
+    {
+      "path": "Design/102_G0A1_SIM_POLICY_AND_APPROVAL_PROPOSAL.md",
+      "git_blob_sha1": "1888844c51c43898b38115b7bb86ac018b1d7324"
+    },
+    {
+      "path": "Design/103_G0A1_REPLAY_TRACE_AND_TRUST_BOUNDARY.md",
+      "git_blob_sha1": "628ef654fb134d12c7c7902b092da38fb1baf9f9"
+    },
+    {
+      "path": "Design/104_G0A1_DETERMINISTIC_ACCEPTANCE_VECTORS.md",
+      "git_blob_sha1": "475f8a56754156906553de5f2a4df28855c3e1b1"
+    },
+    {
+      "path": "Design/105_G0A1_SOURCE_PATCH_MAP_AND_TRACEABILITY.md",
+      "git_blob_sha1": "6e8166a51bd0166de163912aa5607fbd7d8e33e1"
+    },
+    {
+      "path": "Design/106_PHASE26_G0A1_OWNER_REVIEW_AND_HANDOFF_READINESS.md",
+      "git_blob_sha1": "abd353f0f41104f9bb12d06217fc9f464471f460"
+    },
+    {
+      "path": "Design/107_PHASE27_VERIFIED_BASELINE_AND_GATE_SCOPE.md",
+      "git_blob_sha1": "ac4d5a0b09b9635f3383c0e6cc12ace351c2fe65"
+    },
+    {
+      "path": "Design/108_PHASE27_CONSOLIDATED_ADR_RESOLUTION_MATRIX.md",
+      "git_blob_sha1": "debb5c76c4e9f41538954c366d58d3547082a41a"
+    },
+    {
+      "path": "Design/109_G0A1_SEMANTIC_CLOSURE_WALKTHROUGH.md",
+      "git_blob_sha1": "d4355aca7b65303ef2059a48b082f6ba3c042659"
+    },
+    {
+      "path": "Design/10_SA_OPERATING_RULES.md",
+      "git_blob_sha1": "a0d802028e4a86d6f0a8ead6466fb4fe94b319cb"
+    },
+    {
+      "path": "Design/110_G0A1_REPLAY_POLICY_AND_TRUST_DECISION_GATE.md",
+      "git_blob_sha1": "494c62b663884d256ddc4f4bc2410490d7013916"
+    },
+    {
+      "path": "Design/111_G0A1_CONTRACT_CLOSURE_ORACLES_AND_GATES.md",
+      "git_blob_sha1": "f67fa7c4230864c402b215bcfd4e935cac7a922f"
+    },
+    {
+      "path": "Design/112_ARCHITECTURE_DOCUMENT_RECONCILIATION_AND_HANDOFF_PLAN.md",
+      "git_blob_sha1": "e6c4d6039046c5082a553f813e8b7ebdf208e125"
+    },
+    {
+      "path": "Design/113_PHASE27_OWNER_G0A1_DECISION_PACKET.md",
+      "git_blob_sha1": "ac6f514d60b3cd25ee9a99486d2e35f081e8f790"
+    },
+    {
+      "path": "Design/114_PHASE28_OWNER_APPROVAL_AND_SCOPE_BASELINE.md",
+      "git_blob_sha1": "ee6c921c687117cea7cac59cf5137dbdf11b7f39"
+    },
+    {
+      "path": "Design/115_G0A1_APPROVED_ATOMIC_SAFETY_CONTRACT_R1.md",
+      "git_blob_sha1": "e6d988d160773219811d28cdb346b5a4590a0fa0"
+    },
+    {
+      "path": "Design/116_G0A1_APPROVED_POLICY_DIGEST_AND_TRUST_R1.md",
+      "git_blob_sha1": "02a0c21faf0b758bb55220debc390c09058021f7"
+    },
+    {
+      "path": "Design/117_G0A1_INPUT_RESULT_ERRORS_R1.md",
+      "git_blob_sha1": "f4c7d0bd857616fcdbbd978176ed8c9065e98d21"
+    },
+    {
+      "path": "Design/118_G0A1_REPLAY_AND_OUTPUT_TRANSACTION_R1.md",
+      "git_blob_sha1": "fdc4263fd940f7ffd8f256dd617b7c89cc6274fd"
+    },
+    {
+      "path": "Design/119_G0A1_CONTROLLED_SUPERSESSION_AND_BLOB_GUARDS.md",
+      "git_blob_sha1": "cb40c89251c9c786d2a85ad57ecdc9106717d079"
+    },
+    {
+      "path": "Design/11_HANDOFF_PR_WORKFLOW.md",
+      "git_blob_sha1": "3e4cbb254f086958a98a6e2bc8817b86e341d2aa"
+    },
+    {
+      "path": "Design/120_G0A1_R1_CONFORMANCE_ORACLES_AND_TRACEABILITY.md",
+      "git_blob_sha1": "5a1604158ad0ad410a1edc2e6f36be30c61014e4"
+    },
+    {
+      "path": "Design/121_G0A1_ARCHITECTURE_FREEZE_READINESS_AND_OPEN_ITEMS.md",
+      "git_blob_sha1": "a3bde945c71351a1de939ceea20a45002d06a071"
+    },
+    {
+      "path": "Design/122_G0A1_DEVELOPER_INTERFACE_HANDOFF_BOUNDARY_NOT_TASK.md",
+      "git_blob_sha1": "97a2e82594d0910fd5169984e2edc96bb0d62181"
+    },
+    {
+      "path": "Design/123_PHASE29_GITHUB_BASELINE_AND_BYTE_INTEGRITY_REVIEW.md",
+      "git_blob_sha1": "0721598b50c503bfc6b60954638e6aac2b317ab7"
+    },
+    {
+      "path": "Design/124_G0A1_R1_CONTROLLED_BASELINE_FREEZE_SCOPE_AND_INVARIANTS.md",
+      "git_blob_sha1": "7a1a078b05eae5562289500d81cd773db5ee7588"
+    },
+    {
+      "path": "Design/125_G0A1_INTERFACE_COMPLETENESS_AND_RELEASE_BLOCKERS.md",
+      "git_blob_sha1": "838878a14857b32207cee1f6a0d8b32bcdc52d0d"
+    },
+    {
+      "path": "Design/126_G0A1_R1_INTERFACE_COMPLETION_CHANGE_REQUEST.md",
+      "git_blob_sha1": "1ff46dc60abda7ea592dce6654635054abf58f2a"
+    },
+    {
+      "path": "Design/127_PHASE29_REGRESSION_AND_DESIGN_ORACLE_PLAN.md",
+      "git_blob_sha1": "f61d30ae5e1d35476f6c24804f4c4a5ca6e4f183"
+    },
+    {
+      "path": "Design/128_G0A1_CONFIGURATION_FREEZE_AND_CHANGE_CONTROL.md",
+      "git_blob_sha1": "c6e995db26ab94f677f215a0cf50253591a7f7e3"
+    },
+    {
+      "path": "Design/129_PHASE29_SA_FINAL_GATE_REVIEW_AND_DECISION.md",
+      "git_blob_sha1": "7d6f6620d20940b69d03c346042421dc3fbd5f58"
+    },
+    {
+      "path": "Design/12_FIRMWARE_SOURCE_AUDIT.md",
+      "git_blob_sha1": "f7f35c7de0fc2fd20e72cd7347390c738c2bf5a5"
+    },
+    {
+      "path": "Design/130_PHASE29_DEVELOPER_HANDOFF_READINESS_REVIEW_NOT_TASK.md",
+      "git_blob_sha1": "77896a548caf0f2c4ea15123c57323746df05cca"
+    },
+    {
+      "path": "Design/131_PHASE210_VERIFIED_GITHUB_BASELINE_AND_R11_SCOPE.md",
+      "git_blob_sha1": "63e82ecc7a4f88b4d6b1648c5815504e55a458f4"
+    },
+    {
+      "path": "Design/132_R11_SCENARIO_WIRE_V2_CLOSED_EVENT_SCHEMA_CANDIDATE.md",
+      "git_blob_sha1": "2e154c314fbfdcfed8bc6daa00b72cdf349a6ccb"
+    },
+    {
+      "path": "Design/133_R11_VIRTUAL_MIXER_M0_EXACT_ARITHMETIC_CANDIDATE.md",
+      "git_blob_sha1": "8ea4f2f556d83d6132df86751c9ffd29b931575d"
+    },
+    {
+      "path": "Design/134_R11_TRACE_RECORDS_AND_REPLAY_BYTES_CANDIDATE.md",
+      "git_blob_sha1": "c085995e4fc82095ab0f693426a9d3632db9b14b"
+    },
+    {
+      "path": "Design/135_R11_GOLDEN_FIXTURE_MIGRATION_AND_INTEGRITY.md",
+      "git_blob_sha1": "268f41cbe0afe18aaec93443ec14209366f631ee"
+    },
+    {
+      "path": "Design/136_R11_INTERFACE_TEST_ORACLES_AND_STATIC_CHECKS.md",
+      "git_blob_sha1": "4e9ea3c60a6d4db59e5fc475db99f58f143ea5ba"
+    },
+    {
+      "path": "Design/137_R11_CHANGE_IMPACT_SAFETY_AND_ALTERNATIVE_REVIEW.md",
+      "git_blob_sha1": "5960ab8e581bcd5a215d835d54dc3d190d561403"
+    },
+    {
+      "path": "Design/138_PHASE210_OWNER_R11_INTERFACE_DECISION_PACKET.md",
+      "git_blob_sha1": "271f10b672c0bb47f19c530c1bf8e401fb2e681b"
+    },
+    {
+      "path": "Design/139_PHASE210_SA_GATE_REVIEW_AND_HANDOFF_HOLD.md",
+      "git_blob_sha1": "a4adacf3424bd023f875326719ad117ec1f7f712"
+    },
+    {
+      "path": "Design/13_V1_ARCHITECTURE_PROPOSAL.md",
+      "git_blob_sha1": "2c81ef1e76b75d1068d5ff3c9ffa067839d9403c"
+    },
+    {
+      "path": "Design/140_PHASE211_REPO_VERIFICATION_AND_OWNER_APPROVAL.md",
+      "git_blob_sha1": "23072451a53d90cb1c59cdbb26cc800662939bfc"
+    },
+    {
+      "path": "Design/141_G0A1_R11_AUTHORITATIVE_CONTRACT_HIERARCHY.md",
+      "git_blob_sha1": "b21fcb9ed83775054cf2bde0b6533f5b71cb6eda"
+    },
+    {
+      "path": "Design/142_R11_INPUT_EVENT_AND_PARSER_FREEZE_REVIEW.md",
+      "git_blob_sha1": "d45f7081720ad85caabddd16b4e5d602df6eb12d"
+    },
+    {
+      "path": "Design/143_R11_MIXER_TRACE_AND_HASH_FREEZE_REVIEW.md",
+      "git_blob_sha1": "101663bff5c6e0075d069ac0bbd4136086cde34c"
+    },
+    {
+      "path": "Design/144_R11_END_TO_END_TRACEABILITY_AND_VALIDATION_PLAN.md",
+      "git_blob_sha1": "e07216c3d3602d25515334ae6daec9a2eca4acb0"
+    },
+    {
+      "path": "Design/145_R11_REMAINING_RISKS_AND_SPEC_CHANGE_CONTROL.md",
+      "git_blob_sha1": "8c9e1d38637a7c3fdd54f8d176b67512a7bb705c"
+    },
+    {
+      "path": "Design/146_R11_DEVELOPER_HANDOFF_READINESS_AND_READING_SET.md",
+      "git_blob_sha1": "3ff6bdbc32b7563ebb0e92b69b8ad491fb09b048"
+    },
+    {
+      "path": "Design/147_PHASE211_SA_G0A1_DESIGN_FREEZE_VERDICT.md",
+      "git_blob_sha1": "e2cfea6a0c4fdbc9f9c5c4c66683718574933328"
+    },
+    {
+      "path": "Design/148_PHASE211_FOLLOW_ON_SA_WORKPLAN_AND_NO_GO_BOUNDARIES.md",
+      "git_blob_sha1": "85b6f9f6544914cce9dc421eec2b672a14acc7c0"
+    },
+    {
+      "path": "Design/149_PHASE212_GITHUB_BASELINE_AND_DESIGN_BOUNDARY.md",
+      "git_blob_sha1": "858368f3f17fe73c6b23f5084451a31353df196e"
+    },
+    {
+      "path": "Design/14_V1_VERIFICATION_PLAN.md",
+      "git_blob_sha1": "069a4f00444727530b22e28057acd016b79419e0"
+    },
+    {
+      "path": "Design/150_G0A1_PARSER_DIAGNOSTIC_SIDECAR_CONTRACT.md",
+      "git_blob_sha1": "b96beba505a4db94c16e1c0f2b0f8ec65fd740f9"
+    },
+    {
+      "path": "Design/151_G0A1_PREFLIGHT_PRECEDENCE_POINTER_AND_ERROR_REGISTRY.md",
+      "git_blob_sha1": "d1ba14b4d8cf31926353fb72fb20c29c148a9a40"
+    },
+    {
+      "path": "Design/152_G0A1_DIAGNOSTIC_COMPATIBILITY_AND_CHANGE_IMPACT.md",
+      "git_blob_sha1": "c55abd8dfa5a30155b6dfcbdd79685882c730607"
+    },
+    {
+      "path": "Design/153_G0A1_FIRST_DEVELOPER_HANDOFF_READINESS_NOT_TASK.md",
+      "git_blob_sha1": "a299b4a9d2948eeefdd7a1027fb003a8c86aad2e"
+    },
+    {
+      "path": "Design/154_PHASE212_PARSER_DIAGNOSTIC_ORACLE_MATRIX.md",
+      "git_blob_sha1": "3a143185c59879faa09d2a75f339a8112190d70c"
+    },
+    {
+      "path": "Design/155_PHASE212_SA_REVIEW_VERDICT_AND_NEXT_HANDOFF.md",
+      "git_blob_sha1": "1c5ad878210ad8cd2661da74efc2e615f35dd9dc"
+    },
+    {
+      "path": "Design/156_G0A1_DIAGNOSTIC_V1_APPROVAL_AND_TASK001_RELEASE.md",
+      "git_blob_sha1": "8b6fdf39ab8462c4406e0d389e4e557ec8d320a6"
+    },
+    {
+      "path": "Design/157_TASK001_CLOSEOUT_AND_TASK002_RELEASE_BASELINE.md",
+      "git_blob_sha1": "83a80eb0bc3746f737794e1a3f3f81876efc96e2"
+    },
+    {
+      "path": "Design/158_G0A1_VIRTUAL_TICK_SCHEDULER_CONTRACT_DERIVED_R11.md",
+      "git_blob_sha1": "d1844889b119804accf24eb7dab66382eedf2a76"
+    },
+    {
+      "path": "Design/159_TASK002_SCHEDULER_TEST_ORACLES_AND_REVIEW.md",
+      "git_blob_sha1": "3d335a14403beeae4ec3a70d06841fa08871f67c"
+    },
+    {
+      "path": "Design/15_V1_DECISION_REGISTER.md",
+      "git_blob_sha1": "fa8aeb5fab94e1a067088269218868c01f2c35d7"
+    },
+    {
+      "path": "Design/160_TASK002_MERGE_CLOSEOUT_AND_TASK003_BASELINE.md",
+      "git_blob_sha1": "f8918b224510c61e95e163b0c273f52d6eb5fd54"
+    },
+    {
+      "path": "Design/161_G0A1_TICK_OBSERVATION_NORMALIZATION_CONTRACT.md",
+      "git_blob_sha1": "8e503343242c70473d8b0e593cdda2de6dce41be"
+    },
+    {
+      "path": "Design/162_G0A1_TASK003_NORMALIZER_ORACLES_AND_REVIEW.md",
+      "git_blob_sha1": "ed1038fa15447f8d67b321d787175ceeeb98bef5"
+    },
+    {
+      "path": "Design/163_TASK003_MERGE_CLOSEOUT_AND_TASK004_BASELINE.md",
+      "git_blob_sha1": "f94f0f01e6a2a7200ea0260572878d0d24d30e82"
+    },
+    {
+      "path": "Design/164_G0A1_TEMPORAL_GUARD_FACTS_CONTRACT.md",
+      "git_blob_sha1": "eed1c062d3de85a2beb361118ba9fd776dd90a36"
+    },
+    {
+      "path": "Design/165_TASK004_TEMPORAL_GUARD_TEST_AND_REVIEW.md",
+      "git_blob_sha1": "4c028b7642c82ca2514f8ea519cdd4c7826dc6c9"
+    },
+    {
+      "path": "Design/166_TASK004_CLOSEOUT_AND_TASK005_BASELINE.md",
+      "git_blob_sha1": "31e687038ddd328b4396a62684ea1356debf7b77"
+    },
+    {
+      "path": "Design/167_G0A1_SAFETY_PRIORITY_KERNEL_STAGE_C1_CONTRACT.md",
+      "git_blob_sha1": "160d2773df5f68192e7c1638c7be8652144bf904"
+    },
+    {
+      "path": "Design/168_TASK005_PRIORITY_KERNEL_ORACLES_AND_REVIEW.md",
+      "git_blob_sha1": "1c9daf9285f5322d41b5bfc9b6fe3a59c0d4f67e"
+    },
+    {
+      "path": "Design/169_TASK005_CLOSEOUT_AND_TASK006_BASELINE.md",
+      "git_blob_sha1": "2573dceec3366937202aca9ff87ca7f7c1f09605"
+    },
+    {
+      "path": "Design/16_RC_INTERFACE_CONTRACT.md",
+      "git_blob_sha1": "77be8aa257fd6d98795c9f7c3f44ae92605cfe5c"
+    },
+    {
+      "path": "Design/170_G0A1_ARM_QUALIFICATION_PROPOSALS_STAGE_C2.md",
+      "git_blob_sha1": "790c9c2f45cd5cc05880f4caaa82f17b315f7334"
+    },
+    {
+      "path": "Design/171_TASK006_ARM_QUALIFICATION_ORACLES_AND_REVIEW.md",
+      "git_blob_sha1": "7f87eae8e341c06074cdfdd58af36d5448bee81f"
+    },
+    {
+      "path": "Design/172_TASK006_MERGE_CLOSEOUT_AND_TASK007_BASELINE.md",
+      "git_blob_sha1": "53f6c47e5cb82388c17393773b529d1dde03031a"
+    },
+    {
+      "path": "Design/173_G0A1_RF_CONTROL_HEALTH_EVIDENCE_STAGE_D1.md",
+      "git_blob_sha1": "f2e37723f58ced0457c7951cd07672b488793dda"
+    },
+    {
+      "path": "Design/174_TASK007_HEALTH_EVIDENCE_ORACLES_REVIEW.md",
+      "git_blob_sha1": "04be5a4a9ec054e2142b782674ecafe02b37d6c2"
+    },
+    {
+      "path": "Design/175_TASK007_MERGE_CLOSEOUT_AND_TASK008_BASELINE.md",
+      "git_blob_sha1": "e0bef2cc70b2b8d01a3735781577a4591423248c"
+    },
+    {
+      "path": "Design/176_G0A1_GUARD_TRIAGE_STAGE_D2_CONTRACT.md",
+      "git_blob_sha1": "679ab5c50ff4576f0419e5173e387249def34e8c"
+    },
+    {
+      "path": "Design/177_TASK008_GUARD_TRIAGE_ORACLES_AND_REVIEW.md",
+      "git_blob_sha1": "69a2cacf3468a4601aa240cca930ffc26fa84a3f"
+    },
+    {
+      "path": "Design/178_TASK008_MERGE_CLOSEOUT_AND_TASK009_BASELINE.md",
+      "git_blob_sha1": "3e282dc3e9bc71b8b2fc2d1ad2bbfcb7a04310ed"
+    },
+    {
+      "path": "Design/179_G0A1_COMMITTED_SNAPSHOT_GATE_STAGE_E1.md",
+      "git_blob_sha1": "745d4bba1e06d29b253ddeb2bcdedb93b7e96506"
+    },
+    {
+      "path": "Design/17_MECHANICAL_FLIGHT_FEASIBILITY.md",
+      "git_blob_sha1": "e9c7b881154adee3d396dc34b785806ac8b074f5"
+    },
+    {
+      "path": "Design/180_TASK009_SNAPSHOT_GATE_ORACLES_AND_SA_REVIEW.md",
+      "git_blob_sha1": "468d3551c2160e6bd244d8ef3f5c1d50513cdbc6"
+    },
+    {
+      "path": "Design/181_TASK009_MERGE_CLOSEOUT_AND_TASK010_BASELINE.md",
+      "git_blob_sha1": "d755efcbf5eca0144f200b9d3ae1daf6072695cf"
+    },
+    {
+      "path": "Design/182_G0A1_HOST_REFERENCE_BINDING_STAGE_E2_CONTRACT.md",
+      "git_blob_sha1": "3700ed10a1c7be54ef5ea8af065dee399fe90de1"
+    },
+    {
+      "path": "Design/183_TASK010_REFERENCE_BINDING_ORACLES_AND_SA_REVIEW.md",
+      "git_blob_sha1": "578c1dc8d32cc4d0ba2f69817241a276a2325bf3"
+    },
+    {
+      "path": "Design/18_MECHANICAL_EXPERIMENT_PLAN.md",
+      "git_blob_sha1": "2cf7dbbcfd39d98a898e5c5a4eff9ad9ef0ee23d"
+    },
+    {
+      "path": "Design/19_MECHANICAL_CONCEPT_DESIGN.md",
+      "git_blob_sha1": "9e3bc71d9873ae91832cb47791412c37c5124f1d"
+    },
+    {
+      "path": "Design/20_PRELIMINARY_BOM_MASS_POWER.md",
+      "git_blob_sha1": "eef20de94dc2ffae70039656660ee1ef27d025a3"
+    },
+    {
+      "path": "Design/21_MECHANICAL_CONCEPT_REVIEW.md",
+      "git_blob_sha1": "a273ac85aa695756423501f8b87aeaf501273ed8"
+    },
+    {
+      "path": "Design/22_ELECTRICAL_POWER_ARCHITECTURE.md",
+      "git_blob_sha1": "4c5421cb8fd0d2c08d9571c916454d5a3481ed5e"
+    },
+    {
+      "path": "Design/23_PINOUT_AND_SIGNAL_CONTRACT.md",
+      "git_blob_sha1": "7e19383c66dc780afc588fda95b90781e8d4c2df"
+    },
+    {
+      "path": "Design/24_ELECTRICAL_BENCH_VERIFICATION.md",
+      "git_blob_sha1": "c012ca3c22129cdfba5dd0839591140154f7a0bf"
+    },
+    {
+      "path": "Design/25_ELECTRICAL_HAZARD_REVIEW.md",
+      "git_blob_sha1": "cd778dea4be0db193a54feb0f3c64b134cb8e184"
+    },
+    {
+      "path": "Design/26_SYSTEM_INTEGRATION_REVIEW.md",
+      "git_blob_sha1": "b6d9aa2aecb43ff1e65a768975bf5a6f5a2730f3"
+    },
+    {
+      "path": "Design/27_SAFETY_AND_FLIGHT_STATE_MACHINE.md",
+      "git_blob_sha1": "c502d3b61ff054c33011b7b8e3438badb28d65a4"
+    },
+    {
+      "path": "Design/28_FIRMWARE_MODULE_AND_TIMING_CONTRACT.md",
+      "git_blob_sha1": "c421a88ae04bb4b21b0709f17b12cd7693b36e78"
+    },
+    {
+      "path": "Design/29_REQUIREMENTS_INTEGRATION_TRACEABILITY.md",
+      "git_blob_sha1": "1688d9501bec29b642d57a20b4cdca7f39bf6882"
+    },
+    {
+      "path": "Design/30_G0_DESIGN_FREEZE_READINESS.md",
+      "git_blob_sha1": "61706bda42566a0a2b420f867808ba4a699945f7"
+    },
+    {
+      "path": "Design/31_FLIGHT_CONTROL_FEASIBILITY_RISK.md",
+      "git_blob_sha1": "bdb9bc2db428ae92927e992c7ac3593f5c271137"
+    },
+    {
+      "path": "Design/32_RC_PILOT_CONTROL_MAPPING.md",
+      "git_blob_sha1": "bc1406d45bf69c6be1f24da00d199e2fa844bbde"
+    },
+    {
+      "path": "Design/33_CONTROL_PROFILES_AND_CALIBRATION.md",
+      "git_blob_sha1": "388445219abf2f52a783fd0401e8087720dabee2"
+    },
+    {
+      "path": "Design/34_PILOT_EXPERIENCE_AND_GROUND_UI.md",
+      "git_blob_sha1": "3b5ede1dad3b4b6ad5cbf712d536c1491a51b2e4"
+    },
+    {
+      "path": "Design/35_RC_CONTROL_VERIFICATION_MATRIX.md",
+      "git_blob_sha1": "cc0fbb11cfb4b532c2df7e22049bb853dfb78eb3"
+    },
+    {
+      "path": "Design/36_RC_PILOT_HAZARD_REVIEW.md",
+      "git_blob_sha1": "cf39923a760503836313dd45351d2792f82906d8"
+    },
+    {
+      "path": "Design/37_FLIGHT_DYNAMICS_MODEL_CONTRACT.md",
+      "git_blob_sha1": "e040fa766ffd92e29f9ce3366990b9c787655fca"
+    },
+    {
+      "path": "Design/38_CONTROL_AUTHORITY_IDENTIFICATION_PLAN.md",
+      "git_blob_sha1": "2fb8dfaa6ca83293b5322b54df4dce0cc000e240"
+    },
+    {
+      "path": "Design/39_V1_MANUAL_FLIGHT_CONTROL_STRATEGY.md",
+      "git_blob_sha1": "115c63325d0f9b3109ccc4fe5cc1a6cd7b1602d3"
+    },
+    {
+      "path": "Design/40_FLIGHT_VALIDATION_AND_EVIDENCE_STANDARD.md",
+      "git_blob_sha1": "432a9f479468db5a813f3080b47cd2a91a35a381"
+    },
+    {
+      "path": "Design/41_CONTROL_ARCHITECTURE_TRADE_STUDY.md",
+      "git_blob_sha1": "76bd63d38a10102e5903a9173e609344f62285ee"
+    },
+    {
+      "path": "Design/42_CAD_DATUM_AND_ASSEMBLY_CONTRACT.md",
+      "git_blob_sha1": "09f3effe0a3cca0c857ee3c9c685c6687b91a98a"
+    },
+    {
+      "path": "Design/43_WING_ROOT_TRANSMISSION_AND_HINGE.md",
+      "git_blob_sha1": "4d8367852b50fa01f5f8bf3b7c96cde31e34bf44"
+    },
+    {
+      "path": "Design/44_WING_FRAME_MATERIALS_AND_MASS_PROPERTIES.md",
+      "git_blob_sha1": "80cede99564c3d9af0c012406cab4c30270d282c"
+    },
+    {
+      "path": "Design/45_ASSEMBLY_MANUFACTURING_AND_INSPECTION.md",
+      "git_blob_sha1": "f1c5cea456cb60865e5970bd2deb68983854033a"
+    },
+    {
+      "path": "Design/46_RESTRAINED_RIG_AND_MEASUREMENT_DESIGN.md",
+      "git_blob_sha1": "40ee5b0f27560631ee802c2f7e5dcea773b64def"
+    },
+    {
+      "path": "Design/47_MECHANICAL_GATE_REVIEW_AND_OPEN_DECISIONS.md",
+      "git_blob_sha1": "7b84dd59d2e608fa8c465ccc9924ce42b454066d"
+    },
+    {
+      "path": "Design/48_SYSTEM_DESIGN_BASELINE_AUDIT.md",
+      "git_blob_sha1": "e9dcf0aac5ee39171fba2f041ed8845a3147082e"
+    },
+    {
+      "path": "Design/49_CROSS_DOCUMENT_CONFLICT_REGISTER.md",
+      "git_blob_sha1": "0e762b1e38492b990c08232e497003bb0d937399"
+    },
+    {
+      "path": "Design/50_ARCHITECTURE_DECISION_DEPENDENCY_MAP.md",
+      "git_blob_sha1": "e7e86ace004f80d1ea3d2a9a3f62b0b0512f323b"
+    },
+    {
+      "path": "Design/51_G0A_PC_SIMULATOR_CONTRACT_CANDIDATE.md",
+      "git_blob_sha1": "4647ddcc18c2955dac42caa6dd92e5d9fecd1c1c"
+    },
+    {
+      "path": "Design/52_DESIGN_VERIFICATION_AND_EVIDENCE_PLAN.md",
+      "git_blob_sha1": "90ca9c186a7325c9d1c0c9f59748d2959032bf59"
+    },
+    {
+      "path": "Design/53_DESIGN_CHANGE_CONTROL_AND_HANDOFF.md",
+      "git_blob_sha1": "a9d6a69cfb444b5c950f23c79c92206d92887222"
+    },
+    {
+      "path": "Design/54_PHASE20_FREEZE_REVIEW_PACKET.md",
+      "git_blob_sha1": "ea1d0ef799a57d6ff1337be060380759bed5430c"
+    },
+    {
+      "path": "Design/55_OPEN_QUESTIONS_EVIDENCE_LEDGER.md",
+      "git_blob_sha1": "f69a87292400ec773a62d2074abc8cea858ae6c4"
+    },
+    {
+      "path": "Design/56_G0A_HOST_SOFTWARE_ARCHITECTURE.md",
+      "git_blob_sha1": "bac8088f1378ceadb1c1dd8f4663382abc522b0e"
+    },
+    {
+      "path": "Design/57_CANONICAL_SIM_SCHEMAS_AND_ERRORS.md",
+      "git_blob_sha1": "039b9116cd92654e2be24aba9b86fbd84b690a8b"
+    },
+    {
+      "path": "Design/58_DETERMINISTIC_SAFETY_FSM_SEMANTICS.md",
+      "git_blob_sha1": "d0163b20d6820451b43f04a2a001eb9520c9c15a"
+    },
+    {
+      "path": "Design/59_VIRTUAL_TIME_EVENT_REPLAY_SPEC.md",
+      "git_blob_sha1": "ad4ac9c0f99bcba98a94a1f31292ba2216e70a5b"
+    },
+    {
+      "path": "Design/60_SIM_CONFIGURATION_PROFILE_GOVERNANCE.md",
+      "git_blob_sha1": "0249f90a333f87e94269a56c0ace20bd3ab72dc8"
+    },
+    {
+      "path": "Design/61_CORE_API_AND_SEQUENCE_DESIGN.md",
+      "git_blob_sha1": "21c90d48fbfed26453af5e50886017be945fe92b"
+    },
+    {
+      "path": "Design/62_HOST_SIM_SECURITY_ABUSE_CASES.md",
+      "git_blob_sha1": "8307a946f7b2564ec9325cc4465e1ef2cecda7ea"
+    },
+    {
+      "path": "Design/63_G0A_TEST_MATRIX_AND_COVERAGE.md",
+      "git_blob_sha1": "36fd3e14370855fb9d52d004e0ef0719c149bb1c"
+    },
+    {
+      "path": "Design/64_PHASE21_FREEZE_REVIEW_PACKET.md",
+      "git_blob_sha1": "b435dd3ee6bc935bfc2e3842ab1bc7bd8f7ddabd"
+    },
+    {
+      "path": "Design/65_PHASE21_ADR_SUPPLEMENT.md",
+      "git_blob_sha1": "57de23864b499f8bbd9639052dd93669b671e1a3"
+    },
+    {
+      "path": "Design/66_PHASE22_BASELINE_AND_CONFLICT_RECONCILIATION.md",
+      "git_blob_sha1": "42d55d544eebf4d9b5ea420fc8fc1a25e51cc4d8"
+    },
+    {
+      "path": "Design/67_SIM_ONLY_NUMERIC_POLICY_PROPOSAL.md",
+      "git_blob_sha1": "65eb1b6d228af9ccdda87d0ab6063ee5e5f37b63"
+    },
+    {
+      "path": "Design/68_ATOMIC_EVENT_AND_SAFETY_TRANSITION_CONTRACT.md",
+      "git_blob_sha1": "ba67cb49b6fd6aa4b60daac6ce71c357d8dcd88d"
+    },
+    {
+      "path": "Design/69_REPLAY_SERIALIZATION_AND_EVIDENCE_CONTRACT.md",
+      "git_blob_sha1": "e0c5bba94cf154f95c3ba080bf45bdef0ab0c3fd"
+    },
+    {
+      "path": "Design/70_IMMUTABLE_CONFIG_AND_HOST_SCOPE_GATE.md",
+      "git_blob_sha1": "d00a28f4f746f1af0e408c7406ca2155d069c498"
+    },
+    {
+      "path": "Design/71_PHASE22_POLICY_BOUNDARY_TEST_ORACLES.md",
+      "git_blob_sha1": "27bee8771897d1d3924a9f61b6620bd17de3f2a1"
+    },
+    {
+      "path": "Design/72_FREEZE_GAP_CLOSURE_AND_REPO_RECONCILIATION.md",
+      "git_blob_sha1": "18a86834a0af9b9091ae899719aa3aef3a144dfa"
+    },
+    {
+      "path": "Design/73_PHASE22_ARCHITECTURE_DECISION_SUPPLEMENT.md",
+      "git_blob_sha1": "9adfd51a99a2add15d54b981cd47b751cc148520"
+    },
+    {
+      "path": "Design/74_PHASE22_G0A1_FREEZE_READINESS_REVIEW_PACKET.md",
+      "git_blob_sha1": "d3960ec8ce53140fe7c2f3442a56471f2c3681a1"
+    },
+    {
+      "path": "Design/75_PHASE23_PUBLIC_REPO_BASELINE_STATUS.md",
+      "git_blob_sha1": "99d16a788ec79ce9d224bbb339afd9ec186dd2da"
+    },
+    {
+      "path": "Design/76_END_TO_END_HOST_CONTROL_PATH_REVIEW.md",
+      "git_blob_sha1": "bc56c904e6acc837cc09041b382459e60f0a7c4f"
+    },
+    {
+      "path": "Design/77_SEMANTIC_CONFLICT_AND_HAZARD_REGISTER.md",
+      "git_blob_sha1": "43a7ce93d5228ae7ca5a117c4e599bf3b844174b"
+    },
+    {
+      "path": "Design/78_HOST_API_NORMATIVE_FREEZE_CANDIDATE.md",
+      "git_blob_sha1": "4eec98dfd5e5122af35274ed693f519ae92424d1"
+    },
+    {
+      "path": "Design/79_PHASE23_E2E_TEST_ORACLES.md",
+      "git_blob_sha1": "7e4543f4e25470edb9d511e07f9b7f98d6d73c4b"
+    },
+    {
+      "path": "Design/80_REPLAY_EVIDENCE_AND_RUN_ID_POLICY.md",
+      "git_blob_sha1": "789430000fa4de3d833436bbfd03b60cc65f45bc"
+    },
+    {
+      "path": "Design/81_DECISION_DEPENDENCY_AND_CORRECTION_PLAN.md",
+      "git_blob_sha1": "b4012913b97c16db6dd9e34f14c0bb6af509ba6a"
+    },
+    {
+      "path": "Design/82_PHASE23_ADR_SUPPLEMENT.md",
+      "git_blob_sha1": "0184edf461797923e4f2d800dced4e9d729b7837"
+    },
+    {
+      "path": "Design/83_PHASE23_G0A1_FREEZE_REVIEW_PACKET.md",
+      "git_blob_sha1": "5d47a098059ab34fa5ff04ca0d3ae10a3302a2b8"
+    },
+    {
+      "path": "Design/84_G0A1_NORMATIVE_SAFETY_AND_EVENT_SEMANTICS.md",
+      "git_blob_sha1": "227cda10bbf1809b600156d0e0a83620233089d7"
+    },
+    {
+      "path": "Design/85_HOST_SCHEMA_ERROR_COMPATIBILITY_V2_CANDIDATE.md",
+      "git_blob_sha1": "f12124c626165e95ebda1c8cb216ab838c27cfd8"
+    },
+    {
+      "path": "Design/86_PHASE24_ATOMIC_E2E_ORACLE_MATRIX.md",
+      "git_blob_sha1": "752167fa13576a25d8be98ed617a06e37c21ff74"
+    },
+    {
+      "path": "Design/87_TRUST_REPLAY_AND_EVIDENCE_FREEZE_CANDIDATE.md",
+      "git_blob_sha1": "f885ddd65251fdd806519eec505477b842dd46c0"
+    },
+    {
+      "path": "Design/88_REPOSITORY_MAIN_BASELINE_AND_RECONCILIATION.md",
+      "git_blob_sha1": "e0cb2a5da72ec8b7bd28cc70a0788c59dd50e592"
+    },
+    {
+      "path": "Design/89_PHASE24_G0A1_APPROVAL_READINESS_PACKET.md",
+      "git_blob_sha1": "1e049f9431eb535af45130dcb3639caba69b91b3"
+    },
+    {
+      "path": "Design/90_PHASE24_ARCHITECTURE_DECISION_SUPPLEMENT.md",
+      "git_blob_sha1": "c8520759d49272282b7151f5eefbcaf0a6ef4b7a"
+    },
+    {
+      "path": "Design/91_PHASE25_VERIFIED_BASELINE_AND_SA_REVIEW_SCOPE.md",
+      "git_blob_sha1": "6563a2fe7ca700c3de259d4bbde284dfde36daab"
+    },
+    {
+      "path": "Design/92_NORMATIVE_DOCUMENT_HIERARCHY_AND_CHANGE_MAP.md",
+      "git_blob_sha1": "d31d3c4d0e7f77fc07a563d6c1645c2afb6cb07b"
+    },
+    {
+      "path": "Design/93_G0A1_CONTRACT_DEFECT_AND_CLOSURE_REGISTER.md",
+      "git_blob_sha1": "08717b241d83c791e79c41895f8617e65ecf6532"
+    },
+    {
+      "path": "Design/94_NORMATIVE_REPLAY_TERMINAL_AND_TRACE_ATOMICITY_PATCH.md",
+      "git_blob_sha1": "0e39c7b64abcab7702ff9fbef1fefb9f55f9cf3d"
+    },
+    {
+      "path": "Design/95_STATE_MACHINE_EDGE_AND_NO_EVENT_ORACLES.md",
+      "git_blob_sha1": "d6db24ccb883b8f753b18471dd154fc7a5ab60b1"
+    },
+    {
+      "path": "Design/96_G0A1_DESIGN_COVERAGE_AND_FREEZE_CRITERIA.md",
+      "git_blob_sha1": "23f60f8c286a0fcb2410fed35cb3755bada7ece5"
+    },
+    {
+      "path": "Design/97_POTENTIAL_DEVELOPER_HANDOFF_BOUNDARIES_NOT_A_TASK.md",
+      "git_blob_sha1": "88b34c5ebd7474214d7d60a9ad8b3b061a60e011"
+    },
+    {
+      "path": "Design/98_PHASE25_FINAL_SA_REVIEW_AND_OWNER_DECISION_PACKET.md",
+      "git_blob_sha1": "21715e87e872f78beb6bbd608a53ab15ce894ed3"
+    },
+    {
+      "path": "Design/99_GITHUB_MAIN_VERIFIED_BASELINE_AND_FINDING_RECONCILIATION.md",
+      "git_blob_sha1": "f95ec37ffae71442388cadb733910855154f9005"
+    },
+    {
+      "path": "Design/P214_TASK002_RELEASE_MANIFEST.json",
+      "git_blob_sha1": "2bd96515292130867d9452deceb41241b386c624"
+    },
+    {
+      "path": "Design/P215_TASK003_RELEASE_MANIFEST.json",
+      "git_blob_sha1": "c074cffd469af5d4f33b7ccfc530537a2fa4250c"
+    },
+    {
+      "path": "Design/P216_TASK004_RELEASE_MANIFEST.json",
+      "git_blob_sha1": "f6ed14e70d164805f4ef19f33e47053f9e12eb7d"
+    },
+    {
+      "path": "Design/P217_TASK005_RELEASE_MANIFEST.json",
+      "git_blob_sha1": "93a77d0ef961d6a72e0023624891d97e5e92e8ca"
+    },
+    {
+      "path": "Design/P218_TASK006_RELEASE_MANIFEST.json",
+      "git_blob_sha1": "5e64c87a07183297d64859a1985e14c8982aa969"
+    },
+    {
+      "path": "Design/P219_TASK007_RELEASE_MANIFEST.json",
+      "git_blob_sha1": "43aa98b6e1d230de455533a5113e87833a1decae"
+    },
+    {
+      "path": "Design/P220_TASK008_RELEASE_MANIFEST.json",
+      "git_blob_sha1": "8a69b8648057a53a553946d4806bb8974c6ff79f"
+    },
+    {
+      "path": "Design/P221_TASK009_RELEASE_MANIFEST.json",
+      "git_blob_sha1": "a5b3dc2b8c8ce1f2ac3b889fddd14dc1dcaad6d8"
+    },
+    {
+      "path": "Design/P222_TASK010_RELEASE_MANIFEST.json",
+      "git_blob_sha1": "035868ba4f0edf746e3bc659441fbf8daeb682f3"
+    },
+    {
+      "path": "Design/PHASE20_CONTENT_MANIFEST.json",
+      "git_blob_sha1": "eb05c1111770c861108ae7b495faaf6dbeee7c80"
+    },
+    {
+      "path": "Design/PHASE210_CONTENT_MANIFEST.json",
+      "git_blob_sha1": "ea08a051b0f42da6e0d23f561162d091dc14a18e"
+    },
+    {
+      "path": "Design/PHASE211_CONTENT_MANIFEST.json",
+      "git_blob_sha1": "0dcb73e04b42123496867adf348d98f2a0be0725"
+    },
+    {
+      "path": "Design/PHASE212_CONTENT_MANIFEST.json",
+      "git_blob_sha1": "598857005554013e3c390f525a3749ebbf1cc5f4"
+    },
+    {
+      "path": "Design/PHASE21_CONTENT_MANIFEST.json",
+      "git_blob_sha1": "4d359967ab379973f7f8d8979867714a050e3ef0"
+    },
+    {
+      "path": "Design/PHASE22_CONTENT_MANIFEST.json",
+      "git_blob_sha1": "eb4b3813d246441f0a6ed2d5bdce5df123b34487"
+    },
+    {
+      "path": "Design/PHASE23_CONTENT_MANIFEST.json",
+      "git_blob_sha1": "8b44829b02e9b61e2a5fdd2ff6df780215b28e82"
+    },
+    {
+      "path": "Design/PHASE23_LOCAL_SNAPSHOT_ATTESTATION.json",
+      "git_blob_sha1": "15e34b381e5b6e53119bb4aa3e66b74b558ecddb"
+    },
+    {
+      "path": "Design/PHASE24_CONTENT_MANIFEST.json",
+      "git_blob_sha1": "20db57937c82f7786bc94536a127adee718fd711"
+    },
+    {
+      "path": "Design/PHASE25_CONTENT_MANIFEST.json",
+      "git_blob_sha1": "60a5e205602dbea92c1d5f195ef4ea60e2bba0b2"
+    },
+    {
+      "path": "Design/PHASE26_CONTENT_MANIFEST.json",
+      "git_blob_sha1": "fe8bffd2525fa95bcfb1eca7bc3450407d1b8ec3"
+    },
+    {
+      "path": "Design/PHASE27_CONTENT_MANIFEST.json",
+      "git_blob_sha1": "38f993a86874bb0f6e96a628236929421ddf4957"
+    },
+    {
+      "path": "Design/PHASE28_CONTENT_MANIFEST.json",
+      "git_blob_sha1": "391ac735ca32bbc6384253527affbcefd31ce5c2"
+    },
+    {
+      "path": "Design/PHASE28_SOURCE_BLOB_GUARDS.json",
+      "git_blob_sha1": "367895a6b681a33ef18e93806416ba0a726d9729"
+    },
+    {
+      "path": "Design/PHASE29_CONTENT_MANIFEST.json",
+      "git_blob_sha1": "0add80cc40da565948a8890356218e0ecee26a8d"
+    },
+    {
+      "path": "Design/contracts/G0A1_EXTERNAL_REPORT_R11_CANDIDATE.schema.json",
+      "git_blob_sha1": "c7da5879ef976d7e11186d484ea1e66453229c9a"
+    },
+    {
+      "path": "Design/contracts/G0A1_MIXER_M0_R11_CANDIDATE.json",
+      "git_blob_sha1": "dfde74e76b1bd7eb44088e6d49d06dd1a46cc759"
+    },
+    {
+      "path": "Design/contracts/G0A1_OWNER_APPROVAL_R1.record.json",
+      "git_blob_sha1": "2bdc8d96205272ee736213332e6599835b89a681"
+    },
+    {
+      "path": "Design/contracts/G0A1_PREFLIGHT_DIAGNOSTIC_V1_CANDIDATE.schema.json",
+      "git_blob_sha1": "d41091455e112cbcede1c7c0ce391c91827bfb41"
+    },
+    {
+      "path": "Design/contracts/G0A1_PREFLIGHT_ISSUE_REGISTRY_V1_CANDIDATE.json",
+      "git_blob_sha1": "ed7cb5305bf40996a006ac853d7b1990de4eaa70"
+    },
+    {
+      "path": "Design/contracts/G0A1_R11_FROZEN_DESIGN_BASELINE_PHASE211.json",
+      "git_blob_sha1": "9ab10e79a560faeb0ad5112bba39543eff906dee"
+    },
+    {
+      "path": "Design/contracts/G0A1_R11_OWNER_APPROVAL_PHASE211.record.json",
+      "git_blob_sha1": "7cc89c32f50c0dce62d77f2434cb3cbb2a55c7c2"
+    },
+    {
+      "path": "Design/contracts/G0A1_SCENARIO_WIRE_V1_HISTORICAL_SUBSET.schema.json",
+      "git_blob_sha1": "ee9b02dd4f587b683a91d38f5b36d3abdd5b3872"
+    },
+    {
+      "path": "Design/contracts/G0A1_SCENARIO_WIRE_V2_CANDIDATE.schema.json",
+      "git_blob_sha1": "1d10c76e34be70880a65252d89a6bca89839fea9"
+    },
+    {
+      "path": "Design/contracts/G0A1_SIM_POLICY_CORE_V1.schema.json",
+      "git_blob_sha1": "f4a024c147a610a208033819cf631ba2044197d1"
+    },
+    {
+      "path": "Design/contracts/G0A1_TRACE_RECORDS_R11_CANDIDATE.schema.json",
+      "git_blob_sha1": "ef0c1c8d7754042f72449e54e37c650c8fee4be8"
+    },
+    {
+      "path": "Design/contracts/P210_PHASE29_SOURCE_BLOB_GUARDS.json",
+      "git_blob_sha1": "de1569423e51b1ab5435eb5c5eb716796baef583"
+    },
+    {
+      "path": "Design/contracts/P210_STATIC_QA_ATTESTATION.json",
+      "git_blob_sha1": "bdf130c5f7e27e3d51cd99274e4338bbf528fcad"
+    },
+    {
+      "path": "Design/contracts/P211_RESIDUAL_RISK_AND_HANDOFF_GATES.json",
+      "git_blob_sha1": "c5f739b9fda6a2107f05b159f8232705a485081b"
+    },
+    {
+      "path": "Design/contracts/P211_STATIC_DESIGN_AUDIT_ATTESTATION.json",
+      "git_blob_sha1": "f7f6c18d5ad69349cb2c4b44f0a26ee932859a1b"
+    },
+    {
+      "path": "Design/contracts/P212_SOURCE_PIN_AND_NO_OVERWRITE.json",
+      "git_blob_sha1": "4d779dcfea40af293d8427ad3732eeea7a02106f"
+    },
+    {
+      "path": "Design/contracts/P212_STATIC_CONTRACT_QA_ATTESTATION.json",
+      "git_blob_sha1": "62f47104c61a1649a0ee92facfdc21ec4f1c2008"
+    },
+    {
+      "path": "Design/contracts/P29_G0A1_BASELINE_ATTESTATION.json",
+      "git_blob_sha1": "8021ae67de71d56b125e9b848e437e26ffe41dae"
+    },
+    {
+      "path": "Design/contracts/P29_G0A1_GAP_REGISTER.json",
+      "git_blob_sha1": "07041a343ec7397c279b3e048fbbcf5afda6e493"
+    },
+    {
+      "path": "Design/contracts/P29_G0A1_GATE_VERDICT.json",
+      "git_blob_sha1": "2da498b1684acafaea3132e23a0a580750045267"
+    },
+    {
+      "path": "Design/contracts/SIM_POLICY_22A_R1.canonical.json",
+      "git_blob_sha1": "62c35f82c715d3b3587dcc67d74f1320ba160929"
+    },
+    {
+      "path": "Design/contracts/SIM_POLICY_22A_R1.readable.json",
+      "git_blob_sha1": "cfbdcc651c3ac97d19950a8fb5fe546abfd49160"
+    },
+    {
+      "path": "Design/fixtures/P210_ACK_SHAPE_ONLY_V2.json",
+      "git_blob_sha1": "7db5ab21d8ae26537eb21cf594c14942ec7cde1f"
+    },
+    {
+      "path": "Design/fixtures/P210_DUPLICATE_KEYS_INVALID.json",
+      "git_blob_sha1": "43f7b34fc91657433ad89e03b8072c55280a7d3a"
+    },
+    {
+      "path": "Design/fixtures/P210_INVALID_UART_WIRE_V2.json",
+      "git_blob_sha1": "93059f759ac681c5280942d5782ff35bbab9b6b3"
+    },
+    {
+      "path": "Design/fixtures/P210_M0_GOLDEN_VECTORS.json",
+      "git_blob_sha1": "165aee1347a619c6f2514e522bf0e4fc4b518a6c"
+    },
+    {
+      "path": "Design/fixtures/P210_MINIMAL_DESIGN_EXTERNAL_REPORT.json",
+      "git_blob_sha1": "87af6934233261badf670eb3eb0aea35a4c65575"
+    },
+    {
+      "path": "Design/fixtures/P210_MINIMAL_DESIGN_TRACE.jsonl",
+      "git_blob_sha1": "4b7677fa4cdd6d15da61751349c872997fa6f2bc"
+    },
+    {
+      "path": "Design/fixtures/P210_MINIMAL_VECTOR_ATTESTATION.json",
+      "git_blob_sha1": "358337af2a2b9ffb7e0aa0f1fcfd2cdbb6ed8991"
+    },
+    {
+      "path": "Design/fixtures/P210_MINIMAL_WIRE_V2.json",
+      "git_blob_sha1": "7990a0e2c4a95425a61c27c9024a8a0783520663"
+    },
+    {
+      "path": "Design/fixtures/P210_NOMINAL_M0_WIRE_V2.json",
+      "git_blob_sha1": "4e772fe51f0cfb5e085e7da81030dca02814d0b3"
+    },
+    {
+      "path": "Design/fixtures/P210_RESET_CATA_WIRE_V2.json",
+      "git_blob_sha1": "b0502ff2548ec95541cff70337874a6d4461601a"
+    },
+    {
+      "path": "Design/fixtures/P211_FREEZE_AUDIT_AND_FUTURE_CONFORMANCE.json",
+      "git_blob_sha1": "2e6782712795fed320e3bcce9074fd06d6933eff"
+    },
+    {
+      "path": "Design/fixtures/P212_INVALID_DUPLICATE_EVENT_ID_WIRE_V2.json",
+      "git_blob_sha1": "4d819db66f4bfab28df23672e24d50dd1697a2b0"
+    },
+    {
+      "path": "Design/fixtures/P212_INVALID_DUPLICATE_KEY_RAW.json",
+      "git_blob_sha1": "2b6a1174c3a0aad39745b44b49a999c736d137a9"
+    },
+    {
+      "path": "Design/fixtures/P212_POSITIVE_INBAND_UART_INVALID_V2.json",
+      "git_blob_sha1": "93059f759ac681c5280942d5782ff35bbab9b6b3"
+    },
+    {
+      "path": "Design/fixtures/P212_PREFLIGHT_NEGATIVE_ORACLE_INDEX.json",
+      "git_blob_sha1": "41b5536d37042cb68e71f0c37c40e0b08272617f"
+    },
+    {
+      "path": "Design/fixtures/P212_REFERENCE_REJECTION_DIAGNOSTICS.json",
+      "git_blob_sha1": "6ea6f7ad15558636181e798048c0398bf670cffa"
+    },
+    {
+      "path": "Design/fixtures/P214_TICK_BATCH_ORACLE_INDEX.json",
+      "git_blob_sha1": "e6280d9bfd70dc23f73fafffdb5cdb4a9b7e878a"
+    },
+    {
+      "path": "Design/fixtures/P215_BATCH_NORMALIZER_ORACLE_INDEX.json",
+      "git_blob_sha1": "8eb8c1c99c3152e24eaaffdd1b54475738f89359"
+    },
+    {
+      "path": "Design/fixtures/P216_TEMPORAL_GUARD_ORACLE_INDEX.json",
+      "git_blob_sha1": "6d0fd0237b1093ea8c9f93e1b254dcef7bde10cd"
+    },
+    {
+      "path": "Design/fixtures/P217_SAFETY_PRIORITY_ORACLE_INDEX.json",
+      "git_blob_sha1": "6cb915ad33571e3452e5a8d28a6a85a9a97df7ab"
+    },
+    {
+      "path": "Design/fixtures/P218_ARM_QUALIFICATION_ORACLE_INDEX.json",
+      "git_blob_sha1": "668c99f4db60c6af0b57d5922c45cbb38d035595"
+    },
+    {
+      "path": "Design/fixtures/P219_HEALTH_EVIDENCE_ORACLE_INDEX.json",
+      "git_blob_sha1": "6e1ad515d9e7f101dd0a63c0cc70e91e723b5d42"
+    },
+    {
+      "path": "Design/fixtures/P220_GUARD_TRIAGE_ORACLE_INDEX.json",
+      "git_blob_sha1": "57f88ea32dd6275f86e456539a46f186d8b157f8"
+    },
+    {
+      "path": "Design/fixtures/P221_SNAPSHOT_GATE_ORACLE_INDEX.json",
+      "git_blob_sha1": "16b89e148a55d35749cc2e3912123972970387a4"
+    },
+    {
+      "path": "Design/fixtures/P222_HOST_REFERENCE_ORACLE_INDEX.json",
+      "git_blob_sha1": "016bebb8fed4380d13255ec0ab968a9b5236cdc2"
+    },
+    {
+      "path": "Design/fixtures/P26_ARM_NOMINAL_CANDIDATE.json",
+      "git_blob_sha1": "e12a81ebc2069a691deb6c2c8686a4e04fd578d4"
+    },
+    {
+      "path": "Design/fixtures/P26_CONTROL_BATCH_CONFLICT_CANDIDATE.json",
+      "git_blob_sha1": "956d10ec6fe0d90f3b4369deadb8d8eddcc6f6af"
+    },
+    {
+      "path": "Design/fixtures/P26_LOW_INTERRUPTED_INVALID_CANDIDATE.json",
+      "git_blob_sha1": "6e667053b893b07abab4c22031e5d90d0ebb9dfa"
+    },
+    {
+      "path": "Design/fixtures/P28_R1_ORACLE_INDEX.json",
+      "git_blob_sha1": "c1d6eec6807274c11f788b2f940d00e046d4f93c"
+    },
+    {
+      "path": "Design/fixtures/P29_DESIGN_ORACLE_INDEX.json",
+      "git_blob_sha1": "83444a00a3dc696c439275a0db33dcb6c4e66e66"
+    },
+    {
+      "path": "Design/fixtures/PHASE27_OWNER_DECISION_UNSIGNED_TEMPLATE.json",
+      "git_blob_sha1": "cce658c9d37c3f940525b855f41b1890808f040b"
+    },
+    {
+      "path": "Source/host_arm_qualification/MANIFEST.in",
+      "git_blob_sha1": "ea5cfeb395844d727473ea608a36a155d74c73e3"
+    },
+    {
+      "path": "Source/host_arm_qualification/evidence/baseline.json",
+      "git_blob_sha1": "e38197e3b4763316b40cf3d1be39408233db5dff"
+    },
+    {
+      "path": "Source/host_arm_qualification/evidence/commands.json",
+      "git_blob_sha1": "5041ae1f104784b81c649c26c457477b1a735962"
+    },
+    {
+      "path": "Source/host_arm_qualification/evidence/environment.json",
+      "git_blob_sha1": "db499a411453009db45d89206c32a5dc140282d3"
+    },
+    {
+      "path": "Source/host_arm_qualification/evidence/files.json",
+      "git_blob_sha1": "09617a2390602e1ad34dedc8718da3f6a5e9affe"
+    },
+    {
+      "path": "Source/host_arm_qualification/pyproject.toml",
+      "git_blob_sha1": "3181815045e5831e6840ed29482e5a865656091e"
+    },
+    {
+      "path": "Source/host_arm_qualification/scripts/__init__.py",
+      "git_blob_sha1": "e2f160548ca7d2d613e1b4c2f9b3e020551e7975"
+    },
+    {
+      "path": "Source/host_arm_qualification/scripts/scenarios.py",
+      "git_blob_sha1": "e29b7e523fb6b9b1a856c3989e83e35734d92162"
+    },
+    {
+      "path": "Source/host_arm_qualification/scripts/smoke.py",
+      "git_blob_sha1": "c2b3d8be09859085fa9d6c0dc941d0510cbf9282"
+    },
+    {
+      "path": "Source/host_arm_qualification/scripts/verify.py",
+      "git_blob_sha1": "8230374cd27235953f435160eaa4fe66f6cb3700"
+    },
+    {
+      "path": "Source/host_arm_qualification/src/bb_host_arm_qualification/__init__.py",
+      "git_blob_sha1": "7ee8a359b0d0010c48c4d6e969f3d9b6219757d5"
+    },
+    {
+      "path": "Source/host_arm_qualification/src/bb_host_arm_qualification/qualification.py",
+      "git_blob_sha1": "57e47ed1ba360af45dfc41ce694179a17b8c7dc4"
+    },
+    {
+      "path": "Source/host_arm_qualification/tests/conftest.py",
+      "git_blob_sha1": "c893e386f0ef33fabdf51ecb47e03e9e8ea28ffe"
+    },
+    {
+      "path": "Source/host_arm_qualification/tests/test_oracles.py",
+      "git_blob_sha1": "879763233682c8c66ac66c1d039a5c627ce28f6e"
+    },
+    {
+      "path": "Source/host_arm_qualification/tests/test_qualification.py",
+      "git_blob_sha1": "df5d4f2803377b64a4ace4ed8c011fc06dc8efd2"
+    },
+    {
+      "path": "Source/host_batch_observations/MANIFEST.in",
+      "git_blob_sha1": "ea5cfeb395844d727473ea608a36a155d74c73e3"
+    },
+    {
+      "path": "Source/host_batch_observations/evidence/baseline.json",
+      "git_blob_sha1": "8b923f86307c6abe7f8a90514ebc244c9df2811d"
+    },
+    {
+      "path": "Source/host_batch_observations/evidence/commands.json",
+      "git_blob_sha1": "a682b53653f3adbee03b5d6f2c4d6082d5c18d0c"
+    },
+    {
+      "path": "Source/host_batch_observations/evidence/environment.json",
+      "git_blob_sha1": "c1179133145423b38b687aacc6dbbaea819b7ec4"
+    },
+    {
+      "path": "Source/host_batch_observations/evidence/files.json",
+      "git_blob_sha1": "e8fa74d47edacb3c0763850304403fda3ef6dba7"
+    },
+    {
+      "path": "Source/host_batch_observations/pyproject.toml",
+      "git_blob_sha1": "f00f53422e9acf3d333b0dcc895e0e78c13cd190"
+    },
+    {
+      "path": "Source/host_batch_observations/scripts/__init__.py",
+      "git_blob_sha1": "47b1eb40a6cbcf31375b1e37b088abb95b327b8a"
+    },
+    {
+      "path": "Source/host_batch_observations/scripts/scenarios.py",
+      "git_blob_sha1": "d38e5e8c1e0ec423630776cb644fe0a6593165a3"
+    },
+    {
+      "path": "Source/host_batch_observations/scripts/smoke.py",
+      "git_blob_sha1": "ce79cbd425a2b2fc39952d1cf9644fa4df69855f"
+    },
+    {
+      "path": "Source/host_batch_observations/scripts/verify.py",
+      "git_blob_sha1": "5339b594deb8fd5aeded7b19cbcd38937756849d"
+    },
+    {
+      "path": "Source/host_batch_observations/src/bb_host_batch_observations/__init__.py",
+      "git_blob_sha1": "5fb58a909fb6cc3bab1446ed27d13ec689a7cf22"
+    },
+    {
+      "path": "Source/host_batch_observations/src/bb_host_batch_observations/normalizer.py",
+      "git_blob_sha1": "9cf0a1bb6333049dafc46d69691292fe9b7ea3b8"
+    },
+    {
+      "path": "Source/host_batch_observations/tests/conftest.py",
+      "git_blob_sha1": "c690632c5a3b3cf8e121713ee8c8ab737e13af69"
+    },
+    {
+      "path": "Source/host_batch_observations/tests/test_normalizer.py",
+      "git_blob_sha1": "1ceeb2ec3eb8b589685eb0ec46f8ccdc596752ea"
+    },
+    {
+      "path": "Source/host_batch_observations/tests/test_oracles.py",
+      "git_blob_sha1": "56308b142c02fd510687616ca055fb66d052923e"
+    },
+    {
+      "path": "Source/host_guard_triage/MANIFEST.in",
+      "git_blob_sha1": "ea5cfeb395844d727473ea608a36a155d74c73e3"
+    },
+    {
+      "path": "Source/host_guard_triage/evidence/baseline.json",
+      "git_blob_sha1": "22b2f717dcd4209bbea43b3d0c37b8503cf7b781"
+    },
+    {
+      "path": "Source/host_guard_triage/evidence/commands.json",
+      "git_blob_sha1": "649b98add3e952eda599b22368b758dded2440b1"
+    },
+    {
+      "path": "Source/host_guard_triage/evidence/environment.json",
+      "git_blob_sha1": "1f07c5f3f3d3f96b907b65c9ed95460c14991af8"
+    },
+    {
+      "path": "Source/host_guard_triage/evidence/summary.json",
+      "git_blob_sha1": "9ba30ed8aa3c40c9cdec071353c8d7f65da3f24a"
+    },
+    {
+      "path": "Source/host_guard_triage/pyproject.toml",
+      "git_blob_sha1": "46725ebdbc62d0ad9ea5e460b1477d8d786d80e2"
+    },
+    {
+      "path": "Source/host_guard_triage/scripts/__init__.py",
+      "git_blob_sha1": "e2f160548ca7d2d613e1b4c2f9b3e020551e7975"
+    },
+    {
+      "path": "Source/host_guard_triage/scripts/scenarios.py",
+      "git_blob_sha1": "5b431098059a8b34c5f414c66e1aab1d4aad9399"
+    },
+    {
+      "path": "Source/host_guard_triage/scripts/smoke.py",
+      "git_blob_sha1": "907ab64993838068ed79544976cad17ccd903f86"
+    },
+    {
+      "path": "Source/host_guard_triage/scripts/verify.py",
+      "git_blob_sha1": "80d94386481e5a29b4a7b9fed2fef7fe17e76956"
+    },
+    {
+      "path": "Source/host_guard_triage/src/bb_host_guard_triage/__init__.py",
+      "git_blob_sha1": "dbda726bafea2e15575ad4ea090573e49cf9ebca"
+    },
+    {
+      "path": "Source/host_guard_triage/src/bb_host_guard_triage/triage.py",
+      "git_blob_sha1": "a847ec9cee86d8f5d354a7a034eb848fd03b4a31"
+    },
+    {
+      "path": "Source/host_guard_triage/tests/conftest.py",
+      "git_blob_sha1": "c893e386f0ef33fabdf51ecb47e03e9e8ea28ffe"
+    },
+    {
+      "path": "Source/host_guard_triage/tests/test_negatives.py",
+      "git_blob_sha1": "5925046509366ddc7d15b04ba1afd51a912aab67"
+    },
+    {
+      "path": "Source/host_guard_triage/tests/test_oracles.py",
+      "git_blob_sha1": "919c622e053b0e760c43a6d3afe7513422775751"
+    },
+    {
+      "path": "Source/host_health_evidence/MANIFEST.in",
+      "git_blob_sha1": "ea5cfeb395844d727473ea608a36a155d74c73e3"
+    },
+    {
+      "path": "Source/host_health_evidence/evidence/baseline.json",
+      "git_blob_sha1": "f0e86f31f840cad6ff1e522ae6650556c51f161b"
+    },
+    {
+      "path": "Source/host_health_evidence/evidence/commands.json",
+      "git_blob_sha1": "1007387f7b5bdc5258082eb42236a3828f924754"
+    },
+    {
+      "path": "Source/host_health_evidence/evidence/development/initial-commands.json",
+      "git_blob_sha1": "54d654aac965a5892d24f0a11dcb7f50ca2a9ef8"
+    },
+    {
+      "path": "Source/host_health_evidence/evidence/development/initial-summary.json",
+      "git_blob_sha1": "1820a58a4db96d0280bc6932d096dfb9c8829ca3"
+    },
+    {
+      "path": "Source/host_health_evidence/evidence/environment.json",
+      "git_blob_sha1": "214c9f90740d43dc0640f8089b9977db3a699fcd"
+    },
+    {
+      "path": "Source/host_health_evidence/evidence/summary.json",
+      "git_blob_sha1": "85bc4766f633d22f82a8c0cf73d6559ba32f7a3d"
+    },
+    {
+      "path": "Source/host_health_evidence/pyproject.toml",
+      "git_blob_sha1": "ef7e71ed854224536120fc915d3eb27757d75fda"
+    },
+    {
+      "path": "Source/host_health_evidence/scripts/__init__.py",
+      "git_blob_sha1": "e2f160548ca7d2d613e1b4c2f9b3e020551e7975"
+    },
+    {
+      "path": "Source/host_health_evidence/scripts/scenarios.py",
+      "git_blob_sha1": "717a0c1d247b092dfb56499f57eabba1df175eb9"
+    },
+    {
+      "path": "Source/host_health_evidence/scripts/smoke.py",
+      "git_blob_sha1": "e05d36e812a5bdfc450e8cacf2c88a1a89c9c75a"
+    },
+    {
+      "path": "Source/host_health_evidence/scripts/verify.py",
+      "git_blob_sha1": "d87451085a25ab7b4fde0df8c605ee420a07f717"
+    },
+    {
+      "path": "Source/host_health_evidence/src/bb_host_health_evidence/__init__.py",
+      "git_blob_sha1": "b6f30f4390572f51d9931d4c3a3e75c5990046e7"
+    },
+    {
+      "path": "Source/host_health_evidence/src/bb_host_health_evidence/health.py",
+      "git_blob_sha1": "830169669068d6f337d56c21cbee438e5759cf91"
+    },
+    {
+      "path": "Source/host_health_evidence/tests/conftest.py",
+      "git_blob_sha1": "c893e386f0ef33fabdf51ecb47e03e9e8ea28ffe"
+    },
+    {
+      "path": "Source/host_health_evidence/tests/test_health.py",
+      "git_blob_sha1": "6c832b77c9b847e19c36e075ebb5a0b92283c87f"
+    },
+    {
+      "path": "Source/host_health_evidence/tests/test_oracles.py",
+      "git_blob_sha1": "df0e9a3c4ac6d0ff2c1f4b38f94783930bbcc10e"
+    },
+    {
+      "path": "Source/host_preflight_m0/MANIFEST.in",
+      "git_blob_sha1": "0b4290eb40d0cd71a99e14a67b8a697a6e3af5cb"
+    },
+    {
+      "path": "Source/host_preflight_m0/evidence/commands.json",
+      "git_blob_sha1": "724f1a965ea78514a205811ec0cc3dcf4601f73a"
+    },
+    {
+      "path": "Source/host_preflight_m0/evidence/environment.json",
+      "git_blob_sha1": "f72735f51f278f69bb337c7af725292bca6cc29c"
+    },
+    {
+      "path": "Source/host_preflight_m0/evidence/source-inventory.json",
+      "git_blob_sha1": "669f48ff459a0fd0fce33d3772c7dcc0ece6f0db"
+    },
+    {
+      "path": "Source/host_preflight_m0/pyproject.toml",
+      "git_blob_sha1": "02c0454b098968647283b7d3e86342a9d0e7d74b"
+    },
+    {
+      "path": "Source/host_preflight_m0/scripts/smoke.py",
+      "git_blob_sha1": "8f6221a9e2b832b05520f67558eea72fc0d4f808"
+    },
+    {
+      "path": "Source/host_preflight_m0/scripts/verify_baseline.py",
+      "git_blob_sha1": "68dd496c08e0db8a83e619603bfd239e54532c03"
+    },
+    {
+      "path": "Source/host_preflight_m0/scripts/verify_delivery.py",
+      "git_blob_sha1": "78e2aaa212d102502d8cff5fe5ce2ea56b31ea63"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/__init__.py",
+      "git_blob_sha1": "e7a00a7d18a82c7997858b989271c5cc36ded4af"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/diagnostics.py",
+      "git_blob_sha1": "35881939fb011bf0e4ab65c44b5a03c348da0f8a"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/exact_decimal.py",
+      "git_blob_sha1": "ae47fae16a49742d20e57e50b35101666783140c"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/lexer.py",
+      "git_blob_sha1": "ed90677e2a68b3a5adbd2c4bd068311b72c16263"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/mixer.py",
+      "git_blob_sha1": "93ad14f32332596697b76c9ea68b3ea8affe8319"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/schema.py",
+      "git_blob_sha1": "2d2e6f874eabd53922e061f0708cc79809a472d9"
+    },
+    {
+      "path": "Source/host_preflight_m0/src/bb_host_preflight_m0/wire.py",
+      "git_blob_sha1": "506aa23cbe5e01671f3f51c1f2fd64444d7f0578"
+    },
+    {
+      "path": "Source/host_preflight_m0/tests/conftest.py",
+      "git_blob_sha1": "bec7c0f8ef0d09850522c05dd8f5f026a9bd5feb"
+    },
+    {
+      "path": "Source/host_preflight_m0/tests/test_boundaries.py",
+      "git_blob_sha1": "1036553d3e607482096d3e35a6a22eb62a02a04d"
+    },
+    {
+      "path": "Source/host_preflight_m0/tests/test_isolation.py",
+      "git_blob_sha1": "44c85be37c9c69d6e4824ea87643da4654ac0451"
+    },
+    {
+      "path": "Source/host_preflight_m0/tests/test_math.py",
+      "git_blob_sha1": "4fd2d406eabe8452194c989502423da65ab6c046"
+    },
+    {
+      "path": "Source/host_preflight_m0/tests/test_oracles.py",
+      "git_blob_sha1": "f2a47a20a7a6ee70ae5443eb6422b21bd346eccf"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/MANIFEST.in",
+      "git_blob_sha1": "ea5cfeb395844d727473ea608a36a155d74c73e3"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/baseline.json",
+      "git_blob_sha1": "17b3f7722aa3e560e7a2a50eb07247974f50d762"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/commands.json",
+      "git_blob_sha1": "a47daee474acd86001084d1ccbe00cdeccf9b7e3"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/environment.json",
+      "git_blob_sha1": "173f7ff10c04869d8be4dedef8003cae236b0566"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/evidence/files.json",
+      "git_blob_sha1": "5f25b92de139ee89d8fe31ed2252a2bf24b52b2f"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/pyproject.toml",
+      "git_blob_sha1": "d84b3a37a02d74c408fcf989938e57964ae54608"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/scripts/__init__.py",
+      "git_blob_sha1": "e2f160548ca7d2d613e1b4c2f9b3e020551e7975"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/scripts/scenarios.py",
+      "git_blob_sha1": "c01d57577c267026614fc4316d20d46d19083112"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/scripts/smoke.py",
+      "git_blob_sha1": "34602811b8413008e8d50ecd66f788a92de727bd"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/scripts/verify.py",
+      "git_blob_sha1": "45c1bea93741e09e04fadf7fd2c628e08c59c20d"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/src/bb_host_safety_priority_kernel/__init__.py",
+      "git_blob_sha1": "ff2cbdbf0418abbe6f2882a53bfab2181f2b1221"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/src/bb_host_safety_priority_kernel/priority.py",
+      "git_blob_sha1": "6a194b6fea178d8e697901448143c90a1edaf531"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/tests/conftest.py",
+      "git_blob_sha1": "c893e386f0ef33fabdf51ecb47e03e9e8ea28ffe"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/tests/test_oracles.py",
+      "git_blob_sha1": "935b6c450927e762fd9100b6cce32f5a599ac99c"
+    },
+    {
+      "path": "Source/host_safety_priority_kernel/tests/test_priority.py",
+      "git_blob_sha1": "9cae6b0a58a3d8d6c40f171e5f88e9955a53e2d9"
+    },
+    {
+      "path": "Source/host_snapshot_commit_gate/MANIFEST.in",
+      "git_blob_sha1": "ea5cfeb395844d727473ea608a36a155d74c73e3"
+    },
+    {
+      "path": "Source/host_snapshot_commit_gate/evidence/baseline.json",
+      "git_blob_sha1": "4ed6ec7cbafa3a4fab0b90c5a79f43b5f44f8335"
+    },
+    {
+      "path": "Source/host_snapshot_commit_gate/evidence/commands.json",
+      "git_blob_sha1": "8635694d4069b9733d6cf36b008eabc89972c445"
+    },
+    {
+      "path": "Source/host_snapshot_commit_gate/evidence/environment.json",
+      "git_blob_sha1": "02ec1de34587ecf2d3867ff6db9e0ae56cb8c4a8"
+    },
+    {
+      "path": "Source/host_snapshot_commit_gate/evidence/summary.json",
+      "git_blob_sha1": "93b3a5bd33fe9d5d11d65277f0776233a63c548c"
+    },
+    {
+      "path": "Source/host_snapshot_commit_gate/pyproject.toml",
+      "git_blob_sha1": "9d6633de2b47db244ef762b512f4fdc86006e51a"
+    },
+    {
+      "path": "Source/host_snapshot_commit_gate/scripts/__init__.py",
+      "git_blob_sha1": "e2f160548ca7d2d613e1b4c2f9b3e020551e7975"
+    },
+    {
+      "path": "Source/host_snapshot_commit_gate/scripts/scenarios.py",
+      "git_blob_sha1": "1eba2a7433d26520b1955435d6c53e5b1b248379"
+    },
+    {
+      "path": "Source/host_snapshot_commit_gate/scripts/smoke.py",
+      "git_blob_sha1": "bce566c69964673bdbdc5bfcbd20a03215b2ead5"
+    },
+    {
+      "path": "Source/host_snapshot_commit_gate/scripts/verify.py",
+      "git_blob_sha1": "61fe9b07c147d7705780f2f8ee35ab33530a7ae1"
+    },
+    {
+      "path": "Source/host_snapshot_commit_gate/src/bb_host_snapshot_commit_gate/__init__.py",
+      "git_blob_sha1": "1d0e9c0f1d88938be3c844d57251affbca3cc834"
+    },
+    {
+      "path": "Source/host_snapshot_commit_gate/src/bb_host_snapshot_commit_gate/_testing.py",
+      "git_blob_sha1": "e9f389529ad70da94b523401826dc3822b2bcf4a"
+    },
+    {
+      "path": "Source/host_snapshot_commit_gate/src/bb_host_snapshot_commit_gate/_validation.py",
+      "git_blob_sha1": "b528570f2a6706974e4b943d3062fa3bfba0e167"
+    },
+    {
+      "path": "Source/host_snapshot_commit_gate/src/bb_host_snapshot_commit_gate/journal.py",
+      "git_blob_sha1": "740869ca42b83034fc4ef9e8652e57aa764faeb9"
+    },
+    {
+      "path": "Source/host_snapshot_commit_gate/src/bb_host_snapshot_commit_gate/ledger.py",
+      "git_blob_sha1": "b9a5c773da7cf7354e85ab62e2bb0126d81d7d88"
+    },
+    {
+      "path": "Source/host_snapshot_commit_gate/src/bb_host_snapshot_commit_gate/snapshot.py",
+      "git_blob_sha1": "0174911156ac353424db0a75c3ae4b7858499074"
+    },
+    {
+      "path": "Source/host_snapshot_commit_gate/tests/conftest.py",
+      "git_blob_sha1": "c893e386f0ef33fabdf51ecb47e03e9e8ea28ffe"
+    },
+    {
+      "path": "Source/host_snapshot_commit_gate/tests/test_gate.py",
+      "git_blob_sha1": "37695f0217744ae43ff4e72cc8751fdbca6836cf"
+    },
+    {
+      "path": "Source/host_snapshot_commit_gate/tests/test_oracles.py",
+      "git_blob_sha1": "36b861a7472e49b97e4d251011b1ff6d6bdd0b65"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/MANIFEST.in",
+      "git_blob_sha1": "ea5cfeb395844d727473ea608a36a155d74c73e3"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/baseline.json",
+      "git_blob_sha1": "1d02bb4f5552e6bedf20dc23f8109f5954e9949f"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/commands.json",
+      "git_blob_sha1": "874105fe98117fe49199c556fa4e7b075b1cfd1c"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/environment.json",
+      "git_blob_sha1": "459d641a8600d6f29caebcdea937b0ce88bd45f2"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/evidence/files.json",
+      "git_blob_sha1": "fefd91556d4afaba183f72804ad3369b66d7bc5e"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/pyproject.toml",
+      "git_blob_sha1": "abc0a012a0a60f8139e0662b857e6f90b0cedde9"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/scripts/__init__.py",
+      "git_blob_sha1": "c41fe19a9122819bb7761d153fe8127005e5a428"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/scripts/scenarios.py",
+      "git_blob_sha1": "d8a18d488c52ad13c4340a5ad3615e55c95829d7"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/scripts/smoke.py",
+      "git_blob_sha1": "3acd6426e233a6ffbba5a4ec5021a444d29d2a2f"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/scripts/verify.py",
+      "git_blob_sha1": "f1ee007c03db4d8e9d0133d80a757cb582eea4bd"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/src/bb_host_temporal_guard_facts/__init__.py",
+      "git_blob_sha1": "b316b57637e536dc59f8dc18826101a2ef7cfc10"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/src/bb_host_temporal_guard_facts/temporal.py",
+      "git_blob_sha1": "707f3f1aa3c1c997839204c137ee907a7696c57a"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/tests/conftest.py",
+      "git_blob_sha1": "5801beaefb1c4e43700cbbfd9effa5ce63c55e50"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/tests/test_oracles.py",
+      "git_blob_sha1": "01a0ad2c1676253c2768a1faec9c25a6a3b35a3e"
+    },
+    {
+      "path": "Source/host_temporal_guard_facts/tests/test_temporal.py",
+      "git_blob_sha1": "096d7ce84eb2c7c9218793ce222767ac9d3de06b"
+    },
+    {
+      "path": "Source/host_trust_boundary/MANIFEST.in",
+      "git_blob_sha1": "ea5cfeb395844d727473ea608a36a155d74c73e3"
+    },
+    {
+      "path": "Source/host_trust_boundary/evidence/baseline.json",
+      "git_blob_sha1": "e8cbaea60718f1477c67b2d1a5b41e0ffff8d84f"
+    },
+    {
+      "path": "Source/host_trust_boundary/evidence/commands.json",
+      "git_blob_sha1": "59e5ab7e4642a63957dc70fc16294ed58b38a428"
+    },
+    {
+      "path": "Source/host_trust_boundary/evidence/environment.json",
+      "git_blob_sha1": "6bd8ca848d55d07be6443651933b071267cc38b5"
+    },
+    {
+      "path": "Source/host_trust_boundary/evidence/summary.json",
+      "git_blob_sha1": "d27c0cfff49dd7d7ba2446333ee01643b89fbcfd"
+    },
+    {
+      "path": "Source/host_trust_boundary/pyproject.toml",
+      "git_blob_sha1": "41ea6f49778e182e70ab2bbdd18bce4523bb8068"
+    },
+    {
+      "path": "Source/host_trust_boundary/scripts/__init__.py",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "Source/host_trust_boundary/scripts/scenarios.py",
+      "git_blob_sha1": "0c8616b345f455c636d8606b5f9e12562415f776"
+    },
+    {
+      "path": "Source/host_trust_boundary/scripts/smoke.py",
+      "git_blob_sha1": "b8b3517cabc85e651fb57787eba8594855063a53"
+    },
+    {
+      "path": "Source/host_trust_boundary/scripts/verify.py",
+      "git_blob_sha1": "d8364771953b5db82ceaf8072e8310de9ea6e3db"
+    },
+    {
+      "path": "Source/host_trust_boundary/src/bb_host_trust_boundary/__init__.py",
+      "git_blob_sha1": "a491c7220f638afe7189000b59a5eb730450f18f"
+    },
+    {
+      "path": "Source/host_trust_boundary/src/bb_host_trust_boundary/boundary.py",
+      "git_blob_sha1": "6fa32d9dd0a8c8a3b3697e7983e72fa9c73d2622"
+    },
+    {
+      "path": "Source/host_trust_boundary/tests/test_boundary.py",
+      "git_blob_sha1": "35fa3ee0409f74a12d4c66da8a9f9494254f30a7"
+    },
+    {
+      "path": "Source/host_trust_boundary/tests/test_oracles.py",
+      "git_blob_sha1": "53aaa14c4bcf2a7bcd1c1882cdf86522079d86d5"
+    },
+    {
+      "path": "Source/host_virtual_ticks/MANIFEST.in",
+      "git_blob_sha1": "ea5cfeb395844d727473ea608a36a155d74c73e3"
+    },
+    {
+      "path": "Source/host_virtual_ticks/evidence/baseline.json",
+      "git_blob_sha1": "7efd5dc601a385f6ee6d1ea04245278d8e0758c8"
+    },
+    {
+      "path": "Source/host_virtual_ticks/evidence/commands.json",
+      "git_blob_sha1": "33b6e4fa054ec2fb95db014ece66ac4560e6285b"
+    },
+    {
+      "path": "Source/host_virtual_ticks/evidence/environment.json",
+      "git_blob_sha1": "183973b6a09e4748c27910cc3fbfa9a1cef1d611"
+    },
+    {
+      "path": "Source/host_virtual_ticks/evidence/files.json",
+      "git_blob_sha1": "4546b2e0d7237252fcf4486a7e199c23ff1ed0c5"
+    },
+    {
+      "path": "Source/host_virtual_ticks/pyproject.toml",
+      "git_blob_sha1": "14139c679e63f1d2a1458c49b1004ac60bfd0078"
+    },
+    {
+      "path": "Source/host_virtual_ticks/scripts/smoke.py",
+      "git_blob_sha1": "58a496a411e4ee942813f3102b8c21828de3ccf9"
+    },
+    {
+      "path": "Source/host_virtual_ticks/scripts/verify.py",
+      "git_blob_sha1": "ec0e38c1b5802b6753b641a5f6bf90f3bb41cf4e"
+    },
+    {
+      "path": "Source/host_virtual_ticks/src/bb_host_virtual_ticks/__init__.py",
+      "git_blob_sha1": "c7238b3fb0461c0cb25715de0174feb75de3eda4"
+    },
+    {
+      "path": "Source/host_virtual_ticks/src/bb_host_virtual_ticks/scheduler.py",
+      "git_blob_sha1": "755e74b740f1a68eb6f095b6895d80cba3831928"
+    },
+    {
+      "path": "Source/host_virtual_ticks/tests/conftest.py",
+      "git_blob_sha1": "917df6d6cebc819b14e43bdef65a454b9732362c"
+    },
+    {
+      "path": "Source/host_virtual_ticks/tests/test_oracles.py",
+      "git_blob_sha1": "1c06495163fb920e778f66c2056191771184e0c1"
+    },
+    {
+      "path": "Source/host_virtual_ticks/tests/test_scheduler.py",
+      "git_blob_sha1": "31c4bfc6effb849e9712efb2b2e38d8a2cd03f2b"
+    },
+    {
+      "path": "Task/TASK-001_HOST_PREFLIGHT_M0.md",
+      "git_blob_sha1": "2d8037fb5fd301f8326715565c3a335a6f4f7778"
+    },
+    {
+      "path": "Task/TASK-002_VIRTUAL_TICK_SCHEDULER.md",
+      "git_blob_sha1": "ed3af3c09747bd39f686db721eea27c097935031"
+    },
+    {
+      "path": "Task/TASK-003_HOST_BATCH_OBSERVATION_NORMALIZER.md",
+      "git_blob_sha1": "f30ca2f39dfa1e6970d05ba9932901bd9c50e99e"
+    },
+    {
+      "path": "Task/TASK-004_HOST_TEMPORAL_GUARD_FACTS.md",
+      "git_blob_sha1": "d576556660a94c5080c36ff3812a99178d71344c"
+    },
+    {
+      "path": "Task/TASK-005_HOST_SAFETY_PRIORITY_KERNEL.md",
+      "git_blob_sha1": "6a2d85f6d2a9b7dfe7e0f52194a59dfc83f56536"
+    },
+    {
+      "path": "Task/TASK-006_HOST_ARM_QUALIFICATION_PROPOSALS.md",
+      "git_blob_sha1": "cfd789dce087f6575f3ce56d6640a452ec2e1f1f"
+    },
+    {
+      "path": "Task/TASK-007_HOST_RF_CONTROL_HEALTH_EVIDENCE.md",
+      "git_blob_sha1": "80f1ab969ad48d298b93619e853b7f56151d407b"
+    },
+    {
+      "path": "Task/TASK-008_HOST_GUARD_TRIAGE.md",
+      "git_blob_sha1": "d500f8e4edca5b3a603b1ba3e9ea854a8a1f3b9d"
+    },
+    {
+      "path": "Task/TASK-009_HOST_SNAPSHOT_COMMIT_GATE.md",
+      "git_blob_sha1": "53f0bd04715c5b5323c0e6f352de336d497ea37c"
+    },
+    {
+      "path": "Task/TASK-010_HOST_TRUST_BOUNDARY.md",
+      "git_blob_sha1": "c15c3544edaef72f1996dbd9d2b63e305f1d5275"
+    }
+  ],
+  "release_files": [
+    {
+      "path": "Design/184_TASK010_MERGE_CLOSEOUT_AND_TASK011_BASELINE.md",
+      "bytes": 4285,
+      "sha256": "a2693e078d5c7c002b13d9aafe2b27fa2a063e4c3e35ad7baac488b5fb560fe5",
+      "git_blob_sha1": "a61f23c9ff0b53cb32b2647bf1d08d3333933459"
+    },
+    {
+      "path": "Design/185_G0A1_HOST_PROVISIONING_INTENT_STAGE_E3_CONTRACT.md",
+      "bytes": 11190,
+      "sha256": "8c8baa06718804cf4a327e897e2a5568116604b5d943248729b69c87fc224bf5",
+      "git_blob_sha1": "5248bd54ff4bd4661d5b866e555223b494b8984a"
+    },
+    {
+      "path": "Design/186_TASK011_PROVISIONING_ORACLES_AND_SA_REVIEW.md",
+      "bytes": 4790,
+      "sha256": "ffb0dd5fe810667279ff33b90c75d7ddabb00a7b4368cf68d6601b8b636f3a0e",
+      "git_blob_sha1": "8ad001aa4bde2df53678933f2b4a32d7afa5232a"
+    },
+    {
+      "path": "Design/fixtures/P223_HOST_PROVISIONING_INTENT_ORACLE_INDEX.json",
+      "bytes": 54843,
+      "sha256": "462dd0af7d1263d41cbad4e07969f21e4b41ec2f203993bbd3960182d49666ad",
+      "git_blob_sha1": "39196c4cbe326431e5fe420724dde49e0b8d5e60"
+    },
+    {
+      "path": "Task/TASK-011_HOST_PROVISIONING_INTENT.md",
+      "bytes": 6711,
+      "sha256": "3b48b97555cba94de9bea6ea0e8f3deaad245e81bd881feee02b98975f68dfd8",
+      "git_blob_sha1": "7453c1de5be757c59de2118c73696203d4bcfe31"
+    }
+  ],
+  "release_manifest_sha256": "0865bee9c2546b6c2875ed75f1b6743e0065fdba6ec7729f320749422e25d034",
+  "policy_sha256": "d7567197dd43480d7e96dac121fbb707d3097b6c443b1b7ab55e822dbac66e10",
+  "preserved_task001_baseline_sha256": "e6dfcfd1ea13ffb4fb5ba2c3d2b475ef0f62c85d2f84faa666ba6b13af30fd9d"
+}
