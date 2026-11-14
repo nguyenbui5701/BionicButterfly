@@ -1,0 +1,429 @@
+{
+  "acceptance": {
+    "AC-01": "task-local writes; frozen source/release hashes match",
+    "AC-02": "48 named P222 cases through genuine TASK-001 preflight; exact eight-field output",
+    "AC-03": "exact policy vector and eleven byte mutations, no runtime canonicalization",
+    "AC-04": "all eleven synthetic fields, exact types and fixed ordered combinations",
+    "AC-05": "permanent no-authority result even for matching pins",
+    "AC-06": "genuine rejected preflight wins; hash and comparison spies remain untouched",
+    "AC-07": "N01-N18 exercised; no trust bypass, wrapper and spoof cases",
+    "AC-08": "constant header line-count at 1/20000 events; AST/IO/ledger spies; frozen output",
+    "AC-09": "tests/build/install/pip/dev+wheel smoke and nine read-only regressions executed",
+    "AC-10": "three UAT commands plus full verify supplied; owner UAT/approval pending; no PR"
+  },
+  "all_commands_exit_zero": true,
+  "baseline": "4c7c92524837c8c728d0f206e5ba4655f9513399",
+  "dependencies": {
+    "attrs": "25.3.0",
+    "bb-host-arm-qualification": "0.1.0",
+    "bb-host-batch-observations": "0.1.0",
+    "bb-host-guard-triage": "0.1.0",
+    "bb-host-health-evidence": "0.1.0",
+    "bb-host-preflight-m0": "0.1.0",
+    "bb-host-safety-priority-kernel": "0.1.0",
+    "bb-host-snapshot-commit-gate": "0.1.0",
+    "bb-host-temporal-guard-facts": "0.1.0",
+    "bb-host-trust-boundary": "0.1.0",
+    "bb-host-virtual-ticks": "0.1.0",
+    "build": "1.2.2.post1",
+    "colorama": "0.4.6",
+    "iniconfig": "2.1.0",
+    "jsonschema": "4.26.0",
+    "jsonschema-specifications": "2025.9.1",
+    "packaging": "25.0",
+    "pip": "24.0",
+    "pluggy": "1.6.0",
+    "pyproject_hooks": "1.2.0",
+    "pytest": "8.3.5",
+    "referencing": "0.36.2",
+    "rpds-py": "0.27.1",
+    "setuptools": "80.9.0",
+    "typing_extensions": "4.15.0",
+    "wheel": "0.45.1"
+  },
+  "full_verification_run": true,
+  "installed_dependencies_match_pinned_source": true,
+  "installed_task010_matches_source": true,
+  "limits": [
+    "PC_SIM_ONLY TEST_ONLY reference comparison; no runtime trust or executable attestation",
+    "Matching tuple/digest is content comparison only; fabricated exact Python objects are not authenticated",
+    "No runtime allowlist, ARM, FSM, accepted history, output, ledger or trace publication",
+    "Full R1 system/hardware/flight NOT RUN; actual OS timezone switching NOT RUN on Windows without tzset"
+  ],
+  "negative_families": [
+    {
+      "id": "N01",
+      "result": "PASS",
+      "tests": 70
+    },
+    {
+      "id": "N02",
+      "result": "PASS",
+      "tests": 126
+    },
+    {
+      "id": "N03",
+      "result": "PASS",
+      "tests": 7
+    },
+    {
+      "id": "N04",
+      "result": "PASS",
+      "tests": 11
+    },
+    {
+      "id": "N05",
+      "result": "PASS",
+      "tests": 1
+    },
+    {
+      "id": "N06",
+      "result": "PASS",
+      "tests": 1
+    },
+    {
+      "id": "N07",
+      "result": "PASS",
+      "tests": 9
+    },
+    {
+      "id": "N08",
+      "result": "PASS",
+      "tests": 1
+    },
+    {
+      "id": "N09",
+      "result": "PASS",
+      "tests": 17
+    },
+    {
+      "id": "N10",
+      "result": "PASS",
+      "tests": 1
+    },
+    {
+      "id": "N11",
+      "result": "PASS",
+      "tests": 3
+    },
+    {
+      "id": "N12",
+      "result": "PASS",
+      "tests": 2
+    },
+    {
+      "id": "N13",
+      "result": "PASS",
+      "tests": 1
+    },
+    {
+      "id": "N14",
+      "result": "PASS",
+      "tests": 77
+    },
+    {
+      "id": "N15",
+      "result": "PASS",
+      "tests": 1
+    },
+    {
+      "id": "N16",
+      "result": "PASS",
+      "tests": 8
+    },
+    {
+      "id": "N17",
+      "result": "PASS",
+      "tests": 1
+    },
+    {
+      "id": "N18",
+      "result": "PASS",
+      "tests": 1
+    }
+  ],
+  "negative_tests": {
+    "cases": 338,
+    "result": "PASS"
+  },
+  "oracle_results": [
+    {
+      "id": "P222-T01",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T02",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T03",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T04",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T05",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T06",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T07",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T08",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T09",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T10",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T11",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T12",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T13",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T14",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T15",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T16",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T17",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T18",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T19",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T20",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T21",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T22",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T23",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T24",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T25",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T26",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T27",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T28",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T29",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T30",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T31",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T32",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T33",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T34",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T35",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T36",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T37",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T38",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T39",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T40",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T41",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T42",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T43",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T44",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T45",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T46",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T47",
+      "result": "PASS"
+    },
+    {
+      "id": "P222-T48",
+      "result": "PASS"
+    }
+  ],
+  "pinned_files": 404,
+  "revision": {
+    "branch": "feature/TASK-010-host-trust-boundary",
+    "files": {
+      "MANIFEST.in": "6ef2d9e05aba91fa839f2237f3ae223cedab0a06c691f8578bb19277aa48657e",
+      "pyproject.toml": "e58559660da9da0d5a4c5c90b299b598240b08810ac5d09c3c0058ee42ae3c98",
+      "scripts/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scripts/scenarios.py": "531e9aa58430fc91dc201165c0ac66bb51240fcc204c87177128baf7e4a6ef74",
+      "scripts/smoke.py": "e643f151cb4477f7b3b0f57026accc725ce968ebaa1b8c3230b3fb066cc8cc04",
+      "scripts/verify.py": "775f67f6cc3adfd7ca181f0277d3ad15461d868c47fb7770afe0b49858d283b2",
+      "src/bb_host_trust_boundary/__init__.py": "32c48fdc2ae9222d76782742244116cab7e20b42798b3011ecfc9588e7f770e5",
+      "src/bb_host_trust_boundary/boundary.py": "4047fa15ed85fa65ea21b45a1cbbf69f95b81743dbdb4d85dc29bac7f148efc4",
+      "tests/test_boundary.py": "a5c3e5a42fa258229a5718d2808565491b3a6b2591a3fe09db8e01af6f2af0ab",
+      "tests/test_oracles.py": "3b43fc5d950656ce19e8eb590908c7c6cabe18867c5a3e7375630a1d63275b02"
+    },
+    "head": "4c7c92524837c8c728d0f206e5ba4655f9513399",
+    "source_sha256": "935d82d8c26a94d8630546488a32e6019a7c82fcfce19cdf646f9f5bdb2eb60e"
+  },
+  "smoke": {
+    "development": "48 PASS, 0 FAIL",
+    "installed_wheel": "48 PASS, 0 FAIL"
+  },
+  "status": "PASS",
+  "test_results": {
+    "task001-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 203
+    },
+    "task002-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 44
+    },
+    "task003-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 59
+    },
+    "task004-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 140
+    },
+    "task005-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 208
+    },
+    "task006-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 221
+    },
+    "task007-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 258
+    },
+    "task008-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 345
+    },
+    "task009-regression.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 246
+    },
+    "tests.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 387
+    }
+  },
+  "warnings": []
+}

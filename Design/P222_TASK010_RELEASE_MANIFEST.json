@@ -1,0 +1,42 @@
+{
+  "manifest_version": "P222_TASK010_RELEASE_V1",
+  "source_main_commit": "4c7c92524837c8c728d0f206e5ba4655f9513399",
+  "scope": "G0-A1_PC_SIM_ONLY_TEST_ONLY",
+  "status": "SA_DESIGN_ONLY_TASK010_NOT_RUN",
+  "policy_sha256": "d7567197dd43480d7e96dac121fbb707d3097b6c443b1b7ab55e822dbac66e10",
+  "oracle_count": 48,
+  "negative_test_family_count": 18,
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Design/181_TASK009_MERGE_CLOSEOUT_AND_TASK010_BASELINE.md",
+      "bytes": 4506,
+      "sha256": "d593faedf96e3c57c0aa8b63ebe3ea008a03d1bb8bdeed813d85fe580ea1c285",
+      "git_blob_sha1": "d755efcbf5eca0144f200b9d3ae1daf6072695cf"
+    },
+    {
+      "path": "Design/182_G0A1_HOST_REFERENCE_BINDING_STAGE_E2_CONTRACT.md",
+      "bytes": 10298,
+      "sha256": "40c8ea91e9b6e6bb617088fca3ac23f0a2147de91f857b2256fdc8391ef0e0f3",
+      "git_blob_sha1": "3700ed10a1c7be54ef5ea8af065dee399fe90de1"
+    },
+    {
+      "path": "Design/183_TASK010_REFERENCE_BINDING_ORACLES_AND_SA_REVIEW.md",
+      "bytes": 5466,
+      "sha256": "2274b5042153257317acbf4d505e14403597846b75e0e49010a042fe07952acd",
+      "git_blob_sha1": "578c1dc8d32cc4d0ba2f69817241a276a2325bf3"
+    },
+    {
+      "path": "Design/fixtures/P222_HOST_REFERENCE_ORACLE_INDEX.json",
+      "bytes": 41703,
+      "sha256": "5d7dcbf6c385c0a378983e7b5c91f171a16198e3149427a5e6dae9d0b2704e08",
+      "git_blob_sha1": "016bebb8fed4380d13255ec0ab968a9b5236cdc2"
+    },
+    {
+      "path": "Task/TASK-010_HOST_TRUST_BOUNDARY.md",
+      "bytes": 7082,
+      "sha256": "30230e7569661fc482783bbca94aa17183d6e748aeee3e963d216da35edc9a9d",
+      "git_blob_sha1": "c15c3544edaef72f1996dbd9d2b63e305f1d5275"
+    }
+  ]
+}
